@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ArmesMark from "@/components/ArmesMark";
 
 export const metadata: Metadata = {
   title: "Seller AI | ARMES — AI 이미지 자동화 도구",
@@ -101,11 +102,7 @@ export default function SellerAIPage() {
       <div className="fixed top-0 left-0 right-0 z-50 bg-[#09090B]/90 backdrop-blur-xl border-b border-white/[0.06]">
         <div className="max-w-6xl mx-auto px-5 h-14 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
-            <div className="w-7 h-7 rounded-xl bg-gradient-to-br from-violet-500 to-indigo-600 flex items-center justify-center">
-              <svg width="13" height="13" viewBox="0 0 16 16" fill="none">
-                <path d="M8 2L14 13H2L8 2Z" fill="white" fillOpacity="0.95" />
-              </svg>
-            </div>
+            <ArmesMark size={28} />
             <span className="font-bold text-white text-[15px]">ARMES</span>
           </Link>
           <div className="flex items-center gap-3">

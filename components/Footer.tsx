@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ArmesMark from "./ArmesMark";
 
 const footerNav = {
   서비스: [
@@ -43,11 +44,7 @@ export default function Footer() {
           <div className="col-span-2">
             {/* Logo */}
             <div className="flex items-center gap-2.5 mb-4">
-              <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-violet-500 to-indigo-600 flex items-center justify-center shadow-lg shadow-violet-500/20">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M8 2L14 13H2L8 2Z" fill="white" fillOpacity="0.95" />
-                </svg>
-              </div>
+              <ArmesMark size={32} />
               <span className="font-bold text-white text-[17px] tracking-tight">ARMES</span>
             </div>
 

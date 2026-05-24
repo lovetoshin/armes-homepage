@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import { useContact } from "./ContactProvider";
+import ArmesMark from "./ArmesMark";
 
 const navLinks = [
   { name: "RewardTalk", href: "#experience" },
@@ -38,11 +39,7 @@ export default function Navbar() {
       <nav className="max-w-7xl mx-auto px-5 lg:px-8 h-16 flex items-center justify-between">
         {/* ── Logo ── */}
         <Link href="/" className="flex items-center gap-2.5 group">
-          <div className="w-8 h-8 rounded-xl bg-gradient-to-br from-violet-500 to-indigo-600 flex items-center justify-center shadow-lg shadow-violet-500/25 group-hover:shadow-violet-500/40 transition-shadow">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-              <path d="M8 2L14 13H2L8 2Z" fill="white" fillOpacity="0.95" />
-            </svg>
-          </div>
+          <ArmesMark size={32} className="group-hover:opacity-90 transition-opacity" />
           <span className="font-bold text-white text-[17px] tracking-tight">
             ARMES
           </span>
