@@ -13,7 +13,7 @@ interface ArmesMarkProps {
 export default function ArmesMark({ size = 32, className = "" }: ArmesMarkProps) {
   return (
     <div
-      className={`rounded-xl overflow-hidden flex-shrink-0 ${className}`}
+      className={`rounded-xl overflow-hidden flex-shrink-0 self-center ${className}`}
       style={{ width: size, height: size }}
     >
       <Image
@@ -23,7 +23,7 @@ export default function ArmesMark({ size = 32, className = "" }: ArmesMarkProps)
         height={size * 4}
         className="w-full h-full object-cover"
         style={{
-          objectPosition: "center 12%",
+          objectPosition: "center 35%",
           filter: "invert(1)",
         }}
         priority
