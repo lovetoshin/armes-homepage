@@ -7,6 +7,10 @@
     {
       "source": "/sellerai/:path*",
       "destination": "https://page-image-maker-saas.vercel.app/sellerai/:path*"
+    },
+    {
+      "source": "/api/:path*",
+      "destination": "https://page-image-maker-saas.vercel.app/sellerai/api/:path*"
     }
   ]
 }
