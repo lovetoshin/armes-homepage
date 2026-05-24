@@ -3,7 +3,7 @@ import Link from "next/link";
 const footerNav = {
   서비스: [
     { name: "RewardTalk", href: "#" },
-    { name: "Seller AI", href: "#" },
+    { name: "Seller AI", href: "/sellerai" },
     { name: "지역 공동구매", href: "#" },
     { name: "매장 운영 SaaS", href: "#" },
     { name: "통합 멤버십 인프라", href: "#" },

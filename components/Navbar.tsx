@@ -7,6 +7,7 @@ import { useContact } from "./ContactProvider";
 
 const navLinks = [
   { name: "RewardTalk", href: "#experience" },
+  { name: "Seller AI", href: "/sellerai" },
   { name: "서비스", href: "#ecosystem" },
   { name: "파트너", href: "#cta" },
   { name: "회사소개", href: "#vision" },

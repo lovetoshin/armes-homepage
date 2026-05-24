@@ -2,28 +2,38 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import Link from "next/link";
 
 const features = [
   {
-    icon: "✦",
-    title: "AI 상세페이지 자동 생성",
-    desc: "상품 정보를 입력하면 AI가 판매에 최적화된 상세페이지를 즉시 작성합니다.",
+    icon: "📸",
+    title: "모델컷 / 제품컷 생성",
+    desc: "상품 사진 한 장으로 정면·측면·앉은 포즈·자유 포즈 4컷을 자동 생성합니다.",
   },
   {
-    icon: "📈",
-    title: "성장 데이터 분석",
-    desc: "매출 패턴과 고객 행동을 분석해 판매 전략을 스마트하게 최적화합니다.",
+    icon: "✂️",
+    title: "모델컷 → 누끼컷",
+    desc: "모델 착용 사진에서 제품만 투명 PNG로 추출. 최대 8장 동시 처리.",
   },
   {
-    icon: "🎯",
-    title: "로컬 타겟 마케팅",
-    desc: "지역 기반 고객 타겟팅으로 광고 효율을 극대화하고 신규 고객을 유입합니다.",
+    icon: "🔄",
+    title: "제품 교체",
+    desc: "모델 사진 + 제품 사진을 AI가 자연스럽게 합성. 최대 4쌍 동시 처리.",
   },
   {
-    icon: "🔗",
-    title: "RewardTalk 생태계 연동",
-    desc: "RewardTalk 멤버십 사용자에게 직접 도달하는 강력한 로컬 마케팅 채널.",
+    icon: "📄",
+    title: "상세페이지 자동 생성",
+    desc: "상품 정보 입력으로 쿠팡·스마트스토어용 HTML 상세페이지를 즉시 생성.",
   },
+];
+
+const tools = [
+  { icon: "📸", name: "모델컷 생성", badge: "AI", color: "bg-blue-500" },
+  { icon: "✂️", name: "누끼컷 추출", badge: "AI", color: "bg-green-500" },
+  { icon: "👤", name: "누끼→모델컷", badge: "AI", color: "bg-purple-500" },
+  { icon: "🔄", name: "제품 교체", badge: "AI", color: "bg-orange-500" },
+  { icon: "📄", name: "상세페이지", badge: "자동화", color: "bg-pink-500" },
+  { icon: "🗂️", name: "생성 보관함", badge: "보관함", color: "bg-zinc-500" },
 ];
 
 export default function Seller() {
@@ -62,72 +72,52 @@ export default function Seller() {
                 </div>
                 <div className="flex-1 flex justify-center">
                   <div className="bg-zinc-800/80 rounded-lg px-5 py-1.5 text-xs text-zinc-500 font-mono">
-                    seller.armes.co.kr
+                    armes.co.kr/sellerai
                   </div>
                 </div>
               </div>
 
-              <div className="p-6">
-                {/* Top stats row */}
-                <div className="flex items-center justify-between mb-6">
-                  <div>
-                    <div className="text-xs text-zinc-500 mb-1 font-medium">오늘 AI 생성</div>
-                    <div className="text-3xl font-bold text-white">12개</div>
+              <div className="p-5">
+                {/* Header */}
+                <div className="mb-5">
+                  <div className="flex items-center gap-2 mb-1">
+                    <span className="text-[10px] font-semibold text-violet-400 uppercase tracking-widest">AI TOOLS</span>
                   </div>
-                  <div className="flex items-center gap-1.5 text-green-400 text-sm font-semibold">
-                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-                    </svg>
-                    +23%
-                  </div>
+                  <h3 className="text-white font-bold text-base">이미지 자동화 도구</h3>
+                  <p className="text-zinc-500 text-xs mt-0.5">쿠팡·스마트스토어 셀러를 위한 AI 기반 도구</p>
                 </div>
 
-                {/* AI Generation card */}
-                <div className="bg-violet-500/[0.07] border border-violet-500/[0.18] rounded-2xl p-5 mb-4">
-                  <div className="flex items-center gap-2.5 mb-4">
-                    <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-violet-500 to-indigo-600 flex items-center justify-center">
-                      <span className="text-white text-[11px] font-bold">AI</span>
-                    </div>
-                    <div>
-                      <span className="text-sm text-violet-300 font-semibold">상세페이지 생성 중</span>
-                      <span className="text-xs text-zinc-600 ml-2">여름 원피스 상품</span>
-                    </div>
-                  </div>
-
-                  {/* Fake text lines */}
-                  <div className="space-y-2 mb-4">
-                    <div className="h-2 bg-violet-500/20 rounded-full w-full" />
-                    <div className="h-2 bg-violet-500/15 rounded-full w-5/6" />
-                    <div className="h-2 bg-violet-500/10 rounded-full w-4/6" />
-                  </div>
-
-                  {/* Progress bar */}
-                  <div className="flex items-center gap-3">
-                    <div className="flex-1 h-1.5 bg-zinc-800 rounded-full overflow-hidden">
-                      <motion.div
-                        className="h-full bg-gradient-to-r from-violet-500 to-indigo-500 rounded-full"
-                        initial={{ width: "0%" }}
-                        animate={isInView ? { width: "75%" } : {}}
-                        transition={{ duration: 2, delay: 0.6, ease: "easeOut" }}
-                      />
-                    </div>
-                    <span className="text-xs text-zinc-400 font-semibold w-8">75%</span>
-                  </div>
-                </div>
-
-                {/* Stats grid */}
-                <div className="grid grid-cols-2 gap-3">
-                  {[
-                    { label: "이번 달 생성", value: "48개" },
-                    { label: "평균 전환율", value: "4.2%" },
-                    { label: "절약 시간", value: "36h" },
-                    { label: "연동 매장", value: "12개" },
-                  ].map((s) => (
-                    <div key={s.label} className="bg-zinc-800/40 border border-white/[0.05] rounded-xl p-3">
-                      <div className="text-white font-bold text-lg">{s.value}</div>
-                      <div className="text-zinc-500 text-[11px] mt-0.5 font-medium">{s.label}</div>
-                    </div>
+                {/* Tool grid */}
+                <div className="grid grid-cols-3 gap-2.5 mb-4">
+                  {tools.map((tool, i) => (
+                    <motion.div
+                      key={tool.name}
+                      initial={{ opacity: 0, scale: 0.9 }}
+                      animate={isInView ? { opacity: 1, scale: 1 } : {}}
+                      transition={{ duration: 0.4, delay: 0.3 + i * 0.07 }}
+                      className="bg-white/[0.04] border border-white/[0.07] rounded-2xl p-3 hover:border-white/[0.14] transition-colors cursor-pointer group"
+                    >
+                      <div className={`w-8 h-8 ${tool.color}/20 rounded-xl flex items-center justify-center mb-2`}>
+                        <span className="text-base">{tool.icon}</span>
+                      </div>
+                      <p className="text-white text-[11px] font-semibold leading-tight">{tool.name}</p>
+                      <span className={`inline-block mt-1 text-[9px] px-1.5 py-0.5 rounded-full ${
+                        tool.badge === "AI" ? "bg-violet-500/15 text-violet-400" :
+                        tool.badge === "자동화" ? "bg-pink-500/15 text-pink-400" :
+                        "bg-zinc-700/50 text-zinc-500"
+                      }`}>{tool.badge}</span>
+                    </motion.div>
                   ))}
+                </div>
+
+                {/* Token info */}
+                <div className="flex items-center justify-between bg-amber-500/[0.08] border border-amber-500/[0.18] rounded-xl px-4 py-3">
+                  <div className="flex items-center gap-2">
+                    <span className="text-amber-400 text-sm">🪙</span>
+                    <span className="text-xs text-zinc-400">보유 토큰</span>
+                    <span className="text-sm font-bold text-white">20,950 T</span>
+                  </div>
+                  <div className="text-[10px] text-zinc-600">사진 50T · 상세페이지 250T</div>
                 </div>
               </div>
             </div>
@@ -144,13 +134,13 @@ export default function Seller() {
                 ✦ Seller AI
               </span>
               <h2 className="text-4xl lg:text-5xl font-bold text-white tracking-tight leading-[1.1] mb-5">
-                셀러와 점주를 위한
+                셀러를 위한
                 <br />
-                <span className="gradient-text-brand">AI 성장 인프라</span>
+                <span className="gradient-text-brand">AI 이미지 자동화</span>
               </h2>
               <p className="text-zinc-400 text-[17px] leading-relaxed mb-10">
-                Seller AI는 단순한 도구가 아닙니다. AI가 상세페이지를 생성하고,
-                데이터가 전략을 알려주며, RewardTalk 생태계가 고객을 연결합니다.
+                상품 사진 한 장으로 모델 착용컷을 만들고, 누끼를 따고, 쿠팡·스마트스토어
+                상세페이지까지 — 반복 작업을 AI가 대신합니다.
               </p>
             </motion.div>
 
@@ -178,15 +168,15 @@ export default function Seller() {
               transition={{ duration: 0.6, delay: 0.55, ease: [0.16, 1, 0.3, 1] }}
               className="flex gap-3"
             >
-              <button className="inline-flex items-center gap-2 bg-violet-600 hover:bg-violet-500 text-white px-6 py-3.5 rounded-full font-semibold text-sm transition-all hover:scale-[1.02] active:scale-[0.98] shadow-lg shadow-violet-500/20">
-                Seller AI 시작하기
+              <Link
+                href="/sellerai"
+                className="inline-flex items-center gap-2 bg-violet-600 hover:bg-violet-500 text-white px-6 py-3.5 rounded-full font-semibold text-sm transition-all hover:scale-[1.02] active:scale-[0.98] shadow-lg shadow-violet-500/20"
+              >
+                Seller AI 자세히 보기
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
                 </svg>
-              </button>
-              <button className="inline-flex items-center gap-2 text-zinc-400 hover:text-white text-sm transition-colors px-4">
-                데모 보기
-              </button>
+              </Link>
             </motion.div>
           </div>
         </div>
