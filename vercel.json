@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/sellerai/:path*",
+      "destination": "https://page-image-maker-saas.vercel.app/sellerai/:path*"
+    }
+  ]
+}
