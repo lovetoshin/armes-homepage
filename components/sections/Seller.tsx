@@ -80,7 +80,7 @@ export default function SellerSection() {
 
             {/* CTA */}
             <Link
-              href="/sellerai"
+              href="/seller-info"
               className="inline-flex items-center gap-2.5 bg-[#191F28] text-white px-7 py-4 rounded-2xl font-bold text-[15px] hover:bg-[#333D4B] transition-colors"
             >
               Seller AI 자세히 보기

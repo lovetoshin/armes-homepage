@@ -8,7 +8,7 @@ import ArmesMark from "./ArmesMark";
 
 const navLinks = [
   { name: "RewardTalk", href: "#rewardtalk" },
-  { name: "Seller AI",  href: "/sellerai" },
+  { name: "Seller AI",  href: "/seller-info" },
   { name: "파트너 신청", href: "#partner" },
 ];
 
