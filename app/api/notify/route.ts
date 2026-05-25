@@ -55,7 +55,7 @@ async function sendEmail(data: NotifyPayload) {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      from: "ARMES 홈페이지 <onboarding@resend.dev>",
+      from: "ARMES 홈페이지 <support@armes.co.kr>",
       to: [to],
       reply_to: data.email,
       subject: `[ARMES 출시알림] ${service} — ${data.name} (${data.email})`,
