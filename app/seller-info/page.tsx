@@ -28,9 +28,10 @@ const plans = [
     tokenBg: "bg-[#EBF3FF]",
     desc: "모든 기능 체험 가능",
     usage: "일반 생성 20장 또는\n상세페이지 4개 가능",
-    btnLabel: "무료 시작",
+    btnLabel: "무료로 시작하기",
     btnStyle: "bg-[#191F28] hover:bg-[#333D4B] text-white",
     cardStyle: "border-[#3182F6] border-2 bg-white",
+    href: "https://armes.co.kr/sellerai?plan=free",
   },
   {
     name: "베이직",
@@ -43,9 +44,10 @@ const plans = [
     tokenBg: "bg-[#EBF3FF]",
     desc: "모든 AI 기능 사용 가능",
     usage: "일반 생성 100장 또는\n상세페이지 20개 가능",
-    btnLabel: "선택하기",
+    btnLabel: "베이직 시작하기",
     btnStyle: "bg-[#3182F6] hover:bg-[#1B64DA] text-white",
     cardStyle: "border-[#E5E8EB] bg-white",
+    href: "https://armes.co.kr/sellerai?plan=basic",
   },
   {
     name: "프로",
@@ -58,9 +60,10 @@ const plans = [
     tokenBg: "bg-purple-50",
     desc: "모든 AI 기능 사용 가능",
     usage: "일반 생성 200장 또는\n상세페이지 40개 가능",
-    btnLabel: "선택하기",
+    btnLabel: "프로 시작하기",
     btnStyle: "bg-[#7C3AED] hover:bg-[#6D28D9] text-white",
     cardStyle: "border-[#E5E8EB] bg-white",
+    href: "https://armes.co.kr/sellerai?plan=pro",
   },
   {
     name: "엔터프라이즈",
@@ -73,9 +76,10 @@ const plans = [
     tokenBg: "bg-orange-50",
     desc: "모든 AI 기능 사용 가능",
     usage: "일반 생성 500장 또는\n상세페이지 100개 가능",
-    btnLabel: "선택하기",
+    btnLabel: "엔터프라이즈 시작",
     btnStyle: "bg-orange-500 hover:bg-orange-600 text-white",
     cardStyle: "border-[#E5E8EB] bg-white",
+    href: "https://armes.co.kr/sellerai?plan=enterprise",
   },
 ];
 
@@ -140,7 +144,7 @@ export default function SellerInfoPage() {
               href="/contact"
               className="inline-flex items-center justify-center gap-2 bg-white border border-[#E5E8EB] text-[#191F28] px-8 py-4 rounded-2xl font-bold text-[15px] hover:bg-[#F2F4F6] transition-all"
             >
-              얼리버드 신청하기
+              파트너 신청하기
             </Link>
           </div>
         </div>
@@ -213,7 +217,7 @@ export default function SellerInfoPage() {
 
               {/* CTA */}
               <a
-                href="https://armes.co.kr/sellerai"
+                href={plan.href}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`mt-auto block text-center py-3.5 rounded-2xl font-extrabold text-sm transition-all ${plan.btnStyle}`}

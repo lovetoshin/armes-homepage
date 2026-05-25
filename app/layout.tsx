@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import ContactProvider from "@/components/ContactProvider";
+import NotifyProvider from "@/components/NotifyProvider";
 import "./globals.css";
 
 const geist = Geist({
@@ -48,7 +49,9 @@ export default function RootLayout({
       </head>
       <body className="min-h-screen bg-[#09090B] text-white overflow-x-hidden">
         <ContactProvider>
-          {children}
+          <NotifyProvider>
+            {children}
+          </NotifyProvider>
         </ContactProvider>
       </body>
     </html>

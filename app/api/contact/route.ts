@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
+import nodemailer from "nodemailer";
 
 export interface ContactPayload {
   type: string;
@@ -11,7 +12,7 @@ export interface ContactPayload {
 }
 
 // ──────────────────────────────────────────────
-// 간단한 유효성 검사
+// 유효성 검사
 // ──────────────────────────────────────────────
 function validate(data: Partial<ContactPayload>): string | null {
   if (!data.type)    return "문의 유형을 선택해 주세요.";
@@ -25,41 +26,79 @@ function validate(data: Partial<ContactPayload>): string | null {
 }
 
 // ──────────────────────────────────────────────
-// 이메일 발송 (Nodemailer 또는 외부 서비스 연동)
-// 환경 변수가 설정되지 않은 경우 콘솔 로깅으로 fallback
+// 이메일 발송 (nodemailer SMTP)
 // ──────────────────────────────────────────────
-async function sendNotification(data: ContactPayload) {
-  const WEBHOOK_URL = process.env.CONTACT_WEBHOOK_URL;
+async function sendEmail(data: ContactPayload) {
+  const host = process.env.SMTP_HOST;
+  const port = Number(process.env.SMTP_PORT ?? 587);
+  const user = process.env.SMTP_USER;
+  const pass = process.env.SMTP_PASS;
+  const to   = process.env.CONTACT_TO ?? "support@armes.co.kr";
 
-  if (WEBHOOK_URL) {
-    // Slack, Discord, Make(Integromat) 등 Webhook 연동
-    await fetch(WEBHOOK_URL, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        text: `📬 새 문의 도착`,
-        attachments: [
-          {
-            color: "#8B5CF6",
-            fields: [
-              { title: "유형",     value: data.type,            short: true },
-              { title: "이름",     value: data.name,            short: true },
-              { title: "이메일",   value: data.email,           short: true },
-              { title: "연락처",   value: data.phone,           short: true },
-              { title: "회사/매장", value: data.company || "-",  short: true },
-              { title: "지역",     value: data.region  || "-",  short: true },
-              { title: "내용",     value: data.message,         short: false },
-            ],
-          },
-        ],
-      }),
-    });
-  } else {
-    // 개발 환경: 콘솔 출력
-    console.log("=== ARMES 문의 접수 ===");
+  if (!host || !user || !pass) {
+    // 개발 환경 fallback
+    console.log("=== ARMES 문의 접수 (SMTP 미설정 — 콘솔 출력) ===");
     console.log(JSON.stringify(data, null, 2));
-    console.log("=======================");
+    console.log("=====================================================");
+    return;
   }
+
+  const transporter = nodemailer.createTransport({
+    host,
+    port,
+    secure: port === 465,
+    auth: { user, pass },
+  });
+
+  const html = `
+    <div style="font-family:sans-serif;max-width:600px;margin:0 auto;padding:32px;background:#fff;">
+      <h2 style="color:#191F28;margin-bottom:4px;">📬 새 문의가 도착했습니다</h2>
+      <p style="color:#8B95A1;font-size:13px;margin-bottom:24px;">ARMES 홈페이지 문의 폼</p>
+      <table style="width:100%;border-collapse:collapse;font-size:14px;">
+        <tr style="border-bottom:1px solid #E5E8EB;">
+          <td style="padding:10px 8px;color:#8B95A1;width:90px;font-weight:600;">유형</td>
+          <td style="padding:10px 8px;color:#191F28;">${data.type}</td>
+        </tr>
+        <tr style="border-bottom:1px solid #E5E8EB;">
+          <td style="padding:10px 8px;color:#8B95A1;font-weight:600;">이름</td>
+          <td style="padding:10px 8px;color:#191F28;">${data.name}</td>
+        </tr>
+        <tr style="border-bottom:1px solid #E5E8EB;">
+          <td style="padding:10px 8px;color:#8B95A1;font-weight:600;">이메일</td>
+          <td style="padding:10px 8px;color:#191F28;"><a href="mailto:${data.email}" style="color:#3182F6;">${data.email}</a></td>
+        </tr>
+        <tr style="border-bottom:1px solid #E5E8EB;">
+          <td style="padding:10px 8px;color:#8B95A1;font-weight:600;">연락처</td>
+          <td style="padding:10px 8px;color:#191F28;"><a href="tel:${data.phone}" style="color:#3182F6;">${data.phone}</a></td>
+        </tr>
+        ${data.company ? `
+        <tr style="border-bottom:1px solid #E5E8EB;">
+          <td style="padding:10px 8px;color:#8B95A1;font-weight:600;">회사/매장</td>
+          <td style="padding:10px 8px;color:#191F28;">${data.company}</td>
+        </tr>` : ""}
+        ${data.region ? `
+        <tr style="border-bottom:1px solid #E5E8EB;">
+          <td style="padding:10px 8px;color:#8B95A1;font-weight:600;">지역</td>
+          <td style="padding:10px 8px;color:#191F28;">${data.region}</td>
+        </tr>` : ""}
+        <tr>
+          <td style="padding:10px 8px;color:#8B95A1;font-weight:600;vertical-align:top;">내용</td>
+          <td style="padding:10px 8px;color:#191F28;white-space:pre-wrap;">${data.message}</td>
+        </tr>
+      </table>
+      <div style="margin-top:24px;padding:16px;background:#F8FAFF;border-radius:12px;font-size:12px;color:#8B95A1;">
+        <strong style="color:#3182F6;">ARMES</strong> 홈페이지 자동발송 · support@armes.co.kr
+      </div>
+    </div>
+  `;
+
+  await transporter.sendMail({
+    from: `"ARMES 홈페이지" <${user}>`,
+    to,
+    replyTo: data.email,
+    subject: `[ARMES 문의] ${data.type} — ${data.name}`,
+    html,
+  });
 }
 
 // ──────────────────────────────────────────────
@@ -74,7 +113,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ success: false, message: error }, { status: 400 });
     }
 
-    await sendNotification(data as ContactPayload);
+    await sendEmail(data as ContactPayload);
 
     return NextResponse.json({
       success: true,

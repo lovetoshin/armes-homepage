@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useContact } from "@/components/ContactProvider";
+import { useNotify } from "@/components/NotifyProvider";
 import PhoneMockup from "@/components/PhoneMockup";
 
 const features = [
@@ -13,6 +14,7 @@ const features = [
 
 export default function Hero() {
   const { open: openContact } = useContact();
+  const { open: openNotify }  = useNotify();
 
   return (
     <section className="bg-white pt-24 pb-20 lg:pt-32 lg:pb-28">
@@ -62,21 +64,20 @@ export default function Hero() {
 
             {/* CTA */}
             <div className="flex flex-col sm:flex-row gap-3">
+              {/* 출시 알림 — 간단한 이메일 캡처 모달 */}
               <button
-                onClick={openContact}
+                onClick={() => openNotify("RewardTalk")}
                 className="inline-flex items-center justify-center gap-2 bg-[#3182F6] text-white px-7 py-4 rounded-2xl font-bold text-[15px] hover:bg-[#1B64DA] transition-colors shadow-[0_4px_16px_rgba(49,130,246,0.3)]"
               >
-                출시 알림 받기
-                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-                </svg>
+                출시 알림 받기 🔔
               </button>
-              <a
-                href="#partner"
+              {/* 파트너 신청 — 전체 문의 폼 모달 */}
+              <button
+                onClick={openContact}
                 className="inline-flex items-center justify-center gap-2 bg-[#F2F4F6] text-[#191F28] px-7 py-4 rounded-2xl font-bold text-[15px] hover:bg-[#E5E8EB] transition-colors"
               >
                 파트너 신청
-              </a>
+              </button>
             </div>
           </motion.div>
 
