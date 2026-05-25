@@ -5,8 +5,6 @@ const footerNav = {
   서비스: [
     { name: "RewardTalk", href: "#rewardtalk" },
     { name: "Seller AI", href: "/seller-info" },
-    { name: "지역 공동구매", href: "#" },
-    { name: "매장 운영 SaaS", href: "#" },
   ],
   파트너: [
     { name: "매장 파트너 신청", href: "/contact" },
@@ -16,7 +14,6 @@ const footerNav = {
   ],
   고객지원: [
     { name: "고객센터", href: "/contact" },
-    { name: "자주 묻는 질문", href: "#" },
     { name: "개인정보처리방침", href: "/privacy" },
     { name: "이용약관", href: "/terms" },
   ],

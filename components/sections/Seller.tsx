@@ -35,13 +35,17 @@ export default function SellerSection() {
                 initial={{ opacity: 0, y: 16 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, delay: 0.1 + i * 0.07 }}
-                className="bg-white rounded-2xl border border-[#E5E8EB] p-4 hover:shadow-[0_4px_20px_rgba(0,0,0,0.06)] transition-shadow"
               >
-                <div className={`inline-flex w-10 h-10 rounded-xl items-center justify-center text-xl mb-3 border ${tool.color}`}>
-                  {tool.icon}
-                </div>
-                <p className="text-[#191F28] font-bold text-sm mb-1">{tool.title}</p>
-                <p className="text-[#8B95A1] text-xs leading-relaxed">{tool.desc}</p>
+                <Link
+                  href="/seller-info"
+                  className="block bg-white rounded-2xl border border-[#E5E8EB] p-4 hover:shadow-[0_4px_20px_rgba(0,0,0,0.06)] transition-shadow"
+                >
+                  <div className={`inline-flex w-10 h-10 rounded-xl items-center justify-center text-xl mb-3 border ${tool.color}`}>
+                    {tool.icon}
+                  </div>
+                  <p className="text-[#191F28] font-bold text-sm mb-1">{tool.title}</p>
+                  <p className="text-[#8B95A1] text-xs leading-relaxed">{tool.desc}</p>
+                </Link>
               </motion.div>
             ))}
           </motion.div>
@@ -53,17 +57,17 @@ export default function SellerSection() {
             transition={{ duration: 0.7, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
           >
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 bg-white text-[#8B95A1] text-xs font-bold px-4 py-2 rounded-full border border-[#E5E8EB] mb-6">
-              ✦ Seller AI · 출시 예정
+            <div className="inline-flex items-center gap-2 bg-[#EBF3FF] text-[#3182F6] text-xs font-bold px-4 py-2 rounded-full border border-[#C5D8FB] mb-6">
+              ✦ Seller AI · 출시
             </div>
 
-            <h2 className="text-3xl lg:text-4xl font-extrabold text-[#191F28] leading-[1.2] tracking-tight mb-5">
+            <h2 className="text-3xl lg:text-4xl font-extrabold text-[#191F28] leading-[1.2] tracking-tight mb-5 keep-all">
               쿠팡·스마트스토어 셀러를 위한
               <br />
               <span className="text-[#3182F6]">AI 이미지 자동화</span>
             </h2>
 
-            <p className="text-[#4E5968] text-[16px] leading-relaxed mb-8">
+            <p className="text-[#4E5968] text-[16px] leading-relaxed mb-8 keep-all">
               상품 사진 한 장으로 모델 착용컷을 만들고, 누끼를 따고,
               쿠팡·스마트스토어 상세페이지까지 자동 생성합니다.
               반복 작업에 드는 시간을 AI로 줄이세요.

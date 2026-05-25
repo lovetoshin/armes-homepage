@@ -80,6 +80,13 @@ body {
   font-family: 'Pretendard Variable', 'Pretendard', -apple-system, system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+.keep-all {
+  word-break: keep-all;
+  overflow-wrap: break-word;
 }
 
 /* ===== GRADIENT TEXT ===== */

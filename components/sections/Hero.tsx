@@ -6,10 +6,11 @@ import { useNotify } from "@/components/NotifyProvider";
 import PhoneMockup from "@/components/PhoneMockup";
 
 const features = [
-  { icon: "🎯", label: "드로우 시스템" },
-  { icon: "📱", label: "QR 멤버십 적립" },
+  { icon: "🏷️", label: "할인·적립" },
+  { icon: "🚌", label: "교통·주유정보" },
   { icon: "👥", label: "지역 공동구매" },
-  { icon: "🚌", label: "교통·주유 정보" },
+  { icon: "🎯", label: "드로우 시스템" },
+  { icon: "📱", label: "QR멤버십 적립" },
 ];
 
 export default function Hero() {
@@ -34,7 +35,7 @@ export default function Hero() {
             </div>
 
             {/* Headline */}
-            <h1 className="text-4xl lg:text-5xl font-extrabold text-[#191F28] leading-[1.15] tracking-tight mb-5">
+            <h1 className="text-4xl lg:text-5xl font-extrabold text-[#191F28] leading-[1.15] tracking-tight mb-5 keep-all">
               내 주변 매장에서
               <br />
               <span className="text-[#3182F6]">포인트 적립</span>하고
@@ -43,10 +44,10 @@ export default function Hero() {
             </h1>
 
             {/* Description */}
-            <p className="text-[#4E5968] text-[17px] leading-relaxed mb-8">
-              리워드톡은 동네 카페, 음식점 등 가맹점에서 QR 코드 하나로
-              멤버십을 적립하고, 드로우 응모·공동구매·교통 정보까지
-              한 번에 이용할 수 있는 로컬 라이프 플랫폼입니다.
+            <p className="text-[#4E5968] text-[17px] leading-relaxed mb-8 keep-all">
+              리워드톡은 가맹점 할인·적립부터 교통·주유 정보,
+              지역 공동구매, 드로우 응모, QR 멤버십 적립까지 —
+              일상의 소비를 스마트하게 연결하는 로컬 라이프 플랫폼입니다.
             </p>
 
             {/* Feature chips */}
@@ -64,14 +65,12 @@ export default function Hero() {
 
             {/* CTA */}
             <div className="flex flex-col sm:flex-row gap-3">
-              {/* 출시 알림 — 간단한 이메일 캡처 모달 */}
               <button
                 onClick={() => openNotify("RewardTalk")}
                 className="inline-flex items-center justify-center gap-2 bg-[#3182F6] text-white px-7 py-4 rounded-2xl font-bold text-[15px] hover:bg-[#1B64DA] transition-colors shadow-[0_4px_16px_rgba(49,130,246,0.3)]"
               >
                 출시 알림 받기 🔔
               </button>
-              {/* 파트너 신청 — 전체 문의 폼 모달 */}
               <button
                 onClick={openContact}
                 className="inline-flex items-center justify-center gap-2 bg-[#F2F4F6] text-[#191F28] px-7 py-4 rounded-2xl font-bold text-[15px] hover:bg-[#E5E8EB] transition-colors"
