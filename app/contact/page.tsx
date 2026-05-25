@@ -33,7 +33,7 @@ export default function ContactPage() {
       <div className="fixed top-0 left-0 right-0 z-50 bg-[#09090B]/90 backdrop-blur-xl border-b border-white/[0.06]">
         <div className="max-w-6xl mx-auto px-5 h-14 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2">
-            <ArmesMark size={28} />
+            <ArmesMark size={28} invert={true} />
             <span className="font-bold text-white text-[15px]">ARMES</span>
           </Link>
           <Link href="/" className="flex items-center gap-1.5 text-sm text-zinc-400 hover:text-white transition-colors">

@@ -1,27 +1,25 @@
 import Navbar from "@/components/Navbar";
-import Ticker from "@/components/Ticker";
 import Hero from "@/components/sections/Hero";
-import Ecosystem from "@/components/sections/Ecosystem";
-import Experience from "@/components/sections/Experience";
-import Seller from "@/components/sections/Seller";
-import Vision from "@/components/sections/Vision";
-import CTA from "@/components/sections/CTA";
+import SellerSection from "@/components/sections/Seller";
+import PartnerSection from "@/components/sections/PartnerSection";
 import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <>
+    <div className="bg-white">
       <Navbar />
       <main>
-        <Hero />
-        <Ticker />
-        <Ecosystem />
-        <Experience />
-        <Seller />
-        <Vision />
-        <CTA />
+        <section id="rewardtalk">
+          <Hero />
+        </section>
+        <section id="sellerai">
+          <SellerSection />
+        </section>
+        <section id="partner">
+          <PartnerSection />
+        </section>
       </main>
       <Footer />
-    </>
+    </div>
   );
 }

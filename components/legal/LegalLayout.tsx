@@ -15,7 +15,7 @@ export default function LegalLayout({ title, subtitle, updatedAt, children }: Le
       <div className="fixed top-0 left-0 right-0 z-50 bg-[#09090B]/90 backdrop-blur-xl border-b border-white/[0.06]">
         <div className="max-w-4xl mx-auto px-5 h-14 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2 group">
-            <ArmesMark size={28} className="group-hover:opacity-90 transition-opacity" />
+            <ArmesMark size={28} invert={true} className="group-hover:opacity-90 transition-opacity" />
             <span className="font-bold text-white text-[15px] tracking-tight">ARMES</span>
           </Link>
 
