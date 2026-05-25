@@ -1,10 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
-import nodemailer from "nodemailer";
 
 export interface NotifyPayload {
   name: string;
   email: string;
-  service?: string; // 어떤 서비스 출시 알림인지
+  service?: string;
 }
 
 function validate(data: Partial<NotifyPayload>): string | null {
@@ -15,27 +14,15 @@ function validate(data: Partial<NotifyPayload>): string | null {
 }
 
 async function sendEmail(data: NotifyPayload) {
-  const host = process.env.SMTP_HOST;
-  const port = Number(process.env.SMTP_PORT ?? 587);
-  const user = process.env.SMTP_USER;
-  const pass = process.env.SMTP_PASS;
-  const to   = process.env.CONTACT_TO ?? "support@armes.co.kr";
+  const apiKey  = process.env.RESEND_API_KEY;
+  const to      = process.env.CONTACT_TO ?? "support@armes.co.kr";
+  const service = data.service ?? "RewardTalk";
 
-  if (!host || !user || !pass) {
-    console.log("=== ARMES 출시 알림 신청 (SMTP 미설정 — 콘솔 출력) ===");
+  if (!apiKey) {
+    console.log("=== ARMES 출시 알림 신청 (RESEND_API_KEY 미설정 — 콘솔 출력) ===");
     console.log(JSON.stringify(data, null, 2));
-    console.log("=========================================================");
     return;
   }
-
-  const transporter = nodemailer.createTransport({
-    host,
-    port,
-    secure: port === 465,
-    auth: { user, pass },
-  });
-
-  const service = data.service ?? "RewardTalk";
 
   const html = `
     <div style="font-family:sans-serif;max-width:600px;margin:0 auto;padding:32px;background:#fff;">
@@ -58,30 +45,35 @@ async function sendEmail(data: NotifyPayload) {
       <div style="margin-top:24px;padding:16px;background:#EBF3FF;border-radius:12px;font-size:12px;color:#3182F6;">
         출시 시 위 이메일로 안내 발송 예정
       </div>
-      <div style="margin-top:12px;padding:16px;background:#F8FAFF;border-radius:12px;font-size:12px;color:#8B95A1;">
-        <strong style="color:#3182F6;">ARMES</strong> 홈페이지 자동발송 · support@armes.co.kr
-      </div>
     </div>
   `;
 
-  await transporter.sendMail({
-    from: `"ARMES 홈페이지" <${user}>`,
-    to,
-    replyTo: data.email,
-    subject: `[ARMES 출시알림] ${service} — ${data.name} (${data.email})`,
-    html,
+  const res = await fetch("https://api.resend.com/emails", {
+    method: "POST",
+    headers: {
+      "Authorization": `Bearer ${apiKey}`,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      from: "ARMES 홈페이지 <onboarding@resend.dev>",
+      to: [to],
+      reply_to: data.email,
+      subject: `[ARMES 출시알림] ${service} — ${data.name} (${data.email})`,
+      html,
+    }),
   });
+
+  if (!res.ok) {
+    const err = await res.text();
+    throw new Error(`Resend error: ${err}`);
+  }
 }
 
-// POST /api/notify
 export async function POST(request: NextRequest) {
   try {
     const data: Partial<NotifyPayload> = await request.json();
-
     const error = validate(data);
-    if (error) {
-      return NextResponse.json({ success: false, message: error }, { status: 400 });
-    }
+    if (error) return NextResponse.json({ success: false, message: error }, { status: 400 });
 
     await sendEmail(data as NotifyPayload);
 

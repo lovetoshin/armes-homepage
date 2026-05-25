@@ -1,5 +1,4 @@
 import { NextRequest, NextResponse } from "next/server";
-import nodemailer from "nodemailer";
 
 export interface ContactPayload {
   type: string;
@@ -11,9 +10,6 @@ export interface ContactPayload {
   message: string;
 }
 
-// ──────────────────────────────────────────────
-// 유효성 검사
-// ──────────────────────────────────────────────
 function validate(data: Partial<ContactPayload>): string | null {
   if (!data.type)    return "문의 유형을 선택해 주세요.";
   if (!data.name?.trim())    return "이름을 입력해 주세요.";
@@ -25,30 +21,15 @@ function validate(data: Partial<ContactPayload>): string | null {
   return null;
 }
 
-// ──────────────────────────────────────────────
-// 이메일 발송 (nodemailer SMTP)
-// ──────────────────────────────────────────────
 async function sendEmail(data: ContactPayload) {
-  const host = process.env.SMTP_HOST;
-  const port = Number(process.env.SMTP_PORT ?? 587);
-  const user = process.env.SMTP_USER;
-  const pass = process.env.SMTP_PASS;
-  const to   = process.env.CONTACT_TO ?? "support@armes.co.kr";
+  const apiKey = process.env.RESEND_API_KEY;
+  const to     = process.env.CONTACT_TO ?? "support@armes.co.kr";
 
-  if (!host || !user || !pass) {
-    // 개발 환경 fallback
-    console.log("=== ARMES 문의 접수 (SMTP 미설정 — 콘솔 출력) ===");
+  if (!apiKey) {
+    console.log("=== ARMES 문의 접수 (RESEND_API_KEY 미설정 — 콘솔 출력) ===");
     console.log(JSON.stringify(data, null, 2));
-    console.log("=====================================================");
     return;
   }
-
-  const transporter = nodemailer.createTransport({
-    host,
-    port,
-    secure: port === 465,
-    auth: { user, pass },
-  });
 
   const html = `
     <div style="font-family:sans-serif;max-width:600px;margin:0 auto;padding:32px;background:#fff;">
@@ -71,13 +52,11 @@ async function sendEmail(data: ContactPayload) {
           <td style="padding:10px 8px;color:#8B95A1;font-weight:600;">연락처</td>
           <td style="padding:10px 8px;color:#191F28;"><a href="tel:${data.phone}" style="color:#3182F6;">${data.phone}</a></td>
         </tr>
-        ${data.company ? `
-        <tr style="border-bottom:1px solid #E5E8EB;">
+        ${data.company ? `<tr style="border-bottom:1px solid #E5E8EB;">
           <td style="padding:10px 8px;color:#8B95A1;font-weight:600;">회사/매장</td>
           <td style="padding:10px 8px;color:#191F28;">${data.company}</td>
         </tr>` : ""}
-        ${data.region ? `
-        <tr style="border-bottom:1px solid #E5E8EB;">
+        ${data.region ? `<tr style="border-bottom:1px solid #E5E8EB;">
           <td style="padding:10px 8px;color:#8B95A1;font-weight:600;">지역</td>
           <td style="padding:10px 8px;color:#191F28;">${data.region}</td>
         </tr>` : ""}
@@ -87,31 +66,37 @@ async function sendEmail(data: ContactPayload) {
         </tr>
       </table>
       <div style="margin-top:24px;padding:16px;background:#F8FAFF;border-radius:12px;font-size:12px;color:#8B95A1;">
-        <strong style="color:#3182F6;">ARMES</strong> 홈페이지 자동발송 · support@armes.co.kr
+        <strong style="color:#3182F6;">ARMES</strong> 홈페이지 자동발송
       </div>
     </div>
   `;
 
-  await transporter.sendMail({
-    from: `"ARMES 홈페이지" <${user}>`,
-    to,
-    replyTo: data.email,
-    subject: `[ARMES 문의] ${data.type} — ${data.name}`,
-    html,
+  const res = await fetch("https://api.resend.com/emails", {
+    method: "POST",
+    headers: {
+      "Authorization": `Bearer ${apiKey}`,
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      from: "ARMES 홈페이지 <onboarding@resend.dev>",
+      to: [to],
+      reply_to: data.email,
+      subject: `[ARMES 문의] ${data.type} — ${data.name}`,
+      html,
+    }),
   });
+
+  if (!res.ok) {
+    const err = await res.text();
+    throw new Error(`Resend error: ${err}`);
+  }
 }
 
-// ──────────────────────────────────────────────
-// POST /api/contact
-// ──────────────────────────────────────────────
 export async function POST(request: NextRequest) {
   try {
     const data: Partial<ContactPayload> = await request.json();
-
     const error = validate(data);
-    if (error) {
-      return NextResponse.json({ success: false, message: error }, { status: 400 });
-    }
+    if (error) return NextResponse.json({ success: false, message: error }, { status: 400 });
 
     await sendEmail(data as ContactPayload);
 
