@@ -3,7 +3,7 @@ import ArmesMark from "./ArmesMark";
 
 const footerNav = {
   서비스: [
-    { name: "RewardTalk", href: "#rewardtalk" },
+    { name: "RewardTalk", href: "/#rewardtalk" },
     { name: "Seller AI", href: "/seller-info" },
   ],
   파트너: [
