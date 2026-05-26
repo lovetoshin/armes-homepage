@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import ArmesMark from "@/components/ArmesMark";
 import SellerPricingCards from "@/components/SellerPricingCards";
 
 export const metadata: Metadata = {
@@ -21,32 +20,6 @@ const tools = [
 export default function SellerInfoPage() {
   return (
     <div className="min-h-screen bg-white">
-
-      {/* Nav */}
-      <div className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-xl border-b border-[#E5E8EB]">
-        <div className="max-w-6xl mx-auto px-5 h-14 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-2">
-            <ArmesMark size={28} invert={false} />
-            <span className="font-extrabold text-[#191F28] text-[15px]">ARMES</span>
-          </Link>
-          <div className="flex items-center gap-3">
-            <Link href="/" className="flex items-center gap-1.5 text-sm text-[#4E5968] hover:text-[#191F28] transition-colors">
-              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
-              </svg>
-              홈으로
-            </Link>
-            <a
-              href="https://armes.co.kr/sellerai"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm bg-[#3182F6] hover:bg-[#1B64DA] text-white px-4 py-2 rounded-full font-semibold transition-all"
-            >
-              앱 바로가기 →
-            </a>
-          </div>
-        </div>
-      </div>
 
       {/* Hero */}
       <div className="pt-28 pb-20 bg-[#F8FAFF]">

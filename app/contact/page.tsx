@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import ContactForm from "@/components/forms/ContactForm";
-import ArmesMark from "@/components/ArmesMark";
 
 export const metadata: Metadata = {
   title: "파트너 문의 | ARMES",
@@ -32,22 +31,6 @@ const infoCards = [
 export default function ContactPage() {
   return (
     <div className="min-h-screen bg-white">
-
-      {/* Nav */}
-      <div className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-xl border-b border-[#E5E8EB]">
-        <div className="max-w-6xl mx-auto px-5 h-14 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-2">
-            <ArmesMark size={28} invert={false} />
-            <span className="font-extrabold text-[#191F28] text-[15px]">ARMES</span>
-          </Link>
-          <Link href="/" className="flex items-center gap-1.5 text-sm text-[#8B95A1] hover:text-[#191F28] transition-colors">
-            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
-            </svg>
-            홈으로
-          </Link>
-        </div>
-      </div>
 
       {/* Hero */}
       <div className="pt-24 pb-12 bg-[#F8FAFF]">

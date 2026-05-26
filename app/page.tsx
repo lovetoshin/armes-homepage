@@ -1,4 +1,3 @@
-import Navbar from "@/components/Navbar";
 import Hero from "@/components/sections/Hero";
 import SellerSection from "@/components/sections/Seller";
 import PartnerSection from "@/components/sections/PartnerSection";
@@ -7,7 +6,6 @@ import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <div className="bg-white">
-      <Navbar />
       <main>
         <section id="rewardtalk">
           <Hero />
