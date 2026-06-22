@@ -33,6 +33,14 @@ const nextConfig: NextConfig = {
   // ── 리다이렉트 ──
   async redirects() {
     return [
+      // 기존 SellerAI 소개 페이지(/seller-info) 검색 유입은
+      // 곧장 SellerAI 앱(/sellerai)으로 영구(301) 연결한다.
+      // (Projects 목록을 거치지 않음 — 사용자는 SellerAI를 보러 온 것)
+      {
+        source:      "/seller-info",
+        destination: "/sellerai",
+        permanent:   true,
+      },
       // www → non-www (도메인 설정 시 활성화)
       // {
       //   source:      "/:path*",

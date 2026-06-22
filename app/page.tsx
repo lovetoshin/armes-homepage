@@ -1,21 +1,17 @@
-import Hero from "@/components/sections/Hero";
-import SellerSection from "@/components/sections/Seller";
-import PartnerSection from "@/components/sections/PartnerSection";
+import CompanyHero from "@/components/sections/CompanyHero";
+import TechnologySection from "@/components/sections/TechnologySection";
+import ProjectsSection from "@/components/sections/ProjectsSection";
+import CompanyCTA from "@/components/sections/CompanyCTA";
 import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
     <div className="bg-white">
       <main>
-        <section id="rewardtalk">
-          <Hero />
-        </section>
-        <section id="sellerai">
-          <SellerSection />
-        </section>
-        <section id="partner">
-          <PartnerSection />
-        </section>
+        <CompanyHero />
+        <TechnologySection />
+        <ProjectsSection />
+        <CompanyCTA />
       </main>
       <Footer />
     </div>

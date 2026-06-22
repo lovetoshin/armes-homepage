@@ -7,9 +7,9 @@ import { useContact } from "./ContactProvider";
 import ArmesMark from "./ArmesMark";
 
 const navLinks = [
-  { name: "RewardTalk", href: "/#rewardtalk" },
-  { name: "Seller AI",  href: "/seller-info" },
-  { name: "파트너 신청", href: "/#partner" },
+  { name: "회사소개", href: "/about" },
+  { name: "프로젝트", href: "/projects" },
+  { name: "기술",     href: "/#technology" },
 ];
 
 export default function Navbar() {

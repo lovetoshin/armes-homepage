@@ -2,18 +2,19 @@ import Link from "next/link";
 import ArmesMark from "./ArmesMark";
 
 const footerNav = {
-  서비스: [
-    { name: "RewardTalk", href: "/#rewardtalk" },
-    { name: "Seller AI", href: "/seller-info" },
+  회사: [
+    { name: "회사소개", href: "/about" },
+    { name: "프로젝트", href: "/projects" },
   ],
-  파트너: [
-    { name: "매장 파트너 신청", href: "/contact" },
-    { name: "Seller AI 파트너", href: "/contact" },
-    { name: "기업 제휴", href: "/contact" },
-    { name: "투자 문의", href: "/contact" },
+  프로젝트: [
+    { name: "SellerAI", href: "/sellerai" },
+    { name: "전체 보기", href: "/projects" },
   ],
-  고객지원: [
-    { name: "고객센터", href: "/contact" },
+  기술: [
+    { name: "기술 소개", href: "/#technology" },
+  ],
+  문의: [
+    { name: "파트너·제휴 문의", href: "/contact" },
     { name: "개인정보처리방침", href: "/privacy" },
     { name: "이용약관", href: "/terms" },
   ],
@@ -25,7 +26,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-5 lg:px-8">
 
         {/* Main grid */}
-        <div className="py-14 grid grid-cols-2 lg:grid-cols-5 gap-8">
+        <div className="py-14 grid grid-cols-2 lg:grid-cols-6 gap-8">
 
           {/* Brand */}
           <div className="col-span-2">
@@ -33,19 +34,12 @@ export default function Footer() {
               <ArmesMark size={32} invert={false} />
               <span className="font-extrabold text-[#191F28] text-[17px]">ARMES</span>
             </div>
-            <p className="text-[#8B95A1] text-sm leading-relaxed mb-5 max-w-[200px]">
-              일상의 소비와 지역을 연결하는 차세대 로컬 플랫폼
+            <p className="text-[#8B95A1] text-sm leading-relaxed mb-5 max-w-[210px]">
+              AI 기술로 일상을 자동화하는 회사
             </p>
-            <div className="flex flex-wrap gap-2">
-              {[
-                { label: "RewardTalk", color: "text-orange-600 bg-orange-50 border-orange-200" },
-                { label: "Seller AI",  color: "text-blue-600  bg-blue-50  border-blue-200"  },
-              ].map((b) => (
-                <span key={b.label} className={`px-2.5 py-1 rounded-full border text-[11px] font-bold ${b.color}`}>
-                  {b.label}
-                </span>
-              ))}
-            </div>
+            <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full border border-[#C5D8FB] bg-[#EBF3FF] text-[#3182F6] text-[11px] font-bold">
+              AI Technology Company
+            </span>
           </div>
 
           {/* Nav columns */}
@@ -77,7 +71,7 @@ export default function Footer() {
               <p className="text-[#8B95A1] text-xs">경기도 남양주시 진접읍 경복대로 425-80, 4층 6406호</p>
               <p className="text-[#8B95A1] text-xs">대표번호: 010-4995-9867 &nbsp;·&nbsp; support.armes@gmail.com</p>
             </div>
-            <p className="text-[#C5C9CF] text-xs self-end">© 2024 주식회사 아르메스. All rights reserved.</p>
+            <p className="text-[#C5C9CF] text-xs self-end">© 2026 주식회사 아르메스. All rights reserved.</p>
           </div>
         </div>
 

@@ -12,21 +12,21 @@ const geist = Geist({
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://armes.co.kr"),
-  title: "ARMES — 일상의 소비와 지역을 연결하는 로컬 플랫폼",
+  title: "ARMES — AI 기술로 일상을 자동화하는 회사",
   description:
-    "ARMES는 사용자와 지역 매장을 하나의 멤버십 경험으로 연결하는 차세대 로컬 플랫폼입니다. RewardTalk, Seller AI, 지역 공동구매로 로컬 생태계를 재정의합니다.",
-  keywords: ["리워드", "멤버십", "공동구매", "로컬플랫폼", "리워드톡", "셀러AI", "지역혜택"],
+    "주식회사 아르메스는 이미지·언어·비전·위치 기술로 일상의 여러 영역에 실제 쓰이는 AI 서비스를 만드는 기술 회사입니다. SellerAI, RewardTalk, TravelMoa 등을 운영·개발합니다.",
+  keywords: ["아르메스", "ARMES", "AI 회사", "AI 기술", "SellerAI", "RewardTalk", "AI 자동화"],
   openGraph: {
-    title: "ARMES — 차세대 로컬 플랫폼",
-    description: "사용자와 지역 매장을 하나의 멤버십 경험으로 연결합니다.",
+    title: "ARMES — AI 기술로 일상을 자동화하는 회사",
+    description: "이미지·언어·비전·위치 기술로 실제 쓰이는 AI 서비스를 만듭니다.",
     type: "website",
     locale: "ko_KR",
     siteName: "ARMES",
   },
   twitter: {
     card: "summary_large_image",
-    title: "ARMES — 차세대 로컬 플랫폼",
-    description: "사용자와 지역 매장을 하나의 멤버십 경험으로 연결합니다.",
+    title: "ARMES — AI 기술로 일상을 자동화하는 회사",
+    description: "이미지·언어·비전·위치 기술로 실제 쓰이는 AI 서비스를 만듭니다.",
   },
   robots: {
     index: true,
