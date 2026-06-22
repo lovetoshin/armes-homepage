@@ -1,0 +1,243 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Snapshot — 대표 페이지(translate)의 SEO 출력 고정 > JSON-LD 스냅샷 1`] = `
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "applicationCategory": "DesignApplication",
+    "description": "1688·알리·타오바오 상세페이지의 중국어·영어 글자를 한국어로 자동 교체. 상품 이미지 속 외국어를 그대로 번역해 한글 상세페이지로 만드는 셀러AI 외국어 변환.",
+    "name": "셀러AI — 1688·알리 상세페이지 번역",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "KRW",
+    },
+    "operatingSystem": "Web",
+    "url": "https://www.armes.co.kr/sellerai/studio/translate",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "item": "https://www.armes.co.kr/sellerai/studio",
+        "name": "셀러AI",
+        "position": 1,
+      },
+      {
+        "@type": "ListItem",
+        "item": "https://www.armes.co.kr/sellerai/studio/translate",
+        "name": "1688·알리 상세페이지 번역",
+        "position": 2,
+      },
+    ],
+  },
+]
+`;
+
+exports[`Snapshot — 대표 페이지(translate)의 SEO 출력 고정 > home JSON-LD 스냅샷(Organization/WebSite 포함) 1`] = `
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "description": "쇼핑몰 셀러를 위한 AI 상품 이미지 자동화 플랫폼",
+    "name": "셀러AI",
+    "url": "https://www.armes.co.kr/sellerai/studio",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "inLanguage": "ko-KR",
+    "name": "셀러AI",
+    "url": "https://www.armes.co.kr/sellerai/studio",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "applicationCategory": "DesignApplication",
+    "description": "상품 사진 한 장으로 AI 모델컷·상품사진·누끼·상세페이지·1688 번역까지 자동 제작. 쇼핑몰 셀러를 위한 AI 상품 이미지 자동화 플랫폼 셀러AI.",
+    "name": "셀러AI — 셀러AI",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "KRW",
+    },
+    "operatingSystem": "Web",
+    "url": "https://www.armes.co.kr/sellerai/studio",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "item": "https://www.armes.co.kr/sellerai/studio",
+        "name": "셀러AI",
+        "position": 1,
+      },
+    ],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "쇼핑몰 셀러를 위한 AI 상품 이미지 도구로, 모델컷·상품사진·누끼·상세페이지·외국어 번역을 한 곳에서 만듭니다.",
+        },
+        "name": "셀러AI는 무엇을 하는 서비스인가요?",
+      },
+      {
+        "@type": "Question",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AI 모델 생성, 착용샷, 상품사진, 배경제거, 색상 변경, 상세페이지 제작, 1688·알리 번역 등을 제공합니다.",
+        },
+        "name": "어떤 기능이 있나요?",
+      },
+      {
+        "@type": "Question",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "가입 후 제공되는 이용권으로 주요 기능을 먼저 사용해 볼 수 있습니다.",
+        },
+        "name": "무료로 사용해 볼 수 있나요?",
+      },
+      {
+        "@type": "Question",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "쇼핑몰에 올릴 수 있는 형태의 이미지·상세페이지로 만들어집니다.",
+        },
+        "name": "쿠팡·스마트스토어에 바로 쓸 수 있나요?",
+      },
+      {
+        "@type": "Question",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "사진을 올리고 옵션을 고르면 결과가 자동으로 만들어져 디자인 지식 없이 사용할 수 있습니다.",
+        },
+        "name": "디자인을 못 해도 쓸 수 있나요?",
+      },
+      {
+        "@type": "Question",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "쇼핑몰 상품 판매용으로 사용하도록 만들어집니다.",
+        },
+        "name": "만든 이미지를 상업적으로 사용해도 되나요?",
+      },
+      {
+        "@type": "Question",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "의류·가방·신발·뷰티·생활용품 등 다양한 상품 이미지에 사용할 수 있습니다.",
+        },
+        "name": "어떤 상품에 쓸 수 있나요?",
+      },
+      {
+        "@type": "Question",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "1688·알리·타오바오 상세페이지의 외국어를 한국어로 번역해 사용할 수 있습니다.",
+        },
+        "name": "중국 도매 상품 이미지도 되나요?",
+      },
+      {
+        "@type": "Question",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "실존 인물이 아닌 AI 모델이라 초상권 부담 없이 사용할 수 있습니다.",
+        },
+        "name": "AI 모델의 초상권은 괜찮나요?",
+      },
+      {
+        "@type": "Question",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "기능을 사용해 이미지를 만들 때 사진 단위로 이용권이 차감되며, 플랜별 제공량 안에서 사용합니다.",
+        },
+        "name": "이용권(토큰)은 어떻게 차감되나요?",
+      },
+    ],
+  },
+]
+`;
+
+exports[`Snapshot — 대표 페이지(translate)의 SEO 출력 고정 > metadata 스냅샷 1`] = `
+{
+  "alternates": {
+    "canonical": "/studio/translate",
+  },
+  "description": "1688·알리·타오바오 상세페이지의 중국어·영어 글자를 한국어로 자동 교체. 상품 이미지 속 외국어를 그대로 번역해 한글 상세페이지로 만드는 셀러AI 외국어 변환.",
+  "keywords": [
+    "1688 번역",
+    "알리 상세페이지 번역",
+    "타오바오 번역",
+    "중국어 이미지 번역",
+    "1688 상세페이지 번역하는 방법",
+    "상품 이미지 번역",
+    "상세페이지 번역",
+    "영어 이미지 번역",
+    "OCR 번역",
+  ],
+  "openGraph": {
+    "description": "상품 이미지 속 중국어·영어를 한국어로 자동 교체. 글자 위치·디자인은 유지하고 문구만 한글화.",
+    "images": [
+      {
+        "url": "/seo/translate/1688-translate-hero-after.webp",
+      },
+    ],
+    "locale": "ko_KR",
+    "siteName": "셀러AI",
+    "title": "1688·알리 상세페이지 번역 — 중국어 이미지 그대로 한글로",
+    "type": "website",
+    "url": "/studio/translate",
+  },
+  "robots": {
+    "follow": true,
+    "index": true,
+  },
+  "title": "1688·알리 상세페이지 번역 | 중국어 이미지 번역",
+  "twitter": {
+    "card": "summary_large_image",
+    "description": "상품 이미지 속 중국어·영어를 한국어로 자동 교체. 글자 위치·디자인은 유지하고 문구만 한글화.",
+    "images": [
+      "/seo/translate/1688-translate-hero-after.webp",
+    ],
+    "title": "1688·알리 상세페이지 번역 — 중국어 이미지 그대로 한글로",
+  },
+}
+`;
+
+exports[`Snapshot — 대표 페이지(translate)의 SEO 출력 고정 > preview 텍스트 스냅샷 1`] = `
+"══════════════════════════════════════════════════
+📄 [셀러AI] translate  
+══════════════════════════════════════════════════
+
+🔍 구글 검색결과 미리보기
+  1688·알리 상세페이지 번역 | 중국어 이미지 번역 | 셀러AI
+  https://www.armes.co.kr/sellerai/studio/translate
+  1688·알리·타오바오 상세페이지의 중국어·영어 글자를 한국어로 자동 교체. 상품 이미지 속 외국어를 그대로 번역해 한글 상세페이지로 만드는 셀러AI 외국어 변환.
+
+📤 공유 카드(OG) 미리보기
+  제목: 1688·알리 상세페이지 번역 — 중국어 이미지 그대로 한글로
+  설명: 상품 이미지 속 중국어·영어를 한국어로 자동 교체. 글자 위치·디자인은 유지하고 문구만 한글화.
+  이미지: /seo/translate/1688-translate-hero-after.webp
+
+🏷️  키워드(9개)
+  1688 번역, 알리 상세페이지 번역, 타오바오 번역, 중국어 이미지 번역, 1688 상세페이지 번역하는 방법, 상품 이미지 번역, 상세페이지 번역, 영어 이미지 번역, OCR 번역
+
+🧭 경로(Breadcrumb)
+  셀러AI › 1688·알리 상세페이지 번역
+
+🧩 구조화 데이터(JSON-LD) 종류
+  SoftwareApplication, BreadcrumbList
+  FAQ: 12개
+  robots: index,follow
+"
+`;
