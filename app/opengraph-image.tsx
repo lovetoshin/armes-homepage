@@ -53,7 +53,7 @@ export default function OgImage() {
           <div style={{
             width:           48, height: 48,
             borderRadius:    14,
-            background:      "linear-gradient(135deg, #8B5CF6, #6366F1)",
+            background:      "linear-gradient(135deg, #3182F6, #1B64DA)",
             display:         "flex",
             alignItems:      "center",
             justifyContent:  "center",

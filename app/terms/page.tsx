@@ -22,7 +22,7 @@ function Section({ num, title, children }: { num: string; title: string; childre
   return (
     <section className="mb-12">
       <h2 className="text-lg font-bold text-white mb-4 flex items-center gap-3">
-        <span className="w-7 h-7 rounded-lg bg-indigo-500/15 border border-indigo-500/25 flex items-center justify-center text-indigo-400 text-xs font-bold flex-shrink-0">
+        <span className="w-7 h-7 rounded-lg bg-blue-500/15 border border-blue-500/25 flex items-center justify-center text-blue-400 text-xs font-bold flex-shrink-0">
           {num}
         </span>
         {title}
@@ -76,7 +76,7 @@ function TermsContent() {
               ["콘텐츠", "이용자가 서비스에 게재한 텍스트, 이미지, 영상, 파일 등 모든 정보"],
             ].map(([term, def]) => (
               <li key={term} className="flex gap-2">
-                <span className="text-indigo-400 mt-1 flex-shrink-0">·</span>
+                <span className="text-blue-400 mt-1 flex-shrink-0">·</span>
                 <span><strong className="text-zinc-300">{term}:</strong> {def}</span>
               </li>
             ))}
@@ -114,7 +114,7 @@ function TermsContent() {
               "기타 회사가 정한 이용 신청 요건이 충족되지 않은 경우",
             ].map((item) => (
               <li key={item} className="flex gap-2">
-                <span className="text-indigo-400 flex-shrink-0">·</span>
+                <span className="text-blue-400 flex-shrink-0">·</span>
                 <span>{item}</span>
               </li>
             ))}
@@ -148,7 +148,7 @@ function TermsContent() {
               "통합 멤버십 인프라: QR/바코드 기반 통합 멤버십 연동 서비스",
             ].map((item) => (
               <li key={item} className="flex gap-2">
-                <span className="text-indigo-400 flex-shrink-0">·</span>
+                <span className="text-blue-400 flex-shrink-0">·</span>
                 <span>{item}</span>
               </li>
             ))}
@@ -168,7 +168,7 @@ function TermsContent() {
               "서비스 이용 폭주 등 운영상 불가피한 사유",
             ].map((item) => (
               <li key={item} className="flex gap-2">
-                <span className="text-indigo-400 flex-shrink-0">·</span>
+                <span className="text-blue-400 flex-shrink-0">·</span>
                 <span>{item}</span>
               </li>
             ))}
@@ -208,7 +208,7 @@ function TermsContent() {
               "기타 불법적이거나 회사 정책에 위반되는 행위",
             ].map((item) => (
               <li key={item} className="flex gap-2">
-                <span className="text-indigo-400 flex-shrink-0">·</span>
+                <span className="text-blue-400 flex-shrink-0">·</span>
                 <span>{item}</span>
               </li>
             ))}
@@ -244,7 +244,7 @@ function TermsContent() {
               "기타 회사가 정한 환불 불가 사유에 해당하는 경우",
             ].map((item) => (
               <li key={item} className="flex gap-2">
-                <span className="text-indigo-400 flex-shrink-0">·</span>
+                <span className="text-blue-400 flex-shrink-0">·</span>
                 <span>{item}</span>
               </li>
             ))}
@@ -267,7 +267,7 @@ function TermsContent() {
               "이용자가 제3자와 연계된 서비스를 이용하면서 발생한 손해",
             ].map((item) => (
               <li key={item} className="flex gap-2">
-                <span className="text-indigo-400 flex-shrink-0">·</span>
+                <span className="text-blue-400 flex-shrink-0">·</span>
                 <span>{item}</span>
               </li>
             ))}

@@ -22,7 +22,7 @@ function Section({ num, title, children }: { num: string; title: string; childre
   return (
     <section className="mb-12">
       <h2 className="text-lg font-bold text-white mb-4 flex items-center gap-3">
-        <span className="w-7 h-7 rounded-lg bg-violet-500/15 border border-violet-500/25 flex items-center justify-center text-violet-400 text-xs font-bold flex-shrink-0">
+        <span className="w-7 h-7 rounded-lg bg-blue-500/15 border border-blue-500/25 flex items-center justify-center text-blue-400 text-xs font-bold flex-shrink-0">
           {num}
         </span>
         {title}
@@ -88,7 +88,7 @@ function PrivacyContent() {
             ["마케팅 및 광고 활용", "신규 서비스 개발 및 맞춤 서비스 제공, 이벤트 및 광고성 정보 제공 및 참여기회 제공 등 (동의 시)"],
           ].map(([title, desc]) => (
             <li key={title} className="flex gap-2">
-              <span className="text-violet-500 mt-1 flex-shrink-0">·</span>
+              <span className="text-blue-500 mt-1 flex-shrink-0">·</span>
               <span><strong className="text-zinc-300">{title}:</strong> {desc}</span>
             </li>
           ))}
@@ -140,7 +140,7 @@ function PrivacyContent() {
             "수사기관의 요청이 있는 경우 (적법한 절차에 따름)",
           ].map((item) => (
             <li key={item} className="flex gap-2">
-              <span className="text-violet-500 mt-1 flex-shrink-0">·</span>
+              <span className="text-blue-500 mt-1 flex-shrink-0">·</span>
               <span>{item}</span>
             </li>
           ))}
@@ -182,7 +182,7 @@ function PrivacyContent() {
             "삭제 요구 (단, 법령에 따라 처리가 의무화된 경우 제외)",
           ].map((item, i) => (
             <li key={i} className="flex gap-2">
-              <span className="text-violet-500 mt-1 flex-shrink-0">·</span>
+              <span className="text-blue-500 mt-1 flex-shrink-0">·</span>
               <span>{item}</span>
             </li>
           ))}
@@ -205,7 +205,7 @@ function PrivacyContent() {
             "쿠키 설치·운영 거부: 이용자는 웹브라우저의 설정을 통해 쿠키 수집을 거부할 수 있습니다. 단, 거부 시 서비스 일부 기능 이용에 제한이 있을 수 있습니다.",
           ].map((item) => (
             <li key={item} className="flex gap-2">
-              <span className="text-violet-500 mt-1 flex-shrink-0">·</span>
+              <span className="text-blue-500 mt-1 flex-shrink-0">·</span>
               <span>{item}</span>
             </li>
           ))}
@@ -266,7 +266,7 @@ function PrivacyContent() {
             ["경찰청 사이버수사국", "ecrm.cyber.go.kr / 182"],
           ].map(([org, contact]) => (
             <li key={org} className="flex gap-2">
-              <span className="text-violet-500 flex-shrink-0">·</span>
+              <span className="text-blue-500 flex-shrink-0">·</span>
               <span><strong className="text-zinc-400">{org}:</strong> {contact}</span>
             </li>
           ))}
