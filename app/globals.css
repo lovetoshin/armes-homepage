@@ -64,7 +64,7 @@
 
 /* ===== SELECTION ===== */
 ::selection {
-  background: rgba(139, 92, 246, 0.35);
+  background: rgba(49, 130, 246, 0.30);
   color: #fff;
 }
 
@@ -91,7 +91,7 @@ body {
 
 /* ===== GRADIENT TEXT ===== */
 .gradient-text-brand {
-  background: linear-gradient(135deg, #a78bfa 0%, #818cf8 50%, #c4b5fd 100%);
+  background: linear-gradient(135deg, #3182F6 0%, #1B64DA 50%, #5B9BFF 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -152,6 +152,49 @@ body {
 .legal-content ol {
   color: #4E5968;
   padding-left: 1.25rem;
+}
+
+/* ===== POST(NEWS/BLOG) BODY TYPOGRAPHY ===== */
+.post-body {
+  color: #4E5968;
+  font-size: 1rem;
+  line-height: 1.9;
+}
+.post-body h2 {
+  color: #191F28;
+  font-weight: 800;
+  font-size: 1.5rem;
+  margin-top: 2.25rem;
+  margin-bottom: 0.75rem;
+}
+.post-body h3 {
+  color: #191F28;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-top: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+.post-body p {
+  margin-bottom: 1.1rem;
+}
+.post-body ul,
+.post-body ol {
+  padding-left: 1.3rem;
+  margin-bottom: 1.1rem;
+}
+.post-body ul { list-style: disc; }
+.post-body ol { list-style: decimal; }
+.post-body li { margin-bottom: 0.45rem; }
+.post-body strong { color: #191F28; font-weight: 700; }
+.post-body a {
+  color: #3182F6;
+  font-weight: 600;
+  text-decoration: underline;
+}
+.post-body hr {
+  border: 0;
+  border-top: 1px solid #E5E8EB;
+  margin: 2.25rem 0;
 }
 
 /* ===== NOISE TEXTURE ===== */

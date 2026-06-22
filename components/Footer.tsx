@@ -13,10 +13,9 @@ const footerNav = {
   기술: [
     { name: "기술 소개", href: "/#technology" },
   ],
-  // 소식(News/Blog)은 P2에서 라우트 개설 — 지금은 자리만 확보(준비중 표시)
   소식: [
-    { name: "News", href: "/news", soon: true },
-    { name: "Blog", href: "/blog", soon: true },
+    { name: "News", href: "/news" },
+    { name: "Blog", href: "/blog" },
   ],
   문의: [
     { name: "파트너·제휴 문의", href: "/contact" },
@@ -54,21 +53,12 @@ export default function Footer() {
               <ul className="space-y-3">
                 {links.map((link) => (
                   <li key={link.name}>
-                    {"soon" in link && link.soon ? (
-                      <span className="inline-flex items-center gap-1.5 text-[#C5C9CF] text-sm cursor-default">
-                        {link.name}
-                        <span className="text-[10px] font-semibold text-[#B0B8C1] bg-[#F2F4F6] px-1.5 py-0.5 rounded">
-                          준비중
-                        </span>
-                      </span>
-                    ) : (
-                      <Link
-                        href={link.href}
-                        className="text-[#8B95A1] hover:text-[#4E5968] text-sm transition-colors duration-150"
-                      >
-                        {link.name}
-                      </Link>
-                    )}
+                    <Link
+                      href={link.href}
+                      className="text-[#8B95A1] hover:text-[#4E5968] text-sm transition-colors duration-150"
+                    >
+                      {link.name}
+                    </Link>
                   </li>
                 ))}
               </ul>
