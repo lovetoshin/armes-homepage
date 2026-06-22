@@ -27,7 +27,7 @@ export default function ProjectCard({ project }: { project: Project }) {
         {project.tagline}
       </p>
 
-      <div className="flex flex-wrap gap-1.5 mb-5">
+      <div className="flex flex-wrap gap-1.5">
         {project.tech.map((t) => (
           <span
             key={t}
@@ -39,14 +39,14 @@ export default function ProjectCard({ project }: { project: Project }) {
       </div>
 
       {isLive ? (
-        <span className="inline-flex items-center gap-1.5 text-[#3182F6] font-bold text-sm">
+        <span className="mt-auto pt-5 inline-flex items-center gap-1.5 text-[#3182F6] font-bold text-sm">
           바로가기
           <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
           </svg>
         </span>
       ) : (
-        <span className="inline-flex items-center text-[#B0B8C1] font-semibold text-sm">
+        <span className="mt-auto pt-5 inline-flex items-center text-[#B0B8C1] font-semibold text-sm">
           {status.label}
         </span>
       )}
@@ -54,7 +54,7 @@ export default function ProjectCard({ project }: { project: Project }) {
   );
 
   const cardClass =
-    "block bg-white rounded-3xl border border-[#E5E8EB] p-6 h-full transition-shadow";
+    "flex flex-col bg-white rounded-3xl border border-[#E5E8EB] p-6 h-full transition-shadow";
 
   // 운영중이면 외부 앱으로 바로가기, 그 외에는 클릭 없는 정적 카드
   if (isLive) {

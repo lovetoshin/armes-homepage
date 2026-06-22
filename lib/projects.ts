@@ -43,7 +43,7 @@ export const projects: Project[] = [
     tagline: "쇼핑몰 셀러를 위한 AI 상품 이미지·상세페이지 자동화",
     status: "live",
     tech: ["AI", "Vision", "Automation"],
-    href: "/sellerai",
+    href: "https://www.armes.co.kr/sellerai/studio",
     icon: "🖼️",
   },
   {

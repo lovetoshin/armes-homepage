@@ -7,7 +7,7 @@ const footerNav = {
     { name: "프로젝트", href: "/projects" },
   ],
   프로젝트: [
-    { name: "SellerAI", href: "/sellerai" },
+    { name: "SellerAI", href: "https://www.armes.co.kr/sellerai/studio" },
     { name: "전체 보기", href: "/projects" },
   ],
   기술: [
