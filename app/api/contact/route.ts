@@ -23,7 +23,7 @@ function validate(data: Partial<ContactPayload>): string | null {
 
 async function sendEmail(data: ContactPayload) {
   const apiKey = process.env.RESEND_API_KEY;
-  const to     = process.env.CONTACT_TO ?? "support@armes.co.kr";
+  const to     = process.env.CONTACT_TO ?? "support.armes@gmail.com";
 
   if (!apiKey) {
     console.log("=== ARMES 문의 접수 (RESEND_API_KEY 미설정 — 콘솔 출력) ===");
@@ -78,7 +78,7 @@ async function sendEmail(data: ContactPayload) {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      from: "ARMES 홈페이지 <support@armes.co.kr>",
+      from: "ARMES 홈페이지 <support.armes@gmail.com>",
       to: [to],
       reply_to: data.email,
       subject: `[ARMES 문의] ${data.type} — ${data.name}`,

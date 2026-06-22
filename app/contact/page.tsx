@@ -81,7 +81,7 @@ export default function ContactPage() {
               <div className="space-y-3">
                 {[
                   { icon: "📞", label: "대표번호", value: "010-4995-9867", href: "tel:01049959867" },
-                  { icon: "✉️", label: "이메일",   value: "support@armes.co.kr", href: "mailto:support@armes.co.kr" },
+                  { icon: "✉️", label: "이메일",   value: "support.armes@gmail.com", href: "mailto:support.armes@gmail.com" },
                   { icon: "📍", label: "주소",     value: "경기도 남양주시 진접읍\n경복대로 425-80, 4층 6406호", href: null },
                 ].map((item) => (
                   <div key={item.label} className="flex items-start gap-3">

@@ -249,7 +249,7 @@ function PrivacyContent() {
           <p><strong className="text-zinc-300">성명:</strong> 신지한</p>
           <p><strong className="text-zinc-300">직책:</strong> 대표이사</p>
           <p><strong className="text-zinc-300">연락처:</strong> 010-4995-9867</p>
-          <p><strong className="text-zinc-300">이메일:</strong> support@armes.co.kr</p>
+          <p><strong className="text-zinc-300">이메일:</strong> support.armes@gmail.com</p>
         </div>
         <p className="mt-4">
           정보주체께서는 회사의 서비스를 이용하시면서 발생한 모든 개인정보 보호 관련 문의, 불만 처리, 피해구제 등에 관한

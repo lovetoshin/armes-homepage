@@ -146,7 +146,7 @@ export default function PartnerSection() {
             또는 직접 연락하세요 ·{" "}
             <a href="tel:01049959867" className="text-[#3182F6] font-semibold hover:underline">010-4995-9867</a>
             {" "}·{" "}
-            <a href="mailto:support@armes.co.kr" className="text-[#3182F6] font-semibold hover:underline">support@armes.co.kr</a>
+            <a href="mailto:support.armes@gmail.com" className="text-[#3182F6] font-semibold hover:underline">support.armes@gmail.com</a>
           </p>
         </motion.div>
 

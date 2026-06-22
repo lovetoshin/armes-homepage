@@ -249,7 +249,7 @@ function TermsContent() {
               </li>
             ))}
           </ul>
-          <p className="mt-2">③ 환불 요청은 고객센터(support@armes.co.kr / 010-4995-9867)로 문의 바랍니다.</p>
+          <p className="mt-2">③ 환불 요청은 고객센터(support.armes@gmail.com / 010-4995-9867)로 문의 바랍니다.</p>
         </Article>
 
       </Section>

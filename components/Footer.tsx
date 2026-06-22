@@ -75,7 +75,7 @@ export default function Footer() {
               <p className="text-[#4E5968] text-[13px] font-bold">주식회사 아르메스</p>
               <p className="text-[#8B95A1] text-xs">사업자등록번호: 798-86-02943 &nbsp;·&nbsp; 대표자: 신지한</p>
               <p className="text-[#8B95A1] text-xs">경기도 남양주시 진접읍 경복대로 425-80, 4층 6406호</p>
-              <p className="text-[#8B95A1] text-xs">대표번호: 010-4995-9867 &nbsp;·&nbsp; support@armes.co.kr</p>
+              <p className="text-[#8B95A1] text-xs">대표번호: 010-4995-9867 &nbsp;·&nbsp; support.armes@gmail.com</p>
             </div>
             <p className="text-[#C5C9CF] text-xs self-end">© 2024 주식회사 아르메스. All rights reserved.</p>
           </div>
