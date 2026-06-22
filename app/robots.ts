@@ -10,6 +10,9 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/", "/_next/"],
       },
     ],
-    sitemap: `${base}/sitemap.xml`,
+    sitemap: [
+      `${base}/sitemap.xml`,
+      "https://www.armes.co.kr/sellerai/sitemap.xml",
+    ],
   };
 }
