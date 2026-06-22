@@ -38,7 +38,7 @@ export default function SellerInfoPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <a
-              href="https://armes.co.kr/sellerai"
+              href="https://www.armes.co.kr/sellerai/studio"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 bg-[#3182F6] hover:bg-[#1B64DA] text-white px-8 py-4 rounded-2xl font-bold text-[15px] transition-all shadow-[0_4px_16px_rgba(49,130,246,0.3)]"
