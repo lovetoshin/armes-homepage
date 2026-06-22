@@ -57,8 +57,7 @@ export const projects: Project[] = [
   {
     key: "travelmoa",
     name: "TravelMoa",
-    // ⚠️ 추정 카피 — 형님 확인 필요
-    tagline: "여행 정보를 한곳에 모아주는 스마트 여행 도우미",
+    tagline: "여행 특가와 항공권을 한곳에서 찾는 스마트 여행 플랫폼",
     status: "soon",
     tech: ["Location", "AI"],
     icon: "✈️",
@@ -66,17 +65,15 @@ export const projects: Project[] = [
   {
     key: "cocoping",
     name: "CocoPing",
-    // ⚠️ 추정 카피 — 형님 확인 필요
-    tagline: "일상을 더 편리하게 연결하는 AI 서비스",
+    tagline: "코스트코 할인정보와 가격 변동을 한눈에 보는 쇼핑 도우미",
     status: "soon",
     tech: ["AI", "Automation"],
-    icon: "🐾",
+    icon: "🛒",
   },
   {
     key: "rankingpangpang",
     name: "RankingPangPang",
-    // ⚠️ 추정 카피 — 형님 확인 필요
-    tagline: "데이터로 순위를 한눈에 보여주는 랭킹 서비스",
+    tagline: "분야별 인기 상품을 AI로 분석해 추천하는 랭킹 플랫폼",
     status: "soon",
     tech: ["Automation", "AI"],
     icon: "📊",
@@ -93,10 +90,9 @@ export const projects: Project[] = [
   {
     key: "hoosamgukji",
     name: "후삼국지",
-    // ⚠️ 추정 카피 — 형님 확인 필요
-    tagline: "AI로 되살린 역사 콘텐츠 프로젝트",
+    tagline: "대한민국 후삼국 시대를 배경으로 한 전략 시뮬레이션 게임",
     status: "soon",
     tech: ["AI"],
-    icon: "📜",
+    icon: "⚔️",
   },
 ];
