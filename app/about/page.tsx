@@ -40,9 +40,17 @@ const orgJsonLd = {
   name: "ARMES",
   legalName: "주식회사 아르메스",
   url: "https://armes.co.kr",
+  logo: "https://armes.co.kr/armes-logo.png",
   email: "support.armes@gmail.com",
   telephone: "+82-10-4995-9867",
+  taxID: "798-86-02943",
   founder: { "@type": "Person", name: "신지한" },
+  contactPoint: {
+    "@type": "ContactPoint",
+    contactType: "customer support",
+    email: "support.armes@gmail.com",
+    telephone: "+82-10-4995-9867",
+  },
   address: {
     "@type": "PostalAddress",
     streetAddress: "진접읍 경복대로 425-80, 4층 6406호",

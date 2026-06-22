@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "ARMES — 차세대 로컬 플랫폼";
+export const alt = "ARMES — AI 기술로 일상을 자동화하는 회사";
 export const size    = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -27,13 +27,13 @@ export default function OgImage() {
           position: "absolute", top: -120, right: -120,
           width: 600, height: 600,
           borderRadius: "50%",
-          background: "radial-gradient(circle, rgba(139,92,246,0.25) 0%, transparent 70%)",
+          background: "radial-gradient(circle, rgba(49,130,246,0.25) 0%, transparent 70%)",
         }} />
         <div style={{
           position: "absolute", bottom: -80, left: 200,
           width: 400, height: 400,
           borderRadius: "50%",
-          background: "radial-gradient(circle, rgba(99,102,241,0.15) 0%, transparent 70%)",
+          background: "radial-gradient(circle, rgba(49,130,246,0.12) 0%, transparent 70%)",
         }} />
 
         {/* Dot grid */}
@@ -83,17 +83,17 @@ export default function OgImage() {
           marginBottom:   24,
           maxWidth:       680,
         }}>
-          일상의 소비와
+          AI 기술로
           <br />
           <span style={{
-            background:           "linear-gradient(135deg, #a78bfa 0%, #818cf8 50%, #c4b5fd 100%)",
+            background:           "linear-gradient(135deg, #5B9BFF 0%, #3182F6 50%, #1B64DA 100%)",
             WebkitBackgroundClip: "text",
             color:                "transparent",
           }}>
-            지역을 연결하는
+            일상을 자동화하는
           </span>
           <br />
-          로컬 플랫폼
+          회사
         </h1>
 
         {/* Sub */}
@@ -105,19 +105,23 @@ export default function OgImage() {
           maxWidth:     560,
           lineHeight:   1.6,
         }}>
-          RewardTalk · Seller AI · 지역 공동구매 · 매장 SaaS
+          SellerAI · RewardTalk · TravelMoa 등 AI 서비스
         </p>
 
-        {/* Stats row */}
-        <div style={{ display: "flex", gap: 40 }}>
-          {[
-            ["500+", "파트너 매장"],
-            ["5만+", "앱 다운로드"],
-            ["12개", "서비스 지역"],
-          ].map(([val, label]) => (
-            <div key={label} style={{ display: "flex", flexDirection: "column", gap: 4 }}>
-              <span style={{ color: "#fff", fontSize: 30, fontWeight: 700 }}>{val}</span>
-              <span style={{ color: "rgba(113,113,122,1)", fontSize: 14, fontWeight: 500 }}>{label}</span>
+        {/* Technology chips */}
+        <div style={{ display: "flex", gap: 12 }}>
+          {["AI", "Automation", "Vision", "Location"].map((t) => (
+            <div key={t} style={{
+              display:      "flex",
+              padding:      "8px 18px",
+              borderRadius: 40,
+              background:   "rgba(49,130,246,0.12)",
+              border:       "1px solid rgba(49,130,246,0.30)",
+              color:        "#5B9BFF",
+              fontSize:     18,
+              fontWeight:   600,
+            }}>
+              {t}
             </div>
           ))}
         </div>

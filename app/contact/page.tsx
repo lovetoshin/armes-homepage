@@ -5,6 +5,7 @@ import ContactForm from "@/components/forms/ContactForm";
 export const metadata: Metadata = {
   title: "파트너 문의 | ARMES",
   description: "ARMES 파트너십, 제휴, 투자 문의 및 고객 지원 연락처",
+  alternates: { canonical: "/contact" },
 };
 
 const infoCards = [
