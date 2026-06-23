@@ -27,10 +27,11 @@ const values = [
   },
 ];
 
+// 괄호 안 제품명(ref)은 한 덩어리로 묶어 줄바꿈으로 쪼개지지 않게 한다
 const areas = [
-  { icon: "🖼️", title: "커머스 AI", desc: "쇼핑몰 셀러를 위한 이미지·상세페이지 자동화 (SellerAI)" },
-  { icon: "🎁", title: "로컬 생활", desc: "지역 매장과 사용자를 잇는 멤버십·공동구매 (RewardTalk)" },
-  { icon: "✈️", title: "여행·라이프", desc: "여행과 일상을 돕는 위치 기반 서비스 (TravelMoa 등)" },
+  { icon: "🖼️", title: "커머스 AI", desc: "쇼핑몰 셀러를 위한 이미지·상세페이지 자동화", ref: "SellerAI" },
+  { icon: "🎁", title: "로컬 생활", desc: "지역 매장과 사용자를 잇는 멤버십·공동구매", ref: "RewardTalk" },
+  { icon: "✈️", title: "여행·라이프", desc: "여행과 일상을 돕는 위치 기반 서비스", ref: "TravelMoa 등" },
 ];
 
 // 회사 신뢰 신호(Organization 구조화 데이터)
@@ -162,7 +163,9 @@ export default function AboutPage() {
               <div key={a.title} className="border border-[#E5E8EB] rounded-3xl p-6">
                 <div className="text-2xl mb-3">{a.icon}</div>
                 <h3 className="text-[#191F28] font-extrabold text-base mb-2">{a.title}</h3>
-                <p className="text-[#8B95A1] text-sm leading-relaxed keep-all">{a.desc}</p>
+                <p className="text-[#8B95A1] text-sm leading-relaxed keep-all">
+                  {a.desc} <span className="whitespace-nowrap">({a.ref})</span>
+                </p>
               </div>
             ))}
           </div>
