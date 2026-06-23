@@ -68,7 +68,7 @@ export const projects: Project[] = [
     status: "soon",
     tech: ["Location", "Automation"],
     icon: "🎁",
-    thumbnail: "/projects/rewardtalk-1.jpg",
+    thumbnail: "/projects/rewardtalk-2.jpg",
   },
   {
     key: "travelmoa",
@@ -78,7 +78,7 @@ export const projects: Project[] = [
     status: "soon",
     tech: ["Location", "AI"],
     icon: "✈️",
-    thumbnail: "/projects/travelmoa-1.jpg",
+    thumbnail: "/projects/travelmoa-2.jpg",
   },
   {
     key: "cocoping",
@@ -88,7 +88,7 @@ export const projects: Project[] = [
     status: "soon",
     tech: ["AI", "Automation"],
     icon: "🛒",
-    thumbnail: "/projects/cocoping-1.jpg",
+    thumbnail: "/projects/cocoping-2.jpg",
   },
   {
     key: "rankingpangpang",

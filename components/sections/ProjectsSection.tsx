@@ -13,9 +13,18 @@ export default function ProjectsSection() {
   const ref = useRef<HTMLElement>(null);
   const isInView = useInView(ref, { once: true, margin: "-60px" });
 
-  // 홈에서는 대표 6개까지만 (운영중 우선 정렬)
-  const order = { live: 0, soon: 1, research: 2 } as const;
-  const preview = [...projects].sort((a, b) => order[a.status] - order[b.status]).slice(0, 6);
+  // 정사각형 와꾸 배치 — 홈에 노출할 7개를 키로 직접 선택(후삼국지 제외, 전체는 /projects)
+  const byKey = (k: string) => projects.find((p) => p.key === k)!;
+  // 1행: 폰 3개 / 셀러AI는 2칸 폭으로 크게 / 3열엔 코코핑 아래로 작은 카드 3개
+  const cells = [
+    { p: byKey("rewardtalk"), cls: "lg:col-start-1 lg:row-start-1" },
+    { p: byKey("travelmoa"), cls: "lg:col-start-2 lg:row-start-1" },
+    { p: byKey("cocoping"), cls: "lg:col-start-3 lg:row-start-1" },
+    { p: byKey("sellerai"), cls: "lg:col-start-1 lg:col-span-2 lg:row-start-2 lg:row-span-3" },
+    { p: byKey("tools"), cls: "lg:col-start-3 lg:row-start-2" },
+    { p: byKey("rankingpangpang"), cls: "lg:col-start-3 lg:row-start-3" },
+    { p: byKey("photosort"), cls: "lg:col-start-3 lg:row-start-4" },
+  ];
 
   return (
     <section id="projects" ref={ref} className="bg-white py-24 lg:py-28">
@@ -40,15 +49,16 @@ export default function ProjectsSection() {
           </Link>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 items-start">
-          {preview.map((p, i) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:[grid-auto-rows:min-content]">
+          {cells.map((c, i) => (
             <motion.div
-              key={p.key}
+              key={c.p.key}
+              className={c.cls}
               initial={{ opacity: 0, y: 18 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: 0.07 * i }}
+              transition={{ duration: 0.5, delay: 0.06 * i }}
             >
-              <ProjectCard project={p} />
+              <ProjectCard project={c.p} />
             </motion.div>
           ))}
         </div>
