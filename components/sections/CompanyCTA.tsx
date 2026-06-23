@@ -26,23 +26,22 @@ export default function CompanyCTA() {
           initial={{ opacity: 0, y: 24 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-          className="rounded-[32px] bg-[#3182F6] px-8 py-14 lg:px-16 lg:py-16 text-center"
+          className="rounded-[28px] bg-[#3182F6] px-8 py-7 lg:px-16 lg:py-9 text-center"
         >
-          <h2 className="text-3xl lg:text-4xl font-extrabold text-white tracking-tight mb-4 keep-all">
+          <h2 className="text-2xl lg:text-[28px] font-extrabold text-white tracking-tight mb-2.5 keep-all">
             아르메스와 함께 만들어요
           </h2>
-          <p className="text-white/85 text-base lg:text-lg leading-relaxed max-w-xl mx-auto mb-9 keep-all">
-            새로운 AI 서비스 제휴, 파트너십, 사업 제안을 환영합니다.
-            언제든 편하게 문의해 주세요.
+          <p className="text-white/85 text-[15px] lg:text-base leading-relaxed max-w-xl mx-auto mb-6 keep-all text-balance">
+            새로운 AI 서비스 제휴와 사업 협업을 환영합니다.
           </p>
           <button
             onClick={openContact}
-            className="inline-flex items-center justify-center gap-2 bg-white text-[#191F28] px-8 py-4 rounded-2xl font-bold text-[15px] hover:bg-[#F2F4F6] transition-colors"
+            className="inline-flex items-center justify-center gap-2 bg-white text-[#191F28] px-7 py-3.5 rounded-xl font-bold text-[14px] hover:bg-[#F2F4F6] transition-colors"
           >
             파트너·제휴 문의하기
           </button>
 
-          <div className="mt-10 flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
+          <div className="mt-6 flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
             {trustBadges.map((b) => (
               <div key={b} className="flex items-center gap-1.5 text-white/80 text-xs font-medium">
                 <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.2}>
