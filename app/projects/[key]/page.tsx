@@ -4,8 +4,14 @@ import { notFound } from "next/navigation";
 import Footer from "@/components/Footer";
 import { projects, STATUS_META } from "@/lib/projects";
 import { projectDetails } from "@/lib/project-details";
+import { projectSeo } from "@/lib/project-seo";
 
 const SITE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://armes.co.kr";
+
+function absUrl(p?: string) {
+  if (!p) return undefined;
+  return p.startsWith("http") ? p : `${SITE}${p}`;
+}
 
 // 홈 프로젝트 섹션의 배치 순서 — 이전/다음 이동에 사용
 const ORDER = [
@@ -34,15 +40,28 @@ export async function generateMetadata({
   const project = projects.find((p) => p.key === key);
   if (!project) return { title: "프로젝트 | ARMES" };
   const detail = projectDetails[key];
+  const seo = projectSeo[key];
+  const desc = detail?.intro ?? project.tagline;
+  const title = seo ? `${seo.title} | ARMES` : `${project.name} | ARMES 프로젝트`;
+  const ogImg = absUrl(seo?.og ?? project.thumbnail);
   return {
-    title: `${project.name} | ARMES 프로젝트`,
-    description: detail?.intro ?? project.tagline,
+    title,
+    description: desc,
+    ...(seo?.keywords ? { keywords: seo.keywords } : {}),
     alternates: { canonical: `/projects/${key}` },
     openGraph: {
       type: "website",
-      title: `${project.name} | ARMES`,
-      description: detail?.intro ?? project.tagline,
-      ...(project.thumbnail ? { images: [project.thumbnail] } : {}),
+      title,
+      description: desc,
+      url: `${SITE}/projects/${key}`,
+      siteName: "ARMES",
+      ...(ogImg ? { images: [{ url: ogImg, width: 1200, height: 630, alt: project.name }] } : {}),
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description: desc,
+      ...(ogImg ? { images: [ogImg] } : {}),
     },
   };
 }
@@ -67,14 +86,42 @@ export default async function ProjectDetailPage({
   const prev = prevKey ? projects.find((p) => p.key === prevKey) : null;
   const next = nextKey ? projects.find((p) => p.key === nextKey) : null;
 
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    itemListElement: [
-      { "@type": "ListItem", position: 1, name: "프로젝트", item: `${SITE}/projects` },
-      { "@type": "ListItem", position: 2, name: project.name, item: `${SITE}/projects/${key}` },
-    ],
-  };
+  const seo = projectSeo[key];
+  const ogImg = absUrl(seo?.og ?? project.thumbnail);
+
+  const jsonLd = [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "프로젝트", item: `${SITE}/projects` },
+        { "@type": "ListItem", position: 2, name: project.name, item: `${SITE}/projects/${key}` },
+      ],
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      name: project.name,
+      description: detail?.intro ?? project.tagline,
+      ...(seo?.appCategory ? { applicationCategory: seo.appCategory } : {}),
+      ...(seo?.operatingSystem ? { operatingSystem: seo.operatingSystem } : {}),
+      url: `${SITE}/projects/${key}`,
+      ...(ogImg ? { image: ogImg } : {}),
+      inLanguage: "ko-KR",
+      publisher: { "@type": "Organization", name: "주식회사 아르메스", url: SITE },
+      // 운영중 서비스만 '무료' 제공 표기 (별점/리뷰는 실제 데이터 없어 넣지 않음)
+      ...(isLive
+        ? {
+            offers: {
+              "@type": "Offer",
+              price: "0",
+              priceCurrency: "KRW",
+              availability: "https://schema.org/InStock",
+            },
+          }
+        : {}),
+    },
+  ];
 
   return (
     <div className="min-h-screen bg-white">

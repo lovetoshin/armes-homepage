@@ -1,5 +1,13 @@
 import type { MetadataRoute } from "next";
 import { getAllPosts, BLOG_CATEGORIES, categorySlug } from "@/lib/posts";
+import { projects, type ProjectStatus } from "@/lib/projects";
+
+// 서비스 상태별 우선순위(운영중 > 준비중 > 연구중)
+const SERVICE_PRIORITY: Record<ProjectStatus, number> = {
+  live: 0.8,
+  soon: 0.6,
+  research: 0.5,
+};
 
 // "YYYY-MM-DD" → ISO. 형식이 이상하면 현재 시각으로 대체.
 function toIso(date: string, fallback: string): string {
@@ -63,6 +71,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency:  "yearly",
       priority:         0.4,
     },
+    // 서비스(프로젝트) 상세 페이지 — 블로그 유입을 실제 서비스로 연결
+    ...projects.map((p) => ({
+      url:             `${base}/projects/${p.key}`,
+      lastModified:    now,
+      changeFrequency: "monthly" as const,
+      priority:        SERVICE_PRIORITY[p.status],
+    })),
     // Blog 카테고리 인덱스(키워드 허브)
     ...BLOG_CATEGORIES.map((cat) => ({
       url:             `${base}/blog/category/${categorySlug(cat)}`,
