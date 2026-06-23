@@ -1,7 +1,13 @@
 ---
 title: SellerAI 정식 서비스 오픈
 date: 2026-06-10
+updated: 2026-06-24
+category: 서비스 출시
 excerpt: 쇼핑몰 셀러를 위한 AI 상품 이미지·상세페이지 자동화 서비스 SellerAI가 정식으로 문을 열었습니다.
+thumbnail: /blog/covers/sellerai-launch.png
+imageAlt: 쇼핑몰 셀러용 AI 상품 이미지·상세페이지 자동화 SellerAI 화면
+tags: [SellerAI, AI 상품 이미지, 상세페이지 자동화, 서비스 출시]
+relatedServices: [sellerai]
 ---
 
 아르메스의 첫 정식 서비스인 **SellerAI**가 오픈했습니다.

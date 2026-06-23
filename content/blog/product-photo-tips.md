@@ -1,8 +1,13 @@
 ---
 title: 쇼핑몰 상품 사진, 이렇게 준비하면 좋습니다
 date: 2026-06-15
-category: 셀러 노하우
+updated: 2026-06-24
+category: 쇼핑
 excerpt: 상품 사진을 찍기 전에 챙기면 좋은 기본기를 정리했습니다. 작은 차이가 구매 결정을 바꿉니다.
+thumbnail: /blog/covers/product-photo-tips.png
+imageAlt: 쇼핑몰 상품 사진 잘 찍는 법 가이드
+tags: [상품 사진, 쇼핑몰, 스마트스토어, 사진 촬영]
+relatedServices: [sellerai]
 ---
 
 온라인에서 상품을 파는 분들에게 사진은 사실상 첫인상입니다. 고객은 사진을 먼저 보고, 그다음에 설명을 읽습니다. 거창한 장비가 없어도 몇 가지 기본기만 챙기면 사진의 완성도가 달라집니다.

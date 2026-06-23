@@ -21,7 +21,7 @@ export default function PostCard({ post, type }: { post: PostMeta; type: PostTyp
           // eslint-disable-next-line @next/next/no-img-element
           <img
             src={post.thumbnail}
-            alt={post.title}
+            alt={post.imageAlt || post.title}
             className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-300"
           />
         ) : (
@@ -43,7 +43,10 @@ export default function PostCard({ post, type }: { post: PostMeta; type: PostTyp
         <p className="text-[#8B95A1] text-sm leading-relaxed mb-4 keep-all line-clamp-2">
           {post.excerpt}
         </p>
-        <p className="text-[#B0B8C1] text-xs font-medium">{formatDate(post.date)}</p>
+        <p className="text-[#B0B8C1] text-xs font-medium">
+          {formatDate(post.date)}
+          {post.readingTime ? <> · {post.readingTime}분 읽기</> : null}
+        </p>
       </div>
     </Link>
   );

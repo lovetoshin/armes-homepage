@@ -1,8 +1,13 @@
 ---
 title: AI로 상세페이지를 만들 때 알아두면 좋은 3가지
 date: 2026-06-18
-category: AI 활용
+updated: 2026-06-24
+category: AI
 excerpt: AI 도구로 상세페이지를 만들 때 결과물의 완성도를 높이는 작은 습관을 정리했습니다.
+thumbnail: /blog/covers/ai-detail-page-guide.png
+imageAlt: AI로 쇼핑몰 상세페이지 만드는 법 가이드
+tags: [AI 상세페이지, 상세페이지 제작, AI 활용, 쇼핑몰]
+relatedServices: [sellerai]
 ---
 
 AI가 상세페이지를 대신 만들어 주는 시대지만, 똑같은 도구를 써도 결과물의 완성도는 사람마다 다릅니다. 몇 가지만 신경 쓰면 훨씬 자연스러운 결과를 얻을 수 있습니다.

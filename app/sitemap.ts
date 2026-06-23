@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { getAllPosts } from "@/lib/posts";
+import { getAllPosts, BLOG_CATEGORIES } from "@/lib/posts";
 
 // "YYYY-MM-DD" → ISO. 형식이 이상하면 현재 시각으로 대체.
 function toIso(date: string, fallback: string): string {
@@ -63,16 +63,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency:  "yearly",
       priority:         0.4,
     },
-    // News/Blog 개별 글 자동 등록
+    // Blog 카테고리 인덱스(키워드 허브)
+    ...BLOG_CATEGORIES.map((cat) => ({
+      url:             `${base}/blog/category/${encodeURIComponent(cat)}`,
+      lastModified:    now,
+      changeFrequency: "weekly" as const,
+      priority:        0.6,
+    })),
+    // News/Blog 개별 글 자동 등록 (수정일 우선)
     ...newsPosts.map((p) => ({
       url:             `${base}/news/${p.slug}`,
-      lastModified:    toIso(p.date, now),
+      lastModified:    toIso(p.updated || p.date, now),
       changeFrequency: "monthly" as const,
       priority:        0.6,
     })),
     ...blogPosts.map((p) => ({
       url:             `${base}/blog/${p.slug}`,
-      lastModified:    toIso(p.date, now),
+      lastModified:    toIso(p.updated || p.date, now),
       changeFrequency: "monthly" as const,
       priority:        0.6,
     })),

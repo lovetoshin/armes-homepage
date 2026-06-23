@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import Footer from "@/components/Footer";
-import PostCard from "@/components/PostCard";
-import { getAllPosts } from "@/lib/posts";
+import BlogList from "@/components/BlogList";
+import { getAllPosts, NEWS_CATEGORIES } from "@/lib/posts";
 
 export const metadata: Metadata = {
   title: "News | ARMES",
-  description: "아르메스의 공식 소식 — 서비스 출시, 제휴, 회사 발표를 전합니다.",
+  description:
+    "아르메스의 공식 소식 — 서비스 출시, 업데이트, 제휴, 개발 현황, 공지를 전합니다.",
   alternates: { canonical: "/news" },
 };
 
@@ -30,11 +31,7 @@ export default function NewsPage() {
         {posts.length === 0 ? (
           <p className="text-center text-[#8B95A1]">아직 등록된 소식이 없습니다.</p>
         ) : (
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {posts.map((p) => (
-              <PostCard key={p.slug} post={p} type="news" />
-            ))}
-          </div>
+          <BlogList posts={posts} categories={NEWS_CATEGORIES} type="news" />
         )}
       </div>
 

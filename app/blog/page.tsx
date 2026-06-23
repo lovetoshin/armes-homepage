@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import Footer from "@/components/Footer";
 import BlogList from "@/components/BlogList";
-import { getAllPosts } from "@/lib/posts";
+import { getAllPosts, BLOG_CATEGORIES } from "@/lib/posts";
 
 export const metadata: Metadata = {
   title: "Blog | ARMES",
   description:
-    "셀러 노하우, AI 활용, 회사 이야기 — 아르메스가 전하는 인사이트와 노하우를 읽어보세요.",
+    "AI·쇼핑·여행·주유·전기차·코스트코·SEO·생산성도구까지 — 아르메스가 전하는 생활 속 정보와 노하우를 읽어보세요.",
   alternates: { canonical: "/blog" },
 };
 
@@ -22,13 +22,13 @@ export default function BlogPage() {
             인사이트 &amp; 노하우
           </h1>
           <p className="text-[#4E5968] text-lg leading-relaxed max-w-2xl mx-auto keep-all">
-            셀러 노하우부터 AI 활용법, 회사 이야기까지 함께 나눕니다.
+            AI 활용법부터 쇼핑·여행·주유·코스트코 꿀팁까지, 생활에 바로 쓰는 정보를 나눕니다.
           </p>
         </div>
       </div>
 
       <div className="max-w-6xl mx-auto px-5 lg:px-8 py-20">
-        <BlogList posts={posts} />
+        <BlogList posts={posts} categories={BLOG_CATEGORIES} type="blog" />
       </div>
 
       <Footer />

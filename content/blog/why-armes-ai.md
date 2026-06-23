@@ -1,8 +1,13 @@
 ---
 title: 아르메스가 AI 회사를 시작한 이유
 date: 2026-06-21
-category: 회사 이야기
+updated: 2026-06-24
+category: AI
 excerpt: 유통 현장에서 겪은 불편이 어떻게 AI 서비스로 이어졌는지, 아르메스의 시작 이야기를 나눕니다.
+thumbnail: /blog/covers/why-armes-ai.png
+imageAlt: 유통 현장의 불편에서 시작한 아르메스 AI 서비스 이야기
+tags: [아르메스, AI 회사, 창업 이야기, 자동화]
+relatedServices: [sellerai, tools]
 ---
 
 아르메스는 화려한 기술에서 출발하지 않았습니다. 시작은 **현장의 불편**이었습니다.
