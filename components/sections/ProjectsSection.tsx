@@ -2,9 +2,12 @@
 
 import Link from "next/link";
 import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { projects } from "@/lib/projects";
 import ProjectCard from "@/components/ProjectCard";
+
+// 데스크탑 그리드 콘텐츠 폭(px) — 모바일은 이 폭으로 그린 뒤 화면에 맞춰 통째로 축소
+const DESIGN_W = 1088;
 
 /**
  * 홈의 Projects 섹션 — 대표 프로젝트를 카드로 미리 보여주고, 전체는 /projects로.
@@ -12,6 +15,32 @@ import ProjectCard from "@/components/ProjectCard";
 export default function ProjectsSection() {
   const ref = useRef<HTMLElement>(null);
   const isInView = useInView(ref, { once: true, margin: "-60px" });
+
+  // 모바일에서는 데스크탑 쇼케이스를 비율 그대로 통째로 축소(글자·사진·간격 비율 100% 동일, 크기만 작아짐)
+  const clipRef = useRef<HTMLDivElement>(null);
+  const stageRef = useRef<HTMLDivElement>(null);
+  const [scale, setScale] = useState(1);
+  const [stageH, setStageH] = useState<number | undefined>(undefined);
+  const [ready, setReady] = useState(false);
+
+  useEffect(() => {
+    const clip = clipRef.current;
+    const stage = stageRef.current;
+    if (!clip || !stage) return;
+    const update = () => {
+      const avail = clip.clientWidth; // 화면(폰)에서 쓸 수 있는 가로폭
+      const s = Math.min(1, avail / DESIGN_W); // 데스크탑이면 1(축소 안 함), 좁으면 비율만큼 축소
+      setScale(s);
+      // 축소하면 원래 높이도 같이 줄여서 아래 빈 공간을 없앤다(offsetHeight는 transform 영향 안 받음)
+      setStageH(s < 1 ? stage.offsetHeight * s : undefined);
+      setReady(true);
+    };
+    update();
+    const ro = new ResizeObserver(update);
+    ro.observe(clip);
+    ro.observe(stage); // 이미지 로딩으로 높이 바뀌면 다시 계산
+    return () => ro.disconnect();
+  }, []);
 
   // 정사각형 와꾸 배치 — 홈에 노출할 7개를 키로 직접 선택(후삼국지 제외, 전체는 /projects)
   const byKey = (k: string) => projects.find((p) => p.key === k)!;
@@ -54,19 +83,37 @@ export default function ProjectsSection() {
           </Link>
         </div>
 
-        {/* 1행(폰)=auto, 2~4행=1fr 균등 → 오른쪽 세로줄 3개 카드 높이 동일 */}
-        <div className="grid grid-cols-3 gap-3 sm:gap-5 [grid-template-rows:auto_1fr_1fr_1fr]">
-          {cells.map((c, i) => (
-            <motion.div
-              key={c.p.key}
-              className={`${c.cls} h-full`}
-              initial={{ opacity: 0, y: 18 }}
-              animate={isInView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: 0.06 * i }}
-            >
-              <ProjectCard project={c.p} />
-            </motion.div>
-          ))}
+        {/* 데스크탑은 그대로(scale=1), 모바일은 이 쇼케이스를 비율 그대로 통째로 축소 */}
+        <div
+          ref={clipRef}
+          className="overflow-hidden"
+          style={stageH !== undefined ? { height: stageH } : undefined}
+        >
+          <div
+            ref={stageRef}
+            style={{
+              width: DESIGN_W,
+              transform: `scale(${scale})`,
+              transformOrigin: "top left",
+              opacity: ready ? 1 : 0,
+              transition: "opacity 0.2s ease",
+            }}
+          >
+            {/* 1행(폰)=auto, 2~4행=1fr 균등 → 오른쪽 세로줄 3개 카드 높이 동일 */}
+            <div className="grid grid-cols-3 gap-5 [grid-template-rows:auto_1fr_1fr_1fr]">
+              {cells.map((c, i) => (
+                <motion.div
+                  key={c.p.key}
+                  className={`${c.cls} h-full`}
+                  initial={{ opacity: 0, y: 18 }}
+                  animate={isInView ? { opacity: 1, y: 0 } : {}}
+                  transition={{ duration: 0.5, delay: 0.06 * i }}
+                >
+                  <ProjectCard project={c.p} />
+                </motion.div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>
