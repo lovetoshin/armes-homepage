@@ -16,18 +16,19 @@ export default function ProjectsSection() {
   // 정사각형 와꾸 배치 — 홈에 노출할 7개를 키로 직접 선택(후삼국지 제외, 전체는 /projects)
   const byKey = (k: string) => projects.find((p) => p.key === k)!;
   // 1행: 폰 3개 / 셀러AI는 2칸 폭으로 크게 / 3열엔 코코핑 아래로 작은 카드 3개
+  // 모든 화면에서 데스크탑과 토시 하나 안 틀리게 동일 배치(lg: 분기 제거) — 모바일은 작게·깨알 글씨여도 동일 와꾸
   const cells = [
-    // 1행: 폰 3개 (아래 행과 간격을 주기 위해 lg:mb-2)
-    { p: byKey("rewardtalk"), cls: "lg:col-start-1 lg:row-start-1 lg:mb-2" },
-    { p: byKey("travelmoa"), cls: "lg:col-start-2 lg:row-start-1 lg:mb-2" },
-    { p: byKey("cocoping"), cls: "lg:col-start-3 lg:row-start-1 lg:mb-2" },
+    // 1행: 폰 3개 (아래 행과 간격)
+    { p: byKey("rewardtalk"), cls: "col-start-1 row-start-1 mb-2" },
+    { p: byKey("travelmoa"), cls: "col-start-2 row-start-1 mb-2" },
+    { p: byKey("cocoping"), cls: "col-start-3 row-start-1 mb-2" },
     // 셀러AI 2칸(크기 유지) + 그 아래 후삼국지 2칸 → PhotoSort와 라인 맞춤
-    { p: byKey("sellerai"), cls: "lg:col-start-1 lg:col-span-2 lg:row-start-2 lg:row-span-2" },
-    { p: byKey("hoosamgukji"), cls: "lg:col-start-1 lg:col-span-2 lg:row-start-4" },
+    { p: byKey("sellerai"), cls: "col-start-1 col-span-2 row-start-2 row-span-2" },
+    { p: byKey("hoosamgukji"), cls: "col-start-1 col-span-2 row-start-4" },
     // 3열(코코핑 아래): 세로로 나란히
-    { p: byKey("tools"), cls: "lg:col-start-3 lg:row-start-2" },
-    { p: byKey("rankingpangpang"), cls: "lg:col-start-3 lg:row-start-3" },
-    { p: byKey("photosort"), cls: "lg:col-start-3 lg:row-start-4" },
+    { p: byKey("tools"), cls: "col-start-3 row-start-2" },
+    { p: byKey("rankingpangpang"), cls: "col-start-3 row-start-3" },
+    { p: byKey("photosort"), cls: "col-start-3 row-start-4" },
   ];
 
   return (
@@ -53,11 +54,12 @@ export default function ProjectsSection() {
           </Link>
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-5 items-start lg:[grid-auto-rows:min-content]">
+        {/* 1행(폰)=auto, 2~4행=1fr 균등 → 오른쪽 세로줄 3개 카드 높이 동일 */}
+        <div className="grid grid-cols-3 gap-3 sm:gap-5 [grid-template-rows:auto_1fr_1fr_1fr]">
           {cells.map((c, i) => (
             <motion.div
               key={c.p.key}
-              className={c.cls}
+              className={`${c.cls} h-full`}
               initial={{ opacity: 0, y: 18 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: 0.06 * i }}

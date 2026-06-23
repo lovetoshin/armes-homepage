@@ -1,12 +1,13 @@
+import Link from "next/link";
 import { STATUS_META, type Project } from "@/lib/projects";
 
 /**
- * 프로젝트 카드 — (썸네일 있으면 실제 화면) + 이름 + 한 줄 소개 + 상태 뱃지 + (운영중이면) 바로가기.
- * 회사 허브 원칙: 여기까지만. 긴 소개/기능 설명은 각 프로젝트가 책임진다.
+ * 프로젝트 카드 — (썸네일 있으면 실제 화면) + 이름 + 한 줄 소개 + 상태 뱃지.
+ * 카드 전체를 누르면 해당 프로젝트의 상세 설명 페이지(/projects/[key])로 이동한다.
+ * (운영중 앱으로의 바로가기는 상세 페이지 안의 버튼에서 연결)
  */
 export default function ProjectCard({ project }: { project: Project }) {
   const status = STATUS_META[project.status];
-  const isLive = project.status === "live" && project.href;
   const hasThumb = !!project.thumbnail;
 
   const statusBadge = (
@@ -26,7 +27,7 @@ export default function ProjectCard({ project }: { project: Project }) {
           <img
             src={project.thumbnail}
             alt={`${project.name} 실제 화면`}
-            className="w-full h-36 object-cover object-top block lg:h-auto"
+            className="w-full h-auto block"
           />
           <span className="absolute top-3 right-3 shadow-[0_1px_6px_rgba(0,0,0,0.12)] rounded-full">
             {statusBadge}
@@ -41,7 +42,7 @@ export default function ProjectCard({ project }: { project: Project }) {
         </div>
       )}
 
-      <div className="flex flex-col flex-1 p-4 lg:p-6">
+      <div className="flex flex-col flex-1 p-6">
         <h3 className="text-[#191F28] font-extrabold text-lg mb-2">{project.name}</h3>
         <p className="text-[#4E5968] text-sm leading-relaxed mb-5 keep-all">
           {project.tagline}
@@ -58,38 +59,26 @@ export default function ProjectCard({ project }: { project: Project }) {
           ))}
         </div>
 
-        {isLive ? (
-          <span className="mt-auto pt-5 inline-flex items-center gap-1.5 text-[#3182F6] font-bold text-sm">
-            바로가기
-            <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-            </svg>
-          </span>
-        ) : (
-          <span className="mt-auto pt-5 inline-flex items-center text-[#B0B8C1] font-semibold text-sm">
-            {status.label}
-          </span>
-        )}
+        <span className="mt-auto pt-5 inline-flex items-center gap-1.5 text-[#3182F6] font-bold text-sm">
+          자세히 보기
+          <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+            <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+          </svg>
+        </span>
       </div>
     </>
   );
 
   const cardClass =
-    "flex flex-col bg-white rounded-3xl border border-[#E5E8EB] overflow-hidden transition-shadow";
+    "flex flex-col h-full bg-white rounded-3xl border border-[#E5E8EB] overflow-hidden transition-shadow";
 
-  // 운영중이면 외부 앱으로 바로가기, 그 외에는 클릭 없는 정적 카드
-  if (isLive) {
-    return (
-      <a
-        href={project.href}
-        target="_blank"
-        rel="noopener noreferrer"
-        className={`${cardClass} hover:shadow-[0_4px_20px_rgba(49,130,246,0.12)] hover:border-[#C5D8FB]`}
-      >
-        {inner}
-      </a>
-    );
-  }
-
-  return <div className={cardClass}>{inner}</div>;
+  // 모든 프로젝트 카드는 상세 설명 페이지로 이동 (운영중 앱 바로가기는 상세 페이지 버튼에서 연결)
+  return (
+    <Link
+      href={`/projects/${project.key}`}
+      className={`${cardClass} hover:shadow-[0_4px_20px_rgba(49,130,246,0.12)] hover:border-[#C5D8FB]`}
+    >
+      {inner}
+    </Link>
+  );
 }
