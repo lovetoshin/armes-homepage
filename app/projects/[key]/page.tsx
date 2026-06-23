@@ -138,16 +138,34 @@ export default async function ProjectDetailPage({
 
       {/* 본문 */}
       <div className="max-w-4xl mx-auto px-5 lg:px-8 py-16 lg:py-20">
-        {/* 실제 화면 */}
-        {project.thumbnail && (
-          <div className="mb-16 rounded-3xl overflow-hidden border border-[#E5E8EB] bg-[#F2F4F6]">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={project.thumbnail}
-              alt={`${project.name} 실제 화면`}
-              className="w-full h-auto block"
-            />
+        {/* 실제 화면 — 캡처가 여러 장이면 한 줄에 2개씩(원본 축소 → 화질 보존), 아니면 대표 1장 */}
+        {detail?.gallery && detail.gallery.length > 0 ? (
+          <div className="mb-16 grid grid-cols-2 gap-3 sm:gap-5">
+            {detail.gallery.map((src, gi) => (
+              <div
+                key={src}
+                className="rounded-2xl overflow-hidden border border-[#E5E8EB] bg-[#F2F4F6]"
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={src}
+                  alt={`${project.name} 실제 화면 ${gi + 1}`}
+                  className="w-full h-auto block"
+                />
+              </div>
+            ))}
           </div>
+        ) : (
+          project.thumbnail && (
+            <div className="mb-16 rounded-3xl overflow-hidden border border-[#E5E8EB] bg-[#F2F4F6]">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={project.thumbnail}
+                alt={`${project.name} 실제 화면`}
+                className="w-full h-auto block"
+              />
+            </div>
+          )
         )}
 
         {detail ? (
