@@ -12,7 +12,8 @@ export interface Project {
   tech: string[];       // 사용 기술 (technology.ts의 라벨과 연결)
   href?: string;        // status === "live" 일 때만 외부 앱 주소
   icon: string;         // 카드 아이콘(이모지) — 썸네일 없을 때 사용
-  thumbnail?: string;   // 실제 화면 캡쳐(있으면 카드 상단에 노출)
+  thumbnail?: string;   // 실제 화면 캡쳐(Hero 타일에서만 사용)
+  audience: string;     // 대상 고객
 }
 
 // 상태 표시용 메타 (색상은 파랑/녹색/회색만 — 보라 금지)
@@ -42,6 +43,7 @@ export const projects: Project[] = [
     key: "sellerai",
     name: "SellerAI",
     tagline: "쇼핑몰 셀러를 위한 AI 상품 이미지·상세페이지 자동화",
+    audience: "쇼핑몰·스마트스토어 셀러",
     status: "live",
     tech: ["AI", "Vision", "Automation"],
     href: "https://www.armes.co.kr/sellerai/studio",
@@ -52,6 +54,7 @@ export const projects: Project[] = [
     key: "rewardtalk",
     name: "RewardTalk",
     tagline: "내 주변 매장 할인·적립·공동구매를 잇는 로컬 멤버십 플랫폼",
+    audience: "동네 생활 소비자",
     status: "soon",
     tech: ["Location", "Automation"],
     icon: "🎁",
@@ -61,6 +64,7 @@ export const projects: Project[] = [
     key: "travelmoa",
     name: "TravelMoa",
     tagline: "여행 특가와 항공권을 한곳에서 찾는 스마트 여행 플랫폼",
+    audience: "여행을 준비하는 사람",
     status: "soon",
     tech: ["Location", "AI"],
     icon: "✈️",
@@ -70,6 +74,7 @@ export const projects: Project[] = [
     key: "cocoping",
     name: "CocoPing",
     tagline: "코스트코 할인정보와 가격 변동을 한눈에 보는 쇼핑 도우미",
+    audience: "코스트코 이용 쇼핑객",
     status: "soon",
     tech: ["AI", "Automation"],
     icon: "🛒",
@@ -79,6 +84,7 @@ export const projects: Project[] = [
     key: "rankingpangpang",
     name: "RankingPangPang",
     tagline: "분야별 인기 상품을 AI로 분석해 추천하는 랭킹 플랫폼",
+    audience: "온라인 쇼핑객",
     status: "soon",
     tech: ["Automation", "AI"],
     icon: "📊",
@@ -87,6 +93,7 @@ export const projects: Project[] = [
     key: "photosort",
     name: "PhotoSort",
     tagline: "사진을 자동으로 분류·정리하는 Vision AI",
+    audience: "사진이 많은 사람·창작자",
     status: "research",
     tech: ["Vision", "AI"],
     icon: "🗂️",
@@ -95,6 +102,7 @@ export const projects: Project[] = [
     key: "hoosamgukji",
     name: "후삼국지",
     tagline: "대한민국 후삼국 시대를 배경으로 한 전략 시뮬레이션 게임",
+    audience: "전략 게임 유저",
     status: "soon",
     tech: ["AI"],
     icon: "⚔️",
