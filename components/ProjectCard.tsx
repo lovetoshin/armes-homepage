@@ -26,7 +26,7 @@ export default function ProjectCard({ project }: { project: Project }) {
           <img
             src={project.thumbnail}
             alt={`${project.name} 실제 화면`}
-            className="w-full h-auto block"
+            className="w-full h-36 object-cover object-top block lg:h-auto"
           />
           <span className="absolute top-3 right-3 shadow-[0_1px_6px_rgba(0,0,0,0.12)] rounded-full">
             {statusBadge}
@@ -41,7 +41,7 @@ export default function ProjectCard({ project }: { project: Project }) {
         </div>
       )}
 
-      <div className="flex flex-col flex-1 p-6">
+      <div className="flex flex-col flex-1 p-4 lg:p-6">
         <h3 className="text-[#191F28] font-extrabold text-lg mb-2">{project.name}</h3>
         <p className="text-[#4E5968] text-sm leading-relaxed mb-5 keep-all">
           {project.tagline}

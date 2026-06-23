@@ -17,10 +17,14 @@ export default function ProjectsSection() {
   const byKey = (k: string) => projects.find((p) => p.key === k)!;
   // 1행: 폰 3개 / 셀러AI는 2칸 폭으로 크게 / 3열엔 코코핑 아래로 작은 카드 3개
   const cells = [
-    { p: byKey("rewardtalk"), cls: "lg:col-start-1 lg:row-start-1" },
-    { p: byKey("travelmoa"), cls: "lg:col-start-2 lg:row-start-1" },
-    { p: byKey("cocoping"), cls: "lg:col-start-3 lg:row-start-1" },
-    { p: byKey("sellerai"), cls: "lg:col-start-1 lg:col-span-2 lg:row-start-2 lg:row-span-3" },
+    // 1행: 폰 3개 (아래 행과 간격을 주기 위해 lg:mb-2)
+    { p: byKey("rewardtalk"), cls: "lg:col-start-1 lg:row-start-1 lg:mb-2" },
+    { p: byKey("travelmoa"), cls: "lg:col-start-2 lg:row-start-1 lg:mb-2" },
+    { p: byKey("cocoping"), cls: "lg:col-start-3 lg:row-start-1 lg:mb-2" },
+    // 셀러AI 2칸(크기 유지) + 그 아래 후삼국지 2칸 → PhotoSort와 라인 맞춤
+    { p: byKey("sellerai"), cls: "lg:col-start-1 lg:col-span-2 lg:row-start-2 lg:row-span-2" },
+    { p: byKey("hoosamgukji"), cls: "lg:col-start-1 lg:col-span-2 lg:row-start-4" },
+    // 3열(코코핑 아래): 세로로 나란히
     { p: byKey("tools"), cls: "lg:col-start-3 lg:row-start-2" },
     { p: byKey("rankingpangpang"), cls: "lg:col-start-3 lg:row-start-3" },
     { p: byKey("photosort"), cls: "lg:col-start-3 lg:row-start-4" },
@@ -49,7 +53,7 @@ export default function ProjectsSection() {
           </Link>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:[grid-auto-rows:min-content]">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-5 items-start lg:[grid-auto-rows:min-content]">
           {cells.map((c, i) => (
             <motion.div
               key={c.p.key}

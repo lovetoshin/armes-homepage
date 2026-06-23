@@ -9,8 +9,8 @@ import { useRef } from "react";
  */
 const shots = [
   { src: "/projects/rewardtalk-1.jpg", name: "RewardTalk", desc: "로컬 멤버십" },
-  { src: "/projects/cocoping-1.jpg", name: "CocoPing", desc: "코스트코 할인정보" },
   { src: "/projects/travelmoa-1.jpg", name: "TravelMoa", desc: "여행 특가·항공권" },
+  { src: "/projects/cocoping-1.jpg", name: "CocoPing", desc: "코스트코 할인정보" },
 ];
 
 export default function Showcase() {
