@@ -3,7 +3,12 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import Footer from "@/components/Footer";
 import PostCard from "@/components/PostCard";
-import { getPostsByCategory, BLOG_CATEGORIES } from "@/lib/posts";
+import {
+  getPostsByCategory,
+  BLOG_CATEGORIES,
+  categorySlug,
+  categoryFromSlug,
+} from "@/lib/posts";
 
 const SITE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://armes.co.kr";
 
@@ -20,8 +25,9 @@ const INTRO: Record<string, string> = {
   후삼국지: "후삼국 시대 인물과 역사, 전략 시뮬레이션 이야기를 다룹니다.",
 };
 
+// URL 슬러그는 영문 고정(/blog/category/ai, /shopping ...)
 export function generateStaticParams() {
-  return BLOG_CATEGORIES.map((category) => ({ category }));
+  return BLOG_CATEGORIES.map((category) => ({ category: categorySlug(category) }));
 }
 
 export async function generateMetadata({
@@ -30,14 +36,12 @@ export async function generateMetadata({
   params: Promise<{ category: string }>;
 }): Promise<Metadata> {
   const { category } = await params;
-  const cat = decodeURIComponent(category);
-  if (!BLOG_CATEGORIES.includes(cat as (typeof BLOG_CATEGORIES)[number])) {
-    return { title: "Blog | ARMES" };
-  }
+  const cat = categoryFromSlug(category);
+  if (!cat) return { title: "Blog | ARMES" };
   return {
     title: `${cat} 글 모음 | ARMES Blog`,
     description: INTRO[cat] ?? `${cat} 관련 아르메스 블로그 글 모음입니다.`,
-    alternates: { canonical: `/blog/category/${encodeURIComponent(cat)}` },
+    alternates: { canonical: `/blog/category/${category}` },
   };
 }
 
@@ -47,8 +51,8 @@ export default async function BlogCategoryPage({
   params: Promise<{ category: string }>;
 }) {
   const { category } = await params;
-  const cat = decodeURIComponent(category);
-  if (!BLOG_CATEGORIES.includes(cat as (typeof BLOG_CATEGORIES)[number])) notFound();
+  const cat = categoryFromSlug(category);
+  if (!cat) notFound();
 
   const posts = getPostsByCategory("blog", cat);
 
@@ -58,7 +62,7 @@ export default async function BlogCategoryPage({
       "@type": "CollectionPage",
       name: `${cat} 글 모음`,
       description: INTRO[cat] ?? "",
-      url: `${SITE}/blog/category/${encodeURIComponent(cat)}`,
+      url: `${SITE}/blog/category/${category}`,
       isPartOf: { "@type": "WebSite", name: "ARMES", url: SITE },
     },
     {
@@ -66,7 +70,7 @@ export default async function BlogCategoryPage({
       "@type": "BreadcrumbList",
       itemListElement: [
         { "@type": "ListItem", position: 1, name: "Blog", item: `${SITE}/blog` },
-        { "@type": "ListItem", position: 2, name: cat, item: `${SITE}/blog/category/${encodeURIComponent(cat)}` },
+        { "@type": "ListItem", position: 2, name: cat, item: `${SITE}/blog/category/${category}` },
       ],
     },
   ];

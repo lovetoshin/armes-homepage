@@ -1,5 +1,5 @@
 import Link from "next/link";
-import type { PostMeta, PostType } from "@/lib/posts-meta";
+import { categorySlug, type PostMeta, type PostType } from "@/lib/posts-meta";
 
 function fmt(d?: string) {
   return d ? d.replace(/-/g, ".") : "";
@@ -24,7 +24,7 @@ export default function ArticleMeta({
         <div className="mb-4">
           {type === "blog" ? (
             <Link
-              href={`/blog/category/${encodeURIComponent(post.category)}`}
+              href={`/blog/category/${categorySlug(post.category)}`}
               className="inline-block text-[12px] font-bold text-[#3182F6] bg-[#EBF3FF] px-3 py-1.5 rounded-full hover:bg-[#DCEAFE] transition-colors"
             >
               {post.category}

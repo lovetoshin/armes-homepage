@@ -32,6 +32,30 @@ export function categoriesFor(type: PostType): readonly string[] {
   return type === "news" ? NEWS_CATEGORIES : BLOG_CATEGORIES;
 }
 
+// Blog 카테고리 → URL 슬러그(영문 고정 — 한글 URL 인코딩 이슈 회피)
+export const CATEGORY_SLUGS: Record<string, string> = {
+  AI: "ai",
+  쇼핑: "shopping",
+  여행: "travel",
+  주유: "fuel",
+  전기차: "electric-car",
+  코스트코: "costco",
+  SEO: "seo",
+  생산성도구: "productivity",
+  후삼국지: "hoosamgukji",
+};
+const SLUG_TO_CATEGORY: Record<string, string> = Object.fromEntries(
+  Object.entries(CATEGORY_SLUGS).map(([k, v]) => [v, k]),
+);
+// 카테고리명 → 슬러그 (맵에 없으면 인코딩 fallback)
+export function categorySlug(category: string): string {
+  return CATEGORY_SLUGS[category] ?? encodeURIComponent(category);
+}
+// 슬러그 → 카테고리명 (없으면 undefined)
+export function categoryFromSlug(slug: string): string | undefined {
+  return SLUG_TO_CATEGORY[slug];
+}
+
 // 기본 작성자 — 개인명(신지한) 노출 금지, 회사명으로 통일
 export const DEFAULT_AUTHOR = "주식회사 아르메스";
 

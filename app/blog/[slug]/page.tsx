@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import ArticleMeta from "@/components/ArticleMeta";
 import RelatedPosts from "@/components/RelatedPosts";
 import RelatedServices from "@/components/RelatedServices";
-import { getPost, getSlugs, getRelatedPosts } from "@/lib/posts";
+import { getPost, getSlugs, getRelatedPosts, categorySlug } from "@/lib/posts";
 
 const SITE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://armes.co.kr";
 
@@ -96,7 +96,7 @@ export default async function BlogArticlePage({
               "@type": "ListItem",
               position: 2,
               name: post.category,
-              item: `${SITE}/blog/category/${encodeURIComponent(post.category)}`,
+              item: `${SITE}/blog/category/${categorySlug(post.category)}`,
             }]
           : []),
         {
@@ -123,7 +123,7 @@ export default async function BlogArticlePage({
             <>
               <span className="mx-2">/</span>
               <Link
-                href={`/blog/category/${encodeURIComponent(post.category)}`}
+                href={`/blog/category/${categorySlug(post.category)}`}
                 className="hover:text-[#3182F6]"
               >
                 {post.category}
