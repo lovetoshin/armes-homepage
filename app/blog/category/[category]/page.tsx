@@ -9,6 +9,7 @@ import {
   categorySlug,
   categoryFromSlug,
 } from "@/lib/posts";
+import { CATEGORY_HUB } from "@/lib/category-hub";
 
 const SITE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://armes.co.kr";
 
@@ -90,12 +91,16 @@ export default async function BlogCategoryPage({
             <span className="text-[#B0B8C1]">{cat}</span>
           </nav>
           <p className="text-xs text-[#3182F6] font-bold uppercase tracking-widest mb-3">Category</p>
-          <h1 className="text-3xl lg:text-5xl font-extrabold text-[#191F28] tracking-tight leading-[1.15] mb-4 keep-all">
+          <h1 className="text-3xl lg:text-5xl font-extrabold text-[#191F28] tracking-tight leading-[1.15] mb-5 keep-all">
             {cat}
           </h1>
-          <p className="text-[#4E5968] text-lg leading-relaxed max-w-2xl keep-all">
-            {INTRO[cat]}
-          </p>
+          <div className="space-y-3 max-w-3xl">
+            {(CATEGORY_HUB[cat] ?? [INTRO[cat]]).map((para, i) => (
+              <p key={i} className="text-[#4E5968] text-[15px] lg:text-base leading-[1.85] keep-all">
+                {para}
+              </p>
+            ))}
+          </div>
         </div>
       </div>
 
