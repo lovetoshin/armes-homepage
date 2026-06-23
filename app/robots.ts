@@ -13,6 +13,7 @@ export default function robots(): MetadataRoute.Robots {
     sitemap: [
       `${base}/sitemap.xml`,
       "https://www.armes.co.kr/sellerai/sitemap.xml",
+      "https://armes.co.kr/tools/sitemap.xml",
     ],
   };
 }

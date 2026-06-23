@@ -51,6 +51,16 @@ export const projects: Project[] = [
     thumbnail: "/projects/sellerai-1.jpg",
   },
   {
+    key: "tools",
+    name: "ARMES Tools",
+    tagline: "이미지·PDF·텍스트·개발자 도구를 설치 없이 브라우저에서 바로 쓰는 무료 온라인 도구",
+    audience: "누구나 · 글로벌 9개 언어",
+    status: "live",
+    tech: ["Automation"],
+    href: "/tools/ko",
+    icon: "🧰",
+  },
+  {
     key: "rewardtalk",
     name: "RewardTalk",
     tagline: "내 주변 매장 할인·적립·공동구매를 잇는 로컬 멤버십 플랫폼",
