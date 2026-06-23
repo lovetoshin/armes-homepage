@@ -11,7 +11,8 @@ export interface Project {
   status: ProjectStatus;
   tech: string[];       // 사용 기술 (technology.ts의 라벨과 연결)
   href?: string;        // status === "live" 일 때만 외부 앱 주소
-  icon: string;         // 카드 아이콘(이모지)
+  icon: string;         // 카드 아이콘(이모지) — 썸네일 없을 때 사용
+  thumbnail?: string;   // 실제 화면 캡쳐(있으면 카드 상단에 노출)
 }
 
 // 상태 표시용 메타 (색상은 파랑/녹색/회색만 — 보라 금지)
@@ -45,6 +46,7 @@ export const projects: Project[] = [
     tech: ["AI", "Vision", "Automation"],
     href: "https://www.armes.co.kr/sellerai/studio",
     icon: "🖼️",
+    thumbnail: "/projects/sellerai-1.jpg",
   },
   {
     key: "rewardtalk",
@@ -53,6 +55,7 @@ export const projects: Project[] = [
     status: "soon",
     tech: ["Location", "Automation"],
     icon: "🎁",
+    thumbnail: "/projects/rewardtalk-1.jpg",
   },
   {
     key: "travelmoa",
@@ -61,6 +64,7 @@ export const projects: Project[] = [
     status: "soon",
     tech: ["Location", "AI"],
     icon: "✈️",
+    thumbnail: "/projects/travelmoa-1.jpg",
   },
   {
     key: "cocoping",
@@ -69,6 +73,7 @@ export const projects: Project[] = [
     status: "soon",
     tech: ["AI", "Automation"],
     icon: "🛒",
+    thumbnail: "/projects/cocoping-1.jpg",
   },
   {
     key: "rankingpangpang",
@@ -81,7 +86,6 @@ export const projects: Project[] = [
   {
     key: "photosort",
     name: "PhotoSort",
-    // ⚠️ 추정 카피 — 형님 확인 필요
     tagline: "사진을 자동으로 분류·정리하는 Vision AI",
     status: "research",
     tech: ["Vision", "AI"],
