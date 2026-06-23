@@ -50,10 +50,7 @@ export const projectDetails: Record<string, ProjectDetail> = {
       "리워드톡은 현재 정식 출시를 준비 중입니다. 안드로이드(구글 플레이) 심사를 진행하고 있으며, 개인정보 처리방침 등 출시 준비를 마치는 대로 안내드리겠습니다.",
     gallery: [
       "/projects/rewardtalk-1.jpg",
-      "/projects/rewardtalk-2.jpg",
       "/projects/rewardtalk-3.jpg",
-      "/projects/rewardtalk-4.jpg",
-      "/projects/rewardtalk-5.jpg",
     ],
   },
 
@@ -77,7 +74,6 @@ export const projectDetails: Record<string, ProjectDetail> = {
       "트래블모아는 현재 출시를 준비 중입니다. 준비가 마무리되는 대로 안내드리겠습니다.",
     gallery: [
       "/projects/travelmoa-1.jpg",
-      "/projects/travelmoa-2.jpg",
       "/projects/travelmoa-3.jpg",
     ],
   },
