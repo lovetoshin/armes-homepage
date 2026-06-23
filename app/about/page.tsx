@@ -129,15 +129,29 @@ export default function AboutPage() {
 
         {/* 대표 스토리 */}
         <section className="bg-[#F8FAFF] border border-[#E5E8EB] rounded-3xl p-8 lg:p-10">
-          <p className="text-xs text-[#3182F6] font-bold uppercase tracking-widest mb-3">Founder</p>
-          <h2 className="text-2xl font-extrabold text-[#191F28] mb-4">대표 신지한</h2>
-          <p className="text-[#4E5968] text-base leading-relaxed keep-all">
-            유통 현장에서 16년을 보냈습니다. 상품을 팔고, 고객을 만나고,
-            현장의 문제를 직접 겪으며 &ldquo;무엇이 진짜 불편한가&rdquo;를 배웠습니다.
-            그 경험을 바탕으로, 장사하는 분들이 매일 반복하는 일을 AI가 대신하도록
-            아르메스를 만들었습니다. 화려한 기술보다 현장에서 실제로 쓰이는 도구를
-            우선합니다.
-          </p>
+          <p className="text-xs text-[#3182F6] font-bold uppercase tracking-widest mb-6">Founder</p>
+          <div className="flex flex-col sm:flex-row gap-7 lg:gap-10 items-center sm:items-start">
+            {/* 대표 사진 */}
+            <div className="w-44 sm:w-48 flex-shrink-0">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/about/ceo.jpg"
+                alt="주식회사 아르메스 대표 신지한"
+                className="w-full h-auto rounded-2xl border border-[#E5E8EB] object-cover block shadow-[0_4px_20px_rgba(49,130,246,0.10)]"
+              />
+            </div>
+            <div>
+              <h2 className="text-2xl font-extrabold text-[#191F28] mb-1.5">대표 신지한</h2>
+              <p className="text-[#8B95A1] text-sm font-semibold mb-4">주식회사 아르메스 대표이사 · 유통 16년</p>
+              <p className="text-[#4E5968] text-base leading-relaxed keep-all">
+                유통 현장에서 16년을 보냈습니다. 상품을 팔고, 고객을 만나고,
+                현장의 문제를 직접 겪으며 &ldquo;무엇이 진짜 불편한가&rdquo;를 배웠습니다.
+                그 경험을 바탕으로, 장사하는 분들이 매일 반복하는 일을 AI가 대신하도록
+                아르메스를 만들었습니다. 화려한 기술보다 현장에서 실제로 쓰이는 도구를
+                우선합니다.
+              </p>
+            </div>
+          </div>
         </section>
 
         {/* 사업 영역 */}
