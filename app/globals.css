@@ -244,17 +244,28 @@ body {
   margin-top: 0.6rem;
   line-height: 1.5;
 }
+/* 단일 이미지: 기본은 본문 폭 가득 (가로형 인포그래픽·서비스 화면) */
 .post-body figure.shot img {
-  max-width: 300px;
+  max-width: 100%;
+  width: 100%;
 }
+/* 단일 폰 스크린샷(세로형)은 너무 길어지지 않게, 그래도 충분히 크게 */
+.post-body figure.shot img[src*="/projects/"] {
+  max-width: 460px;
+  width: 100%;
+}
+/* 나란히 비교(폰 2장): 한 줄을 가득 채워 크게, 좁은 화면에선 줄바꿈 */
 .post-body figure.shots {
   display: flex;
-  gap: 12px;
+  gap: 14px;
   justify-content: center;
   flex-wrap: wrap;
 }
 .post-body figure.shots img {
-  max-width: 224px;
+  flex: 1 1 260px;
+  min-width: 260px;
+  max-width: 100%;
+  width: auto;
 }
 
 /* ===== 본문 인용구 ===== */
