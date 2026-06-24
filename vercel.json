@@ -9,6 +9,14 @@
       "destination": "https://page-image-maker-saas.vercel.app/sellerai/:path*"
     },
     {
+      "source": "/tools",
+      "destination": "https://armes-tools.vercel.app/tools"
+    },
+    {
+      "source": "/tools/:path*",
+      "destination": "https://armes-tools.vercel.app/tools/:path*"
+    },
+    {
       "source": "/api/:path*",
       "destination": "https://page-image-maker-saas.vercel.app/sellerai/api/:path*"
     }
