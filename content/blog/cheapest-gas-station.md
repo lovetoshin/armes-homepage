@@ -1,7 +1,6 @@
 ---
 title: 우리 동네 최저가 주유소 찾는 법
 date: 2026-06-15
-updated: 2026-06-24
 category: 주유
 excerpt: 기름값이 부담될 때, 내 주변에서 가장 싼 주유소를 찾고 주유비를 더 아끼는 방법을 정리했습니다.
 thumbnail: /blog/covers/cheapest-gas-station.png

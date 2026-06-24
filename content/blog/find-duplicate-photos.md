@@ -1,7 +1,6 @@
 ---
 title: 중복 사진 찾는 방법 — 똑같은 사진으로 꽉 찬 갤러리 비우기
 date: 2026-06-06
-updated: 2026-06-24
 category: 생산성도구
 excerpt: 비슷비슷한 연속 사진과 중복 파일이 저장공간을 잡아먹습니다. 중복 사진을 찾아내 안전하게 정리하는 방법을 정리했습니다.
 thumbnail: /blog/covers/find-duplicate-photos.png

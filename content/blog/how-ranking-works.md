@@ -1,7 +1,6 @@
 ---
 title: 쿠팡·네이버 인기상품은 어떻게 정해질까 — 랭킹의 원리
 date: 2026-05-23
-updated: 2026-06-24
 category: 쇼핑
 excerpt: 쇼핑몰 인기 랭킹은 단순히 많이 팔린 순이 아닙니다. 랭킹이 정해지는 원리와, 그 흐름을 쇼핑·판매에 활용하는 법을 정리했습니다.
 thumbnail: /blog/covers/how-ranking-works.png

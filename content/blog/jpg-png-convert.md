@@ -1,7 +1,6 @@
 ---
 title: JPG PNG 변환 — 차이와 변환법
 date: 2026-05-11
-updated: 2026-06-24
 category: 생산성도구
 excerpt: JPG와 PNG, 무엇을 언제 써야 할까요? 두 형식의 차이와 서로 변환하는 법, 변환 시 주의할 점을 정리했습니다.
 thumbnail: /blog/covers/jpg-png-convert.png

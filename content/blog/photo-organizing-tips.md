@@ -1,7 +1,6 @@
 ---
 title: 사진 정리 잘하는 방법 — 쌓인 사진 깔끔하게 관리하기
 date: 2026-06-10
-updated: 2026-06-24
 category: 생산성도구
 excerpt: 수천 장씩 쌓인 사진, 어디서부터 손대야 할지 막막하다면. 사진을 한 번에 정리하고 다시 어지러워지지 않게 관리하는 방법을 정리했습니다.
 thumbnail: /blog/covers/photo-organizing-tips.png

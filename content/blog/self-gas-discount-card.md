@@ -1,7 +1,6 @@
 ---
 title: 셀프주유소가 싼 이유 + 주유 할인카드 총정리
 date: 2026-05-26
-updated: 2026-06-24
 category: 주유
 excerpt: 셀프주유소가 더 싼 이유를 짚고, 주유 할인카드로 기름값을 추가로 아끼는 방법과 카드 고를 때 확인할 점을 정리했습니다.
 thumbnail: /blog/covers/self-gas-discount-card.png

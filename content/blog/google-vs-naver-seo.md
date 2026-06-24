@@ -1,7 +1,6 @@
 ---
 title: 구글 SEO vs 네이버 SEO, 무엇이 다른가
 date: 2026-06-09
-updated: 2026-06-24
 category: SEO
 excerpt: 구글과 네이버는 검색 결과를 보여주는 방식이 다릅니다. 두 검색의 차이와, 각각에 맞춘 글쓰기 전략을 정리했습니다.
 thumbnail: /blog/covers/google-vs-naver-seo.png

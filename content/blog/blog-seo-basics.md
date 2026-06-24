@@ -1,7 +1,6 @@
 ---
 title: 블로그 글 하나로 검색 1페이지 가는 기본 원칙
 date: 2026-05-20
-updated: 2026-06-24
 category: SEO
 excerpt: 검색 상위에 가는 블로그 글에는 공통점이 있습니다. 화려한 기술 없이도 통하는 글쓰기의 기본 원칙을 쉽게 정리했습니다.
 thumbnail: /blog/covers/blog-seo-basics.png

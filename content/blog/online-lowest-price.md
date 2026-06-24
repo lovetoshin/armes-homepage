@@ -1,7 +1,6 @@
 ---
 title: 온라인 최저가 찾는 법 — 가격비교 앱·사이트 비교
 date: 2026-06-05
-updated: 2026-06-24
 category: 쇼핑
 excerpt: 같은 상품도 어디서 사느냐에 따라 가격이 다릅니다. 온라인 최저가를 빠르게 찾는 방법과, 최저가에 속지 않는 요령을 정리했습니다.
 thumbnail: /blog/covers/online-lowest-price.png

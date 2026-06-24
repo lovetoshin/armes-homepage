@@ -1,7 +1,6 @@
 ---
 title: 여행 특가 알림 놓치지 않는 법
 date: 2026-05-25
-updated: 2026-06-24
 category: 여행
 excerpt: 좋은 여행 특가는 순식간에 사라집니다. 특가가 풀리는 시점과, 알림을 활용해 놓치지 않고 잡는 방법을 정리했습니다.
 thumbnail: /blog/covers/travel-deal-alerts.png

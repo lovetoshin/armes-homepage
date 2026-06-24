@@ -1,7 +1,6 @@
 ---
 title: 코스트코 멤버십 본전 뽑는 소비 패턴
 date: 2026-04-29
-updated: 2026-06-24
 category: 코스트코
 excerpt: 연회비를 내고도 이득을 보려면 어떻게 써야 할까요? 코스트코 멤버십의 본전을 뽑는 소비 패턴과 손익 계산법을 정리했습니다.
 thumbnail: /blog/covers/costco-membership-worth.png

@@ -1,7 +1,6 @@
 ---
 title: 포토샵 없이 1분, AI 누끼(배경 제거) 하는 법
 date: 2026-04-27
-updated: 2026-06-24
 category: AI
 excerpt: 포토샵을 다루지 못해도 AI로 배경을 깔끔하게 지울 수 있습니다. 누끼의 원리와, 결과가 지저분해지는 경우를 피하는 요령을 정리했습니다.
 thumbnail: /blog/covers/ai-background-removal.png

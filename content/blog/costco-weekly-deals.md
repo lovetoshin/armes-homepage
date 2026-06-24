@@ -1,7 +1,6 @@
 ---
 title: 코스트코 이번 주 할인상품 보는 법
 date: 2026-06-19
-updated: 2026-06-24
 category: 코스트코
 excerpt: 코스트코의 이번 주 할인 상품을 미리 확인하고, 가격표의 신호까지 읽어 알뜰하게 사는 법을 정리했습니다.
 thumbnail: /blog/covers/costco-weekly-deals.png

@@ -1,7 +1,6 @@
 ---
 title: 쇼핑몰 상세페이지를 AI로 만드는 법 — 초보 가이드
 date: 2026-05-18
-updated: 2026-06-24
 category: AI
 excerpt: 디자인을 한 번도 해본 적 없어도 AI로 상세페이지를 만들 수 있습니다. 준비물부터 완성까지의 흐름을 단계별로 쉽게 정리했습니다.
 thumbnail: /blog/covers/ai-detail-page-beginner.png

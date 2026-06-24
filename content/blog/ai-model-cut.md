@@ -1,7 +1,6 @@
 ---
 title: 상품 사진 한 장으로 모델 착용컷 만드는 AI 활용법
 date: 2026-06-22
-updated: 2026-06-24
 category: AI
 excerpt: 모델 섭외와 스튜디오 촬영 없이도 상품 사진 한 장으로 착용컷을 만드는 방법과, 결과물 완성도를 높이는 요령을 정리했습니다.
 thumbnail: /blog/covers/ai-model-cut.png

@@ -1,7 +1,6 @@
 ---
 title: 전환율 높이는 상세페이지 사진 배치 순서
 date: 2026-05-12
-updated: 2026-06-24
 category: 쇼핑
 excerpt: 같은 사진도 어떤 순서로 배치하느냐에 따라 구매율이 달라집니다. 고객의 시선 흐름에 맞춘 상세페이지 사진 배치 순서를 정리했습니다.
 thumbnail: /blog/covers/detail-page-photo-order.png

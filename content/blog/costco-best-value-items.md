@@ -1,7 +1,6 @@
 ---
 title: 코스트코 가성비 필수템 고르는 기준
 date: 2026-05-15
-updated: 2026-06-24
 category: 코스트코
 excerpt: 코스트코에서 진짜 가성비 좋은 상품을 고르는 기준을 정리했습니다. 대용량의 함정을 피하고 단가로 따지는 법을 다룹니다.
 thumbnail: /blog/covers/costco-best-value-items.png

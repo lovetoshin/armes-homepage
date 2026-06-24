@@ -1,7 +1,6 @@
 ---
 title: 처음 전기차 충전, 이것만 알면 됩니다
 date: 2026-05-05
-updated: 2026-06-24
 category: 전기차
 excerpt: 전기차를 처음 타면 충전이 가장 막막합니다. 충전 종류부터 순서, 주의할 점까지 입문자가 꼭 알아야 할 기본을 정리했습니다.
 thumbnail: /blog/covers/ev-charging-basics.png

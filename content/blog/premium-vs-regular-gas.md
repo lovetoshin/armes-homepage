@@ -1,7 +1,6 @@
 ---
 title: 고급유 vs 일반유, 내 차에 맞는 기름은?
 date: 2026-05-06
-updated: 2026-06-24
 category: 주유
 excerpt: 고급유가 정말 차에 좋을까요? 고급유와 일반유의 진짜 차이와, 내 차에 맞는 기름을 고르는 기준을 쉽게 정리했습니다.
 thumbnail: /blog/covers/premium-vs-regular-gas.png

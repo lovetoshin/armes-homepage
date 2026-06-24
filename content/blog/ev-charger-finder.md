@@ -1,7 +1,6 @@
 ---
 title: 전기차 충전소 찾기 — 급속·완속 앱 비교
 date: 2026-06-15
-updated: 2026-06-24
 category: 전기차
 excerpt: 전기차 충전소를 빠르게 찾는 방법과, 급속·완속의 차이, 충전 요금을 아끼는 요령을 정리했습니다.
 thumbnail: /blog/covers/ev-charger-finder.png

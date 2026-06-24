@@ -1,7 +1,6 @@
 ---
 title: 개발자용 온라인 도구 모음 — 설치 없이 바로 쓰기
 date: 2026-05-01
-updated: 2026-06-24
 category: 생산성도구
 excerpt: JSON 정리, 인코딩, 색상 코드 변환처럼 개발·실무에서 자주 쓰는 온라인 도구를 한곳에 모았습니다. 설치 없이 브라우저에서 바로 씁니다.
 thumbnail: /blog/covers/dev-tools.png

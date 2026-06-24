@@ -1,7 +1,6 @@
 ---
 title: 가입 없이 PDF 합치기·나누기 하는 법
 date: 2026-06-24
-updated: 2026-06-24
 category: 생산성도구
 excerpt: 프로그램 설치나 회원가입 없이, 브라우저에서 바로 PDF를 합치고 나누는 방법과 주의할 점을 정리했습니다.
 thumbnail: /blog/covers/pdf-merge-split-free.png

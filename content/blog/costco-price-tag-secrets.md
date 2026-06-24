@@ -1,7 +1,6 @@
 ---
 title: 코스트코 가격표 숫자·별표(*)의 숨은 의미
 date: 2026-06-02
-updated: 2026-06-24
 category: 코스트코
 excerpt: 코스트코 가격표의 .97, .99, 별표(*)에는 숨은 신호가 있습니다. 가격표만 읽어도 할인·단종을 알아채는 법을 정리했습니다.
 thumbnail: /blog/covers/costco-price-tag-secrets.png

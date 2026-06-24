@@ -1,7 +1,6 @@
 ---
 title: AI로 상세페이지를 만들 때 알아두면 좋은 3가지
 date: 2026-05-11
-updated: 2026-06-24
 category: AI
 excerpt: AI 도구로 상세페이지를 만들 때 결과물의 완성도를 높이는 작은 습관을 정리했습니다.
 thumbnail: /blog/covers/ai-detail-page-guide.png

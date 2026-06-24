@@ -1,7 +1,6 @@
 ---
 title: 후삼국 인물 관계 한눈에 — 견훤·궁예·왕건
 date: 2026-06-16
-updated: 2026-06-24
 category: 후삼국지
 excerpt: 후삼국 시대를 이끈 세 인물 견훤·궁예·왕건을, 전략 게임에서 어떤 세력으로 플레이할지 고르는 입문자 시선으로 정리했습니다.
 thumbnail: /blog/covers/hoosamguk-characters.png
