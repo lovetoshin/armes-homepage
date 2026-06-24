@@ -21,13 +21,13 @@ export default function PrivacyPage() {
 function Section({ num, title, children }: { num: string; title: string; children: React.ReactNode }) {
   return (
     <section className="mb-12">
-      <h2 className="text-lg font-bold text-white mb-4 flex items-center gap-3">
-        <span className="w-7 h-7 rounded-lg bg-blue-500/15 border border-blue-500/25 flex items-center justify-center text-blue-400 text-xs font-bold flex-shrink-0">
+      <h2 className="text-lg font-bold text-[#191F28] mb-4 flex items-center gap-3">
+        <span className="w-7 h-7 rounded-lg bg-[#EBF3FF] border border-[#C5D8FB] flex items-center justify-center text-[#3182F6] text-xs font-bold flex-shrink-0">
           {num}
         </span>
         {title}
       </h2>
-      <div className="text-zinc-400 text-[15px] leading-[1.9] space-y-3 pl-10">{children}</div>
+      <div className="text-[#4E5968] text-[15px] leading-[1.9] space-y-3 pl-10">{children}</div>
     </section>
   );
 }
@@ -37,11 +37,11 @@ function Table({ headers, rows }: { headers: string[]; rows: string[][] }) {
     <div className="overflow-x-auto my-4">
       <table className="w-full text-sm border-collapse">
         <thead>
-          <tr className="bg-white/[0.04]">
+          <tr className="bg-[#F2F4F6]">
             {headers.map((h) => (
               <th
                 key={h}
-                className="text-left px-4 py-3 text-zinc-300 font-semibold border border-white/[0.07] whitespace-nowrap"
+                className="text-left px-4 py-3 text-[#333D4B] font-semibold border border-[#E5E8EB] whitespace-nowrap"
               >
                 {h}
               </th>
@@ -50,11 +50,11 @@ function Table({ headers, rows }: { headers: string[]; rows: string[][] }) {
         </thead>
         <tbody>
           {rows.map((row, i) => (
-            <tr key={i} className={i % 2 === 0 ? "" : "bg-white/[0.02]"}>
+            <tr key={i} className={i % 2 === 0 ? "" : "bg-[#FBFCFE]"}>
               {row.map((cell, j) => (
                 <td
                   key={j}
-                  className="px-4 py-3 text-zinc-400 border border-white/[0.07] align-top"
+                  className="px-4 py-3 text-[#4E5968] border border-[#E5E8EB] align-top"
                 >
                   {cell}
                 </td>
@@ -71,7 +71,7 @@ function PrivacyContent() {
   return (
     <div>
       {/* 총칙 */}
-      <p className="text-zinc-400 text-[15px] leading-relaxed mb-10 p-5 rounded-2xl bg-white/[0.03] border border-white/[0.07]">
+      <p className="text-[#4E5968] text-[15px] leading-relaxed mb-10 p-5 rounded-2xl bg-[#F8FAFF] border border-[#E5E8EB]">
         주식회사 아르메스(이하 &apos;회사&apos;라 합니다)는 &apos;개인정보 보호법&apos; 제30조에 따라 정보주체의 개인정보를
         보호하고 이와 관련한 고충을 신속하고 원활하게 처리할 수 있도록 하기 위하여 다음과 같이 개인정보
         처리방침을 수립·공개합니다.
@@ -88,8 +88,8 @@ function PrivacyContent() {
             ["마케팅 및 광고 활용", "신규 서비스 개발 및 맞춤 서비스 제공, 이벤트 및 광고성 정보 제공 및 참여기회 제공 등 (동의 시)"],
           ].map(([title, desc]) => (
             <li key={title} className="flex gap-2">
-              <span className="text-blue-500 mt-1 flex-shrink-0">·</span>
-              <span><strong className="text-zinc-300">{title}:</strong> {desc}</span>
+              <span className="text-[#3182F6] mt-1 flex-shrink-0">·</span>
+              <span><strong className="text-[#333D4B]">{title}:</strong> {desc}</span>
             </li>
           ))}
         </ul>
@@ -109,7 +109,7 @@ function PrivacyContent() {
             ["Seller AI 이용", "상품 정보, 생성된 콘텐츠", "AI 서비스 제공", "서비스 이용 중"],
           ]}
         />
-        <p className="mt-3 text-sm text-zinc-500">
+        <p className="mt-3 text-sm text-[#8B95A1]">
           * 서비스 이용 과정에서 단말기 정보(모델명, OS 버전), 쿠키, 광고 ID 등이 자동으로 수집될 수 있습니다.
         </p>
       </Section>
@@ -140,7 +140,7 @@ function PrivacyContent() {
             "수사기관의 요청이 있는 경우 (적법한 절차에 따름)",
           ].map((item) => (
             <li key={item} className="flex gap-2">
-              <span className="text-blue-500 mt-1 flex-shrink-0">·</span>
+              <span className="text-[#3182F6] mt-1 flex-shrink-0">·</span>
               <span>{item}</span>
             </li>
           ))}
@@ -166,7 +166,7 @@ function PrivacyContent() {
             ["Firebase (Google LLC)", "앱 푸시 알림, 앱 분석", "위탁 계약 기간"],
           ]}
         />
-        <p className="mt-3 text-sm text-zinc-500">
+        <p className="mt-3 text-sm text-[#8B95A1]">
           위탁 업무의 내용이나 수탁자가 변경될 경우 지체 없이 본 개인정보 처리방침을 통하여 공개합니다.
         </p>
       </Section>
@@ -182,7 +182,7 @@ function PrivacyContent() {
             "삭제 요구 (단, 법령에 따라 처리가 의무화된 경우 제외)",
           ].map((item, i) => (
             <li key={i} className="flex gap-2">
-              <span className="text-blue-500 mt-1 flex-shrink-0">·</span>
+              <span className="text-[#3182F6] mt-1 flex-shrink-0">·</span>
               <span>{item}</span>
             </li>
           ))}
@@ -205,12 +205,12 @@ function PrivacyContent() {
             "쿠키 설치·운영 거부: 이용자는 웹브라우저의 설정을 통해 쿠키 수집을 거부할 수 있습니다. 단, 거부 시 서비스 일부 기능 이용에 제한이 있을 수 있습니다.",
           ].map((item) => (
             <li key={item} className="flex gap-2">
-              <span className="text-blue-500 mt-1 flex-shrink-0">·</span>
+              <span className="text-[#3182F6] mt-1 flex-shrink-0">·</span>
               <span>{item}</span>
             </li>
           ))}
         </ul>
-        <p className="mt-3 text-sm text-zinc-500">
+        <p className="mt-3 text-sm text-[#8B95A1]">
           앱(Application) 이용 시 개인정보 수집·이용에 대한 권한은 단말기의 설정에서 관리할 수 있습니다.
         </p>
       </Section>
@@ -245,17 +245,17 @@ function PrivacyContent() {
           회사는 개인정보 처리에 관한 업무를 총괄해서 책임지고, 개인정보 처리와 관련한 정보주체의 불만 처리 및
           피해구제 등을 위하여 아래와 같이 개인정보 보호책임자를 지정하고 있습니다.
         </p>
-        <div className="mt-4 p-5 rounded-2xl bg-white/[0.03] border border-white/[0.07] space-y-2">
-          <p><strong className="text-zinc-300">성명:</strong> 신지한</p>
-          <p><strong className="text-zinc-300">직책:</strong> 대표이사</p>
-          <p><strong className="text-zinc-300">연락처:</strong> 010-4995-9867</p>
-          <p><strong className="text-zinc-300">이메일:</strong> support.armes@gmail.com</p>
+        <div className="mt-4 p-5 rounded-2xl bg-[#F8FAFF] border border-[#E5E8EB] space-y-2">
+          <p><strong className="text-[#333D4B]">성명:</strong> 신지한</p>
+          <p><strong className="text-[#333D4B]">직책:</strong> 대표이사</p>
+          <p><strong className="text-[#333D4B]">연락처:</strong> 010-4995-9867</p>
+          <p><strong className="text-[#333D4B]">이메일:</strong> support.armes@gmail.com</p>
         </div>
         <p className="mt-4">
           정보주체께서는 회사의 서비스를 이용하시면서 발생한 모든 개인정보 보호 관련 문의, 불만 처리, 피해구제 등에 관한
           사항을 개인정보 보호책임자에게 문의하실 수 있습니다.
         </p>
-        <p className="mt-3 text-sm text-zinc-500">
+        <p className="mt-3 text-sm text-[#8B95A1]">
           또한 개인정보가 침해되었다고 생각되시는 경우 아래 기관에 신고하실 수 있습니다.
         </p>
         <ul className="list-none space-y-1 mt-2 text-sm">
@@ -266,8 +266,8 @@ function PrivacyContent() {
             ["경찰청 사이버수사국", "ecrm.cyber.go.kr / 182"],
           ].map(([org, contact]) => (
             <li key={org} className="flex gap-2">
-              <span className="text-blue-500 flex-shrink-0">·</span>
-              <span><strong className="text-zinc-400">{org}:</strong> {contact}</span>
+              <span className="text-[#3182F6] flex-shrink-0">·</span>
+              <span><strong className="text-[#4E5968]">{org}:</strong> {contact}</span>
             </li>
           ))}
         </ul>
@@ -278,8 +278,8 @@ function PrivacyContent() {
         <p>
           이 개인정보 처리방침은 2024년 12월 1일부터 적용됩니다. 이전의 개인정보 처리방침은 아래에서 확인하실 수 있습니다.
         </p>
-        <div className="mt-4 p-5 rounded-2xl bg-white/[0.03] border border-white/[0.07]">
-          <p className="text-sm text-zinc-500">이전 버전: 2024년 6월 1일 ~ 2024년 11월 30일</p>
+        <div className="mt-4 p-5 rounded-2xl bg-[#F8FAFF] border border-[#E5E8EB]">
+          <p className="text-sm text-[#8B95A1]">이전 버전: 2024년 6월 1일 ~ 2024년 11월 30일</p>
         </div>
         <p className="mt-3 text-sm">
           개인정보 처리방침이 변경될 경우, 변경사항은 본 홈페이지를 통해 공지되며 변경된 방침은 공지한 날로부터

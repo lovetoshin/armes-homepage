@@ -21,13 +21,13 @@ export default function TermsPage() {
 function Section({ num, title, children }: { num: string; title: string; children: React.ReactNode }) {
   return (
     <section className="mb-12">
-      <h2 className="text-lg font-bold text-white mb-4 flex items-center gap-3">
-        <span className="w-7 h-7 rounded-lg bg-blue-500/15 border border-blue-500/25 flex items-center justify-center text-blue-400 text-xs font-bold flex-shrink-0">
+      <h2 className="text-lg font-bold text-[#191F28] mb-4 flex items-center gap-3">
+        <span className="w-7 h-7 rounded-lg bg-[#EBF3FF] border border-[#C5D8FB] flex items-center justify-center text-[#3182F6] text-xs font-bold flex-shrink-0">
           {num}
         </span>
         {title}
       </h2>
-      <div className="text-zinc-400 text-[15px] leading-[1.9] space-y-3 pl-10">{children}</div>
+      <div className="text-[#4E5968] text-[15px] leading-[1.9] space-y-3 pl-10">{children}</div>
     </section>
   );
 }
@@ -35,7 +35,7 @@ function Section({ num, title, children }: { num: string; title: string; childre
 function Article({ num, title, children }: { num: number; title: string; children: React.ReactNode }) {
   return (
     <div className="mb-8">
-      <h3 className="text-[15px] font-semibold text-zinc-200 mb-2.5">
+      <h3 className="text-[15px] font-semibold text-[#191F28] mb-2.5">
         제{num}조 ({title})
       </h3>
       <div className="space-y-2">{children}</div>
@@ -47,7 +47,7 @@ function TermsContent() {
   return (
     <div>
       {/* 서문 */}
-      <p className="text-zinc-400 text-[15px] leading-relaxed mb-10 p-5 rounded-2xl bg-white/[0.03] border border-white/[0.07]">
+      <p className="text-[#4E5968] text-[15px] leading-relaxed mb-10 p-5 rounded-2xl bg-[#F8FAFF] border border-[#E5E8EB]">
         본 약관은 주식회사 아르메스(이하 &apos;회사&apos;)가 제공하는 ARMES 플랫폼 서비스(RewardTalk, Seller AI,
         지역 공동구매, 매장 운영 SaaS 등, 이하 &apos;서비스&apos;)의 이용과 관련하여 회사와 이용자의 권리, 의무,
         책임사항 및 기타 필요한 사항을 규정함을 목적으로 합니다.
@@ -76,8 +76,8 @@ function TermsContent() {
               ["콘텐츠", "이용자가 서비스에 게재한 텍스트, 이미지, 영상, 파일 등 모든 정보"],
             ].map(([term, def]) => (
               <li key={term} className="flex gap-2">
-                <span className="text-blue-400 mt-1 flex-shrink-0">·</span>
-                <span><strong className="text-zinc-300">{term}:</strong> {def}</span>
+                <span className="text-[#3182F6] mt-1 flex-shrink-0">·</span>
+                <span><strong className="text-[#333D4B]">{term}:</strong> {def}</span>
               </li>
             ))}
           </ul>
@@ -114,7 +114,7 @@ function TermsContent() {
               "기타 회사가 정한 이용 신청 요건이 충족되지 않은 경우",
             ].map((item) => (
               <li key={item} className="flex gap-2">
-                <span className="text-blue-400 flex-shrink-0">·</span>
+                <span className="text-[#3182F6] flex-shrink-0">·</span>
                 <span>{item}</span>
               </li>
             ))}
@@ -148,7 +148,7 @@ function TermsContent() {
               "통합 멤버십 인프라: QR/바코드 기반 통합 멤버십 연동 서비스",
             ].map((item) => (
               <li key={item} className="flex gap-2">
-                <span className="text-blue-400 flex-shrink-0">·</span>
+                <span className="text-[#3182F6] flex-shrink-0">·</span>
                 <span>{item}</span>
               </li>
             ))}
@@ -168,7 +168,7 @@ function TermsContent() {
               "서비스 이용 폭주 등 운영상 불가피한 사유",
             ].map((item) => (
               <li key={item} className="flex gap-2">
-                <span className="text-blue-400 flex-shrink-0">·</span>
+                <span className="text-[#3182F6] flex-shrink-0">·</span>
                 <span>{item}</span>
               </li>
             ))}
@@ -208,7 +208,7 @@ function TermsContent() {
               "기타 불법적이거나 회사 정책에 위반되는 행위",
             ].map((item) => (
               <li key={item} className="flex gap-2">
-                <span className="text-blue-400 flex-shrink-0">·</span>
+                <span className="text-[#3182F6] flex-shrink-0">·</span>
                 <span>{item}</span>
               </li>
             ))}
@@ -244,7 +244,7 @@ function TermsContent() {
               "기타 회사가 정한 환불 불가 사유에 해당하는 경우",
             ].map((item) => (
               <li key={item} className="flex gap-2">
-                <span className="text-blue-400 flex-shrink-0">·</span>
+                <span className="text-[#3182F6] flex-shrink-0">·</span>
                 <span>{item}</span>
               </li>
             ))}
@@ -267,7 +267,7 @@ function TermsContent() {
               "이용자가 제3자와 연계된 서비스를 이용하면서 발생한 손해",
             ].map((item) => (
               <li key={item} className="flex gap-2">
-                <span className="text-blue-400 flex-shrink-0">·</span>
+                <span className="text-[#3182F6] flex-shrink-0">·</span>
                 <span>{item}</span>
               </li>
             ))}
@@ -283,9 +283,9 @@ function TermsContent() {
 
         <Article num={18} title="부칙">
           <p>이 약관은 2024년 12월 1일부터 시행합니다.</p>
-          <div className="mt-4 p-4 rounded-xl bg-white/[0.03] border border-white/[0.06]">
-            <p className="text-sm text-zinc-500">시행일: 2024년 12월 1일</p>
-            <p className="text-sm text-zinc-500">주식회사 아르메스 대표이사: 신지한</p>
+          <div className="mt-4 p-4 rounded-xl bg-[#F8FAFF] border border-[#E5E8EB]">
+            <p className="text-sm text-[#8B95A1]">시행일: 2024년 12월 1일</p>
+            <p className="text-sm text-[#8B95A1]">주식회사 아르메스 대표이사: 신지한</p>
           </div>
         </Article>
 
