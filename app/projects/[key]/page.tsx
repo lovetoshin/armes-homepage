@@ -295,7 +295,7 @@ export default async function ProjectDetailPage({
             {/* 여행모아 — 개인정보 처리방침 바로가기 */}
             {key === "travelmoa" && (
               <Link
-                href="/projects/travelmoa/privacy"
+                href="/travelmoa/privacy"
                 className="group flex items-center justify-between gap-3 p-5 rounded-2xl border border-[#E5E8EB] bg-white hover:border-[#3182F6] hover:bg-[#F8FAFF] transition-colors"
               >
                 <div className="flex items-center gap-3">

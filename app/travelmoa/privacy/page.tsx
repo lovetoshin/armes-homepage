@@ -1,7 +1,7 @@
 // 여행모아(TravelMoa) 개인정보 처리방침 — 플레이스토어 심사용.
 // 회사 정책 페이지(/privacy, /terms) 및 리워드톡과 동일한 LegalLayout 와꾸로 통일.
 // ⚠️ 법적 텍스트는 여행모아 실제 수집 범위에 맞춰 정직하게 작성한다(없는 수집 항목을 적지 않는다).
-// 주소: https://armes.co.kr/projects/travelmoa/privacy
+// 주소: https://armes.co.kr/travelmoa/privacy
 
 import type { Metadata } from "next";
 import LegalLayout from "@/components/legal/LegalLayout";
@@ -11,7 +11,7 @@ export const dynamic = "force-static";
 export const metadata: Metadata = {
   title: "여행모아(TravelMoa) 개인정보 처리방침 | 주식회사 아르메스",
   description: "여행모아(TravelMoa) 개인정보 처리방침 - 주식회사 아르메스",
-  alternates: { canonical: "/projects/travelmoa/privacy" },
+  alternates: { canonical: "/travelmoa/privacy" },
 };
 
 export default function TravelmoaPrivacyPage() {
