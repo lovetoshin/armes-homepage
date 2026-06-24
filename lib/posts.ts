@@ -32,6 +32,13 @@ function toList(v: unknown): string[] {
   return [];
 }
 
+// 날짜 정규화: gray-matter가 따옴표 없는 date(예: 2026-05-27)를 Date 객체로 파싱하는 경우
+// String() 변환 시 "Wed May 27 2026 ..." 형태가 되어 문자열 정렬이 깨진다 → YYYY-MM-DD로 통일.
+function toISODate(v: unknown): string {
+  if (v instanceof Date) return v.toISOString().slice(0, 10);
+  return v == null ? "" : String(v);
+}
+
 // 한국어 기준 읽는 시간(분) — 분당 약 500자, 최소 1분
 function calcReadingTime(markdown: string): number {
   const chars = markdown.replace(/\s/g, "").length;
@@ -60,8 +67,8 @@ export function getPost(type: PostType, slug: string): Post | null {
   return {
     slug,
     title: String(data.title ?? slug),
-    date: String(data.date ?? ""),
-    updated: data.updated ? String(data.updated) : undefined,
+    date: toISODate(data.date),
+    updated: data.updated ? toISODate(data.updated) : undefined,
     excerpt: String(data.excerpt ?? ""),
     thumbnail,
     imageAlt: data.imageAlt ? String(data.imageAlt) : undefined,
