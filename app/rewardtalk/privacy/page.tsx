@@ -6,6 +6,8 @@
 import type { Metadata } from "next";
 import LegalLayout from "@/components/legal/LegalLayout";
 
+export const dynamic = "force-static";
+
 export const metadata: Metadata = {
   title: "리워드톡(RewardTalk) 개인정보 처리방침 | 주식회사 아르메스",
   description: "리워드톡(RewardTalk) 개인정보 처리방침 - 주식회사 아르메스",
