@@ -281,6 +281,36 @@ body {
   margin-bottom: 0;
 }
 
+/* ===== 본문 코드(개발/도구 글 전·후 예시) ===== */
+.post-body code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.88em;
+  background: #EEF1F5;
+  color: #0F4C9A;
+  padding: 0.12em 0.42em;
+  border-radius: 6px;
+  word-break: break-all;
+}
+.post-body pre {
+  background: #F7F9FC;
+  border: 1px solid #E5E8EB;
+  border-radius: 12px;
+  padding: 1rem 1.15rem;
+  overflow-x: auto;
+  margin: 1.4rem 0;
+  line-height: 1.65;
+  font-size: 0.9rem;
+}
+.post-body pre code {
+  background: transparent;
+  color: #1B2A4A;
+  padding: 0;
+  border-radius: 0;
+  font-size: inherit;
+  word-break: normal;
+  white-space: pre;
+}
+
 /* ===== NOISE TEXTURE ===== */
 .noise::after {
   content: '';
