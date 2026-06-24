@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { useContact } from "@/components/ContactProvider";
 
 /**
- * 회사 Hero — ARMES는 "여러 AI 프로젝트를 만드는 기술 회사"라는 정체성을 먼저 보여준다.
+ * 회사 Hero — ARMES는 "여러 AI 서비스를 만드는 AI 기반 서비스 기업"이라는 정체성을 먼저 보여준다.
  * (특정 프로젝트 홍보가 아니라 회사 자체)
  */
 export default function CompanyHero() {
@@ -21,19 +21,19 @@ export default function CompanyHero() {
         >
           <div className="inline-flex items-center gap-2 bg-[#EBF3FF] text-[#3182F6] text-xs font-bold px-4 py-2 rounded-full mb-7">
             <span className="w-1.5 h-1.5 rounded-full bg-[#3182F6]" />
-            AI Technology Company
+            AI Service Company
           </div>
 
           <h1 className="text-4xl lg:text-6xl font-extrabold text-[#191F28] leading-[1.12] tracking-tight mb-6 keep-all">
-            AI 기술로
+            AI로
             <br />
-            <span className="text-[#3182F6]">일상을 자동화</span>하는 회사
+            <span className="text-[#3182F6]">일상을 바꾸는</span> 서비스 기업
           </h1>
 
           <p className="text-[#4E5968] text-lg lg:text-xl leading-relaxed max-w-2xl mx-auto mb-10 keep-all">
-            아르메스는 이미지·언어·비전·위치 기술을 바탕으로
+            아르메스는 AI·데이터·자동화·위치기술을 활용해
             쇼핑몰, 지역 생활, 여행 등 일상의 여러 영역에
-            실제로 쓰이는 AI 서비스를 만듭니다.
+            실제로 쓰이는 서비스를 만듭니다.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 justify-center">

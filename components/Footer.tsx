@@ -39,10 +39,10 @@ export default function Footer() {
               <span className="font-extrabold text-[#191F28] text-[17px]">ARMES</span>
             </div>
             <p className="text-[#8B95A1] text-sm leading-relaxed mb-5 max-w-[210px]">
-              AI 기술로 일상을 자동화하는 회사
+              AI로 일상을 바꾸는 서비스 기업
             </p>
             <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full border border-[#C5D8FB] bg-[#EBF3FF] text-[#3182F6] text-[11px] font-bold">
-              AI Technology Company
+              AI Service Company
             </span>
           </div>
 

@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "회사 소개 | ARMES",
   description:
-    "아르메스는 AI 기술로 일상을 자동화하는 기술 회사입니다. 미션과 비전, 대표 신지한의 유통 16년 경험, 사업 영역을 소개합니다.",
+    "아르메스는 AI·데이터·자동화 기술을 활용해 실생활 서비스를 만드는 AI 기반 서비스 기업입니다. 미션과 비전, 대표 신지한의 유통 16년 경험, 사업 영역을 소개합니다.",
   alternates: { canonical: "/about" },
 };
 
@@ -76,11 +76,11 @@ export default function AboutPage() {
             About ARMES
           </p>
           <h1 className="text-4xl lg:text-5xl font-extrabold text-[#191F28] tracking-tight leading-[1.15] mb-5 keep-all">
-            AI 기술로 일상을 자동화하는 회사
+            AI로 일상을 바꾸는 서비스 기업
           </h1>
           <p className="text-[#4E5968] text-lg leading-relaxed max-w-2xl mx-auto keep-all">
-            주식회사 아르메스는 이미지·언어·비전·위치 기술을 바탕으로
-            여러 분야의 AI 서비스를 직접 만들고 운영합니다.
+            주식회사 아르메스는 AI·데이터·자동화·위치기술을 활용해
+            여러 분야의 실생활 서비스를 직접 만들고 운영합니다.
           </p>
         </div>
       </div>

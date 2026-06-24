@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "ARMES — AI 기술로 일상을 자동화하는 회사";
+export const alt = "ARMES — AI로 일상을 바꾸는 서비스 기업";
 export const size    = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -83,17 +83,17 @@ export default function OgImage() {
           marginBottom:   24,
           maxWidth:       680,
         }}>
-          AI 기술로
+          AI로
           <br />
           <span style={{
             background:           "linear-gradient(135deg, #5B9BFF 0%, #3182F6 50%, #1B64DA 100%)",
             WebkitBackgroundClip: "text",
             color:                "transparent",
           }}>
-            일상을 자동화하는
+            일상을 바꾸는
           </span>
           <br />
-          회사
+          서비스 기업
         </h1>
 
         {/* Sub */}
