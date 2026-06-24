@@ -41,6 +41,18 @@ const nextConfig: NextConfig = {
         destination: "https://www.armes.co.kr/sellerai/studio",
         permanent:   true,
       },
+      // ARMES Tools는 현재 개발중 — 옛/외부 주소(/tools, /tools/ko 등)로 들어와도
+      // 404 대신 소개(랜딩) 페이지로 임시 안내한다. (정식 출시 시 이 두 규칙 제거)
+      {
+        source:      "/tools",
+        destination: "/projects/tools",
+        permanent:   false,
+      },
+      {
+        source:      "/tools/:path*",
+        destination: "/projects/tools",
+        permanent:   false,
+      },
       // www → non-www (도메인 설정 시 활성화)
       // {
       //   source:      "/:path*",

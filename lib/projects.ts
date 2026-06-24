@@ -53,11 +53,10 @@ export const projects: Project[] = [
   {
     key: "tools",
     name: "ARMES Tools",
-    tagline: "이미지·PDF·텍스트·개발자 도구를 설치 없이 브라우저에서 바로 쓰는 무료 온라인 도구",
+    tagline: "이미지·PDF·텍스트·개발자 도구를 설치 없이 브라우저에서 바로 쓰는 무료 온라인 도구 (개발중)",
     audience: "누구나 · 글로벌 9개 언어",
-    status: "live",
+    status: "soon",
     tech: ["Automation"],
-    href: "/tools/ko",
     icon: "🧰",
   },
   {
