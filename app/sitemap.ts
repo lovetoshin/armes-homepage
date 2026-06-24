@@ -2,9 +2,10 @@ import type { MetadataRoute } from "next";
 import { getAllPosts, BLOG_CATEGORIES, categorySlug } from "@/lib/posts";
 import { projects, type ProjectStatus } from "@/lib/projects";
 
-// 서비스 상태별 우선순위(운영중 > 준비중 > 연구중)
+// 서비스 상태별 우선순위(운영중 > 배포대기중 > 준비중 > 연구중)
 const SERVICE_PRIORITY: Record<ProjectStatus, number> = {
   live: 0.8,
+  pending: 0.7,
   soon: 0.6,
   research: 0.5,
 };

@@ -2,7 +2,7 @@
 // ⚠️ 각 프로젝트의 기능/SEO 콘텐츠는 절대 여기 넣지 않는다.
 //    여기는 "카드 한 줄 소개 + 상태 + 바로가기"까지만. 자세한 내용은 각 프로젝트가 책임진다.
 
-export type ProjectStatus = "live" | "soon" | "research";
+export type ProjectStatus = "live" | "pending" | "soon" | "research";
 
 export interface Project {
   key: string;          // 내부 식별자
@@ -25,6 +25,11 @@ export const STATUS_META: Record<
     label: "운영중",
     dot: "bg-[#15B66E]",
     chip: "bg-[#E7F7EF] text-[#15803D]",
+  },
+  pending: {
+    label: "배포대기중",
+    dot: "bg-[#F59E0B]",
+    chip: "bg-[#FEF6E7] text-[#B45309]",
   },
   soon: {
     label: "준비중",
@@ -53,9 +58,9 @@ export const projects: Project[] = [
   {
     key: "tools",
     name: "ARMES Tools",
-    tagline: "이미지·PDF·텍스트·개발자 도구를 설치 없이 브라우저에서 바로 쓰는 무료 온라인 도구 (배포대기중)",
+    tagline: "이미지·PDF·텍스트·개발자 도구를 설치 없이 브라우저에서 바로 쓰는 무료 온라인 도구",
     audience: "누구나 · 글로벌 9개 언어",
-    status: "soon",
+    status: "pending",
     tech: ["Automation"],
     icon: "🧰",
   },
@@ -64,7 +69,7 @@ export const projects: Project[] = [
     name: "RewardTalk",
     tagline: "내 주변 매장 할인·적립·공동구매를 잇는 로컬 멤버십 플랫폼",
     audience: "동네 생활 소비자",
-    status: "soon",
+    status: "pending",
     tech: ["Location", "Automation"],
     icon: "🎁",
     thumbnail: "/projects/rewardtalk-2.jpg",
@@ -74,7 +79,7 @@ export const projects: Project[] = [
     name: "TravelMoa",
     tagline: "여행 특가와 항공권을 한곳에서 찾는 스마트 여행 플랫폼",
     audience: "여행을 준비하는 사람",
-    status: "soon",
+    status: "pending",
     tech: ["Location", "AI"],
     icon: "✈️",
     thumbnail: "/projects/travelmoa-2.jpg",
@@ -84,7 +89,7 @@ export const projects: Project[] = [
     name: "CocoPing",
     tagline: "코스트코 할인정보와 가격 변동을 한눈에 보는 쇼핑 도우미",
     audience: "코스트코 이용 쇼핑객",
-    status: "soon",
+    status: "pending",
     tech: ["AI", "Automation"],
     icon: "🛒",
     thumbnail: "/projects/cocoping-2.jpg",
