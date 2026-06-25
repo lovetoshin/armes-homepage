@@ -13,6 +13,11 @@ AI가 상세페이지를 대신 만들어 주는 시대입니다. 그런데 재�
 
 [상세페이지를 AI로 만드는 기본 흐름](/blog/ai-detail-page-beginner)을 안다는 전제에서, 이 글은 한 단계 더 들어가 "결과물의 격을 높이는 3가지 핵심"과 실무에서 자주 놓치는 부분을 정리합니다.
 
+
+![SellerAI 실제 화면](/blog/inline/svc-sellerai.jpg)
+
+> 📱 **SellerAI** — 상품 사진 한 장으로 모델 착용컷·누끼·상세페이지까지 만드는 AI 서비스. [SellerAI 자세히 보기 →](https://www.armes.co.kr/sellerai/studio)
+
 ## 한눈에 보는 3가지 핵심
 
 | 핵심 | 안 지키면 | 지키면 |
