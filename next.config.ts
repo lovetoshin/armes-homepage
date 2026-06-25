@@ -12,19 +12,29 @@ const nextConfig: NextConfig = {
 
   // ── 보안 헤더 ──
   async headers() {
+    // 공통 보안 헤더(권한 정책 제외)
+    const base = [
+      { key: "X-Content-Type-Options",    value: "nosniff" },
+      { key: "X-Frame-Options",            value: "DENY" },
+      { key: "X-XSS-Protection",           value: "1; mode=block" },
+      { key: "Referrer-Policy",            value: "strict-origin-when-cross-origin" },
+      { key: "Strict-Transport-Security",  value: "max-age=63072000; includeSubDomains; preload" },
+    ];
     return [
       {
-        source: "/(.*)",
+        // ARMES Tools(/tools): 음성 녹음·화면 녹화 도구가 있어 마이크·화면공유를 '본인 사이트'에 한해 허용
+        source: "/tools/:path*",
         headers: [
-          { key: "X-Content-Type-Options",    value: "nosniff" },
-          { key: "X-Frame-Options",            value: "DENY" },
-          { key: "X-XSS-Protection",           value: "1; mode=block" },
-          { key: "Referrer-Policy",            value: "strict-origin-when-cross-origin" },
-          { key: "Permissions-Policy",         value: "camera=(), microphone=(), geolocation=(self)" },
-          {
-            key:   "Strict-Transport-Security",
-            value: "max-age=63072000; includeSubDomains; preload",
-          },
+          ...base,
+          { key: "Permissions-Policy", value: "camera=(self), microphone=(self), display-capture=(self), geolocation=(self)" },
+        ],
+      },
+      {
+        // 그 외 모든 경로: 마이크·카메라 차단(기존 정책 유지)
+        source: "/((?!tools).*)",
+        headers: [
+          ...base,
+          { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=(self)" },
         ],
       },
     ];
