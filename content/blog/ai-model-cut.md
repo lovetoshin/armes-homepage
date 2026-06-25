@@ -14,7 +14,7 @@ relatedServices: [sellerai]
 문제는 비용과 시간입니다. 모델 섭외, 스튜디오 대여, 촬영, 보정까지 한 번 돌리려면 작은 쇼핑몰 입장에서는 부담이 큽니다. 신상품을 자주 올려야 하는데, 매번 촬영 일정을 잡는 것 자체가 병목입니다. 최근에는 상품 사진 한 장만 있으면 AI가 모델 착용컷을 만들어 주는 방식이 현장에 자리를 잡았습니다. 이 글에서는 그 원리와 실제 비용·시간 차이, 그리고 결과를 자연스럽게 뽑는 실전 요령까지 정리합니다.
 
 
-![SellerAI 실제 화면](/blog/inline/svc-sellerai.jpg)
+![SellerAI 실제 화면](/blog/inline/sai-ai-model-cut.jpg)
 
 > 📱 **SellerAI** — 상품 사진 한 장으로 모델 착용컷·누끼·상세페이지까지 만드는 AI 서비스. [SellerAI 자세히 보기 →](https://www.armes.co.kr/sellerai/studio)
 

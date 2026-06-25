@@ -14,7 +14,7 @@ relatedServices: [sellerai]
 다행히 요즘은 AI 도구가 이 과정을 크게 줄여 줍니다. 다만 "버튼만 누르면 완성"이라는 환상은 버려야 합니다. **무엇을 말할지는 사람이 정하고, 만드는 수고를 AI가 던다**는 게 정확한 그림입니다. 이 글에서는 디자인 경험이 전혀 없어도 따라 할 수 있게, 준비물부터 완성까지의 흐름을 단계별로 정리합니다.
 
 
-![SellerAI 실제 화면](/blog/inline/svc-sellerai.jpg)
+![SellerAI 실제 화면](/blog/inline/sai-ai-detail-page-beginner.jpg)
 
 > 📱 **SellerAI** — 상품 사진 한 장으로 모델 착용컷·누끼·상세페이지까지 만드는 AI 서비스. [SellerAI 자세히 보기 →](https://www.armes.co.kr/sellerai/studio)
 

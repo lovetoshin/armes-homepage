@@ -14,7 +14,7 @@ relatedServices: [sellerai]
 다행히 좋은 상품 사진은 비싼 장비의 문제가 아닙니다. **빛·배경·구도·보정** 네 가지 기본기만 챙기면, 휴대폰으로도 충분히 팔리는 사진을 찍을 수 있습니다. 이 글에서는 그 기본기와, 촬영 시간을 줄이는 방법까지 정리합니다.
 
 
-![SellerAI 실제 화면](/blog/inline/svc-sellerai.jpg)
+![SellerAI 실제 화면](/blog/inline/sai-product-photo-tips.jpg)
 
 > 📱 **SellerAI** — 상품 사진 한 장으로 모델 착용컷·누끼·상세페이지까지 만드는 AI 서비스. [SellerAI 자세히 보기 →](https://www.armes.co.kr/sellerai/studio)
 

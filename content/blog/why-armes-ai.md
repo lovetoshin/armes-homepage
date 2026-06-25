@@ -14,7 +14,7 @@ relatedServices: [sellerai, tools]
 아르메스의 대표는 유통 현장에서 오랜 시간을 보냈습니다. 상품을 팔고, 고객을 만나고, 매일 같은 일을 직접 했습니다. 그 과정에서 분명해진 게 하나 있었습니다. **정작 중요한 일에 쓸 시간이, 반복 작업에 자꾸 새어 나간다**는 점이었습니다. 이 글에서는 그 불편이 어떻게 실제 서비스가 되었는지, 아르메스가 일하는 원칙은 무엇인지 나눕니다.
 
 
-![SellerAI 실제 화면](/blog/inline/svc-sellerai.jpg)
+![SellerAI 실제 화면](/blog/inline/sai-why-armes-ai.jpg)
 
 > 📱 **SellerAI** — 상품 사진 한 장으로 모델 착용컷·누끼·상세페이지까지 만드는 AI 서비스. [SellerAI 자세히 보기 →](https://www.armes.co.kr/sellerai/studio)
 

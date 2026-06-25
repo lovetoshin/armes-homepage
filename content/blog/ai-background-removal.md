@@ -14,7 +14,7 @@ relatedServices: [sellerai]
 예전에는 포토샵으로 펜툴을 잡고 경계선을 일일이 따야 했습니다. 한 장에 몇 분, 머리카락이 있으면 십수 분도 걸렸습니다. 지금은 AI가 같은 일을 1분 안에 해냅니다. 다만 **아무 사진이나 깔끔하게 되는 건 아닙니다.** 이 글에서는 누끼의 원리, 수작업 대비 실제 비용·시간 차이, 그리고 결과가 지저분해지지 않게 하는 실전 요령까지 정리합니다.
 
 
-![SellerAI 실제 화면](/blog/inline/svc-sellerai.jpg)
+![SellerAI 실제 화면](/blog/inline/sai-ai-background-removal.jpg)
 
 > 📱 **SellerAI** — 상품 사진 한 장으로 모델 착용컷·누끼·상세페이지까지 만드는 AI 서비스. [SellerAI 자세히 보기 →](https://www.armes.co.kr/sellerai/studio)
 

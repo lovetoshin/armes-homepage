@@ -14,7 +14,7 @@ relatedServices: []
 다행히 검색 상위에 가는 글에는 분명한 **공통점**이 있습니다. 그리고 그건 복잡한 기술이 아니라, 누구나 지킬 수 있는 **기본 원칙**입니다. 이 글에서는 검색 1페이지로 가는 글쓰기의 핵심 원칙 다섯 가지를, 통하지 않는 방법과 함께 정리합니다. 실제로 어떻게 적용하는지 예시도 함께 보겠습니다.
 
 
-![SellerAI 실제 화면](/blog/inline/svc-sellerai.jpg)
+![SellerAI 실제 화면](/blog/inline/sai-blog-seo-basics.jpg)
 
 > 📱 **SellerAI** — 상품 사진 한 장으로 모델 착용컷·누끼·상세페이지까지 만드는 AI 서비스. [SellerAI 자세히 보기 →](https://www.armes.co.kr/sellerai/studio)
 

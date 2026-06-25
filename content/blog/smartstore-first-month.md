@@ -14,7 +14,7 @@ relatedServices: [sellerai, rankingpangpang]
 상품 50개를 대충 올리는 것보다, 상품 1개를 제대로 올린 경험이 훨씬 값집니다. 그 1개가 나머지 모든 상품의 기준이 되기 때문입니다. 이 글에서는 초보 셀러가 첫 달에 우선순위를 둬야 할 다섯 가지를, 실제로 어디서 막히는지까지 짚어 정리합니다.
 
 
-![SellerAI 실제 화면](/blog/inline/svc-sellerai.jpg)
+![SellerAI 실제 화면](/blog/inline/sai-smartstore-first-month.jpg)
 
 > 📱 **SellerAI** — 상품 사진 한 장으로 모델 착용컷·누끼·상세페이지까지 만드는 AI 서비스. [SellerAI 자세히 보기 →](https://www.armes.co.kr/sellerai/studio)
 

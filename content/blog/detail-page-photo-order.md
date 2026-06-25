@@ -14,7 +14,7 @@ relatedServices: [sellerai]
 이유는 단순합니다. 고객은 상세페이지를 **위에서 아래로 훑으며 점점 마음을 정하기** 때문입니다. 그 시선 흐름과 사진 순서가 어긋나면, 살 사람도 중간에 떠납니다. 이 글에서는 고객의 마음 흐름에 맞춘 배치 순서와, 자주 하는 실수까지 정리합니다.
 
 
-![SellerAI 실제 화면](/blog/inline/svc-sellerai.jpg)
+![SellerAI 실제 화면](/blog/inline/sai-detail-page-photo-order.jpg)
 
 > 📱 **SellerAI** — 상품 사진 한 장으로 모델 착용컷·누끼·상세페이지까지 만드는 AI 서비스. [SellerAI 자세히 보기 →](https://www.armes.co.kr/sellerai/studio)
 

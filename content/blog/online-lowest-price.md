@@ -14,7 +14,7 @@ relatedServices: [cocoping, rankingpangpang]
 진짜 최저가를 잡으려면 두 가지를 알아야 합니다. ① **표시 가격이 아니라 실제 결제액으로 비교**하는 법, ② **지금이 싼 시점인지 가격 흐름으로 판단**하는 법입니다. 이 글에서 둘 다 정리합니다.
 
 
-![SellerAI 실제 화면](/blog/inline/svc-sellerai.jpg)
+![SellerAI 실제 화면](/blog/inline/sai-online-lowest-price.jpg)
 
 > 📱 **SellerAI** — 상품 사진 한 장으로 모델 착용컷·누끼·상세페이지까지 만드는 AI 서비스. [SellerAI 자세히 보기 →](https://www.armes.co.kr/sellerai/studio)
 
