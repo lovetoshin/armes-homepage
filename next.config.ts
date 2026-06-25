@@ -22,11 +22,15 @@ const nextConfig: NextConfig = {
     ];
     return [
       {
-        // ARMES Tools(/tools): 음성 녹음·화면 녹화 도구가 있어 마이크·화면공유를 '본인 사이트'에 한해 허용
+        // ARMES Tools(/tools): 음성 녹음·화면 녹화 도구가 있어 마이크·화면공유를 '본인 사이트'에 한해 허용.
+        // + AI 지우기(LaMa) 멀티스레드 가속을 위해 SharedArrayBuffer 활성화(COOP/COEP).
+        //   COEP=credentialless 라 외부 광고(애드센스·쿠팡)는 쿠키 없이 그대로 로드되어 영향 최소화.
         source: "/tools/:path*",
         headers: [
           ...base,
           { key: "Permissions-Policy", value: "camera=(self), microphone=(self), display-capture=(self), geolocation=(self)" },
+          { key: "Cross-Origin-Opener-Policy", value: "same-origin" },
+          { key: "Cross-Origin-Embedder-Policy", value: "credentialless" },
         ],
       },
       {
