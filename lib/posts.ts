@@ -3,21 +3,33 @@ import path from "node:path";
 import matter from "gray-matter";
 import { marked } from "marked";
 import { DEFAULT_AUTHOR, type PostType, type PostMeta, type Post } from "./posts-meta";
+import { LOCALES, LOCALE_SEGMENT, DEFAULT_LOCALE, type Locale } from "./i18n";
 
 // News / Blog 글을 content/*.md 에서 읽어 처리하는 유틸(서버 전용 — node:fs 사용).
 // 글 본문은 Markdown 파일로 분리되어, 나중에 형님이 직접 교체/추가할 수 있다.
 // 타입·상수(BLOG_CATEGORIES 등)는 클라이언트에서도 쓰도록 posts-meta.ts로 분리했다.
+//
+// 다국어: 한국어는 content/{type}/*.md, 번역본은 content/{type}/{언어코드}/*.md 에 둔다.
+// 번역본이 없는 글은 해당 언어 목록에 나타나지 않는다(어색한 미번역 노출·중복 방지).
 export * from "./posts-meta";
 
 const ROOT = path.join(process.cwd(), "content");
 
-function dir(type: PostType) {
-  return path.join(ROOT, type);
+function dir(type: PostType, locale: Locale = DEFAULT_LOCALE) {
+  const seg = LOCALE_SEGMENT[locale];
+  return seg ? path.join(ROOT, type, seg) : path.join(ROOT, type);
 }
 
-// 해당 타입의 모든 .md 파일명(확장자 제외) 목록
-export function getSlugs(type: PostType): string[] {
-  const d = dir(type);
+// 이 글이 실제 번역되어 존재하는 언어 목록 — hreflang을 정확히 만들어 404 링크를 막는다.
+export function postLocales(type: PostType, slug: string): Locale[] {
+  return LOCALES.filter((loc) =>
+    fs.existsSync(path.join(dir(type, loc), `${slug}.md`))
+  );
+}
+
+// 해당 타입·언어의 모든 .md 파일명(확장자 제외) 목록
+export function getSlugs(type: PostType, locale: Locale = DEFAULT_LOCALE): string[] {
+  const d = dir(type, locale);
   if (!fs.existsSync(d)) return [];
   return fs
     .readdirSync(d)
@@ -46,8 +58,12 @@ function calcReadingTime(markdown: string): number {
 }
 
 // 단건: frontmatter + 본문 HTML
-export function getPost(type: PostType, slug: string): Post | null {
-  const file = path.join(dir(type), `${slug}.md`);
+export function getPost(
+  type: PostType,
+  slug: string,
+  locale: Locale = DEFAULT_LOCALE,
+): Post | null {
+  const file = path.join(dir(type, locale), `${slug}.md`);
   if (!fs.existsSync(file)) return null;
 
   const raw = fs.readFileSync(file, "utf8");
@@ -82,10 +98,10 @@ export function getPost(type: PostType, slug: string): Post | null {
 }
 
 // 목록: 본문 제외 메타만, 최신순 정렬
-export function getAllPosts(type: PostType): PostMeta[] {
-  return getSlugs(type)
+export function getAllPosts(type: PostType, locale: Locale = DEFAULT_LOCALE): PostMeta[] {
+  return getSlugs(type, locale)
     .map((slug) => {
-      const post = getPost(type, slug);
+      const post = getPost(type, slug, locale);
       if (!post) return null;
       const { contentHtml: _omit, ...meta } = post;
       void _omit;
@@ -96,8 +112,12 @@ export function getAllPosts(type: PostType): PostMeta[] {
 }
 
 // 카테고리별 글 (목록 페이지/카테고리 인덱스용)
-export function getPostsByCategory(type: PostType, category: string): PostMeta[] {
-  return getAllPosts(type).filter((p) => p.category === category);
+export function getPostsByCategory(
+  type: PostType,
+  category: string,
+  locale: Locale = DEFAULT_LOCALE,
+): PostMeta[] {
+  return getAllPosts(type, locale).filter((p) => p.category === category);
 }
 
 // 관련 글 추출 — 같은 카테고리(+3점) + 태그 교집합(태그당 1점) 점수로 정렬,
@@ -105,9 +125,10 @@ export function getPostsByCategory(type: PostType, category: string): PostMeta[]
 export function getRelatedPosts(
   type: PostType,
   slug: string,
+  locale: Locale = DEFAULT_LOCALE,
   limit = 4,
 ): PostMeta[] {
-  const all = getAllPosts(type);
+  const all = getAllPosts(type, locale);
   const current = all.find((p) => p.slug === slug);
   if (!current) return all.filter((p) => p.slug !== slug).slice(0, limit);
 

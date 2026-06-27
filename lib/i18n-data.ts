@@ -117,6 +117,106 @@ export const TECH_DESC: Record<string, Record<Locale, string>> = {
   },
 };
 
+// 블로그/뉴스 카테고리 이름(표시용). URL 슬러그는 언어 공통(영문)이라 별도.
+export const CATEGORY_LABEL: Record<string, Record<Locale, string>> = {
+  // Blog
+  AI: { ko: "AI", en: "AI", "zh-Hans": "AI", "zh-Hant": "AI" },
+  쇼핑: { ko: "쇼핑", en: "Shopping", "zh-Hans": "购物", "zh-Hant": "購物" },
+  여행: { ko: "여행", en: "Travel", "zh-Hans": "旅行", "zh-Hant": "旅行" },
+  주유: { ko: "주유", en: "Fuel", "zh-Hans": "加油", "zh-Hant": "加油" },
+  전기차: { ko: "전기차", en: "EV", "zh-Hans": "电动车", "zh-Hant": "電動車" },
+  코스트코: { ko: "코스트코", en: "Costco", "zh-Hans": "Costco", "zh-Hant": "好市多" },
+  SEO: { ko: "SEO", en: "SEO", "zh-Hans": "SEO", "zh-Hant": "SEO" },
+  생산성도구: { ko: "생산성도구", en: "Productivity", "zh-Hans": "效率工具", "zh-Hant": "效率工具" },
+  후삼국지: { ko: "후삼국지", en: "Later Three Kingdoms", "zh-Hans": "后三国志", "zh-Hant": "後三國志" },
+  // News
+  "서비스 출시": { ko: "서비스 출시", en: "Launch", "zh-Hans": "服务发布", "zh-Hant": "服務發布" },
+  업데이트: { ko: "업데이트", en: "Update", "zh-Hans": "更新", "zh-Hant": "更新" },
+  제휴: { ko: "제휴", en: "Partnership", "zh-Hans": "合作", "zh-Hant": "合作" },
+  "개발 현황": { ko: "개발 현황", en: "Development", "zh-Hans": "开发进展", "zh-Hant": "開發進展" },
+  공지: { ko: "공지", en: "Notice", "zh-Hans": "公告", "zh-Hant": "公告" },
+};
+
+export function categoryLabel(category: string, locale: Locale): string {
+  return CATEGORY_LABEL[category]?.[locale] ?? category;
+}
+
+// 블로그 카테고리 한 줄 소개(검색 의도). 긴 SEO 본문(CATEGORY_HUB)은 한국어 자산이라 별도.
+export const CATEGORY_INTRO: Record<string, Record<Locale, string>> = {
+  AI: {
+    ko: "AI로 이미지·상세페이지·콘텐츠를 더 빠르게 만드는 실전 활용법을 모았습니다.",
+    en: "Practical ways to create images, detail pages and content faster with AI.",
+    "zh-Hans": "汇集用AI更快制作图片、详情页与内容的实战方法。",
+    "zh-Hant": "彙集以AI更快製作圖片、詳情頁與內容的實戰方法。",
+  },
+  쇼핑: {
+    ko: "스마트스토어·온라인 판매와 알뜰 쇼핑에 바로 쓰는 정보와 노하우입니다.",
+    en: "Information and know-how for online selling and smart shopping.",
+    "zh-Hans": "可立即用于网店销售与精明购物的信息与技巧。",
+    "zh-Hant": "可立即用於網店銷售與精明購物的資訊與技巧。",
+  },
+  여행: {
+    ko: "항공권·여행 특가를 더 싸게, 더 똑똑하게 준비하는 방법을 정리합니다.",
+    en: "How to prepare flights and travel deals more cheaply and smartly.",
+    "zh-Hans": "整理如何更便宜、更聪明地准备机票与旅行特价。",
+    "zh-Hant": "整理如何更便宜、更聰明地準備機票與旅行特價。",
+  },
+  주유: {
+    ko: "우리 동네 최저가 주유소와 기름값 아끼는 팁을 다룹니다.",
+    en: "Finding the cheapest gas stations near you and saving on fuel.",
+    "zh-Hans": "介绍附近最低价加油站与省油费的技巧。",
+    "zh-Hant": "介紹附近最低價加油站與省油費的技巧。",
+  },
+  전기차: {
+    ko: "전기차 충전소 찾기와 충전 요금을 아끼는 방법을 안내합니다.",
+    en: "Finding EV charging stations and saving on charging costs.",
+    "zh-Hans": "指引如何寻找电动车充电站与节省充电费用。",
+    "zh-Hant": "指引如何尋找電動車充電站與節省充電費用。",
+  },
+  코스트코: {
+    ko: "코스트코 할인 정보와 가격 변동, 가성비 쇼핑 팁을 모았습니다.",
+    en: "Costco deals, price changes and value shopping tips.",
+    "zh-Hans": "汇集Costco折扣信息、价格变动与高性价比购物技巧。",
+    "zh-Hant": "彙集好市多折扣資訊、價格變動與高性價比購物技巧。",
+  },
+  SEO: {
+    ko: "검색 상위 노출과 블로그·로컬 SEO의 기본기를 쉽게 설명합니다.",
+    en: "The basics of ranking higher and blog/local SEO, explained simply.",
+    "zh-Hans": "通俗讲解搜索排名与博客·本地SEO的基础。",
+    "zh-Hant": "淺顯講解搜尋排名與部落格·在地SEO的基礎。",
+  },
+  생산성도구: {
+    ko: "설치·가입 없이 브라우저에서 바로 쓰는 무료 도구 활용법입니다.",
+    en: "How to use free tools right in your browser — no install, no signup.",
+    "zh-Hans": "无需安装与注册，在浏览器中即用的免费工具用法。",
+    "zh-Hant": "無需安裝與註冊，在瀏覽器中即用的免費工具用法。",
+  },
+  후삼국지: {
+    ko: "후삼국 시대 인물과 역사, 전략 시뮬레이션 이야기를 다룹니다.",
+    en: "Characters, history and strategy-simulation stories of Korea's Later Three Kingdoms.",
+    "zh-Hans": "讲述后三国时代的人物、历史与策略模拟故事。",
+    "zh-Hant": "講述後三國時代的人物、歷史與策略模擬故事。",
+  },
+};
+
+export function categoryIntro(category: string, locale: Locale): string {
+  return CATEGORY_INTRO[category]?.[locale] ?? CATEGORY_INTRO[category]?.ko ?? "";
+}
+
+// 읽는 시간 표기 — 언어별 형식이 달라 함수로 처리. 예) 5분 읽기 / 5 min read / 5分钟阅读
+export function readingTimeText(min: number, locale: Locale): string {
+  switch (locale) {
+    case "en":
+      return `${min} min read`;
+    case "zh-Hans":
+      return `${min}分钟阅读`;
+    case "zh-Hant":
+      return `${min}分鐘閱讀`;
+    default:
+      return `${min}분 읽기`;
+  }
+}
+
 // 헬퍼 — locale 누락 시 한국어로 안전하게 떨어진다.
 export function statusLabel(status: ProjectStatus, locale: Locale): string {
   return STATUS_LABEL[status]?.[locale] ?? STATUS_LABEL[status]?.ko ?? "";

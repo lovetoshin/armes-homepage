@@ -3,6 +3,11 @@
 import { useState } from "react";
 import PostCard from "@/components/PostCard";
 import type { PostMeta, PostType } from "@/lib/posts-meta";
+import { type Locale } from "@/lib/i18n";
+import { getUI } from "@/lib/dictionary";
+import { categoryLabel } from "@/lib/i18n-data";
+
+const ALL = "__all__"; // 카테고리 "전체"를 가리키는 내부 식별자(언어 무관)
 
 /**
  * News/Blog 공용 목록 + 카테고리 칩 필터(클라이언트).
@@ -12,15 +17,18 @@ export default function BlogList({
   posts,
   categories,
   type = "blog",
+  locale = "ko",
 }: {
   posts: PostMeta[];
   categories: readonly string[];
   type?: PostType;
+  locale?: Locale;
 }) {
-  const [active, setActive] = useState<string>("전체");
+  const [active, setActive] = useState<string>(ALL);
+  const ui = getUI(locale).common;
 
-  const filtered = active === "전체" ? posts : posts.filter((p) => p.category === active);
-  const chips = ["전체", ...categories];
+  const filtered = active === ALL ? posts : posts.filter((p) => p.category === active);
+  const chips = [ALL, ...categories];
 
   return (
     <>
@@ -35,17 +43,17 @@ export default function BlogList({
                 : "bg-[#F2F4F6] text-[#4E5968] hover:bg-[#E5E8EB]"
             }`}
           >
-            {c}
+            {c === ALL ? ui.all : categoryLabel(c, locale)}
           </button>
         ))}
       </div>
 
       {filtered.length === 0 ? (
-        <p className="text-center text-[#8B95A1] py-10">해당 카테고리의 글이 아직 없습니다.</p>
+        <p className="text-center text-[#8B95A1] py-10">{ui.emptyPosts}</p>
       ) : (
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {filtered.map((p) => (
-            <PostCard key={p.slug} post={p} type={type} />
+            <PostCard key={p.slug} post={p} type={type} locale={locale} />
           ))}
         </div>
       )}

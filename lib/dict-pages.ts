@@ -45,6 +45,77 @@ export const PROJECTS_PAGE: Record<Locale, ListDict> = {
   },
 };
 
+export const BLOG_PAGE: Record<Locale, ListDict> = {
+  ko: {
+    metaTitle: "Blog | ARMES",
+    metaDesc:
+      "AI·쇼핑·여행·주유·전기차·코스트코·SEO·생산성도구까지 — 아르메스가 전하는 생활 속 정보와 노하우를 읽어보세요.",
+    h1: "인사이트 & 노하우",
+    heroDesc: "AI 활용법부터 쇼핑·여행·주유·코스트코 꿀팁까지, 생활에 바로 쓰는 정보를 나눕니다.",
+  },
+  en: {
+    metaTitle: "Blog | ARMES",
+    metaDesc:
+      "From AI, shopping, travel, fuel, EVs and Costco to SEO and productivity — read ARMES's practical everyday tips and know-how.",
+    h1: "Insights & Know-how",
+    heroDesc: "From AI tips to shopping, travel, fuel and Costco hacks — practical information you can use right away.",
+  },
+  "zh-Hans": {
+    metaTitle: "Blog | ARMES",
+    metaDesc:
+      "从AI、购物、旅行、加油、电动车、Costco到SEO与效率工具——阅读ARMES带来的生活信息与实用技巧。",
+    h1: "洞察与实用技巧",
+    heroDesc: "从AI用法到购物、旅行、加油与Costco省钱技巧，分享可立即上手的生活信息。",
+  },
+  "zh-Hant": {
+    metaTitle: "Blog | ARMES",
+    metaDesc:
+      "從AI、購物、旅行、加油、電動車、好市多到SEO與效率工具——閱讀ARMES帶來的生活資訊與實用技巧。",
+    h1: "洞察與實用技巧",
+    heroDesc: "從AI用法到購物、旅行、加油與好市多省錢技巧，分享可立即上手的生活資訊。",
+  },
+};
+
+export const CATEGORY_PAGE: Record<Locale, { viewAll: string; comingSoon: string }> = {
+  ko: { viewAll: "전체 글 보기", comingSoon: "이 카테고리의 글을 준비 중입니다." },
+  en: { viewAll: "View all posts", comingSoon: "Posts in this category are coming soon." },
+  "zh-Hans": { viewAll: "查看全部文章", comingSoon: "该分类的文章正在准备中。" },
+  "zh-Hant": { viewAll: "查看全部文章", comingSoon: "此分類的文章正在準備中。" },
+};
+
+type NewsListDict = ListDict & { emptyNews: string };
+
+export const NEWS_PAGE: Record<Locale, NewsListDict> = {
+  ko: {
+    metaTitle: "News | ARMES",
+    metaDesc: "아르메스의 공식 소식 — 서비스 출시, 업데이트, 제휴, 개발 현황, 공지를 전합니다.",
+    h1: "아르메스 소식",
+    heroDesc: "서비스 출시와 제휴, 회사의 주요 소식을 전합니다.",
+    emptyNews: "아직 등록된 소식이 없습니다.",
+  },
+  en: {
+    metaTitle: "News | ARMES",
+    metaDesc: "Official ARMES news — launches, updates, partnerships, development progress and notices.",
+    h1: "ARMES News",
+    heroDesc: "Service launches, partnerships and major company news.",
+    emptyNews: "No news yet.",
+  },
+  "zh-Hans": {
+    metaTitle: "News | ARMES",
+    metaDesc: "ARMES官方动态——服务发布、更新、合作、开发进展与公告。",
+    h1: "ARMES动态",
+    heroDesc: "服务发布、合作与公司重要动态。",
+    emptyNews: "暂无动态。",
+  },
+  "zh-Hant": {
+    metaTitle: "News | ARMES",
+    metaDesc: "ARMES官方動態——服務發布、更新、合作、開發進展與公告。",
+    h1: "ARMES動態",
+    heroDesc: "服務發布、合作與公司重要動態。",
+    emptyNews: "暫無動態。",
+  },
+};
+
 type AboutDict = {
   metaTitle: string;
   metaDesc: string;

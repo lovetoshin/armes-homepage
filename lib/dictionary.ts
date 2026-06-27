@@ -47,6 +47,10 @@ type Dict = {
     readMore: string;
     all: string; // 카테고리 "전체"
     emptyPosts: string;
+    published: string; // 발행
+    updatedLabel: string; // 수정
+    relatedReadTitle: string; // 함께 읽으면 좋은 글
+    relatedServiceTitle: string; // 이 글과 관련된 아르메스 서비스
   };
   home: {
     hero: {
@@ -118,6 +122,10 @@ const dictionaries: Record<Locale, Dict> = {
       readMore: "자세히 보기",
       all: "전체",
       emptyPosts: "해당 카테고리의 글이 아직 없습니다.",
+      published: "발행",
+      updatedLabel: "수정",
+      relatedReadTitle: "함께 읽으면 좋은 글",
+      relatedServiceTitle: "이 글과 관련된 아르메스 서비스",
     },
     home: {
       hero: {
@@ -188,6 +196,10 @@ const dictionaries: Record<Locale, Dict> = {
       readMore: "Read more",
       all: "All",
       emptyPosts: "No posts in this category yet.",
+      published: "Published",
+      updatedLabel: "Updated",
+      relatedReadTitle: "Related reads",
+      relatedServiceTitle: "ARMES services related to this article",
     },
     home: {
       hero: {
@@ -258,6 +270,10 @@ const dictionaries: Record<Locale, Dict> = {
       readMore: "查看详情",
       all: "全部",
       emptyPosts: "该分类暂无文章。",
+      published: "发布",
+      updatedLabel: "更新",
+      relatedReadTitle: "推荐阅读",
+      relatedServiceTitle: "与本文相关的ARMES服务",
     },
     home: {
       hero: {
@@ -328,6 +344,10 @@ const dictionaries: Record<Locale, Dict> = {
       readMore: "查看詳情",
       all: "全部",
       emptyPosts: "此分類目前尚無文章。",
+      published: "發布",
+      updatedLabel: "更新",
+      relatedReadTitle: "推薦閱讀",
+      relatedServiceTitle: "與本文相關的ARMES服務",
     },
     home: {
       hero: {

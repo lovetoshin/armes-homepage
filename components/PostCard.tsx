@@ -1,5 +1,7 @@
 import Link from "next/link";
 import type { PostMeta, PostType } from "@/lib/posts-meta";
+import { localize, type Locale } from "@/lib/i18n";
+import { categoryLabel, readingTimeText } from "@/lib/i18n-data";
 
 /**
  * News/Blog 글 목록 카드 — 썸네일(있으면) + 카테고리 + 제목 + 요약 + 날짜.
@@ -9,10 +11,18 @@ function formatDate(d: string) {
   return d ? d.replace(/-/g, ".") : "";
 }
 
-export default function PostCard({ post, type }: { post: PostMeta; type: PostType }) {
+export default function PostCard({
+  post,
+  type,
+  locale = "ko",
+}: {
+  post: PostMeta;
+  type: PostType;
+  locale?: Locale;
+}) {
   return (
     <Link
-      href={`/${type}/${post.slug}`}
+      href={localize(`/${type}/${post.slug}`, locale)}
       className="group block bg-white rounded-3xl border border-[#E5E8EB] overflow-hidden h-full transition-shadow hover:shadow-[0_4px_20px_rgba(49,130,246,0.12)] hover:border-[#C5D8FB]"
     >
       {/* 썸네일 (없으면 단색 영역) */}
@@ -34,7 +44,7 @@ export default function PostCard({ post, type }: { post: PostMeta; type: PostTyp
       <div className="p-6">
         {post.category && (
           <span className="inline-block text-[11px] font-bold text-[#3182F6] bg-[#EBF3FF] px-2.5 py-1 rounded-full mb-3">
-            {post.category}
+            {categoryLabel(post.category, locale)}
           </span>
         )}
         <h3 className="text-[#191F28] font-extrabold text-lg leading-snug mb-2 keep-all">
@@ -45,7 +55,7 @@ export default function PostCard({ post, type }: { post: PostMeta; type: PostTyp
         </p>
         <p className="text-[#B0B8C1] text-xs font-medium">
           {formatDate(post.date)}
-          {post.readingTime ? <> · {post.readingTime}분 읽기</> : null}
+          {post.readingTime ? <> · {readingTimeText(post.readingTime, locale)}</> : null}
         </p>
       </div>
     </Link>

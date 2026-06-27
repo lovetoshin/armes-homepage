@@ -2,7 +2,14 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import ArticleContent from "@/components/pages/ArticleContent";
 import { getPost, getSlugs, getRelatedPosts, postLocales } from "@/lib/posts";
-import { localize, HTML_LANG } from "@/lib/i18n";
+import {
+  localeFromSegment,
+  localize,
+  HTML_LANG,
+  OG_LOCALE,
+  LOCALE_SEGMENT,
+  PREFIXED_LOCALES,
+} from "@/lib/i18n";
 
 const SITE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://armes.co.kr";
 
@@ -11,17 +18,26 @@ function absUrl(p?: string) {
   return p.startsWith("http") ? p : `${SITE}${p}`;
 }
 
+// 번역본이 실제 존재하는 (언어, 글)만 정적 생성
 export function generateStaticParams() {
-  return getSlugs("blog", "ko").map((slug) => ({ slug }));
+  const out: { lang: string; slug: string }[] = [];
+  for (const loc of PREFIXED_LOCALES) {
+    for (const slug of getSlugs("blog", loc)) {
+      out.push({ lang: LOCALE_SEGMENT[loc], slug });
+    }
+  }
+  return out;
 }
 
 export async function generateMetadata({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ lang: string; slug: string }>;
 }): Promise<Metadata> {
-  const { slug } = await params;
-  const post = getPost("blog", slug, "ko");
+  const { lang, slug } = await params;
+  const locale = localeFromSegment(lang);
+  if (!locale || locale === "ko") return {};
+  const post = getPost("blog", slug, locale);
   if (!post) return { title: "Blog | ARMES" };
   const img = absUrl(post.thumbnail);
 
@@ -35,12 +51,13 @@ export async function generateMetadata({
     title: `${post.title} | ARMES Blog`,
     description: post.excerpt,
     keywords: post.tags,
-    alternates: { canonical: `/blog/${slug}`, languages },
+    alternates: { canonical: localize(`/blog/${slug}`, locale), languages },
     openGraph: {
       type: "article",
       title: post.title,
       description: post.excerpt,
-      url: `${SITE}/blog/${slug}`,
+      url: `${SITE}${localize(`/blog/${slug}`, locale)}`,
+      locale: OG_LOCALE[locale],
       publishedTime: post.date,
       modifiedTime: post.updated || post.date,
       section: post.category,
@@ -56,14 +73,16 @@ export async function generateMetadata({
   };
 }
 
-export default async function BlogArticlePage({
+export default async function LocalizedBlogArticle({
   params,
 }: {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ lang: string; slug: string }>;
 }) {
-  const { slug } = await params;
-  const post = getPost("blog", slug, "ko");
+  const { lang, slug } = await params;
+  const locale = localeFromSegment(lang);
+  if (!locale || locale === "ko") notFound();
+  const post = getPost("blog", slug, locale);
   if (!post) notFound();
-  const related = getRelatedPosts("blog", slug, "ko", 6);
-  return <ArticleContent post={post} related={related} type="blog" locale="ko" />;
+  const related = getRelatedPosts("blog", slug, locale, 6);
+  return <ArticleContent post={post} related={related} type="blog" locale={locale} />;
 }
