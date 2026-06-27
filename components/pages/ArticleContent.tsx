@@ -40,7 +40,8 @@ export default function ArticleContent({
       "@type": isNews ? "NewsArticle" : "BlogPosting",
       headline: post.title,
       description: post.excerpt,
-      ...(img ? { image: [img] } : {}),
+      // 외국어판은 한국어가 박힌 커버를 구조화 데이터에서도 뺀다(A안 임시)
+      ...(img && locale === "ko" ? { image: [img] } : {}),
       datePublished: post.date,
       dateModified: post.updated || post.date,
       ...(post.category ? { articleSection: categoryLabel(post.category, locale) } : {}),
@@ -107,8 +108,8 @@ export default function ArticleContent({
 
         <ArticleMeta post={post} type={type} locale={locale} />
 
-        {/* 커버 이미지 */}
-        {post.thumbnail && (
+        {/* 커버 이미지 — 외국어판은 한국어가 박힌 커버를 숨긴다(A안 임시) */}
+        {post.thumbnail && locale === "ko" && (
           <div className="mb-10 rounded-3xl overflow-hidden border border-[#E5E8EB] bg-[#F2F4F6]">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
