@@ -215,3 +215,252 @@ export const ABOUT: Record<Locale, AboutDict> = {
     },
   },
 };
+
+// ── 문의(Contact) 페이지 + 폼 ──────────────────────────────────────────────
+// INQUIRY_TYPES의 value(예: "매장 파트너")는 백엔드로 전송되는 식별자라 코드에 그대로 두고,
+// 화면에 보이는 label/desc만 아래 form.types[index]로 번역해 입힌다.
+type ContactDict = {
+  metaTitle: string;
+  metaDesc: string;
+  heroBadge: string;
+  h1Pre: string;
+  h1Hl: string;
+  heroDesc: string;
+  cards: { title: string; desc: string }[]; // 3개 (icon/색은 고정)
+  directLabel: string;
+  contactLabels: { phone: string; email: string; address: string };
+  addressValue: string;
+  hoursLabel: string;
+  hours: { weekday: string; weekend: string; weekendValue: string; avg: string; avgValue: string };
+  formHeading: string;
+  formSubtitle: string;
+  footerCopyright: string;
+  footerPrivacy: string;
+  footerTerms: string;
+  form: {
+    typeLabel: string;
+    types: { label: string; desc: string }[]; // 5개 (value는 코드 고정)
+    name: string; namePlaceholder: string;
+    email: string; emailPlaceholder: string;
+    phone: string; phonePlaceholder: string; phoneHint: string;
+    company: string; companyPlaceholder: string;
+    region: string; regionHint: string; regionPlaceholder: string;
+    message: string; messagePlaceholder: string;
+    agreeBold: string; agreeRest: string; agreeMore: string;
+    submit: string; submitting: string;
+    orContact: string;
+    successTitle: string; successDesc: string; successAnother: string;
+    errAgree: string; errGeneric: string; errNetwork: string;
+  };
+};
+
+export const CONTACT: Record<Locale, ContactDict> = {
+  ko: {
+    metaTitle: "파트너 문의 | ARMES",
+    metaDesc: "ARMES 파트너십, 제휴, 투자 문의 및 고객 지원 연락처",
+    heroBadge: "파트너 문의",
+    h1Pre: "ARMES와 함께",
+    h1Hl: "성장하세요",
+    heroDesc:
+      "매장 파트너, 셀러 파트너, 기업 제휴, 투자 문의까지 — 어떤 형태의 협력도 환영합니다. 문의 주시면 1~2 영업일 내로 담당자가 연락드립니다.",
+    cards: [
+      { title: "매장 파트너", desc: "RewardTalk 가맹점으로 등록하고 새로운 고객과 연결되세요. 멤버십 적립 설정부터 리워드 운영까지 지원합니다." },
+      { title: "Seller AI 파트너", desc: "AI로 이미지·상세페이지를 자동 생성하고 커머스 성장을 가속화하세요. 얼리버드 혜택을 놓치지 마세요." },
+      { title: "기업 제휴", desc: "ARMES 로컬 생태계와 함께 성장할 기업 파트너를 찾습니다. 다양한 협력 방식을 논의해보세요." },
+    ],
+    directLabel: "직접 연락",
+    contactLabels: { phone: "대표번호", email: "이메일", address: "주소" },
+    addressValue: "경기도 남양주시 진접읍\n경복대로 425-80, 4층 6406호",
+    hoursLabel: "운영 시간",
+    hours: { weekday: "평일", weekend: "주말 · 공휴일", weekendValue: "휴무", avg: "평균 답변 시간", avgValue: "1~2 영업일" },
+    formHeading: "문의 보내기",
+    formSubtitle: "모든 문의에 성실히 답변드립니다.",
+    footerCopyright: "© 2026 주식회사 아르메스. All rights reserved.",
+    footerPrivacy: "개인정보처리방침",
+    footerTerms: "이용약관",
+    form: {
+      typeLabel: "문의 유형",
+      types: [
+        { label: "매장 파트너", desc: "RewardTalk 가맹점 등록" },
+        { label: "셀러 파트너", desc: "Seller AI 이용" },
+        { label: "기업 제휴", desc: "B2B 협력 제안" },
+        { label: "투자 문의", desc: "IR / 투자 제안" },
+        { label: "기타 문의", desc: "일반 문의" },
+      ],
+      name: "이름", namePlaceholder: "홍길동",
+      email: "이메일", emailPlaceholder: "name@company.com",
+      phone: "연락처", phonePlaceholder: "01012345678", phoneHint: "- 없이 숫자만 입력",
+      company: "회사 / 매장명", companyPlaceholder: "(선택) 아르메스 카페",
+      region: "서비스 지역", regionHint: "파트너십을 희망하는 지역을 알려주세요", regionPlaceholder: "예: 경기도 남양주시",
+      message: "문의 내용", messagePlaceholder: "파트너십에 대해 궁금한 점, 운영 중인 매장 정보, 협업 제안 등 자유롭게 작성해 주세요.",
+      agreeBold: "개인정보 수집 및 이용에 동의합니다.",
+      agreeRest: " 수집 항목: 이름, 이메일, 연락처 / 목적: 문의 처리 및 안내 / 보유 기간: 1년 ",
+      agreeMore: "자세히 보기",
+      submit: "문의 보내기", submitting: "전송 중...",
+      orContact: "또는 바로 연락하기:",
+      successTitle: "문의가 접수되었습니다",
+      successDesc: "빠른 시일 내 담당자가 연락드리겠습니다.\n보통 1~2 영업일 이내에 답변드립니다.",
+      successAnother: "다른 문의 하기",
+      errAgree: "개인정보 수집 이용에 동의해 주세요.",
+      errGeneric: "오류가 발생했습니다.",
+      errNetwork: "네트워크 오류가 발생했습니다. 잠시 후 다시 시도해 주세요.",
+    },
+  },
+
+  en: {
+    metaTitle: "Partner Inquiry | ARMES",
+    metaDesc: "ARMES partnership, collaboration and investment inquiries, plus customer support contact.",
+    heroBadge: "Partner inquiry",
+    h1Pre: "Let's grow",
+    h1Hl: "together",
+    heroDesc:
+      "From store partners and seller partners to business alliances and investment — we welcome every form of collaboration. Reach out and our team will respond within 1–2 business days.",
+    cards: [
+      { title: "Store partner", desc: "Register as a RewardTalk merchant and connect with new customers. We support everything from membership point setup to reward operations." },
+      { title: "Seller AI partner", desc: "Auto-generate images and detail pages with AI and accelerate your commerce growth. Don't miss the early-bird benefits." },
+      { title: "Business alliance", desc: "We're looking for corporate partners to grow with the ARMES local ecosystem. Let's discuss various ways to collaborate." },
+    ],
+    directLabel: "Direct contact",
+    contactLabels: { phone: "Phone", email: "Email", address: "Address" },
+    addressValue: "4F #6406, 425-80 Gyeongbokdae-ro,\nJinjeop-eup, Namyangju-si, Gyeonggi-do",
+    hoursLabel: "Hours",
+    hours: { weekday: "Weekday", weekend: "Weekend · Holidays", weekendValue: "Closed", avg: "Avg. response", avgValue: "1–2 business days" },
+    formHeading: "Send an inquiry",
+    formSubtitle: "We respond sincerely to every inquiry.",
+    footerCopyright: "© 2026 ARMES Inc. All rights reserved.",
+    footerPrivacy: "Privacy Policy",
+    footerTerms: "Terms of Service",
+    form: {
+      typeLabel: "Inquiry type",
+      types: [
+        { label: "Store partner", desc: "RewardTalk merchant" },
+        { label: "Seller partner", desc: "Use Seller AI" },
+        { label: "Business alliance", desc: "B2B proposal" },
+        { label: "Investment", desc: "IR / investment" },
+        { label: "Other", desc: "General inquiry" },
+      ],
+      name: "Name", namePlaceholder: "John Doe",
+      email: "Email", emailPlaceholder: "name@company.com",
+      phone: "Phone", phonePlaceholder: "01012345678", phoneHint: "Numbers only, no dashes",
+      company: "Company / Store", companyPlaceholder: "(Optional) ARMES Cafe",
+      region: "Service area", regionHint: "Tell us the area you'd like to partner in", regionPlaceholder: "e.g. Namyangju, Gyeonggi",
+      message: "Message", messagePlaceholder: "Feel free to write your questions about partnership, your store info, collaboration ideas, and more.",
+      agreeBold: "I agree to the collection and use of my personal information.",
+      agreeRest: " Items: name, email, phone / Purpose: handling and responding to inquiries / Retention: 1 year ",
+      agreeMore: "Details",
+      submit: "Send inquiry", submitting: "Sending...",
+      orContact: "Or contact us directly:",
+      successTitle: "Your inquiry has been received",
+      successDesc: "Our team will contact you shortly.\nWe usually reply within 1–2 business days.",
+      successAnother: "Make another inquiry",
+      errAgree: "Please agree to the collection and use of personal information.",
+      errGeneric: "An error occurred.",
+      errNetwork: "A network error occurred. Please try again shortly.",
+    },
+  },
+
+  "zh-Hans": {
+    metaTitle: "合作咨询 | ARMES",
+    metaDesc: "ARMES合作、提携与投资咨询，以及客户支持联系方式。",
+    heroBadge: "合作咨询",
+    h1Pre: "与ARMES",
+    h1Hl: "共同成长",
+    heroDesc:
+      "从门店合作、卖家合作到企业提携与投资咨询——我们欢迎任何形式的合作。来信咨询，我们将在1~2个工作日内回复。",
+    cards: [
+      { title: "门店合作", desc: "注册成为RewardTalk加盟店，连接新客户。从会员积分设置到奖励运营，我们全程支持。" },
+      { title: "Seller AI 合作", desc: "用AI自动生成图片与详情页，加速电商增长。不要错过早鸟优惠。" },
+      { title: "企业提携", desc: "我们正在寻找与ARMES本地生态共同成长的企业伙伴。欢迎探讨多样的合作方式。" },
+    ],
+    directLabel: "直接联系",
+    contactLabels: { phone: "代表电话", email: "邮箱", address: "地址" },
+    addressValue: "韩国京畿道南扬州市榛接邑\n景福大路425-80, 4楼6406室",
+    hoursLabel: "营业时间",
+    hours: { weekday: "工作日", weekend: "周末·节假日", weekendValue: "休息", avg: "平均回复", avgValue: "1~2个工作日" },
+    formHeading: "发送咨询",
+    formSubtitle: "我们会认真回复每一条咨询。",
+    footerCopyright: "© 2026 ARMES株式会社. All rights reserved.",
+    footerPrivacy: "隐私政策",
+    footerTerms: "服务条款",
+    form: {
+      typeLabel: "咨询类型",
+      types: [
+        { label: "门店合作", desc: "RewardTalk加盟" },
+        { label: "卖家合作", desc: "使用Seller AI" },
+        { label: "企业提携", desc: "B2B合作提案" },
+        { label: "投资咨询", desc: "IR / 投资提案" },
+        { label: "其他", desc: "一般咨询" },
+      ],
+      name: "姓名", namePlaceholder: "张三",
+      email: "邮箱", emailPlaceholder: "name@company.com",
+      phone: "联系电话", phonePlaceholder: "01012345678", phoneHint: "仅填数字，不含连字符",
+      company: "公司/门店名", companyPlaceholder: "(选填) ARMES咖啡",
+      region: "服务地区", regionHint: "请告知您希望合作的地区", regionPlaceholder: "例: 京畿道南扬州市",
+      message: "咨询内容", messagePlaceholder: "关于合作的疑问、门店信息、合作提案等，欢迎自由填写。",
+      agreeBold: "我同意收集和使用个人信息。",
+      agreeRest: " 收集项目: 姓名、邮箱、电话 / 目的: 咨询处理与告知 / 保存期限: 1年 ",
+      agreeMore: "查看详情",
+      submit: "发送咨询", submitting: "发送中...",
+      orContact: "或直接联系:",
+      successTitle: "您的咨询已提交",
+      successDesc: "负责人将尽快与您联系。\n通常在1~2个工作日内回复。",
+      successAnother: "再次咨询",
+      errAgree: "请同意收集和使用个人信息。",
+      errGeneric: "发生错误。",
+      errNetwork: "网络出现错误，请稍后再试。",
+    },
+  },
+
+  "zh-Hant": {
+    metaTitle: "合作諮詢 | ARMES",
+    metaDesc: "ARMES合作、提攜與投資諮詢，以及客戶支援聯絡方式。",
+    heroBadge: "合作諮詢",
+    h1Pre: "與ARMES",
+    h1Hl: "共同成長",
+    heroDesc:
+      "從門市合作、賣家合作到企業提攜與投資諮詢——我們歡迎任何形式的合作。來信諮詢，我們將在1~2個工作日內回覆。",
+    cards: [
+      { title: "門市合作", desc: "註冊成為RewardTalk加盟店，連接新客戶。從會員積點設定到獎勵營運，我們全程支援。" },
+      { title: "Seller AI 合作", desc: "以AI自動生成圖片與詳情頁，加速電商成長。別錯過早鳥優惠。" },
+      { title: "企業提攜", desc: "我們正在尋找與ARMES在地生態共同成長的企業夥伴。歡迎探討多樣的合作方式。" },
+    ],
+    directLabel: "直接聯絡",
+    contactLabels: { phone: "代表電話", email: "電子郵件", address: "地址" },
+    addressValue: "韓國京畿道南楊州市榛接邑\n景福大路425-80, 4樓6406室",
+    hoursLabel: "營業時間",
+    hours: { weekday: "工作日", weekend: "週末·國定假日", weekendValue: "休息", avg: "平均回覆", avgValue: "1~2個工作日" },
+    formHeading: "發送諮詢",
+    formSubtitle: "我們會認真回覆每一則諮詢。",
+    footerCopyright: "© 2026 ARMES株式會社. All rights reserved.",
+    footerPrivacy: "隱私權政策",
+    footerTerms: "服務條款",
+    form: {
+      typeLabel: "諮詢類型",
+      types: [
+        { label: "門市合作", desc: "RewardTalk加盟" },
+        { label: "賣家合作", desc: "使用Seller AI" },
+        { label: "企業提攜", desc: "B2B合作提案" },
+        { label: "投資諮詢", desc: "IR / 投資提案" },
+        { label: "其他", desc: "一般諮詢" },
+      ],
+      name: "姓名", namePlaceholder: "張三",
+      email: "電子郵件", emailPlaceholder: "name@company.com",
+      phone: "聯絡電話", phonePlaceholder: "01012345678", phoneHint: "僅填數字，不含連字號",
+      company: "公司/門市名", companyPlaceholder: "(選填) ARMES咖啡",
+      region: "服務地區", regionHint: "請告知您希望合作的地區", regionPlaceholder: "例: 京畿道南楊州市",
+      message: "諮詢內容", messagePlaceholder: "關於合作的疑問、門市資訊、合作提案等，歡迎自由填寫。",
+      agreeBold: "我同意蒐集與使用個人資訊。",
+      agreeRest: " 蒐集項目: 姓名、電子郵件、電話 / 目的: 諮詢處理與告知 / 保存期限: 1年 ",
+      agreeMore: "查看詳情",
+      submit: "發送諮詢", submitting: "發送中...",
+      orContact: "或直接聯絡:",
+      successTitle: "您的諮詢已送出",
+      successDesc: "負責人將盡快與您聯絡。\n通常於1~2個工作日內回覆。",
+      successAnother: "再次諮詢",
+      errAgree: "請同意蒐集與使用個人資訊。",
+      errGeneric: "發生錯誤。",
+      errNetwork: "網路發生錯誤，請稍後再試。",
+    },
+  },
+};
+

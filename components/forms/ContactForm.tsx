@@ -3,13 +3,16 @@
 import { useState, useId } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import type { ContactPayload } from "@/app/api/contact/route";
+import { CONTACT } from "@/lib/dict-pages";
+import { type Locale } from "@/lib/i18n";
 
+// value(전송 식별자)와 icon만 코드에 고정 — 화면 글자(label/desc)는 언어 사전에서 입힌다.
 const INQUIRY_TYPES = [
-  { value: "매장 파트너", label: "매장 파트너", icon: "🏪", desc: "RewardTalk 가맹점 등록" },
-  { value: "셀러 파트너", label: "셀러 파트너", icon: "✦",  desc: "Seller AI 이용" },
-  { value: "기업 제휴",   label: "기업 제휴",   icon: "🤝", desc: "B2B 협력 제안" },
-  { value: "투자 문의",   label: "투자 문의",   icon: "💼", desc: "IR / 투자 제안" },
-  { value: "기타",        label: "기타 문의",   icon: "💬", desc: "일반 문의" },
+  { value: "매장 파트너", icon: "🏪" },
+  { value: "셀러 파트너", icon: "✦" },
+  { value: "기업 제휴",   icon: "🤝" },
+  { value: "투자 문의",   icon: "💼" },
+  { value: "기타",        icon: "💬" },
 ] as const;
 
 type InquiryType = typeof INQUIRY_TYPES[number]["value"];
@@ -59,10 +62,12 @@ function Input({ value, onChange, placeholder, type = "text", disabled }: {
 interface ContactFormProps {
   onSuccess?: () => void;
   compact?: boolean;
+  locale?: Locale;
 }
 
-export default function ContactForm({ onSuccess, compact = false }: ContactFormProps) {
+export default function ContactForm({ onSuccess, compact = false, locale = "ko" }: ContactFormProps) {
   const uid = useId();
+  const f = CONTACT[locale].form;
   const [form, setForm] = useState<FormState>(INIT);
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [errorMsg, setErrorMsg] = useState("");
@@ -72,7 +77,7 @@ export default function ContactForm({ onSuccess, compact = false }: ContactFormP
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!form.agree) { setErrorMsg("개인정보 수집 이용에 동의해 주세요."); return; }
+    if (!form.agree) { setErrorMsg(f.errAgree); return; }
     setStatus("loading"); setErrorMsg("");
     try {
       const res = await fetch("/api/contact", {
@@ -86,9 +91,9 @@ export default function ContactForm({ onSuccess, compact = false }: ContactFormP
       });
       const json = await res.json();
       if (json.success) { setStatus("success"); onSuccess?.(); }
-      else { setErrorMsg(json.message || "오류가 발생했습니다."); setStatus("error"); }
+      else { setErrorMsg(json.message || f.errGeneric); setStatus("error"); }
     } catch {
-      setErrorMsg("네트워크 오류가 발생했습니다. 잠시 후 다시 시도해 주세요.");
+      setErrorMsg(f.errNetwork);
       setStatus("error");
     }
   };
@@ -112,17 +117,16 @@ export default function ContactForm({ onSuccess, compact = false }: ContactFormP
           </svg>
         </motion.div>
         <div>
-          <h3 className="text-xl font-extrabold text-[#191F28] mb-2">문의가 접수되었습니다</h3>
-          <p className="text-[#4E5968] text-sm leading-relaxed max-w-xs">
-            빠른 시일 내 담당자가 연락드리겠습니다.
-            <br />보통 1~2 영업일 이내에 답변드립니다.
+          <h3 className="text-xl font-extrabold text-[#191F28] mb-2">{f.successTitle}</h3>
+          <p className="text-[#4E5968] text-sm leading-relaxed max-w-xs whitespace-pre-line">
+            {f.successDesc}
           </p>
         </div>
         <button
           onClick={() => { setForm(INIT); setStatus("idle"); }}
           className="text-sm text-[#8B95A1] hover:text-[#4E5968] transition-colors underline underline-offset-4"
         >
-          다른 문의 하기
+          {f.successAnother}
         </button>
       </motion.div>
     );
@@ -136,10 +140,10 @@ export default function ContactForm({ onSuccess, compact = false }: ContactFormP
       {/* 문의 유형 */}
       <div>
         <p className="text-sm font-semibold text-[#191F28] mb-3">
-          문의 유형<span className="text-[#3182F6] ml-0.5">*</span>
+          {f.typeLabel}<span className="text-[#3182F6] ml-0.5">*</span>
         </p>
         <div className={`grid gap-2 ${compact ? "grid-cols-2 sm:grid-cols-3" : "grid-cols-2 sm:grid-cols-5"}`}>
-          {INQUIRY_TYPES.map((t) => (
+          {INQUIRY_TYPES.map((t, i) => (
             <button
               key={t.value}
               type="button"
@@ -151,8 +155,8 @@ export default function ContactForm({ onSuccess, compact = false }: ContactFormP
               }`}
             >
               <span className="text-lg leading-none">{t.icon}</span>
-              <span className="text-xs font-bold leading-tight">{t.label}</span>
-              {!compact && <span className="text-[10px] text-[#8B95A1] leading-tight">{t.desc}</span>}
+              <span className="text-xs font-bold leading-tight">{f.types[i].label}</span>
+              {!compact && <span className="text-[10px] text-[#8B95A1] leading-tight">{f.types[i].desc}</span>}
             </button>
           ))}
         </div>
@@ -160,36 +164,36 @@ export default function ContactForm({ onSuccess, compact = false }: ContactFormP
 
       {/* 기본 정보 */}
       <div className={`grid gap-4 ${compact ? "grid-cols-1" : "grid-cols-1 sm:grid-cols-2"}`}>
-        <Field label="이름" required>
-          <Input value={form.name} onChange={set("name")} placeholder="홍길동" disabled={isLoading} />
+        <Field label={f.name} required>
+          <Input value={form.name} onChange={set("name")} placeholder={f.namePlaceholder} disabled={isLoading} />
         </Field>
-        <Field label="이메일" required>
-          <Input value={form.email} onChange={set("email")} type="email" placeholder="name@company.com" disabled={isLoading} />
+        <Field label={f.email} required>
+          <Input value={form.email} onChange={set("email")} type="email" placeholder={f.emailPlaceholder} disabled={isLoading} />
         </Field>
-        <Field label="연락처" required hint="- 없이 숫자만 입력">
-          <Input value={form.phone} onChange={set("phone")} type="tel" placeholder="01012345678" disabled={isLoading} />
+        <Field label={f.phone} required hint={f.phoneHint}>
+          <Input value={form.phone} onChange={set("phone")} type="tel" placeholder={f.phonePlaceholder} disabled={isLoading} />
         </Field>
-        <Field label="회사 / 매장명">
-          <Input value={form.company} onChange={set("company")} placeholder="(선택) 아르메스 카페" disabled={isLoading} />
+        <Field label={f.company}>
+          <Input value={form.company} onChange={set("company")} placeholder={f.companyPlaceholder} disabled={isLoading} />
         </Field>
       </div>
 
       {/* 서비스 지역 (조건부) */}
       {(form.type === "매장 파트너" || form.type === "기업 제휴") && (
         <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: "auto" }} exit={{ opacity: 0, height: 0 }}>
-          <Field label="서비스 지역" hint="파트너십을 희망하는 지역을 알려주세요">
-            <Input value={form.region} onChange={set("region")} placeholder="예: 경기도 남양주시" disabled={isLoading} />
+          <Field label={f.region} hint={f.regionHint}>
+            <Input value={form.region} onChange={set("region")} placeholder={f.regionPlaceholder} disabled={isLoading} />
           </Field>
         </motion.div>
       )}
 
       {/* 문의 내용 */}
-      <Field label="문의 내용" required>
+      <Field label={f.message} required>
         <div className="relative">
           <textarea
             value={form.message}
             onChange={(e) => set("message")(e.target.value)}
-            placeholder="파트너십에 대해 궁금한 점, 운영 중인 매장 정보, 협업 제안 등 자유롭게 작성해 주세요."
+            placeholder={f.messagePlaceholder}
             rows={compact ? 4 : 5}
             disabled={isLoading}
             className="w-full bg-[#F2F4F6] border border-[#E5E8EB] text-[#191F28] placeholder-[#C5C9CF] rounded-xl px-4 py-3 text-sm outline-none focus:border-[#3182F6] focus:bg-white transition-all duration-200 resize-none disabled:opacity-50"
@@ -215,9 +219,9 @@ export default function ContactForm({ onSuccess, compact = false }: ContactFormP
           </div>
         </div>
         <p className="text-xs text-[#4E5968] leading-relaxed">
-          <span className="text-[#191F28] font-semibold">개인정보 수집 및 이용에 동의합니다.</span>
-          {" "}수집 항목: 이름, 이메일, 연락처 / 목적: 문의 처리 및 안내 / 보유 기간: 1년{" "}
-          <a href="/privacy" target="_blank" className="text-[#3182F6] hover:underline">자세히 보기</a>
+          <span className="text-[#191F28] font-semibold">{f.agreeBold}</span>
+          {f.agreeRest}
+          <a href="/privacy" target="_blank" className="text-[#3182F6] hover:underline">{f.agreeMore}</a>
         </p>
       </label>
 
@@ -254,11 +258,11 @@ export default function ContactForm({ onSuccess, compact = false }: ContactFormP
               <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"/>
               <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z"/>
             </svg>
-            전송 중...
+            {f.submitting}
           </span>
         ) : (
           <span className="flex items-center justify-center gap-2">
-            문의 보내기
+            {f.submit}
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
             </svg>
@@ -267,7 +271,7 @@ export default function ContactForm({ onSuccess, compact = false }: ContactFormP
       </motion.button>
 
       <p className="text-center text-xs text-[#8B95A1]">
-        또는 바로 연락하기:{" "}
+        {f.orContact}{" "}
         <a href="tel:01049959867" className="text-[#3182F6] font-semibold hover:underline">010-4995-9867</a>
         {" "}·{" "}
         <a href="mailto:support.armes@gmail.com" className="text-[#3182F6] font-semibold hover:underline">support.armes@gmail.com</a>
