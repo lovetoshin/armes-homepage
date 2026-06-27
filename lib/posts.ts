@@ -78,12 +78,6 @@ export function getPost(
       /href="(\/blog[^"]*)"/g,
       (_m, p) => `href="${localize(p, locale)}"`,
     );
-    // A안(임시): 외국어판은 본문 속 이미지를 가린다.
-    // 커버·인물캡션 등 그림에 한국어가 박혀 있어, 외국어 이미지로 재생성되기 전까지 노출하지 않는다.
-    // (figure 블록 + 단독 이미지 문단 제거. 인용구·표·텍스트는 번역되어 있으므로 유지.)
-    contentHtml = contentHtml
-      .replace(/<figure[\s\S]*?<\/figure>/g, "")
-      .replace(/<p>\s*<img[^>]*>\s*<\/p>/g, "");
   }
 
   // thumbnail / image 둘 다 허용

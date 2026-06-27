@@ -25,9 +25,9 @@ export default function PostCard({
       href={localize(`/${type}/${post.slug}`, locale)}
       className="group block bg-white rounded-3xl border border-[#E5E8EB] overflow-hidden h-full transition-shadow hover:shadow-[0_4px_20px_rgba(49,130,246,0.12)] hover:border-[#C5D8FB]"
     >
-      {/* 썸네일 — 외국어판은 한국어가 박힌 커버 대신 언어중립 카드(A안 임시) */}
+      {/* 썸네일 (없으면 단색 영역) */}
       <div className="aspect-[16/9] bg-[#EBF3FF] overflow-hidden">
-        {post.thumbnail && locale === "ko" ? (
+        {post.thumbnail ? (
           // eslint-disable-next-line @next/next/no-img-element
           <img
             src={post.thumbnail}
@@ -35,13 +35,8 @@ export default function PostCard({
             className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-300"
           />
         ) : (
-          <div className="w-full h-full flex flex-col items-center justify-center gap-1.5 bg-gradient-to-br from-[#EBF3FF] to-[#F8FAFF]">
-            <span className="text-[#3182F6] text-3xl font-extrabold tracking-tight">ARMES</span>
-            {post.category && (
-              <span className="text-[#8B95A1] text-xs font-bold">
-                {categoryLabel(post.category, locale)}
-              </span>
-            )}
+          <div className="w-full h-full flex items-center justify-center text-[#C5D8FB] text-4xl font-extrabold">
+            ARMES
           </div>
         )}
       </div>
