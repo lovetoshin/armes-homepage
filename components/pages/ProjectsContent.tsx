@@ -5,8 +5,8 @@ import { PROJECTS_PAGE } from "@/lib/dict-pages";
 import { statusLabel } from "@/lib/i18n-data";
 import { type Locale } from "@/lib/i18n";
 
-// 상태 표시 순서: 운영중 → 준비중 → 연구중
-const groupOrder: ProjectStatus[] = ["live", "soon", "research"];
+// 상태 표시 순서: 운영중 → 배포대기중 → 준비중 → 연구중
+const groupOrder: ProjectStatus[] = ["live", "pending", "soon", "research"];
 
 // 프로젝트 목록 본문 — 한국어/영어/중국어 공유
 export default function ProjectsContent({ locale = "ko" }: { locale?: Locale }) {
