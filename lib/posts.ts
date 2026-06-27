@@ -3,7 +3,7 @@ import path from "node:path";
 import matter from "gray-matter";
 import { marked } from "marked";
 import { DEFAULT_AUTHOR, type PostType, type PostMeta, type Post } from "./posts-meta";
-import { LOCALES, LOCALE_SEGMENT, DEFAULT_LOCALE, type Locale } from "./i18n";
+import { LOCALES, LOCALE_SEGMENT, DEFAULT_LOCALE, localize, type Locale } from "./i18n";
 
 // News / Blog 글을 content/*.md 에서 읽어 처리하는 유틸(서버 전용 — node:fs 사용).
 // 글 본문은 Markdown 파일로 분리되어, 나중에 형님이 직접 교체/추가할 수 있다.
@@ -68,7 +68,17 @@ export function getPost(
 
   const raw = fs.readFileSync(file, "utf8");
   const { data, content } = matter(raw);
-  const contentHtml = marked.parse(content, { async: false }) as string;
+  let contentHtml = marked.parse(content, { async: false }) as string;
+
+  // 외국어 글: 본문 안의 /blog 내부링크를 같은 언어판으로 연결한다.
+  // (/blog 만 [lang] 풀 라우트가 보장되고 모든 글이 번역되므로 안전.
+  //  /projects/[key]·/news/하위경로는 [lang] 개별 라우트가 없어 그대로 둔다 — 404 방지.)
+  if (locale !== DEFAULT_LOCALE) {
+    contentHtml = contentHtml.replace(
+      /href="(\/blog[^"]*)"/g,
+      (_m, p) => `href="${localize(p, locale)}"`,
+    );
+  }
 
   // thumbnail / image 둘 다 허용
   const thumbnail = data.thumbnail
