@@ -5,9 +5,13 @@ import TechnologySection from "@/components/sections/TechnologySection";
 import ProjectsSection from "@/components/sections/ProjectsSection";
 import CompanyCTA from "@/components/sections/CompanyCTA";
 import Footer from "@/components/Footer";
+import { hreflangAlternates } from "@/lib/i18n";
 
 export const metadata: Metadata = {
-  alternates: { canonical: "/" },
+  alternates: {
+    canonical: "/",
+    languages: hreflangAlternates("/"),
+  },
 };
 
 const SITE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://armes.co.kr";

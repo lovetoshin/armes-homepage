@@ -48,6 +48,30 @@ type Dict = {
     all: string; // 카테고리 "전체"
     emptyPosts: string;
   };
+  home: {
+    hero: {
+      titlePre: string; // 제목 앞부분
+      titleHl: string; // 파란색 강조 부분
+      titleSuf: string; // 제목 뒷부분
+      desc: string;
+      ctaPrimary: string;
+      ctaSecondary: string;
+    };
+    showcase: {
+      h2: string;
+      rewardtalk: string;
+      travelmoa: string;
+      cocoping: string;
+    };
+    tech: { h2: string };
+    projects: { h2: string; viewAll: string };
+    cta: {
+      h2: string;
+      desc: string;
+      button: string;
+      badges: [string, string, string];
+    };
+  };
 };
 
 const dictionaries: Record<Locale, Dict> = {
@@ -95,6 +119,30 @@ const dictionaries: Record<Locale, Dict> = {
       all: "전체",
       emptyPosts: "해당 카테고리의 글이 아직 없습니다.",
     },
+    home: {
+      hero: {
+        titlePre: "AI로",
+        titleHl: "일상을 바꾸는",
+        titleSuf: " 서비스 기업",
+        desc: "아르메스는 AI·데이터·자동화·위치기술을 활용해 쇼핑몰, 지역 생활, 여행 등 일상의 여러 영역에 실제로 쓰이는 서비스를 만듭니다.",
+        ctaPrimary: "프로젝트 둘러보기",
+        ctaSecondary: "파트너·제휴 문의",
+      },
+      showcase: {
+        h2: "실제로 만드는 회사입니다",
+        rewardtalk: "로컬 멤버십",
+        travelmoa: "여행 특가·항공권",
+        cocoping: "코스트코 할인정보",
+      },
+      tech: { h2: "우리가 다루는 기술" },
+      projects: { h2: "아르메스가 만든 프로젝트", viewAll: "전체 보기" },
+      cta: {
+        h2: "아르메스와 함께 만들어요",
+        desc: "새로운 AI 서비스 제휴와 사업 협업을 환영합니다.",
+        button: "파트너·제휴 문의하기",
+        badges: ["사업자 등록 법인", "경복대학교 창업보육", "개인정보 보호 준수"],
+      },
+    },
   },
 
   en: {
@@ -140,6 +188,30 @@ const dictionaries: Record<Locale, Dict> = {
       readMore: "Read more",
       all: "All",
       emptyPosts: "No posts in this category yet.",
+    },
+    home: {
+      hero: {
+        titlePre: "Services that change",
+        titleHl: "everyday life",
+        titleSuf: ", powered by AI",
+        desc: "ARMES uses AI, data, automation and location technology to build services people actually use — across online shopping, local life, travel and more.",
+        ctaPrimary: "Explore projects",
+        ctaSecondary: "Partnership inquiry",
+      },
+      showcase: {
+        h2: "A company that actually builds",
+        rewardtalk: "Local membership",
+        travelmoa: "Travel deals & flights",
+        cocoping: "Costco deals",
+      },
+      tech: { h2: "The technology we work with" },
+      projects: { h2: "Projects by ARMES", viewAll: "View all" },
+      cta: {
+        h2: "Let's build together",
+        desc: "We welcome new AI service partnerships and business collaboration.",
+        button: "Start a partnership inquiry",
+        badges: ["Registered corporation", "Gyeongbok Univ. startup incubation", "Privacy compliant"],
+      },
     },
   },
 
@@ -187,6 +259,30 @@ const dictionaries: Record<Locale, Dict> = {
       all: "全部",
       emptyPosts: "该分类暂无文章。",
     },
+    home: {
+      hero: {
+        titlePre: "用AI",
+        titleHl: "改变日常",
+        titleSuf: "的服务型企业",
+        desc: "ARMES运用AI、数据、自动化与位置技术，在网购、本地生活、旅行等日常领域打造真正实用的服务。",
+        ctaPrimary: "浏览项目",
+        ctaSecondary: "合作咨询",
+      },
+      showcase: {
+        h2: "真正在做产品的公司",
+        rewardtalk: "本地会员",
+        travelmoa: "旅行特价·机票",
+        cocoping: "Costco折扣",
+      },
+      tech: { h2: "我们运用的技术" },
+      projects: { h2: "ARMES打造的项目", viewAll: "查看全部" },
+      cta: {
+        h2: "与ARMES一起打造",
+        desc: "欢迎新的AI服务合作与商务洽谈。",
+        button: "发起合作咨询",
+        badges: ["工商注册法人", "庆福大学创业孵化", "遵守隐私保护"],
+      },
+    },
   },
 
   "zh-Hant": {
@@ -232,6 +328,30 @@ const dictionaries: Record<Locale, Dict> = {
       readMore: "查看詳情",
       all: "全部",
       emptyPosts: "此分類目前尚無文章。",
+    },
+    home: {
+      hero: {
+        titlePre: "以AI",
+        titleHl: "改變日常",
+        titleSuf: "的服務型企業",
+        desc: "ARMES運用AI、資料、自動化與位置技術，在網購、在地生活、旅行等日常領域打造真正實用的服務。",
+        ctaPrimary: "瀏覽專案",
+        ctaSecondary: "合作諮詢",
+      },
+      showcase: {
+        h2: "真正在做產品的公司",
+        rewardtalk: "在地會員",
+        travelmoa: "旅行特價·機票",
+        cocoping: "好市多折扣",
+      },
+      tech: { h2: "我們運用的技術" },
+      projects: { h2: "ARMES打造的專案", viewAll: "查看全部" },
+      cta: {
+        h2: "與ARMES一起打造",
+        desc: "歡迎新的AI服務合作與商務洽談。",
+        button: "發起合作諮詢",
+        badges: ["工商註冊法人", "慶福大學創業育成", "遵守隱私保護"],
+      },
     },
   },
 };

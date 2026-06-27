@@ -3,21 +3,19 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { useContact } from "@/components/ContactProvider";
+import { type Locale } from "@/lib/i18n";
+import { getUI } from "@/lib/dictionary";
 
 /**
  * 회사 CTA — 파트너·제휴 문의 유도 + 검증된 신뢰 배지.
  * ⚠️ 누적 수치 등은 실제 데이터 확보 전까지 표기하지 않는다(날조 금지).
  */
-const trustBadges = [
-  "사업자 등록 법인",
-  "경복대학교 창업보육",
-  "개인정보 보호 준수",
-];
-
-export default function CompanyCTA() {
+export default function CompanyCTA({ locale = "ko" }: { locale?: Locale }) {
   const ref = useRef<HTMLElement>(null);
   const isInView = useInView(ref, { once: true, margin: "-60px" });
   const { open: openContact } = useContact();
+  const t = getUI(locale).home.cta;
+  const trustBadges = t.badges;
 
   return (
     <section ref={ref} className="bg-white pb-24 lg:pb-28">
@@ -29,16 +27,16 @@ export default function CompanyCTA() {
           className="rounded-[28px] bg-[#3182F6] px-8 py-7 lg:px-16 lg:py-9 text-center"
         >
           <h2 className="text-2xl lg:text-[28px] font-extrabold text-white tracking-tight mb-2.5 keep-all">
-            아르메스와 함께 만들어요
+            {t.h2}
           </h2>
           <p className="text-white/85 text-[15px] lg:text-base leading-relaxed max-w-xl mx-auto mb-6 keep-all text-balance">
-            새로운 AI 서비스 제휴와 사업 협업을 환영합니다.
+            {t.desc}
           </p>
           <button
             onClick={openContact}
             className="inline-flex items-center justify-center gap-2 bg-white text-[#191F28] px-7 py-3.5 rounded-xl font-bold text-[14px] hover:bg-[#F2F4F6] transition-colors"
           >
-            파트너·제휴 문의하기
+            {t.button}
           </button>
 
           <div className="mt-6 flex flex-wrap items-center justify-center gap-x-6 gap-y-2">

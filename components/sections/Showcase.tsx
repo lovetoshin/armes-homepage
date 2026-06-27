@@ -2,20 +2,23 @@
 
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
+import { type Locale } from "@/lib/i18n";
+import { getUI } from "@/lib/dictionary";
 
 /**
  * 실제 서비스 화면 쇼케이스 — 회사가 "진짜 만드는 회사"임을 보여준다.
  * 비율이 같은 모바일 앱 화면(폰 세로)만 나란히. 새 이미지 생성 없이 실제 캡쳐 사용.
  */
-const shots = [
-  { src: "/projects/rewardtalk-1.jpg", name: "RewardTalk", desc: "로컬 멤버십" },
-  { src: "/projects/travelmoa-1.jpg", name: "TravelMoa", desc: "여행 특가·항공권" },
-  { src: "/projects/cocoping-1.jpg", name: "CocoPing", desc: "코스트코 할인정보" },
-];
-
-export default function Showcase() {
+export default function Showcase({ locale = "ko" }: { locale?: Locale }) {
   const ref = useRef<HTMLElement>(null);
   const isInView = useInView(ref, { once: true, margin: "-60px" });
+  const t = getUI(locale).home.showcase;
+
+  const shots = [
+    { src: "/projects/rewardtalk-1.jpg", name: "RewardTalk", desc: t.rewardtalk },
+    { src: "/projects/travelmoa-1.jpg", name: "TravelMoa", desc: t.travelmoa },
+    { src: "/projects/cocoping-1.jpg", name: "CocoPing", desc: t.cocoping },
+  ];
 
   return (
     <section ref={ref} className="bg-[#F8FAFF] py-20 lg:py-24 overflow-hidden">
@@ -25,7 +28,7 @@ export default function Showcase() {
             Showcase
           </p>
           <h2 className="text-3xl lg:text-4xl font-extrabold text-[#191F28] tracking-tight keep-all">
-            실제로 만드는 회사입니다
+            {t.h2}
           </h2>
         </div>
 

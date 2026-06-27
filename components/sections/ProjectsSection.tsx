@@ -5,6 +5,8 @@ import { motion, useInView } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { projects } from "@/lib/projects";
 import ProjectCard from "@/components/ProjectCard";
+import { localize, type Locale } from "@/lib/i18n";
+import { getUI } from "@/lib/dictionary";
 
 // 데스크탑 그리드 콘텐츠 폭(px) — 모바일은 이 폭으로 그린 뒤 화면에 맞춰 통째로 축소
 const DESIGN_W = 1088;
@@ -12,9 +14,10 @@ const DESIGN_W = 1088;
 /**
  * 홈의 Projects 섹션 — 대표 프로젝트를 카드로 미리 보여주고, 전체는 /projects로.
  */
-export default function ProjectsSection() {
+export default function ProjectsSection({ locale = "ko" }: { locale?: Locale }) {
   const ref = useRef<HTMLElement>(null);
   const isInView = useInView(ref, { once: true, margin: "-60px" });
+  const t = getUI(locale).home.projects;
 
   // 모바일에서는 데스크탑 쇼케이스를 비율 그대로 통째로 축소(글자·사진·간격 비율 100% 동일, 크기만 작아짐)
   const clipRef = useRef<HTMLDivElement>(null);
@@ -69,14 +72,14 @@ export default function ProjectsSection() {
               Projects
             </p>
             <h2 className="text-3xl lg:text-4xl font-extrabold text-[#191F28] tracking-tight keep-all">
-              아르메스가 만든 프로젝트
+              {t.h2}
             </h2>
           </div>
           <Link
-            href="/projects"
+            href={localize("/projects", locale)}
             className="inline-flex items-center gap-1.5 text-[#3182F6] font-bold text-sm whitespace-nowrap"
           >
-            전체 보기
+            {t.viewAll}
             <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
             </svg>
@@ -109,7 +112,7 @@ export default function ProjectsSection() {
                   animate={isInView ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.5, delay: 0.06 * i }}
                 >
-                  <ProjectCard project={c.p} />
+                  <ProjectCard project={c.p} locale={locale} />
                 </motion.div>
               ))}
             </div>

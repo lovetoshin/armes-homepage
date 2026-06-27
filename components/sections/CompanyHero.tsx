@@ -3,13 +3,16 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { useContact } from "@/components/ContactProvider";
+import { localize, type Locale } from "@/lib/i18n";
+import { getUI } from "@/lib/dictionary";
 
 /**
  * 회사 Hero — ARMES는 "여러 AI 서비스를 만드는 AI 기반 서비스 기업"이라는 정체성을 먼저 보여준다.
  * (특정 프로젝트 홍보가 아니라 회사 자체)
  */
-export default function CompanyHero() {
+export default function CompanyHero({ locale = "ko" }: { locale?: Locale }) {
   const { open: openContact } = useContact();
+  const t = getUI(locale).home.hero;
 
   return (
     <section className="bg-white pt-28 pb-20 lg:pt-36 lg:pb-28">
@@ -25,23 +28,21 @@ export default function CompanyHero() {
           </div>
 
           <h1 className="text-4xl lg:text-6xl font-extrabold text-[#191F28] leading-[1.12] tracking-tight mb-6 keep-all">
-            AI로
+            {t.titlePre}
             <br />
-            <span className="text-[#3182F6]">일상을 바꾸는</span> 서비스 기업
+            <span className="text-[#3182F6]">{t.titleHl}</span>{t.titleSuf}
           </h1>
 
           <p className="text-[#4E5968] text-lg lg:text-xl leading-relaxed max-w-2xl mx-auto mb-10 keep-all">
-            아르메스는 AI·데이터·자동화·위치기술을 활용해
-            쇼핑몰, 지역 생활, 여행 등 일상의 여러 영역에
-            실제로 쓰이는 서비스를 만듭니다.
+            {t.desc}
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link
-              href="/projects"
+              href={localize("/projects", locale)}
               className="inline-flex items-center justify-center gap-2 bg-[#3182F6] hover:bg-[#1B64DA] text-white px-8 py-4 rounded-2xl font-bold text-[15px] transition-colors shadow-[0_4px_16px_rgba(49,130,246,0.3)]"
             >
-              프로젝트 둘러보기
+              {t.ctaPrimary}
               <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
               </svg>
@@ -50,7 +51,7 @@ export default function CompanyHero() {
               onClick={openContact}
               className="inline-flex items-center justify-center gap-2 bg-[#F2F4F6] text-[#191F28] px-8 py-4 rounded-2xl font-bold text-[15px] hover:bg-[#E5E8EB] transition-colors"
             >
-              파트너·제휴 문의
+              {t.ctaSecondary}
             </button>
           </div>
         </motion.div>
