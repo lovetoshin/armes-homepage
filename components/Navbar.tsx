@@ -3,25 +3,33 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useContact } from "./ContactProvider";
 import ArmesMark from "./ArmesMark";
-
-const navLinks = [
-  { name: "회사소개", href: "/about" },
-  { name: "프로젝트", href: "/projects" },
-  { name: "기술",     href: "/#technology" },
-];
+import LanguageSwitcher from "./LanguageSwitcher";
+import { localeFromPathname, localize } from "@/lib/i18n";
+import { getUI } from "@/lib/dictionary";
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const { open: openContact } = useContact();
+  const pathname = usePathname() || "/";
+  const locale = localeFromPathname(pathname);
+  const ui = getUI(locale).nav;
+
+  // 현재 언어에 맞춘 메뉴(글자는 사전에서, 링크는 언어 접두어 부착)
+  const navLinks = [
+    { name: ui.about, href: localize("/about", locale) },
+    { name: ui.projects, href: localize("/projects", locale) },
+    { name: ui.tech, href: localize("/#technology", locale) },
+  ];
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-xl border-b border-[#E5E8EB]">
       <nav className="max-w-6xl mx-auto px-5 lg:px-8 h-16 flex items-center justify-between">
 
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2.5 group">
+        <Link href={localize("/", locale)} className="flex items-center gap-2.5 group">
           <ArmesMark size={32} invert={false} className="group-hover:opacity-80 transition-opacity" />
           <span className="font-bold text-[#191F28] text-[17px] tracking-tight">ARMES</span>
         </Link>
@@ -39,24 +47,30 @@ export default function Navbar() {
           ))}
         </div>
 
-        {/* Desktop CTA */}
-        <button
-          onClick={openContact}
-          className="hidden md:block text-sm bg-[#3182F6] text-white px-5 py-2.5 rounded-full font-semibold hover:bg-[#1B64DA] transition-colors duration-200"
-        >
-          문의하기
-        </button>
+        {/* Desktop CTA + 언어 전환 */}
+        <div className="hidden md:flex items-center gap-1.5">
+          <LanguageSwitcher />
+          <button
+            onClick={openContact}
+            className="text-sm bg-[#3182F6] text-white px-5 py-2.5 rounded-full font-semibold hover:bg-[#1B64DA] transition-colors duration-200"
+          >
+            {ui.contact}
+          </button>
+        </div>
 
-        {/* Mobile Hamburger */}
+        {/* Mobile: 언어 전환 + 햄버거 */}
+        <div className="md:hidden flex items-center gap-1">
+        <LanguageSwitcher />
         <button
-          className="md:hidden w-10 h-10 flex flex-col items-center justify-center gap-[5px]"
+          className="w-10 h-10 flex flex-col items-center justify-center gap-[5px]"
           onClick={() => setMobileOpen(!mobileOpen)}
-          aria-label="메뉴"
+          aria-label={ui.menu}
         >
           <span className={`block w-5 h-0.5 bg-[#191F28] rounded-full transition-all duration-300 ${mobileOpen ? "rotate-45 translate-y-[7px]" : ""}`} />
           <span className={`block w-5 h-0.5 bg-[#191F28] rounded-full transition-all duration-300 ${mobileOpen ? "opacity-0 scale-x-0" : ""}`} />
           <span className={`block w-5 h-0.5 bg-[#191F28] rounded-full transition-all duration-300 ${mobileOpen ? "-rotate-45 -translate-y-[7px]" : ""}`} />
         </button>
+        </div>
       </nav>
 
       {/* Mobile Menu */}
@@ -84,7 +98,7 @@ export default function Navbar() {
                 onClick={() => { setMobileOpen(false); openContact(); }}
                 className="mt-3 w-full bg-[#3182F6] text-white py-3.5 rounded-2xl font-semibold text-sm"
               >
-                문의하기
+                {ui.contact}
               </button>
             </div>
           </motion.div>
