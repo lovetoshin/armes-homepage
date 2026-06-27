@@ -20,6 +20,19 @@ function dir(type: PostType, locale: Locale = DEFAULT_LOCALE) {
   return seg ? path.join(ROOT, type, seg) : path.join(ROOT, type);
 }
 
+// 외국어판 이미지 경로 치환:
+// 같은 이미지의 언어판(/blog/covers/{seg}/이름, /blog/inline/{seg}/이름)이 있으면 그 경로로 바꾸고,
+// 없으면 원본(한국어) 경로를 그대로 둔다.
+// → 후삼국지 인물 캡션·디자인 커버는 언어판으로, 국내서비스 앱 스크린샷은 원본 그대로 노출된다.
+function localizeImagePath(src: string, locale: Locale): string {
+  if (locale === DEFAULT_LOCALE) return src;
+  const seg = LOCALE_SEGMENT[locale];
+  const m = src.match(/^(\/blog\/(?:covers|inline))\/([^/]+\.(?:png|jpe?g|webp))$/i);
+  if (!m) return src;
+  const localized = `${m[1]}/${seg}/${m[2]}`;
+  return fs.existsSync(path.join(process.cwd(), "public", localized)) ? localized : src;
+}
+
 // 이 글이 실제 번역되어 존재하는 언어 목록 — hreflang을 정확히 만들어 404 링크를 막는다.
 export function postLocales(type: PostType, slug: string): Locale[] {
   return LOCALES.filter((loc) =>
@@ -78,14 +91,20 @@ export function getPost(
       /href="(\/blog[^"]*)"/g,
       (_m, p) => `href="${localize(p, locale)}"`,
     );
+    // 본문 이미지: 언어판이 있으면 그 경로로, 없으면 원본 한국어 이미지 그대로.
+    contentHtml = contentHtml.replace(
+      /src="(\/blog\/(?:covers|inline)\/[^"]+)"/g,
+      (_m, p) => `src="${localizeImagePath(p, locale)}"`,
+    );
   }
 
-  // thumbnail / image 둘 다 허용
-  const thumbnail = data.thumbnail
+  // thumbnail / image 둘 다 허용 (외국어판은 언어판 커버가 있으면 그것으로)
+  const thumbnailRaw = data.thumbnail
     ? String(data.thumbnail)
     : data.image
       ? String(data.image)
       : undefined;
+  const thumbnail = thumbnailRaw ? localizeImagePath(thumbnailRaw, locale) : undefined;
 
   // relatedServices / relatedService 둘 다 허용
   const relatedServices = toList(data.relatedServices ?? data.relatedService);
