@@ -12,10 +12,15 @@ export interface ContactPayload {
 
 function validate(data: Partial<ContactPayload>): string | null {
   if (!data.type)    return "문의 유형을 선택해 주세요.";
-  if (!data.name?.trim())    return "이름을 입력해 주세요.";
-  if (!data.email?.trim())   return "이메일을 입력해 주세요.";
-  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)) return "올바른 이메일 형식이 아닙니다.";
-  if (!data.phone?.trim())   return "연락처를 입력해 주세요.";
+  // 버그 신고·개선 제안은 가볍게 받는다(이름·이메일·연락처 선택). 그 외(광고·제휴 등)는 전부 필수.
+  const isFeedback = data.type === "버그 신고" || data.type === "개선 제안";
+  if (!isFeedback) {
+    if (!data.name?.trim())    return "이름을 입력해 주세요.";
+    if (!data.email?.trim())   return "이메일을 입력해 주세요.";
+    if (!data.phone?.trim())   return "연락처를 입력해 주세요.";
+  }
+  // 이메일을 적었다면(필수든 선택이든) 형식은 확인한다.
+  if (data.email?.trim() && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email)) return "올바른 이메일 형식이 아닙니다.";
   if (!data.message?.trim()) return "문의 내용을 입력해 주세요.";
   if (data.message.trim().length < 10) return "문의 내용을 10자 이상 입력해 주세요.";
   return null;
