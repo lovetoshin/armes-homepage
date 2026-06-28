@@ -8,6 +8,16 @@ export interface ContactPayload {
   company?: string;
   region?: string;
   message: string;
+  hp?: string;  // 봇 차단용 함정 칸(사람은 비워둠 / 봇은 채움)
+  t?: number;   // 봇 차단용 — 폼이 열린 뒤 제출까지 걸린 시간(ms)
+}
+
+// 자동봇 판별 — 함정 칸이 차 있거나, 제출이 비현실적으로 빠르면(2.5초 미만) 봇.
+// 사람은 최소 몇 초간 타이핑하므로 정상 사용자는 걸리지 않는다.
+function isBot(data: Partial<ContactPayload>): boolean {
+  if (data.hp && String(data.hp).trim() !== "") return true;
+  if (typeof data.t === "number" && data.t >= 0 && data.t < 2500) return true;
+  return false;
 }
 
 function validate(data: Partial<ContactPayload>): string | null {
@@ -100,6 +110,16 @@ async function sendEmail(data: ContactPayload) {
 export async function POST(request: NextRequest) {
   try {
     const data: Partial<ContactPayload> = await request.json();
+
+    // 봇이면 화면엔 성공처럼 보여주되(재시도 방지) 메일은 보내지 않고 조용히 끝낸다.
+    if (isBot(data)) {
+      console.warn("[contact API] 봇 의심 제출 차단(메일 미발송)");
+      return NextResponse.json({
+        success: true,
+        message: "문의가 정상적으로 접수되었습니다. 1~2 영업일 내에 연락드리겠습니다.",
+      });
+    }
+
     const error = validate(data);
     if (error) return NextResponse.json({ success: false, message: error }, { status: 400 });
 
