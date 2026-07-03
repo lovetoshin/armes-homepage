@@ -3,6 +3,7 @@ import CompanyHero from "@/components/sections/CompanyHero";
 import Showcase from "@/components/sections/Showcase";
 import TechnologySection from "@/components/sections/TechnologySection";
 import ProjectsSection from "@/components/sections/ProjectsSection";
+import CompanyIntro from "@/components/sections/CompanyIntro";
 import LatestBlog from "@/components/sections/LatestBlog";
 import CompanyCTA from "@/components/sections/CompanyCTA";
 import Footer from "@/components/Footer";
@@ -57,6 +58,7 @@ export default function Home() {
         <CompanyHero />
         <Showcase />
         <TechnologySection />
+        <CompanyIntro />
         <ProjectsSection />
         <LatestBlog />
         <CompanyCTA />
