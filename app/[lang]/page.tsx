@@ -17,7 +17,7 @@ import {
   type Locale,
 } from "@/lib/i18n";
 
-const SITE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://armes.co.kr";
+const SITE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.armes.co.kr";
 
 // 영어/중국어 홈 메타데이터(한국어 메타는 루트 app/layout.tsx가 담당)
 const HOME_META: Record<Exclude<Locale, "ko">, { title: string; description: string }> = {

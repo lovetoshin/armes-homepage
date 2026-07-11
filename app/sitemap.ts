@@ -18,7 +18,7 @@ function toIso(date: string, fallback: string): string {
 }
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = process.env.NEXT_PUBLIC_SITE_URL ?? "https://armes.co.kr";
+  const base = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.armes.co.kr";
   const now  = new Date().toISOString();
 
   // 다국어 대체주소(hreflang) 묶음 — 절대URL. 번역이 존재하는 언어만 넣어 404 alternate를 막는다.

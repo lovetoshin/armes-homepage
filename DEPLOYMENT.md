@@ -27,7 +27,7 @@ vercel --prod
 
 | 변수명 | 값 | 필수 |
 |---|---|---|
-| `NEXT_PUBLIC_SITE_URL` | `https://armes.co.kr` | ✅ |
+| `NEXT_PUBLIC_SITE_URL` | `https://www.armes.co.kr` | ✅ |
 | `CONTACT_WEBHOOK_URL` | Slack/Discord Webhook URL | 선택 |
 
 ---

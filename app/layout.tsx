@@ -11,7 +11,7 @@ const geist = Geist({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://armes.co.kr"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.armes.co.kr"),
   title: "ARMES — AI로 일상을 바꾸는 서비스 기업",
   description:
     "주식회사 아르메스는 AI·데이터·자동화·위치기술을 활용해 일상의 여러 영역에 실제 쓰이는 서비스를 만드는 AI 기반 서비스 기업입니다. SellerAI·ARMES Tools를 운영하고 RewardTalk·TravelMoa·CocoPing 등을 준비합니다.",

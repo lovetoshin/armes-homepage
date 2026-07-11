@@ -18,7 +18,7 @@ const AI_BOTS = [
 ];
 
 export default function robots(): MetadataRoute.Robots {
-  const base = process.env.NEXT_PUBLIC_SITE_URL ?? "https://armes.co.kr";
+  const base = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.armes.co.kr";
   return {
     rules: [
       // AI 학습/크롤러 봇 전면 차단 (ISR 폭증 근본 차단)

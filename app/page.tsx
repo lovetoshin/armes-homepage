@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
 };
 
-const SITE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://armes.co.kr";
+const SITE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.armes.co.kr";
 
 // 구글이 ARMES(회사)와 사이트를 더 잘 이해하도록 — Organization + WebSite
 // (SearchAction은 실제 검색 페이지가 없어 의도적으로 넣지 않음)

@@ -57,7 +57,7 @@ const nextConfig: NextConfig = {
       // {
       //   source:      "/:path*",
       //   has:         [{ type: "host", value: "www.armes.co.kr" }],
-      //   destination: "https://armes.co.kr/:path*",
+      //   destination: "https://www.armes.co.kr/:path*",
       //   permanent:   true,
       // },
     ];

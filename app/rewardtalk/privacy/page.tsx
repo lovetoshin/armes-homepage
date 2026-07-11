@@ -1,7 +1,7 @@
 // 리워드톡(RewardTalk) 개인정보 처리방침 — 플레이스토어 심사용.
 // 회사 정책 페이지(/privacy, /terms)와 동일한 LegalLayout 와꾸로 통일.
 // ⚠️ 법적 텍스트는 기존 docs 원본을 토시 하나 안 틀리게 그대로 유지한다(내용 변경 금지).
-// 주소: https://armes.co.kr/rewardtalk/privacy
+// 주소: https://www.armes.co.kr/rewardtalk/privacy
 
 import type { Metadata } from "next";
 import LegalLayout from "@/components/legal/LegalLayout";

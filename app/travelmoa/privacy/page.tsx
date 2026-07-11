@@ -1,7 +1,7 @@
 // 여행모아(TravelMoa) 개인정보 처리방침 — 플레이스토어 심사용.
 // 회사 정책 페이지(/privacy, /terms) 및 리워드톡과 동일한 LegalLayout 와꾸로 통일.
 // ⚠️ 법적 텍스트는 여행모아 실제 수집 범위에 맞춰 정직하게 작성한다(없는 수집 항목을 적지 않는다).
-// 주소: https://armes.co.kr/travelmoa/privacy
+// 주소: https://www.armes.co.kr/travelmoa/privacy
 
 import type { Metadata } from "next";
 import LegalLayout from "@/components/legal/LegalLayout";

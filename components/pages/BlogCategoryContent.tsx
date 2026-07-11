@@ -8,7 +8,7 @@ import { CATEGORY_PAGE } from "@/lib/dict-pages";
 import { categoryLabel, categoryIntro } from "@/lib/i18n-data";
 import { localize, HTML_LANG, type Locale } from "@/lib/i18n";
 
-const SITE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://armes.co.kr";
+const SITE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.armes.co.kr";
 
 // 블로그 카테고리 본문 — 한국어/영어/중국어 공유.
 // 한국어는 긴 SEO 본문(CATEGORY_HUB), 그 외 언어는 한 줄 소개(categoryIntro)를 쓴다.

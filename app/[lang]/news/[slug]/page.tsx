@@ -11,7 +11,7 @@ import {
   PREFIXED_LOCALES,
 } from "@/lib/i18n";
 
-const SITE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://armes.co.kr";
+const SITE = process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.armes.co.kr";
 
 function absUrl(p?: string) {
   if (!p) return undefined;

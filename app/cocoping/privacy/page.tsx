@@ -1,7 +1,7 @@
 // 코코핑(CocoPing) 개인정보 처리방침 — 플레이스토어 심사용.
 // 회사 정책 페이지(/privacy, /terms) 및 리워드톡·여행모아와 동일한 LegalLayout 와꾸로 통일.
 // ⚠️ 법적 텍스트는 코코핑 실제 수집 범위(구글 로그인 이메일·푸시·광고식별자)에 맞춰 정직하게 작성한다.
-// 주소: https://armes.co.kr/cocoping/privacy
+// 주소: https://www.armes.co.kr/cocoping/privacy
 
 import type { Metadata } from "next";
 import LegalLayout from "@/components/legal/LegalLayout";
