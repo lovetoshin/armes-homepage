@@ -54,8 +54,9 @@ export default function ProjectsContent({ locale = "ko" }: { locale?: Locale }) 
                 <span className="text-sm text-[#B0B8C1] font-semibold">{list.length}</span>
               </div>
               {status === "dev" ? (
-                /* 개발중: 1열=월드링고(세로 폰스샷) · 2열=나머지 3개 세로 일렬 · 3·4열 비움 */
-                <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 items-start">
+                /* 개발중: 1열=월드링고(세로 폰스샷) · 2열=나머지 3개 세로 일렬 · 3열 비움
+                   (카드 너비를 위 배포대기중과 동일하게 3열 기준으로 맞춤) */
+                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 items-start">
                   <ProjectCard project={list[0]} locale={locale} />
                   <div className="flex flex-col gap-5">
                     {list.slice(1).map((p) => (
