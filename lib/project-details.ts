@@ -208,10 +208,7 @@ export const projectDetails: Record<string, ProjectDetail> = {
     ],
     ctaLabel: "ARMES Tools 열기",
     gallery: [
-      "/projects/tools-1.png",
-      "/projects/tools-2.png",
-      "/projects/tools-3.png",
-      "/projects/tools-4.png",
+      "/projects/tools-main.png",
     ],
   },
 

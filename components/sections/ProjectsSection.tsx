@@ -45,25 +45,26 @@ export default function ProjectsSection({ locale = "ko" }: { locale?: Locale }) 
     return () => ro.disconnect();
   }, []);
 
-  // 정사각형 와꾸 배치 — 홈에 노출할 7개를 키로 직접 선택(후삼국지 제외, 전체는 /projects)
+  // 홈 쇼케이스 배치 — 3블록(폰 3개 / 셀러AI+아르메스툴+월드링고 / 개발중 3개)
+  // 핵심: 각 카드는 "콘텐츠 높이만큼만" 차지한다(짧은 카드를 긴 카드에 맞춰 억지로 늘려 여백 만들지 않음).
+  // 모바일은 이 배치를 비율 그대로 통째 축소(아래 scale 트릭).
   const byKey = (k: string) => projects.find((p) => p.key === k)!;
-  // 1행: 폰 3개 / 셀러AI는 2칸 폭으로 크게 / 3열엔 코코핑 아래로 작은 카드 3개
-  // 모든 화면에서 데스크탑과 토시 하나 안 틀리게 동일 배치(lg: 분기 제거) — 모바일은 작게·깨알 글씨여도 동일 와꾸
-  const cells = [
-    // 1행: 폰 3개 (아래 행과 간격)
-    { p: byKey("rewardtalk"), cls: "col-start-1 row-start-1 mb-2" },
-    { p: byKey("travelmoa"), cls: "col-start-2 row-start-1 mb-2" },
-    { p: byKey("cocoping"), cls: "col-start-3 row-start-1 mb-2" },
-    // 셀러AI 2칸(크기 유지)
-    { p: byKey("sellerai"), cls: "col-start-1 col-span-2 row-start-2 row-span-2" },
-    // 4행: 후삼국지 + 월드링고(개발중) 나란히 → PhotoSort와 라인 맞춤
-    { p: byKey("hoosamgukji"), cls: "col-start-1 row-start-4" },
-    { p: byKey("worldlingo"), cls: "col-start-2 row-start-4" },
-    // 3열(코코핑 아래): 세로로 나란히
-    { p: byKey("tools"), cls: "col-start-3 row-start-2" },
-    { p: byKey("rankingpangpang"), cls: "col-start-3 row-start-3" },
-    { p: byKey("photosort"), cls: "col-start-3 row-start-4" },
-  ];
+  const rowsGroup = ["rewardtalk", "travelmoa", "cocoping"]; // 배포대기중 폰 3개
+  const devGroup = ["hoosamgukji", "photosort", "rankingpangpang"]; // 개발중 3개
+  let animIdx = 0;
+  const Card = (k: string) => {
+    const i = animIdx++;
+    return (
+      <motion.div
+        key={k}
+        initial={{ opacity: 0, y: 18 }}
+        animate={isInView ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.5, delay: 0.06 * i }}
+      >
+        <ProjectCard project={byKey(k)} locale={locale} />
+      </motion.div>
+    );
+  };
 
   return (
     <section id="projects" ref={ref} className="bg-white py-24 lg:py-28">
@@ -104,19 +105,24 @@ export default function ProjectsSection({ locale = "ko" }: { locale?: Locale }) 
               transition: "opacity 0.2s ease",
             }}
           >
-            {/* 1행(폰)=auto, 2~4행=1fr 균등 → 오른쪽 세로줄 3개 카드 높이 동일 */}
-            <div className="grid grid-cols-3 gap-5 [grid-template-rows:auto_1fr_1fr_1fr]">
-              {cells.map((c, i) => (
-                <motion.div
-                  key={c.p.key}
-                  className={`${c.cls} h-full`}
-                  initial={{ opacity: 0, y: 18 }}
-                  animate={isInView ? { opacity: 1, y: 0 } : {}}
-                  transition={{ duration: 0.5, delay: 0.06 * i }}
-                >
-                  <ProjectCard project={c.p} locale={locale} />
-                </motion.div>
-              ))}
+            {/* 3블록 — 각 카드는 콘텐츠 높이만큼(items-start: 억지 stretch·여백 없음) */}
+            <div className="flex flex-col gap-5">
+              {/* ① 폰 3개 나란히 */}
+              <div className="grid grid-cols-3 gap-5 items-start">
+                {rowsGroup.map((k) => Card(k))}
+              </div>
+              {/* ② 왼쪽: 셀러AI(크게) 위 · 아르메스툴(가로 꽉참) 아래 | 오른쪽: 월드링고(세로) */}
+              <div className="grid grid-cols-3 gap-5 items-start">
+                <div className="col-span-2 flex flex-col gap-5">
+                  {Card("sellerai")}
+                  {Card("tools")}
+                </div>
+                <div className="col-span-1">{Card("worldlingo")}</div>
+              </div>
+              {/* ③ 개발중 3개 나란히 */}
+              <div className="grid grid-cols-3 gap-5 items-start">
+                {devGroup.map((k) => Card(k))}
+              </div>
             </div>
           </div>
         </div>

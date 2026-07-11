@@ -8,6 +8,16 @@ import { type Locale } from "@/lib/i18n";
 // 상태 표시 순서: 운영중 → 배포대기중 → 개발중 → 준비중 → 연구중
 const groupOrder: ProjectStatus[] = ["live", "pending", "dev", "soon", "research"];
 
+// 그룹마다 카드 개수·성격이 달라 열 수를 따로 준다
+// (운영중=이미지 큰 카드 2열 / 개발중=한 줄 일렬 4열 / 그 외=3열)
+const GRID_COLS: Record<ProjectStatus, string> = {
+  live: "sm:grid-cols-2",
+  pending: "sm:grid-cols-2 lg:grid-cols-3",
+  dev: "sm:grid-cols-2 lg:grid-cols-4",
+  soon: "sm:grid-cols-2 lg:grid-cols-3",
+  research: "sm:grid-cols-2 lg:grid-cols-3",
+};
+
 // 프로젝트 목록 본문 — 한국어/영어/중국어 공유
 export default function ProjectsContent({ locale = "ko" }: { locale?: Locale }) {
   const t = PROJECTS_PAGE[locale];
@@ -43,7 +53,7 @@ export default function ProjectsContent({ locale = "ko" }: { locale?: Locale }) 
                 </h2>
                 <span className="text-sm text-[#B0B8C1] font-semibold">{list.length}</span>
               </div>
-              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+              <div className={`grid ${GRID_COLS[status]} gap-5 items-start`}>
                 {list.map((p) => (
                   <ProjectCard key={p.key} project={p} locale={locale} />
                 ))}
