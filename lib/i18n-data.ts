@@ -26,6 +26,12 @@ export const STATUS_LABEL: Record<ProjectStatus, Record<Locale, string>> = {
     "zh-Hans": "研发中",
     "zh-Hant": "研發中",
   },
+  dev: {
+    ko: "개발중",
+    en: "In development",
+    "zh-Hans": "开发中",
+    "zh-Hant": "開發中",
+  },
 };
 
 // 프로젝트 한 줄 소개(태그라인)

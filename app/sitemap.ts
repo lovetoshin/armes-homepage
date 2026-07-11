@@ -7,6 +7,7 @@ import { LOCALES, HTML_LANG, DEFAULT_LOCALE, localize, type Locale } from "@/lib
 const SERVICE_PRIORITY: Record<ProjectStatus, number> = {
   live: 0.8,
   pending: 0.7,
+  dev: 0.65,
   soon: 0.6,
   research: 0.5,
 };

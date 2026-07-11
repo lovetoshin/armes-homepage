@@ -54,9 +54,11 @@ export default function ProjectsSection({ locale = "ko" }: { locale?: Locale }) 
     { p: byKey("rewardtalk"), cls: "col-start-1 row-start-1 mb-2" },
     { p: byKey("travelmoa"), cls: "col-start-2 row-start-1 mb-2" },
     { p: byKey("cocoping"), cls: "col-start-3 row-start-1 mb-2" },
-    // 셀러AI 2칸(크기 유지) + 그 아래 후삼국지 2칸 → PhotoSort와 라인 맞춤
+    // 셀러AI 2칸(크기 유지)
     { p: byKey("sellerai"), cls: "col-start-1 col-span-2 row-start-2 row-span-2" },
-    { p: byKey("hoosamgukji"), cls: "col-start-1 col-span-2 row-start-4" },
+    // 4행: 후삼국지 + 월드링고(개발중) 나란히 → PhotoSort와 라인 맞춤
+    { p: byKey("hoosamgukji"), cls: "col-start-1 row-start-4" },
+    { p: byKey("worldlingo"), cls: "col-start-2 row-start-4" },
     // 3열(코코핑 아래): 세로로 나란히
     { p: byKey("tools"), cls: "col-start-3 row-start-2" },
     { p: byKey("rankingpangpang"), cls: "col-start-3 row-start-3" },

@@ -2,7 +2,7 @@
 // ⚠️ 각 프로젝트의 기능/SEO 콘텐츠는 절대 여기 넣지 않는다.
 //    여기는 "카드 한 줄 소개 + 상태 + 바로가기"까지만. 자세한 내용은 각 프로젝트가 책임진다.
 
-export type ProjectStatus = "live" | "pending" | "soon" | "research";
+export type ProjectStatus = "live" | "pending" | "dev" | "soon" | "research";
 
 export interface Project {
   key: string;          // 내부 식별자
@@ -40,6 +40,11 @@ export const STATUS_META: Record<
     label: "연구중",
     dot: "bg-[#8B95A1]",
     chip: "bg-[#F2F4F6] text-[#6B7684]",
+  },
+  dev: {
+    label: "개발중",
+    dot: "bg-[#3182F6]",
+    chip: "bg-[#EBF3FF] text-[#3182F6]",
   },
 };
 
@@ -121,5 +126,14 @@ export const projects: Project[] = [
     status: "soon",
     tech: ["AI"],
     icon: "⚔️",
+  },
+  {
+    key: "worldlingo",
+    name: "월드링고",
+    tagline: "한류 타고 배우는 1:1 화상 한국어·영어·중국어 플랫폼",
+    audience: "한국어·외국어를 배우려는 전 세계 학습자",
+    status: "dev",
+    tech: ["AI", "Automation"],
+    icon: "🌐",
   },
 ];
