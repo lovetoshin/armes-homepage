@@ -83,7 +83,10 @@ export const projectDetails: Record<string, ProjectDetail> = {
       "리워드톡은 현재 정식 출시를 준비 중입니다. 안드로이드(구글 플레이) 심사를 진행하고 있으며, 개인정보 처리방침 등 출시 준비를 마치는 대로 안내드리겠습니다.",
     gallery: [
       "/projects/rewardtalk-1.jpg",
+      "/projects/rewardtalk-2.jpg",
       "/projects/rewardtalk-3.jpg",
+      "/projects/rewardtalk-4.jpg",
+      "/projects/rewardtalk-5.jpg",
     ],
   },
 
@@ -107,6 +110,7 @@ export const projectDetails: Record<string, ProjectDetail> = {
       "트래블모아는 현재 출시를 준비 중입니다. 준비가 마무리되는 대로 안내드리겠습니다.",
     gallery: [
       "/projects/travelmoa-1.jpg",
+      "/projects/travelmoa-2.jpg",
       "/projects/travelmoa-3.jpg",
     ],
   },
@@ -155,6 +159,12 @@ export const projectDetails: Record<string, ProjectDetail> = {
       "상품 등록 속도를 높이고 싶은 온라인 판매자",
     ],
     ctaLabel: "SellerAI 스튜디오 열기",
+    gallery: [
+      "/projects/sellerai-1.jpg",
+      "/projects/sellerai-2.jpg",
+      "/projects/sellerai-3.jpg",
+      "/projects/sellerai-4.jpg",
+    ],
   },
 
   // ── 5. 후삼국지 (준비중) ───────────────────────────────
@@ -197,6 +207,12 @@ export const projectDetails: Record<string, ProjectDetail> = {
       "가입 없이 무료로 바로 쓰는 도구를 찾는 분",
     ],
     ctaLabel: "ARMES Tools 열기",
+    gallery: [
+      "/projects/tools-1.png",
+      "/projects/tools-2.png",
+      "/projects/tools-3.png",
+      "/projects/tools-4.png",
+    ],
   },
 
   // ── 7. 랭킹팡팡 (준비중) ───────────────────────────────

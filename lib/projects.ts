@@ -69,6 +69,7 @@ export const projects: Project[] = [
     tech: ["Automation"],
     href: "https://www.armes.co.kr/tools/",
     icon: "🧰",
+    thumbnail: "/projects/tools-1.png",
   },
   {
     key: "rewardtalk",
@@ -135,5 +136,6 @@ export const projects: Project[] = [
     status: "dev",
     tech: ["AI", "Automation"],
     icon: "🌐",
+    thumbnail: "/projects/worldlingo-5.png",
   },
 ];
