@@ -53,6 +53,17 @@ const nextConfig: NextConfig = {
         destination: "https://www.armes.co.kr/sellerai/studio",
         permanent:   true,
       },
+      // 옛 주소(/tools 접두어 없이 배포되던 시절) → 현재 /tools/* 구조로 영구(308) 이전.
+      // 구글이 과거 크롤한 /{언어}/{도구카테고리}/* 수백 개가 404 나던 것을 정리(검색 점수 회수·사이트 건전성).
+      // 도구 카테고리로 시작하는 경로만 매칭 → 본체 자체 페이지(/ko/about 등)와 충돌 없음.
+      // destination의 /tools/* 는 vercel.json rewrite로 아르메스툴(web_util)에 연결되고,
+      // 옛 image 카테고리는 web_util next.config가 image-adjust 등으로 2차 리다이렉트한다.
+      // 'tools'는 언어 화이트리스트(ko|en…)에 없으므로 무한 루프 없음.
+      {
+        source:      "/:lang(ko|en|ja|zh-cn|zh-tw|es|pt-br|fr|de)/:cat(image-convert|image-edit|image-adjust|image-background|image-create|image-color|id-photo|document|audio|video|calc|text|form|blog|file|pdf|dev|qr|image)/:rest*",
+        destination: "/tools/:lang/:cat/:rest*",
+        permanent:   true,
+      },
       // www → non-www (도메인 설정 시 활성화)
       // {
       //   source:      "/:path*",
