@@ -53,8 +53,9 @@ export default function robots(): MetadataRoute.Robots {
     sitemap: [
       `${base}/sitemap.xml`,
       "https://www.armes.co.kr/sellerai/sitemap.xml",
-      // ARMES Tools 정식 출시 후 tools 사이트맵 주소 확정되면 다시 추가
-      // (개발중 동안 404 주소를 광고하지 않음)
+      // 아르메스툴 사이트맵 — 한국어 도구 316개 URL. 배포·200 확인 완료라 검색엔진에 정식 노출.
+      // 국내 트래픽 유입의 핵심(구글·네이버가 이 사이트맵으로 도구 페이지를 발견). 외국어는 이미 sitemap에서 제외됨.
+      "https://www.armes.co.kr/tools/sitemap.xml",
     ],
   };
 }
