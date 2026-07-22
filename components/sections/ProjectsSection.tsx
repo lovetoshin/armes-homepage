@@ -45,12 +45,13 @@ export default function ProjectsSection({ locale = "ko" }: { locale?: Locale }) 
     return () => ro.disconnect();
   }, []);
 
-  // 홈 쇼케이스 배치 — 3블록(폰 3개 / 셀러AI+아르메스툴+월드링고 / 개발중 3개)
-  // 핵심: 각 카드는 "콘텐츠 높이만큼만" 차지한다(짧은 카드를 긴 카드에 맞춰 억지로 늘려 여백 만들지 않음).
+  // 홈 프로젝트 배치 — 2블록. 대표 웹서비스(셀러AI·아르메스툴)는 위 Showcase로 분리됐으므로,
+  // 여기서는 앱/개발중 프로젝트만 보여준다(중복 제거).
+  // 핵심: 각 카드는 "콘텐츠 높이만큼만" 차지한다(items-start: 짧은 카드를 억지로 늘려 여백 만들지 않음).
   // 모바일은 이 배치를 비율 그대로 통째 축소(아래 scale 트릭).
   const byKey = (k: string) => projects.find((p) => p.key === k)!;
-  const rowsGroup = ["rewardtalk", "travelmoa", "cocoping"]; // 배포대기중 폰 3개
-  const devGroup = ["hoosamgukji", "photosort", "rankingpangpang"]; // 개발중 3개
+  const rowsGroup = ["rewardtalk", "travelmoa", "cocoping", "worldlingo"]; // 세로 화면 서비스 4개
+  const devGroup = ["hoosamgukji", "photosort", "rankingpangpang"]; // 아이콘(개발중) 3개
   let animIdx = 0;
   const Card = (k: string) => {
     const i = animIdx++;
@@ -105,21 +106,13 @@ export default function ProjectsSection({ locale = "ko" }: { locale?: Locale }) 
               transition: "opacity 0.2s ease",
             }}
           >
-            {/* 3블록 — 각 카드는 콘텐츠 높이만큼(items-start: 억지 stretch·여백 없음) */}
+            {/* 2블록 — 각 카드는 콘텐츠 높이만큼(items-start: 억지 stretch·여백 없음) */}
             <div className="flex flex-col gap-5">
-              {/* ① 폰 3개 나란히 */}
-              <div className="grid grid-cols-3 gap-5 items-start">
+              {/* ① 세로 화면 서비스 4개 나란히 */}
+              <div className="grid grid-cols-4 gap-5 items-start">
                 {rowsGroup.map((k) => Card(k))}
               </div>
-              {/* ② 왼쪽: 셀러AI(크게) 위 · 아르메스툴(가로 꽉참) 아래 | 오른쪽: 월드링고(세로) */}
-              <div className="grid grid-cols-3 gap-5 items-start">
-                <div className="col-span-2 flex flex-col gap-5">
-                  {Card("sellerai")}
-                  {Card("tools")}
-                </div>
-                <div className="col-span-1">{Card("worldlingo")}</div>
-              </div>
-              {/* ③ 개발중 3개 나란히 */}
+              {/* ② 개발중(아이콘) 3개 나란히 */}
               <div className="grid grid-cols-3 gap-5 items-start">
                 {devGroup.map((k) => Card(k))}
               </div>

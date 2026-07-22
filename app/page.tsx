@@ -58,9 +58,9 @@ export default function Home() {
       <main>
         <CompanyHero />
         <Showcase />
-        <TechnologySection />
-        <CompanyIntro />
         <ProjectsSection />
+        <CompanyIntro />
+        <TechnologySection />
         <PricingSection />
         <LatestBlog />
         <CompanyCTA />
