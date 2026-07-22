@@ -109,12 +109,12 @@ export default function ArticleContent({
 
         {/* 커버 이미지 */}
         {post.thumbnail && (
-          <div className="mb-10 rounded-3xl overflow-hidden border border-[#E5E8EB] bg-[#F2F4F6]">
+          <div className="mb-10 rounded-3xl overflow-hidden border border-[#E5E8EB] bg-[#F2F4F6] aspect-[1200/630]">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={post.thumbnail}
               alt={post.imageAlt || post.title}
-              className="w-full h-auto block"
+              className="w-full h-full object-cover block"
             />
           </div>
         )}
