@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { Geist } from "next/font/google";
 import ContactProvider from "@/components/ContactProvider";
 import NotifyProvider from "@/components/NotifyProvider";
@@ -52,12 +53,6 @@ export default function RootLayout({
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/variable/pretendardvariable.min.css"
         />
-        {/* Google AdSense — 사이트 소유권 확인 + 광고 게재 코드(전 페이지 <head> 필수) */}
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4065600972538753"
-          crossOrigin="anonymous"
-        />
       </head>
       <body className="min-h-screen bg-[#09090B] text-white overflow-x-hidden">
         <ContactProvider>
@@ -67,6 +62,14 @@ export default function RootLayout({
           </NotifyProvider>
         </ContactProvider>
       </body>
+      {/* Google AdSense — beforeInteractive면 서버 HTML <head>에 주입됨(심사봇이 코드 감지) */}
+      <Script
+        id="adsbygoogle-init"
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4065600972538753"
+        crossOrigin="anonymous"
+        strategy="beforeInteractive"
+      />
     </html>
   );
 }
