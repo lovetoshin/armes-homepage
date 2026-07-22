@@ -1,8 +1,9 @@
 // 홈의 회사 소개 섹션 — 순수 서버 컴포넌트로 렌더해 회사 정체성이 글(HTML)로
 // 담기게 한다. 서비스 목록은 위 Showcase·ProjectsSection이 담당하므로 여기선 소개 글만.
+// 배경은 아래 TechnologySection(#F8FAFF)과 같은 색 — 프로젝트까지 흰색, 여기부터 연회색 한 영역.
 export default function CompanyIntro() {
   return (
-    <section className="bg-white py-16 sm:py-20">
+    <section className="bg-[#F8FAFF] py-16 sm:py-20">
       <div className="mx-auto max-w-6xl px-5 lg:px-8">
         <p className="text-[13px] font-bold text-[#1d62f0]">About ARMES</p>
         <h2 className="mt-1 text-[24px] font-extrabold leading-snug text-gray-900 sm:text-[30px]">
