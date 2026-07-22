@@ -12,21 +12,21 @@ const geist = Geist({
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.armes.co.kr"),
-  title: "ARMES — AI로 일상을 바꾸는 서비스 기업",
+  title: "ARMES — 매일의 불편을 해결하는 생활 서비스 회사",
   description:
-    "주식회사 아르메스는 AI·데이터·자동화·위치기술을 활용해 일상의 여러 영역에 실제 쓰이는 서비스를 만드는 AI 기반 서비스 기업입니다. SellerAI·ARMES Tools를 운영하고 RewardTalk·TravelMoa·CocoPing 등을 준비합니다.",
-  keywords: ["아르메스", "ARMES", "AI 기반 서비스 기업", "AI 서비스", "SellerAI", "RewardTalk", "AI 자동화"],
+    "주식회사 아르메스는 쇼핑몰·지역 생활·여행 등 일상의 여러 영역에 실제 쓰이는 생활 서비스를 만드는 회사입니다. SellerAI·ARMES Tools를 운영하고 RewardTalk·TravelMoa·CocoPing 등을 준비합니다.",
+  keywords: ["아르메스", "ARMES", "생활 서비스", "SellerAI", "ARMES Tools", "RewardTalk", "TravelMoa"],
   openGraph: {
-    title: "ARMES — AI로 일상을 바꾸는 서비스 기업",
-    description: "AI·데이터·자동화·위치기술로 실제 쓰이는 서비스를 만드는 AI 기반 서비스 기업입니다.",
+    title: "ARMES — 매일의 불편을 해결하는 생활 서비스 회사",
+    description: "쇼핑몰·지역 생활·여행 등 일상에 실제 쓰이는 생활 서비스를 만듭니다.",
     type: "website",
     locale: "ko_KR",
     siteName: "ARMES",
   },
   twitter: {
     card: "summary_large_image",
-    title: "ARMES — AI로 일상을 바꾸는 서비스 기업",
-    description: "AI·데이터·자동화·위치기술로 실제 쓰이는 서비스를 만드는 AI 기반 서비스 기업입니다.",
+    title: "ARMES — 매일의 불편을 해결하는 생활 서비스 회사",
+    description: "쇼핑몰·지역 생활·여행 등 일상에 실제 쓰이는 생활 서비스를 만듭니다.",
   },
   robots: {
     index: true,
@@ -51,6 +51,12 @@ export default function RootLayout({
         <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/pretendard@1.3.9/dist/web/variable/pretendardvariable.min.css"
+        />
+        {/* Google AdSense — 사이트 소유권 확인 + 광고 게재 코드(전 페이지 <head> 필수) */}
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4065600972538753"
+          crossOrigin="anonymous"
         />
       </head>
       <body className="min-h-screen bg-[#09090B] text-white overflow-x-hidden">
