@@ -119,7 +119,7 @@ const dictionaries: Record<Locale, Dict> = {
       showcase: {
         h2: "지금 바로 쓸 수 있는 서비스",
         sellerai: "상품 사진 한 장만 올리면 모델 착용컷·상세페이지·누끼까지 1분 만에 자동 완성",
-        tools: "이미지·PDF·문서 편집부터 계산기까지, 166개 도구를 설치·회원가입 없이 무료로",
+        tools: "이미지·PDF·문서 편집부터 계산기까지, 167개 도구를 설치·회원가입 없이 무료로",
         cta: "바로 써보기",
       },
       tech: { h2: "우리가 다루는 기술" },
@@ -183,7 +183,7 @@ const dictionaries: Record<Locale, Dict> = {
       showcase: {
         h2: "Services you can use right now",
         sellerai: "Upload one product photo — model shots, detail pages and cutouts, auto-made in a minute",
-        tools: "166 free tools for images, PDFs and documents — no install, no signup",
+        tools: "167 free tools for images, PDFs and documents — no install, no signup",
         cta: "Try it now",
       },
       tech: { h2: "The technology we work with" },
@@ -247,7 +247,7 @@ const dictionaries: Record<Locale, Dict> = {
       showcase: {
         h2: "现在就能使用的服务",
         sellerai: "只需上传一张商品照片，模特试穿图、详情页、抠图一分钟自动完成",
-        tools: "图片·PDF·文档编辑到计算器，166款工具免安装免注册免费使用",
+        tools: "图片·PDF·文档编辑到计算器，167款工具免安装免注册免费使用",
         cta: "立即体验",
       },
       tech: { h2: "我们运用的技术" },
@@ -311,7 +311,7 @@ const dictionaries: Record<Locale, Dict> = {
       showcase: {
         h2: "現在就能使用的服務",
         sellerai: "只需上傳一張商品照片，模特試穿圖、詳情頁、去背一分鐘自動完成",
-        tools: "圖片·PDF·文件編輯到計算機，166款工具免安裝免註冊免費使用",
+        tools: "圖片·PDF·文件編輯到計算機，167款工具免安裝免註冊免費使用",
         cta: "立即體驗",
       },
       tech: { h2: "我們運用的技術" },

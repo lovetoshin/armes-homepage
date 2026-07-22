@@ -62,7 +62,7 @@ export default function AboutContent({ locale = "ko" }: { locale?: Locale }) {
         {/* 미션 */}
         <section>
           <p className="text-xs text-[#3182F6] font-bold uppercase tracking-widest mb-3">Mission</p>
-          <h2 className="text-2xl lg:text-3xl font-extrabold text-[#191F28] leading-snug mb-4 keep-all">
+          <h2 className="text-2xl lg:text-3xl font-extrabold text-[#191F28] leading-snug mb-4 keep-all text-balance">
             {t.missionTitle}
           </h2>
           <p className="text-[#4E5968] text-base lg:text-lg leading-relaxed keep-all">
@@ -73,7 +73,7 @@ export default function AboutContent({ locale = "ko" }: { locale?: Locale }) {
         {/* 비전 */}
         <section>
           <p className="text-xs text-[#3182F6] font-bold uppercase tracking-widest mb-3">Vision</p>
-          <h2 className="text-2xl lg:text-3xl font-extrabold text-[#191F28] leading-snug mb-4 keep-all">
+          <h2 className="text-2xl lg:text-3xl font-extrabold text-[#191F28] leading-snug mb-4 keep-all text-balance">
             {t.visionTitle}
           </h2>
           <p className="text-[#4E5968] text-base lg:text-lg leading-relaxed keep-all">

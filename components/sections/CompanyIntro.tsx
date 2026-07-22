@@ -7,7 +7,7 @@ export default function CompanyIntro() {
     <section id="technology" className="bg-white py-16 sm:py-20">
       <div className="mx-auto max-w-6xl px-5 lg:px-8">
         <p className="text-[13px] font-bold text-[#1d62f0]">About ARMES</p>
-        <h2 className="mt-1 text-[24px] font-extrabold leading-snug text-gray-900 sm:text-[30px]">
+        <h2 className="mt-1 text-[24px] font-extrabold leading-snug text-gray-900 sm:text-[30px] break-keep text-balance">
           기술로 일상의 작은 불편을 없애는 회사
         </h2>
 
