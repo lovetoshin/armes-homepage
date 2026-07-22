@@ -133,32 +133,7 @@ export default function AboutContent({ locale = "ko" }: { locale?: Locale }) {
           </div>
         </section>
 
-        {/* 회사 정보 (Trust) */}
-        <section className="border-t border-[#E5E8EB] pt-10">
-          <p className="text-xs text-[#8B95A1] font-bold uppercase tracking-widest mb-5">Company</p>
-          <dl className="space-y-2.5 text-sm">
-            <div className="flex gap-3">
-              <dt className="text-[#8B95A1] w-24 font-semibold flex-shrink-0">{t.companyLabels.name}</dt>
-              <dd className="text-[#191F28]">{t.companyValues.name}</dd>
-            </div>
-            <div className="flex gap-3">
-              <dt className="text-[#8B95A1] w-24 font-semibold flex-shrink-0">{t.companyLabels.ceo}</dt>
-              <dd className="text-[#191F28]">{t.companyValues.ceo}</dd>
-            </div>
-            <div className="flex gap-3">
-              <dt className="text-[#8B95A1] w-24 font-semibold flex-shrink-0">{t.companyLabels.bizno}</dt>
-              <dd className="text-[#191F28]">798-86-02943</dd>
-            </div>
-            <div className="flex gap-3">
-              <dt className="text-[#8B95A1] w-24 font-semibold flex-shrink-0">{t.companyLabels.address}</dt>
-              <dd className="text-[#191F28]">{t.companyValues.address}</dd>
-            </div>
-            <div className="flex gap-3">
-              <dt className="text-[#8B95A1] w-24 font-semibold flex-shrink-0">{t.companyLabels.email}</dt>
-              <dd className="text-[#191F28]">support.armes@gmail.com</dd>
-            </div>
-          </dl>
-        </section>
+        {/* 회사 정보 블록은 푸터 사업자정보와 중복이라 삭제(형님 지시 2026-07-22) */}
       </div>
 
       <Footer locale={locale} />

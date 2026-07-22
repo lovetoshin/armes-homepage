@@ -17,7 +17,7 @@ export default function TechnologySection({ locale = "ko" }: { locale?: Locale }
   const t = getUI(locale).home.tech;
 
   return (
-    <section id="technology" ref={ref} className="bg-[#F8FAFF] py-24 lg:py-28">
+    <section ref={ref} className="bg-white py-24 lg:py-28">
       <div className="max-w-6xl mx-auto px-5 lg:px-8">
         <div className="text-center mb-14">
           <p className="text-xs text-[#8B95A1] font-bold uppercase tracking-widest mb-3">

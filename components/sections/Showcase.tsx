@@ -21,7 +21,8 @@ export default function Showcase({ locale = "ko" }: { locale?: Locale }) {
   ];
 
   return (
-    <section ref={ref} className="bg-[#F8FAFF] py-20 lg:py-28 overflow-hidden">
+    // id="projects": 상단바 "프로젝트" 앵커 — 쇼케이스도 프로젝트라 여기부터 보이게
+    <section id="projects" ref={ref} className="bg-[#F8FAFF] py-20 lg:py-28 overflow-hidden">
       <div className="max-w-6xl mx-auto px-5 lg:px-8">
         <div className="text-center mb-12">
           <p className="text-xs text-[#8B95A1] font-bold uppercase tracking-widest mb-3">
