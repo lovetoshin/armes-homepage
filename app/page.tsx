@@ -35,7 +35,7 @@ const homeJsonLd = [
       url: `${SITE}/armes-logo.png`,
     },
     description:
-      "주식회사 아르메스는 AI·데이터·자동화·위치기술을 활용해 일상에 실제 쓰이는 서비스를 만드는 AI 기반 서비스 기업입니다. SellerAI·ARMES Tools를 운영하고 RewardTalk·TravelMoa·CocoPing 등을 개발합니다.",
+      "주식회사 아르메스는 데이터·자동화·위치기술을 활용해 일상에 실제 쓰이는 생활 서비스를 만드는 회사입니다. SellerAI·ARMES Tools를 운영하고 RewardTalk·TravelMoa·CocoPing 등을 개발합니다.",
   },
   {
     "@context": "https://schema.org",

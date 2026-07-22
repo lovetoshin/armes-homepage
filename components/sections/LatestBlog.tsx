@@ -16,10 +16,10 @@ export default function LatestBlog() {
           <div>
             <p className="text-[13px] font-bold text-[#1d62f0]">ARMES 블로그</p>
             <h2 className="mt-1 text-[24px] font-extrabold text-gray-900 sm:text-[28px]">
-              AI·쇼핑몰·생활을 바꾸는 이야기
+              쇼핑몰·생활을 바꾸는 이야기
             </h2>
             <p className="mt-2 text-[14px] leading-relaxed text-gray-500">
-              AI 활용법, 쇼핑몰 운영 노하우, 유용한 도구 사용법까지 — 실제로 도움이 되는 글을 씁니다.
+              쇼핑몰 운영 노하우부터 유용한 도구 사용법까지 — 실제로 도움이 되는 글을 씁니다.
             </p>
           </div>
           <Link

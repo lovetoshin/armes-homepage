@@ -89,7 +89,7 @@ const dictionaries: Record<Locale, Dict> = {
       language: "언어 선택",
     },
     footer: {
-      tagline: "AI로 일상을 바꾸는 서비스 기업",
+      tagline: "매일의 불편을 해결하는 생활 서비스 회사",
       groups: {
         company: "회사",
         projects: "프로젝트",
@@ -129,10 +129,10 @@ const dictionaries: Record<Locale, Dict> = {
     },
     home: {
       hero: {
-        titlePre: "AI로",
-        titleHl: "일상을 바꾸는",
-        titleSuf: " 서비스 기업",
-        desc: "아르메스는 AI·데이터·자동화·위치기술을 활용해 쇼핑몰, 지역 생활, 여행 등 일상의 여러 영역에 실제로 쓰이는 서비스를 만듭니다.",
+        titlePre: "매일의 불편을",
+        titleHl: "직접 해결하는",
+        titleSuf: " 생활 서비스 회사",
+        desc: "아르메스는 쇼핑몰·지역 생활·여행처럼 매일의 영역에서, 누구나 바로 쓸 수 있는 서비스를 직접 만들고 운영합니다.",
         ctaPrimary: "프로젝트 둘러보기",
         ctaSecondary: "파트너·제휴 문의",
       },
@@ -146,7 +146,7 @@ const dictionaries: Record<Locale, Dict> = {
       projects: { h2: "아르메스가 만든 프로젝트", viewAll: "전체 보기" },
       cta: {
         h2: "아르메스와 함께 만들어요",
-        desc: "새로운 AI 서비스 제휴와 사업 협업을 환영합니다.",
+        desc: "새로운 서비스 제휴와 사업 협업을 환영합니다.",
         button: "파트너·제휴 문의하기",
         badges: ["사업자 등록 법인", "경복대학교 창업보육", "개인정보 보호 준수"],
       },
@@ -163,7 +163,7 @@ const dictionaries: Record<Locale, Dict> = {
       language: "Select language",
     },
     footer: {
-      tagline: "An AI-driven company building services that change everyday life",
+      tagline: "A company building services people use in everyday life",
       groups: {
         company: "Company",
         projects: "Projects",
@@ -203,10 +203,10 @@ const dictionaries: Record<Locale, Dict> = {
     },
     home: {
       hero: {
-        titlePre: "Services that change",
-        titleHl: "everyday life",
-        titleSuf: ", powered by AI",
-        desc: "ARMES uses AI, data, automation and location technology to build services people actually use — across online shopping, local life, travel and more.",
+        titlePre: "Building services",
+        titleHl: "people use every day",
+        titleSuf: "",
+        desc: "ARMES builds and runs practical services for everyday life — across online shopping, local life and travel — that anyone can start using right away.",
         ctaPrimary: "Explore projects",
         ctaSecondary: "Partnership inquiry",
       },
@@ -220,7 +220,7 @@ const dictionaries: Record<Locale, Dict> = {
       projects: { h2: "Projects by ARMES", viewAll: "View all" },
       cta: {
         h2: "Let's build together",
-        desc: "We welcome new AI service partnerships and business collaboration.",
+        desc: "We welcome new service partnerships and business collaboration.",
         button: "Start a partnership inquiry",
         badges: ["Registered corporation", "Gyeongbok Univ. startup incubation", "Privacy compliant"],
       },
@@ -237,7 +237,7 @@ const dictionaries: Record<Locale, Dict> = {
       language: "选择语言",
     },
     footer: {
-      tagline: "用人工智能改变日常生活的服务型企业",
+      tagline: "打造改变日常生活的实用服务",
       groups: {
         company: "公司",
         projects: "项目",
@@ -277,10 +277,10 @@ const dictionaries: Record<Locale, Dict> = {
     },
     home: {
       hero: {
-        titlePre: "用AI",
+        titlePre: "打造",
         titleHl: "改变日常",
-        titleSuf: "的服务型企业",
-        desc: "ARMES运用AI、数据、自动化与位置技术，在网购、本地生活、旅行等日常领域打造真正实用的服务。",
+        titleSuf: "的生活服务",
+        desc: "ARMES在网购、本地生活、旅行等日常领域，亲自打造并运营人人都能立即上手的实用服务。",
         ctaPrimary: "浏览项目",
         ctaSecondary: "合作咨询",
       },
@@ -294,7 +294,7 @@ const dictionaries: Record<Locale, Dict> = {
       projects: { h2: "ARMES打造的项目", viewAll: "查看全部" },
       cta: {
         h2: "与ARMES一起打造",
-        desc: "欢迎新的AI服务合作与商务洽谈。",
+        desc: "欢迎新的服务合作与商务洽谈。",
         button: "发起合作咨询",
         badges: ["工商注册法人", "庆福大学创业孵化", "遵守隐私保护"],
       },
@@ -311,7 +311,7 @@ const dictionaries: Record<Locale, Dict> = {
       language: "選擇語言",
     },
     footer: {
-      tagline: "以人工智慧改變日常生活的服務型企業",
+      tagline: "打造改變日常生活的實用服務",
       groups: {
         company: "公司",
         projects: "專案",
@@ -351,10 +351,10 @@ const dictionaries: Record<Locale, Dict> = {
     },
     home: {
       hero: {
-        titlePre: "以AI",
+        titlePre: "打造",
         titleHl: "改變日常",
-        titleSuf: "的服務型企業",
-        desc: "ARMES運用AI、資料、自動化與位置技術，在網購、在地生活、旅行等日常領域打造真正實用的服務。",
+        titleSuf: "的生活服務",
+        desc: "ARMES在網購、在地生活、旅行等日常領域，親自打造並營運人人都能立即上手的實用服務。",
         ctaPrimary: "瀏覽專案",
         ctaSecondary: "合作諮詢",
       },
@@ -368,7 +368,7 @@ const dictionaries: Record<Locale, Dict> = {
       projects: { h2: "ARMES打造的專案", viewAll: "查看全部" },
       cta: {
         h2: "與ARMES一起打造",
-        desc: "歡迎新的AI服務合作與商務洽談。",
+        desc: "歡迎新的服務合作與商務洽談。",
         button: "發起合作諮詢",
         badges: ["工商註冊法人", "慶福大學創業育成", "遵守隱私保護"],
       },

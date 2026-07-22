@@ -7,7 +7,7 @@ import { localize, type Locale } from "@/lib/i18n";
 import { getUI } from "@/lib/dictionary";
 
 /**
- * 회사 Hero — ARMES는 "여러 AI 서비스를 만드는 AI 기반 서비스 기업"이라는 정체성을 먼저 보여준다.
+ * 회사 Hero — ARMES는 "일상에 실제 쓰이는 여러 생활 서비스를 만드는 회사"라는 정체성을 먼저 보여준다.
  * (특정 프로젝트 홍보가 아니라 회사 자체)
  */
 export default function CompanyHero({ locale = "ko" }: { locale?: Locale }) {
@@ -24,7 +24,7 @@ export default function CompanyHero({ locale = "ko" }: { locale?: Locale }) {
         >
           <div className="inline-flex items-center gap-2 bg-[#EBF3FF] text-[#3182F6] text-xs font-bold px-4 py-2 rounded-full mb-7">
             <span className="w-1.5 h-1.5 rounded-full bg-[#3182F6]" />
-            AI Service Company
+            Everyday Life Service Company
           </div>
 
           <h1 className="text-4xl lg:text-6xl font-extrabold text-[#191F28] leading-[1.12] tracking-tight mb-6 keep-all">

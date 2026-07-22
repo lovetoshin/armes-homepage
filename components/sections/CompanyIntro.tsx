@@ -19,7 +19,7 @@ export default function CompanyIntro() {
 
         <div className="mt-5 space-y-4 text-[15px] leading-[1.9] text-gray-600">
           <p>
-            주식회사 아르메스(ARMES)는 인공지능(AI)·데이터·자동화·위치 기술을 활용해, 사람들이 매일 겪는 작은 불편을
+            주식회사 아르메스(ARMES)는 데이터·자동화·위치 기술을 활용해, 사람들이 매일 겪는 작은 불편을
             실제로 해결하는 서비스를 만드는 회사입니다. 화면 속 멋진 기술을 자랑하기보다, 쇼핑몰 운영자, 여행을 준비하는
             사람, 동네에서 장을 보는 소비자처럼 <strong className="font-bold text-gray-800">현실의 사용자가 바로 쓸 수 있는 도구</strong>를
             만드는 데 집중합니다.
