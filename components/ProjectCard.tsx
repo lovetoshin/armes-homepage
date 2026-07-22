@@ -32,13 +32,14 @@ export default function ProjectCard({
 
   const inner = (
     <>
+      {/* 세로 캡처 카드 와꾸 통일 — 비율 틀(591:1280) 고정, 더 긴 이미지는 아래를 잘라 맞춤 */}
       {hasThumb ? (
-        <div className="relative bg-[#F2F4F6]">
+        <div className="relative bg-[#F2F4F6] aspect-[591/1280]">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={project.thumbnail}
             alt={name}
-            className="w-full h-auto block"
+            className="w-full h-full object-cover object-top block"
           />
           <span className="absolute top-3 right-3 shadow-[0_1px_6px_rgba(0,0,0,0.12)] rounded-full">
             {statusBadge}

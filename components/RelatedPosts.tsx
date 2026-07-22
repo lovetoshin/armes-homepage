@@ -22,7 +22,7 @@ export default function RelatedPosts({
       <h2 className="text-xl font-extrabold text-[#191F28] mb-7 keep-all">
         {getUI(locale).common.relatedReadTitle}
       </h2>
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div className="flex flex-col border-t border-[#F2F4F6]">
         {posts.map((p) => (
           <PostCard key={p.slug} post={p} type={type} locale={locale} />
         ))}

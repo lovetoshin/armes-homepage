@@ -9,25 +9,15 @@ type Dict = {
     about: string;
     projects: string;
     tech: string;
+    news: string;
+    blog: string;
     contact: string;
     menu: string;
     language: string;
   };
   footer: {
     tagline: string; // 브랜드 한 줄
-    groups: {
-      company: string;
-      projects: string;
-      tech: string;
-      news: string;
-      contact: string;
-    };
     links: {
-      about: string;
-      allProjects: string;
-      techIntro: string;
-      news: string;
-      blog: string;
       partner: string;
       privacy: string;
       terms: string;
@@ -84,25 +74,15 @@ const dictionaries: Record<Locale, Dict> = {
       about: "회사소개",
       projects: "프로젝트",
       tech: "기술",
+      news: "뉴스",
+      blog: "블로그",
       contact: "문의하기",
       menu: "메뉴",
       language: "언어 선택",
     },
     footer: {
       tagline: "매일의 불편을 해결하는 생활 서비스 회사",
-      groups: {
-        company: "회사",
-        projects: "프로젝트",
-        tech: "기술",
-        news: "소식",
-        contact: "문의",
-      },
       links: {
-        about: "회사소개",
-        allProjects: "전체 보기",
-        techIntro: "기술 소개",
-        news: "News",
-        blog: "Blog",
         partner: "파트너·제휴 문의",
         privacy: "개인정보처리방침",
         terms: "이용약관",
@@ -158,25 +138,15 @@ const dictionaries: Record<Locale, Dict> = {
       about: "About",
       projects: "Projects",
       tech: "Technology",
+      news: "News",
+      blog: "Blog",
       contact: "Contact",
       menu: "Menu",
       language: "Select language",
     },
     footer: {
       tagline: "A company building services people use in everyday life",
-      groups: {
-        company: "Company",
-        projects: "Projects",
-        tech: "Technology",
-        news: "Updates",
-        contact: "Contact",
-      },
       links: {
-        about: "About",
-        allProjects: "View all",
-        techIntro: "Our technology",
-        news: "News",
-        blog: "Blog",
         partner: "Partnership inquiry",
         privacy: "Privacy Policy",
         terms: "Terms of Service",
@@ -232,25 +202,15 @@ const dictionaries: Record<Locale, Dict> = {
       about: "公司介绍",
       projects: "项目",
       tech: "技术",
+      news: "新闻",
+      blog: "博客",
       contact: "联系我们",
       menu: "菜单",
       language: "选择语言",
     },
     footer: {
       tagline: "打造改变日常生活的实用服务",
-      groups: {
-        company: "公司",
-        projects: "项目",
-        tech: "技术",
-        news: "动态",
-        contact: "联系",
-      },
       links: {
-        about: "公司介绍",
-        allProjects: "查看全部",
-        techIntro: "技术介绍",
-        news: "News",
-        blog: "Blog",
         partner: "合作咨询",
         privacy: "隐私政策",
         terms: "服务条款",
@@ -306,25 +266,15 @@ const dictionaries: Record<Locale, Dict> = {
       about: "公司介紹",
       projects: "專案",
       tech: "技術",
+      news: "新聞",
+      blog: "部落格",
       contact: "聯絡我們",
       menu: "選單",
       language: "選擇語言",
     },
     footer: {
       tagline: "打造改變日常生活的實用服務",
-      groups: {
-        company: "公司",
-        projects: "專案",
-        tech: "技術",
-        news: "動態",
-        contact: "聯絡",
-      },
       links: {
-        about: "公司介紹",
-        allProjects: "查看全部",
-        techIntro: "技術介紹",
-        news: "News",
-        blog: "Blog",
         partner: "合作諮詢",
         privacy: "隱私權政策",
         terms: "服務條款",

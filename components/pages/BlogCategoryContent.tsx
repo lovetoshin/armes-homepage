@@ -80,7 +80,7 @@ export default function BlogCategoryContent({
         {posts.length === 0 ? (
           <p className="text-center text-[#8B95A1] py-10">{t.comingSoon}</p>
         ) : (
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div className="flex flex-col border-t border-[#F2F4F6]">
             {posts.map((p) => (
               <PostCard key={p.slug} post={p} type="blog" locale={locale} />
             ))}

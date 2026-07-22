@@ -77,7 +77,8 @@ export default async function ProjectDetailPage({
 
   const detail = projectDetails[key];
   const status = STATUS_META[project.status];
-  const isLive = project.status === "live" && !!project.href;
+  const isRunning = project.status === "live"; // 운영중(문구·구조화데이터용)
+  const isLive = isRunning && !!project.href; // 운영중 + 바로가기 주소까지 있을 때(외부 버튼용)
 
   // 이전/다음 프로젝트(배치 순서 기준)
   const idx = orderedKeys.indexOf(key);
@@ -94,7 +95,7 @@ export default async function ProjectDetailPage({
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "프로젝트", item: `${SITE}/projects` },
+        { "@type": "ListItem", position: 1, name: "프로젝트", item: `${SITE}/#projects` },
         { "@type": "ListItem", position: 2, name: project.name, item: `${SITE}/projects/${key}` },
       ],
     },
@@ -110,7 +111,7 @@ export default async function ProjectDetailPage({
       inLanguage: "ko-KR",
       publisher: { "@type": "Organization", name: "주식회사 아르메스", url: SITE },
       // 운영중 서비스만 '무료' 제공 표기 (별점/리뷰는 실제 데이터 없어 넣지 않음)
-      ...(isLive
+      ...(isRunning
         ? {
             offers: {
               "@type": "Offer",
@@ -134,7 +135,7 @@ export default async function ProjectDetailPage({
       <div className="pt-28 pb-14 lg:pt-32 lg:pb-16 bg-[#F8FAFF] border-b border-[#EAF0FB]">
         <div className="max-w-4xl mx-auto px-5 lg:px-8">
           <nav className="text-sm text-[#8B95A1] mb-7">
-            <Link href="/projects" className="hover:text-[#3182F6]">프로젝트</Link>
+            <Link href="/#projects" className="hover:text-[#3182F6]">프로젝트</Link>
             <span className="mx-2">/</span>
             <span className="text-[#B0B8C1]">{project.name}</span>
           </nav>
@@ -185,9 +186,15 @@ export default async function ProjectDetailPage({
 
       {/* 본문 */}
       <div className="max-w-4xl mx-auto px-5 lg:px-8 py-16 lg:py-20">
-        {/* 실제 화면 — 캡처가 여러 장이면 한 줄에 2개씩(원본 축소 → 화질 보존), 아니면 대표 1장 */}
+        {/* 실제 화면 — 캡처를 한 줄로 나열(4장=4열, 3장=3열), 없으면 대표 1장 */}
         {detail?.gallery && detail.gallery.length > 0 ? (
-          <div className="mb-16 grid grid-cols-2 gap-3 sm:gap-5">
+          <div
+            className={`mb-16 grid gap-3 sm:gap-5 ${
+              { 1: "grid-cols-1", 2: "grid-cols-2", 3: "grid-cols-3" }[
+                detail.gallery.length
+              ] ?? "grid-cols-4"
+            }`}
+          >
             {detail.gallery.map((src, gi) => (
               <div
                 key={src}
@@ -230,7 +237,7 @@ export default async function ProjectDetailPage({
             {/* 핵심 기능 */}
             <section className="mb-16">
               <h2 className="text-2xl font-extrabold text-[#191F28] mb-7 keep-all">
-                {isLive ? "주요 기능" : "이런 기능을 준비합니다"}
+                {isRunning ? "주요 기능" : "이런 기능을 준비합니다"}
               </h2>
               <div className="grid sm:grid-cols-2 gap-4">
                 {detail.features.map((f) => (
@@ -363,7 +370,7 @@ export default async function ProjectDetailPage({
         {/* 전체 목록 */}
         <div className="mt-12 text-center">
           <Link
-            href="/projects"
+            href="/#projects"
             className="inline-flex items-center gap-1.5 text-[#3182F6] font-bold text-sm"
           >
             <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>

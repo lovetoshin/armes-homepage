@@ -46,7 +46,7 @@ export default function ProjectsSection({ locale = "ko" }: { locale?: Locale }) 
 
   // 홈 프로젝트 배치 — 2블록. 대표 웹서비스(셀러AI·아르메스툴)는 위 Showcase로 분리됐으므로,
   // 여기서는 앱/개발중 프로젝트만 보여준다(중복 제거).
-  // 핵심: 각 카드는 "콘텐츠 높이만큼만" 차지한다(items-start: 짧은 카드를 억지로 늘려 여백 만들지 않음).
+  // 핵심: 한 줄(row) 안에서는 카드 높이를 서로 맞춘다(stretch) — 글 줄수 차이로 카드가 튀어나오지 않게.
   // 모바일은 이 배치를 비율 그대로 통째 축소(아래 scale 트릭).
   const byKey = (k: string) => projects.find((p) => p.key === k)!;
   const rowsGroup = ["rewardtalk", "travelmoa", "cocoping", "worldlingo"]; // 세로 화면 서비스 4개
@@ -57,6 +57,7 @@ export default function ProjectsSection({ locale = "ko" }: { locale?: Locale }) 
     return (
       <motion.div
         key={k}
+        className="h-full"
         initial={{ opacity: 0, y: 18 }}
         animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.5, delay: 0.06 * i }}
@@ -94,14 +95,14 @@ export default function ProjectsSection({ locale = "ko" }: { locale?: Locale }) 
               transition: "opacity 0.2s ease",
             }}
           >
-            {/* 2블록 — 각 카드는 콘텐츠 높이만큼(items-start: 억지 stretch·여백 없음) */}
+            {/* 2블록 — 한 줄 안에서는 카드 높이를 서로 맞춘다(stretch: 짧은 카드도 같은 줄 최대 높이로) */}
             <div className="flex flex-col gap-5">
               {/* ① 세로 화면 서비스 4개 나란히 */}
-              <div className="grid grid-cols-4 gap-5 items-start">
+              <div className="grid grid-cols-4 gap-5 items-stretch">
                 {rowsGroup.map((k) => Card(k))}
               </div>
               {/* ② 개발중(아이콘) 3개 나란히 */}
-              <div className="grid grid-cols-3 gap-5 items-start">
+              <div className="grid grid-cols-3 gap-5 items-stretch">
                 {devGroup.map((k) => Card(k))}
               </div>
             </div>

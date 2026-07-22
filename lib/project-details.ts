@@ -22,7 +22,7 @@ export interface ProjectDetail {
   statusNote?: string;
   // 외부 앱 버튼에 쓸 라벨(운영중일 때만)
   ctaLabel?: string;
-  // 실제 앱 캡처 여러 장 — 있으면 상세 페이지에서 한 줄에 2개씩 갤러리로 표시(화질 보존)
+  // 실제 앱 캡처 — 상세 페이지에서 한 줄 갤러리로 표시(4장이면 4열, 3장이면 3열)
   gallery?: string[];
 }
 
@@ -51,12 +51,10 @@ export const projectDetails: Record<string, ProjectDetail> = {
     statusNote:
       "월드링고는 현재 개발 중입니다. 원어민 강사 매칭·1:1 화상 수업·간편 결제 기능을 준비하고 있으며, 정식 출시 준비를 마치는 대로 안내드리겠습니다.",
     gallery: [
-      "/projects/worldlingo-1.png",
-      "/projects/worldlingo-2.png",
-      "/projects/worldlingo-3.png",
-      "/projects/worldlingo-4.png",
-      "/projects/worldlingo-5.png",
-      "/projects/worldlingo-6.png",
+      "/projects/worldlingo-g1.png",
+      "/projects/worldlingo-g2.png",
+      "/projects/worldlingo-g3.png",
+      "/projects/worldlingo-g4.png",
     ],
   },
 
@@ -79,14 +77,11 @@ export const projectDetails: Record<string, ProjectDetail> = {
       "종이 쿠폰·스탬프가 번거로웠던 분",
       "이웃과 공동구매로 알뜰하게 사고 싶은 분",
     ],
-    statusNote:
-      "리워드톡은 현재 정식 출시를 준비 중입니다. 안드로이드(구글 플레이) 심사를 진행하고 있으며, 개인정보 처리방침 등 출시 준비를 마치는 대로 안내드리겠습니다.",
     gallery: [
-      "/projects/rewardtalk-1.jpg",
-      "/projects/rewardtalk-2.jpg",
-      "/projects/rewardtalk-3.jpg",
-      "/projects/rewardtalk-4.jpg",
-      "/projects/rewardtalk-5.jpg",
+      "/projects/rewardtalk-g1.jpg",
+      "/projects/rewardtalk-g2.jpg",
+      "/projects/rewardtalk-g3.jpg",
+      "/projects/rewardtalk-g4.jpg",
     ],
   },
 
@@ -106,12 +101,11 @@ export const projectDetails: Record<string, ProjectDetail> = {
       "항공권 가격을 비교해 알뜰하게 떠나고 싶은 분",
       "여행 특가 정보를 한곳에서 보고 싶은 분",
     ],
-    statusNote:
-      "트래블모아는 현재 출시를 준비 중입니다. 준비가 마무리되는 대로 안내드리겠습니다.",
     gallery: [
-      "/projects/travelmoa-1.jpg",
-      "/projects/travelmoa-2.jpg",
-      "/projects/travelmoa-3.jpg",
+      "/projects/travelmoa-g1.jpg",
+      "/projects/travelmoa-g2.jpg",
+      "/projects/travelmoa-g3.jpg",
+      "/projects/travelmoa-g4.jpg",
     ],
   },
 
@@ -131,11 +125,11 @@ export const projectDetails: Record<string, ProjectDetail> = {
       "코스트코를 자주 이용하는 쇼핑객",
       "할인·가격 타이밍을 챙겨 알뜰하게 사고 싶은 분",
     ],
-    statusNote:
-      "코코핑은 현재 출시를 준비 중입니다. 준비가 마무리되는 대로 안내드리겠습니다.",
     gallery: [
-      "/projects/cocoping-1.jpg",
-      "/projects/cocoping-2.jpg",
+      "/projects/cocoping-g1.jpg",
+      "/projects/cocoping-g2.jpg",
+      "/projects/cocoping-g3.jpg",
+      "/projects/cocoping-g4.jpg",
     ],
   },
 
@@ -185,6 +179,12 @@ export const projectDetails: Record<string, ProjectDetail> = {
     ],
     statusNote:
       "후삼국지는 현재 개발을 준비 중입니다. 구체적인 출시 일정은 확정되는 대로 안내드리겠습니다.",
+    // 게임 인물 일러스트 — 왕건·궁예·견훤 (news_blog_image/blog/후삼국지/portraits 129·008·566)
+    gallery: [
+      "/projects/hoosamgukji-wanggeon.jpg",
+      "/projects/hoosamgukji-gungye.jpg",
+      "/projects/hoosamgukji-gyeonhwon.jpg",
+    ],
   },
 
   // ── 6. 아르메스 툴즈 (운영중) ──────────────────────────

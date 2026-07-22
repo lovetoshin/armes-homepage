@@ -22,6 +22,8 @@ export default function Navbar() {
     { name: ui.about, href: localize("/about", locale) },
     { name: ui.projects, href: localize("/#projects", locale) },
     { name: ui.tech, href: localize("/#technology", locale) },
+    { name: ui.news, href: localize("/news", locale) },
+    { name: ui.blog, href: localize("/blog", locale) },
   ];
 
   return (

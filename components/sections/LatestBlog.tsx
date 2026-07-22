@@ -1,6 +1,6 @@
 import Link from "next/link";
-import Image from "next/image";
 import { getAllPosts } from "@/lib/posts";
+import PostCard from "@/components/PostCard";
 
 // 홈의 블로그 최신글 섹션 — 순수 서버 컴포넌트로 렌더해 글 제목·요약이 HTML에
 // 그대로 담기게 한다(검색엔진이 사이트의 실제 콘텐츠를 바로 인식하도록).
@@ -30,41 +30,10 @@ export default function LatestBlog() {
           </Link>
         </div>
 
-        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        {/* 목록형 — 왼쪽 이미지, 오른쪽 제목+요약 2줄 (블로그 페이지와 동일한 PostCard 재사용) */}
+        <div className="flex flex-col border-t border-[#F2F4F6]">
           {posts.map((post) => (
-            <Link
-              key={post.slug}
-              href={`/blog/${post.slug}`}
-              className="group flex flex-col overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-sm transition-shadow hover:shadow-md"
-            >
-              <div className="relative aspect-[16/10] w-full overflow-hidden bg-[#eef3ff]">
-                {post.thumbnail ? (
-                  <Image
-                    src={post.thumbnail}
-                    alt={post.title}
-                    fill
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    className="object-cover transition-transform duration-300 group-hover:scale-105"
-                  />
-                ) : (
-                  <div className="flex h-full w-full items-center justify-center text-[40px]">📝</div>
-                )}
-              </div>
-              <div className="flex flex-1 flex-col p-4">
-                {post.category && (
-                  <span className="mb-1.5 inline-block w-fit rounded-full bg-[#eef3ff] px-2.5 py-0.5 text-[11px] font-bold text-[#1d62f0]">
-                    {post.category}
-                  </span>
-                )}
-                <h3 className="line-clamp-2 text-[15.5px] font-bold leading-snug text-gray-900 group-hover:text-[#1d62f0]">
-                  {post.title}
-                </h3>
-                <p className="mt-1.5 line-clamp-2 flex-1 text-[13px] leading-relaxed text-gray-500">
-                  {post.excerpt}
-                </p>
-                <time className="mt-3 text-[12px] text-gray-400">{post.date}</time>
-              </div>
-            </Link>
+            <PostCard key={post.slug} post={post} type="blog" locale="ko" />
           ))}
         </div>
 
