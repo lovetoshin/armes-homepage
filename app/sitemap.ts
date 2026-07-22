@@ -43,13 +43,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       alternates:       alts("/", LOCALES),
     },
     {
-      url:              `${base}/projects`,
-      lastModified:     now,
-      changeFrequency:  "weekly",
-      priority:         0.9,
-      alternates:       alts("/projects", LOCALES),
-    },
-    {
       url:              `${base}/about`,
       lastModified:     now,
       changeFrequency:  "monthly",

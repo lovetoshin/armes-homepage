@@ -39,7 +39,7 @@ export default function CompanyHero({ locale = "ko" }: { locale?: Locale }) {
 
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link
-              href={localize("/projects", locale)}
+              href={localize("/#projects", locale)}
               className="inline-flex items-center justify-center gap-2 bg-[#3182F6] hover:bg-[#1B64DA] text-white px-8 py-4 rounded-2xl font-bold text-[15px] transition-colors shadow-[0_4px_16px_rgba(49,130,246,0.3)]"
             >
               {t.ctaPrimary}

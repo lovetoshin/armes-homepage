@@ -70,7 +70,7 @@ export default function CompanyIntro() {
 
         <div className="mt-8">
           <Link
-            href="/projects"
+            href="/#projects"
             className="inline-block rounded-xl border border-gray-200 px-5 py-2.5 text-[14px] font-bold text-gray-600 transition-colors hover:border-[#1d62f0] hover:text-[#1d62f0]"
           >
             전체 프로젝트 보기 →

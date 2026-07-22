@@ -9,11 +9,11 @@ export default function Footer({ locale = "ko" }: { locale?: Locale }) {
   const footerNav = {
     [f.groups.company]: [
       { name: f.links.about, href: localize("/about", locale) },
-      { name: f.links.allProjects, href: localize("/projects", locale) },
+      { name: f.links.allProjects, href: localize("/#projects", locale) },
     ],
     [f.groups.projects]: [
       { name: "SellerAI", href: "https://www.armes.co.kr/sellerai/studio" },
-      { name: f.links.allProjects, href: localize("/projects", locale) },
+      { name: f.links.allProjects, href: localize("/#projects", locale) },
     ],
     [f.groups.tech]: [
       { name: f.links.techIntro, href: localize("/#technology", locale) },

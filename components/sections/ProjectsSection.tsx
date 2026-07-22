@@ -1,11 +1,10 @@
 "use client";
 
-import Link from "next/link";
 import { motion, useInView } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { projects } from "@/lib/projects";
 import ProjectCard from "@/components/ProjectCard";
-import { localize, type Locale } from "@/lib/i18n";
+import { type Locale } from "@/lib/i18n";
 import { getUI } from "@/lib/dictionary";
 
 // 데스크탑 그리드 콘텐츠 폭(px) — 모바일은 이 폭으로 그린 뒤 화면에 맞춰 통째로 축소
@@ -70,24 +69,13 @@ export default function ProjectsSection({ locale = "ko" }: { locale?: Locale }) 
   return (
     <section id="projects" ref={ref} className="bg-white py-24 lg:py-28">
       <div className="max-w-6xl mx-auto px-5 lg:px-8">
-        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-12">
-          <div>
-            <p className="text-xs text-[#8B95A1] font-bold uppercase tracking-widest mb-3">
-              Projects
-            </p>
-            <h2 className="text-3xl lg:text-4xl font-extrabold text-[#191F28] tracking-tight keep-all">
-              {t.h2}
-            </h2>
-          </div>
-          <Link
-            href={localize("/projects", locale)}
-            className="inline-flex items-center gap-1.5 text-[#3182F6] font-bold text-sm whitespace-nowrap"
-          >
-            {t.viewAll}
-            <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-              <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-            </svg>
-          </Link>
+        <div className="mb-12">
+          <p className="text-xs text-[#8B95A1] font-bold uppercase tracking-widest mb-3">
+            Projects
+          </p>
+          <h2 className="text-3xl lg:text-4xl font-extrabold text-[#191F28] tracking-tight keep-all">
+            {t.h2}
+          </h2>
         </div>
 
         {/* 데스크탑은 그대로(scale=1), 모바일은 이 쇼케이스를 비율 그대로 통째로 축소 */}

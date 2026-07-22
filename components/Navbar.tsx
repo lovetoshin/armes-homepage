@@ -20,7 +20,7 @@ export default function Navbar() {
   // 현재 언어에 맞춘 메뉴(글자는 사전에서, 링크는 언어 접두어 부착)
   const navLinks = [
     { name: ui.about, href: localize("/about", locale) },
-    { name: ui.projects, href: localize("/projects", locale) },
+    { name: ui.projects, href: localize("/#projects", locale) },
     { name: ui.tech, href: localize("/#technology", locale) },
   ];
 
