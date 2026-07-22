@@ -14,10 +14,10 @@ export default function NewsListContent({ locale = "ko" }: { locale?: Locale }) 
       <div className="pt-28 pb-16 lg:pt-32 lg:pb-20 bg-[#F8FAFF]">
         <div className="max-w-4xl mx-auto px-5 text-center">
           <p className="text-xs text-[#8B95A1] font-bold uppercase tracking-widest mb-3">News</p>
-          <h1 className="text-4xl lg:text-5xl font-extrabold text-[#191F28] tracking-tight leading-[1.15] mb-5 keep-all">
+          <h1 className="text-4xl lg:text-5xl font-extrabold text-[#191F28] tracking-tight leading-[1.15] mb-5 keep-all text-balance">
             {t.h1}
           </h1>
-          <p className="text-[#4E5968] text-lg leading-relaxed max-w-2xl mx-auto keep-all">
+          <p className="text-[#4E5968] text-lg leading-relaxed max-w-2xl mx-auto keep-all text-balance">
             {t.heroDesc}
           </p>
         </div>

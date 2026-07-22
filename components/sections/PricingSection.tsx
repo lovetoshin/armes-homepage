@@ -60,7 +60,7 @@ export default function PricingSection() {
         <h2 className="text-3xl font-extrabold tracking-tight text-[#191F28] lg:text-4xl keep-all">
           서비스 및 요금
         </h2>
-        <p className="mt-4 max-w-2xl text-[15px] leading-relaxed text-[#4E5968] keep-all">
+        <p className="mt-4 max-w-2xl text-[15px] leading-relaxed text-[#4E5968] keep-all text-balance">
           아르메스가 운영하는 유료 서비스의 실제 이용 요금입니다. 모든 요금은 부가가치세 별도이며,
           결제·환불(청약철회)은 각 서비스의 이용약관과 환불 정책을 따릅니다.
         </p>

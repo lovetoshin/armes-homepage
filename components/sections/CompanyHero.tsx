@@ -33,7 +33,7 @@ export default function CompanyHero({ locale = "ko" }: { locale?: Locale }) {
             <span className="text-[#3182F6]">{t.titleHl}</span>{t.titleSuf}
           </h1>
 
-          <p className="text-[#4E5968] text-lg lg:text-xl leading-relaxed max-w-2xl mx-auto mb-10 keep-all">
+          <p className="text-[#4E5968] text-lg lg:text-xl leading-relaxed max-w-2xl mx-auto mb-10 keep-all text-balance">
             {t.desc}
           </p>
 

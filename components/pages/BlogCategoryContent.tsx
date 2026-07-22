@@ -63,7 +63,7 @@ export default function BlogCategoryContent({
             <span className="text-[#B0B8C1]">{label}</span>
           </nav>
           <p className="text-xs text-[#3182F6] font-bold uppercase tracking-widest mb-3">Category</p>
-          <h1 className="text-3xl lg:text-5xl font-extrabold text-[#191F28] tracking-tight leading-[1.15] mb-5 keep-all">
+          <h1 className="text-3xl lg:text-5xl font-extrabold text-[#191F28] tracking-tight leading-[1.15] mb-5 keep-all text-balance">
             {label}
           </h1>
           <div className="space-y-3 max-w-3xl">

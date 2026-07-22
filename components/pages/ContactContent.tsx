@@ -29,7 +29,7 @@ export default function ContactContent({ locale = "ko" }: { locale?: Locale }) {
             <br />
             <span className="text-[#3182F6]">{t.h1Hl}</span>
           </h1>
-          <p className="text-[#4E5968] text-[17px] leading-relaxed max-w-xl keep-all">
+          <p className="text-[#4E5968] text-[17px] leading-relaxed max-w-xl keep-all text-balance">
             {t.heroDesc}
           </p>
         </div>

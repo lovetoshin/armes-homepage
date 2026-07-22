@@ -28,7 +28,7 @@ export default function Showcase({ locale = "ko" }: { locale?: Locale }) {
           <p className="text-xs text-[#8B95A1] font-bold uppercase tracking-widest mb-3">
             Live Services
           </p>
-          <h2 className="text-3xl lg:text-4xl font-extrabold text-[#191F28] tracking-tight keep-all">
+          <h2 className="text-3xl lg:text-4xl font-extrabold text-[#191F28] tracking-tight keep-all text-balance">
             {t.h2}
           </h2>
         </div>
@@ -68,7 +68,7 @@ export default function Showcase({ locale = "ko" }: { locale?: Locale }) {
                     LIVE
                   </span>
                 </div>
-                <p className="mt-2.5 text-sm lg:text-[15px] leading-relaxed text-[#4E5968] keep-all">{s.desc}</p>
+                <p className="mt-2.5 text-sm lg:text-[15px] leading-relaxed text-[#4E5968] keep-all text-balance">{s.desc}</p>
                 <span className="mt-4 inline-flex items-center gap-1 text-[#3182F6] font-bold text-sm lg:text-[15px]">
                   {t.cta}
                   <svg className="w-4 h-4 transition-transform group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>

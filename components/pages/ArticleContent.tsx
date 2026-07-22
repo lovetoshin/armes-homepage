@@ -101,7 +101,7 @@ export default function ArticleContent({
           )}
         </nav>
 
-        <h1 className="text-3xl lg:text-4xl font-extrabold text-[#191F28] tracking-tight leading-[1.25] mb-5 keep-all">
+        <h1 className="text-3xl lg:text-4xl font-extrabold text-[#191F28] tracking-tight leading-[1.25] mb-5 keep-all text-balance">
           {post.title}
         </h1>
 

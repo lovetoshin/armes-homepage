@@ -49,10 +49,10 @@ export default function AboutContent({ locale = "ko" }: { locale?: Locale }) {
           <p className="text-xs text-[#8B95A1] font-bold uppercase tracking-widest mb-3">
             About ARMES
           </p>
-          <h1 className="text-4xl lg:text-5xl font-extrabold text-[#191F28] tracking-tight leading-[1.15] mb-5 keep-all">
+          <h1 className="text-4xl lg:text-5xl font-extrabold text-[#191F28] tracking-tight leading-[1.15] mb-5 keep-all text-balance">
             {t.heroTitle}
           </h1>
-          <p className="text-[#4E5968] text-lg leading-relaxed max-w-2xl mx-auto keep-all">
+          <p className="text-[#4E5968] text-lg leading-relaxed max-w-2xl mx-auto keep-all text-balance">
             {t.heroDesc}
           </p>
         </div>

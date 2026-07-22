@@ -23,7 +23,7 @@ export default function TechnologySection({ locale = "ko" }: { locale?: Locale }
           <p className="text-xs text-[#8B95A1] font-bold uppercase tracking-widest mb-3">
             Technology
           </p>
-          <h2 className="text-3xl lg:text-4xl font-extrabold text-[#191F28] tracking-tight keep-all">
+          <h2 className="text-3xl lg:text-4xl font-extrabold text-[#191F28] tracking-tight keep-all text-balance">
             {t.h2}
           </h2>
         </div>
