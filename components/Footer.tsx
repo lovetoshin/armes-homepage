@@ -48,7 +48,7 @@ export default function Footer({ locale = "ko" }: { locale?: Locale }) {
             <p className="text-[#4E5968] text-[13px] font-bold">{f.legal.company}</p>
             <p className="text-[#8B95A1] text-xs">{f.legal.bizno} &nbsp;·&nbsp; {f.legal.ceo}</p>
             <p className="text-[#8B95A1] text-xs">{f.legal.address}</p>
-            <p className="text-[#8B95A1] text-xs">010-4995-9867 &nbsp;·&nbsp; support.armes@gmail.com</p>
+            <p className="text-[#8B95A1] text-xs">070-4544-7659 &nbsp;·&nbsp; support.armes@gmail.com</p>
             <p className="text-[#C5C9CF] text-xs pt-2">{f.legal.copyright}</p>
           </div>
 

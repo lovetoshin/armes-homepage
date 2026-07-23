@@ -91,7 +91,7 @@ const dictionaries: Record<Locale, Dict> = {
         company: "주식회사 아르메스",
         bizno: "사업자등록번호: 798-86-02943",
         ceo: "대표자: 신지한",
-        address: "경기도 남양주시 진접읍 경복대로 425-80, 4층 6406호",
+        address: "경기도 남양주시 진접읍 경복대로 425-80, 경복대학교 창업보육센터 4층 6406호",
         copyright: "© 2026 ARMES. All rights reserved.",
       },
     },
