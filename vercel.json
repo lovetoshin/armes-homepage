@@ -17,6 +17,14 @@
       "destination": "https://armes-tools.vercel.app/tools/:path*"
     },
     {
+      "source": "/life",
+      "destination": "https://armes-life.vercel.app/life"
+    },
+    {
+      "source": "/life/:path*",
+      "destination": "https://armes-life.vercel.app/life/:path*"
+    },
+    {
       "source": "/api/:path*",
       "destination": "https://page-image-maker-saas.vercel.app/sellerai/api/:path*"
     }
