@@ -56,6 +56,8 @@ export default function robots(): MetadataRoute.Robots {
       // 아르메스툴 사이트맵 — 한국어 도구 316개 URL. 배포·200 확인 완료라 검색엔진에 정식 노출.
       // 국내 트래픽 유입의 핵심(구글·네이버가 이 사이트맵으로 도구 페이지를 발견). 외국어는 이미 sitemap에서 제외됨.
       "https://www.armes.co.kr/tools/sitemap.xml",
+      // 아르메스 라이프 사이트맵 — 생활 계산기 19 URL(ko 전용). 2026-07-25 추가.
+      "https://www.armes.co.kr/life/sitemap.xml",
     ],
   };
 }
