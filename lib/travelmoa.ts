@@ -99,3 +99,53 @@ export function isDealClosed(d: TravelmoaDeal, now: Date): boolean {
   if (d.expires_at && new Date(d.expires_at).getTime() < now.getTime()) return true
   return false
 }
+
+// ── 일정표(세부정보) 조회 ─────────────────────────────────────
+// 앱 딜 상세 화면과 100% 동일한 데이터. DB가 아니라 여행모아 수파베이스의
+// "공개 스토리지 JSON"에 저장돼 있다(itineraries/{dealId}.json). 공개라 anon키도 불필요.
+// 핵심혜택·해외의료지원·일자별 일정표·포함/불포함 — 수집된 딜만 존재(없으면 null).
+export interface ItineraryItem {
+  type: 'spot' | 'meal' | 'move' | 'etc'
+  text: string
+}
+export interface ItineraryDay {
+  day: number
+  date: string | null
+  dow: string | null
+  items: ItineraryItem[]
+}
+export interface Itinerary {
+  source: string
+  code: string
+  days: ItineraryDay[]
+  keyPoints?: string[]    // 핵심 혜택(대주제 헤더 + 항목이 섞여 옴)
+  medicalSupport?: string // 해외 긴급 의료지원 / 여행자보험
+  includes?: string       // 포함사항
+  excludes?: string       // 불포함사항
+  collected_at: string
+}
+
+export async function fetchTravelmoaItinerary(dealId: string): Promise<Itinerary | null> {
+  if (!BASE) return null
+  if (!/^[0-9a-fA-F-]{16,40}$/.test(dealId)) return null
+  try {
+    const res = await fetch(
+      `${BASE}/storage/v1/object/public/itineraries/${dealId}.json`,
+      { next: { revalidate: 300 } },
+    )
+    if (!res.ok) return null
+    const data = (await res.json()) as Itinerary
+    // 상세일정·핵심포인트·의료지원·포함/불포함 중 하나라도 있어야 표시
+    if (
+      !data?.days?.length &&
+      !data?.keyPoints?.length &&
+      !data?.medicalSupport &&
+      !data?.includes &&
+      !data?.excludes
+    )
+      return null
+    return data
+  } catch {
+    return null
+  }
+}
