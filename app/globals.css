@@ -89,6 +89,15 @@ body {
   overflow-wrap: break-word;
 }
 
+/* ===== 스토어 다운로드 배지 — 글자 강제 줄바꿈 방지 ===== */
+/* "Google Play" / "App Store" / "다운로드하기" 가 좁은 화면에서 세로로 쪼개지지 않도록
+   배지와 그 안 모든 텍스트에 전역으로 nowrap 적용(개별 버튼 땜빵 금지). */
+.store-badge-nowrap,
+.store-badge-nowrap * {
+  white-space: nowrap;
+  word-break: keep-all;
+}
+
 /* ===== GRADIENT TEXT ===== */
 .gradient-text-brand {
   background: linear-gradient(135deg, #3182F6 0%, #1B64DA 50%, #5B9BFF 100%);

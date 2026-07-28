@@ -10,7 +10,9 @@ export interface Project {
   tagline: string;      // 한 줄 소개 (짧게)
   status: ProjectStatus;
   tech: string[];       // 사용 기술 (technology.ts의 라벨과 연결)
-  href?: string;        // status === "live" 일 때만 외부 앱 주소
+  href?: string;        // status === "live" 일 때만 외부 앱(웹) 주소
+  androidUrl?: string;  // 구글 플레이 스토어 주소 (없으면 버튼 미표시)
+  iosUrl?: string;      // 애플 앱스토어 주소 (없으면 버튼 미표시)
   icon: string;         // 카드 아이콘(이모지) — 썸네일 없을 때 사용
   thumbnail?: string;   // 실제 화면 캡쳐(Hero 타일에서만 사용)
   audience: string;     // 대상 고객
@@ -78,6 +80,8 @@ export const projects: Project[] = [
     audience: "동네 생활 소비자",
     status: "live",
     tech: ["Location", "Automation"],
+    androidUrl: "https://play.google.com/store/apps/details?id=com.rewardtalk.app",
+    iosUrl: "https://apps.apple.com/kr/app/id6788670980",
     icon: "🎁",
     thumbnail: "/projects/rewardtalk-2.jpg",
   },
@@ -88,6 +92,8 @@ export const projects: Project[] = [
     audience: "여행을 준비하는 사람",
     status: "live",
     tech: ["Location", "AI"],
+    androidUrl: "https://play.google.com/store/apps/details?id=com.travelmoa.app",
+    iosUrl: "https://apps.apple.com/kr/app/id6788629138",
     icon: "✈️",
     thumbnail: "/projects/travelmoa-2.jpg",
   },
@@ -98,6 +104,8 @@ export const projects: Project[] = [
     audience: "코스트코 이용 쇼핑객",
     status: "live",
     tech: ["AI", "Automation"],
+    androidUrl: "https://play.google.com/store/apps/details?id=com.cocoping.app",
+    iosUrl: "https://apps.apple.com/kr/app/id6788451449",
     icon: "🛒",
     thumbnail: "/projects/cocoping-2.jpg",
   },

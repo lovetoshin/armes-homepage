@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Footer from "@/components/Footer";
+import StoreButtons from "@/components/StoreButtons";
 import { projects, STATUS_META } from "@/lib/projects";
 import { projectDetails } from "@/lib/project-details";
 import { projectSeo } from "@/lib/project-seo";
@@ -79,6 +80,7 @@ export default async function ProjectDetailPage({
   const status = STATUS_META[project.status];
   const isRunning = project.status === "live"; // 운영중(문구·구조화데이터용)
   const isLive = isRunning && !!project.href; // 운영중 + 바로가기 주소까지 있을 때(외부 버튼용)
+  const hasStore = !!(project.androidUrl || project.iosUrl); // 스토어 다운로드 버튼 노출 여부
 
   // 이전/다음 프로젝트(배치 순서 기준)
   const idx = orderedKeys.indexOf(key);
@@ -108,6 +110,10 @@ export default async function ProjectDetailPage({
       ...(seo?.operatingSystem ? { operatingSystem: seo.operatingSystem } : {}),
       url: `${SITE}/projects/${key}`,
       ...(ogImg ? { image: ogImg } : {}),
+      // 앱 스토어 다운로드 주소(있을 때만) — 검색결과 앱 링크 노출용
+      ...(project.androidUrl || project.iosUrl
+        ? { downloadUrl: [project.androidUrl, project.iosUrl].filter(Boolean) }
+        : {}),
       inLanguage: "ko-KR",
       publisher: { "@type": "Organization", name: "주식회사 아르메스", url: SITE },
       // 운영중 서비스만 '무료' 제공 표기 (별점/리뷰는 실제 데이터 없어 넣지 않음)
@@ -167,8 +173,17 @@ export default async function ProjectDetailPage({
             ))}
           </div>
 
-          {/* 운영중이면 앱 바로가기 버튼 */}
-          {isLive && (
+          {/* 앱 다운로드 — 스토어 배지(있을 때만). 이 페이지의 최우선 CTA */}
+          {hasStore && (
+            <StoreButtons
+              androidUrl={project.androidUrl}
+              iosUrl={project.iosUrl}
+              appName={project.name}
+            />
+          )}
+
+          {/* 운영중이면 앱(웹) 바로가기 버튼 — 스토어가 없을 때만 노출 */}
+          {isLive && !hasStore && (
             <a
               href={project.href}
               target="_blank"
