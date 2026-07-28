@@ -18,7 +18,7 @@ const SELLERAI_PLANS: Plan[] = [
   { name: "스타터",       price: "29,000원",  unit: "월", desc: "5,000 토큰" },
   { name: "프로",         price: "59,000원",  unit: "월", desc: "12,000 토큰", badge: "인기" },
   { name: "프로맥스",     price: "99,000원",  unit: "월", desc: "30,000 토큰", badge: "베스트" },
-  { name: "엔터프라이즈", price: "문의",       unit: "",   desc: "맞춤 토큰 · 무제한" },
+  { name: "엔터프라이즈", price: "문의",       unit: "",   desc: "맞춤 토큰 · 전담 지원" },
 ];
 
 // 월드링고 화상 언어수업 요금제 (캠블리 요금 구조 참고 — 30분 1:1 화상·구독제, 첫 수업 무료)
@@ -95,6 +95,28 @@ export default function PricingSection() {
           <p className="mt-4 text-[13px] text-[#8B95A1]">
             월 구독 기준 · 부가세 별도 · 연 구독 시 월 구독 대비 10% 할인
           </p>
+
+          {/* 서비스 제공 기간 (전자상거래 표시의무 — 셀러AI 결제 심사 요건) */}
+          <div className="mt-6 rounded-2xl border border-[#E5E8EB] bg-white p-6">
+            <p className="mb-4 text-sm font-bold text-[#191F28]">서비스 제공 기간</p>
+            <ul className="space-y-3 text-[13px] leading-relaxed text-[#4E5968] keep-all">
+              <li>
+                <span className="mb-0.5 block font-bold text-[#3182F6]">월 정기구독</span>
+                결제일로부터 1개월(30일) 이용 후 자동 갱신되며, 매월 결제일과 동일한 날짜에 자동 결제됩니다.
+              </li>
+              <li>
+                <span className="mb-0.5 block font-bold text-[#3182F6]">연 정기구독</span>
+                결제일로부터 1년(365일) 이용 후 자동 갱신되며, 매년 결제일과 동일한 날짜에 자동 결제됩니다.
+              </li>
+              <li>
+                <span className="mb-0.5 block font-bold text-[#3182F6]">토큰 팩 구매(일회성)</span>
+                결제 즉시 토큰이 지급되며, 해당 플랜 혜택은 결제일로부터 1개월(30일)간 제공됩니다. 자동 갱신은 없습니다.
+              </li>
+            </ul>
+            <p className="mt-4 border-t border-[#F2F4F6] pt-3 text-[12px] leading-relaxed text-[#8B95A1] keep-all">
+              정기구독은 해지 전까지 매 결제주기마다 자동 결제·자동 갱신되며, 해지는 언제든 고객센터 또는 카카오톡 채널로 신청하실 수 있습니다.
+            </p>
+          </div>
         </div>
 
         {/* 월드링고 */}
