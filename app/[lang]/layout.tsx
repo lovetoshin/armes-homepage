@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import {
   localeFromSegment,
@@ -7,12 +6,10 @@ import {
   PREFIXED_LOCALES,
 } from "@/lib/i18n";
 
-// [lang] 트리는 전부 비(非)한국어(영어·중국어 간·번). 애드센스 승인 전까지 외국어는 색인에서 제외.
-// 하위 페이지들은 robots를 따로 지정하지 않으므로 이 layout 설정(noindex, follow)을 물려받는다.
-// (한국어 루트 /는 app/layout.tsx라 영향 없음 → 한국어만 색인)
-export const metadata: Metadata = {
-  robots: { index: false, follow: true },
-};
+// [lang] 트리는 전부 비(非)한국어(영어·중국어 간·번).
+// 2026-07-29 애드센스 전략 철회 → 외국어도 전부 색인해 외국인 트래픽을 확보한다.
+// (예전 noindex 메타 제거. 각 페이지의 hreflang/canonical은 그대로 유지 → 구글이 언어별로 정확히 인식)
+// 한국어 루트 /는 app/layout.tsx라 별개.
 
 // 영어/중국어(간·번)만 정적 생성 — 한국어는 루트(app/)가 따로 담당하므로 여기 포함하지 않는다.
 export function generateStaticParams() {

@@ -29,25 +29,13 @@ export default function robots(): MetadataRoute.Robots {
       { userAgent: "Bingbot", allow: "/" },
       { userAgent: "Yeti", allow: "/" },
       { userAgent: "Daumoa", allow: "/" },
-      // 그 외 전체 허용(기존 보안 규칙 유지)
-      // + 아르메스툴 외국어 경로(/tools/{언어}/)는 크롤 차단 — 이미 색인에서 제거 완료(noindex 목적 달성)이므로
-      //   더는 크롤을 열어둘 이유가 없다. 봇이 외국어 페이지 수천 개를 반복 크롤해 Fast Origin Transfer가
-      //   폭증하던 문제를 근본 차단(한국어 /tools/·/tools/ko/ 는 허용해 광고·SEO 유지). [[armes-vercel-bot-defense]]
+      // 그 외 전체 허용. 2026-07-29 애드센스 전략 철회 → 아르메스툴 외국어 경로(/tools/{언어}/)
+      // 크롤 차단을 해제해 외국어 도구 페이지를 다시 색인시킨다(외국인 트래픽 확보).
+      // ISR 폭증은 위 AI봇 12종 차단으로 근본 방어(정상 검색봇·사용자만 허용). [[armes-vercel-bot-defense]]
       {
         userAgent: "*",
         allow: "/",
-        disallow: [
-          "/api/",
-          "/_next/",
-          "/tools/en/",
-          "/tools/ja/",
-          "/tools/zh-cn/",
-          "/tools/zh-tw/",
-          "/tools/es/",
-          "/tools/pt-br/",
-          "/tools/fr/",
-          "/tools/de/",
-        ],
+        disallow: ["/api/", "/_next/"],
       },
     ],
     sitemap: [
