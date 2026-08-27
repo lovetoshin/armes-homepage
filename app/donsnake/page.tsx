@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-// 돈스네이크 허브 — 아르메스의 판매 자동화 도구 진열대(ko 전용)
-//  · 결제(포트원)는 셀러AI가 처리한다. 여기(본체)는 진열대 + 소개만.
-//  · 부스터 「구매하기」는 셀러AI 소개→결제로 이어진다.
+// 돈스네이크 허브 — 애플 스타일(라이트) 진열대. 결제는 셀러AI가 처리.
 export const metadata: Metadata = {
   title: "돈스네이크 — 사람이 하던 판매 일을, 프로그램이 대신합니다",
   description:
@@ -14,94 +12,69 @@ export const metadata: Metadata = {
 const SELLERAI = "https://www.armes.co.kr/sellerai/studio";
 
 type Card = {
-  tag: string;
-  name: string;
-  what: string;
-  how: string;
-  price: string;
-  emoji: string;
-  href: string;
-  cta: string;
-  cls: string;
+  tag: string; name: string; what: string; how: string; price: string;
+  emoji: string; href: string; cta: string; primary?: boolean;
 };
 
 const CARDS: Card[] = [
-  {
-    tag: "운영중", name: "셀러AI",
-    what: "상품 사진을\n대신 만들어 줍니다.",
-    how: "사진 한 장만 올리면 모델이 입은 컷, 배경 지운 컷, 색깔만 바꾼 컷, 상세페이지까지 나옵니다. 촬영도 편집자도 필요 없습니다.",
-    price: "무료 시작 · 월 29,000원부터", emoji: "🛍️",
-    href: SELLERAI, cta: "시작하기", cls: "c-sell",
-  },
-  {
-    tag: "판매중", name: "블로그부스터",
-    what: "블로그 글을\n대신 써서 올려 줍니다.",
+  { tag: "운영중", name: "셀러AI", what: "상품 사진을 대신 만들어 줍니다.",
+    how: "사진 한 장만 올리면 모델 착장컷, 배경 지운 컷, 색만 바꾼 컷, 상세페이지까지 나옵니다. 촬영도 편집자도 필요 없습니다.",
+    price: "무료 시작 · 월 29,000원부터", emoji: "🛍️", href: SELLERAI, cta: "시작하기", primary: true },
+  { tag: "판매중", name: "블로그부스터", what: "블로그 글을 대신 써서 올려 줍니다.",
     how: "사람들이 뭘 검색하는지 찾아내고, 그 검색어로 글을 씁니다. 사진까지 붙여 정해둔 시간에 알아서 발행합니다.",
-    price: "월 30,000원 · 연 300,000원 (VAT 별도)", emoji: "✍️",
-    href: "/donsnake/blogbooster", cta: "자세히 보기", cls: "c-blog",
-  },
-  {
-    tag: "판매중", name: "인별부스터",
-    what: "인스타 게시물을\n대신 만들어 올려 줍니다.",
+    price: "월 30,000원 · 연 300,000원", emoji: "✍️", href: "/donsnake/blogbooster", cta: "자세히 보기" },
+  { tag: "판매중", name: "인별부스터", what: "인스타 게시물을 대신 만들어 올려 줍니다.",
     how: "상품만 넣으면 카드뉴스와 밑에 들어갈 글, 해시태그까지 만듭니다. 한 달치를 미리 쌓아 예약해두면 손댈 일이 없습니다.",
-    price: "월 30,000원 · 연 300,000원 (VAT 별도)", emoji: "📷",
-    href: "https://www.armes.co.kr/sellerai/booster/instabooster", cta: "구매하기", cls: "c-insta",
-  },
-  {
-    tag: "판매중", name: "쇼츠릴스부스터",
-    what: "짧은 영상을\n대신 만들어 줍니다.",
-    how: "주제만 정하면 대본을 짜고 장면을 만들어 붙입니다. 목소리와 자막까지 넣은 세로 영상이 나옵니다. 확인하고 올리기만 하면 됩니다.",
-    price: "월 30,000원 · 연 300,000원 (VAT 별도)", emoji: "🎬",
-    href: "https://www.armes.co.kr/sellerai/booster/shortsbooster", cta: "구매하기", cls: "c-shorts",
-  },
+    price: "월 30,000원 · 연 300,000원", emoji: "📷", href: "https://www.armes.co.kr/sellerai/booster/instabooster", cta: "구매하기" },
+  { tag: "판매중", name: "쇼츠릴스부스터", what: "짧은 영상을 대신 만들어 줍니다.",
+    how: "주제만 정하면 대본을 짜고 장면을 만들어 붙입니다. 목소리와 자막까지 넣은 세로 영상이 나옵니다. 확인하고 올리면 끝입니다.",
+    price: "월 30,000원 · 연 300,000원", emoji: "🎬", href: "https://www.armes.co.kr/sellerai/booster/shortsbooster", cta: "구매하기" },
 ];
 
 export default function DonsnakePage() {
   return (
     <main className="ds">
-      <section className="head">
+      <section className="hero">
         <div className="wrap">
-          <h1>돈스네이크</h1>
-          <p className="sub">사람이 하던 판매 일을, 프로그램이 대신합니다.</p>
+          <span className="eyebrow">돈스네이크</span>
+          <h1>사람이 하던 판매 일을,<br />프로그램이 대신합니다.</h1>
+          <p className="lede">네 가지 도구가 상품 사진부터 블로그·인스타·짧은 영상까지 만들어 냅니다.<br />필요한 것만 골라 쓰세요.</p>
         </div>
       </section>
 
-      <section id="shelf">
+      <section className="shelf-sec">
         <div className="wrap">
-          <h2 className="sec">네 가지 도구. <span>필요한 것만 골라 쓰세요.</span></h2>
           <div className="shelf">
             {CARDS.map((c) => {
               const ext = c.href.startsWith("http");
-              const Inner = (
+              const inner = (
                 <>
-                  <div className={`tag ${c.tag === "운영중" ? "tag-live" : "tag-sale"}`}>{c.tag}</div>
+                  <span className={`tag ${c.tag === "운영중" ? "on" : "sale"}`}>{c.tag}</span>
+                  <div className="emoji">{c.emoji}</div>
                   <h3>{c.name}</h3>
-                  <p className="what">{c.what.split("\n").map((t, i) => <span key={i}>{t}<br /></span>)}</p>
+                  <p className="what">{c.what}</p>
                   <p className="how">{c.how}</p>
                   <div className="price">{c.price}</div>
-                  <div className="visual">{c.emoji}</div>
-                  <span className="go">{c.cta}</span>
+                  <span className={`cta ${c.primary ? "primary" : "secondary"}`}>{c.cta}</span>
                 </>
               );
-              return ext ? (
-                <a key={c.name} className={`card ${c.cls}`} href={c.href} target="_blank" rel="noopener">{Inner}</a>
-              ) : (
-                <Link key={c.name} className={`card ${c.cls}`} href={c.href}>{Inner}</Link>
-              );
+              return ext
+                ? <a key={c.name} className="card" href={c.href} target="_blank" rel="noopener">{inner}</a>
+                : <Link key={c.name} className="card" href={c.href}>{inner}</Link>;
             })}
           </div>
         </div>
       </section>
 
-      <section className="strip" id="flow">
+      <section className="flow">
         <div className="wrap">
           <h2>넷을 이어 붙이면<br />판매 한 바퀴가 자동으로 돕니다.</h2>
-          <p>따로 써도 되고, 이어 써도 됩니다.</p>
+          <p className="sub">따로 써도 되고, 이어 써도 됩니다.</p>
           <div className="steps">
-            <div className="step"><b>① 만들고</b><span>셀러AI로 상품컷과 상세페이지</span></div>
-            <div className="step"><b>② 검색 잡고</b><span>블로그로 찾아 들어오는 길</span></div>
-            <div className="step"><b>③ 보여주고</b><span>인스타로 눈에 익게</span></div>
-            <div className="step"><b>④ 퍼뜨립니다</b><span>짧은 영상으로 넓게</span></div>
+            <div className="step"><span className="n">1</span><b>만들고</b><em>셀러AI로 상품컷과 상세페이지</em></div>
+            <div className="step"><span className="n">2</span><b>검색 잡고</b><em>블로그로 찾아 들어오는 길</em></div>
+            <div className="step"><span className="n">3</span><b>보여주고</b><em>인스타로 눈에 익게</em></div>
+            <div className="step"><span className="n">4</span><b>퍼뜨립니다</b><em>짧은 영상으로 넓게</em></div>
           </div>
         </div>
       </section>
@@ -114,42 +87,60 @@ export default function DonsnakePage() {
       </footer>
 
       <style>{`
-        .ds{color:#f5f5f7;word-break:keep-all}
-        .ds .wrap{max-width:1240px;margin:0 auto;padding:0 24px}
-        .ds .head{padding:56px 0 30px}
-        .ds .head h1{font-size:56px;line-height:1.05;font-weight:800;letter-spacing:-.035em;margin:0}
-        .ds .head .sub{font-size:19px;color:#a1a1a6;margin:14px 0 0;letter-spacing:-.015em}
-        .ds .sec{font-size:30px;font-weight:800;letter-spacing:-.028em;margin:0 0 24px;line-height:1.25}
-        .ds .sec span{color:#86868b}
-        .ds .shelf{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;padding-bottom:44px}
-        .ds .card{border-radius:20px;padding:28px 24px 92px;min-height:440px;display:flex;flex-direction:column;position:relative;overflow:hidden;border:1px solid rgba(255,255,255,.08);transition:transform .15s,border-color .15s}
-        .ds .card:hover{transform:translateY(-3px);border-color:rgba(255,255,255,.22)}
-        .ds .c-sell{background:linear-gradient(165deg,#1c1c20,#111114)}
-        .ds .c-blog{background:linear-gradient(165deg,#14202e,#0f1620)}
-        .ds .c-insta{background:linear-gradient(165deg,#241826,#160f18)}
-        .ds .c-shorts{background:linear-gradient(165deg,#2a1c14,#1a110c)}
-        .ds .tag{font-size:11.5px;font-weight:800;letter-spacing:.02em;margin-bottom:10px}
-        .ds .tag-live{color:#4ade80}
-        .ds .tag-sale{color:#4ade80}
-        .ds .card h3{font-size:24px;font-weight:800;letter-spacing:-.03em;margin:0 0 12px;line-height:1.2}
-        .ds .what{font-size:16.5px;font-weight:700;line-height:1.45;letter-spacing:-.02em;margin:0 0 10px}
-        .ds .how{font-size:13.5px;line-height:1.55;color:#a1a1a6;margin:0 0 14px}
-        .ds .price{font-size:12.5px;font-weight:600;color:#c7c7cc}
-        .ds .visual{margin-top:auto;display:grid;place-items:center;font-size:74px;line-height:1;padding:14px 0 0;filter:drop-shadow(0 10px 22px rgba(0,0,0,.4))}
-        .ds .go{position:absolute;left:24px;right:24px;bottom:24px;text-align:center;font-size:14.5px;font-weight:800;padding:13px;border-radius:12px;white-space:nowrap;background:#0071e3;color:#fff}
-        .ds .card:hover .go{background:#0060c8}
-        .ds .strip{margin-top:20px;background:#121214;border-top:1px solid rgba(255,255,255,.07);border-bottom:1px solid rgba(255,255,255,.07)}
-        .ds .strip .wrap{padding:56px 24px;text-align:center}
-        .ds .strip h2{font-size:32px;font-weight:800;letter-spacing:-.03em;margin:0 0 12px;line-height:1.28}
-        .ds .strip p{font-size:16px;color:#a1a1a6;margin:0 0 28px}
-        .ds .steps{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
-        .ds .step{background:#1c1c20;border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:22px 18px;min-width:196px;flex:1;max-width:252px}
-        .ds .step b{display:block;font-size:15.5px;font-weight:800;margin-bottom:6px}
-        .ds .step span{font-size:13px;color:#86868b;line-height:1.5}
-        .ds .foot{padding:34px 0 60px;font-size:12px;color:#86868b;line-height:1.85}
-        @media (max-width:1100px){ .ds .shelf{grid-template-columns:repeat(2,1fr)} }
-        @media (max-width:860px){ .ds .head h1{font-size:38px} .ds .head .sub{font-size:16px} .ds .sec{font-size:24px} .ds .strip h2{font-size:25px} .ds .card{min-height:390px} }
-        @media (max-width:560px){ .ds .shelf{grid-template-columns:1fr} }
+        .ds{
+          --bg:#fff; --gray:#f5f5f7; --dark:#1d1d1f; --t1:#1d1d1f; --t2:#6e6e73; --t3:#86868b;
+          --blue:#0066cc; --blue2:#0077ed; --rcard:20px; --rpill:980px;
+          --shadow:0 2px 8px rgba(0,0,0,.04),0 8px 24px rgba(0,0,0,.08);
+          --shadow-h:0 4px 12px rgba(0,0,0,.06),0 12px 32px rgba(0,0,0,.12);
+          --font:"Pretendard Variable",Pretendard,-apple-system,BlinkMacSystemFont,system-ui,sans-serif;
+          background:var(--bg);color:var(--t1);font-family:var(--font);word-break:keep-all;
+          -webkit-font-smoothing:antialiased;
+        }
+        .ds .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+        .ds .hero{background:var(--bg);text-align:center;padding:96px 0 56px}
+        .ds .eyebrow{display:inline-block;font-size:15px;font-weight:600;color:var(--blue);margin-bottom:16px;letter-spacing:-.01em}
+        .ds .hero h1{font-size:64px;font-weight:700;line-height:1.06;letter-spacing:-.025em;margin:0 0 20px}
+        .ds .lede{font-size:22px;line-height:1.45;color:var(--t2);margin:0;font-weight:400}
+        .ds .shelf-sec{background:var(--bg);padding:16px 0 88px}
+        .ds .shelf{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+        .ds .card{
+          display:flex;flex-direction:column;background:var(--bg);border-radius:var(--rcard);
+          padding:40px;box-shadow:var(--shadow);transition:box-shadow .3s ease,transform .3s ease;
+          text-align:left;
+        }
+        .ds .card:hover{box-shadow:var(--shadow-h);transform:translateY(-4px)}
+        .ds .tag{align-self:flex-start;font-size:12px;font-weight:600;letter-spacing:.02em;padding:5px 12px;border-radius:var(--rpill);margin-bottom:20px}
+        .ds .tag.on{background:#e8f5ea;color:#2d8c3c}
+        .ds .tag.sale{background:#eaf3ff;color:var(--blue)}
+        .ds .emoji{font-size:52px;line-height:1;margin-bottom:18px}
+        .ds .card h3{font-size:28px;font-weight:700;letter-spacing:-.02em;margin:0 0 10px}
+        .ds .what{font-size:19px;font-weight:600;line-height:1.4;color:var(--t1);margin:0 0 12px}
+        .ds .how{font-size:15px;line-height:1.55;color:var(--t2);margin:0 0 20px;flex-grow:1}
+        .ds .price{font-size:14px;font-weight:500;color:var(--t3);margin-bottom:24px}
+        .ds .cta{display:inline-flex;align-items:center;justify-content:center;align-self:flex-start;
+          padding:12px 26px;border-radius:var(--rpill);font-size:15px;font-weight:600;transition:all .2s ease}
+        .ds .cta.primary{background:var(--blue);color:#fff}
+        .ds .card:hover .cta.primary{background:var(--blue2)}
+        .ds .cta.secondary{background:transparent;color:var(--blue);border:1px solid rgba(0,102,204,.4)}
+        .ds .card:hover .cta.secondary{background:var(--blue);color:#fff;border-color:var(--blue)}
+        .ds .flow{background:var(--gray);text-align:center;padding:88px 0}
+        .ds .flow h2{font-size:40px;font-weight:700;letter-spacing:-.02em;line-height:1.15;margin:0 0 12px}
+        .ds .flow .sub{font-size:19px;color:var(--t2);margin:0 0 44px}
+        .ds .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+        .ds .step{background:var(--bg);border-radius:18px;padding:28px 22px;text-align:center;box-shadow:var(--shadow)}
+        .ds .step .n{display:inline-grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--blue);color:#fff;font-weight:700;font-size:15px;margin-bottom:14px}
+        .ds .step b{display:block;font-size:17px;font-weight:600;margin-bottom:6px}
+        .ds .step em{font-size:14px;color:var(--t2);font-style:normal;line-height:1.5}
+        .ds .foot{background:var(--gray);text-align:center;padding:40px 0 60px;font-size:12px;color:var(--t3);line-height:1.85}
+        @media (max-width:860px){
+          .ds .hero{padding:64px 0 40px}
+          .ds .hero h1{font-size:40px}
+          .ds .lede{font-size:18px}
+          .ds .shelf{grid-template-columns:1fr}
+          .ds .card{padding:32px}
+          .ds .flow h2{font-size:28px}
+          .ds .steps{grid-template-columns:1fr 1fr}
+        }
       `}</style>
     </main>
   );
