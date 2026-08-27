@@ -1,0 +1,201 @@
+import type { Metadata } from "next";
+
+// 블로그부스터 소개(ko 전용). 구매는 셀러AI 결제로 이어진다.
+export const metadata: Metadata = {
+  title: "블로그부스터 — AI로 썼는데 사람이 쓴 것처럼",
+  description:
+    "네이버 블로그 자동 발행 프로그램. 주제만 고르면 글·사진·발행까지 알아서. 기계 티가 안 나게 흐트러뜨려 저품질 위험을 줄입니다. 월 30,000원.",
+  alternates: { canonical: "/donsnake/blogbooster" },
+};
+
+const BUY = "https://www.armes.co.kr/sellerai/booster/blogbooster";
+
+const GUARDS = [
+  { no: "01", t: "카테고리 20가지, 골라서 일관되게", p: "IT · 생활용품 · 드라마 · 맛집 등 20가지 카테고리 중 원하는 것만 골라 쓰거나, 하나를 정해 계속 밀고 갈 수 있습니다. 블로그는 주제가 한 곳으로 모여야 힘이 붙습니다.", x: "주제가 섞이면 힘이 안 붙음", o: "고른 카테고리로 쭉" },
+  { no: "02", t: "글 길이를 들쭉날쭉하게", p: "사람은 어떤 날은 길게, 어떤 날은 짧게 씁니다. 그래서 짧게·보통·길게를 섞고, 인사말과 마무리 문장도 여러 벌 중에서 매번 다른 것을 고릅니다.", x: "마무리 문구가 늘 동일", o: "길이도 문장도 매번 다름" },
+  { no: "03", t: "한 번에 30편, 하루 3편까지만", p: "한 번 돌리면 최대 30편까지 만듭니다. 다만 하루에 올라가는 건 최대 3편입니다. 한꺼번에 쏟아부으면 블로그가 위험해집니다.", x: "만든 만큼 몰아서 발행", o: "하루 3편까지만 발행" },
+  { no: "04", t: "올리는 시간도 흐트러뜨립니다", p: "하루 한 편, 두 편, 세 편을 들쭉날쭉 나누고 올리는 시각도 매번 다르게 잡습니다. 사람이 올리는 것처럼 보여야 합니다.", x: "매일 3편 · 같은 시각", o: "1~3편 · 시각 랜덤" },
+];
+
+const STEPS = [
+  { n: "1", t: "카테고리를 고릅니다", p: "20가지 중에서 고르십니다. 여러 개를 골라 쓰셔도 되고, 하나만 정해 쭉 밀고 가셔도 됩니다." },
+  { n: "2", t: "몇 편 쓸지 정합니다", p: "한 번에 최대 30편까지 만듭니다. 그 시점에 검색을 돌려 지금 사람들이 찾는 소재로 씁니다." },
+  { n: "3", t: "사진까지 그려 넣습니다", p: "남의 사진을 퍼오지 않습니다. 문단마다 어울리는 그림을 새로 만들어 넣어 어색하지 않습니다." },
+  { n: "4", t: "예약을 걸어두면 끝납니다", p: "편마다 다른 날짜·시간으로 예약이 걸립니다. 프로그램을 꺼둬도 정해진 때에 네이버 블로그에 올라갑니다." },
+];
+
+const FAQ = [
+  { q: "글 쓰는 비용이 따로 드나요?", a: "네. 글과 사진을 만드는 데 OpenAI(GPT) 사용료가 듭니다. 저희가 받는 돈이 아니라 고객님이 OpenAI에 직접 내시는 비용이고, 쓴 만큼만 나갑니다. 글 10편에 사진 45장 정도면 대략 5,000원 안팎입니다." },
+  { q: "저품질에 정말 안 걸리나요?", a: "'절대 안 걸린다'고 장담드리지는 않습니다. 다만 기계로 찍은 티가 나는 부분(같은 마무리 문구·같은 길이·같은 시각 발행)을 사람처럼 흐트러뜨려 걸릴 위험을 크게 줄입니다." },
+  { q: "결제되는 걸 깜빡하면요?", a: "자동 결제되기 전에 이메일로 미리 알려드립니다. 월 구독은 결제 3일 전, 연 구독은 7일 전입니다. 원하지 않으시면 그 안에 해지하시면 됩니다." },
+  { q: "어떻게 쓰는 프로그램인가요?", a: "윈도우 컴퓨터에 설치하는 프로그램입니다. 결제하시면 정품키가 발급되고, 그 키로 설치 파일을 받아 정품키를 입력하면 바로 쓰실 수 있습니다." },
+];
+
+export default function BlogboosterIntro() {
+  return (
+    <main className="bi">
+      <section className="hero">
+        <div className="wrap">
+          <span className="kicker">네이버 블로그 자동 발행 프로그램</span>
+          <h1>AI로 썼는데<br /><mark>사람이 쓴 것처럼</mark> 나옵니다.</h1>
+          <p>그래서 저품질에 걸릴 위험을 크게 줄입니다.<br />주제만 고르시면 글도, 사진도, 발행까지 알아서 합니다.</p>
+          <div className="cta">
+            <a className="btn fill" href={BUY}>월 30,000원으로 시작하기</a>
+            <a className="btn line" href="#why">저품질 대책 보기</a>
+          </div>
+          <div className="note">부가세 별도 · 연 구독 300,000원 (2개월치 절약)</div>
+        </div>
+      </section>
+
+      <section className="sec warn">
+        <div className="wrap">
+          <div className="kicker">이런 일이 실제로 벌어집니다</div>
+          <h2>AI로 글 쓰다가<br />블로그가 죽는 경우</h2>
+          <p className="sub">글이 좋아도 소용없습니다. 네이버가 "이 블로그 기계다"라고 판단하는 순간 검색에서 사라집니다.</p>
+          <div className="chat">
+            <div className="bub bad">
+              <div className="who">보통 AI로 뽑아 올린 글들</div>
+              <p>소제목이 전부 「~일까요?」로 끝나고, 마무리 문장은 어느 글이나 똑같고, 글 길이도 전부 비슷하고, 매일 정확히 같은 개수·같은 시간에 올라감</p>
+            </div>
+            <div className="verdict">
+              <b>네이버 판정</b>
+              <span>사람이 쓴 글이 아니라 기계가 찍어낸 글로 봅니다. 이렇게 찍히면 그동안 쌓아온 블로그 전체가 검색에서 밀려납니다.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="sec" id="why">
+        <div className="wrap">
+          <div className="kicker">블로그부스터가 다른 이유</div>
+          <h2>주제는 일관되게,<br />글은 기계 티 안 나게.</h2>
+          <p className="sub">네이버는 "주제가 한 곳으로 모인 블로그"를 좋게 봅니다. 반대로 "규칙적으로 찍어낸 글"은 기계로 봅니다.</p>
+          <div className="guards">
+            {GUARDS.map((g) => (
+              <div className="guard" key={g.no}>
+                <div className="gn">{g.no}</div>
+                <b>{g.t}</b>
+                <p>{g.p}</p>
+                <div className="cmp">
+                  <div className="x"><em>보통 AI</em>{g.x}</div>
+                  <div className="o"><em>블로그부스터</em>{g.o}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="sec soft" id="how">
+        <div className="wrap">
+          <div className="kicker">쓰는 법</div>
+          <h2>처음 한 번만 정하면<br />그다음은 손댈 일이 없습니다.</h2>
+          <p className="sub">직장 다니면서 쓰는 분들을 위해 만들었습니다. 하루 5분도 안 쓰게 하는 게 목표였습니다.</p>
+          <div className="steps">
+            {STEPS.map((s) => (
+              <div className="stepx" key={s.n}>
+                <div className="sn">{s.n}</div>
+                <div><b>{s.t}</b><p>{s.p}</p></div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="sec price" id="price">
+        <div className="wrap">
+          <div className="kicker">가격</div>
+          <h2>월 30,000원입니다.</h2>
+          <div className="big">30,000<small>원 / 월</small></div>
+          <div className="alt">연 구독 300,000원 — 두 달치를 아끼십니다</div>
+          <a className="btn fill" href={BUY}>구매하러 가기</a>
+          <div className="vat">부가세 별도 · 세금계산서 발행 가능<br />해지하실 때까지 자동 갱신되는 정기결제이며, 언제든 해지하실 수 있습니다</div>
+        </div>
+      </section>
+
+      <section className="sec">
+        <div className="wrap">
+          <div className="kicker">자주 묻는 질문</div>
+          <div className="faq">
+            {FAQ.map((f) => (
+              <div className="qa" key={f.q}><b>{f.q}</b><span>{f.a}</span></div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="last">
+        <div className="wrap">
+          <h2>블로그, 이제 알아서 굴러가게.</h2>
+          <p>처음 한 번만 정해두시면 됩니다.</p>
+          <a className="btn fill" href={BUY}>월 30,000원으로 시작하기</a>
+        </div>
+      </section>
+
+      <footer className="foot">
+        <div className="wrap">
+          주식회사 아르메스 · 대표 신지한 · 사업자등록번호 798-86-02943<br />
+          경기도 남양주시 경복대학교 창업보육센터 · support.armes@gmail.com
+        </div>
+      </footer>
+
+      <style>{`
+        .bi{color:#f5f5f7;word-break:keep-all}
+        .bi .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+        .bi .kicker{font-size:12.5px;font-weight:800;letter-spacing:.02em;color:#4ade80;margin-bottom:12px}
+        .bi h1{font-size:52px;font-weight:800;letter-spacing:-.035em;line-height:1.14;margin:0 0 16px}
+        .bi h1 mark{background:none;color:#4ade80}
+        .bi .hero{padding:64px 0 48px;text-align:center}
+        .bi .hero p{font-size:18px;color:#a1a1a6;margin:0 0 26px;line-height:1.5}
+        .bi .cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+        .bi .btn{display:inline-block;font-size:15px;font-weight:800;padding:15px 26px;border-radius:12px;white-space:nowrap}
+        .bi .btn.fill{background:#0071e3;color:#fff}
+        .bi .btn.fill:hover{background:#0060c8}
+        .bi .btn.line{border:1px solid rgba(255,255,255,.22);color:#f5f5f7}
+        .bi .note{font-size:13px;color:#86868b;margin-top:16px}
+        .bi .sec{padding:64px 0;border-top:1px solid rgba(255,255,255,.06)}
+        .bi .sec h2{font-size:32px;font-weight:800;letter-spacing:-.03em;line-height:1.28;margin:0 0 14px}
+        .bi .sec .sub{font-size:16px;color:#a1a1a6;line-height:1.6;margin:0 0 32px}
+        .bi .warn{background:#121214}
+        .bi .chat{display:grid;gap:16px;max-width:760px}
+        .bi .bub{border-radius:16px;padding:22px 24px}
+        .bi .bad{background:#2a1416;border:1px solid rgba(255,120,120,.22)}
+        .bi .who{font-size:12.5px;font-weight:800;color:#ff8b8b;margin-bottom:8px}
+        .bi .bub p{margin:0;font-size:14.5px;line-height:1.6;color:#d0d0d3}
+        .bi .verdict{background:#1c1c20;border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:22px 24px}
+        .bi .verdict b{display:block;font-size:13px;font-weight:800;color:#ff8b8b;margin-bottom:8px}
+        .bi .verdict span{font-size:14.5px;color:#a1a1a6;line-height:1.6}
+        .bi .guards{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+        .bi .guard{background:#16161a;border:1px solid rgba(255,255,255,.07);border-radius:18px;padding:26px 24px}
+        .bi .gn{font-size:13px;font-weight:800;color:#4ade80;margin-bottom:10px}
+        .bi .guard b{display:block;font-size:18px;font-weight:800;margin-bottom:10px;letter-spacing:-.02em}
+        .bi .guard p{font-size:14px;color:#a1a1a6;line-height:1.6;margin:0 0 16px}
+        .bi .cmp{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+        .bi .cmp div{font-size:12.5px;line-height:1.4;padding:12px;border-radius:10px}
+        .bi .cmp em{display:block;font-style:normal;font-weight:800;margin-bottom:4px;font-size:11.5px;opacity:.75}
+        .bi .cmp .x{background:rgba(255,120,120,.08);color:#e0b6b6}
+        .bi .cmp .o{background:rgba(74,222,128,.1);color:#bfe9cd}
+        .bi .soft{background:#101216}
+        .bi .steps{display:grid;gap:14px;max-width:820px}
+        .bi .stepx{display:flex;gap:18px;background:#16161a;border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:24px 26px}
+        .bi .sn{flex:0 0 34px;height:34px;border-radius:50%;background:#0071e3;color:#fff;font-weight:800;display:grid;place-items:center;font-size:15px}
+        .bi .stepx b{display:block;font-size:16.5px;font-weight:800;margin-bottom:6px}
+        .bi .stepx p{margin:0;font-size:14px;color:#a1a1a6;line-height:1.6}
+        .bi .price{text-align:center}
+        .bi .big{font-size:46px;font-weight:800;letter-spacing:-.03em}
+        .bi .big small{font-size:18px;font-weight:600;color:#a1a1a6}
+        .bi .alt{font-size:15px;color:#a1a1a6;margin:8px 0 24px}
+        .bi .vat{font-size:13px;color:#86868b;margin-top:16px;line-height:1.6}
+        .bi .faq{max-width:760px;margin:0 auto}
+        .bi .qa{border-bottom:1px solid rgba(255,255,255,.08);padding:24px 0}
+        .bi .qa b{display:block;font-size:17px;font-weight:800;margin-bottom:9px;letter-spacing:-.02em}
+        .bi .qa span{font-size:14.5px;color:#a1a1a6;line-height:1.7}
+        .bi .last{background:#14161a;text-align:center;padding:80px 0;border-top:1px solid rgba(255,255,255,.06)}
+        .bi .last h2{font-size:34px;font-weight:800;letter-spacing:-.03em;margin:0 0 14px}
+        .bi .last p{color:#a1a1a6;font-size:16px;margin:0 0 30px}
+        .bi .foot{padding:36px 0 56px;font-size:12px;color:#86868b;line-height:1.85;text-align:center}
+        @media (max-width:860px){ .bi h1{font-size:34px} .bi .hero p{font-size:16px} .bi .sec h2{font-size:26px} .bi .guards,.bi .cmp{grid-template-columns:1fr} .bi .big{font-size:38px} }
+      `}</style>
+    </main>
+  );
+}
