@@ -100,7 +100,7 @@ export default function DonsnakePage() {
           background:var(--bg);color:var(--t1);font-family:var(--font);word-break:keep-all;-webkit-font-smoothing:antialiased;
           width:100%;padding:112px 0 64px;position:relative;
         }
-        .ds .hero{text-align:center;max-width:1080px;margin:0 auto 26px;padding:0 24px;width:100%;box-sizing:border-box}
+        .ds .hero{text-align:center;max-width:1080px;margin:0 auto 48px;padding:0 24px;width:100%;box-sizing:border-box}
         .ds .hero h1{font-size:46px;font-weight:800;letter-spacing:-.04em;line-height:1;margin:0 0 10px}
         .ds .tagline{font-size:20px;font-weight:700;letter-spacing:-.02em;color:var(--t1);margin:0 0 6px;line-height:1.2}
         .ds .lede{font-size:15px;color:var(--t2);margin:0;line-height:1.4}
