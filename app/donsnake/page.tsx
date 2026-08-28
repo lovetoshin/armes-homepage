@@ -45,7 +45,7 @@ const CARDS: Card[] = [
       "얼마 팔렸나를 넘어, 앞으로 60일간 얼마를 사야 하는지 발주량을 자동으로 계산합니다.",
       "품절로 놓치는 매출도, 과잉재고로 묶이는 돈도 막아 드립니다.",
     ],
-    price: "30일 무료체험 · 월 30,000원 · 연 300,000원", href: "https://www.armes.co.kr/sellerai/growthbox", cta: "시작하기", primary: true },
+    price: "30일 무료체험 · 월 30,000원 · 연 300,000원", href: "https://www.armes.co.kr/sellerai/api/sso/issue", cta: "시작하기", primary: true },
   { tag: "준비중", name: "쿠팡1688풀자동화", lead: "1688 상품 → 쿠팡 자동등록", emoji: "🤖",
     copy: [
       "중국 1688 상품을 받아 상세페이지를 AI로 만들고, 쿠팡에 자동으로 등록합니다.",
