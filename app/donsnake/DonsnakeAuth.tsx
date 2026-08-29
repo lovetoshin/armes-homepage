@@ -114,7 +114,7 @@ export default function DonsnakeAuth({ variant = 'corner' }: { variant?: 'corner
           </div>
         )}
         <style>{`
-          .dsauth-hero{display:flex;flex-direction:column;align-items:center;gap:12px;margin-top:6px}
+          .dsauth-hero{display:flex;flex-direction:column;align-items:center;gap:12px;margin-top:48px}
           .dsauth-hero .ph{height:44px}
           .dsauth-hero .authcard{display:flex;flex-direction:column;gap:9px;width:100%;max-width:440px;margin:0 auto}
           .dsauth-hero .gbtn{display:flex;align-items:center;justify-content:center;gap:8px;padding:11px;border:1px solid #d2d2d7;border-radius:10px;background:#fff;color:#1d1d1f;font-size:14px;font-weight:600;text-decoration:none;transition:background .2s}
