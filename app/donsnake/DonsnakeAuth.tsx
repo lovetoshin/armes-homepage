@@ -11,7 +11,7 @@ const SELLERAI = 'https://www.armes.co.kr/sellerai'
 const HUB = 'https://www.armes.co.kr/donsnake'
 
 export default function DonsnakeAuth({ variant = 'corner' }: { variant?: 'corner' | 'hero' }) {
-  const [state, setState] = useState<{ loggedIn: boolean; email: string | null } | null>(null)
+  const [state, setState] = useState<{ loggedIn: boolean; email: string | null; isAdmin: boolean } | null>(null)
   const [email, setEmail] = useState('')
   const [pw, setPw] = useState('')
   const [loginErr, setLoginErr] = useState<string | null>(null)
@@ -22,13 +22,14 @@ export default function DonsnakeAuth({ variant = 'corner' }: { variant?: 'corner
   useEffect(() => {
     fetch(`${SELLERAI}/api/auth/status`, { credentials: 'include' })
       .then((r) => r.json())
-      .then((d) => setState({ loggedIn: !!d.loggedIn, email: d.email ?? null }))
-      .catch(() => setState({ loggedIn: false, email: null }))
+      .then((d) => setState({ loggedIn: !!d.loggedIn, email: d.email ?? null, isAdmin: !!d.isAdmin }))
+      .catch(() => setState({ loggedIn: false, email: null, isAdmin: false }))
   }, [])
 
   const loginUrl = `${SELLERAI}/login?next=${encodeURIComponent(HUB)}`
   const logoutUrl = `${SELLERAI}/api/auth/logout?next=${encodeURIComponent(HUB)}`
   const myUrl = `${SELLERAI}/my`
+  const adminUrl = `${SELLERAI}/admin`
   // 구글 로그인도 허브에서 바로 시작(다른 페이지로 안 보냄). 구글 OAuth 자체는 구글 사이트로 이동 후 허브로 복귀.
   const googleUrl = `${SELLERAI}/api/auth/google?next=${encodeURIComponent(HUB)}`
 
@@ -85,6 +86,7 @@ export default function DonsnakeAuth({ variant = 'corner' }: { variant?: 'corner
           <div className="hi-wrap">
             <p className="hi">✓ <b>{state.email}</b> 님으로 로그인되어 있습니다.</p>
             <a className="mylic" href={myUrl}>내 이용권</a>
+            {state.isAdmin && <a className="mylic" href={adminUrl}>어드민</a>}
             <a className="logout" href={logoutUrl}>로그아웃</a>
           </div>
         ) : (
