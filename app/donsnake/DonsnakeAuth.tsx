@@ -80,9 +80,10 @@ export default function DonsnakeAuth({ variant = 'corner' }: { variant?: 'corner
   if (variant === 'hero') {
     return (
       <div className="dsauth-hero">
-        {state === null ? (
-          <div className="ph" />
-        ) : state.loggedIn ? (
+        {/* 로그인 상태 확인(fetch)이 끝나기 전에도 폼을 바로 그린다 — 예전엔 확인될 때까지 빈
+            자리(.ph)만 있어 로그인 영역이 카드보다 한참 늦게 떴다. 대부분 방문자는 미로그인이라
+            폼을 먼저 보이고, 로그인된 것으로 확인되면 아래 로그인됨 UI 로 교체한다(2026-09-06). */}
+        {state?.loggedIn ? (
           <div className="hi-wrap">
             <p className="hi">✓ <b>{state.email}</b> 님으로 로그인되어 있습니다.</p>
             <a className="mylic" href={myUrl}>내 이용권</a>
@@ -146,7 +147,7 @@ export default function DonsnakeAuth({ variant = 'corner' }: { variant?: 'corner
 
   return (
     <div className="dsauth">
-      {state === null ? null : state.loggedIn ? (
+      {state?.loggedIn ? (
         <>
           <span className="me" title={state.email ?? ''}>{state.email}</span>
           <a className="mylic" href={myUrl}>내 이용권</a>
