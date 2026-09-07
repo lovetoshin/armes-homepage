@@ -3,7 +3,7 @@ title: 후삼국 인물 관계 한눈에 — 견훤·궁예·왕건
 date: 2026-06-16
 category: 후삼국지
 excerpt: 후삼국 시대를 이끈 세 인물 견훤·궁예·왕건을, 전략 게임에서 어떤 세력으로 플레이할지 고르는 입문자 시선으로 정리했습니다.
-thumbnail: /blog/covers/hoosamguk-characters.png
+thumbnail: /blog/covers/hoosamguk-characters.webp
 imageAlt: 후삼국 인물 견훤 궁예 왕건 관계 정리
 tags: [후삼국, 견훤, 궁예, 왕건, 전략 시뮬레이션]
 relatedServices: [hoosamgukji]
@@ -14,7 +14,7 @@ relatedServices: [hoosamgukji]
 그래서 이 글은 역사 교과서식 설명이 아니라, **"입문자가 첫 세력을 고르는 가이드"** 시선으로 세 인물을 정리합니다. 각 세력의 강점과 약점, 어떤 플레이에 어울리는지, 그리고 이들이 실제 역사에서 어떻게 부딪혔는지를 함께 봅니다. 세력의 성격을 알면 첫 판이 훨씬 재미있어집니다.
 
 
-![후삼국지 실제 화면](/blog/inline/hsg-characters.jpg)
+![후삼국지 실제 화면](/blog/inline/hsg-characters.webp)
 
 > 📱 **후삼국지** — 대한민국 후삼국 시대를 배경으로 한 전략 시뮬레이션 게임. [후삼국지 자세히 보기 →](/projects/hoosamgukji)
 

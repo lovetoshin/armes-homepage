@@ -3,7 +3,7 @@ title: 用 AI 制作网店商品详情页 — 新手入门指南
 date: 2026-05-18
 category: AI
 excerpt: 即使完全没有设计经验，也能用 AI 制作商品详情页。本文从准备工作到完成，分步骤详细介绍整个流程。
-thumbnail: /blog/covers/ai-detail-page-beginner.png
+thumbnail: /blog/covers/ai-detail-page-beginner.webp
 imageAlt: 用 AI 制作网店商品详情页的新手分步指南
 tags: [AI 详情页, 制作详情页, 网店, 新手指南]
 relatedServices: [sellerai]
@@ -14,7 +14,7 @@ relatedServices: [sellerai]
 好在如今的 AI 工具已经大大简化了这个过程。不过，"按下按钮就能完成"的幻想还是要打破——**你来决定说什么，AI 来替你完成制作**，这才是准确的定位。本文将以最清晰的步骤，带你从准备工作走到最终完成，完全不需要设计经验。
 
 
-![SellerAI 实际界面截图](/blog/inline/sai-ai-detail-page-beginner.jpg)
+![SellerAI 实际界面截图](/blog/inline/sai-ai-detail-page-beginner.webp)
 
 > 📱 **SellerAI** — 只需一张商品图，即可生成模特穿搭图、抠图及详情页的 AI 服务。[了解更多 SellerAI →](https://www.armes.co.kr/sellerai/studio)
 
@@ -38,7 +38,7 @@ relatedServices: [sellerai]
 - **风格参考：**确定一个整体基调，例如简洁清爽或温暖亲切
 
 <figure class="shot">
-<img src="/projects/sellerai-2.jpg" alt="SellerAI 编辑界面，用商品图片和信息生成详情页" />
+<img src="/projects/sellerai-2.webp" alt="SellerAI 编辑界面，用商品图片和信息生成详情页" />
 <figcaption>整理好图片和信息输入进去，即可生成详情页初稿 —— SellerAI 实际界面</figcaption>
 </figure>
 

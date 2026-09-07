@@ -3,7 +3,7 @@ title: 一篇博客文章登上搜索首页的基本原则
 date: 2026-05-20
 category: SEO
 excerpt: 能排到搜索前列的博客文章都有共同点。这里整理了不依赖复杂技术、人人都能掌握的内容写作基本原则。
-thumbnail: /blog/covers/blog-seo-basics.png
+thumbnail: /blog/covers/blog-seo-basics.webp
 imageAlt: 博客文章登上搜索首页的基本原则
 tags: [博客SEO, 搜索排名, 内容写作, 自然流量]
 relatedServices: []
@@ -14,7 +14,7 @@ relatedServices: []
 值得庆幸的是，能排上搜索前列的文章有明确的**共同点**。而且这些共同点不是复杂的技术，而是任何人都能遵守的**基本原则**。这篇文章将整理登上搜索首页的五大核心原则，同时对比那些不奏效的方法，并配上实际应用示例。
 
 
-![SellerAI 实际界面](/blog/inline/sai-blog-seo-basics.jpg)
+![SellerAI 实际界面](/blog/inline/sai-blog-seo-basics.webp)
 
 > 📱 **SellerAI** — 一张商品照片，即可生成模特上身图、去背图及详情页的AI服务。[了解更多 SellerAI →](https://www.armes.co.kr/sellerai/studio)
 

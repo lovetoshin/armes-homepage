@@ -3,7 +3,7 @@ title: Why ARMES Started an AI Company
 date: 2026-05-07
 category: AI
 excerpt: How the frustrations of working on the ground in distribution eventually became AI services. ARMES shares the story of how it all began.
-thumbnail: /blog/covers/why-armes-ai.png
+thumbnail: /blog/covers/why-armes-ai.webp
 imageAlt: The story of ARMES AI services born from real-world distribution frustrations
 tags: [ARMES, AI company, founding story, automation]
 relatedServices: [sellerai, tools]
@@ -14,7 +14,7 @@ These days, every company talks about "AI." But ARMES didn't start from flashy t
 ARMES's founder spent a long time in the distribution industry. Selling products, meeting customers, doing the same things day after day. Through that experience, one thing became clear: **the time needed for things that actually matter kept getting eaten up by repetitive tasks.** This piece shares how those frustrations became real services, and the principles ARMES works by.
 
 
-![SellerAI actual screen](/blog/inline/sai-why-armes-ai.jpg)
+![SellerAI actual screen](/blog/inline/sai-why-armes-ai.webp)
 
 > 📱 **SellerAI** — An AI service that creates model outfit shots, product cutouts, and detail pages from a single product photo. [Learn more about SellerAI →](https://www.armes.co.kr/sellerai/studio)
 
@@ -32,7 +32,7 @@ Listing a single product takes real effort. Taking photos, cleaning up backgroun
 The key point: these weren't built because "the technology is exciting" — they were built because **"this work kept repeating and it was exhausting."**
 
 <figure class="shot">
-<img src="/blog/inline/armes-apps.png" alt="A collection of app screens from ARMES: SellerAI, TravelMoa, RewardTalk, and CocoPing" />
+<img src="/blog/inline/armes-apps.webp" alt="A collection of app screens from ARMES: SellerAI, TravelMoa, RewardTalk, and CocoPing" />
 <figcaption>Real services born from real-world frustrations — built to reduce daily repetition across shopping, travel, and everyday life</figcaption>
 </figure>
 

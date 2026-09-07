@@ -3,7 +3,7 @@ title: 전환율 높이는 상세페이지 사진 배치 순서
 date: 2026-05-12
 category: 쇼핑
 excerpt: 같은 사진도 어떤 순서로 배치하느냐에 따라 구매율이 달라집니다. 고객의 시선 흐름에 맞춘 상세페이지 사진 배치 순서를 정리했습니다.
-thumbnail: /blog/covers/detail-page-photo-order.png
+thumbnail: /blog/covers/detail-page-photo-order.webp
 imageAlt: 전환율 높이는 상세페이지 사진 배치 순서
 tags: [상세페이지, 사진 배치, 전환율, 쇼핑몰 운영]
 relatedServices: [sellerai]
@@ -14,7 +14,7 @@ relatedServices: [sellerai]
 이유는 단순합니다. 고객은 상세페이지를 **위에서 아래로 훑으며 점점 마음을 정하기** 때문입니다. 그 시선 흐름과 사진 순서가 어긋나면, 살 사람도 중간에 떠납니다. 이 글에서는 고객의 마음 흐름에 맞춘 배치 순서와, 자주 하는 실수까지 정리합니다.
 
 
-![SellerAI 실제 화면](/blog/inline/sai-detail-page-photo-order.jpg)
+![SellerAI 실제 화면](/blog/inline/sai-detail-page-photo-order.webp)
 
 > 📱 **SellerAI** — 상품 사진 한 장으로 모델 착용컷·누끼·상세페이지까지 만드는 AI 서비스. [SellerAI 자세히 보기 →](https://www.armes.co.kr/sellerai/studio)
 
@@ -33,8 +33,8 @@ relatedServices: [sellerai]
 확인 단계용 사진(치수표·소재)을 맨 위에 두면, 고객은 호감을 느끼기도 전에 정보 폭탄을 맞고 떠납니다.
 
 <figure class="shots">
-<img src="/projects/sellerai-3.jpg" alt="대표·착용컷으로 첫인상을 잡은 상세페이지 이미지 예시" />
-<img src="/projects/sellerai-1.jpg" alt="여러 각도의 상세·연출컷 구성 예시" />
+<img src="/projects/sellerai-3.webp" alt="대표·착용컷으로 첫인상을 잡은 상세페이지 이미지 예시" />
+<img src="/projects/sellerai-1.webp" alt="여러 각도의 상세·연출컷 구성 예시" />
 <figcaption>대표컷으로 각인 → 다양한 각도의 컷으로 확신 — 순서가 곧 설득의 흐름입니다 (SellerAI 이미지 예시)</figcaption>
 </figure>
 

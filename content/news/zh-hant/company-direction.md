@@ -3,7 +3,7 @@ title: ARMES 確立以解決日常不便的生活服務公司為發展方向
 date: 2026-06-20
 category: 공지
 excerpt: ARMES 明確了以解決日常不便的生活服務公司為定位，運用數據、自動化與位置技術，打造貼近現實生活的服務產品。
-thumbnail: /news/armes-cover.png
+thumbnail: /news/armes-cover.webp
 imageAlt: ARMES 標誌 — 生活服務公司
 tags: [公司動態, 生活服務, 業務方向, 公告]
 ---
@@ -30,7 +30,7 @@ ARMES 並非研究技術本身的公司，而是一家**將數據、自動化與
 
 ## 代表寄語
 
-![ARMES 代表 申志漢](/news/ceo-banner.png)
+![ARMES 代表 申志漢](/news/ceo-banner.webp)
 
 > "在流通行業深耕 16 年，我看到的不是什麼炫目的技術，而是每天周而復始、令人疲憊的重複性工作。ARMES 就是一家幫人們減輕這些負擔的公司。技術不是目的，而是工具。我們深信，技術唯有真正觸及現實生活，才具有意義。"
 >

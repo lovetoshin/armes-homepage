@@ -3,7 +3,7 @@ title: How to Build a Product Detail Page with AI — A Beginner's Guide
 date: 2026-05-18
 category: AI
 excerpt: Even with zero design experience, you can create a product detail page using AI. This step-by-step guide walks you through everything from what you need to the finished result.
-thumbnail: /blog/covers/ai-detail-page-beginner.png
+thumbnail: /blog/covers/ai-detail-page-beginner.webp
 imageAlt: Step-by-step beginner guide to creating an online store detail page with AI
 tags: [AI detail page, create detail page, online store, beginner guide]
 relatedServices: [sellerai]
@@ -14,7 +14,7 @@ The product detail page is where online sales are won or lost. Two listings with
 Fortunately, AI tools today cut this process down dramatically. But you need to let go of the fantasy that "just pressing a button will produce a finished page." The accurate picture is: **you decide what to say, and AI handles the labor of making it.** This guide breaks down the flow from preparation to completion in clear steps — no design experience required.
 
 
-![SellerAI screenshot](/blog/inline/sai-ai-detail-page-beginner.jpg)
+![SellerAI screenshot](/blog/inline/sai-ai-detail-page-beginner.webp)
 
 > 📱 **SellerAI** — An AI service that turns a single product photo into model shots, cutouts, and full detail pages. [Learn more about SellerAI →](https://www.armes.co.kr/sellerai/studio)
 
@@ -38,7 +38,7 @@ Even when you use AI, deciding *what* to say and *in what order* is something on
 - **Tone reference:** One mood direction, such as clean and minimal or warm and friendly
 
 <figure class="shot">
-<img src="/projects/sellerai-2.jpg" alt="SellerAI editing screen composing a detail page from product photos and information" />
+<img src="/projects/sellerai-2.webp" alt="SellerAI editing screen composing a detail page from product photos and information" />
 <figcaption>Feed in your organized photos and information to get a draft layout — SellerAI in action</figcaption>
 </figure>
 

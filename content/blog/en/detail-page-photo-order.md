@@ -3,7 +3,7 @@ title: The Photo Order That Boosts Conversion on Product Detail Pages
 date: 2026-05-12
 category: 쇼핑
 excerpt: The same set of photos can produce very different purchase rates depending on how you arrange them. Here's how to sequence product images to match the way customers make up their minds.
-thumbnail: /blog/covers/detail-page-photo-order.png
+thumbnail: /blog/covers/detail-page-photo-order.webp
 imageAlt: Photo arrangement order that improves conversion on product detail pages
 tags: [product detail page, photo arrangement, conversion rate, online store tips]
 relatedServices: [sellerai]
@@ -14,7 +14,7 @@ It happens all the time: a seller invests in great product photos and still can'
 The reason is straightforward. Customers scroll a product detail page **top to bottom, gradually forming a decision.** When the photo sequence fights that mental flow, even willing buyers drop off before reaching the buy button. This post covers the right sequence for product images, matched to how customers actually think — along with the most common mistakes to avoid.
 
 
-![SellerAI app screenshot](/blog/inline/sai-detail-page-photo-order.jpg)
+![SellerAI app screenshot](/blog/inline/sai-detail-page-photo-order.webp)
 
 > 📱 **SellerAI** — An AI service that turns a single product photo into model shots, cutout images, and full detail pages. [Learn more about SellerAI →](https://www.armes.co.kr/sellerai/studio)
 
@@ -33,8 +33,8 @@ When someone opens a product detail page, their inner monologue follows roughly 
 Putting verification content (size charts, material specs) at the top means customers hit an information wall before they've even formed an emotional connection — and they leave.
 
 <figure class="shots">
-<img src="/projects/sellerai-3.jpg" alt="Example detail page leading with a hero and lifestyle shot for a strong first impression" />
-<img src="/projects/sellerai-1.jpg" alt="Example of a multi-angle detail and lifestyle photo composition" />
+<img src="/projects/sellerai-3.webp" alt="Example detail page leading with a hero and lifestyle shot for a strong first impression" />
+<img src="/projects/sellerai-1.webp" alt="Example of a multi-angle detail and lifestyle photo composition" />
 <figcaption>Lead with the hero shot → build conviction with varied angles — the sequence is the persuasion (SellerAI image examples)</figcaption>
 </figure>
 

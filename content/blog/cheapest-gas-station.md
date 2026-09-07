@@ -3,7 +3,7 @@ title: 우리 동네 최저가 주유소 찾는 법
 date: 2026-06-15
 category: 주유
 excerpt: 기름값이 부담될 때, 내 주변에서 가장 싼 주유소를 찾고 주유비를 더 아끼는 방법을 정리했습니다.
-thumbnail: /blog/covers/cheapest-gas-station.png
+thumbnail: /blog/covers/cheapest-gas-station.webp
 imageAlt: 우리 동네 최저가 주유소 찾는 법
 tags: [최저가 주유소, 기름값, 주유 할인, 셀프주유소]
 relatedServices: [rewardtalk]
@@ -14,7 +14,7 @@ relatedServices: [rewardtalk]
 문제는 "어디가 싼지 매번 확인하기가 귀찮다"는 데 있습니다. 그래서 대부분 늘 가던 주유소에 습관적으로 들어갑니다. 실제로 출퇴근길 주유소들의 가격표를 며칠만 눈여겨보면, 큰길가 눈에 잘 띄는 곳보다 한 블록 안쪽 주유소가 더 싼 경우가 흔하다는 걸 알게 됩니다. 이 글에서는 내 주변 최저가 주유소를 빠르게 찾는 법과, 같은 주유소에서도 더 싸게 넣는 실전 방법을 정리합니다.
 
 
-![리워드톡 실제 화면](/blog/inline/svc-rewardtalk.jpg)
+![리워드톡 실제 화면](/blog/inline/svc-rewardtalk.webp)
 
 > 📱 **리워드톡** — 내 주변 매장 할인·적립·공동구매를 잇는 로컬 멤버십 플랫폼. [리워드톡 자세히 보기 →](/projects/rewardtalk)
 
@@ -32,8 +32,8 @@ relatedServices: [rewardtalk]
 여러 곳을 따로 켤 필요 없이, 한 화면에서 거리와 가격을 같이 보는 게 가장 편합니다.
 
 <figure class="shots">
-<img src="/projects/rewardtalk-2.jpg" alt="내 주변 생활 정보를 한곳에 모아 보여주는 RewardTalk 홈 화면" />
-<img src="/projects/rewardtalk-1.jpg" alt="주변 매장·혜택 목록을 보여주는 RewardTalk 화면" />
+<img src="/projects/rewardtalk-2.webp" alt="내 주변 생활 정보를 한곳에 모아 보여주는 RewardTalk 홈 화면" />
+<img src="/projects/rewardtalk-1.webp" alt="주변 매장·혜택 목록을 보여주는 RewardTalk 화면" />
 <figcaption>내 위치 기준으로 주변 매장·생활 정보를 한곳에 — 아르메스가 준비 중인 RewardTalk 화면</figcaption>
 </figure>
 

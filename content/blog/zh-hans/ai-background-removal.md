@@ -3,7 +3,7 @@ title: 不用 Photoshop，1分钟用 AI 抠图（去除背景）的方法
 date: 2026-04-27
 category: AI
 excerpt: 即使不会 Photoshop，也能用 AI 将背景去除得干干净净。本文整理了抠图原理，以及避免结果凌乱的实用技巧。
-thumbnail: /blog/covers/ai-background-removal.png
+thumbnail: /blog/covers/ai-background-removal.webp
 imageAlt: 不用 Photoshop，用 AI 去除图片背景的方法
 tags: [抠图, 去除背景, AI 图片编辑, 商品摄影]
 relatedServices: [sellerai]
@@ -14,7 +14,7 @@ relatedServices: [sellerai]
 过去，抠图需要用 Photoshop 的钢笔工具一点一点描边，一张图动辄几分钟，遇到头发更要十几分钟。如今，AI 能在 1 分钟内完成同样的工作。不过，**并非所有照片都能得到干净的效果。**本文将介绍抠图原理、与人工处理的实际成本和时间对比，以及避免结果杂乱的实用技巧。
 
 
-![SellerAI 实际界面截图](/blog/inline/sai-ai-background-removal.jpg)
+![SellerAI 实际界面截图](/blog/inline/sai-ai-background-removal.webp)
 
 > 📱 **SellerAI** — 只需一张商品图，即可生成模特穿搭图、抠图及详情页的 AI 服务。[了解更多 SellerAI →](https://www.armes.co.kr/sellerai/studio)
 
@@ -27,7 +27,7 @@ relatedServices: [sellerai]
 AI 根据学习到的视觉规律，**判断哪里是主体、哪里是背景**，并自动描绘边界——这和人类用钢笔工具描边是同一件事，只是 AI 在瞬间完成。**主体与背景的色彩和明暗对比越明显，结果就越干净。**反之，如果两者颜色相近（比如白色衣物配白色背景），AI 同样会判断困难。
 
 <figure class="shot">
-<img src="/projects/sellerai-3.jpg" alt="SellerAI 界面展示去除背景后清晰的商品与模特图像" />
+<img src="/projects/sellerai-3.webp" alt="SellerAI 界面展示去除背景后清晰的商品与模特图像" />
 <figcaption>去除背景后，商品与人物更加清晰突出 —— SellerAI 处理示例</figcaption>
 </figure>
 

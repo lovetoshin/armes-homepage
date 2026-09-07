@@ -3,7 +3,7 @@ title: How to Prepare Great Product Photos for Your Online Store
 date: 2026-04-28
 category: 쇼핑
 excerpt: The essentials to get right before you shoot your product photos. Small details make a big difference in purchase decisions.
-thumbnail: /blog/covers/product-photo-tips.png
+thumbnail: /blog/covers/product-photo-tips.webp
 imageAlt: A guide to taking great product photos for your online store
 tags: [product photography, online store, Naver Smart Store, photo tips, seller guide]
 relatedServices: [sellerai]
@@ -14,7 +14,7 @@ For sellers in the online marketplace, your photos are essentially **the first i
 The good news: great product photos don't require expensive gear. Master just four fundamentals — **lighting, background, composition, and editing** — and you can take photos that sell, using nothing but your smartphone. This guide covers those four essentials, plus tips for cutting down your shooting time.
 
 
-![SellerAI screenshot](/blog/inline/sai-product-photo-tips.jpg)
+![SellerAI screenshot](/blog/inline/sai-product-photo-tips.webp)
 
 > 📱 **SellerAI** — An AI service that turns a single product photo into model shots, background-removed images, and full detail pages. [Learn more about SellerAI →](https://www.armes.co.kr/sellerai/studio)
 
@@ -44,8 +44,8 @@ Take front, side, and detail shots all at **the same distance and angle**, and y
 Over-edited photos lead to **returns and negative reviews**. Cranking up the saturation to make photos look vibrant on screen means customers will feel deceived when the product arrives. Adjust brightness and color balance to match real life, and stop there.
 
 <figure class="shots">
-<img src="/projects/sellerai-2.jpg" alt="SellerAI editing interface showing background removal and product cleanup" />
-<img src="/projects/sellerai-3.jpg" alt="Example output of cleaned product and model shots" />
+<img src="/projects/sellerai-2.webp" alt="SellerAI editing interface showing background removal and product cleanup" />
+<img src="/projects/sellerai-3.webp" alt="Example output of cleaned product and model shots" />
 <figcaption>If shooting is a challenge, SellerAI can handle background cleanup and model shots from a single photo — saving you significant time</figcaption>
 </figure>
 

@@ -3,7 +3,7 @@ title: 電動車充電站查詢指南 —— 快充與慢充比較
 date: 2026-06-15
 category: 전기차
 excerpt: 介紹如何快速找到電動車充電站、快充與慢充的差異，以及節省充電費用的實用技巧。
-thumbnail: /blog/covers/ev-charger-finder.png
+thumbnail: /blog/covers/ev-charger-finder.webp
 imageAlt: 電動車充電站查詢與快充慢充比較
 tags: [電動車充電站, 快速充電, 慢速充電, 充電費用, 電動車]
 relatedServices: [rewardtalk]
@@ -14,7 +14,7 @@ relatedServices: [rewardtalk]
 其實只要養成**提前找好充電站、出發前確認空位、費用和狀態**的習慣，大多數煩惱都能迎刃而解。本文將一次說清楚：快充和慢充有什麼差異、怎麼快速找到充電站、選充電 App 時該看什麼，以及節省充電費用的實用技巧。
 
 
-![RewardTalk 實際介面截圖](/blog/inline/svc-rewardtalk.jpg)
+![RewardTalk 實際介面截圖](/blog/inline/svc-rewardtalk.webp)
 
 > 📱 **RewardTalk** — 整合周邊門市折扣、點數回饋與團購的在地會員平台。[了解 RewardTalk →](/projects/rewardtalk)
 

@@ -3,7 +3,7 @@ title: 網路商店商品拍照，這樣準備才對
 date: 2026-04-28
 category: 쇼핑
 excerpt: 拍商品照片前需要掌握的基本功。微小的差距，往往決定顧客的購買意願。
-thumbnail: /blog/covers/product-photo-tips.png
+thumbnail: /blog/covers/product-photo-tips.webp
 imageAlt: 網路商店商品拍照技巧指南
 tags: [商品攝影, 網路商店, Naver 智慧商城, 拍照技巧, 賣家指南]
 relatedServices: [sellerai]
@@ -14,7 +14,7 @@ relatedServices: [sellerai]
 好消息是：拍出好商品照片並不需要昂貴的設備。只要掌握**光線、背景、構圖、後製**四項基本功，用手機也能拍出賣得動的照片。本文整理這四項要點，並附上縮短拍攝時間的方法。
 
 
-![SellerAI 實際畫面截圖](/blog/inline/sai-product-photo-tips.jpg)
+![SellerAI 實際畫面截圖](/blog/inline/sai-product-photo-tips.webp)
 
 > 📱 **SellerAI** — 一張商品照片，即可生成模特兒穿搭圖、去背圖和商品詳情頁的 AI 服務。[深入了解 SellerAI →](https://www.armes.co.kr/sellerai/studio)
 
@@ -44,8 +44,8 @@ relatedServices: [sellerai]
 色彩調整太誇張會帶來**退貨和負評**。為了在螢幕上好看而大幅提高飽和度，顧客收到商品後會覺得「和圖片不一樣」。安全的做法是只調整亮度和色彩平衡，讓照片接近實物即可。
 
 <figure class="shots">
-<img src="/projects/sellerai-2.jpg" alt="SellerAI 編輯介面——對商品圖片進行背景整理和修飾" />
-<img src="/projects/sellerai-3.jpg" alt="整理後的商品圖和穿搭圖效果範例" />
+<img src="/projects/sellerai-2.webp" alt="SellerAI 編輯介面——對商品圖片進行背景整理和修飾" />
+<img src="/projects/sellerai-3.webp" alt="整理後的商品圖和穿搭圖效果範例" />
 <figcaption>如果拍攝有困難，SellerAI 可以用一張圖片完成背景處理和穿搭圖，大幅節省時間</figcaption>
 </figure>
 

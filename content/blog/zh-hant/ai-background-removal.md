@@ -3,7 +3,7 @@ title: 不用 Photoshop，1分鐘用 AI 去背（移除背景）的方法
 date: 2026-04-27
 category: AI
 excerpt: 即使不會 Photoshop，也能用 AI 將背景去除得乾淨俐落。本文整理了去背原理，以及避免結果雜亂的實用技巧。
-thumbnail: /blog/covers/ai-background-removal.png
+thumbnail: /blog/covers/ai-background-removal.webp
 imageAlt: 不用 Photoshop，用 AI 移除圖片背景的方法
 tags: [去背, 移除背景, AI 影像編輯, 商品攝影]
 relatedServices: [sellerai]
@@ -14,7 +14,7 @@ relatedServices: [sellerai]
 過去，去背需要用 Photoshop 的鋼筆工具一點一點描邊，一張圖動輒幾分鐘，遇到頭髮更要十幾分鐘。如今，AI 能在 1 分鐘內完成同樣的工作。不過，**並非所有照片都能得到乾淨的效果。**本文將介紹去背原理、與人工處理的實際成本和時間對比，以及避免結果雜亂的實用技巧。
 
 
-![SellerAI 實際介面截圖](/blog/inline/sai-ai-background-removal.jpg)
+![SellerAI 實際介面截圖](/blog/inline/sai-ai-background-removal.webp)
 
 > 📱 **SellerAI** — 只需一張商品圖，即可生成模特兒穿搭圖、去背圖及詳情頁的 AI 服務。[瞭解更多 SellerAI →](https://www.armes.co.kr/sellerai/studio)
 
@@ -27,7 +27,7 @@ relatedServices: [sellerai]
 AI 根據學習到的視覺規律，**判斷哪裡是主體、哪裡是背景**，並自動描繪邊界——這和人類用鋼筆工具描邊是同一件事，只是 AI 在瞬間完成。**主體與背景的色彩和明暗對比越明顯，結果就越乾淨。**反之，若兩者顏色相近（例如白色衣物配白色背景），AI 同樣難以判斷。
 
 <figure class="shot">
-<img src="/projects/sellerai-3.jpg" alt="SellerAI 介面展示去除背景後清晰的商品與模特兒影像" />
+<img src="/projects/sellerai-3.webp" alt="SellerAI 介面展示去除背景後清晰的商品與模特兒影像" />
 <figcaption>去除背景後，商品與人物更加清晰突出 —— SellerAI 處理範例</figcaption>
 </figure>
 

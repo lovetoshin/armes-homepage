@@ -3,7 +3,7 @@ title: 什麼是 URL 編碼？解決亂碼網址問題
 date: 2026-04-27
 category: 생산성도구
 excerpt: 網址裡出現 %20 這樣的奇怪字元，或者中文網址傳送後顯示亂碼。本文用簡單易懂的方式解釋 URL 編碼是什麼，以及如何解決這些問題。
-thumbnail: /blog/covers/url-encoder.png
+thumbnail: /blog/covers/url-encoder.webp
 imageAlt: URL 編碼是什麼以及如何解決亂碼網址
 tags: [URL 編碼, URL 解碼, 網址亂碼, 開發者工具]
 relatedServices: [tools]

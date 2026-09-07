@@ -3,7 +3,7 @@ title: Base64 編碼與解碼輕鬆理解
 date: 2026-04-25
 category: 생산성도구
 excerpt: Base64 是什麼、為什麼使用，以及如何進行編碼和解碼——用非技術人員也能看懂的語言清晰講解。
-thumbnail: /blog/covers/base64-guide.png
+thumbnail: /blog/covers/base64-guide.webp
 imageAlt: 輕鬆理解 Base64 編碼與解碼
 tags: [Base64, 編碼, 解碼, 開發者工具]
 relatedServices: [tools]

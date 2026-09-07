@@ -3,7 +3,7 @@ title: Base64 Encoding & Decoding Made Simple
 date: 2026-04-25
 category: 생산성도구
 excerpt: What Base64 is, why it exists, how encoding and decoding work — explained clearly enough for non-developers to understand.
-thumbnail: /blog/covers/base64-guide.png
+thumbnail: /blog/covers/base64-guide.webp
 imageAlt: Base64 encoding and decoding made simple
 tags: [Base64, encoding, decoding, developer tools]
 relatedServices: [tools]

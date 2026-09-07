@@ -3,7 +3,7 @@ title: 无需安装的免费图像转换工具
 date: 2026-06-23
 category: 생산성도구
 excerpt: 介绍如何在浏览器中直接完成图像格式转换和压缩，无需安装任何软件，同时整理了安全使用的技巧。
-thumbnail: /blog/covers/free-image-converter.png
+thumbnail: /blog/covers/free-image-converter.webp
 imageAlt: 无需安装、在浏览器中直接使用的免费图像转换工具
 tags: [图像转换, 文件格式转换, 免费工具, 图像压缩]
 relatedServices: [tools]

@@ -3,7 +3,7 @@ title: 자주 쓰는 온라인 텍스트·개발자 도구 모음
 date: 2026-06-17
 category: 생산성도구
 excerpt: 설치 없이 브라우저에서 바로 쓰는 텍스트·개발자용 도구를 용도별로 모았습니다. 일과 공부의 작은 반복을 줄여 줍니다.
-thumbnail: /blog/covers/online-dev-text-tools.png
+thumbnail: /blog/covers/online-dev-text-tools.webp
 imageAlt: 설치 없이 쓰는 온라인 텍스트 개발자 도구 모음
 tags: [온라인 도구, 텍스트 도구, 개발자 도구, 생산성]
 relatedServices: [tools]

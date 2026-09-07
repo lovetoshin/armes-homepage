@@ -3,7 +3,7 @@ title: Free Image Converter — No Installation Required
 date: 2026-06-23
 category: 생산성도구
 excerpt: How to convert image formats and compress file sizes directly in your browser without installing any software, plus tips for staying safe while doing it.
-thumbnail: /blog/covers/free-image-converter.png
+thumbnail: /blog/covers/free-image-converter.webp
 imageAlt: Free image converter tools you can use in your browser without installing anything
 tags: [image converter, file conversion, free tools, image compression]
 relatedServices: [tools]

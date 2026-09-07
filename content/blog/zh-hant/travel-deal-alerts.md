@@ -3,7 +3,7 @@ title: 如何不錯過旅遊特價與優惠
 date: 2026-05-25
 category: 여행
 excerpt: 好的旅遊特價轉瞬即逝。本文整理了特價出現的時機，以及如何設置提醒、搶先抓住優惠的方法。
-thumbnail: /blog/covers/travel-deal-alerts.png
+thumbnail: /blog/covers/travel-deal-alerts.webp
 imageAlt: 接收旅遊特價提醒、不錯過任何優惠的方法
 tags: [旅遊特價, 機票特價, 旅遊提醒, 尾單特賣]
 relatedServices: [travelmoa]
@@ -14,7 +14,7 @@ relatedServices: [travelmoa]
 這裡說的「準備」是一種系統，而不是運氣。了解特價為什麼出現、什麼時候出現，設置好提醒，保持出行日期的彈性——具備這三點，你就能比別人更頻繁地搶到好價格。本文就來詳細介紹這些方法。
 
 
-![TravelMoa 實際介面](/blog/inline/svc-travelmoa.jpg)
+![TravelMoa 實際介面](/blog/inline/svc-travelmoa.webp)
 
 > 📱 **TravelMoa** — 將分散各處的旅遊特價和機票匯聚一處，方便比較的旅遊平台。[查看 TravelMoa 詳情 →](/projects/travelmoa)
 
@@ -37,8 +37,8 @@ relatedServices: [travelmoa]
 這些都不是絕對規律，關鍵在於「**頻繁但有效率地**」關注特價——這正是設置提醒的意義所在。
 
 <figure class="shots">
-<img src="/projects/travelmoa-2.jpg" alt="TravelMoa 詳情頁面，顯示旅遊產品價格和特價資訊" />
-<img src="/projects/travelmoa-3.jpg" alt="TravelMoa 整理並展示旅遊資訊的介面" />
+<img src="/projects/travelmoa-2.webp" alt="TravelMoa 詳情頁面，顯示旅遊產品價格和特價資訊" />
+<img src="/projects/travelmoa-3.webp" alt="TravelMoa 整理並展示旅遊資訊的介面" />
 <figcaption>提前登記目標航線，價格下降時即時收到通知，無需每天手動搜尋 — TravelMoa 介面</figcaption>
 </figure>
 

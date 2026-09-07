@@ -3,7 +3,7 @@ title: 提升商品详情页转化率的图片排列顺序
 date: 2026-05-12
 category: 쇼핑
 excerpt: 同样的图片，排列顺序不同，购买率可能大相径庭。本文整理了符合顾客决策心理的详情页图片排列方法。
-thumbnail: /blog/covers/detail-page-photo-order.png
+thumbnail: /blog/covers/detail-page-photo-order.webp
 imageAlt: 提升详情页转化率的图片排列顺序
 tags: [商品详情页, 图片排列, 转化率, 网店运营]
 relatedServices: [sellerai]
@@ -14,7 +14,7 @@ relatedServices: [sellerai]
 原因很简单：顾客浏览详情页时，是**从上往下逐渐形成购买决定的**。如果图片顺序与这一心理流程背道而驰，即便有购买意向的人也可能中途离开。本文将介绍符合顾客决策心理的图片排列顺序，以及常见的排列失误。
 
 
-![SellerAI 实际界面截图](/blog/inline/sai-detail-page-photo-order.jpg)
+![SellerAI 实际界面截图](/blog/inline/sai-detail-page-photo-order.webp)
 
 > 📱 **SellerAI** — 只需一张商品图，即可生成模特上身效果图、抠图及完整详情页的 AI 服务。[了解 SellerAI →](https://www.armes.co.kr/sellerai/studio)
 
@@ -33,8 +33,8 @@ relatedServices: [sellerai]
 如果把尺码表、材质说明等确认类图片放在最上面，顾客还没来得及产生好感，就会被信息淹没，直接离开。
 
 <figure class="shots">
-<img src="/projects/sellerai-3.jpg" alt="以主图和上身效果图开头，抓住第一印象的详情页示例" />
-<img src="/projects/sellerai-1.jpg" alt="包含多角度细节图和场景图的详情页构成示例" />
+<img src="/projects/sellerai-3.webp" alt="以主图和上身效果图开头，抓住第一印象的详情页示例" />
+<img src="/projects/sellerai-1.webp" alt="包含多角度细节图和场景图的详情页构成示例" />
 <figcaption>主图建立印象 → 多角度图增强信心 —— 顺序就是说服的逻辑（SellerAI 图片示例）</figcaption>
 </figure>
 

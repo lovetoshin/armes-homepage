@@ -3,7 +3,7 @@ title: Google SEO vs Naver SEO，有什麼區別？
 date: 2026-06-09
 category: SEO
 excerpt: Google 和 Naver 呈現搜尋結果的方式截然不同。本文梳理了兩者的核心差異，以及針對各自特點的內容寫作策略。
-thumbnail: /blog/covers/google-vs-naver-seo.png
+thumbnail: /blog/covers/google-vs-naver-seo.webp
 imageAlt: Google SEO 與 Naver SEO 對比
 tags: [SEO, Google SEO, Naver SEO, 搜尋排名, 搜尋曝光]
 relatedServices: []
@@ -14,7 +14,7 @@ relatedServices: []
 在韓國經營部落格或網站，幾乎不可能只顧一家。好在只要搞清楚兩者差異的原理，「在哪裡該優化什麼」就會清晰許多。本文一次性梳理 Google 和 Naver 各自的優先展示邏輯、對應的寫作策略，以及兩者都適用的通用原則。
 
 
-![SellerAI 實際介面](/blog/inline/sai-google-vs-naver-seo.jpg)
+![SellerAI 實際介面](/blog/inline/sai-google-vs-naver-seo.webp)
 
 > 📱 **SellerAI** — 用一張商品圖，自動生成模特兒上身圖、去背圖及詳情頁的AI服務。[查看 SellerAI 詳情 →](https://www.armes.co.kr/sellerai/studio)
 

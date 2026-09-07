@@ -3,7 +3,7 @@ title: 后三国人物关系一览——甄萱、弓裔、王建
 date: 2026-06-16
 category: 후삼국지
 excerpt: 以"入门玩家选择第一个阵营"的视角，整理了引领后三国时代的三位核心人物甄萱、弓裔、王建的特点与战略风格。
-thumbnail: /blog/covers/hoosamguk-characters.png
+thumbnail: /blog/covers/hoosamguk-characters.webp
 imageAlt: 后三国人物甄萱、弓裔、王建关系整理
 tags: [后三国, 甄萱, 弓裔, 王建, 策略模拟]
 relatedServices: [hoosamgukji]
@@ -14,7 +14,7 @@ relatedServices: [hoosamgukji]
 所以本文不是历史教科书式的讲解，而是以**"入门玩家选择第一个阵营的指南"**视角来介绍三位人物。分别看各阵营的优势与劣势、适合哪种玩法，以及他们在真实历史中如何交锋。了解阵营的特性，第一局会有趣得多。
 
 
-![后三国志实际游戏界面](/blog/inline/hsg-characters.jpg)
+![后三国志实际游戏界面](/blog/inline/hsg-characters.webp)
 
 > 📱 **后三国志** — 以韩国后三国时代为背景的策略模拟游戏。[查看后三国志详情 →](/projects/hoosamgukji)
 

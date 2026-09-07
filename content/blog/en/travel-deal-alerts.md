@@ -3,7 +3,7 @@ title: How to Never Miss a Travel Deal
 date: 2026-05-25
 category: 여행
 excerpt: Great travel deals disappear in an instant. Here's a breakdown of when deals drop and how to use alerts to catch them before they're gone.
-thumbnail: /blog/covers/travel-deal-alerts.png
+thumbnail: /blog/covers/travel-deal-alerts.webp
 imageAlt: How to get travel deal alerts and never miss them
 tags: [travel deals, flight deals, travel alerts, last-minute deals]
 relatedServices: [travelmoa]
@@ -14,7 +14,7 @@ relatedServices: [travelmoa]
 By "prepared," we mean a system, not luck. Knowing why and when deals appear, setting up alerts, and keeping your dates flexible — with these three things in place, you'll catch prices others miss far more often. This guide breaks it all down.
 
 
-![TravelMoa actual screen](/blog/inline/svc-travelmoa.jpg)
+![TravelMoa actual screen](/blog/inline/svc-travelmoa.webp)
 
 > 📱 **TravelMoa** — A travel platform that aggregates scattered deals and flights in one place for easy comparison. [Learn more about TravelMoa →](/projects/travelmoa)
 
@@ -37,8 +37,8 @@ Travel deals generally have one of these backgrounds. In other words, deals come
 There are no hard rules. The key is to check "**frequently, but efficiently**" — and that's exactly what alerts are for.
 
 <figure class="shots">
-<img src="/projects/travelmoa-2.jpg" alt="TravelMoa detail screen showing travel product prices and deals" />
-<img src="/projects/travelmoa-3.jpg" alt="TravelMoa screen organizing and displaying travel information" />
+<img src="/projects/travelmoa-2.webp" alt="TravelMoa detail screen showing travel product prices and deals" />
+<img src="/projects/travelmoa-3.webp" alt="TravelMoa screen organizing and displaying travel information" />
 <figcaption>Register your target routes and get notified when prices drop — no need to search every day — TravelMoa screens</figcaption>
 </figure>
 

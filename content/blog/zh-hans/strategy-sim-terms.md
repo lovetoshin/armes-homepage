@@ -3,7 +3,7 @@ title: 策略模拟游戏入门必知术语大全
 date: 2026-05-27
 category: 후삼국지
 excerpt: 第一次打开策略模拟游戏就被术语劝退？本文从新手视角，把内政、外交、战斗三大模块的核心词汇用大白话讲清楚，让你第一局就能顺利上手。
-thumbnail: /blog/covers/strategy-sim-terms.png
+thumbnail: /blog/covers/strategy-sim-terms.webp
 imageAlt: 策略模拟游戏入门术语大全
 tags: [策略模拟, 游戏术语, 新手入门, 战略游戏, SLG]
 relatedServices: [hoosamgukji]
@@ -14,7 +14,7 @@ relatedServices: [hoosamgukji]
 所以这篇文章专门写给刚打开策略模拟游戏的新手——把最常碰到的基础术语，按内政、外交、战斗三个模块分类，结合游戏实际画面和操作来解释。搞懂这些，第一局就能顺利玩下去。
 
 
-![后三国志实际游戏截图](/blog/inline/hsg-strategy.jpg)
+![后三国志实际游戏截图](/blog/inline/hsg-strategy.webp)
 
 > 📱 **后三国志** — 以韩国后三国时代为背景的策略模拟游戏。[了解后三国志 →](/projects/hoosamgukji)
 

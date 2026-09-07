@@ -3,7 +3,7 @@ title: 电动汽车充电费用省钱攻略：时段与会员的选择
 date: 2026-05-25
 category: 전기차
 excerpt: 电动汽车的充电费用因时段和会员资格而有较大差异。本文整理了如何利用低谷时段和选择合适会员来降低充电成本的实用方法。
-thumbnail: /blog/covers/ev-charging-cost-saving.png
+thumbnail: /blog/covers/ev-charging-cost-saving.webp
 imageAlt: 通过时段和会员策略节省电动汽车充电费用
 tags: [电动汽车充电费用, 充电会员, 低谷充电, 新能源车使用成本]
 relatedServices: [rewardtalk]
@@ -14,7 +14,7 @@ relatedServices: [rewardtalk]
 要充分享受电动汽车的低成本优势，就需要了解充电费用的构成，并**把最划算的组合变成习惯**。本文将重点介绍影响充电费用的因素、如何利用低谷时段、如何选择会员，以及养成目的地充电习惯的实用建议。
 
 
-![RewardTalk 实际界面截图](/blog/inline/svc-rewardtalk.jpg)
+![RewardTalk 实际界面截图](/blog/inline/svc-rewardtalk.webp)
 
 > 📱 **RewardTalk** — 整合周边门店折扣、积分与团购的本地会员平台。[了解 RewardTalk →](/projects/rewardtalk)
 

@@ -3,7 +3,7 @@ title: WebP 변환 — 무엇이고 어떻게 바꾸나
 date: 2026-05-19
 category: 생산성도구
 excerpt: 요즘 웹에서 자주 보이는 WebP 형식. 무엇이고 왜 쓰는지, JPG·PNG에서 어떻게 바꾸고 반대로 되돌리는지 정리했습니다.
-thumbnail: /blog/covers/webp-convert.png
+thumbnail: /blog/covers/webp-convert.webp
 imageAlt: WebP 형식 변환하는 법과 장단점
 tags: [WebP 변환, WebP 형식, 이미지 변환, 웹 이미지]
 relatedServices: [tools]

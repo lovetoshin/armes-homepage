@@ -3,7 +3,7 @@ title: JPG vs PNG — Differences and How to Convert Between Them
 date: 2026-05-11
 category: 생산성도구
 excerpt: When should you use JPG, and when PNG? Here's a clear breakdown of the differences, when to convert between the two, and what to watch out for.
-thumbnail: /blog/covers/jpg-png-convert.png
+thumbnail: /blog/covers/jpg-png-convert.webp
 imageAlt: JPG vs PNG — differences and how to convert
 tags: [JPG PNG conversion, JPG, PNG, image format]
 relatedServices: [tools]

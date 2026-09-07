@@ -3,7 +3,7 @@ title: 이미지 변환 — 형식 바꾸기 한눈에 정리
 date: 2026-05-22
 category: 생산성도구
 excerpt: HEIC·PNG·JPG·WebP까지, 이미지 형식이 헷갈린다면. 각 형식의 차이와 무엇으로 바꿔야 하는지 용도별로 정리했습니다.
-thumbnail: /blog/covers/image-convert.png
+thumbnail: /blog/covers/image-convert.webp
 imageAlt: 이미지 형식 변환 용도별 정리
 tags: [이미지 변환, 이미지 형식, HEIC 변환, 파일 변환]
 relatedServices: [tools]

@@ -3,7 +3,7 @@ title: The Best Time and Day to Buy Cheap Flights — A Complete Guide
 date: 2026-06-12
 category: 여행
 excerpt: A clear breakdown of how airline prices move and when — and on which day — to book for the best deal.
-thumbnail: /blog/covers/cheap-flight-timing.png
+thumbnail: /blog/covers/cheap-flight-timing.webp
 imageAlt: Complete guide to the best time and day to buy cheap flights
 tags: [cheap flights, how to save on airfare, flight deals, flight booking tips]
 relatedServices: [travelmoa]
@@ -14,7 +14,7 @@ Same flight, same seat — yet the person next to you paid 100,000 won less. It'
 This post covers everything in one place: why flight prices keep changing, the best times and days to book, and practical strategies to actually save money. There's no "guaranteed formula," but there are clear ways to tip the odds in your favor.
 
 
-![TravelMoa actual screen](/blog/inline/svc-travelmoa.jpg)
+![TravelMoa actual screen](/blog/inline/svc-travelmoa.webp)
 
 > 📱 **TravelMoa** — A travel platform that aggregates flight deals and travel specials in one place for easy comparison. [Learn more about TravelMoa →](/projects/travelmoa)
 
@@ -46,8 +46,8 @@ The key: **don't book too close to departure, but don't book so far out that dis
 Generally, departing midweek (Tuesday/Wednesday) or on a red-eye or late-night flight is cheaper. But this is a tendency, not a rule — **the most important habit is comparing across a few days of flexibility.**
 
 <figure class="shots">
-<img src="/projects/travelmoa-1.jpg" alt="TravelMoa listing screen showing travel destinations and products side by side" />
-<img src="/projects/travelmoa-2.jpg" alt="TravelMoa detail screen showing travel product pricing" />
+<img src="/projects/travelmoa-1.webp" alt="TravelMoa listing screen showing travel destinations and products side by side" />
+<img src="/projects/travelmoa-2.webp" alt="TravelMoa detail screen showing travel product pricing" />
 <figcaption>Compare multiple travel options and prices in one place — TravelMoa by ARMES</figcaption>
 </figure>
 

@@ -3,7 +3,7 @@ title: 휴대폰 사진 용량 줄이는 방법 — 화질은 지키고 저장�
 date: 2026-06-03
 category: 생산성도구
 excerpt: '''저장공간 부족'' 알림에 시달린다면. 화질을 크게 해치지 않고 휴대폰 사진 용량을 줄이는 방법을 단계별로 정리했습니다.'
-thumbnail: /blog/covers/reduce-phone-photo-size.png
+thumbnail: /blog/covers/reduce-phone-photo-size.webp
 imageAlt: 휴대폰 사진 용량 줄이는 방법
 tags: [사진 용량 줄이기, 저장공간 부족, 사진 압축, 휴대폰 정리]
 relatedServices: [photosort]

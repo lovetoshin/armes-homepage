@@ -3,7 +3,7 @@ title: Southeast Asia Package Tour vs. Independent Travel — A Real Cost Compar
 date: 2026-05-04
 category: 여행
 excerpt: Even for the same Southeast Asia trip, the cost structure of package tours and independent travel differs greatly. We break down actual costs item by item and help you figure out which works best for your travel style.
-thumbnail: /blog/covers/package-vs-free-travel.png
+thumbnail: /blog/covers/package-vs-free-travel.webp
 imageAlt: Cost comparison of Southeast Asia package tours vs. independent travel
 tags: [package tour, independent travel, Southeast Asia travel, travel budget]
 relatedServices: [travelmoa]
@@ -14,7 +14,7 @@ When planning a Southeast Asia trip, the very first fork in the road is "should 
 The real question isn't "which is cheaper?" — it's understanding **"how the cost structures differ."** That understanding lets you make the right choice for your itinerary, travel companions, and personal preferences. This article compares the two options item by item and helps you figure out which style suits which kind of traveler.
 
 
-![TravelMoa actual screen](/blog/inline/svc-travelmoa.jpg)
+![TravelMoa actual screen](/blog/inline/svc-travelmoa.webp)
 
 > 📱 **TravelMoa** — A travel platform that gathers scattered travel deals and flight tickets in one place for easy comparison. [Learn more about TravelMoa →](/projects/travelmoa)
 
@@ -26,8 +26,8 @@ Package tours and independent travel don't just differ in price — they differ 
 - **Independent travel:** Everything is booked separately. You have more freedom, but if you book poorly, individual items can cost more.
 
 <figure class="shots">
-<img src="/projects/travelmoa-1.jpg" alt="TravelMoa listing screen showing travel packages aggregated for comparison" />
-<img src="/projects/travelmoa-2.jpg" alt="TravelMoa detail screen showing travel package pricing" />
+<img src="/projects/travelmoa-1.webp" alt="TravelMoa listing screen showing travel packages aggregated for comparison" />
+<img src="/projects/travelmoa-2.webp" alt="TravelMoa detail screen showing travel package pricing" />
 <figcaption>Whether you go package or independent, comparing multiple options in one place is the starting point of saving money — TravelMoa screens</figcaption>
 </figure>
 

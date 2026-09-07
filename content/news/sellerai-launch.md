@@ -3,7 +3,7 @@ title: SellerAI 정식 서비스 오픈
 date: 2026-06-10
 category: 서비스 출시
 excerpt: 상품 사진 한 장이면 AI 모델 착용컷·누끼·상세페이지까지. 쇼핑몰 셀러를 위한 이미지 자동화 웹서비스 SellerAI가 정식 오픈했습니다.
-thumbnail: /news/sellerai-main.png
+thumbnail: /news/sellerai-main.webp
 imageAlt: 셀러AI 메인 화면 — 상품 사진만 올리면 모델 착용컷과 상세페이지 자동 생성
 tags: [SellerAI, AI 상품 이미지, 상세페이지 자동화, 서비스 출시]
 relatedServices: [sellerai]
@@ -17,7 +17,7 @@ relatedServices: [sellerai]
 
 행거컷·마네킹컷 같은 평범한 상품 사진을 올리면, AI가 **모델이 직접 착용한 사진**으로 바꿔 줍니다. 모델 섭외나 스튜디오 촬영 없이 감성 착용컷을 만들 수 있어, 촬영에 들던 비용과 시간을 크게 줄입니다.
 
-![상품 사진(왼쪽)을 올리면 AI 모델 착용컷(오른쪽)이 완성됩니다](/news/sellerai/wear.jpg)
+![상품 사진(왼쪽)을 올리면 AI 모델 착용컷(오른쪽)이 완성됩니다](/news/sellerai/wear.webp)
 
 *왼쪽 상품 사진 → 오른쪽 AI 모델 착용컷*
 
@@ -25,13 +25,13 @@ relatedServices: [sellerai]
 
 서연·다인·윤아·채아 등 **브랜드 전속 AI 모델**을 골라 쓸 수 있습니다. 같은 모델로 계속 촬영하면, 상품마다 분위기가 제각각이던 문제를 없애고 **브랜드 톤을 일정하게** 유지할 수 있습니다. 성인·키즈 모델 모두 지원합니다.
 
-![서연·다인·윤아·채아 등 브랜드 전속 AI 모델](/news/sellerai/models.jpg)
+![서연·다인·윤아·채아 등 브랜드 전속 AI 모델](/news/sellerai/models.webp)
 
 ## 3. 제품 단독컷을 다양한 각도로
 
 상품 사진 한 장으로 **고스트샷(투명 마네킹 효과)**, 45도 측면컷 등 쇼핑몰에 바로 쓰는 단독컷을 자동으로 만듭니다. 의류뿐 아니라 신발·가방 같은 잡화도 가능합니다.
 
-![원피스 원본에서 고스트샷·45도 측면컷까지 자동 생성](/news/sellerai/single.jpg)
+![원피스 원본에서 고스트샷·45도 측면컷까지 자동 생성](/news/sellerai/single.webp)
 
 *원본 → 고스트샷 정면 → 45도 측면*
 
@@ -39,7 +39,7 @@ relatedServices: [sellerai]
 
 복잡한 배경의 상품 사진도 클릭 한 번으로 **깔끔하게 누끼**를 땁니다. 포토샵을 다루지 않아도 됩니다.
 
-![수영복 원본 사진에서 배경을 제거한 누끼 결과](/news/sellerai/cutout.jpg)
+![수영복 원본 사진에서 배경을 제거한 누끼 결과](/news/sellerai/cutout.webp)
 
 *원본 → 배경 제거(누끼) 완성*
 
@@ -47,7 +47,7 @@ relatedServices: [sellerai]
 
 옷 하나만 촬영해도 **색상을 바꿔 여러 컬러 상품컷**을 만들 수 있습니다. 같은 옷을 색깔별로 다시 찍을 필요가 없습니다.
 
-![같은 상품의 색상을 블랙에서 아이보리로 변경](/news/sellerai/color.jpg)
+![같은 상품의 색상을 블랙에서 아이보리로 변경](/news/sellerai/color.webp)
 
 *블랙 원본 → 아이보리 컬러 변경*
 
@@ -55,7 +55,7 @@ relatedServices: [sellerai]
 
 중국 1688·알리익스프레스 상세페이지의 **외국어를 한국어로 번역**해, 해외 소싱 상품을 그대로 활용할 수 있습니다. 이미지 속 글자까지 자연스럽게 바꿔 줍니다.
 
-![외국어 상세 이미지를 한국어로 번역한 결과](/news/sellerai/translate.jpg)
+![외국어 상세 이미지를 한국어로 번역한 결과](/news/sellerai/translate.webp)
 
 *외국어 원본 → 한국어 변환*
 
@@ -63,7 +63,7 @@ relatedServices: [sellerai]
 
 상품 정보와 원하는 분위기만 입력하면 **쿠팡·스마트스토어용 상세페이지**를 통째로 만들어 줍니다. 브랜드 소개 → 제품 특징 → 모델컷 → 디테일컷 → 컬러·사이즈 안내까지, 구성과 카피를 AI가 잡아 주어 상세페이지 외주에 들던 시간을 아낍니다.
 
-![브랜드 소개·제품 특징·컬러 안내까지 자동 구성된 상세페이지](/news/sellerai/detailpage.jpg)
+![브랜드 소개·제품 특징·컬러 안내까지 자동 구성된 상세페이지](/news/sellerai/detailpage.webp)
 
 *제품 특징 · 모델컷 · 컬러/사이즈 등 단계별 자동 구성*
 

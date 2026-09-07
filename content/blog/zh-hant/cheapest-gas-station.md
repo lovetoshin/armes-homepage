@@ -3,7 +3,7 @@ title: 如何找到附近最便宜的加油站
 date: 2026-06-15
 category: 주유
 excerpt: 油價讓你感到壓力時，這裡整理了如何找到附近最便宜的加油站，以及進一步節省油費的實用方法。
-thumbnail: /blog/covers/cheapest-gas-station.png
+thumbnail: /blog/covers/cheapest-gas-station.webp
 imageAlt: 如何找到附近最便宜的加油站
 tags: [最便宜加油站, 油價, 加油優惠, 自助加油]
 relatedServices: [rewardtalk]
@@ -14,7 +14,7 @@ relatedServices: [rewardtalk]
 問題在於「每次都去確認太麻煩了」。所以大多數人都習慣性地開進老熟悉的加油站。這篇文章整理了如何快速找到附近最低價加油站，以及在找到之後進一步節省油費的實用方法。
 
 
-![RewardTalk 實際畫面](/blog/inline/svc-rewardtalk.jpg)
+![RewardTalk 實際畫面](/blog/inline/svc-rewardtalk.webp)
 
 > 📱 **RewardTalk** — 連結附近門市折扣、積點和團購的在地會員制平台。[了解更多 RewardTalk →](/projects/rewardtalk)
 
@@ -32,8 +32,8 @@ relatedServices: [rewardtalk]
 不需要分別開啟多個應用程式，在一個畫面上同時看距離和價格是最方便的。
 
 <figure class="shots">
-<img src="/projects/rewardtalk-2.jpg" alt="將附近生活資訊彙集一處展示的RewardTalk首頁畫面" />
-<img src="/projects/rewardtalk-1.jpg" alt="顯示周邊門市和優惠列表的RewardTalk畫面" />
+<img src="/projects/rewardtalk-2.webp" alt="將附近生活資訊彙集一處展示的RewardTalk首頁畫面" />
+<img src="/projects/rewardtalk-1.webp" alt="顯示周邊門市和優惠列表的RewardTalk畫面" />
 <figcaption>以我的位置為基準，將周邊門市·生活資訊彙集一處 — ARMES正在開發的RewardTalk畫面</figcaption>
 </figure>
 

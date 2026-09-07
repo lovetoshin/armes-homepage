@@ -3,7 +3,7 @@ title: 实体店店主的本地SEO入门指南
 date: 2026-05-04
 category: SEO
 excerpt: 当附近的顾客搜索"附近的OO"时，你的店铺会出现吗？本文用店主能看懂的语言，整理了本地SEO的基础知识和实操要点。
-thumbnail: /blog/covers/local-seo-guide.png
+thumbnail: /blog/covers/local-seo-guide.webp
 imageAlt: 实体店店主的本地SEO入门指南
 tags: [本地SEO, 实体店, 地图曝光, 门店营销]
 relatedServices: [rewardtalk]
@@ -13,7 +13,7 @@ relatedServices: [rewardtalk]
 
 **让你的店铺在搜索和地图上被更多人看到，这就是本地SEO要做的事。** 好消息是，这不是烧钱打广告，而是店主自己就能上手的基础工作。本文将用店主的视角，介绍本地SEO与普通SEO有何不同、最先该做什么、真实的门店案例，以及如何将搜索来的新顾客变成回头客。
 
-![RewardTalk实际界面](/blog/inline/svc-rewardtalk.jpg)
+![RewardTalk实际界面](/blog/inline/svc-rewardtalk.webp)
 
 > 📱 **RewardTalk** — 连接周边门店与顾客的本地会员平台，集折扣、积分、团购于一体。[了解更多关于RewardTalk →](/projects/rewardtalk)
 

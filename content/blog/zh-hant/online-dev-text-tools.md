@@ -3,7 +3,7 @@ title: 常用線上文字與開發者工具合集
 date: 2026-06-17
 category: 生產性道具
 excerpt: 依用途整理了免安裝、直接在瀏覽器使用的文字與開發者工具，幫你省去工作和學習中的重複操作。
-thumbnail: /blog/covers/online-dev-text-tools.png
+thumbnail: /blog/covers/online-dev-text-tools.webp
 imageAlt: 免安裝即可使用的線上文字開發者工具合集
 tags: [線上工具, 文字工具, 開發者工具, 生產力提升]
 relatedServices: [tools]

@@ -3,7 +3,7 @@ title: 쇼핑몰 상품 사진, 이렇게 준비하면 좋습니다
 date: 2026-04-28
 category: 쇼핑
 excerpt: 상품 사진을 찍기 전에 챙기면 좋은 기본기를 정리했습니다. 작은 차이가 구매 결정을 바꿉니다.
-thumbnail: /blog/covers/product-photo-tips.png
+thumbnail: /blog/covers/product-photo-tips.webp
 imageAlt: 쇼핑몰 상품 사진 잘 찍는 법 가이드
 tags: [상품 사진, 쇼핑몰, 스마트스토어, 사진 촬영]
 relatedServices: [sellerai]
@@ -14,7 +14,7 @@ relatedServices: [sellerai]
 다행히 좋은 상품 사진은 비싼 장비의 문제가 아닙니다. **빛·배경·구도·보정** 네 가지 기본기만 챙기면, 휴대폰으로도 충분히 팔리는 사진을 찍을 수 있습니다. 이 글에서는 그 기본기와, 촬영 시간을 줄이는 방법까지 정리합니다.
 
 
-![SellerAI 실제 화면](/blog/inline/sai-product-photo-tips.jpg)
+![SellerAI 실제 화면](/blog/inline/sai-product-photo-tips.webp)
 
 > 📱 **SellerAI** — 상품 사진 한 장으로 모델 착용컷·누끼·상세페이지까지 만드는 AI 서비스. [SellerAI 자세히 보기 →](https://www.armes.co.kr/sellerai/studio)
 
@@ -44,8 +44,8 @@ relatedServices: [sellerai]
 실제 색과 너무 다른 보정은 **반품과 별점 테러**로 돌아옵니다. 화면에서 예뻐 보이려고 채도를 확 올리면, 받아 본 고객은 "사진과 다르다"고 느낍니다. 밝기와 색 균형 정도만 맞추는 게 안전합니다.
 
 <figure class="shots">
-<img src="/projects/sellerai-2.jpg" alt="상품 사진을 다듬고 배경을 정리하는 SellerAI 편집 화면" />
-<img src="/projects/sellerai-3.jpg" alt="정리된 상품·착용 이미지 결과 예시" />
+<img src="/projects/sellerai-2.webp" alt="상품 사진을 다듬고 배경을 정리하는 SellerAI 편집 화면" />
+<img src="/projects/sellerai-3.webp" alt="정리된 상품·착용 이미지 결과 예시" />
 <figcaption>촬영이 어려우면 한 장으로 배경 정리·착용컷까지 — SellerAI로 시간을 줄일 수 있습니다</figcaption>
 </figure>
 

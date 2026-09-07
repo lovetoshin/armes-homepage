@@ -3,7 +3,7 @@ title: 3 Things to Know When Creating AI Detail Pages
 date: 2026-05-11
 category: AI
 excerpt: Small habits that lift the quality of AI-generated detail pages — a practical guide for sellers who already know the basics.
-thumbnail: /blog/covers/ai-detail-page-guide.png
+thumbnail: /blog/covers/ai-detail-page-guide.webp
 imageAlt: Guide to creating better product detail pages with AI
 tags: [AI detail page, detail page creation, AI for e-commerce, online store]
 relatedServices: [sellerai]
@@ -14,7 +14,7 @@ We're in an era where AI can build detail pages for you. Here's the interesting 
 This guide assumes you already know [the basic flow of building a detail page with AI](/blog/ai-detail-page-beginner). Going one layer deeper, it covers the three key factors that raise the bar on your output and the things most commonly missed in real-world use.
 
 
-![SellerAI screenshot](/blog/inline/sai-ai-detail-page-guide.jpg)
+![SellerAI screenshot](/blog/inline/sai-ai-detail-page-guide.webp)
 
 > 📱 **SellerAI** — An AI service that turns a single product photo into model shots, cutouts, and full detail pages. [Learn more about SellerAI →](https://www.armes.co.kr/sellerai/studio)
 
@@ -31,7 +31,7 @@ This guide assumes you already know [the basic flow of building a detail page wi
 AI builds from the photos you give it. **Feed it blurry or underexposed photos, and the result will be exactly that blurry and underexposed.** "Garbage in, garbage out" applies directly here. Start with the best original you have. If the background is messy, clean it up with [AI background removal](/blog/ai-background-removal) first. For model wearing shots, use [How to Create Model Shots with AI](/blog/ai-model-cut). Photography fundamentals are in [How to Prepare Product Photos for Your Online Store](/blog/product-photo-tips).
 
 <figure class="shot">
-<img src="/projects/sellerai-4.jpg" alt="SellerAI screen showing multiple product images unified in consistent tone" />
+<img src="/projects/sellerai-4.webp" alt="SellerAI screen showing multiple product images unified in consistent tone" />
 <figcaption>With good originals and consistent tone, multiple products read as a single brand — SellerAI in action</figcaption>
 </figure>
 

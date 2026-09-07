@@ -3,7 +3,7 @@ title: Turning Points in Korean History — Through the Lens of Later Three King
 date: 2026-05-08
 category: 후삼국지
 excerpt: The pivotal moments that shifted the balance of power in Korea's Later Three Kingdoms period, revisited through the eyes of a strategy game beginner encountering critical decision points.
-thumbnail: /blog/covers/hoosamguk-key-moments.png
+thumbnail: /blog/covers/hoosamguk-key-moments.webp
 imageAlt: Turning points in Korean history through the Later Three Kingdoms
 tags: [Later Three Kingdoms, strategy simulation, founding of Goryeo, game introduction]
 relatedServices: [hoosamgukji]
@@ -14,7 +14,7 @@ The real thrill of a strategy simulation game comes down to one moment: a single
 Rather than walking through history as a timeline, this guide revisits the decisive moments of the Later Three Kingdoms period from the angle of **"what would you have done if this were a game fork?"** By connecting each moment to a gameplay judgment — internal development, popular support, combat, diplomacy — events that lived only in textbooks come alive as something you can feel.
 
 
-![Later Three Kingdoms actual game screen](/blog/inline/hsg-keymoments.jpg)
+![Later Three Kingdoms actual game screen](/blog/inline/hsg-keymoments.webp)
 
 > 📱 **후삼국지 (Later Three Kingdoms)** — A strategy simulation game set in Korea's Later Three Kingdoms era. [Learn more →](/projects/hoosamgukji)
 

@@ -3,7 +3,7 @@ title: 설치 없이 쓰는 무료 이미지 변환 도구
 date: 2026-06-23
 category: 생산성도구
 excerpt: 이미지 형식 변환과 용량 줄이기를 프로그램 설치 없이 브라우저에서 바로 하는 법과, 안전하게 쓰는 요령을 정리했습니다.
-thumbnail: /blog/covers/free-image-converter.png
+thumbnail: /blog/covers/free-image-converter.webp
 imageAlt: 설치 없이 브라우저에서 쓰는 무료 이미지 변환 도구
 tags: [이미지 변환, 파일 변환, 무료 도구, 이미지 압축]
 relatedServices: [tools]

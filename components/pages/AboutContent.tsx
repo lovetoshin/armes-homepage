@@ -104,7 +104,7 @@ export default function AboutContent({ locale = "ko" }: { locale?: Locale }) {
             <div className="w-44 sm:w-48 flex-shrink-0">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/about/ceo.jpg"
+                src="/about/ceo.webp"
                 alt={t.founderPhotoAlt}
                 className="w-full h-auto rounded-2xl border border-[#E5E8EB] object-cover block shadow-[0_4px_20px_rgba(49,130,246,0.10)]"
               />

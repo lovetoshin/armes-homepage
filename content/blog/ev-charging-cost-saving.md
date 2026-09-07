@@ -3,7 +3,7 @@ title: 전기차 충전요금 아끼는 시간대·멤버십 정리
 date: 2026-05-25
 category: 전기차
 excerpt: 전기차 충전요금은 시간대와 멤버십에 따라 꽤 달라집니다. 충전비를 아끼는 시간 활용법과 멤버십 선택 기준을 정리했습니다.
-thumbnail: /blog/covers/ev-charging-cost-saving.png
+thumbnail: /blog/covers/ev-charging-cost-saving.webp
 imageAlt: 전기차 충전요금 아끼는 시간대와 멤버십 정리
 tags: [전기차 충전요금, 충전 멤버십, 심야 충전, 전기차 유지비]
 relatedServices: [rewardtalk]
@@ -14,7 +14,7 @@ relatedServices: [rewardtalk]
 전기차 유지비의 강점을 온전히 누리려면, 충전요금이 어떻게 정해지는지 이해하고 **싼 조합을 습관으로** 만드는 게 핵심입니다. 이 글에서는 충전요금을 결정하는 요소, 시간대를 활용하는 법, 멤버십 고르는 기준, 그리고 목적지 충전 습관까지 실전 위주로 정리합니다.
 
 
-![리워드톡 실제 화면](/blog/inline/svc-rewardtalk.jpg)
+![리워드톡 실제 화면](/blog/inline/svc-rewardtalk.webp)
 
 > 📱 **리워드톡** — 내 주변 매장 할인·적립·공동구매를 잇는 로컬 멤버십 플랫폼. [리워드톡 자세히 보기 →](/projects/rewardtalk)
 

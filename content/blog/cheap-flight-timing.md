@@ -3,7 +3,7 @@ title: 항공권 싸게 사는 시점·요일 완벽정리
 date: 2026-06-12
 category: 여행
 excerpt: 항공권 가격이 움직이는 원리와, 언제·무슨 요일에 사면 더 저렴한지 한 번에 정리했습니다.
-thumbnail: /blog/covers/cheap-flight-timing.png
+thumbnail: /blog/covers/cheap-flight-timing.webp
 imageAlt: 항공권 싸게 사는 시점과 요일 정리
 tags: [항공권, 항공권 싸게 사는 법, 여행 특가, 항공권 예약]
 relatedServices: [travelmoa]
@@ -14,7 +14,7 @@ relatedServices: [travelmoa]
 이 글에서는 항공권 가격이 왜 계속 바뀌는지, 언제·무슨 요일에 사면 유리한지, 그리고 실제로 돈을 아끼는 방법까지 한 번에 정리합니다. "절대 공식"은 없지만, 확률을 내 편으로 만드는 기준은 분명히 있습니다.
 
 
-![여행모아 실제 화면](/blog/inline/svc-travelmoa.jpg)
+![여행모아 실제 화면](/blog/inline/svc-travelmoa.webp)
 
 > 📱 **여행모아** — 흩어진 여행 특가와 항공권을 한곳에 모아 비교하는 여행 플랫폼. [여행모아 자세히 보기 →](/projects/travelmoa)
 
@@ -46,8 +46,8 @@ relatedServices: [travelmoa]
 일반적으로 주중(화·수) 출발과 새벽·심야편이 더 쌉니다. 다만 이건 경향일 뿐 절대 공식이 아니므로, **며칠 폭을 두고 비교하는 습관**이 가장 중요합니다.
 
 <figure class="shots">
-<img src="/projects/travelmoa-1.jpg" alt="여행지·상품을 모아 비교해 보여주는 TravelMoa 목록 화면" />
-<img src="/projects/travelmoa-2.jpg" alt="여행 상품 가격을 보여주는 TravelMoa 상세 화면" />
+<img src="/projects/travelmoa-1.webp" alt="여행지·상품을 모아 비교해 보여주는 TravelMoa 목록 화면" />
+<img src="/projects/travelmoa-2.webp" alt="여행 상품 가격을 보여주는 TravelMoa 상세 화면" />
 <figcaption>여러 여행 상품·가격을 한곳에서 비교 — 아르메스의 TravelMoa 화면</figcaption>
 </figure>
 

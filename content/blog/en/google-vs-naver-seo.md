@@ -3,7 +3,7 @@ title: Google SEO vs. Naver SEO — What's the Difference?
 date: 2026-06-09
 category: SEO
 excerpt: Google and Naver rank search results very differently. Here's a breakdown of how they differ and what writing strategies work for each.
-thumbnail: /blog/covers/google-vs-naver-seo.png
+thumbnail: /blog/covers/google-vs-naver-seo.webp
 imageAlt: Comparing Google SEO and Naver SEO
 tags: [SEO, Google SEO, Naver SEO, search ranking, search visibility]
 relatedServices: []
@@ -14,7 +14,7 @@ You write a post, publish it, and it ranks well on Google — but no matter how 
 If you run a blog or website in South Korea, you realistically need to think about both. The good news is that once you understand how they differ, it becomes clear what to optimize where. This guide covers what Google and Naver each prioritize, what writing strategy works for each, and the common principles that work for both.
 
 
-![SellerAI actual screen](/blog/inline/sai-google-vs-naver-seo.jpg)
+![SellerAI actual screen](/blog/inline/sai-google-vs-naver-seo.webp)
 
 > 📱 **SellerAI** — An AI service that turns a single product photo into model shots, background-removed images, and full detail pages. [Learn more about SellerAI →](https://www.armes.co.kr/sellerai/studio)
 

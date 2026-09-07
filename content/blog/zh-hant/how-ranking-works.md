@@ -3,7 +3,7 @@ title: 購物平台熱銷排行是怎麼決定的——排名演算法揭秘
 date: 2026-05-23
 category: 쇼핑
 excerpt: 購物平台上的人氣商品排名，並不是簡單按銷量多少排列的。本文整理了排名的運作原理，以及買家和賣家如何利用這一規律。
-thumbnail: /blog/covers/how-ranking-works.png
+thumbnail: /blog/covers/how-ranking-works.webp
 imageAlt: Coupang和Naver熱銷商品排名的決定原理
 tags: [熱銷商品, 商品排名, 購物演算法, 暢銷榜]
 relatedServices: [rankingpangpang]
@@ -13,7 +13,7 @@ relatedServices: [rankingpangpang]
 
 然而，這裡有一個很大的誤解：**這個排名並不是「按總銷量從高到低排列」的。** 也就是說，歷史累計銷量第一的商品未必永遠排在最前面。昨天剛上架的新品，有可能超過暢銷了一年的老品。本文將詳細介紹排名的運作原理，以及買家和賣家如何各自加以利用。
 
-![SellerAI實際介面](/blog/inline/sai-how-ranking-works.jpg)
+![SellerAI實際介面](/blog/inline/sai-how-ranking-works.webp)
 
 > 📱 **SellerAI** — 只需一張商品圖，即可生成模特兒上身圖、去背圖和詳情頁的AI服務。[了解更多關於SellerAI →](https://www.armes.co.kr/sellerai/studio)
 
@@ -22,7 +22,7 @@ relatedServices: [rankingpangpang]
 大多數購物平台的排名，是將多種訊號**綜合計算**出來的分數。核心要素如下：
 
 <figure class="shot">
-<img src="/blog/inline/ranking-factors.png" alt="決定搜尋排名的核心要素資訊圖——銷售與轉化、評價、點擊率、相關性" />
+<img src="/blog/inline/ranking-factors.webp" alt="決定搜尋排名的核心要素資訊圖——銷售與轉化、評價、點擊率、相關性" />
 <figcaption>排名是多種訊號綜合而成的評分，並非單一指標</figcaption>
 </figure>
 

@@ -3,7 +3,7 @@ title: WebP Conversion — What It Is and How to Convert
 date: 2026-05-19
 category: 생산성도구
 excerpt: The WebP format is everywhere on the web these days. A clear explanation of what it is, why it's used, how to convert from JPG and PNG, and how to convert back.
-thumbnail: /blog/covers/webp-convert.png
+thumbnail: /blog/covers/webp-convert.webp
 imageAlt: How to convert WebP format and its pros and cons
 tags: [WebP conversion, WebP format, image conversion, web images]
 relatedServices: [tools]

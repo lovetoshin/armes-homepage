@@ -3,7 +3,7 @@ title: 如何找到网购最低价——价格比较App与网站对比
 date: 2026-06-05
 category: 쇼핑
 excerpt: 同样的商品，在不同地方购买价格可能相差悬殊。本文整理了快速找到网购最低价的方法，以及不被"最低价"忽悠的技巧。
-thumbnail: /blog/covers/online-lowest-price.png
+thumbnail: /blog/covers/online-lowest-price.webp
 imageAlt: 如何找到网购最低价及价格比较方法
 tags: [最低价, 价格比较, 网购, 省钱购物]
 relatedServices: [cocoping, rankingpangpang]
@@ -14,7 +14,7 @@ relatedServices: [cocoping, rankingpangpang]
 要真正拿到最低价，需要掌握两件事：① **用实际付款金额而非标价来比较**的方法；② **通过价格走势判断现在是否值得购买**的方法。本文将两者一并整理清楚。
 
 
-![SellerAI实际界面](/blog/inline/sai-online-lowest-price.jpg)
+![SellerAI实际界面](/blog/inline/sai-online-lowest-price.webp)
 
 > 📱 **SellerAI** — 只需一张商品图，即可生成模特穿搭图、抠图和详情页的AI服务。[了解更多 SellerAI →](https://www.armes.co.kr/sellerai/studio)
 
@@ -30,7 +30,7 @@ relatedServices: [cocoping, rankingpangpang]
 因此，要找真正的最低价，必须用**含运费和折扣的实际付款金额**来比较。
 
 <figure class="shot">
-<img src="/blog/inline/price-compare.png" alt="实际付款金额计算公式信息图——商品价格加运费减优惠券和积分" />
+<img src="/blog/inline/price-compare.webp" alt="实际付款金额计算公式信息图——商品价格加运费减优惠券和积分" />
 <figcaption>不要比标价，要用「商品价格 + 运费 − 优惠券与积分 = 实际付款金额」来比较</figcaption>
 </figure>
 

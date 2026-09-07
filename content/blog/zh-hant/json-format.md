@@ -3,7 +3,7 @@ title: JSON格式化（整理）方法——讓壓縮資料一目了然
 date: 2026-05-09
 category: 생산성도구
 excerpt: 當JSON壓縮成難以辨認的一行時，格式化工具就是你的救星。本文用淺顯易懂的方式介紹了JSON格式化的方法，以及如何快速定位常見錯誤。
-thumbnail: /blog/covers/json-format.png
+thumbnail: /blog/covers/json-format.webp
 imageAlt: JSON格式化整理方法
 tags: [JSON格式化, JSON整理, 資料整理, 開發者工具]
 relatedServices: [tools]

@@ -3,7 +3,7 @@ title: 이미지 압축 — 화질 지키며 용량 줄이기
 date: 2026-05-18
 category: 생산성도구
 excerpt: 업로드 용량 제한에 걸렸다면. 화질을 크게 해치지 않고 이미지 용량만 줄이는 압축의 원리와 요령을 정리했습니다.
-thumbnail: /blog/covers/image-compress.png
+thumbnail: /blog/covers/image-compress.webp
 imageAlt: 화질 지키며 이미지 용량 줄이는 압축 방법
 tags: [이미지 압축, 사진 용량 줄이기, 파일 압축, 용량 줄이기]
 relatedServices: [tools]

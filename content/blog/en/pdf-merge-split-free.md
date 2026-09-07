@@ -3,7 +3,7 @@ title: How to Merge & Split PDFs Without Signing Up or Installing Anything
 date: 2026-06-24
 category: 생산성도구
 excerpt: A step-by-step guide to merging and splitting PDFs directly in your browser — no software to install, no account to create — plus tips on handling sensitive PDFs safely.
-thumbnail: /blog/covers/pdf-merge-split-free.png
+thumbnail: /blog/covers/pdf-merge-split-free.webp
 imageAlt: How to merge and split PDFs in the browser without signing up
 tags: [PDF merge, PDF split, online tools, free tools]
 relatedServices: [tools]

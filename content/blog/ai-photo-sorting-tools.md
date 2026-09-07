@@ -3,7 +3,7 @@ title: AI 사진 분류 도구 비교 — 알아서 정리해 주는 도구 고�
 date: 2026-06-01
 category: 생산성도구
 excerpt: 수천 장의 사진을 사람·장소·주제별로 알아서 묶어 주는 AI 사진 분류 도구. 종류와 차이, 고를 때 확인할 점을 정리했습니다.
-thumbnail: /blog/covers/ai-photo-sorting-tools.png
+thumbnail: /blog/covers/ai-photo-sorting-tools.webp
 imageAlt: AI 사진 자동 분류 도구 비교
 tags: [AI 사진 분류, 사진 자동 정리, Vision AI, 사진 관리 도구]
 relatedServices: [photosort]

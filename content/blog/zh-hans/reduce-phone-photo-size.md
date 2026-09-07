@@ -3,7 +3,7 @@ title: 手机照片怎么压缩——画质不损，存储空间立刻释放
 date: 2026-06-03
 category: 생산성도구
 excerpt: 被"存储空间不足"提醒折磨？本文分步骤介绍在不明显损失画质的情况下，轻松压缩手机照片体积的方法。
-thumbnail: /blog/covers/reduce-phone-photo-size.png
+thumbnail: /blog/covers/reduce-phone-photo-size.webp
 imageAlt: 手机照片压缩方法
 tags: [压缩照片, 存储空间不足, 图片压缩, 手机清理, 释放空间]
 relatedServices: [photosort]

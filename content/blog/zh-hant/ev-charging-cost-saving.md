@@ -3,7 +3,7 @@ title: 電動車充電費用省錢攻略：時段與會員的選擇
 date: 2026-05-25
 category: 전기차
 excerpt: 電動車的充電費用因時段和會員資格而有較大差異。本文整理了如何利用離峰時段和選擇合適會員來降低充電成本的實用方法。
-thumbnail: /blog/covers/ev-charging-cost-saving.png
+thumbnail: /blog/covers/ev-charging-cost-saving.webp
 imageAlt: 透過時段和會員策略節省電動車充電費用
 tags: [電動車充電費用, 充電會員, 離峰充電, 電動車使用成本]
 relatedServices: [rewardtalk]
@@ -14,7 +14,7 @@ relatedServices: [rewardtalk]
 要充分享受電動車的低成本優勢，就需要了解充電費用的構成，並**把最划算的組合變成習慣**。本文將重點介紹影響充電費用的因素、如何利用離峰時段、如何選擇會員，以及養成目的地充電習慣的實用建議。
 
 
-![RewardTalk 實際介面截圖](/blog/inline/svc-rewardtalk.jpg)
+![RewardTalk 實際介面截圖](/blog/inline/svc-rewardtalk.webp)
 
 > 📱 **RewardTalk** — 整合周邊門市折扣、點數回饋與團購的在地會員平台。[了解 RewardTalk →](/projects/rewardtalk)
 

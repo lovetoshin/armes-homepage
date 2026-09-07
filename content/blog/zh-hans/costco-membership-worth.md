@@ -3,7 +3,7 @@ title: 开市客(Costco)会员费值回本钱的消费模式
 date: 2026-04-29
 category: 코스트코
 excerpt: 交了年费还能赚到吗？整理了让Costco会员费物有所值的消费模式和盈亏计算方法。
-thumbnail: /blog/covers/costco-membership-worth.png
+thumbnail: /blog/covers/costco-membership-worth.webp
 imageAlt: 开市客(Costco)会员年费物有所值的消费模式
 tags: [Costco会员, 年费, 高性价比购物, 回本]
 relatedServices: [cocoping]
@@ -14,7 +14,7 @@ relatedServices: [cocoping]
 造成差异的是消费模式。这篇文章将整理计算盈亏的方法、让会费回本的4种消费模式，以及坦诚地告诉你"不适合办会员的情况"。
 
 
-![CocoPing 实际界面](/blog/inline/svc-cocoping.jpg)
+![CocoPing 实际界面](/blog/inline/svc-cocoping.webp)
 
 > 📱 **CocoPing** — 一眼掌握附近Costco折扣信息和价格变动的购物助手。[了解更多 CocoPing →](/projects/cocoping)
 
@@ -27,8 +27,8 @@ relatedServices: [cocoping]
 这里的"节省金额"是指在Costco购买与在其他地方购买同一商品时的**差额**。这就是为什么按单价比较的习惯很重要。单价比较方法已整理在[在Costco挑选高性价比商品的标准](/blog/costco-best-value-items)中。
 
 <figure class="shots">
-<img src="/projects/cocoping-1.jpg" alt="追踪关注商品价格并通知的CocoPing界面" />
-<img src="/projects/cocoping-2.jpg" alt="整理了Costco品目价格信息的CocoPing界面" />
+<img src="/projects/cocoping-1.webp" alt="追踪关注商品价格并通知的CocoPing界面" />
+<img src="/projects/cocoping-2.webp" alt="整理了Costco品目价格信息的CocoPing界面" />
 <figcaption>记录关注品目的价格走势，"省了多少"就一目了然 — CocoPing界面</figcaption>
 </figure>
 

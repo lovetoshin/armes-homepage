@@ -3,7 +3,7 @@ title: PDF Conversion — How to Convert to Word, Image, or HWP
 date: 2026-05-29
 category: 생산성도구
 excerpt: A guide to converting PDF files to Word, image, or HWP documents — and vice versa. Includes tips for converting safely in your browser without installing any software.
-thumbnail: /blog/covers/pdf-convert.png
+thumbnail: /blog/covers/pdf-convert.webp
 imageAlt: How to convert PDF to Word or image
 tags: [PDF conversion, PDF to Word, PDF to image, document conversion]
 relatedServices: [tools]

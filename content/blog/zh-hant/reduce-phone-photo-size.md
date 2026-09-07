@@ -3,7 +3,7 @@ title: 手機照片怎麼壓縮——畫質不損，儲存空間立刻釋放
 date: 2026-06-03
 category: 생산성도구
 excerpt: 被「儲存空間不足」提醒折磨？本文分步驟介紹在不明顯損失畫質的情況下，輕鬆壓縮手機照片大小的方法。
-thumbnail: /blog/covers/reduce-phone-photo-size.png
+thumbnail: /blog/covers/reduce-phone-photo-size.webp
 imageAlt: 手機照片壓縮方法
 tags: [壓縮照片, 儲存空間不足, 圖片壓縮, 手機清理, 釋放空間]
 relatedServices: [photosort]

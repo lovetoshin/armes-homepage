@@ -3,7 +3,7 @@ title: 如何整理照片——輕鬆管理堆積如山的圖片
 date: 2026-06-10
 category: 생산성도구
 excerpt: 如果幾千張照片堆積如山，不知從何下手，這篇文章就是為你準備的。介紹一次性整理照片並保持整齊的實用方法。
-thumbnail: /blog/covers/photo-organizing-tips.png
+thumbnail: /blog/covers/photo-organizing-tips.webp
 imageAlt: 如何整理堆積的照片
 tags: [照片整理, 照片管理, 相簿整理, 照片備份]
 relatedServices: [photosort]

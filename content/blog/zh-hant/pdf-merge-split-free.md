@@ -3,7 +3,7 @@ title: 免帳號，免費合併與拆分PDF的方法
 date: 2026-06-24
 category: 생산성도구
 excerpt: 免安裝軟體、免註冊帳號，直接在瀏覽器中合併和拆分PDF的逐步教學，以及安全處理敏感PDF檔案的注意事項。
-thumbnail: /blog/covers/pdf-merge-split-free.png
+thumbnail: /blog/covers/pdf-merge-split-free.webp
 imageAlt: 免帳號，在瀏覽器中合併和拆分PDF的方法
 tags: [PDF合併, PDF拆分, 線上工具, 免費工具]
 relatedServices: [tools]

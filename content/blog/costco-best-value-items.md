@@ -3,7 +3,7 @@ title: 코스트코 가성비 필수템 고르는 기준
 date: 2026-05-15
 category: 코스트코
 excerpt: 코스트코에서 진짜 가성비 좋은 상품을 고르는 기준을 정리했습니다. 대용량의 함정을 피하고 단가로 따지는 법을 다룹니다.
-thumbnail: /blog/covers/costco-best-value-items.png
+thumbnail: /blog/covers/costco-best-value-items.webp
 imageAlt: 코스트코 가성비 필수템 고르는 기준
 tags: [코스트코, 가성비, 단가 비교, 대용량 쇼핑]
 relatedServices: [cocoping]
@@ -14,7 +14,7 @@ relatedServices: [cocoping]
 그래서 코스트코를 제대로 쓰려면 "여긴 다 싸다"는 믿음을 버리고, **무엇이 진짜 가성비인지 가르는 기준**을 가져야 합니다. 이 글에서는 단가로 따지는 법, 가성비 좋은 카테고리와 조심할 카테고리, 그리고 사기 전 체크리스트까지 정리합니다.
 
 
-![코코핑 실제 화면](/blog/inline/svc-cocoping.jpg)
+![코코핑 실제 화면](/blog/inline/svc-cocoping.webp)
 
 > 📱 **코코핑** — 내 주변 코스트코 할인정보와 가격 변동을 한눈에 보는 쇼핑 도우미. [코코핑 자세히 보기 →](/projects/cocoping)
 
@@ -23,8 +23,8 @@ relatedServices: [cocoping]
 코스트코의 가장 큰 함정은 대용량입니다. "한 통에 만 원"이 싸 보여도, 같은 양을 동네에서 나눠 사면 더 쌀 수 있습니다. 그래서 비교는 항상 **100g당·1개당·1L당 단가**로 해야 합니다. 매장 가격표에도 단위당 가격이 작게 적혀 있으니 그 숫자를 보는 습관을 들이세요.
 
 <figure class="shots">
-<img src="/projects/cocoping-2.jpg" alt="코스트코 관심 품목 가격을 정리해 보여주는 CocoPing 화면" />
-<img src="/projects/cocoping-1.jpg" alt="관심 상품 가격 변동을 알려주는 CocoPing 알림 화면" />
+<img src="/projects/cocoping-2.webp" alt="코스트코 관심 품목 가격을 정리해 보여주는 CocoPing 화면" />
+<img src="/projects/cocoping-1.webp" alt="관심 상품 가격 변동을 알려주는 CocoPing 알림 화면" />
 <figcaption>관심 품목의 단가·가격 흐름을 기록해 두면 '대용량이라 싸 보일 뿐'인 상품이 걸러집니다 — CocoPing 화면</figcaption>
 </figure>
 

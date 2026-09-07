@@ -3,7 +3,7 @@ title: How to Check Costco's Weekly Deals
 date: 2026-06-19
 category: 코스트코
 excerpt: Learn how to check Costco's weekly discounts in advance, decode the signals hidden in price tags, and develop smarter shopping habits.
-thumbnail: /blog/covers/costco-weekly-deals.png
+thumbnail: /blog/covers/costco-weekly-deals.webp
 imageAlt: How to check Costco's weekly discount items
 tags: [Costco, Costco deals, weekly discounts, warehouse shopping]
 relatedServices: [cocoping]
@@ -14,7 +14,7 @@ Costco is fundamentally different from other retailers in one key way: **prices 
 The problem is that Costco doesn't publish a clean, comprehensive list of all discounted items. So savvy shoppers have developed their own methods to find out **what's cheap this week** before they ever leave home. This post covers how to get ahead of the weekly deals, how to read the signals hidden in Costco's price tags, and how to build habits that keep impulse spending in check.
 
 
-![CocoPing app screenshot](/blog/inline/svc-cocoping.jpg)
+![CocoPing app screenshot](/blog/inline/svc-cocoping.webp)
 
 > 📱 **CocoPing** — A shopping companion that shows you nearby Costco deals and price changes at a glance. [Learn more about CocoPing →](/projects/cocoping)
 
@@ -29,8 +29,8 @@ The problem is that Costco doesn't publish a clean, comprehensive list of all di
 The most efficient approach is **to register items you want and get notified when the price drops.** No more trawling forums every week — you'll automatically know when the thing you've been eyeing goes on sale.
 
 <figure class="shots">
-<img src="/projects/cocoping-1.jpg" alt="CocoPing notification screen showing a price drop alert for a tracked item" />
-<img src="/projects/cocoping-2.jpg" alt="CocoPing screen displaying price information for tracked Costco items" />
+<img src="/projects/cocoping-1.webp" alt="CocoPing notification screen showing a price drop alert for a tracked item" />
+<img src="/projects/cocoping-2.webp" alt="CocoPing screen displaying price information for tracked Costco items" />
 <figcaption>Register your items and get notified when prices fall — CocoPing, coming from ARMES</figcaption>
 </figure>
 

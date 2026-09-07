@@ -3,7 +3,7 @@ title: 2026年免费AI图像生成工具全整理
 date: 2026-06-01
 category: AI
 excerpt: 按用途梳理了无需付费即可使用的AI图像生成与编辑工具，并总结了选择免费工具时必须核实的5个关键点。
-thumbnail: /blog/covers/free-ai-image-tools.png
+thumbnail: /blog/covers/free-ai-image-tools.webp
 imageAlt: 2026年免费AI图像生成工具整理
 tags: [免费AI工具, AI图像生成, 图像编辑, AI应用]
 relatedServices: [sellerai]
@@ -14,7 +14,7 @@ AI 图像工具种类繁多，不知道从哪里入手是很正常的事。更�
 所以选择免费工具，不该问**"它免费吗"，而该问"它真的能用于我的场景吗"**。本文将介绍免费 AI 图像工具的用途分类方式、选择时必须核实的 5 个要点，以及无论用哪款工具都能左右结果的通用原则。
 
 
-![SellerAI 实际界面](/blog/inline/sai-free-ai-image-tools.jpg)
+![SellerAI 实际界面](/blog/inline/sai-free-ai-image-tools.webp)
 
 > 📱 **SellerAI** — 用一张商品图，自动生成模特上身图、抠图及详情页的AI服务。[查看 SellerAI 详情 →](https://www.armes.co.kr/sellerai/studio)
 
@@ -58,7 +58,7 @@ AI 图像工具种类繁多，不知道从哪里入手是很正常的事。更�
 偶尔用几张，免费工具完全够用。但如果需要**每天大批量制作商品图**，次数和水印限制会不断阻碍工作，最终花费更多时间。到了这个阶段，就该考虑付费或专业工具了。
 
 <figure class="shot">
-<img src="/projects/sellerai-1.jpg" alt="SellerAI 批量生成多张商品图的结果界面" />
+<img src="/projects/sellerai-1.webp" alt="SellerAI 批量生成多张商品图的结果界面" />
 <figcaption>需要频繁、大量制作商品图时，能在一个流程中完成抠图、生成、详情页的工具可以大幅节省时间——SellerAI 界面</figcaption>
 </figure>
 

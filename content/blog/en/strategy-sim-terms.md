@@ -3,7 +3,7 @@ title: Strategy Simulation Games — A Beginner's Glossary
 date: 2026-05-27
 category: 후삼국지
 excerpt: If you've just booted up your first strategy sim and feel lost in a wall of unfamiliar terms, this guide breaks down the core vocabulary — domestic management, diplomacy, and combat — from a new player's perspective.
-thumbnail: /blog/covers/strategy-sim-terms.png
+thumbnail: /blog/covers/strategy-sim-terms.webp
 imageAlt: A beginner's glossary for strategy simulation games
 tags: [strategy simulation, game terminology, beginner guide, 4X game, grand strategy]
 relatedServices: [hoosamgukji]
@@ -14,7 +14,7 @@ Strategy simulation games have incredible depth — but that depth comes with a 
 This guide is designed for players opening a strategy sim for the first time. It breaks down the most common terms into three categories — domestic management, diplomacy, and combat — and explains how each one connects to what you actually see on screen. Get through this, and your first playthrough will actually make sense.
 
 
-![Hoosamgukji game screenshot](/blog/inline/hsg-strategy.jpg)
+![Hoosamgukji game screenshot](/blog/inline/hsg-strategy.webp)
 
 > 📱 **Hoosamgukji** — A strategy simulation game set during Korea's Later Three Kingdoms period. [Learn more about Hoosamgukji →](/projects/hoosamgukji)
 

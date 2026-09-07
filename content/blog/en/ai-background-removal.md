@@ -3,7 +3,7 @@ title: Remove Backgrounds in 1 Minute with AI — No Photoshop Needed
 date: 2026-04-27
 category: AI
 excerpt: You don't need Photoshop to cleanly erase a background with AI. We explain how background removal works and share tips to avoid messy results.
-thumbnail: /blog/covers/ai-background-removal.png
+thumbnail: /blog/covers/ai-background-removal.webp
 imageAlt: How to remove image backgrounds with AI — no Photoshop required
 tags: [background removal, AI image editing, product photography, cutout]
 relatedServices: [sellerai]
@@ -14,7 +14,7 @@ If you run an online store, you know the pain: one product shot with a bad cutou
 In the old days, you had to trace every edge with Photoshop's pen tool. A single image could take several minutes; hair took much longer. Today, AI handles the same job in under a minute. But **not every photo comes out perfectly clean.** This guide covers how background removal works, real time and cost comparisons vs. manual methods, and practical tips to avoid rough results.
 
 
-![SellerAI screenshot](/blog/inline/sai-ai-background-removal.jpg)
+![SellerAI screenshot](/blog/inline/sai-ai-background-removal.webp)
 
 > 📱 **SellerAI** — An AI service that turns a single product photo into model shots, cutouts, and full detail pages. [Learn more about SellerAI →](https://www.armes.co.kr/sellerai/studio)
 
@@ -27,7 +27,7 @@ Background removal (called *nukki* in Korean e-commerce slang, from the Japanese
 AI distinguishes between **what is the subject and what is the background** using learned visual patterns, then traces the boundary automatically — the same job a human does with a pen tool, but in seconds. The clearer the contrast between subject and background, the cleaner the result. When both share a similar color (white garment on white background, for example), the AI gets confused just as a human would.
 
 <figure class="shot">
-<img src="/projects/sellerai-3.jpg" alt="SellerAI image screen showing a clean product and model with background removed" />
+<img src="/projects/sellerai-3.webp" alt="SellerAI image screen showing a clean product and model with background removed" />
 <figcaption>With the background removed, the product and model stand out sharply — an example refined with SellerAI</figcaption>
 </figure>
 

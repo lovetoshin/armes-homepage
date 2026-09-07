@@ -16,8 +16,8 @@ export default function Showcase({ locale = "ko" }: { locale?: Locale }) {
   const t = getUI(locale).home.showcase;
 
   const services = [
-    { src: "/projects/sellerai-1.jpg", name: "셀러AI", href: "https://www.armes.co.kr/sellerai/studio", desc: t.sellerai },
-    { src: "/projects/tools-main.png", name: "ARMES Tools", href: "https://www.armes.co.kr/tools/", desc: t.tools },
+    { src: "/projects/sellerai-1.webp", name: "셀러AI", href: "https://www.armes.co.kr/sellerai/studio", desc: t.sellerai },
+    { src: "/projects/tools-main.webp", name: "ARMES Tools", href: "https://www.armes.co.kr/tools/", desc: t.tools },
   ];
 
   return (

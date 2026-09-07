@@ -3,7 +3,7 @@ title: AI 照片分类工具对比 — 如何选择一款自动帮你整理的�
 date: 2026-06-01
 category: 生산성도구
 excerpt: 能自动按人物、地点、主题将数千张照片分组整理的 AI 照片分类工具。介绍种类差异及选择时的注意事项。
-thumbnail: /blog/covers/ai-photo-sorting-tools.png
+thumbnail: /blog/covers/ai-photo-sorting-tools.webp
 imageAlt: AI 照片自动分类工具对比
 tags: [AI 照片分类, 照片自动整理, Vision AI, 照片管理工具]
 relatedServices: [photosort]

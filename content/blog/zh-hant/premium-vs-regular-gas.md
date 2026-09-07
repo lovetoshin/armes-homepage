@@ -3,7 +3,7 @@ title: 高級汽油 vs 一般汽油——哪種油才適合我的車？
 date: 2026-05-06
 category: 주유
 excerpt: 高級汽油真的對車比較好嗎？本文釐清兩者的本質差異，告訴你選對燃油的唯一正確標準。
-thumbnail: /blog/covers/premium-vs-regular-gas.png
+thumbnail: /blog/covers/premium-vs-regular-gas.webp
 imageAlt: 高級汽油與一般汽油的差異及選擇標準
 tags: [高級汽油, 一般汽油, 辛烷值, 加油常識, 省油技巧]
 relatedServices: [rewardtalk]
@@ -14,7 +14,7 @@ relatedServices: [rewardtalk]
 直接說結論：高級汽油與一般汽油的差異，**不是「好壞」問題，而是「適不適合你的車」的問題**。本文將說明兩者的核心差異（辛烷值）、如何判斷自己的車該加哪種油，以及常見迷思的破解。
 
 
-![RewardTalk 實際畫面截圖](/blog/inline/svc-rewardtalk.jpg)
+![RewardTalk 實際畫面截圖](/blog/inline/svc-rewardtalk.webp)
 
 > 📱 **RewardTalk** — 整合周邊店家折扣、點數與團購的在地會員平台。[深入了解 RewardTalk →](/projects/rewardtalk)
 
@@ -23,7 +23,7 @@ relatedServices: [rewardtalk]
 核心在於**辛烷值**這個數字。辛烷值衡量燃料抵抗發動機異常燃燒（爆震）的能力。辛烷值高並不代表「動力更強」，更精確的說法是**更能抑制爆震**。
 
 <figure class="shot">
-<img src="/blog/inline/octane.png" alt="一般汽油與高級汽油比較資訊圖——辛烷值與建議車型" />
+<img src="/blog/inline/octane.webp" alt="一般汽油與高級汽油比較資訊圖——辛烷值與建議車型" />
 <figcaption>一般汽油與高級汽油的核心差異在於辛烷值，以及「你的車廠建議哪一種」</figcaption>
 </figure>
 

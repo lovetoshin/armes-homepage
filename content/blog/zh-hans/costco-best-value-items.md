@@ -3,7 +3,7 @@ title: 在开市客(Costco)挑选高性价比商品的标准
 date: 2026-05-15
 category: 코스트코
 excerpt: 整理了在Costco挑选真正高性价比商品的标准。掌握避开大容量陷阱、按单价比较的方法。
-thumbnail: /blog/covers/costco-best-value-items.png
+thumbnail: /blog/covers/costco-best-value-items.webp
 imageAlt: 在开市客(Costco)挑选高性价比必买品的标准
 tags: [Costco, 性价比, 单价比较, 大容量购物]
 relatedServices: [cocoping]
@@ -14,7 +14,7 @@ relatedServices: [cocoping]
 所以要真正用好Costco，就必须抛弃"这里都便宜"的信念，建立起**判断什么才是真正高性价比的标准**。这篇文章将整理按单价比较的方法、性价比好的品类与需要注意的品类，以及购买前的核查清单。
 
 
-![CocoPing 实际界面](/blog/inline/svc-cocoping.jpg)
+![CocoPing 实际界面](/blog/inline/svc-cocoping.webp)
 
 > 📱 **CocoPing** — 一眼掌握附近Costco折扣信息和价格变动的购物助手。[了解更多 CocoPing →](/projects/cocoping)
 
@@ -23,8 +23,8 @@ relatedServices: [cocoping]
 Costco最大的陷阱就是大容量。"一整罐才一万韩元"看起来很便宜，但同样的量在普通超市分开买可能更便宜。所以比较时一定要以**每100g·每个·每升的单价**来衡量。商场价格标签上通常会小字标注单位价格，要养成看那个数字的习惯。
 
 <figure class="shots">
-<img src="/projects/cocoping-2.jpg" alt="整理显示Costco关注品目价格的CocoPing界面" />
-<img src="/projects/cocoping-1.jpg" alt="提示关注商品价格变动的CocoPing提醒界面" />
+<img src="/projects/cocoping-2.webp" alt="整理显示Costco关注品目价格的CocoPing界面" />
+<img src="/projects/cocoping-1.webp" alt="提示关注商品价格变动的CocoPing提醒界面" />
 <figcaption>记录关注品目的单价和价格走势，就能筛选出"只是大容量看起来便宜"的商品 — CocoPing界面</figcaption>
 </figure>
 

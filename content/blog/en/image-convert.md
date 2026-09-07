@@ -3,7 +3,7 @@ title: Image Conversion — A Quick Guide to Changing Formats
 date: 2026-05-22
 category: 생산성도구
 excerpt: Confused by HEIC, PNG, JPG, and WebP? Here's a clear breakdown of the differences between image formats and which one to convert to for each situation.
-thumbnail: /blog/covers/image-convert.png
+thumbnail: /blog/covers/image-convert.webp
 imageAlt: Image format conversion guide by use case
 tags: [image conversion, image format, HEIC conversion, file conversion]
 relatedServices: [tools]

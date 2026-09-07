@@ -3,7 +3,7 @@ title: Online Developer Tools — No Installation Required
 date: 2026-05-01
 category: 생산성도구
 excerpt: A curated collection of online tools for everyday development and data work — JSON formatting, encoding, color conversion, and more. All run directly in your browser, no setup needed.
-thumbnail: /blog/covers/dev-tools.png
+thumbnail: /blog/covers/dev-tools.webp
 imageAlt: Collection of online developer tools
 tags: [developer tools, online tools, coding utilities, data conversion]
 relatedServices: [tools]

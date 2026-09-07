@@ -3,7 +3,7 @@ title: 好市多(Costco)會員費值回本錢的消費模式
 date: 2026-04-29
 category: 코스트코
 excerpt: 交了年費還能賺到嗎？整理了讓Costco會員費物有所值的消費模式和損益計算方法。
-thumbnail: /blog/covers/costco-membership-worth.png
+thumbnail: /blog/covers/costco-membership-worth.webp
 imageAlt: 好市多(Costco)會員年費物有所值的消費模式
 tags: [Costco會員, 年費, 高CP值購物, 回本]
 relatedServices: [cocoping]
@@ -14,7 +14,7 @@ relatedServices: [cocoping]
 造成差異的是消費模式。這篇文章將整理計算損益的方法、讓會費回本的4種消費模式，以及坦誠地告訴你「不適合辦會員的情況」。
 
 
-![CocoPing 實際畫面](/blog/inline/svc-cocoping.jpg)
+![CocoPing 實際畫面](/blog/inline/svc-cocoping.webp)
 
 > 📱 **CocoPing** — 一眼掌握附近Costco折扣資訊和價格變動的購物助手。[了解更多 CocoPing →](/projects/cocoping)
 
@@ -27,8 +27,8 @@ relatedServices: [cocoping]
 這裡的「節省金額」是指在Costco購買與在其他地方購買同一商品時的**差額**。這就是為什麼按單價比較的習慣很重要。單價比較方法已整理在[在Costco挑選高CP值商品的標準](/blog/costco-best-value-items)中。
 
 <figure class="shots">
-<img src="/projects/cocoping-1.jpg" alt="追蹤關注商品價格並通知的CocoPing畫面" />
-<img src="/projects/cocoping-2.jpg" alt="整理了Costco品項價格資訊的CocoPing畫面" />
+<img src="/projects/cocoping-1.webp" alt="追蹤關注商品價格並通知的CocoPing畫面" />
+<img src="/projects/cocoping-2.webp" alt="整理了Costco品項價格資訊的CocoPing畫面" />
 <figcaption>記錄關注品項的價格走勢，「省了多少」就一目了然 — CocoPing畫面</figcaption>
 </figure>
 

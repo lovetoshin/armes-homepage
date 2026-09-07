@@ -3,7 +3,7 @@ title: 如何查看好市多(Costco)本週特價商品
 date: 2026-06-19
 category: 코스트코
 excerpt: 提前掌握Costco本週特價資訊，讀懂價格標籤上的隱藏訊號，養成精打細算的購物習慣。
-thumbnail: /blog/covers/costco-weekly-deals.png
+thumbnail: /blog/covers/costco-weekly-deals.webp
 imageAlt: 如何查看Costco本週折扣商品
 tags: [Costco, 好市多優惠, 每週特價, 倉儲購物, 省錢攻略]
 relatedServices: [cocoping]
@@ -14,7 +14,7 @@ relatedServices: [cocoping]
 問題在於，Costco並不會把所有折扣商品一目了然地整理出來。所以精明的消費者會想出各種方法，**提前掌握本週哪些東西便宜**。本文將介紹如何提前了解本週特價資訊、如何解讀價格標籤上的訊號，以及如何養成不被衝動消費左右的理性購物習慣。
 
 
-![CocoPing 實際介面截圖](/blog/inline/svc-cocoping.jpg)
+![CocoPing 實際介面截圖](/blog/inline/svc-cocoping.webp)
 
 > 📱 **CocoPing** — 一眼掌握周邊Costco折扣資訊與價格動態的購物助手。[查看 CocoPing 詳情 →](/projects/cocoping)
 
@@ -29,8 +29,8 @@ relatedServices: [cocoping]
 最有效率的方式是**提前登錄感興趣的商品，價格下降時自動收到通知**。這樣就不用每週刷論壇，當你想買的東西降價時，自然會得到提醒。
 
 <figure class="shots">
-<img src="/projects/cocoping-1.jpg" alt="CocoPing 通知介面，顯示關注商品的價格下降提醒" />
-<img src="/projects/cocoping-2.jpg" alt="CocoPing 介面，整理展示 Costco 關注商品的價格資訊" />
+<img src="/projects/cocoping-1.webp" alt="CocoPing 通知介面，顯示關注商品的價格下降提醒" />
+<img src="/projects/cocoping-2.webp" alt="CocoPing 介面，整理展示 Costco 關注商品的價格資訊" />
 <figcaption>登錄關注商品，降價時自動提醒 —— ARMES 正在開發中的 CocoPing 介面</figcaption>
 </figure>
 

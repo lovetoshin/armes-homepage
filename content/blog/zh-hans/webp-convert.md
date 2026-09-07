@@ -3,7 +3,7 @@ title: WebP 转换 — 是什么以及如何转换
 date: 2026-05-19
 category: 생산성도구
 excerpt: 如今网络上随处可见的 WebP 格式。本文介绍它是什么、为什么要用、如何从 JPG/PNG 转换，以及如何转换回来。
-thumbnail: /blog/covers/webp-convert.png
+thumbnail: /blog/covers/webp-convert.webp
 imageAlt: WebP 格式的转换方法及优缺点
 tags: [WebP 转换, WebP 格式, 图片转换, 网页图片]
 relatedServices: [tools]

@@ -3,7 +3,7 @@ title: Comparing AI Photo Sorting Tools — How to Pick One That Organizes for Y
 date: 2026-06-01
 category: 생산성도구
 excerpt: AI photo sorting tools that automatically group thousands of photos by person, place, or subject. What's out there, how they differ, and what to look for before you choose.
-thumbnail: /blog/covers/ai-photo-sorting-tools.png
+thumbnail: /blog/covers/ai-photo-sorting-tools.webp
 imageAlt: Comparison of AI automatic photo sorting tools
 tags: [AI photo sorting, automatic photo organization, Vision AI, photo management tools]
 relatedServices: [photosort]

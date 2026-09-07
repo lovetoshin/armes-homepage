@@ -3,7 +3,7 @@ title: URL 인코딩이란? 깨진 주소 해결하기
 date: 2026-04-27
 category: 생산성도구
 excerpt: 주소에 %20 같은 이상한 문자가 섞이거나 한글 주소가 깨질 때. URL 인코딩이 무엇이고 어떻게 해결하는지 쉽게 정리했습니다.
-thumbnail: /blog/covers/url-encoder.png
+thumbnail: /blog/covers/url-encoder.webp
 imageAlt: URL 인코딩이란 무엇이고 깨진 주소 해결하기
 tags: [URL 인코딩, URL 디코딩, 주소 깨짐, 개발자 도구]
 relatedServices: [tools]

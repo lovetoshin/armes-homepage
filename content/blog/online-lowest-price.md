@@ -3,7 +3,7 @@ title: 온라인 최저가 찾는 법 — 가격비교 앱·사이트 비교
 date: 2026-06-05
 category: 쇼핑
 excerpt: 같은 상품도 어디서 사느냐에 따라 가격이 다릅니다. 온라인 최저가를 빠르게 찾는 방법과, 최저가에 속지 않는 요령을 정리했습니다.
-thumbnail: /blog/covers/online-lowest-price.png
+thumbnail: /blog/covers/online-lowest-price.webp
 imageAlt: 온라인 최저가 찾는 법과 가격비교 방법
 tags: [최저가, 가격비교, 온라인 쇼핑, 알뜰 쇼핑]
 relatedServices: [cocoping, rankingpangpang]
@@ -14,7 +14,7 @@ relatedServices: [cocoping, rankingpangpang]
 진짜 최저가를 잡으려면 두 가지를 알아야 합니다. ① **표시 가격이 아니라 실제 결제액으로 비교**하는 법, ② **지금이 싼 시점인지 가격 흐름으로 판단**하는 법입니다. 이 글에서 둘 다 정리합니다.
 
 
-![SellerAI 실제 화면](/blog/inline/sai-online-lowest-price.jpg)
+![SellerAI 실제 화면](/blog/inline/sai-online-lowest-price.webp)
 
 > 📱 **SellerAI** — 상품 사진 한 장으로 모델 착용컷·누끼·상세페이지까지 만드는 AI 서비스. [SellerAI 자세히 보기 →](https://www.armes.co.kr/sellerai/studio)
 
@@ -30,7 +30,7 @@ relatedServices: [cocoping, rankingpangpang]
 그래서 표시 가격이 아니라 **배송비·할인까지 더한 실제 결제액**으로 비교해야 진짜 최저가가 보입니다.
 
 <figure class="shot">
-<img src="/blog/inline/price-compare.png" alt="실구매가 계산 공식 인포그래픽 — 상품가 더하기 배송비 빼기 쿠폰·적립" />
+<img src="/blog/inline/price-compare.webp" alt="실구매가 계산 공식 인포그래픽 — 상품가 더하기 배송비 빼기 쿠폰·적립" />
 <figcaption>표시가가 아니라 '상품가 + 배송비 − 쿠폰·적립 = 실구매가'로 비교해야 합니다</figcaption>
 </figure>
 

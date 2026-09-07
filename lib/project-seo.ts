@@ -16,7 +16,7 @@ export const projectSeo: Record<string, ProjectSeo> = {
     keywords: ["AI 상품 이미지", "AI 상세페이지", "상품 사진 AI", "누끼 AI", "모델컷 AI", "스마트스토어 이미지", "쇼핑몰 자동화"],
     appCategory: "BusinessApplication",
     operatingSystem: "Web",
-    og: "/projects/sellerai-1.jpg",
+    og: "/projects/sellerai-1.webp",
   },
   tools: {
     title: "ARMES Tools — 무료 온라인 이미지·PDF·텍스트 도구",
@@ -30,21 +30,21 @@ export const projectSeo: Record<string, ProjectSeo> = {
     keywords: ["내 주변 할인", "동네 적립", "공동구매 앱", "로컬 멤버십", "매장 적립", "리워드 앱"],
     appCategory: "LifestyleApplication",
     operatingSystem: "Android",
-    og: "/projects/rewardtalk-2.jpg",
+    og: "/projects/rewardtalk-2.webp",
   },
   travelmoa: {
     title: "TravelMoa — 여행 특가·항공권 비교",
     keywords: ["항공권 비교", "여행 특가", "항공권 최저가", "여행 플랫폼", "항공권 검색"],
     appCategory: "TravelApplication",
     operatingSystem: "Web",
-    og: "/projects/travelmoa-2.jpg",
+    og: "/projects/travelmoa-2.webp",
   },
   cocoping: {
     title: "CocoPing — 코스트코 할인·가격 변동 알림",
     keywords: ["코스트코 할인", "코스트코 가격", "코스트코 세일", "코스트코 가격 변동", "코스트코 쇼핑"],
     appCategory: "ShoppingApplication",
     operatingSystem: "Web",
-    og: "/projects/cocoping-2.jpg",
+    og: "/projects/cocoping-2.webp",
   },
   rankingpangpang: {
     title: "RankingPangPang — 분야별 인기상품 랭킹",

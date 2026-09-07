@@ -3,7 +3,7 @@ title: PDF转换——如何转为Word、图片或其他格式
 date: 2026-05-29
 category: 생산성도구
 excerpt: 整理了将PDF转换为Word、图片等格式，以及反向转换的方法。包括无需安装软件、在浏览器中安全转换的技巧。
-thumbnail: /blog/covers/pdf-convert.png
+thumbnail: /blog/covers/pdf-convert.webp
 imageAlt: 如何将PDF转换为Word或图片
 tags: [PDF转换, PDF转Word, PDF转图片, 文档转换]
 relatedServices: [tools]

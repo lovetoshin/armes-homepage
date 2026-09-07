@@ -3,7 +3,7 @@ title: 圖片格式轉換——各種格式一覽
 date: 2026-05-22
 category: 생산성도구
 excerpt: 對HEIC、PNG、JPG、WebP感到困惑？本文清晰梳理了各圖片格式的差異，以及在不同場景下應該轉換為哪種格式。
-thumbnail: /blog/covers/image-convert.png
+thumbnail: /blog/covers/image-convert.webp
 imageAlt: 按用途整理的圖片格式轉換指南
 tags: [圖片格式轉換, 圖片格式, HEIC轉換, 檔案轉換]
 relatedServices: [tools]

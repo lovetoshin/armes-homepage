@@ -3,7 +3,7 @@ title: 如何找出重复照片——清空塞满相同图片的相册
 date: 2026-06-06
 category: 生산성도구
 excerpt: 相似的连拍照片和重复文件正在悄悄吞噬你的存储空间。本文整理了找出重复照片并安全清理的方法。
-thumbnail: /blog/covers/find-duplicate-photos.png
+thumbnail: /blog/covers/find-duplicate-photos.webp
 imageAlt: 如何找出并整理重复照片
 tags: [重复照片, 照片整理, 存储空间, 相册清理]
 relatedServices: [photosort]

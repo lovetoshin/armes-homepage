@@ -3,7 +3,7 @@ title: 쇼핑몰 상세페이지를 AI로 만드는 법 — 초보 가이드
 date: 2026-05-18
 category: AI
 excerpt: 디자인을 한 번도 해본 적 없어도 AI로 상세페이지를 만들 수 있습니다. 준비물부터 완성까지의 흐름을 단계별로 쉽게 정리했습니다.
-thumbnail: /blog/covers/ai-detail-page-beginner.png
+thumbnail: /blog/covers/ai-detail-page-beginner.webp
 imageAlt: AI로 쇼핑몰 상세페이지 만드는 초보 단계별 가이드
 tags: [AI 상세페이지, 상세페이지 만들기, 쇼핑몰, 초보 가이드]
 relatedServices: [sellerai]
@@ -14,7 +14,7 @@ relatedServices: [sellerai]
 다행히 요즘은 AI 도구가 이 과정을 크게 줄여 줍니다. 다만 "버튼만 누르면 완성"이라는 환상은 버려야 합니다. **무엇을 말할지는 사람이 정하고, 만드는 수고를 AI가 던다**는 게 정확한 그림입니다. 이 글에서는 디자인 경험이 전혀 없어도 따라 할 수 있게, 준비물부터 완성까지의 흐름을 단계별로 정리합니다.
 
 
-![SellerAI 실제 화면](/blog/inline/sai-ai-detail-page-beginner.jpg)
+![SellerAI 실제 화면](/blog/inline/sai-ai-detail-page-beginner.webp)
 
 > 📱 **SellerAI** — 상품 사진 한 장으로 모델 착용컷·누끼·상세페이지까지 만드는 AI 서비스. [SellerAI 자세히 보기 →](https://www.armes.co.kr/sellerai/studio)
 
@@ -38,7 +38,7 @@ AI에게 맡기더라도 이 흐름(무엇을, 어떤 순서로)은 사람이 �
 - **참고 톤:** 깔끔한 느낌인지, 따뜻한 느낌인지 분위기 한 가지
 
 <figure class="shot">
-<img src="/projects/sellerai-2.jpg" alt="상품 사진과 정보로 상세페이지를 구성하는 SellerAI 편집 화면" />
+<img src="/projects/sellerai-2.webp" alt="상품 사진과 정보로 상세페이지를 구성하는 SellerAI 편집 화면" />
 <figcaption>정리한 사진과 정보를 넣으면 상세 구성 초안을 만들어 줍니다 — SellerAI 실제 화면</figcaption>
 </figure>
 

@@ -3,7 +3,7 @@ title: 상품 사진 한 장으로 모델 착용컷 만드는 AI 활용법
 date: 2026-06-22
 category: AI
 excerpt: 모델 섭외와 스튜디오 촬영 없이도 상품 사진 한 장으로 착용컷을 만드는 방법과, 결과물 완성도를 높이는 요령을 정리했습니다.
-thumbnail: /blog/covers/ai-model-cut.png
+thumbnail: /blog/covers/ai-model-cut.webp
 imageAlt: 상품 사진으로 모델 착용컷을 만드는 AI 활용법
 tags: [AI 모델컷, 착용컷, 상품 이미지, 쇼핑몰 촬영]
 relatedServices: [sellerai]
@@ -14,7 +14,7 @@ relatedServices: [sellerai]
 문제는 비용과 시간입니다. 모델 섭외, 스튜디오 대여, 촬영, 보정까지 한 번 돌리려면 작은 쇼핑몰 입장에서는 부담이 큽니다. 신상품을 자주 올려야 하는데, 매번 촬영 일정을 잡는 것 자체가 병목입니다. 최근에는 상품 사진 한 장만 있으면 AI가 모델 착용컷을 만들어 주는 방식이 현장에 자리를 잡았습니다. 이 글에서는 그 원리와 실제 비용·시간 차이, 그리고 결과를 자연스럽게 뽑는 실전 요령까지 정리합니다.
 
 
-![SellerAI 실제 화면](/blog/inline/sai-ai-model-cut.jpg)
+![SellerAI 실제 화면](/blog/inline/sai-ai-model-cut.webp)
 
 > 📱 **SellerAI** — 상품 사진 한 장으로 모델 착용컷·누끼·상세페이지까지 만드는 AI 서비스. [SellerAI 자세히 보기 →](https://www.armes.co.kr/sellerai/studio)
 
@@ -25,8 +25,8 @@ relatedServices: [sellerai]
 쉽게 비유하면, 옷걸이에 걸린 옷 사진을 주면 AI가 "이 옷을 입은 사람 그림"을 그려 주는 셈입니다. 마네킹컷이나 누끼컷에서 출발해 착용컷으로 확장하는 것이라, 촬영 단계 자체를 건너뛸 수 있습니다. 누끼(배경 제거)가 깔끔할수록 결과가 좋아지므로, 먼저 [AI 누끼(배경 제거) 하는 법](/blog/ai-background-removal)으로 상품을 깔끔하게 따 두면 도움이 됩니다.
 
 <figure class="shots">
-<img src="/projects/sellerai-3.jpg" alt="AI가 만든 모델 착용컷 단독 결과 화면" />
-<img src="/projects/sellerai-1.jpg" alt="한 상품으로 여러 장 생성된 모델 착용컷 결과" />
+<img src="/projects/sellerai-3.webp" alt="AI가 만든 모델 착용컷 단독 결과 화면" />
+<img src="/projects/sellerai-1.webp" alt="한 상품으로 여러 장 생성된 모델 착용컷 결과" />
 <figcaption>상품 사진 한 장에서 단독 착용컷(왼쪽)과 여러 변형컷(오른쪽)을 한 번에 — SellerAI 실제 생성 화면</figcaption>
 </figure>
 

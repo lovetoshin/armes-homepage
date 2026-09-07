@@ -3,7 +3,7 @@ title: 코스트코 가격표 숫자·별표(*)의 숨은 의미
 date: 2026-06-02
 category: 코스트코
 excerpt: 코스트코 가격표의 .97, .99, 별표(*)에는 숨은 신호가 있습니다. 가격표만 읽어도 할인·단종을 알아채는 법을 정리했습니다.
-thumbnail: /blog/covers/costco-price-tag-secrets.png
+thumbnail: /blog/covers/costco-price-tag-secrets.webp
 imageAlt: 코스트코 가격표 숫자와 별표 의미 해석
 tags: [코스트코, 가격표, 코스트코 할인, 쇼핑 팁]
 relatedServices: [cocoping]
@@ -14,14 +14,14 @@ relatedServices: [cocoping]
 이 신호는 외우기도 쉽습니다. 핵심은 딱 두 가지, **끝자리와 별표**입니다. 이 글에서 그 의미와 조합 해석법, 그리고 가격표만으로는 부족한 부분까지 정리합니다.
 
 
-![코코핑 실제 화면](/blog/inline/svc-cocoping.jpg)
+![코코핑 실제 화면](/blog/inline/svc-cocoping.webp)
 
 > 📱 **코코핑** — 내 주변 코스트코 할인정보와 가격 변동을 한눈에 보는 쇼핑 도우미. [코코핑 자세히 보기 →](/projects/cocoping)
 
 ## 가격표가 보내는 신호 한눈에
 
 <figure class="shot">
-<img src="/blog/inline/costco-pricetag.png" alt="코스트코 가격표 신호 인포그래픽 — .97 할인, .99 정상가, 별표 단종" />
+<img src="/blog/inline/costco-pricetag.webp" alt="코스트코 가격표 신호 인포그래픽 — .97 할인, .99 정상가, 별표 단종" />
 <figcaption>끝자리와 별표만 알아도 '지금 사야 할 물건'인지 매장에서 바로 판단할 수 있습니다</figcaption>
 </figure>
 

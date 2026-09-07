@@ -3,7 +3,7 @@ title: "EV Charging for Beginners: Everything You Need to Know"
 date: 2026-05-05
 category: 전기차
 excerpt: Charging is the most daunting part of switching to an electric vehicle. This guide covers charging types, step-by-step instructions, common beginner mistakes, and how to avoid wasted trips.
-thumbnail: /blog/covers/ev-charging-basics.png
+thumbnail: /blog/covers/ev-charging-basics.webp
 imageAlt: Beginner's guide to EV charging basics
 tags: [EV charging, electric vehicle beginner, how to charge EV, EV basics]
 relatedServices: [rewardtalk]
@@ -14,7 +14,7 @@ Getting your first electric vehicle is exciting — and immediately nerve-wracki
 The good news: **once you learn a few basic principles and the step-by-step process, charging becomes easier than filling up with gas.** This guide walks EV beginners through charging types, the actual charging process, mistakes beginners commonly make, and how to avoid wasted trips. Do it once and your body will remember it forever.
 
 
-![RewardTalk app screenshot](/blog/inline/svc-rewardtalk.jpg)
+![RewardTalk app screenshot](/blog/inline/svc-rewardtalk.webp)
 
 > 📱 **RewardTalk** — A local membership platform connecting you to nearby store discounts, rewards, and group deals. [Learn more about RewardTalk →](/projects/rewardtalk)
 

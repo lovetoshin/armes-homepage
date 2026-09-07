@@ -3,7 +3,7 @@ title: 什么是 URL 编码？解决乱码网址问题
 date: 2026-04-27
 category: 생산성도구
 excerpt: 网址里出现 %20 这样的奇怪字符，或者中文网址发送后显示乱码。本文用简单易懂的方式解释 URL 编码是什么，以及如何解决这些问题。
-thumbnail: /blog/covers/url-encoder.png
+thumbnail: /blog/covers/url-encoder.webp
 imageAlt: URL 编码是什么以及如何解决乱码网址
 tags: [URL 编码, URL 解码, 网址乱码, 开发者工具]
 relatedServices: [tools]

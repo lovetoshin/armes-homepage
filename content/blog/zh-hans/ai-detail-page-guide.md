@@ -3,7 +3,7 @@ title: 用 AI 制作详情页时，需要了解的 3 件事
 date: 2026-05-11
 category: AI
 excerpt: 提升 AI 详情页完成度的小习惯。已掌握基础流程的卖家，进一步优化结果的实用指南。
-thumbnail: /blog/covers/ai-detail-page-guide.png
+thumbnail: /blog/covers/ai-detail-page-guide.webp
 imageAlt: 用 AI 制作网店商品详情页的方法指南
 tags: [AI 详情页, 详情页制作, AI 电商应用, 网店]
 relatedServices: [sellerai]
@@ -14,7 +14,7 @@ AI 替我们制作详情页的时代已经到来。但有一个有趣的现象�
 本文以[用 AI 制作详情页的基础流程](/blog/ai-detail-page-beginner)为前提，深入一步，整理"提升成品档次的 3 个核心要素"以及实际操作中最常被忽视的部分。
 
 
-![SellerAI 实际界面截图](/blog/inline/sai-ai-detail-page-guide.jpg)
+![SellerAI 实际界面截图](/blog/inline/sai-ai-detail-page-guide.webp)
 
 > 📱 **SellerAI** — 只需一张商品图，即可生成模特穿搭图、抠图及详情页的 AI 服务。[了解更多 SellerAI →](https://www.armes.co.kr/sellerai/studio)
 
@@ -31,7 +31,7 @@ AI 替我们制作详情页的时代已经到来。但有一个有趣的现象�
 AI 基于你提供的图片进行制作。**输入模糊或昏暗的图片，结果也会同样模糊。**"垃圾进，垃圾出"在这里完全适用。第一步是使用最好的原图；如果背景杂乱，先用 [AI 抠图（去除背景）](/blog/ai-background-removal)整理干净。需要模特穿搭图时，使用[用 AI 制作模特穿搭图的方法](/blog/ai-model-cut)。拍摄基础知识请参阅[网店商品图拍摄准备指南](/blog/product-photo-tips)。
 
 <figure class="shot">
-<img src="/projects/sellerai-4.jpg" alt="SellerAI 界面展示多张商品图以统一风格呈现" />
+<img src="/projects/sellerai-4.webp" alt="SellerAI 界面展示多张商品图以统一风格呈现" />
 <figcaption>使用好的原图并统一风格，多个商品也能呈现出一个品牌的感觉 —— SellerAI 界面</figcaption>
 </figure>
 

@@ -3,7 +3,7 @@ title: 常用在线文本与开发者工具合集
 date: 2026-06-17
 category: 生产性道具
 excerpt: 按用途整理了无需安装、直接在浏览器使用的文本与开发者工具，帮你省去工作和学习中的重复操作。
-thumbnail: /blog/covers/online-dev-text-tools.png
+thumbnail: /blog/covers/online-dev-text-tools.webp
 imageAlt: 无需安装即可使用的在线文本开发者工具合集
 tags: [在线工具, 文本工具, 开发者工具, 效率提升]
 relatedServices: [tools]

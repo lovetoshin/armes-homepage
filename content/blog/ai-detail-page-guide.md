@@ -3,7 +3,7 @@ title: AI로 상세페이지를 만들 때 알아두면 좋은 3가지
 date: 2026-05-11
 category: AI
 excerpt: AI 도구로 상세페이지를 만들 때 결과물의 완성도를 높이는 작은 습관을 정리했습니다.
-thumbnail: /blog/covers/ai-detail-page-guide.png
+thumbnail: /blog/covers/ai-detail-page-guide.webp
 imageAlt: AI로 쇼핑몰 상세페이지 만드는 법 가이드
 tags: [AI 상세페이지, 상세페이지 제작, AI 활용, 쇼핑몰]
 relatedServices: [sellerai]
@@ -14,7 +14,7 @@ AI가 상세페이지를 대신 만들어 주는 시대입니다. 그런데 재�
 [상세페이지를 AI로 만드는 기본 흐름](/blog/ai-detail-page-beginner)을 안다는 전제에서, 이 글은 한 단계 더 들어가 "결과물의 격을 높이는 3가지 핵심"과 실무에서 자주 놓치는 부분을 정리합니다.
 
 
-![SellerAI 실제 화면](/blog/inline/sai-ai-detail-page-guide.jpg)
+![SellerAI 실제 화면](/blog/inline/sai-ai-detail-page-guide.webp)
 
 > 📱 **SellerAI** — 상품 사진 한 장으로 모델 착용컷·누끼·상세페이지까지 만드는 AI 서비스. [SellerAI 자세히 보기 →](https://www.armes.co.kr/sellerai/studio)
 
@@ -31,7 +31,7 @@ AI가 상세페이지를 대신 만들어 주는 시대입니다. 그런데 재�
 AI는 주어진 사진을 바탕으로 만듭니다. **흐릿하거나 어두운 사진을 넣으면 결과도 딱 그만큼 흐려집니다.** "쓰레기를 넣으면 쓰레기가 나온다"는 말이 그대로 적용됩니다. 가장 잘 나온 원본을 넣는 게 첫 단계이고, 배경이 지저분하면 [AI 누끼(배경 제거)](/blog/ai-background-removal)로 먼저 정리하세요. 착용컷이 필요하면 [모델 착용컷 만드는 AI 활용법](/blog/ai-model-cut)을 활용하면 됩니다. 촬영 기본기는 [쇼핑몰 상품 사진 준비법](/blog/product-photo-tips)에 있습니다.
 
 <figure class="shot">
-<img src="/projects/sellerai-4.jpg" alt="여러 상품 이미지를 일관된 톤으로 만드는 SellerAI 화면" />
+<img src="/projects/sellerai-4.webp" alt="여러 상품 이미지를 일관된 톤으로 만드는 SellerAI 화면" />
 <figcaption>좋은 원본을 넣고 톤을 통일하면, 여러 상품도 한 브랜드처럼 보입니다 — SellerAI 화면</figcaption>
 </figure>
 

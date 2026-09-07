@@ -3,7 +3,7 @@ title: How to Format JSON — Turning Compressed Data into Something Readable
 date: 2026-05-09
 category: 생산성도구
 excerpt: When JSON arrives as one long unreadable line, a formatter is your best friend. Here's a simple guide to formatting JSON, plus tips for catching the most common errors.
-thumbnail: /blog/covers/json-format.png
+thumbnail: /blog/covers/json-format.webp
 imageAlt: How to format and beautify JSON data
 tags: [JSON format, JSON beautify, data formatting, developer tools]
 relatedServices: [tools]

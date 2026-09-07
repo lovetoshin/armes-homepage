@@ -3,7 +3,7 @@ title: Later Three Kingdoms — The Three Leaders at a Glance (Gyeon Hwon, Gung 
 date: 2026-06-16
 category: 후삼국지
 excerpt: A beginner's guide to the three factions of Korea's Later Three Kingdoms period — framed as choosing which side to play in a strategy game.
-thumbnail: /blog/covers/hoosamguk-characters.png
+thumbnail: /blog/covers/hoosamguk-characters.webp
 imageAlt: Later Three Kingdoms characters — Gyeon Hwon, Gung Ye, and Wang Geon
 tags: [Later Three Kingdoms, Gyeon Hwon, Gung Ye, Wang Geon, strategy simulation]
 relatedServices: [hoosamgukji]
@@ -14,7 +14,7 @@ When you launch a strategy simulation game for the first time, the very first qu
 This guide isn't a history textbook. It's written from the perspective of **a beginner deciding which faction to pick first**, looking at each leader's strengths, weaknesses, and what kind of player they suit best. Understanding the character of each faction makes your first game significantly more engaging.
 
 
-![Later Three Kingdoms actual game screen](/blog/inline/hsg-characters.jpg)
+![Later Three Kingdoms actual game screen](/blog/inline/hsg-characters.webp)
 
 > 📱 **후삼국지 (Later Three Kingdoms)** — A strategy simulation game set in Korea's Later Three Kingdoms era. [Learn more →](/projects/hoosamgukji)
 

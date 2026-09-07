@@ -3,7 +3,7 @@ title: How to Reduce Phone Photo File Size — Keep Quality, Free Up Space
 date: 2026-06-03
 category: 생산성도구
 excerpt: Tired of "storage full" alerts? Here's a step-by-step guide to shrinking your phone's photo storage without sacrificing image quality.
-thumbnail: /blog/covers/reduce-phone-photo-size.png
+thumbnail: /blog/covers/reduce-phone-photo-size.webp
 imageAlt: How to reduce phone photo file size
 tags: [reduce photo size, phone storage full, photo compression, phone cleanup, free up storage]
 relatedServices: [photosort]

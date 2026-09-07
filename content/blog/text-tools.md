@@ -3,7 +3,7 @@ title: 텍스트 도구 모음 — 글자 수 세기부터 정리까지
 date: 2026-05-13
 category: 생산성도구
 excerpt: 글자 수 세기, 대소문자 변환, 중복 줄 제거 같은 텍스트 작업을 브라우저에서 바로 끝내는 도구를 용도별로 모았습니다.
-thumbnail: /blog/covers/text-tools.png
+thumbnail: /blog/covers/text-tools.webp
 imageAlt: 온라인 텍스트 도구 모음 정리
 tags: [텍스트 도구, 글자 수 세기, 텍스트 변환, 온라인 도구]
 relatedServices: [tools]

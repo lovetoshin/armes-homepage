@@ -3,7 +3,7 @@ title: How to Find Duplicate Photos — Clear Out a Gallery Stuffed with the Sam
 date: 2026-06-06
 category: 생산성도구
 excerpt: Similar burst shots and duplicate files silently eat up your storage. Here's how to find duplicate photos and safely clean them up.
-thumbnail: /blog/covers/find-duplicate-photos.png
+thumbnail: /blog/covers/find-duplicate-photos.webp
 imageAlt: How to find and clean up duplicate photos
 tags: [duplicate photos, photo organization, storage space, gallery cleanup]
 relatedServices: [photosort]

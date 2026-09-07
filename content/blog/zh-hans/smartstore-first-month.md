@@ -3,7 +3,7 @@ title: 新手卖家在 Naver 智能商城开店第一个月要做的 5 件事
 date: 2026-06-20
 category: 쇼핑
 excerpt: 刚开始在 Naver 智能商城（Naver Smart Store）卖货的新手，第一个月应该优先关注什么？这五件事会决定之后半年的成长速度。
-thumbnail: /blog/covers/smartstore-first-month.png
+thumbnail: /blog/covers/smartstore-first-month.webp
 imageAlt: Naver 智能商城新手卖家第一个月必做事项整理
 tags: [Naver 智能商城, 新手卖家, 网店运营, 电商入门, 开店攻略]
 relatedServices: [sellerai, rankingpangpang]
@@ -14,7 +14,7 @@ Naver 智能商城（Naver Smart Store）对任何人都是免费开店的。而
 与其马马虎虎上架 50 个商品，不如把 1 个商品做到位。这第一个商品，会成为所有后续商品的模板和标准。本文整理新手卖家在第一个月最应该优先做的五件事，并逐一点出最容易卡住的地方。
 
 
-![SellerAI 实际界面截图](/blog/inline/sai-smartstore-first-month.jpg)
+![SellerAI 实际界面截图](/blog/inline/sai-smartstore-first-month.webp)
 
 > 📱 **SellerAI** — 一张商品照片，即可生成模特上身图、抠图和详情页的 AI 服务。[了解 SellerAI →](https://www.armes.co.kr/sellerai/studio)
 
@@ -39,7 +39,7 @@ Naver 智能商城（Naver Smart Store）对任何人都是免费开店的。而
 顾客先看图片，才会去读文字说明。搜索列表里，如果主图没有吸引力，再好的商品也不会被点进去。商品图片的推荐流程是：**主图（第一印象）→ 上身/使用场景图 → 细节图 → 信息说明图**。具体排列方式参见[提升转化率的详情页图片排列顺序](/blog/detail-page-photo-order)。
 
 <figure class="shot">
-<img src="/projects/sellerai-2.jpg" alt="制作商品图片和详情图的 SellerAI 编辑界面" />
+<img src="/projects/sellerai-2.webp" alt="制作商品图片和详情图的 SellerAI 编辑界面" />
 <figcaption>拍摄和修图有困难的话，AI 图片工具可以大幅提升主图和详情图的品质——SellerAI 实际界面</figcaption>
 </figure>
 

@@ -3,7 +3,7 @@ title: 2026年免費AI影像生成工具全整理
 date: 2026-06-01
 category: AI
 excerpt: 依用途整理了無需付費即可使用的AI影像生成與編輯工具，並總結了選擇免費工具時必須核實的5個關鍵點。
-thumbnail: /blog/covers/free-ai-image-tools.png
+thumbnail: /blog/covers/free-ai-image-tools.webp
 imageAlt: 2026年免費AI影像生成工具整理
 tags: [免費AI工具, AI影像生成, 影像編輯, AI應用]
 relatedServices: [sellerai]
@@ -14,7 +14,7 @@ AI 影像工具種類繁多，不知道從哪裡入手是很正常的事。更�
 所以選擇免費工具，不該問**「它免費嗎」，而該問「它真的能用於我的場景嗎」**。本文將介紹免費 AI 影像工具的用途分類方式、選擇時必須核實的 5 個要點，以及無論用哪款工具都能左右結果的通用原則。
 
 
-![SellerAI 實際介面](/blog/inline/sai-free-ai-image-tools.jpg)
+![SellerAI 實際介面](/blog/inline/sai-free-ai-image-tools.webp)
 
 > 📱 **SellerAI** — 用一張商品圖，自動生成模特兒上身圖、去背圖及詳情頁的AI服務。[查看 SellerAI 詳情 →](https://www.armes.co.kr/sellerai/studio)
 
@@ -58,7 +58,7 @@ AI 影像工具種類繁多，不知道從哪裡入手是很正常的事。更�
 偶爾用幾張，免費工具完全夠用。但如果需要**每天大批量製作商品圖**，次數和浮水印限制會不斷阻礙工作，最終花費更多時間。到了這個階段，就該考慮付費或專業工具了。
 
 <figure class="shot">
-<img src="/projects/sellerai-1.jpg" alt="SellerAI 批量生成多張商品圖的結果介面" />
+<img src="/projects/sellerai-1.webp" alt="SellerAI 批量生成多張商品圖的結果介面" />
 <figcaption>需要頻繁、大量製作商品圖時，能在一個流程中完成去背、生成、詳情頁的工具可以大幅節省時間——SellerAI 介面</figcaption>
 </figure>
 

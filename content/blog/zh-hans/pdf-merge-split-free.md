@@ -3,7 +3,7 @@ title: 无需注册，免费合并与拆分PDF的方法
 date: 2026-06-24
 category: 생산성도구
 excerpt: 无需安装程序和注册账号，直接在浏览器中合并和拆分PDF的分步教程，以及安全处理敏感PDF文件的注意事项。
-thumbnail: /blog/covers/pdf-merge-split-free.png
+thumbnail: /blog/covers/pdf-merge-split-free.webp
 imageAlt: 无需注册，在浏览器中合并和拆分PDF的方法
 tags: [PDF合并, PDF拆分, 在线工具, 免费工具]
 relatedServices: [tools]

@@ -3,7 +3,7 @@ title: 一篇部落格文章登上搜尋首頁的基本原則
 date: 2026-05-20
 category: SEO
 excerpt: 能排上搜尋前列的部落格文章都有共同點。這裡整理了不依賴複雜技術、人人都能掌握的寫作基本原則。
-thumbnail: /blog/covers/blog-seo-basics.png
+thumbnail: /blog/covers/blog-seo-basics.webp
 imageAlt: 部落格文章登上搜尋首頁的基本原則
 tags: [部落格SEO, 搜尋排名, 內容寫作, 自然流量]
 relatedServices: []
@@ -14,7 +14,7 @@ relatedServices: []
 值得慶幸的是，能排上搜尋前列的文章有明確的**共同點**。而且這些共同點不是複雜的技術，而是任何人都能遵守的**基本原則**。這篇文章將整理登上搜尋首頁的五大核心原則，同時對比那些不奏效的方法，並附上實際應用範例。
 
 
-![SellerAI 實際畫面](/blog/inline/sai-blog-seo-basics.jpg)
+![SellerAI 實際畫面](/blog/inline/sai-blog-seo-basics.webp)
 
 > 📱 **SellerAI** — 一張商品照片，即可生成模特兒上身圖、去背圖及詳情頁的AI服務。[了解更多 SellerAI →](https://www.armes.co.kr/sellerai/studio)
 

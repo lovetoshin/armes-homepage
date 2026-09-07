@@ -3,7 +3,7 @@ title: Text Tool Collection — From Character Count to Cleanup
 date: 2026-05-13
 category: 생산성도구
 excerpt: A roundup of text tools that handle character counting, case conversion, duplicate line removal, and more — all right in your browser.
-thumbnail: /blog/covers/text-tools.png
+thumbnail: /blog/covers/text-tools.webp
 imageAlt: Online text tool collection overview
 tags: [text tools, character counter, text converter, online tools]
 relatedServices: [tools]

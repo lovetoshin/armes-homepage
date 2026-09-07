@@ -3,7 +3,7 @@ title: 2026년 무료로 쓸 수 있는 AI 이미지 생성 도구 총정리
 date: 2026-06-01
 category: AI
 excerpt: 돈을 들이지 않고도 쓸 수 있는 AI 이미지 생성·편집 도구를 용도별로 정리하고, 무료 도구를 고를 때 꼭 확인할 점을 짚었습니다.
-thumbnail: /blog/covers/free-ai-image-tools.png
+thumbnail: /blog/covers/free-ai-image-tools.webp
 imageAlt: 2026년 무료 AI 이미지 생성 도구 정리
 tags: [무료 AI 도구, AI 이미지 생성, 이미지 편집, AI 활용]
 relatedServices: [sellerai]
@@ -14,7 +14,7 @@ AI 이미지 도구는 종류가 워낙 많아 무엇부터 써야 할지 막막
 그래서 무료 도구는 **"공짜냐"보다 "내 용도에 실제로 쓸 수 있느냐"**로 골라야 합니다. 이 글에서는 무료 AI 이미지 도구를 용도별로 어떻게 나눠 쓰는지, 고를 때 반드시 확인할 5가지, 그리고 어떤 도구를 쓰든 결과를 좌우하는 공통 원칙까지 정리합니다.
 
 
-![SellerAI 실제 화면](/blog/inline/sai-free-ai-image-tools.jpg)
+![SellerAI 실제 화면](/blog/inline/sai-free-ai-image-tools.webp)
 
 > 📱 **SellerAI** — 상품 사진 한 장으로 모델 착용컷·누끼·상세페이지까지 만드는 AI 서비스. [SellerAI 자세히 보기 →](https://www.armes.co.kr/sellerai/studio)
 
@@ -58,7 +58,7 @@ AI 이미지 도구는 종류가 워낙 많아 무엇부터 써야 할지 막막
 가끔 몇 장이면 무료로 충분합니다. 하지만 **상품 이미지를 매일 대량으로** 만들어야 한다면, 횟수·워터마크 제한에 부딪혀 결국 시간이 더 듭니다. 그 시점이 유료·전문 도구를 고려할 때입니다.
 
 <figure class="shot">
-<img src="/projects/sellerai-1.jpg" alt="상품 이미지를 여러 장 일괄 생성한 SellerAI 결과 화면" />
+<img src="/projects/sellerai-1.webp" alt="상품 이미지를 여러 장 일괄 생성한 SellerAI 결과 화면" />
 <figcaption>상품 이미지를 자주·대량으로 만든다면 누끼·생성·상세를 한 흐름에서 처리하는 도구가 시간을 아낍니다 — SellerAI 화면</figcaption>
 </figure>
 

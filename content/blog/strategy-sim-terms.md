@@ -3,7 +3,7 @@ title: 전략 시뮬레이션 입문자를 위한 기본 용어 정리
 date: 2026-05-27
 category: 후삼국지
 excerpt: 전략 시뮬레이션을 처음 켠 입문자가 첫 판부터 막히지 않도록, 내정·외교·전투 용어를 게임 화면 시선으로 쉽게 풀었습니다.
-thumbnail: /blog/covers/strategy-sim-terms.png
+thumbnail: /blog/covers/strategy-sim-terms.webp
 imageAlt: 전략 시뮬레이션 입문자를 위한 기본 용어 정리
 tags: [전략 시뮬레이션, 게임 용어, 입문 가이드, 시뮬레이션 게임]
 relatedServices: [hoosamgukji]
@@ -14,7 +14,7 @@ relatedServices: [hoosamgukji]
 그래서 이 글은 **게임을 처음 켠 입문자가 첫 판부터 막히지 않도록**, 자주 마주치는 기본 용어를 게임 화면의 시선으로 풀어 정리합니다. 용어를 내정·외교·전투 세 묶음으로 나눠, 각각이 게임에서 어떤 버튼·상황과 연결되는지까지 함께 봅니다. 이 정도만 알면 첫 판은 충분히 굴러갑니다.
 
 
-![후삼국지 실제 화면](/blog/inline/hsg-strategy.jpg)
+![후삼국지 실제 화면](/blog/inline/hsg-strategy.webp)
 
 > 📱 **후삼국지** — 대한민국 후삼국 시대를 배경으로 한 전략 시뮬레이션 게임. [후삼국지 자세히 보기 →](/projects/hoosamgukji)
 

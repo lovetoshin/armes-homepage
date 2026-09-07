@@ -3,7 +3,7 @@ title: "EV Charging Costs: Time-of-Use and Membership Savings"
 date: 2026-05-25
 category: 전기차
 excerpt: EV charging costs vary considerably based on time of day and membership status. Here's a practical guide to using off-peak hours and choosing the right membership to cut your charging bill.
-thumbnail: /blog/covers/ev-charging-cost-saving.png
+thumbnail: /blog/covers/ev-charging-cost-saving.webp
 imageAlt: EV charging cost savings through time-of-use and membership strategies
 tags: [EV charging cost, charging membership, off-peak charging, EV running costs]
 relatedServices: [rewardtalk]
@@ -14,7 +14,7 @@ One of the biggest draws of going electric is **lower running costs.** Cover the
 To truly enjoy the cost advantage of an EV, you need to understand what determines your charging rate and **make the cheapest combination a habit.** This guide covers the factors that drive charging costs, how to use off-peak hours to your advantage, how to choose a membership, and how to build a destination charging habit — all with a practical focus.
 
 
-![RewardTalk app screenshot](/blog/inline/svc-rewardtalk.jpg)
+![RewardTalk app screenshot](/blog/inline/svc-rewardtalk.webp)
 
 > 📱 **RewardTalk** — A local membership platform connecting you to nearby store discounts, rewards, and group deals. [Learn more about RewardTalk →](/projects/rewardtalk)
 

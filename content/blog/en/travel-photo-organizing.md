@@ -3,7 +3,7 @@ title: Travel Photo Organization Tips — Preserving Memories Without Regret
 date: 2026-06-08
 category: 생산성도구
 excerpt: Hundreds of photos pile up after every trip, and organizing them afterward is even harder. Here are practical tips for preserving and organizing your travel photos without regret.
-thumbnail: /blog/covers/travel-photo-organizing.png
+thumbnail: /blog/covers/travel-photo-organizing.webp
 imageAlt: Travel photo organization tips
 tags: [travel photos, photo organization, travel memories, photo backup]
 relatedServices: [photosort]

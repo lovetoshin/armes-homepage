@@ -3,7 +3,7 @@ title: 自助加油站為什麼便宜？＋加油折扣卡完整攻略
 date: 2026-05-26
 category: 주유
 excerpt: 釐清自助加油站價格更低的真正原因，並整理選擇加油折扣卡時必須確認的四個要點，幫你每次加油都能省到錢。
-thumbnail: /blog/covers/self-gas-discount-card.png
+thumbnail: /blog/covers/self-gas-discount-card.webp
 imageAlt: 自助加油站便宜的原因與加油折扣卡整理
 tags: [自助加油站, 加油折扣卡, 油價, 省油費, 加油優惠]
 relatedServices: [rewardtalk]
@@ -14,7 +14,7 @@ relatedServices: [rewardtalk]
 難在「哪家自助油站才是附近真正最便宜的」，以及「哪張折扣卡才適合自己的消費習慣」。本文詳細說明自助加油站更便宜的原因，以及選折扣卡時的四個關鍵標準，還有疊加更多優惠的方法。
 
 
-![RewardTalk 實際畫面截圖](/blog/inline/svc-rewardtalk.jpg)
+![RewardTalk 實際畫面截圖](/blog/inline/svc-rewardtalk.webp)
 
 > 📱 **RewardTalk** — 整合周邊店家折扣、點數與團購的在地會員平台。[深入了解 RewardTalk →](/projects/rewardtalk)
 
@@ -31,8 +31,8 @@ relatedServices: [rewardtalk]
 代價只是自己動手加油，而每次加油實實在在能節省一些錢。不過，自助油站之間也因地點和品牌不同而有價差，所以找到附近真正最便宜的那家依然重要——[如何找到附近最便宜的加油站](/blog/cheapest-gas-station)。
 
 <figure class="shots">
-<img src="/projects/rewardtalk-2.jpg" alt="展示周邊店家和優惠資訊的 RewardTalk 首頁" />
-<img src="/projects/rewardtalk-1.jpg" alt="展示周邊優惠清單的 RewardTalk 畫面" />
+<img src="/projects/rewardtalk-2.webp" alt="展示周邊店家和優惠資訊的 RewardTalk 首頁" />
+<img src="/projects/rewardtalk-1.webp" alt="展示周邊優惠清單的 RewardTalk 畫面" />
 <figcaption>在同一個地方看到周邊加油和優惠資訊，省去逐一查找的麻煩——RewardTalk 實際畫面</figcaption>
 </figure>
 

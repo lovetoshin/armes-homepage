@@ -3,7 +3,7 @@ title: 文本工具合集 — 从字数统计到文本整理
 date: 2026-05-13
 category: 생산성도구
 excerpt: 汇集了字数统计、大小写转换、删除重复行等文本处理工具，全部在浏览器中即可完成，无需安装。
-thumbnail: /blog/covers/text-tools.png
+thumbnail: /blog/covers/text-tools.webp
 imageAlt: 在线文本工具合集整理
 tags: [文本工具, 字数统计, 文本转换, 在线工具]
 relatedServices: [tools]

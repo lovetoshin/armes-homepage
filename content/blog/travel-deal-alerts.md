@@ -3,7 +3,7 @@ title: 여행 특가 알림 놓치지 않는 법
 date: 2026-05-25
 category: 여행
 excerpt: 좋은 여행 특가는 순식간에 사라집니다. 특가가 풀리는 시점과, 알림을 활용해 놓치지 않고 잡는 방법을 정리했습니다.
-thumbnail: /blog/covers/travel-deal-alerts.png
+thumbnail: /blog/covers/travel-deal-alerts.webp
 imageAlt: 여행 특가 알림 받고 놓치지 않는 법
 tags: [여행 특가, 항공권 특가, 여행 알림, 땡처리]
 relatedServices: [travelmoa]
@@ -14,7 +14,7 @@ relatedServices: [travelmoa]
 여기서 "준비"란 운이 아니라 시스템입니다. 특가가 왜·언제 풀리는지 알고, 알림을 걸어 두고, 날짜를 유연하게 열어 두는 것 — 이 세 가지를 갖추면 남들이 놓치는 가격을 더 자주 잡습니다. 이 글에서 그 방법을 정리합니다.
 
 
-![여행모아 실제 화면](/blog/inline/svc-travelmoa.jpg)
+![여행모아 실제 화면](/blog/inline/svc-travelmoa.webp)
 
 > 📱 **여행모아** — 흩어진 여행 특가와 항공권을 한곳에 모아 비교하는 여행 플랫폼. [여행모아 자세히 보기 →](/projects/travelmoa)
 
@@ -37,8 +37,8 @@ relatedServices: [travelmoa]
 절대 공식은 아닙니다. 핵심은 "**자주, 그러나 효율적으로**" 확인하는 것 — 그게 바로 알림이 필요한 이유입니다.
 
 <figure class="shots">
-<img src="/projects/travelmoa-2.jpg" alt="여행 상품 가격과 특가를 보여주는 TravelMoa 상세 화면" />
-<img src="/projects/travelmoa-3.jpg" alt="여행 정보를 정리해 보여주는 TravelMoa 화면" />
+<img src="/projects/travelmoa-2.webp" alt="여행 상품 가격과 특가를 보여주는 TravelMoa 상세 화면" />
+<img src="/projects/travelmoa-3.webp" alt="여행 정보를 정리해 보여주는 TravelMoa 화면" />
 <figcaption>가고 싶은 노선을 등록해 두고 가격이 떨어질 때 알림을 받으면 매번 검색할 필요가 없습니다 — TravelMoa 화면</figcaption>
 </figure>
 

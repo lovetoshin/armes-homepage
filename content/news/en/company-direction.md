@@ -3,7 +3,7 @@ title: ARMES Defines Its Identity as an Everyday-Life Service Company
 date: 2026-06-20
 category: 공지
 excerpt: ARMES has clarified its direction as an everyday-life service company that solves daily inconveniences using data, automation, and location technology.
-thumbnail: /news/armes-cover.png
+thumbnail: /news/armes-cover.webp
 imageAlt: ARMES logo — everyday-life service company
 tags: [Company News, Everyday-Life Services, Business Direction, Announcement]
 ---
@@ -30,7 +30,7 @@ For more details, please visit the [Projects](/#projects) section.
 
 ## A Word from Our CEO
 
-![ARMES CEO Shin Ji-han](/news/ceo-banner.png)
+![ARMES CEO Shin Ji-han](/news/ceo-banner.webp)
 
 > "During 16 years in distribution and retail, what I saw was not flashy technology — it was the tedious, repetitive work that happened every single day. ARMES is a company that takes that burden away. Technology is not a goal; it is a tool. We believe technology only has meaning when it actually touches real life."
 >

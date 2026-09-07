@@ -60,7 +60,7 @@ export const projects: Project[] = [
     tech: ["AI", "Vision", "Automation"],
     href: "https://www.armes.co.kr/sellerai/studio",
     icon: "🖼️",
-    thumbnail: "/projects/sellerai-1.jpg",
+    thumbnail: "/projects/sellerai-1.webp",
   },
   {
     key: "tools",
@@ -71,7 +71,7 @@ export const projects: Project[] = [
     tech: ["Automation"],
     href: "https://www.armes.co.kr/tools/",
     icon: "🧰",
-    thumbnail: "/projects/tools-main.png",
+    thumbnail: "/projects/tools-main.webp",
   },
   {
     key: "rewardtalk",
@@ -83,7 +83,7 @@ export const projects: Project[] = [
     androidUrl: "https://play.google.com/store/apps/details?id=com.rewardtalk.app",
     iosUrl: "https://apps.apple.com/kr/app/id6788670980",
     icon: "🎁",
-    thumbnail: "/projects/rewardtalk-2.jpg",
+    thumbnail: "/projects/rewardtalk-2.webp",
   },
   {
     key: "travelmoa",
@@ -95,7 +95,7 @@ export const projects: Project[] = [
     androidUrl: "https://play.google.com/store/apps/details?id=com.travelmoa.app",
     iosUrl: "https://apps.apple.com/kr/app/id6788629138",
     icon: "✈️",
-    thumbnail: "/projects/travelmoa-2.jpg",
+    thumbnail: "/projects/travelmoa-2.webp",
   },
   {
     key: "cocoping",
@@ -107,7 +107,7 @@ export const projects: Project[] = [
     androidUrl: "https://play.google.com/store/apps/details?id=com.cocoping.app",
     iosUrl: "https://apps.apple.com/kr/app/id6788451449",
     icon: "🛒",
-    thumbnail: "/projects/cocoping-2.jpg",
+    thumbnail: "/projects/cocoping-2.webp",
   },
   {
     key: "worldlingo",
@@ -117,7 +117,7 @@ export const projects: Project[] = [
     status: "dev",
     tech: ["AI", "Automation"],
     icon: "🌐",
-    thumbnail: "/projects/worldlingo-2.png",
+    thumbnail: "/projects/worldlingo-2.webp",
   },
   {
     key: "hoosamgukji",

@@ -3,7 +3,7 @@ title: How to Actually Get Your Money's Worth from a Costco Membership
 date: 2026-04-29
 category: 코스트코
 excerpt: How do you come out ahead after paying that annual fee? A breakdown of the spending habits that maximize your Costco membership value — plus a simple profit-and-loss formula.
-thumbnail: /blog/covers/costco-membership-worth.png
+thumbnail: /blog/covers/costco-membership-worth.webp
 imageAlt: How to get your money's worth from a Costco membership annual fee
 tags: [Costco membership, annual fee, value shopping, getting your money's worth]
 relatedServices: [cocoping]
@@ -14,7 +14,7 @@ Costco is fundamentally different from a regular supermarket: **you have to pay 
 What makes the difference is your spending habits. This post covers how to calculate your return, four spending habits that help you get your money's worth, and an honest look at when a membership just isn't the right fit.
 
 
-![CocoPing actual screen](/blog/inline/svc-cocoping.jpg)
+![CocoPing actual screen](/blog/inline/svc-cocoping.webp)
 
 > 📱 **CocoPing** — A shopping assistant that tracks Costco discount info and price changes near you at a glance. [Learn more about CocoPing →](/projects/cocoping)
 
@@ -27,8 +27,8 @@ No need to overcomplicate it. Just one equation:
 Here, "amount saved" is the **difference** between what you paid at Costco and what you would have paid elsewhere for the same item. This is exactly why comparing by unit price is so important. The unit price comparison method is covered in [How to Identify Truly Good Value at Costco](/blog/costco-best-value-items).
 
 <figure class="shots">
-<img src="/projects/cocoping-1.jpg" alt="CocoPing screen showing price tracking for saved products" />
-<img src="/projects/cocoping-2.jpg" alt="CocoPing screen with organized Costco item price information" />
+<img src="/projects/cocoping-1.webp" alt="CocoPing screen showing price tracking for saved products" />
+<img src="/projects/cocoping-2.webp" alt="CocoPing screen with organized Costco item price information" />
 <figcaption>Track the price history of items you care about and you can actually see how much you've saved — CocoPing screen</figcaption>
 </figure>
 

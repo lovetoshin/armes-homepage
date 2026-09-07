@@ -3,7 +3,7 @@ title: 후삼국지로 보는 우리 역사의 결정적 순간
 date: 2026-05-08
 category: 후삼국지
 excerpt: 후삼국 시대의 판도를 바꾼 결정적 장면을, 전략 게임에서 마주칠 '분기점'이라는 입문자 시선으로 다시 봅니다.
-thumbnail: /blog/covers/hoosamguk-key-moments.png
+thumbnail: /blog/covers/hoosamguk-key-moments.webp
 imageAlt: 후삼국지로 보는 우리 역사의 결정적 순간
 tags: [후삼국, 전략 시뮬레이션, 고려 건국, 게임 입문]
 relatedServices: [hoosamgukji]
@@ -14,7 +14,7 @@ relatedServices: [hoosamgukji]
 그래서 이 글은 역사를 연대기처럼 나열하는 대신, **"게임 속 분기점이라면 당신은 어떻게 했을까"** 라는 입문자 시선으로 후삼국의 결정적 장면을 다시 봅니다. 각 순간이 전략 게임의 어떤 판단(내정·민심·전투·외교)과 연결되는지를 함께 짚으면, 교과서 속 사건이 살아 있는 전략 게임처럼 다가옵니다.
 
 
-![후삼국지 실제 화면](/blog/inline/hsg-keymoments.jpg)
+![후삼국지 실제 화면](/blog/inline/hsg-keymoments.webp)
 
 > 📱 **후삼국지** — 대한민국 후삼국 시대를 배경으로 한 전략 시뮬레이션 게임. [후삼국지 자세히 보기 →](/projects/hoosamgukji)
 

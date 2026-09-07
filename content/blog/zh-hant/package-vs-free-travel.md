@@ -3,7 +3,7 @@ title: 東南亞跟團旅遊 vs 自由行，費用真實比較
 date: 2026-05-04
 category: 여행
 excerpt: 同樣是東南亞旅行，跟團旅遊和自由行的費用結構截然不同。本文逐項對比實際費用，幫你找到最適合自己的出行方式。
-thumbnail: /blog/covers/package-vs-free-travel.png
+thumbnail: /blog/covers/package-vs-free-travel.webp
 imageAlt: 東南亞跟團旅遊與自由行費用比較
 tags: [跟團旅遊, 自由行, 東南亞旅行, 旅遊費用]
 relatedServices: [travelmoa]
@@ -14,7 +14,7 @@ relatedServices: [travelmoa]
 關鍵不在於「哪種更便宜」，而在於理解**「兩者的費用結構有何不同」**。唯有理解了這一點，才能根據自己的行程、同行人員和個人喜好做出最合適的選擇。本文將逐項對比兩種方式的費用結構，並幫你判斷哪種旅遊方式更適合你。
 
 
-![TravelMoa實際畫面](/blog/inline/svc-travelmoa.jpg)
+![TravelMoa實際畫面](/blog/inline/svc-travelmoa.webp)
 
 > 📱 **TravelMoa** — 將分散的旅遊特價和機票匯聚一處、方便比較的旅遊平台。[了解更多 TravelMoa →](/projects/travelmoa)
 
@@ -26,8 +26,8 @@ relatedServices: [travelmoa]
 - **自由行：** 所有項目單獨預訂。自由度高，但若訂得不好，各項費用可能更貴。
 
 <figure class="shots">
-<img src="/projects/travelmoa-1.jpg" alt="TravelMoa匯聚旅遊產品供使用者比較的列表畫面" />
-<img src="/projects/travelmoa-2.jpg" alt="展示旅遊產品價格的TravelMoa詳情畫面" />
+<img src="/projects/travelmoa-1.webp" alt="TravelMoa匯聚旅遊產品供使用者比較的列表畫面" />
+<img src="/projects/travelmoa-2.webp" alt="展示旅遊產品價格的TravelMoa詳情畫面" />
 <figcaption>無論跟團還是自由行，在一處比較多款產品是省錢的起點——TravelMoa畫面</figcaption>
 </figure>
 

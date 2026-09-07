@@ -3,7 +3,7 @@ title: 用 AI 製作網店商品詳情頁 — 新手入門指南
 date: 2026-05-18
 category: AI
 excerpt: 即使完全沒有設計經驗，也能用 AI 製作商品詳情頁。本文從準備工作到完成，分步驟詳細介紹整個流程。
-thumbnail: /blog/covers/ai-detail-page-beginner.png
+thumbnail: /blog/covers/ai-detail-page-beginner.webp
 imageAlt: 用 AI 製作網店商品詳情頁的新手分步指南
 tags: [AI 詳情頁, 製作詳情頁, 網路商店, 新手指南]
 relatedServices: [sellerai]
@@ -14,7 +14,7 @@ relatedServices: [sellerai]
 好在如今的 AI 工具已經大幅簡化了這個過程。不過，「按下按鈕就能完成」的幻想還是要打破——**你來決定說什麼，AI 來替你完成製作**，這才是準確的定位。本文將以最清晰的步驟，帶你從準備工作走到最終完成，完全不需要設計經驗。
 
 
-![SellerAI 實際介面截圖](/blog/inline/sai-ai-detail-page-beginner.jpg)
+![SellerAI 實際介面截圖](/blog/inline/sai-ai-detail-page-beginner.webp)
 
 > 📱 **SellerAI** — 只需一張商品圖，即可生成模特兒穿搭圖、去背圖及詳情頁的 AI 服務。[瞭解更多 SellerAI →](https://www.armes.co.kr/sellerai/studio)
 
@@ -38,7 +38,7 @@ relatedServices: [sellerai]
 - **風格參考：**確定一個整體基調，例如簡潔清爽或溫暖親切
 
 <figure class="shot">
-<img src="/projects/sellerai-2.jpg" alt="SellerAI 編輯介面，用商品圖片和資訊生成詳情頁" />
+<img src="/projects/sellerai-2.webp" alt="SellerAI 編輯介面，用商品圖片和資訊生成詳情頁" />
 <figcaption>整理好圖片和資訊輸入進去，即可生成詳情頁初稿 —— SellerAI 實際介面</figcaption>
 </figure>
 

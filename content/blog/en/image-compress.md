@@ -3,7 +3,7 @@ title: Image Compression — Reduce File Size Without Sacrificing Quality
 date: 2026-05-18
 category: 생산성도구
 excerpt: Hit an upload size limit? Here's how image compression works and how to shrink file size without noticeably hurting image quality.
-thumbnail: /blog/covers/image-compress.png
+thumbnail: /blog/covers/image-compress.webp
 imageAlt: How to reduce image file size while preserving quality
 tags: [image compression, reduce photo size, file compression, shrink image]
 relatedServices: [tools]

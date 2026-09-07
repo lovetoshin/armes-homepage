@@ -3,7 +3,7 @@ title: AI 照片分類工具比較 — 如何選擇一款自動幫你整理的�
 date: 2026-06-01
 category: 생산성도구
 excerpt: 能自動按人物、地點、主題將數千張照片分組整理的 AI 照片分類工具。介紹種類差異及選擇時的注意事項。
-thumbnail: /blog/covers/ai-photo-sorting-tools.png
+thumbnail: /blog/covers/ai-photo-sorting-tools.webp
 imageAlt: AI 照片自動分類工具比較
 tags: [AI 照片分類, 照片自動整理, Vision AI, 照片管理工具]
 relatedServices: [photosort]

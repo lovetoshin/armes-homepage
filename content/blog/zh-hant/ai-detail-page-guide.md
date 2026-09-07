@@ -3,7 +3,7 @@ title: 用 AI 製作詳情頁時，需要了解的 3 件事
 date: 2026-05-11
 category: AI
 excerpt: 提升 AI 詳情頁完成度的小習慣。已掌握基礎流程的賣家，進一步優化結果的實用指南。
-thumbnail: /blog/covers/ai-detail-page-guide.png
+thumbnail: /blog/covers/ai-detail-page-guide.webp
 imageAlt: 用 AI 製作網店商品詳情頁的方法指南
 tags: [AI 詳情頁, 詳情頁製作, AI 電商應用, 網路商店]
 relatedServices: [sellerai]
@@ -14,7 +14,7 @@ AI 替我們製作詳情頁的時代已經到來。但有一個有趣的現象�
 本文以[用 AI 製作詳情頁的基礎流程](/blog/ai-detail-page-beginner)為前提，深入一步，整理「提升成品格調的 3 個核心要素」以及實際操作中最常被忽視的部分。
 
 
-![SellerAI 實際介面截圖](/blog/inline/sai-ai-detail-page-guide.jpg)
+![SellerAI 實際介面截圖](/blog/inline/sai-ai-detail-page-guide.webp)
 
 > 📱 **SellerAI** — 只需一張商品圖，即可生成模特兒穿搭圖、去背圖及詳情頁的 AI 服務。[瞭解更多 SellerAI →](https://www.armes.co.kr/sellerai/studio)
 
@@ -31,7 +31,7 @@ AI 替我們製作詳情頁的時代已經到來。但有一個有趣的現象�
 AI 基於你提供的圖片進行製作。**輸入模糊或昏暗的圖片，結果也會同樣模糊。**「垃圾進，垃圾出」在這裡完全適用。第一步是使用最好的原圖；如果背景雜亂，先用 [AI 去背（移除背景）](/blog/ai-background-removal)整理乾淨。需要模特兒穿搭圖時，使用[用 AI 製作模特兒穿搭圖的方法](/blog/ai-model-cut)。拍攝基礎知識請參閱[網店商品圖拍攝準備指南](/blog/product-photo-tips)。
 
 <figure class="shot">
-<img src="/projects/sellerai-4.jpg" alt="SellerAI 介面展示多張商品圖以統一風格呈現" />
+<img src="/projects/sellerai-4.webp" alt="SellerAI 介面展示多張商品圖以統一風格呈現" />
 <figcaption>使用好的原圖並統一風格，多個商品也能呈現出一個品牌的感覺 —— SellerAI 介面</figcaption>
 </figure>
 

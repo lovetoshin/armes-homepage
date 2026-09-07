@@ -3,7 +3,7 @@ title: 스마트스토어 초보 셀러가 첫 달에 챙길 5가지
 date: 2026-06-20
 category: 쇼핑
 excerpt: 스마트스토어를 막 시작한 셀러가 첫 한 달 동안 우선순위를 두면 좋은 다섯 가지를 정리했습니다.
-thumbnail: /blog/covers/smartstore-first-month.png
+thumbnail: /blog/covers/smartstore-first-month.webp
 imageAlt: 스마트스토어 초보 셀러가 첫 달에 챙길 것 정리
 tags: [스마트스토어, 초보 셀러, 온라인 판매, 쇼핑몰 운영]
 relatedServices: [sellerai, rankingpangpang]
@@ -14,7 +14,7 @@ relatedServices: [sellerai, rankingpangpang]
 상품 50개를 대충 올리는 것보다, 상품 1개를 제대로 올린 경험이 훨씬 값집니다. 그 1개가 나머지 모든 상품의 기준이 되기 때문입니다. 실제로 첫 판매에 성공한 셀러들을 곁에서 지켜보면, 처음부터 여러 상품을 벌여 놓기보다 대표 상품 하나에 사진·상세페이지·키워드를 집중해 감을 잡은 뒤 확장하는 순서를 밟는 경우가 대부분입니다. 이 글에서는 초보 셀러가 첫 달에 우선순위를 둬야 할 다섯 가지를, 실제로 어디서 막히는지까지 짚어 정리합니다.
 
 
-![SellerAI 실제 화면](/blog/inline/sai-smartstore-first-month.jpg)
+![SellerAI 실제 화면](/blog/inline/sai-smartstore-first-month.webp)
 
 > 📱 **SellerAI** — 상품 사진 한 장으로 모델 착용컷·누끼·상세페이지까지 만드는 AI 서비스. [SellerAI 자세히 보기 →](https://www.armes.co.kr/sellerai/studio)
 
@@ -39,7 +39,7 @@ relatedServices: [sellerai, rankingpangpang]
 고객은 사진을 먼저 보고, 그다음 설명을 읽습니다. 목록에서 대표 이미지 한 장이 약하면, 아무리 좋은 상품도 클릭조차 받지 못합니다. 사진은 **대표컷(첫인상) → 착용·사용컷 → 디테일컷 → 정보컷** 순서로 흐름을 잡는 게 좋습니다. 자세한 배치는 [전환율 높이는 상세페이지 사진 배치 순서](/blog/detail-page-photo-order)에 정리해 두었습니다.
 
 <figure class="shot">
-<img src="/projects/sellerai-2.jpg" alt="상품 사진과 상세 이미지를 만드는 SellerAI 편집 화면" />
+<img src="/projects/sellerai-2.webp" alt="상품 사진과 상세 이미지를 만드는 SellerAI 편집 화면" />
 <figcaption>촬영·편집이 어렵다면 AI 이미지 도구로 대표컷·상세컷의 완성도를 끌어올릴 수 있습니다 — SellerAI 실제 화면</figcaption>
 </figure>
 

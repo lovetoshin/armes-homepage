@@ -3,7 +3,7 @@ title: The Core Principles That Get Your Blog Posts to Page One
 date: 2026-05-20
 category: SEO
 excerpt: There's a pattern behind every blog post that ranks. Here are the fundamental writing principles that work — no technical wizardry required.
-thumbnail: /blog/covers/blog-seo-basics.png
+thumbnail: /blog/covers/blog-seo-basics.webp
 imageAlt: Core principles for getting your blog post to search page one
 tags: [blog SEO, search ranking, content writing, organic traffic]
 relatedServices: []
@@ -14,7 +14,7 @@ relatedServices: []
 Fortunately, posts that rank high share clear **common traits** — and they're not complex technical tricks. They're **basic principles** anyone can follow. In this post, we'll cover five core principles for writing search-friendly content, paired with examples of what doesn't work.
 
 
-![SellerAI actual screen](/blog/inline/sai-blog-seo-basics.jpg)
+![SellerAI actual screen](/blog/inline/sai-blog-seo-basics.webp)
 
 > 📱 **SellerAI** — An AI service that turns a single product photo into model shots, background-removed images, and full detail pages. [Learn more about SellerAI →](https://www.armes.co.kr/sellerai/studio)
 

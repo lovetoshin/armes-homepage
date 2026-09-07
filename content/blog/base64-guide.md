@@ -3,7 +3,7 @@ title: Base64 인코딩·디코딩 쉽게 이해하기
 date: 2026-04-25
 category: 생산성도구
 excerpt: Base64가 무엇이고 왜 쓰는지, 인코딩과 디코딩을 어떻게 하는지 비전공자도 이해할 수 있게 쉽게 풀어 정리했습니다.
-thumbnail: /blog/covers/base64-guide.png
+thumbnail: /blog/covers/base64-guide.webp
 imageAlt: Base64 인코딩 디코딩 쉽게 이해하기
 tags: [Base64, 인코딩, 디코딩, 개발자 도구]
 relatedServices: [tools]

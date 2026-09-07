@@ -3,7 +3,7 @@ title: 只用一張商品圖，用 AI 製作模特兒穿搭圖的方法
 date: 2026-06-22
 category: AI
 excerpt: 無需模特兒和攝影棚，只需一張商品圖即可生成穿搭圖。介紹實現方法和讓結果更自然的實用技巧。
-thumbnail: /blog/covers/ai-model-cut.png
+thumbnail: /blog/covers/ai-model-cut.webp
 imageAlt: 用 AI 將商品圖製作成模特兒穿搭圖的方法
 tags: [AI 模特兒圖, 穿搭圖, 商品影像, 網店攝影]
 relatedServices: [sellerai]
@@ -14,7 +14,7 @@ relatedServices: [sellerai]
 問題在於成本和時間。模特兒預約、攝影棚租借、拍攝、修圖——對於小型網路商店來說，負擔相當大。每次上新都要安排一次拍攝，這本身就是一個瓶頸。近年來，只需一張商品圖就能用 AI 生成模特兒穿搭圖的方式已經在市場上站穩了腳跟。本文將介紹其原理、與傳統方式的實際成本和時間對比，以及讓結果更自然的實戰技巧。
 
 
-![SellerAI 實際介面截圖](/blog/inline/sai-ai-model-cut.jpg)
+![SellerAI 實際介面截圖](/blog/inline/sai-ai-model-cut.webp)
 
 > 📱 **SellerAI** — 只需一張商品圖，即可生成模特兒穿搭圖、去背圖及詳情頁的 AI 服務。[瞭解更多 SellerAI →](https://www.armes.co.kr/sellerai/studio)
 
@@ -25,8 +25,8 @@ relatedServices: [sellerai]
 打個比方：你給 AI 一張掛在衣架上的衣服照片，AI 就會畫出一張「有人穿著這件衣服」的圖。從模特架圖或去背圖出發，直接擴展為穿搭圖，完全省去了拍攝環節。去背越乾淨，效果越好，因此建議先用 [AI 去背（移除背景）](/blog/ai-background-removal) 將商品整理乾淨。
 
 <figure class="shots">
-<img src="/projects/sellerai-3.jpg" alt="AI 生成的單張模特兒穿搭圖效果" />
-<img src="/projects/sellerai-1.jpg" alt="一個商品生成多張模特兒穿搭圖的效果" />
+<img src="/projects/sellerai-3.webp" alt="AI 生成的單張模特兒穿搭圖效果" />
+<img src="/projects/sellerai-1.webp" alt="一個商品生成多張模特兒穿搭圖的效果" />
 <figcaption>一張商品圖生成單張穿搭圖（左）和多張變體圖（右）—— SellerAI 實際生成效果</figcaption>
 </figure>
 

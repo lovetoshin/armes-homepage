@@ -3,7 +3,7 @@ title: 無需安裝的免費影像轉換工具
 date: 2026-06-23
 category: 생산성도구
 excerpt: 介紹如何在瀏覽器中直接完成影像格式轉換和壓縮，無需安裝任何軟體，同時整理了安全使用的技巧。
-thumbnail: /blog/covers/free-image-converter.png
+thumbnail: /blog/covers/free-image-converter.webp
 imageAlt: 無需安裝、在瀏覽器中直接使用的免費影像轉換工具
 tags: [影像轉換, 檔案格式轉換, 免費工具, 影像壓縮]
 relatedServices: [tools]

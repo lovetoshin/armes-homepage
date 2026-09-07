@@ -3,7 +3,7 @@ title: 여행 사진 정리 노하우 — 다녀와서 후회 없이 남기기
 date: 2026-06-08
 category: 생산성도구
 excerpt: 여행 한 번에 수백 장씩 쌓이는 사진, 다녀와서 정리하면 더 힘듭니다. 여행 사진을 후회 없이 남기고 정리하는 노하우를 정리했습니다.
-thumbnail: /blog/covers/travel-photo-organizing.png
+thumbnail: /blog/covers/travel-photo-organizing.webp
 imageAlt: 여행 사진 정리 노하우
 tags: [여행 사진, 사진 정리, 여행 기록, 사진 백업]
 relatedServices: [photosort]

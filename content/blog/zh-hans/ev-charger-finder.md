@@ -3,7 +3,7 @@ title: 电动汽车充电站查找指南 —— 快充与慢充对比
 date: 2026-06-15
 category: 전기차
 excerpt: 介绍如何快速找到电动汽车充电站、快充与慢充的区别，以及节省充电费用的实用技巧。
-thumbnail: /blog/covers/ev-charger-finder.png
+thumbnail: /blog/covers/ev-charger-finder.webp
 imageAlt: 电动汽车充电站查找与快充慢充对比
 tags: [电动汽车充电站, 快速充电, 慢速充电, 充电费用, 新能源车]
 relatedServices: [rewardtalk]
@@ -14,7 +14,7 @@ relatedServices: [rewardtalk]
 其实只要养成**提前找好充电站、出发前确认空位、费用和状态**的习惯，大多数烦恼都会迎刃而解。本文将一次性说清楚：快充和慢充有什么区别、怎么快速找到充电站、选充电 App 时该看什么，以及节省充电费用的实用技巧。
 
 
-![RewardTalk 实际界面截图](/blog/inline/svc-rewardtalk.jpg)
+![RewardTalk 实际界面截图](/blog/inline/svc-rewardtalk.webp)
 
 > 📱 **RewardTalk** — 整合周边门店折扣、积分与团购的本地会员平台。[了解 RewardTalk →](/projects/rewardtalk)
 

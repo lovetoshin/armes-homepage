@@ -3,7 +3,7 @@ title: A Local SEO Starter Guide for Small Business Owners
 date: 2026-05-04
 category: SEO
 excerpt: When a nearby customer searches "OO near me," will your shop show up? Here's a practical local SEO guide written for business owners, not tech experts.
-thumbnail: /blog/covers/local-seo-guide.png
+thumbnail: /blog/covers/local-seo-guide.webp
 imageAlt: A local SEO starter guide for small business owners
 tags: [local SEO, local business, map listing, store marketing]
 relatedServices: [rewardtalk]
@@ -13,7 +13,7 @@ Customers now search for local businesses just like they search for everything e
 
 **Making your business visible in local search and on maps is what local SEO is all about.** The good news: this isn't expensive advertising. It's hands-on work that any business owner can handle themselves. In this guide, we cover what separates local SEO from general SEO, what to do first, real examples from local businesses, and how to turn search visitors into regulars.
 
-![RewardTalk actual screen](/blog/inline/svc-rewardtalk.jpg)
+![RewardTalk actual screen](/blog/inline/svc-rewardtalk.webp)
 
 > 📱 **RewardTalk** — A local membership platform connecting nearby businesses with customers through discounts, loyalty points, and group buys. [Learn more about RewardTalk →](/projects/rewardtalk)
 

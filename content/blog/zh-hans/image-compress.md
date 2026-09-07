@@ -3,7 +3,7 @@ title: 图片压缩——在保持画质的同时缩小文件大小
 date: 2026-05-18
 category: 생산성도구
 excerpt: 遇到上传大小限制了？本文整理了图片压缩的原理和技巧，教你在几乎不损失画质的情况下大幅缩减文件体积。
-thumbnail: /blog/covers/image-compress.png
+thumbnail: /blog/covers/image-compress.webp
 imageAlt: 在保持画质的同时缩减图片体积的压缩方法
 tags: [图片压缩, 照片瘦身, 文件压缩, 缩减体积]
 relatedServices: [tools]

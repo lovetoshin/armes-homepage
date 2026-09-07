@@ -3,7 +3,7 @@ title: 포토샵 없이 1분, AI 누끼(배경 제거) 하는 법
 date: 2026-04-27
 category: AI
 excerpt: 포토샵을 다루지 못해도 AI로 배경을 깔끔하게 지울 수 있습니다. 누끼의 원리와, 결과가 지저분해지는 경우를 피하는 요령을 정리했습니다.
-thumbnail: /blog/covers/ai-background-removal.png
+thumbnail: /blog/covers/ai-background-removal.webp
 imageAlt: 포토샵 없이 AI로 배경 제거 누끼 하는 법
 tags: [누끼, 배경 제거, AI 이미지 편집, 상품 사진]
 relatedServices: [sellerai]
@@ -14,7 +14,7 @@ relatedServices: [sellerai]
 예전에는 포토샵으로 펜툴을 잡고 경계선을 일일이 따야 했습니다. 한 장에 몇 분, 머리카락이 있으면 십수 분도 걸렸습니다. 지금은 AI가 같은 일을 1분 안에 해냅니다. 다만 **아무 사진이나 깔끔하게 되는 건 아닙니다.** 이 글에서는 누끼의 원리, 수작업 대비 실제 비용·시간 차이, 그리고 결과가 지저분해지지 않게 하는 실전 요령까지 정리합니다.
 
 
-![SellerAI 실제 화면](/blog/inline/sai-ai-background-removal.jpg)
+![SellerAI 실제 화면](/blog/inline/sai-ai-background-removal.webp)
 
 > 📱 **SellerAI** — 상품 사진 한 장으로 모델 착용컷·누끼·상세페이지까지 만드는 AI 서비스. [SellerAI 자세히 보기 →](https://www.armes.co.kr/sellerai/studio)
 
@@ -27,7 +27,7 @@ relatedServices: [sellerai]
 AI는 사진에서 **무엇이 주제이고 무엇이 배경인지**를 학습된 기준으로 구분해 경계선을 따냅니다. 사람이 펜툴로 선을 긋던 일을, 모델이 순식간에 처리하는 것입니다. 그래서 **주제와 배경의 구분이 뚜렷할수록** 결과가 깨끗합니다. 반대로 흰 옷+흰 배경처럼 경계가 모호하면 AI도 헷갈립니다.
 
 <figure class="shot">
-<img src="/projects/sellerai-3.jpg" alt="배경을 정리해 상품·인물을 깔끔하게 보여주는 SellerAI 이미지 화면" />
+<img src="/projects/sellerai-3.webp" alt="배경을 정리해 상품·인물을 깔끔하게 보여주는 SellerAI 이미지 화면" />
 <figcaption>배경을 정리하면 상품·인물이 또렷하게 살아납니다 — SellerAI로 다듬은 이미지 예시</figcaption>
 </figure>
 

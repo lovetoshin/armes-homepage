@@ -3,7 +3,7 @@ title: 如何找到網購最低價——價格比較App與網站對比
 date: 2026-06-05
 category: 쇼핑
 excerpt: 同樣的商品，在不同地方購買價格可能相差懸殊。本文整理了快速找到網購最低價的方法，以及不被「最低價」騙到的技巧。
-thumbnail: /blog/covers/online-lowest-price.png
+thumbnail: /blog/covers/online-lowest-price.webp
 imageAlt: 如何找到網購最低價及價格比較方法
 tags: [最低價, 價格比較, 網購, 精打細算]
 relatedServices: [cocoping, rankingpangpang]
@@ -14,7 +14,7 @@ relatedServices: [cocoping, rankingpangpang]
 要真正拿到最低價，需要掌握兩件事：① **用實際付款金額而非標價來比較**的方法；② **透過價格走勢判斷現在是否值得購買**的方法。本文將兩者一併整理清楚。
 
 
-![SellerAI實際畫面](/blog/inline/sai-online-lowest-price.jpg)
+![SellerAI實際畫面](/blog/inline/sai-online-lowest-price.webp)
 
 > 📱 **SellerAI** — 只需一張商品圖，即可生成模特穿搭圖、去背圖和商品詳情頁的AI服務。[了解更多 SellerAI →](https://www.armes.co.kr/sellerai/studio)
 
@@ -30,7 +30,7 @@ relatedServices: [cocoping, rankingpangpang]
 因此，要找真正的最低價，必須用**含運費和折扣的實際付款金額**來比較。
 
 <figure class="shot">
-<img src="/blog/inline/price-compare.png" alt="實際付款金額計算公式資訊圖——商品價格加運費減優惠券和點數" />
+<img src="/blog/inline/price-compare.webp" alt="實際付款金額計算公式資訊圖——商品價格加運費減優惠券和點數" />
 <figcaption>不要比標價，要用「商品價格 + 運費 − 優惠券與點數 = 實際付款金額」來比較</figcaption>
 </figure>
 

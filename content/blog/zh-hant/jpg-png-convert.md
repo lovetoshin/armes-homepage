@@ -3,7 +3,7 @@ title: JPG與PNG的差異及相互轉換方法
 date: 2026-05-11
 category: 생산성도구
 excerpt: JPG和PNG，什麼時候該用哪個？本文梳理了兩種格式的差異、相互轉換的時機，以及轉換時需要注意的事項。
-thumbnail: /blog/covers/jpg-png-convert.png
+thumbnail: /blog/covers/jpg-png-convert.webp
 imageAlt: JPG與PNG的差異及轉換方法
 tags: [JPG PNG轉換, JPG, PNG, 圖片格式]
 relatedServices: [tools]

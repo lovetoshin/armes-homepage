@@ -3,7 +3,7 @@ title: 好市多(Costco)價格標籤數字和星號(*)的隱藏含義
 date: 2026-06-02
 category: 코스트코
 excerpt: 好市多(Costco)價格標籤上的.97、.99和星號(*)隱藏著特定訊號。整理了光看價格標籤就能識別折扣和停產的方法。
-thumbnail: /blog/covers/costco-price-tag-secrets.png
+thumbnail: /blog/covers/costco-price-tag-secrets.webp
 imageAlt: 解讀好市多(Costco)價格標籤數字和星號含義
 tags: [Costco, 價格標籤, Costco折扣, 購物技巧]
 relatedServices: [cocoping]
@@ -14,14 +14,14 @@ relatedServices: [cocoping]
 這些訊號也很容易記。核心只有兩點：**末位數字和星號**。這篇文章將整理各自的含義、組合解讀方法，以及光看價格標籤還不夠的部分。
 
 
-![CocoPing 實際畫面](/blog/inline/svc-cocoping.jpg)
+![CocoPing 實際畫面](/blog/inline/svc-cocoping.webp)
 
 > 📱 **CocoPing** — 一眼掌握附近Costco折扣資訊和價格變動的購物助手。[了解更多 CocoPing →](/projects/cocoping)
 
 ## 價格標籤發出的訊號一目了然
 
 <figure class="shot">
-<img src="/blog/inline/costco-pricetag.png" alt="Costco價格標籤訊號資訊圖 — .97折扣、.99正常價、星號停產" />
+<img src="/blog/inline/costco-pricetag.webp" alt="Costco價格標籤訊號資訊圖 — .97折扣、.99正常價、星號停產" />
 <figcaption>只要知道末位數字和星號，在賣場裡就能立刻判斷是否是「現在該買的商品」</figcaption>
 </figure>
 

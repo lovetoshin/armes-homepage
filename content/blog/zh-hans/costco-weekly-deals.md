@@ -3,7 +3,7 @@ title: 如何查看开市客(Costco)本周特价商品
 date: 2026-06-19
 category: 코스트코
 excerpt: 提前掌握Costco本周特价信息，读懂价签上的隐藏信号，养成精明购物习惯。
-thumbnail: /blog/covers/costco-weekly-deals.png
+thumbnail: /blog/covers/costco-weekly-deals.webp
 imageAlt: 如何查看Costco本周打折商品
 tags: [Costco, 开市客优惠, 每周特价, 仓储购物, 省钱攻略]
 relatedServices: [cocoping]
@@ -14,7 +14,7 @@ relatedServices: [cocoping]
 问题在于，Costco并不会把所有打折商品一目了然地整理出来。所以精明的消费者会想出各种方法，**提前掌握本周哪些东西便宜**。本文将介绍如何提前了解本周特价信息、如何读懂价签上的信号，以及如何养成不被冲动消费左右的理性购物习惯。
 
 
-![CocoPing 实际界面截图](/blog/inline/svc-cocoping.jpg)
+![CocoPing 实际界面截图](/blog/inline/svc-cocoping.webp)
 
 > 📱 **CocoPing** — 一眼掌握周边Costco折扣信息与价格动态的购物助手。[查看 CocoPing 详情 →](/projects/cocoping)
 
@@ -29,8 +29,8 @@ relatedServices: [cocoping]
 最高效的方式是**提前注册感兴趣的商品，价格下降时自动收到通知**。这样就不用每周刷论坛，当你想买的东西降价时，自然会得到提醒。
 
 <figure class="shots">
-<img src="/projects/cocoping-1.jpg" alt="CocoPing 通知界面，显示关注商品的价格下降提醒" />
-<img src="/projects/cocoping-2.jpg" alt="CocoPing 界面，整理展示 Costco 关注商品的价格信息" />
+<img src="/projects/cocoping-1.webp" alt="CocoPing 通知界面，显示关注商品的价格下降提醒" />
+<img src="/projects/cocoping-2.webp" alt="CocoPing 界面，整理展示 Costco 关注商品的价格信息" />
 <figcaption>注册关注商品，降价时自动提醒 —— ARMES 正在开发中的 CocoPing 界面</figcaption>
 </figure>
 

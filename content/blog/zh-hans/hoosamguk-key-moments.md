@@ -3,7 +3,7 @@ title: 从后三国志看韩国历史的决定时刻
 date: 2026-05-08
 category: 후삼국지
 excerpt: 以"策略游戏中的分支节点"视角重新审视改变后三国时代格局的决定性历史场景。
-thumbnail: /blog/covers/hoosamguk-key-moments.png
+thumbnail: /blog/covers/hoosamguk-key-moments.webp
 imageAlt: 从后三国志看韩国历史的决定时刻
 tags: [后三国, 策略模拟, 高丽建国, 游戏入门]
 relatedServices: [hoosamgukji]
@@ -14,7 +14,7 @@ relatedServices: [hoosamgukji]
 所以本文不按年表罗列历史，而是以**"如果这是游戏中的分支节点，你会怎么选择？"**的入门者视角，重新审视后三国的决定性场面。每个瞬间与策略游戏中哪种判断（内政·民心·战斗·外交）相对应，本文会一并指出——这样，教科书里的历史事件就会像活生生的策略游戏一样鲜活起来。
 
 
-![后三国志实际游戏界面](/blog/inline/hsg-keymoments.jpg)
+![后三国志实际游戏界面](/blog/inline/hsg-keymoments.webp)
 
 > 📱 **后三国志** — 以韩国后三国时代为背景的策略模拟游戏。[查看后三国志详情 →](/projects/hoosamgukji)
 

@@ -3,7 +3,7 @@ title: 처음 전기차 충전, 이것만 알면 됩니다
 date: 2026-05-05
 category: 전기차
 excerpt: 전기차를 처음 타면 충전이 가장 막막합니다. 충전 종류부터 순서, 주의할 점까지 입문자가 꼭 알아야 할 기본을 정리했습니다.
-thumbnail: /blog/covers/ev-charging-basics.png
+thumbnail: /blog/covers/ev-charging-basics.webp
 imageAlt: 처음 전기차 충전 입문자 기본 가이드
 tags: [전기차 충전, 전기차 입문, 충전 방법, 전기차 초보]
 relatedServices: [rewardtalk]
@@ -14,7 +14,7 @@ relatedServices: [rewardtalk]
 다행히 충전은 **몇 가지 기본 원칙과 순서**만 익히면 주유보다 오히려 편해집니다. 이 글에서는 전기차 충전 입문자가 꼭 알아야 할 충전 종류, 실제 충전 순서, 초보가 자주 하는 실수, 그리고 헛걸음을 줄이는 법까지 차근차근 정리합니다. 처음 한 번만 따라 해 보면 그다음부터는 몸이 기억합니다.
 
 
-![리워드톡 실제 화면](/blog/inline/svc-rewardtalk.jpg)
+![리워드톡 실제 화면](/blog/inline/svc-rewardtalk.webp)
 
 > 📱 **리워드톡** — 내 주변 매장 할인·적립·공동구매를 잇는 로컬 멤버십 플랫폼. [리워드톡 자세히 보기 →](/projects/rewardtalk)
 

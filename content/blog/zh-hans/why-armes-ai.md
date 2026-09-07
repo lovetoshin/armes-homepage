@@ -3,7 +3,7 @@ title: ARMES 为什么创办了一家 AI 公司
 date: 2026-05-07
 category: AI
 excerpt: 在流通行业现场经历的种种不便，是如何演变成 AI 服务的。ARMES 分享它的起点故事。
-thumbnail: /blog/covers/why-armes-ai.png
+thumbnail: /blog/covers/why-armes-ai.webp
 imageAlt: 从流通现场的不便出发，ARMES AI 服务的诞生故事
 tags: [ARMES, AI 公司, 创业故事, 自动化]
 relatedServices: [sellerai, tools]
@@ -14,7 +14,7 @@ relatedServices: [sellerai, tools]
 ARMES 的创始人在流通行业一线摸爬滚打了很多年。卖货、见客户、每天做着同样的事情。在这个过程中，有一件事变得越来越清晰：**真正重要的事情所需要的时间，总是被重复性劳动不断侵占**。本文分享这些痛点是如何变成真实服务的，以及 ARMES 的工作原则。
 
 
-![SellerAI 实际界面](/blog/inline/sai-why-armes-ai.jpg)
+![SellerAI 实际界面](/blog/inline/sai-why-armes-ai.webp)
 
 > 📱 **SellerAI** — 只需一张商品图，即可生成模特上身图、抠图和详情页的 AI 服务。[查看 SellerAI 详情 →](https://www.armes.co.kr/sellerai/studio)
 
@@ -32,7 +32,7 @@ ARMES 的创始人在流通行业一线摸爬滚打了很多年。卖货、见�
 核心在于：这些东西不是因为"技术很酷"而做出来的，而是因为**"这些工作不断重复，太累了"**。
 
 <figure class="shot">
-<img src="/blog/inline/armes-apps.png" alt="ARMES 旗下 SellerAI、TravelMoa、RewardTalk、CocoPing 的应用界面合集" />
+<img src="/blog/inline/armes-apps.webp" alt="ARMES 旗下 SellerAI、TravelMoa、RewardTalk、CocoPing 的应用界面合集" />
 <figcaption>从现场痛点出发的真实服务 — 覆盖购物、旅行和日常生活，持续减少生活中的重复负担</figcaption>
 </figure>
 

@@ -3,7 +3,7 @@ title: JSON 포맷(정리)하는 법 — 뭉친 데이터 보기 좋게
 date: 2026-05-09
 category: 생산성도구
 excerpt: 한 줄로 뭉쳐 알아보기 힘든 JSON을 보기 좋게 정리하는 법과, 자주 만나는 오류를 잡는 요령을 쉽게 정리했습니다.
-thumbnail: /blog/covers/json-format.png
+thumbnail: /blog/covers/json-format.webp
 imageAlt: JSON 포맷 정리하는 법
 tags: [JSON 포맷, JSON 정리, 데이터 정리, 개발자 도구]
 relatedServices: [tools]

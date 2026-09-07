@@ -3,7 +3,7 @@ title: What Is URL Encoding? Fixing Broken Links
 date: 2026-04-27
 category: 생산성도구
 excerpt: Strange characters like %20 showing up in a URL, or Korean addresses breaking when shared. A simple explanation of what URL encoding is and how to fix it.
-thumbnail: /blog/covers/url-encoder.png
+thumbnail: /blog/covers/url-encoder.webp
 imageAlt: What URL encoding is and how to fix broken addresses
 tags: [URL encoding, URL decoding, broken URL, developer tools]
 relatedServices: [tools]

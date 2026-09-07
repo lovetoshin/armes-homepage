@@ -3,7 +3,7 @@ title: PDF 변환 — 워드·이미지·한글로 바꾸는 법
 date: 2026-05-29
 category: 생산성도구
 excerpt: PDF를 워드·이미지·한글 문서로, 또는 그 반대로 바꾸는 법을 정리했습니다. 설치 없이 브라우저에서 안전하게 변환하는 요령까지 다룹니다.
-thumbnail: /blog/covers/pdf-convert.png
+thumbnail: /blog/covers/pdf-convert.webp
 imageAlt: PDF를 워드 이미지로 변환하는 법
 tags: [PDF 변환, PDF 워드 변환, PDF 이미지, 문서 변환]
 relatedServices: [tools]

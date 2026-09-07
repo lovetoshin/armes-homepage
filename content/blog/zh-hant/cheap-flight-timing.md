@@ -3,7 +3,7 @@ title: 機票便宜購買的時機與星期幾完整攻略
 date: 2026-06-12
 category: 여행
 excerpt: 整理了機票價格變動的原理，以及在什麼時候、哪天購買更划算的完整攻略。
-thumbnail: /blog/covers/cheap-flight-timing.png
+thumbnail: /blog/covers/cheap-flight-timing.webp
 imageAlt: 便宜購買機票的時機與星期幾完整指南
 tags: [機票, 機票省錢攻略, 旅遊特惠, 機票訂購]
 relatedServices: [travelmoa]
@@ -14,7 +14,7 @@ relatedServices: [travelmoa]
 這篇文章將一次性整理清楚：機票價格為什麼會不斷變動、什麼時間、哪個星期幾購買更有利，以及實際省錢的方法。雖然沒有「絕對公式」，但讓機率站到你這邊的標準是明確存在的。
 
 
-![TravelMoa 實際畫面](/blog/inline/svc-travelmoa.jpg)
+![TravelMoa 實際畫面](/blog/inline/svc-travelmoa.webp)
 
 > 📱 **TravelMoa** — 將分散各處的旅遊特價和機票彙集一處進行比較的旅遊平台。[了解更多 TravelMoa →](/projects/travelmoa)
 
@@ -46,8 +46,8 @@ relatedServices: [travelmoa]
 一般來說，工作日（週二、週三）出發和凌晨·深夜航班更便宜。但這只是規律，不是絕對公式，所以**留出幾天的彈性進行比較**才是最重要的。
 
 <figure class="shots">
-<img src="/projects/travelmoa-1.jpg" alt="展示旅遊目的地和商品並排比較的TravelMoa列表畫面" />
-<img src="/projects/travelmoa-2.jpg" alt="顯示旅遊商品價格的TravelMoa詳情畫面" />
+<img src="/projects/travelmoa-1.webp" alt="展示旅遊目的地和商品並排比較的TravelMoa列表畫面" />
+<img src="/projects/travelmoa-2.webp" alt="顯示旅遊商品價格的TravelMoa詳情畫面" />
 <figcaption>在一處比較多個旅遊商品和價格 — ARMES的TravelMoa畫面</figcaption>
 </figure>
 

@@ -3,7 +3,7 @@ title: How to Organize Your Photos — Taming Thousands of Images
 date: 2026-06-10
 category: 생산성도구
 excerpt: If thousands of photos have piled up and you don't know where to start, this guide is for you. A practical system for organizing photos all at once and keeping them tidy for good.
-thumbnail: /blog/covers/photo-organizing-tips.png
+thumbnail: /blog/covers/photo-organizing-tips.webp
 imageAlt: How to organize a massive pile of accumulated photos
 tags: [photo organization, photo management, gallery cleanup, photo backup]
 relatedServices: [photosort]

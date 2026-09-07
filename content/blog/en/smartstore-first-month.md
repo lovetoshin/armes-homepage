@@ -3,7 +3,7 @@ title: 5 Things Every New Naver Smart Store Seller Should Do in Their First Mont
 date: 2026-06-20
 category: 쇼핑
 excerpt: A focused checklist for sellers who just launched on Naver Smart Store — five priorities that set the pace for everything that follows.
-thumbnail: /blog/covers/smartstore-first-month.png
+thumbnail: /blog/covers/smartstore-first-month.webp
 imageAlt: Five things new Naver Smart Store sellers should focus on in month one
 tags: [Naver Smart Store, new seller, online selling, e-commerce tips, store launch]
 relatedServices: [sellerai, rankingpangpang]
@@ -14,7 +14,7 @@ Naver Smart Store is free to open for anyone. And that ease of entry is exactly 
 Uploading 50 mediocre listings is far less valuable than perfecting one. That one product becomes the template for everything else. This article walks through the five priorities that matter most in your first month on Naver Smart Store — including where sellers most commonly get stuck along the way.
 
 
-![SellerAI screenshot](/blog/inline/sai-smartstore-first-month.jpg)
+![SellerAI screenshot](/blog/inline/sai-smartstore-first-month.webp)
 
 > 📱 **SellerAI** — An AI service that turns a single product photo into model shots, background-removed images, and full detail pages. [Learn more about SellerAI →](https://www.armes.co.kr/sellerai/studio)
 
@@ -39,7 +39,7 @@ Rather than listing dozens of products to start, pick one you're most confident 
 Customers look at the photo first — only then do they read the description. If your thumbnail doesn't stand out in a search listing, even great products go unclicked. The recommended flow for your product images is: **main shot (first impression) → lifestyle/model shot → detail shot → information shot**. For specific layout advice, see [Product Photo Layout That Boosts Conversion](/blog/detail-page-photo-order).
 
 <figure class="shot">
-<img src="/projects/sellerai-2.jpg" alt="SellerAI editing screen for building product and detail images" />
+<img src="/projects/sellerai-2.webp" alt="SellerAI editing screen for building product and detail images" />
 <figcaption>If shooting and editing feel overwhelming, AI image tools can elevate both your main and detail shots significantly — SellerAI shown here</figcaption>
 </figure>
 

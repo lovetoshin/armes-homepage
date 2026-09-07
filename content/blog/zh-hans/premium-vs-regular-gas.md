@@ -3,7 +3,7 @@ title: 高标号油 vs 普通汽油——哪种油适合我的车？
 date: 2026-05-06
 category: 주유
 excerpt: 高标号汽油真的对车更好吗？本文厘清两者的本质区别，并告诉你选对燃油的唯一正确标准。
-thumbnail: /blog/covers/premium-vs-regular-gas.png
+thumbnail: /blog/covers/premium-vs-regular-gas.webp
 imageAlt: 高标号油与普通汽油的区别及选择标准
 tags: [高标号汽油, 普通汽油, 辛烷值, 加油常识, 省油技巧]
 relatedServices: [rewardtalk]
@@ -14,7 +14,7 @@ relatedServices: [rewardtalk]
 直接说结论：高标号与普通汽油的区别，**不是"好坏"问题，而是"适不适合你的车"的问题**。本文将介绍两者的核心区别（辛烷值）、如何判断自己的车该加哪种油，以及常见误区的澄清。
 
 
-![RewardTalk 实际界面截图](/blog/inline/svc-rewardtalk.jpg)
+![RewardTalk 实际界面截图](/blog/inline/svc-rewardtalk.webp)
 
 > 📱 **RewardTalk** — 整合周边门店折扣、积分和团购的本地会员平台。[了解 RewardTalk →](/projects/rewardtalk)
 
@@ -23,7 +23,7 @@ relatedServices: [rewardtalk]
 核心在于**辛烷值**这个数字。辛烷值衡量燃料抵抗发动机异常燃烧（爆震）的能力。辛烷值高并不意味着"动力更强"，更准确的理解是**更能抑制爆震**。
 
 <figure class="shot">
-<img src="/blog/inline/octane.png" alt="普通汽油与高标号油对比信息图——辛烷值与适用车型" />
+<img src="/blog/inline/octane.webp" alt="普通汽油与高标号油对比信息图——辛烷值与适用车型" />
 <figcaption>普通油与高标号油的核心区别在于辛烷值，以及"你的车推荐哪一种"</figcaption>
 </figure>
 

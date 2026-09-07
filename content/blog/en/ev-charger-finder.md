@@ -3,7 +3,7 @@ title: Finding EV Charging Stations — DC Fast vs. Level 2
 date: 2026-06-15
 category: 전기차
 excerpt: A guide to finding EV charging stations quickly, understanding the difference between DC fast and Level 2 charging, and saving money on charging costs.
-thumbnail: /blog/covers/ev-charger-finder.png
+thumbnail: /blog/covers/ev-charger-finder.webp
 imageAlt: Finding EV charging stations and comparing DC fast vs Level 2
 tags: [EV charging station, DC fast charging, Level 2 charging, charging cost]
 relatedServices: [rewardtalk]
@@ -14,7 +14,7 @@ For new EV owners, charging is the most intimidating part of switching. Gas stat
 Most of that anxiety disappears once you get into the habit of **finding stations in advance and checking availability, pricing, and charger status before you leave.** This guide covers the difference between DC fast and Level 2 charging, how to find charging stations quickly, what to look for in a charging app, and practical tips for reducing your charging costs.
 
 
-![RewardTalk app screenshot](/blog/inline/svc-rewardtalk.jpg)
+![RewardTalk app screenshot](/blog/inline/svc-rewardtalk.webp)
 
 > 📱 **RewardTalk** — A local membership platform connecting you to nearby store discounts, rewards, and group deals. [Learn more about RewardTalk →](/projects/rewardtalk)
 

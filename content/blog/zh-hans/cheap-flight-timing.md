@@ -3,7 +3,7 @@ title: 机票便宜购买的时机与星期几完全指南
 date: 2026-06-12
 category: 여행
 excerpt: 整理了机票价格变动的原理，以及在什么时候、哪天购买更划算的完整攻略。
-thumbnail: /blog/covers/cheap-flight-timing.png
+thumbnail: /blog/covers/cheap-flight-timing.webp
 imageAlt: 便宜购买机票的时机与星期几完整指南
 tags: [机票, 机票省钱攻略, 旅行特惠, 机票预订]
 relatedServices: [travelmoa]
@@ -14,7 +14,7 @@ relatedServices: [travelmoa]
 这篇文章将一次性整理清楚：机票价格为什么会不断变动、什么时间、哪个星期几购买更有利，以及实际省钱的方法。虽然没有"绝对公式"，但让概率站到你这边的标准是明确存在的。
 
 
-![TravelMoa 实际界面](/blog/inline/svc-travelmoa.jpg)
+![TravelMoa 实际界面](/blog/inline/svc-travelmoa.webp)
 
 > 📱 **TravelMoa** — 将分散各处的旅行特价和机票汇集一处进行比较的旅行平台。[了解更多 TravelMoa →](/projects/travelmoa)
 
@@ -46,8 +46,8 @@ relatedServices: [travelmoa]
 一般来说，工作日（周二、周三）出发和凌晨·深夜航班更便宜。但这只是规律，不是绝对公式，所以**留出几天的弹性进行比较**才是最重要的。
 
 <figure class="shots">
-<img src="/projects/travelmoa-1.jpg" alt="展示旅游目的地和商品并排比较的TravelMoa列表界面" />
-<img src="/projects/travelmoa-2.jpg" alt="显示旅游商品价格的TravelMoa详情界面" />
+<img src="/projects/travelmoa-1.webp" alt="展示旅游目的地和商品并排比较的TravelMoa列表界面" />
+<img src="/projects/travelmoa-2.webp" alt="显示旅游商品价格的TravelMoa详情界面" />
 <figcaption>在一处比较多个旅游商品和价格 — ARMES的TravelMoa界面</figcaption>
 </figure>
 

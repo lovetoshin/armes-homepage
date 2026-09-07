@@ -3,7 +3,7 @@ title: 쿠팡·네이버 인기상품은 어떻게 정해질까 — 랭킹의 �
 date: 2026-05-23
 category: 쇼핑
 excerpt: 쇼핑몰 인기 랭킹은 단순히 많이 팔린 순이 아닙니다. 랭킹이 정해지는 원리와, 그 흐름을 쇼핑·판매에 활용하는 법을 정리했습니다.
-thumbnail: /blog/covers/how-ranking-works.png
+thumbnail: /blog/covers/how-ranking-works.webp
 imageAlt: 쿠팡 네이버 인기상품 랭킹이 정해지는 원리
 tags: [인기상품, 랭킹, 쇼핑 알고리즘, 베스트셀러]
 relatedServices: [rankingpangpang]
@@ -14,7 +14,7 @@ relatedServices: [rankingpangpang]
 그런데 여기 큰 오해가 하나 있습니다. **이 랭킹은 "많이 팔린 순서"가 아닙니다.** 누적 판매 1등이 항상 맨 위에 있는 게 아니라는 뜻입니다. 어제 갑자기 치고 올라온 신상품이 1년 베스트셀러를 제치기도 합니다. 실제로 판매 데이터를 곁에서 지켜보면, 최근 며칠 사이 판매 속도가 확 붙은 상품이 누적 판매가 훨씬 많은 스테디셀러를 밀어내고 상위로 튀어 오르는 장면을 자주 보게 됩니다. 이 글에서는 랭킹이 정해지는 원리와, 그 흐름을 사는 쪽·파는 쪽에서 각각 활용하는 법을 정리합니다.
 
 
-![SellerAI 실제 화면](/blog/inline/sai-how-ranking-works.jpg)
+![SellerAI 실제 화면](/blog/inline/sai-how-ranking-works.webp)
 
 > 📱 **SellerAI** — 상품 사진 한 장으로 모델 착용컷·누끼·상세페이지까지 만드는 AI 서비스. [SellerAI 자세히 보기 →](https://www.armes.co.kr/sellerai/studio)
 
@@ -23,7 +23,7 @@ relatedServices: [rankingpangpang]
 대부분의 쇼핑몰 랭킹은 여러 신호를 **합산한 점수**로 계산합니다. 핵심 요소는 다음과 같습니다.
 
 <figure class="shot">
-<img src="/blog/inline/ranking-factors.png" alt="검색 랭킹을 정하는 핵심 요소 인포그래픽 — 판매·전환, 리뷰, 클릭률, 연관도" />
+<img src="/blog/inline/ranking-factors.webp" alt="검색 랭킹을 정하는 핵심 요소 인포그래픽 — 판매·전환, 리뷰, 클릭률, 연관도" />
 <figcaption>랭킹은 단일 지표가 아니라 여러 신호를 합친 종합 점수입니다</figcaption>
 </figure>
 

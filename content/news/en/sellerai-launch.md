@@ -3,7 +3,7 @@ title: SellerAI Official Service Launch
 date: 2026-06-10
 category: 서비스 출시
 excerpt: One product photo is all it takes — AI model wearing shots, background removal, and full detail pages, all automated. SellerAI, the image automation web service for e-commerce sellers, is now officially live.
-thumbnail: /news/sellerai-main.png
+thumbnail: /news/sellerai-main.webp
 imageAlt: SellerAI main screen — upload a product photo and AI generates model wearing shots and detail pages automatically
 tags: [SellerAI, AI Product Images, Detail Page Automation, Service Launch]
 relatedServices: [sellerai]
@@ -17,7 +17,7 @@ For e-commerce sellers, product photography is a major recurring workload. Booki
 
 Upload an ordinary product photo — a hanger shot or mannequin cut — and AI transforms it into a photo of **a model actually wearing the item**. You can create editorial-quality wearing shots without hiring models or booking a studio, dramatically cutting both the time and cost of traditional photography.
 
-![Upload a product photo (left) and receive a completed AI model wearing shot (right)](/news/sellerai/wear.jpg)
+![Upload a product photo (left) and receive a completed AI model wearing shot (right)](/news/sellerai/wear.webp)
 
 *Left: original product photo → Right: AI model wearing shot*
 
@@ -25,13 +25,13 @@ Upload an ordinary product photo — a hanger shot or mannequin cut — and AI t
 
 Choose from brand-exclusive AI models such as Seoyeon, Dain, Yuna, and Chaea. By consistently using the same model across all products, you eliminate the inconsistent look that comes from using different models for different items and maintain a **unified brand tone**. Both adult and kids models are supported.
 
-![Brand-exclusive AI models including Seoyeon, Dain, Yuna, and Chaea](/news/sellerai/models.jpg)
+![Brand-exclusive AI models including Seoyeon, Dain, Yuna, and Chaea](/news/sellerai/models.webp)
 
 ## 3. Multiple Angles from a Single Product Photo
 
 From one product photo, automatically generate standalone shots ready for your store — including **ghost shots (transparent mannequin effect)** and 45-degree side angles. Works not only for clothing but also for accessories like shoes and bags.
 
-![Automatic generation of ghost shot and 45-degree side shot from a dress original](/news/sellerai/single.jpg)
+![Automatic generation of ghost shot and 45-degree side shot from a dress original](/news/sellerai/single.webp)
 
 *Original → Ghost shot (front) → 45-degree side*
 
@@ -39,7 +39,7 @@ From one product photo, automatically generate standalone shots ready for your s
 
 Even product photos with complex backgrounds can be **cleanly cut out with a single click**. No Photoshop skills required.
 
-![Background removal result from an original swimwear photo](/news/sellerai/cutout.jpg)
+![Background removal result from an original swimwear photo](/news/sellerai/cutout.webp)
 
 *Original → Background removed (cutout)*
 
@@ -47,7 +47,7 @@ Even product photos with complex backgrounds can be **cleanly cut out with a sin
 
 Shoot just one garment and **create product shots in multiple colors** by changing only the color. No need to reshoot the same item in every shade.
 
-![Same product with color changed from black to ivory](/news/sellerai/color.jpg)
+![Same product with color changed from black to ivory](/news/sellerai/color.webp)
 
 *Black original → Ivory color variant*
 
@@ -55,7 +55,7 @@ Shoot just one garment and **create product shots in multiple colors** by changi
 
 **Translate foreign-language text** from 1688 and AliExpress detail pages into Korean, so you can use overseas-sourced product pages directly. Even text embedded in images is naturally converted.
 
-![Foreign-language detail image translated into Korean](/news/sellerai/translate.jpg)
+![Foreign-language detail image translated into Korean](/news/sellerai/translate.webp)
 
 *Foreign original → Korean translation*
 
@@ -63,7 +63,7 @@ Shoot just one garment and **create product shots in multiple colors** by changi
 
 Enter your product information and desired mood, and AI builds a **complete detail page for Coupang or SmartStore** — brand introduction, product features, model shots, detail shots, and color/size guides. AI handles both the layout and the copy, saving you the time and cost of outsourcing detail page production.
 
-![Automatically composed detail page with brand intro, product features, and color guide](/news/sellerai/detailpage.jpg)
+![Automatically composed detail page with brand intro, product features, and color guide](/news/sellerai/detailpage.webp)
 
 *Product features · Model shots · Color/size breakdown — all automatically composed*
 

@@ -3,7 +3,7 @@ title: 實體店店主的在地SEO入門指南
 date: 2026-05-04
 category: SEO
 excerpt: 當附近的顧客搜尋「附近的OO」時，你的店鋪會出現嗎？本文用店主能看懂的語言，整理了在地SEO的基礎知識和實操要點。
-thumbnail: /blog/covers/local-seo-guide.png
+thumbnail: /blog/covers/local-seo-guide.webp
 imageAlt: 實體店店主的在地SEO入門指南
 tags: [在地SEO, 實體店, 地圖曝光, 門市行銷]
 relatedServices: [rewardtalk]
@@ -13,7 +13,7 @@ relatedServices: [rewardtalk]
 
 **讓你的店鋪在搜尋和地圖上被更多人看到，這就是在地SEO要做的事。** 好消息是，這不是燒錢打廣告，而是店主自己就能上手的基礎工作。本文將用店主的視角，介紹在地SEO與一般SEO有何不同、最先該做什麼、真實的門市案例，以及如何將搜尋來的新顧客變成回頭客。
 
-![RewardTalk實際介面](/blog/inline/svc-rewardtalk.jpg)
+![RewardTalk實際介面](/blog/inline/svc-rewardtalk.webp)
 
 > 📱 **RewardTalk** — 連結周邊門市與顧客的在地會員平台，集折扣、點數、團購於一體。[了解更多關於RewardTalk →](/projects/rewardtalk)
 

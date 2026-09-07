@@ -51,10 +51,10 @@ export const projectDetails: Record<string, ProjectDetail> = {
     statusNote:
       "월드링고는 현재 개발 중입니다. 원어민 강사 매칭·1:1 화상 수업·간편 결제 기능을 준비하고 있으며, 정식 출시 준비를 마치는 대로 안내드리겠습니다.",
     gallery: [
-      "/projects/worldlingo-g1.png",
-      "/projects/worldlingo-g2.png",
-      "/projects/worldlingo-g3.png",
-      "/projects/worldlingo-g4.png",
+      "/projects/worldlingo-g1.webp",
+      "/projects/worldlingo-g2.webp",
+      "/projects/worldlingo-g3.webp",
+      "/projects/worldlingo-g4.webp",
     ],
   },
 
@@ -78,10 +78,10 @@ export const projectDetails: Record<string, ProjectDetail> = {
       "이웃과 공동구매로 알뜰하게 사고 싶은 분",
     ],
     gallery: [
-      "/projects/rewardtalk-g1.jpg",
-      "/projects/rewardtalk-g2.jpg",
-      "/projects/rewardtalk-g3.jpg",
-      "/projects/rewardtalk-g4.jpg",
+      "/projects/rewardtalk-g1.webp",
+      "/projects/rewardtalk-g2.webp",
+      "/projects/rewardtalk-g3.webp",
+      "/projects/rewardtalk-g4.webp",
     ],
   },
 
@@ -102,10 +102,10 @@ export const projectDetails: Record<string, ProjectDetail> = {
       "여행 특가 정보를 한곳에서 보고 싶은 분",
     ],
     gallery: [
-      "/projects/travelmoa-g1.jpg",
-      "/projects/travelmoa-g2.jpg",
-      "/projects/travelmoa-g3.jpg",
-      "/projects/travelmoa-g4.jpg",
+      "/projects/travelmoa-g1.webp",
+      "/projects/travelmoa-g2.webp",
+      "/projects/travelmoa-g3.webp",
+      "/projects/travelmoa-g4.webp",
     ],
   },
 
@@ -126,10 +126,10 @@ export const projectDetails: Record<string, ProjectDetail> = {
       "할인·가격 타이밍을 챙겨 알뜰하게 사고 싶은 분",
     ],
     gallery: [
-      "/projects/cocoping-g1.jpg",
-      "/projects/cocoping-g2.jpg",
-      "/projects/cocoping-g3.jpg",
-      "/projects/cocoping-g4.jpg",
+      "/projects/cocoping-g1.webp",
+      "/projects/cocoping-g2.webp",
+      "/projects/cocoping-g3.webp",
+      "/projects/cocoping-g4.webp",
     ],
   },
 
@@ -154,10 +154,10 @@ export const projectDetails: Record<string, ProjectDetail> = {
     ],
     ctaLabel: "SellerAI 스튜디오 열기",
     gallery: [
-      "/projects/sellerai-1.jpg",
-      "/projects/sellerai-2.jpg",
-      "/projects/sellerai-3.jpg",
-      "/projects/sellerai-4.jpg",
+      "/projects/sellerai-1.webp",
+      "/projects/sellerai-2.webp",
+      "/projects/sellerai-3.webp",
+      "/projects/sellerai-4.webp",
     ],
   },
 
@@ -181,9 +181,9 @@ export const projectDetails: Record<string, ProjectDetail> = {
       "후삼국지는 현재 개발을 준비 중입니다. 구체적인 출시 일정은 확정되는 대로 안내드리겠습니다.",
     // 게임 인물 일러스트 — 왕건·궁예·견훤 (news_blog_image/blog/후삼국지/portraits 129·008·566)
     gallery: [
-      "/projects/hoosamgukji-wanggeon.jpg",
-      "/projects/hoosamgukji-gungye.jpg",
-      "/projects/hoosamgukji-gyeonhwon.jpg",
+      "/projects/hoosamgukji-wanggeon.webp",
+      "/projects/hoosamgukji-gungye.webp",
+      "/projects/hoosamgukji-gyeonhwon.webp",
     ],
   },
 
@@ -208,7 +208,7 @@ export const projectDetails: Record<string, ProjectDetail> = {
     ],
     ctaLabel: "ARMES Tools 열기",
     gallery: [
-      "/projects/tools-main.png",
+      "/projects/tools-main.webp",
     ],
   },
 

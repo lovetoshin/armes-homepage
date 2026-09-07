@@ -3,7 +3,7 @@ title: 開發者常用線上工具合集 —— 免安裝，開啟即用
 date: 2026-05-01
 category: 생산성도구
 excerpt: 整理了開發和日常工作中常用的線上工具，包括 JSON 格式化、編碼轉換、顏色代碼轉換等，無需安裝，直接在瀏覽器中使用。
-thumbnail: /blog/covers/dev-tools.png
+thumbnail: /blog/covers/dev-tools.webp
 imageAlt: 開發者常用線上工具合集
 tags: [開發者工具, 線上工具, 程式工具, 資料轉換]
 relatedServices: [tools]

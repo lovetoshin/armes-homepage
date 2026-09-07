@@ -3,7 +3,7 @@ title: 开市客(Costco)价格标签数字和星号(*)的隐藏含义
 date: 2026-06-02
 category: 코스트코
 excerpt: 开市客(Costco)价格标签上的.97、.99和星号(*)隐藏着特定信号。整理了光看价格标签就能识别折扣和停产的方法。
-thumbnail: /blog/covers/costco-price-tag-secrets.png
+thumbnail: /blog/covers/costco-price-tag-secrets.webp
 imageAlt: 解读开市客(Costco)价格标签数字和星号含义
 tags: [Costco, 价格标签, Costco折扣, 购物技巧]
 relatedServices: [cocoping]
@@ -14,14 +14,14 @@ relatedServices: [cocoping]
 这些信号也很容易记。核心只有两点：**末位数字和星号**。这篇文章将整理各自的含义、组合解读方法，以及光看价格标签还不够的部分。
 
 
-![CocoPing 实际界面](/blog/inline/svc-cocoping.jpg)
+![CocoPing 实际界面](/blog/inline/svc-cocoping.webp)
 
 > 📱 **CocoPing** — 一眼掌握附近Costco折扣信息和价格变动的购物助手。[了解更多 CocoPing →](/projects/cocoping)
 
 ## 价格标签发出的信号一目了然
 
 <figure class="shot">
-<img src="/blog/inline/costco-pricetag.png" alt="Costco价格标签信号信息图 — .97折扣、.99正常价、星号停产" />
+<img src="/blog/inline/costco-pricetag.webp" alt="Costco价格标签信号信息图 — .97折扣、.99正常价、星号停产" />
 <figcaption>只要知道末位数字和星号，在卖场里就能立刻判断是否是"现在该买的商品"</figcaption>
 </figure>
 

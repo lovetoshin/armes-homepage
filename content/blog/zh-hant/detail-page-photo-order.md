@@ -3,7 +3,7 @@ title: 提升商品詳情頁轉化率的圖片排列順序
 date: 2026-05-12
 category: 쇼핑
 excerpt: 同樣的圖片，排列順序不同，購買率可能大相徑庭。本文整理了符合顧客決策心理的詳情頁圖片排列方法。
-thumbnail: /blog/covers/detail-page-photo-order.png
+thumbnail: /blog/covers/detail-page-photo-order.webp
 imageAlt: 提升商品詳情頁轉化率的圖片排列順序
 tags: [商品詳情頁, 圖片排列, 轉化率, 網路商店經營]
 relatedServices: [sellerai]
@@ -14,7 +14,7 @@ relatedServices: [sellerai]
 原因很簡單：顧客瀏覽詳情頁時，是**從上往下逐漸形成購買決定的**。如果圖片順序與這一心理流程背道而馳，即便有購買意願的人也可能中途離開。本文將介紹符合顧客決策心理的圖片排列順序，以及常見的排列失誤。
 
 
-![SellerAI 實際介面截圖](/blog/inline/sai-detail-page-photo-order.jpg)
+![SellerAI 實際介面截圖](/blog/inline/sai-detail-page-photo-order.webp)
 
 > 📱 **SellerAI** — 只需一張商品圖，即可生成模特穿搭效果圖、去背圖及完整詳情頁的 AI 服務。[了解 SellerAI →](https://www.armes.co.kr/sellerai/studio)
 
@@ -33,8 +33,8 @@ relatedServices: [sellerai]
 如果把尺寸表、材質說明等確認類圖片放在最上面，顧客還沒來得及產生好感，就會被資訊淹沒，直接離開。
 
 <figure class="shots">
-<img src="/projects/sellerai-3.jpg" alt="以主圖和穿搭效果圖開頭，抓住第一印象的詳情頁示例" />
-<img src="/projects/sellerai-1.jpg" alt="包含多角度細節圖和情境圖的詳情頁構成示例" />
+<img src="/projects/sellerai-3.webp" alt="以主圖和穿搭效果圖開頭，抓住第一印象的詳情頁示例" />
+<img src="/projects/sellerai-1.webp" alt="包含多角度細節圖和情境圖的詳情頁構成示例" />
 <figcaption>主圖建立印象 → 多角度圖增強信心 —— 順序就是說服的邏輯（SellerAI 圖片示例）</figcaption>
 </figure>
 

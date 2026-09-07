@@ -3,7 +3,7 @@ title: 셀프주유소가 싼 이유 + 주유 할인카드 총정리
 date: 2026-05-26
 category: 주유
 excerpt: 셀프주유소가 더 싼 이유를 짚고, 주유 할인카드로 기름값을 추가로 아끼는 방법과 카드 고를 때 확인할 점을 정리했습니다.
-thumbnail: /blog/covers/self-gas-discount-card.png
+thumbnail: /blog/covers/self-gas-discount-card.webp
 imageAlt: 셀프주유소가 싼 이유와 주유 할인카드 정리
 tags: [셀프주유소, 주유 할인카드, 기름값, 주유 할인]
 relatedServices: [rewardtalk]
@@ -14,7 +14,7 @@ relatedServices: [rewardtalk]
 문제는 "어느 셀프가 진짜 싼지", "내 소비에 맞는 할인카드가 뭔지" 따지기가 귀찮다는 점입니다. 실제로 주유 할인카드 명세서를 뜯어 보면, 전월 실적 조건을 못 채워 리터당 할인을 통째로 못 받거나, 연회비가 실제 할인액보다 큰 경우가 생각보다 흔합니다. 이 글에서는 셀프주유소가 싼 진짜 이유와, 주유 할인카드를 손해 없이 고르는 4가지 기준, 그리고 할인을 더 쌓는 법까지 정리합니다.
 
 
-![리워드톡 실제 화면](/blog/inline/svc-rewardtalk.jpg)
+![리워드톡 실제 화면](/blog/inline/svc-rewardtalk.webp)
 
 > 📱 **리워드톡** — 내 주변 매장 할인·적립·공동구매를 잇는 로컬 멤버십 플랫폼. [리워드톡 자세히 보기 →](/projects/rewardtalk)
 
@@ -31,8 +31,8 @@ relatedServices: [rewardtalk]
 직접 넣는 약간의 수고만 감수하면 매번 리터당 수십 원을 아낄 수 있습니다. 다만 셀프라도 위치·브랜드에 따라 차이가 있으니, 내 주변에서 가장 싼 곳을 먼저 확인하세요 — [우리 동네 최저가 주유소 찾는 법](/blog/cheapest-gas-station).
 
 <figure class="shots">
-<img src="/projects/rewardtalk-2.jpg" alt="내 주변 매장·혜택을 모아 보여주는 RewardTalk 홈 화면" />
-<img src="/projects/rewardtalk-1.jpg" alt="주변 혜택 목록을 보여주는 RewardTalk 화면" />
+<img src="/projects/rewardtalk-2.webp" alt="내 주변 매장·혜택을 모아 보여주는 RewardTalk 홈 화면" />
+<img src="/projects/rewardtalk-1.webp" alt="주변 혜택 목록을 보여주는 RewardTalk 화면" />
 <figcaption>내 주변 주유·혜택 정보를 한곳에 모아 보면 발품을 덜 수 있습니다 — RewardTalk 화면</figcaption>
 </figure>
 

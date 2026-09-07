@@ -3,7 +3,7 @@ title: How to Find the Lowest Price Online — Price Comparison Apps & Sites
 date: 2026-06-05
 category: 쇼핑
 excerpt: The same product can vary in price depending on where you buy it. Here's how to quickly find the lowest price online — and how not to get fooled by misleading "best prices."
-thumbnail: /blog/covers/online-lowest-price.png
+thumbnail: /blog/covers/online-lowest-price.webp
 imageAlt: How to find the lowest price online and compare prices
 tags: [lowest price, price comparison, online shopping, smart shopping]
 relatedServices: [cocoping, rankingpangpang]
@@ -14,7 +14,7 @@ The same product: ten dollars at one store, fifteen at another. Price difference
 To truly get the lowest price, you need to know two things: ① **How to compare by actual checkout amount, not the displayed price**, and ② **How to judge whether now is a good time to buy by tracking price history**. This article covers both.
 
 
-![SellerAI actual screen](/blog/inline/sai-online-lowest-price.jpg)
+![SellerAI actual screen](/blog/inline/sai-online-lowest-price.webp)
 
 > 📱 **SellerAI** — An AI service that creates model outfit shots, cutout images, and product detail pages from a single product photo. [Learn more about SellerAI →](https://www.armes.co.kr/sellerai/studio)
 
@@ -30,7 +30,7 @@ To truly get the lowest price, you need to know two things: ① **How to compare
 That's why you need to compare by **the actual checkout amount — including shipping and discounts** — to find the true lowest price.
 
 <figure class="shot">
-<img src="/blog/inline/price-compare.png" alt="Infographic showing the real price formula — product price plus shipping minus coupons and rewards" />
+<img src="/blog/inline/price-compare.webp" alt="Infographic showing the real price formula — product price plus shipping minus coupons and rewards" />
 <figcaption>Don't compare by the listed price — compare by "Product Price + Shipping − Coupons & Rewards = Actual Price"</figcaption>
 </figure>
 

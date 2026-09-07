@@ -3,7 +3,7 @@ title: 策略模擬遊戲入門必知術語大全
 date: 2026-05-27
 category: 후삼국지
 excerpt: 第一次打開策略模擬遊戲就被術語勸退？本文從新手視角，把內政、外交、戰鬥三大模組的核心詞彙用白話講清楚，讓你第一局就能順利上手。
-thumbnail: /blog/covers/strategy-sim-terms.png
+thumbnail: /blog/covers/strategy-sim-terms.webp
 imageAlt: 策略模擬遊戲入門術語大全
 tags: [策略模擬, 遊戲術語, 新手入門, 戰略遊戲, SLG]
 relatedServices: [hoosamgukji]
@@ -14,7 +14,7 @@ relatedServices: [hoosamgukji]
 所以這篇文章專門寫給剛打開策略模擬遊戲的新手——把最常碰到的基礎術語，按內政、外交、戰鬥三個模組分類，結合遊戲實際畫面和操作來解釋。搞懂這些，第一局就能順利玩下去。
 
 
-![後三國志實際遊戲截圖](/blog/inline/hsg-strategy.jpg)
+![後三國志實際遊戲截圖](/blog/inline/hsg-strategy.webp)
 
 > 📱 **後三國志** — 以韓國後三國時代為背景的策略模擬遊戲。[深入了解後三國志 →](/projects/hoosamgukji)
 

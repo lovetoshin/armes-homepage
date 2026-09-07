@@ -3,7 +3,7 @@ title: 電動車初次充電：只需掌握這些
 date: 2026-05-05
 category: 전기차
 excerpt: 剛開始開電動車，充電是最讓人頭疼的事。從充電類型到操作步驟、注意事項，本文為新手整理了必須掌握的充電基礎知識。
-thumbnail: /blog/covers/ev-charging-basics.png
+thumbnail: /blog/covers/ev-charging-basics.webp
 imageAlt: 電動車充電入門基礎指南
 tags: [電動車充電, 電動車新手, 充電方法, 電動車入門]
 relatedServices: [rewardtalk]
@@ -14,7 +14,7 @@ relatedServices: [rewardtalk]
 好消息是：**只要掌握幾個基本原則和操作步驟，充電會比加油更方便。** 本文將為電動車新手一一梳理充電類型、實際充電步驟、初學者常犯的錯誤，以及如何避免白跑一趟。按步驟操作一遍，之後就像肌肉記憶一樣自然。
 
 
-![RewardTalk 實際介面截圖](/blog/inline/svc-rewardtalk.jpg)
+![RewardTalk 實際介面截圖](/blog/inline/svc-rewardtalk.webp)
 
 > 📱 **RewardTalk** — 整合周邊門市折扣、點數回饋與團購的在地會員平台。[了解 RewardTalk →](/projects/rewardtalk)
 

@@ -3,7 +3,7 @@ title: The Hidden Meaning Behind Costco Price Tag Numbers and Asterisks (*)
 date: 2026-06-02
 category: 코스트코
 excerpt: Costco price tags carry hidden signals in their .97, .99, and asterisk (*) markings. Here's how to read a price tag and instantly know when something is on sale or being discontinued.
-thumbnail: /blog/covers/costco-price-tag-secrets.png
+thumbnail: /blog/covers/costco-price-tag-secrets.webp
 imageAlt: How to decode Costco price tag numbers and asterisk symbols
 tags: [Costco, price tag, Costco deals, shopping tips]
 relatedServices: [cocoping]
@@ -14,14 +14,14 @@ Among Costco regulars, there's a saying: "You can tell if something's on sale ju
 The signals are easy to memorize too. Just two things: **the last digits and the asterisk.** This post covers what they mean, how to read combinations of them, and where price tags alone fall short.
 
 
-![CocoPing actual screen](/blog/inline/svc-cocoping.jpg)
+![CocoPing actual screen](/blog/inline/svc-cocoping.webp)
 
 > 📱 **CocoPing** — A shopping assistant that tracks Costco discount info and price changes near you at a glance. [Learn more about CocoPing →](/projects/cocoping)
 
 ## Price Tag Signals at a Glance
 
 <figure class="shot">
-<img src="/blog/inline/costco-pricetag.png" alt="Costco price tag signal infographic — .97 markdown, .99 regular price, asterisk discontinuation" />
+<img src="/blog/inline/costco-pricetag.webp" alt="Costco price tag signal infographic — .97 markdown, .99 regular price, asterisk discontinuation" />
 <figcaption>Once you know the last digits and the asterisk, you can make a buy/wait decision on the spot in the store</figcaption>
 </figure>
 

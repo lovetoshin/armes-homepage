@@ -3,7 +3,7 @@ title: 购物平台热销排行是怎么决定的——排名算法揭秘
 date: 2026-05-23
 category: 쇼핑
 excerpt: 购物平台上的人气商品排名，并不是简单按销量多少排列的。本文整理了排名的运作原理，以及买家和卖家如何利用这一规律。
-thumbnail: /blog/covers/how-ranking-works.png
+thumbnail: /blog/covers/how-ranking-works.webp
 imageAlt: Coupang和Naver热销商品排名的决定原理
 tags: [热销商品, 商品排名, 购物算法, 畅销榜]
 relatedServices: [rankingpangpang]
@@ -13,7 +13,7 @@ relatedServices: [rankingpangpang]
 
 然而，这里有一个很大的误解：**这个排名并不是"按总销量从高到低排列"的。** 也就是说，历史累计销量第一的商品未必永远排在最前面。昨天刚上架的新品，有可能超过畅销了一年的老品。本文将详细介绍排名的运作原理，以及买家和卖家如何各自加以利用。
 
-![SellerAI实际界面](/blog/inline/sai-how-ranking-works.jpg)
+![SellerAI实际界面](/blog/inline/sai-how-ranking-works.webp)
 
 > 📱 **SellerAI** — 只需一张商品图，即可生成模特上身图、抠图和详情页的AI服务。[了解更多关于SellerAI →](https://www.armes.co.kr/sellerai/studio)
 
@@ -22,7 +22,7 @@ relatedServices: [rankingpangpang]
 大多数购物平台的排名，是将多种信号**综合计算**出来的分数。核心要素如下：
 
 <figure class="shot">
-<img src="/blog/inline/ranking-factors.png" alt="决定搜索排名的核心要素信息图——销售与转化、评价、点击率、相关性" />
+<img src="/blog/inline/ranking-factors.webp" alt="决定搜索排名的核心要素信息图——销售与转化、评价、点击率、相关性" />
 <figcaption>排名是多种信号综合而成的评分，并非单一指标</figcaption>
 </figure>
 

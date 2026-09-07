@@ -3,7 +3,7 @@ title: 코스트코 이번 주 할인상품 보는 법
 date: 2026-06-19
 category: 코스트코
 excerpt: 코스트코의 이번 주 할인 상품을 미리 확인하고, 가격표의 신호까지 읽어 알뜰하게 사는 법을 정리했습니다.
-thumbnail: /blog/covers/costco-weekly-deals.png
+thumbnail: /blog/covers/costco-weekly-deals.webp
 imageAlt: 코스트코 이번 주 할인 상품 확인하는 법
 tags: [코스트코, 코스트코 할인, 할인 상품, 장보기]
 relatedServices: [cocoping]
@@ -14,7 +14,7 @@ relatedServices: [cocoping]
 문제는 코스트코가 모든 할인 품목을 한눈에 정리해 주지 않는다는 데 있습니다. 그래서 알뜰 소비자들은 나름의 방법으로 **이번 주에 뭐가 싼지**를 미리 확인합니다. 이 글에서는 이번 주 할인 상품을 미리 파악하는 법, 매장에서 가격표를 읽는 요령, 그리고 충동구매에 휘둘리지 않고 알뜰하게 사는 습관까지 정리합니다.
 
 
-![코코핑 실제 화면](/blog/inline/svc-cocoping.jpg)
+![코코핑 실제 화면](/blog/inline/svc-cocoping.webp)
 
 > 📱 **코코핑** — 내 주변 코스트코 할인정보와 가격 변동을 한눈에 보는 쇼핑 도우미. [코코핑 자세히 보기 →](/projects/cocoping)
 
@@ -29,8 +29,8 @@ relatedServices: [cocoping]
 가장 효율적인 방법은 **관심 품목을 등록해 두고 가격이 떨어지면 알림을 받는 것**입니다. 매주 커뮤니티를 뒤지지 않아도, 내가 사려던 물건이 쌀 때 자동으로 알 수 있기 때문입니다.
 
 <figure class="shots">
-<img src="/projects/cocoping-1.jpg" alt="관심 상품 가격 변동을 찾아 알려주는 CocoPing 알림 화면" />
-<img src="/projects/cocoping-2.jpg" alt="코스트코 관심 품목 가격 정보를 정리해 보여주는 CocoPing 화면" />
+<img src="/projects/cocoping-1.webp" alt="관심 상품 가격 변동을 찾아 알려주는 CocoPing 알림 화면" />
+<img src="/projects/cocoping-2.webp" alt="코스트코 관심 품목 가격 정보를 정리해 보여주는 CocoPing 화면" />
 <figcaption>관심 품목을 등록해 두면 가격이 떨어질 때 알려 줍니다 — 아르메스가 준비 중인 CocoPing 화면</figcaption>
 </figure>
 

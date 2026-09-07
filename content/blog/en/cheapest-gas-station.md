@@ -3,7 +3,7 @@ title: How to Find the Cheapest Gas Station Near You
 date: 2026-06-15
 category: 주유
 excerpt: When fuel costs are weighing on you, here's how to find the lowest-priced station nearby — and squeeze out even more savings at the pump.
-thumbnail: /blog/covers/cheapest-gas-station.png
+thumbnail: /blog/covers/cheapest-gas-station.webp
 imageAlt: How to find the cheapest gas station near you
 tags: [cheapest gas station, fuel prices, gas discount, self-service gas]
 relatedServices: [rewardtalk]
@@ -14,7 +14,7 @@ Within the same neighborhood, gas prices can vary by tens of won per liter — s
 The problem is that "checking every time is too much effort." So most people just pull into the same old station out of habit. This post covers how to quickly find the cheapest station nearby — and how to save even more at the pump once you've found it.
 
 
-![RewardTalk actual screen](/blog/inline/svc-rewardtalk.jpg)
+![RewardTalk actual screen](/blog/inline/svc-rewardtalk.webp)
 
 > 📱 **RewardTalk** — A local membership platform connecting you to discounts, rewards, and group buys at nearby stores. [Learn more about RewardTalk →](/projects/rewardtalk)
 
@@ -32,8 +32,8 @@ Real-time gas prices at stations nationwide are **publicly available.** The most
 The most convenient approach is seeing distance and price together on a single screen, without switching between multiple apps.
 
 <figure class="shots">
-<img src="/projects/rewardtalk-2.jpg" alt="RewardTalk home screen showing local information aggregated in one place" />
-<img src="/projects/rewardtalk-1.jpg" alt="RewardTalk screen showing nearby stores and deals" />
+<img src="/projects/rewardtalk-2.webp" alt="RewardTalk home screen showing local information aggregated in one place" />
+<img src="/projects/rewardtalk-1.webp" alt="RewardTalk screen showing nearby stores and deals" />
 <figcaption>Nearby stores and local info based on your location, all in one place — RewardTalk by ARMES</figcaption>
 </figure>
 

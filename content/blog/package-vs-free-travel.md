@@ -3,7 +3,7 @@ title: 동남아 패키지 vs 자유여행, 비용 실제 비교
 date: 2026-05-04
 category: 여행
 excerpt: 같은 동남아 여행도 패키지와 자유여행은 비용 구조가 다릅니다. 항목별로 실제 비용을 비교하고, 어떤 여행자에게 무엇이 맞는지 정리했습니다.
-thumbnail: /blog/covers/package-vs-free-travel.png
+thumbnail: /blog/covers/package-vs-free-travel.webp
 imageAlt: 동남아 패키지여행과 자유여행 비용 비교
 tags: [패키지여행, 자유여행, 동남아 여행, 여행 비용]
 relatedServices: [travelmoa]
@@ -14,7 +14,7 @@ relatedServices: [travelmoa]
 핵심은 "어느 쪽이 싸냐"가 아니라 **"비용 구조가 어떻게 다르냐"**를 이해하는 것입니다. 그래야 내 일정·동행·취향에 맞는 선택을 할 수 있습니다. 이 글에서는 두 방식의 비용 구조를 항목별로 비교하고, 어떤 여행자에게 무엇이 맞는지 정리합니다.
 
 
-![여행모아 실제 화면](/blog/inline/svc-travelmoa.jpg)
+![여행모아 실제 화면](/blog/inline/svc-travelmoa.webp)
 
 > 📱 **여행모아** — 흩어진 여행 특가와 항공권을 한곳에 모아 비교하는 여행 플랫폼. [여행모아 자세히 보기 →](/projects/travelmoa)
 
@@ -26,8 +26,8 @@ relatedServices: [travelmoa]
 - **자유여행:** 모든 것을 따로 예약. 자유로운 대신, 잘못 예약하면 항목별 가격이 더 비쌀 수 있습니다.
 
 <figure class="shots">
-<img src="/projects/travelmoa-1.jpg" alt="여행 상품을 모아 비교해 보여주는 TravelMoa 목록 화면" />
-<img src="/projects/travelmoa-2.jpg" alt="여행 상품 가격을 보여주는 TravelMoa 상세 화면" />
+<img src="/projects/travelmoa-1.webp" alt="여행 상품을 모아 비교해 보여주는 TravelMoa 목록 화면" />
+<img src="/projects/travelmoa-2.webp" alt="여행 상품 가격을 보여주는 TravelMoa 상세 화면" />
 <figcaption>패키지든 자유여행이든, 여러 상품을 한곳에서 비교하는 게 절약의 출발점입니다 — TravelMoa 화면</figcaption>
 </figure>
 

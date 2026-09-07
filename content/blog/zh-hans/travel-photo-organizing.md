@@ -3,7 +3,7 @@ title: 旅行照片整理技巧 — 留住回忆，告别遗憾
 date: 2026-06-08
 category: 생산성도구
 excerpt: 每次旅行都会积累数百张照片，回来后整理更难。本文分享旅行照片的整理技巧，让你留住每一个珍贵瞬间，不留遗憾。
-thumbnail: /blog/covers/travel-photo-organizing.png
+thumbnail: /blog/covers/travel-photo-organizing.webp
 imageAlt: 旅行照片整理技巧
 tags: [旅行照片, 照片整理, 旅行记录, 照片备份]
 relatedServices: [photosort]

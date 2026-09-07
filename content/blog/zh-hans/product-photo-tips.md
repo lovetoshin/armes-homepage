@@ -3,7 +3,7 @@ title: 网店商品拍照，这样准备才对
 date: 2026-04-28
 category: 쇼핑
 excerpt: 拍商品照片前需要掌握的基本功。微小的差距，往往决定顾客的购买意愿。
-thumbnail: /blog/covers/product-photo-tips.png
+thumbnail: /blog/covers/product-photo-tips.webp
 imageAlt: 网店商品拍照技巧指南
 tags: [商品摄影, 网店运营, Naver 智能商城, 拍照技巧, 卖家指南]
 relatedServices: [sellerai]
@@ -14,7 +14,7 @@ relatedServices: [sellerai]
 好消息是：拍出好商品照片并不需要昂贵的设备。只要掌握**光线、背景、构图、后期**四项基本功，用手机也能拍出卖得动的照片。本文整理这四项要点，并附上缩短拍摄时间的方法。
 
 
-![SellerAI 实际界面截图](/blog/inline/sai-product-photo-tips.jpg)
+![SellerAI 实际界面截图](/blog/inline/sai-product-photo-tips.webp)
 
 > 📱 **SellerAI** — 一张商品照片，即可生成模特上身图、抠图和详情页的 AI 服务。[了解 SellerAI →](https://www.armes.co.kr/sellerai/studio)
 
@@ -44,8 +44,8 @@ relatedServices: [sellerai]
 色彩调整太夸张会带来**退货和差评**。为了在屏幕上好看而大幅提高饱和度，顾客收到货后会觉得"和图片不一样"。安全的做法是只调整亮度和色彩平衡，让照片接近实物即可。
 
 <figure class="shots">
-<img src="/projects/sellerai-2.jpg" alt="SellerAI 编辑界面——对商品图片进行背景整理和修饰" />
-<img src="/projects/sellerai-3.jpg" alt="整理后的商品图和上身图效果示例" />
+<img src="/projects/sellerai-2.webp" alt="SellerAI 编辑界面——对商品图片进行背景整理和修饰" />
+<img src="/projects/sellerai-3.webp" alt="整理后的商品图和上身图效果示例" />
 <figcaption>如果拍摄有困难，SellerAI 可以用一张图片完成背景处理和上身图，大幅节省时间</figcaption>
 </figure>
 

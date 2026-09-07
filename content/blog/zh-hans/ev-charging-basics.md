@@ -3,7 +3,7 @@ title: 电动汽车初次充电：只需掌握这些
 date: 2026-05-05
 category: 전기차
 excerpt: 刚开始开电动汽车，充电是最让人头疼的事。从充电类型到操作步骤、注意事项，本文为新手梳理了必须掌握的充电基础知识。
-thumbnail: /blog/covers/ev-charging-basics.png
+thumbnail: /blog/covers/ev-charging-basics.webp
 imageAlt: 电动汽车充电入门基础指南
 tags: [电动汽车充电, 电动车新手, 充电方法, 新能源车入门]
 relatedServices: [rewardtalk]
@@ -14,7 +14,7 @@ relatedServices: [rewardtalk]
 好消息是：**只要掌握几个基本原则和操作步骤，充电会比加油更方便。** 本文将为电动汽车新手一一梳理充电类型、实际充电步骤、初学者常犯的错误，以及如何避免白跑一趟。按步骤操作一遍，之后就像肌肉记忆一样自然。
 
 
-![RewardTalk 实际界面截图](/blog/inline/svc-rewardtalk.jpg)
+![RewardTalk 实际界面截图](/blog/inline/svc-rewardtalk.webp)
 
 > 📱 **RewardTalk** — 整合周边门店折扣、积分与团购的本地会员平台。[了解 RewardTalk →](/projects/rewardtalk)
 

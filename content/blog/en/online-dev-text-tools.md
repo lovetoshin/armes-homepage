@@ -3,7 +3,7 @@ title: Online Text & Developer Tools You'll Actually Use
 date: 2026-06-17
 category: 생산성도구
 excerpt: A curated collection of browser-based text and developer tools organized by use case — no installation needed. Cut out the small repetitive tasks in your work and studies.
-thumbnail: /blog/covers/online-dev-text-tools.png
+thumbnail: /blog/covers/online-dev-text-tools.webp
 imageAlt: Online text and developer tools you can use without installing anything
 tags: [online tools, text tools, developer tools, productivity]
 relatedServices: [tools]

@@ -3,7 +3,7 @@ title: 전기차 충전소 찾기 — 급속·완속 앱 비교
 date: 2026-06-15
 category: 전기차
 excerpt: 전기차 충전소를 빠르게 찾는 방법과, 급속·완속의 차이, 충전 요금을 아끼는 요령을 정리했습니다.
-thumbnail: /blog/covers/ev-charger-finder.png
+thumbnail: /blog/covers/ev-charger-finder.webp
 imageAlt: 전기차 충전소 찾기와 급속 완속 비교
 tags: [전기차 충전소, 급속 충전, 완속 충전, 충전 요금]
 relatedServices: [rewardtalk]
@@ -14,7 +14,7 @@ relatedServices: [rewardtalk]
 이 막막함은 **충전소를 미리 찾고, 빈자리·요금·속도를 확인하는 습관**만 들이면 대부분 사라집니다. 이 글에서는 급속과 완속이 무엇이 다른지, 충전소를 빠르게 찾는 방법, 충전 앱을 고를 때 봐야 할 점, 그리고 요금을 아끼는 요령까지 한 번에 정리합니다.
 
 
-![리워드톡 실제 화면](/blog/inline/svc-rewardtalk.jpg)
+![리워드톡 실제 화면](/blog/inline/svc-rewardtalk.webp)
 
 > 📱 **리워드톡** — 내 주변 매장 할인·적립·공동구매를 잇는 로컬 멤버십 플랫폼. [리워드톡 자세히 보기 →](/projects/rewardtalk)
 

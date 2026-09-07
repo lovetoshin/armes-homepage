@@ -3,7 +3,7 @@ title: How to Identify Truly Good Value at Costco
 date: 2026-05-15
 category: 코스트코
 excerpt: A clear guide to picking genuinely good-value items at Costco. Learn how to avoid the bulk-size trap and always compare by unit price.
-thumbnail: /blog/covers/costco-best-value-items.png
+thumbnail: /blog/covers/costco-best-value-items.webp
 imageAlt: How to identify truly good value items at Costco
 tags: [Costco, value for money, unit price comparison, bulk shopping]
 relatedServices: [cocoping]
@@ -14,7 +14,7 @@ When you walk into Costco, you get this feeling that everything here is a deal �
 To actually get value at Costco, you need to drop the belief that "everything here is cheap" and replace it with **a clear standard for what's genuinely good value.** This post covers how to compare by unit price, which categories deliver real value versus which to approach with caution, and a checklist to run before you put anything in your cart.
 
 
-![CocoPing actual screen](/blog/inline/svc-cocoping.jpg)
+![CocoPing actual screen](/blog/inline/svc-cocoping.webp)
 
 > 📱 **CocoPing** — A shopping assistant that tracks Costco discount info and price changes near you at a glance. [Learn more about CocoPing →](/projects/cocoping)
 
@@ -23,8 +23,8 @@ To actually get value at Costco, you need to drop the belief that "everything he
 The biggest trap at Costco is bulk size. "One container for 10,000 won" looks cheap — but you might be able to get the same amount for less by buying smaller portions elsewhere. That's why comparisons should always be done in terms of **price per 100g, per item, or per liter**. Unit pricing is often printed small on the price tag, so get in the habit of looking for that number.
 
 <figure class="shots">
-<img src="/projects/cocoping-2.jpg" alt="CocoPing screen showing organized prices for tracked Costco items" />
-<img src="/projects/cocoping-1.jpg" alt="CocoPing alert screen showing price changes for saved products" />
+<img src="/projects/cocoping-2.webp" alt="CocoPing screen showing organized prices for tracked Costco items" />
+<img src="/projects/cocoping-1.webp" alt="CocoPing alert screen showing price changes for saved products" />
 <figcaption>Track unit prices and price history for your saved items — that's how you filter out "bulk that just looks cheap." CocoPing screen</figcaption>
 </figure>
 

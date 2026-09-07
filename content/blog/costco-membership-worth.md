@@ -3,7 +3,7 @@ title: 코스트코 멤버십 본전 뽑는 소비 패턴
 date: 2026-04-29
 category: 코스트코
 excerpt: 연회비를 내고도 이득을 보려면 어떻게 써야 할까요? 코스트코 멤버십의 본전을 뽑는 소비 패턴과 손익 계산법을 정리했습니다.
-thumbnail: /blog/covers/costco-membership-worth.png
+thumbnail: /blog/covers/costco-membership-worth.webp
 imageAlt: 코스트코 멤버십 연회비 본전 뽑는 소비 패턴
 tags: [코스트코 멤버십, 연회비, 가성비 쇼핑, 본전]
 relatedServices: [cocoping]
@@ -14,7 +14,7 @@ relatedServices: [cocoping]
 차이를 만드는 건 소비 패턴입니다. 이 글에서는 손익을 계산하는 법, 본전을 뽑는 4가지 소비 패턴, 그리고 솔직하게 "멤버십이 안 맞는 경우"까지 정리합니다.
 
 
-![코코핑 실제 화면](/blog/inline/svc-cocoping.jpg)
+![코코핑 실제 화면](/blog/inline/svc-cocoping.webp)
 
 > 📱 **코코핑** — 내 주변 코스트코 할인정보와 가격 변동을 한눈에 보는 쇼핑 도우미. [코코핑 자세히 보기 →](/projects/cocoping)
 
@@ -27,8 +27,8 @@ relatedServices: [cocoping]
 여기서 "아낀 금액"은 같은 물건을 다른 곳에서 샀을 때와의 **차액**입니다. 단가로 비교하는 습관이 중요한 이유가 여기 있습니다. 단가 비교법은 [코스트코 가성비 필수템 고르는 기준](/blog/costco-best-value-items)에 정리했습니다.
 
 <figure class="shots">
-<img src="/projects/cocoping-1.jpg" alt="관심 상품 가격을 추적해 알려주는 CocoPing 화면" />
-<img src="/projects/cocoping-2.jpg" alt="코스트코 품목 가격 정보를 정리한 CocoPing 화면" />
+<img src="/projects/cocoping-1.webp" alt="관심 상품 가격을 추적해 알려주는 CocoPing 화면" />
+<img src="/projects/cocoping-2.webp" alt="코스트코 품목 가격 정보를 정리한 CocoPing 화면" />
 <figcaption>관심 품목의 가격 흐름을 기록하면 '얼마나 아꼈는지'가 눈에 보입니다 — CocoPing 화면</figcaption>
 </figure>
 

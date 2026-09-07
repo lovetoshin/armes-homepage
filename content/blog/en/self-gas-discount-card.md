@@ -3,7 +3,7 @@ title: Why Self-Service Gas Stations Are Cheaper + Fuel Discount Card Guide
 date: 2026-05-26
 category: 주유
 excerpt: We explain why self-service stations consistently offer lower prices, then walk through the four things to check when choosing a fuel discount card — so you can stack savings at every fill-up.
-thumbnail: /blog/covers/self-gas-discount-card.png
+thumbnail: /blog/covers/self-gas-discount-card.webp
 imageAlt: Why self-service gas stations are cheaper, and a guide to fuel discount cards
 tags: [self-service gas station, fuel discount card, gas prices, fuel savings, discount at the pump]
 relatedServices: [rewardtalk]
@@ -14,7 +14,7 @@ Gas is hard to save on in big chunks — but it's **a recurring expense**, and e
 The tricky part is figuring out which self-service station is genuinely cheapest near you, and which discount card matches your actual spending. This article explains exactly why self-service stations are cheaper, gives you four clear criteria for choosing a discount card, and shows you how to layer additional savings on top.
 
 
-![RewardTalk app screenshot](/blog/inline/svc-rewardtalk.jpg)
+![RewardTalk app screenshot](/blog/inline/svc-rewardtalk.webp)
 
 > 📱 **RewardTalk** — A local membership platform connecting you to nearby store discounts, rewards, and group buys. [Learn more about RewardTalk →](/projects/rewardtalk)
 
@@ -31,8 +31,8 @@ There are concrete reasons why self-service stations consistently undercut full-
 The trade-off is minimal — you pump your own gas — and the per-liter savings are real every single time. That said, prices vary even among self-service stations depending on location and brand, so finding the cheapest one nearby still matters. See: [How to Find the Cheapest Gas Station in Your Neighborhood](/blog/cheapest-gas-station).
 
 <figure class="shots">
-<img src="/projects/rewardtalk-2.jpg" alt="RewardTalk home screen showing nearby stores and deals" />
-<img src="/projects/rewardtalk-1.jpg" alt="RewardTalk listing of nearby deals and benefits" />
+<img src="/projects/rewardtalk-2.webp" alt="RewardTalk home screen showing nearby stores and deals" />
+<img src="/projects/rewardtalk-1.webp" alt="RewardTalk listing of nearby deals and benefits" />
 <figcaption>See local fuel prices and deals in one place — less legwork every fill-up. RewardTalk screens shown.</figcaption>
 </figure>
 

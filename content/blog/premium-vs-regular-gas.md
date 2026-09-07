@@ -3,7 +3,7 @@ title: 고급유 vs 일반유, 내 차에 맞는 기름은?
 date: 2026-05-06
 category: 주유
 excerpt: 고급유가 정말 차에 좋을까요? 고급유와 일반유의 진짜 차이와, 내 차에 맞는 기름을 고르는 기준을 쉽게 정리했습니다.
-thumbnail: /blog/covers/premium-vs-regular-gas.png
+thumbnail: /blog/covers/premium-vs-regular-gas.webp
 imageAlt: 고급유와 일반유 차이와 선택 기준
 tags: [고급유, 일반유, 옥탄가, 주유 상식]
 relatedServices: [rewardtalk]
@@ -14,7 +14,7 @@ relatedServices: [rewardtalk]
 결론부터 말하면, 고급유와 일반유는 **"좋고 나쁨"이 아니라 "내 차에 맞느냐"의 문제**입니다. 이 글에서는 둘의 진짜 차이(옥탄가), 내 차에 맞는 기름을 고르는 기준, 그리고 흔한 오해까지 정리합니다.
 
 
-![리워드톡 실제 화면](/blog/inline/svc-rewardtalk.jpg)
+![리워드톡 실제 화면](/blog/inline/svc-rewardtalk.webp)
 
 > 📱 **리워드톡** — 내 주변 매장 할인·적립·공동구매를 잇는 로컬 멤버십 플랫폼. [리워드톡 자세히 보기 →](/projects/rewardtalk)
 
@@ -23,7 +23,7 @@ relatedServices: [rewardtalk]
 핵심은 **옥탄가**라는 숫자입니다. 옥탄가는 연료가 엔진 안에서 비정상적으로 터지는 현상(노킹)을 얼마나 잘 견디는지를 나타냅니다. 옥탄가가 높다고 "힘이 세지는" 게 아니라, **노킹을 잘 억제한다**는 뜻에 가깝습니다.
 
 <figure class="shot">
-<img src="/blog/inline/octane.png" alt="일반유와 고급유 차이 인포그래픽 — 옥탄가와 권장 차량" />
+<img src="/blog/inline/octane.webp" alt="일반유와 고급유 차이 인포그래픽 — 옥탄가와 권장 차량" />
 <figcaption>일반유 vs 고급유의 핵심은 옥탄가, 그리고 '내 차가 어느 쪽을 권장하느냐'입니다</figcaption>
 </figure>
 

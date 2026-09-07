@@ -3,7 +3,7 @@ title: How Coupang & Naver Rank Popular Products — The Algorithm Explained
 date: 2026-05-23
 category: 쇼핑
 excerpt: A product's ranking on a shopping platform isn't simply a measure of total sales. Here's how ranking algorithms really work — and how both shoppers and sellers can use them to their advantage.
-thumbnail: /blog/covers/how-ranking-works.png
+thumbnail: /blog/covers/how-ranking-works.webp
 imageAlt: How popular product rankings are determined on Coupang and Naver
 tags: [popular products, product ranking, shopping algorithm, best seller]
 relatedServices: [rankingpangpang]
@@ -13,7 +13,7 @@ The "Popular Items" and "Best Sellers" sections on a shopping platform's front p
 
 But here's a major misconception: **these rankings are not sorted by total sales.** The all-time sales leader doesn't always sit at the top. A brand-new product launched yesterday can leapfrog a year-long bestseller overnight. In this post, we break down how rankings are actually determined — and how both buyers and sellers can use that knowledge to their advantage.
 
-![SellerAI actual screen](/blog/inline/sai-how-ranking-works.jpg)
+![SellerAI actual screen](/blog/inline/sai-how-ranking-works.webp)
 
 > 📱 **SellerAI** — An AI service that generates model shots, cut-out images, and full detail pages from a single product photo. [Learn more about SellerAI →](https://www.armes.co.kr/sellerai/studio)
 
@@ -22,7 +22,7 @@ But here's a major misconception: **these rankings are not sorted by total sales
 Most shopping platform rankings are calculated as a **composite score** built from multiple signals. The key factors are:
 
 <figure class="shot">
-<img src="/blog/inline/ranking-factors.png" alt="Infographic of key factors that determine search rankings — sales, conversion, reviews, click-through rate, relevance" />
+<img src="/blog/inline/ranking-factors.webp" alt="Infographic of key factors that determine search rankings — sales, conversion, reviews, click-through rate, relevance" />
 <figcaption>Rankings are a combined score from many signals, not a single metric</figcaption>
 </figure>
 
