@@ -23,6 +23,8 @@ export default function Navbar() {
     { name: ui.tech, href: localize("/#technology", locale) },
     { name: ui.news, href: localize("/news", locale) },
     { name: ui.blog, href: localize("/blog", locale) },
+    // 돈스네이크 허브(셀러AI·부스터·그로스박스) — 블로그 오른쪽에 배치. 허브는 단일 경로.
+    { name: "돈스네이크", href: "/donsnake" },
   ];
 
   return (
