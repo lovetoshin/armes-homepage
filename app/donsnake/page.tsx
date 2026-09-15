@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import DonsnakeAuth from "./DonsnakeAuth";
+import DonsnakeShelf, { type Card } from "./DonsnakeShelf";
 
 // 돈스네이크 허브 — 애플 스타일(라이트). 2x2 넓은 가로 카드(이모지 왼쪽·글 오른쪽·가격/버튼 한 줄).
 export const metadata: Metadata = {
@@ -12,8 +12,6 @@ export const metadata: Metadata = {
 
 const SELLERAI = "https://www.armes.co.kr/sellerai/studio/pricing";
 const PAY = (s: string) => `https://www.armes.co.kr/sellerai/booster/${s}`;
-
-type Card = { tag: string; name: string; lead: string; copy: string[]; price: string; emoji: string; href: string; cta: string; primary?: boolean; soon?: boolean };
 
 const CARDS: Card[] = [
   { tag: "운영중", name: "셀러AI", lead: "상품 이미지·상세페이지 자동화", emoji: "🛍️",
@@ -65,30 +63,7 @@ export default function DonsnakePage() {
         <DonsnakeAuth variant="hero" />
       </section>
 
-      <section className="shelf">
-        {CARDS.map((c) => {
-          const inner = (
-            <>
-              <div className="emoji">{c.emoji}</div>
-              <div className="body">
-                <span className={`tag ${c.soon ? "soon" : ""}`}>{c.tag}</span>
-                <h3>{c.name}</h3>
-                <p className="lead">{c.lead}</p>
-                <div className="copy">{c.copy.map((t, i) => <p key={i}>{t}</p>)}</div>
-                <div className="foot">
-                  <span className="price">{c.price}</span>
-                  <span className={`cta ${c.soon ? "off" : ""}`}>{c.cta}</span>
-                </div>
-              </div>
-            </>
-          );
-          if (c.soon) return <div key={c.name} className="card soon">{inner}</div>;
-          const ext = c.href.startsWith("http");
-          return ext
-            ? <a key={c.name} className="card" href={c.href} target="_blank" rel="noopener">{inner}</a>
-            : <Link key={c.name} className="card" href={c.href}>{inner}</Link>;
-        })}
-      </section>
+      <DonsnakeShelf cards={CARDS} />
 
       <style>{`
         body{background:#fff}
