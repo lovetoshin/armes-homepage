@@ -6,7 +6,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useContact } from "./ContactProvider";
 import ArmesMark from "./ArmesMark";
-import LanguageSwitcher from "./LanguageSwitcher";
 import { localeFromPathname, localize } from "@/lib/i18n";
 import { getUI } from "@/lib/dictionary";
 
@@ -49,9 +48,8 @@ export default function Navbar() {
           ))}
         </div>
 
-        {/* Desktop CTA + 언어 전환 */}
+        {/* Desktop CTA */}
         <div className="hidden md:flex items-center gap-1.5">
-          <LanguageSwitcher />
           <button
             onClick={openContact}
             className="text-sm bg-[#3182F6] text-white px-5 py-2.5 rounded-full font-semibold hover:bg-[#1B64DA] transition-colors duration-200"
@@ -60,9 +58,8 @@ export default function Navbar() {
           </button>
         </div>
 
-        {/* Mobile: 언어 전환 + 햄버거 */}
+        {/* Mobile: 햄버거 */}
         <div className="md:hidden flex items-center gap-1">
-        <LanguageSwitcher />
         <button
           className="w-10 h-10 flex flex-col items-center justify-center gap-[5px]"
           onClick={() => setMobileOpen(!mobileOpen)}
