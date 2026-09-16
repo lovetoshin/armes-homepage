@@ -14,12 +14,12 @@ const SELLERAI = "https://www.armes.co.kr/sellerai/studio/pricing";
 const PAY = (s: string) => `https://www.armes.co.kr/sellerai/booster/${s}`;
 
 const CARDS: Card[] = [
-  { tag: "준비중", name: "쿠팡풀자동화", lead: "1688 상품 → 쿠팡 자동등록", emoji: "🤖",
+  { tag: "판매중", name: "쿠팡풀자동화", lead: "1688 상품 → 쿠팡 자동등록", emoji: "🤖",
     copy: [
       "중국 1688 상품을 받아 상세페이지를 AI로 만들고, 쿠팡에 자동으로 등록합니다.",
       "주문·발주·배송·입고까지 한 흐름으로 처리하는 상용 자동화입니다.",
     ],
-    price: "곧 오픈합니다", href: "#", cta: "준비중", soon: true },
+    price: "월 300,000원 · 연 3,000,000원", href: PAY("coupangauto"), cta: "구매하기" },
   { tag: "판매중", name: "그로스박스", lead: "쿠팡 로켓그로스 재고·발주 자동관리", emoji: "📦",
     copy: [
       "얼마 팔렸나를 넘어, 앞으로 60일간 얼마를 사야 하는지 발주량을 자동으로 계산합니다.",
