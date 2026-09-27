@@ -221,7 +221,7 @@ function CutitPrivacyContent() {
           <p><strong className="text-[#333D4B]">사업자등록번호</strong>: 798-86-02943</p>
           <p><strong className="text-[#333D4B]">개인정보 보호책임자</strong>: 신지한</p>
           <p><strong className="text-[#333D4B]">주소</strong>: 경기도 남양주시 진접읍 경복대로 425-80, 4층 6406호 (경복대학교 창업보육센터)</p>
-          <p><strong className="text-[#333D4B]">이메일</strong>: <a href="mailto:lovetoshin@gmail.com" className="text-[#3182F6]">lovetoshin@gmail.com</a></p>
+          <p><strong className="text-[#333D4B]">이메일</strong>: <a href="mailto:support.armes@gmail.com" className="text-[#3182F6]">support.armes@gmail.com</a></p>
         </div>
         <p className="mt-4 text-sm text-[#8B95A1]">기타 개인정보 침해에 대한 신고나 상담이 필요한 경우 아래 기관에 문의하실 수 있습니다.</p>
         <ul className="list-none space-y-1 mt-2 text-sm">

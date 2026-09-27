@@ -30,7 +30,7 @@ export interface PrivacyDoc {
 }
 
 // 사실 정보(모든 언어 공통 — 번역하지 않는다)
-const EMAIL = "lovetoshin@gmail.com";
+const EMAIL = "support.armes@gmail.com";
 const ADDRESS_KO = "경기도 남양주시 진접읍 경복대로 425-80, 4층 6406호 (경복대학교 창업보육센터)";
 
 // ── 1) 한국어(원문) ─────────────────────────────────────────────

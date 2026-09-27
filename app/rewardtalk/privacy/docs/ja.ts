@@ -199,7 +199,7 @@ export const ja: PrivacyDoc = {
             { label: "代表者", value: "신지한 (シン・ジハン)" },
             { label: "住所", value: "경기도 남양주시 진접읍 경복대로 425-80, 4층 6406호 (경복대학교 창업보육센터) (京畿道南楊州市榛接邑景福大路425-80、4階6406号(景福大学校創業保育センター))" },
             { label: "個人情報保護責任者", value: "신지한 (シン・ジハン)" },
-            { label: "メール", value: "lovetoshin@gmail.com" },
+            { label: "メール", value: "support.armes@gmail.com" },
           ],
         },
         { type: "p", text: "その他、個人情報侵害に関する申告や相談が必要な場合は、以下の機関にお問い合わせいただけます。" },

@@ -199,7 +199,7 @@ export const en: PrivacyDoc = {
             { label: "Representative", value: "신지한 (Shin Ji-han)" },
             { label: "Address", value: "경기도 남양주시 진접읍 경복대로 425-80, 4층 6406호 (경복대학교 창업보육센터) (Room 6406, 4th Floor, 425-80 Gyeongbok-daero, Jinjeop-eup, Namyangju-si, Gyeonggi-do, Republic of Korea (Kyungbok University Business Incubation Center))" },
             { label: "Personal Information Protection Officer", value: "신지한 (Shin Ji-han)" },
-            { label: "Email", value: "lovetoshin@gmail.com" },
+            { label: "Email", value: "support.armes@gmail.com" },
           ],
         },
         { type: "p", text: "If you need to report or consult about other personal information infringements, you may contact the following organizations." },

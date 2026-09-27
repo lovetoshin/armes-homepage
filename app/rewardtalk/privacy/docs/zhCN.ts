@@ -199,7 +199,7 @@ export const zhCN: PrivacyDoc = {
             { label: "代表者", value: "申智汉（신지한）" },
             { label: "地址", value: "京畿道南杨州市榛接邑景福大路425-80，4楼6406号（景福大学创业孵化中心）（경기도 남양주시 진접읍 경복대로 425-80, 4층 6406호 (경복대학교 창업보육센터)）" },
             { label: "个人信息保护负责人", value: "申智汉（신지한）" },
-            { label: "电子邮箱", value: "lovetoshin@gmail.com" },
+            { label: "电子邮箱", value: "support.armes@gmail.com" },
           ],
         },
         { type: "p", text: "如需就其他个人信息侵害进行举报或咨询，可向下述机构咨询。" },
