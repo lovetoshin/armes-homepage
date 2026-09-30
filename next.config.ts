@@ -64,6 +64,18 @@ const nextConfig: NextConfig = {
         destination: "/tools/:lang/:cat/:rest*",
         permanent:   true,
       },
+      // ★정리한 프로젝트의 옛 상세 주소(2026-09-30, 형님 지시) — 검색에 노출된 주소가 404 나지 않게 301 로 넘긴다.
+      //   PhotoSort → 같은 사진·영상 분야의 컷잇, RankingPangPang → 홈 프로젝트 영역(/projects 목록 페이지는 따로 없다)
+      {
+        source:      "/projects/photosort",
+        destination: "/projects/cutit",
+        statusCode:  301,
+      },
+      {
+        source:      "/projects/rankingpangpang",
+        destination: "/#projects",
+        statusCode:  301,
+      },
       // www → non-www (도메인 설정 시 활성화)
       // {
       //   source:      "/:path*",

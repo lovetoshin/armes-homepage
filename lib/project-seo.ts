@@ -46,19 +46,12 @@ export const projectSeo: Record<string, ProjectSeo> = {
     operatingSystem: "Web",
     og: "/projects/cocoping-2.webp",
   },
-  rankingpangpang: {
-    title: "RankingPangPang — 분야별 인기상품 랭킹",
-    keywords: ["인기상품 순위", "베스트 상품", "상품 추천", "상품 랭킹", "인기 상품"],
-    appCategory: "ShoppingApplication",
-    operatingSystem: "Web",
-    og: "/projects/og/rankingpangpang.png",
-  },
-  photosort: {
-    title: "PhotoSort — 사진 자동 분류·정리 AI",
-    keywords: ["사진 자동 분류", "사진 정리 앱", "AI 사진 정리", "사진 정리", "Vision AI"],
+  cutit: {
+    title: "컷잇 — 사진·영상 이어붙이기 간편 쇼츠 릴스 만들기",
+    keywords: ["쇼츠 만들기", "릴스 만들기", "사진 영상 이어붙이기", "영상 편집 앱", "쇼츠 편집 앱", "사진으로 영상 만들기", "컷잇"],
     appCategory: "MultimediaApplication",
-    operatingSystem: "Web",
-    og: "/projects/og/photosort.png",
+    operatingSystem: "Android, iOS",
+    og: "/projects/cutit-1.webp",
   },
   hoosamgukji: {
     title: "후삼국지 — 후삼국 시대 전략 시뮬레이션 게임",

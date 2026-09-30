@@ -21,14 +21,14 @@ export const technologies: Tech[] = [
     key: "Automation",
     name: "Automation",
     desc: "흩어진 정보를 모으고, 매번 손으로 하던 일을 자동으로 처리합니다. 사람이 더 중요한 일에 집중하도록 돕습니다.",
-    apply: ["SellerAI", "CocoPing", "RankingPangPang"],
+    apply: ["SellerAI", "CocoPing", "컷잇"],
     icon: "⚙️",
   },
   {
     key: "Vision",
     name: "Vision",
     desc: "사진 속 내용을 인식해 분석하고 분류합니다. 수많은 이미지를 사람 대신 빠르게 정리합니다.",
-    apply: ["PhotoSort"],
+    apply: ["SellerAI"],
     icon: "👁️",
   },
   {

@@ -66,17 +66,8 @@ export const PROJECT_TAGLINE: Record<string, Record<Locale, string>> = {
     
     
   },
-  rankingpangpang: {
-    ko: "분야별 인기 상품을 AI로 분석해 추천하는 랭킹 플랫폼",
-    
-    
-    
-  },
-  photosort: {
-    ko: "사진을 자동으로 분류·정리하는 Vision AI",
-    
-    
-    
+  cutit: {
+    ko: "사진과 영상을 이어 붙여 쇼츠·릴스를 간편하게 만드는 편집 앱",
   },
   hoosamgukji: {
     ko: "대한민국 후삼국 시대를 배경으로 한 전략 시뮬레이션 게임",

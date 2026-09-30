@@ -20,8 +20,9 @@ export default function ProjectsSection({ locale = "ko" }: { locale?: Locale }) 
   // 핵심: 한 줄(row) 안에서는 카드 높이를 서로 맞춘다(stretch) — 글 줄수 차이로 카드가 튀어나오지 않게.
   // 모바일은 한 줄 2개(형님 확정 2026-07-22) — 통째 축소(scale) 방식은 글씨가 너무 작아져 폐기.
   const byKey = (k: string) => projects.find((p) => p.key === k)!;
-  const rowsGroup = ["rewardtalk", "travelmoa", "cocoping", "worldlingo"]; // 세로 화면 서비스 4개
-  const devGroup = ["hoosamgukji", "photosort", "rankingpangpang"]; // 아이콘(개발중) 3개
+  // ★한 줄에 카드 2개 × 3줄 (형님 확정 2026-09-30) — 휴대폰 폭에서는 한 줄에 1개.
+  //   1줄 리워드톡|컷잇 · 2줄 코코핑|여행모아 · 3줄 월드링고|후삼국지
+  const order = ["rewardtalk", "cutit", "cocoping", "travelmoa", "worldlingo", "hoosamgukji"];
   let animIdx = 0;
   const Card = (k: string) => {
     const i = animIdx++;
@@ -50,16 +51,9 @@ export default function ProjectsSection({ locale = "ko" }: { locale?: Locale }) 
           </h2>
         </div>
 
-        {/* 2블록 — 한 줄 안에서는 카드 높이를 서로 맞춘다(stretch: 짧은 카드도 같은 줄 최대 높이로) */}
-        <div className="flex flex-col gap-4 lg:gap-5">
-          {/* ① 세로 화면 서비스 4개 — 모바일 2개씩, 데스크탑 4개 나란히 */}
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-5 items-stretch">
-            {rowsGroup.map((k) => Card(k))}
-          </div>
-          {/* ② 개발중(아이콘) 3개 — 모바일 2개씩, 데스크탑 3개 나란히 */}
-          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-5 items-stretch">
-            {devGroup.map((k) => Card(k))}
-          </div>
+        {/* 한 줄 안에서는 카드 높이를 서로 맞춘다(stretch: 짧은 카드도 같은 줄 최대 높이로) */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:gap-5 items-stretch">
+          {order.map((k) => Card(k))}
         </div>
       </div>
     </section>
