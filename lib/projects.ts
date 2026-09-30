@@ -83,7 +83,7 @@ export const projects: Project[] = [
     androidUrl: "https://play.google.com/store/apps/details?id=com.rewardtalk.app",
     iosUrl: "https://apps.apple.com/kr/app/id6788670980",
     icon: "🎁",
-    thumbnail: "/projects/rewardtalk-2.webp",
+    thumbnail: "/projects/rewardtalk-main.webp",
   },
   {
     key: "cutit",
@@ -119,7 +119,7 @@ export const projects: Project[] = [
     androidUrl: "https://play.google.com/store/apps/details?id=com.cocoping.app",
     iosUrl: "https://apps.apple.com/kr/app/id6788451449",
     icon: "🛒",
-    thumbnail: "/projects/cocoping-2.webp",
+    thumbnail: "/projects/cocoping-main.webp",
   },
   {
     key: "worldlingo",
