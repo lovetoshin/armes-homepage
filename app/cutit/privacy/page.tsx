@@ -36,7 +36,7 @@ function Section({ num, title, children }: { num: string; title: string; childre
         </span>
         {title}
       </h2>
-      <div className="text-[#4E5968] text-[15px] leading-[1.9] space-y-3 pl-10">{children}</div>
+      <div className="text-[#4E5968] text-[15px] leading-[1.9] space-y-3 pl-10 [text-wrap:pretty]">{children}</div>
     </section>
   );
 }
@@ -63,7 +63,7 @@ function Table({ headers, rows }: { headers: string[]; rows: React.ReactNode[][]
               {row.map((cell, j) => (
                 <td
                   key={j}
-                  className="px-4 py-3 text-[#4E5968] border border-[#E5E8EB] align-top"
+                  className="px-4 py-3 text-[#4E5968] border border-[#E5E8EB] align-top [text-wrap:balance]"
                 >
                   {cell}
                 </td>
@@ -82,7 +82,7 @@ function Bullets({ items }: { items: React.ReactNode[] }) {
       {items.map((item, i) => (
         <li key={i} className="flex gap-2">
           <span className="text-[#3182F6] mt-1 flex-shrink-0">·</span>
-          <span>{item}</span>
+          <span className="[text-wrap:pretty]">{item}</span>
         </li>
       ))}
     </ul>
