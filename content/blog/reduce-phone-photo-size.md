@@ -6,7 +6,7 @@ excerpt: '''저장공간 부족'' 알림에 시달린다면. 화질을 크게 �
 thumbnail: /blog/covers/reduce-phone-photo-size.webp
 imageAlt: 휴대폰 사진 용량 줄이는 방법
 tags: [사진 용량 줄이기, 저장공간 부족, 사진 압축, 휴대폰 정리]
-relatedServices: [photosort]
+relatedServices: [cutit]
 ---
 
 "저장공간이 부족합니다." 중요한 순간에 사진을 찍으려는데 이 알림이 뜨면 정말 답답합니다. 요즘 휴대폰 사진은 한 장당 수 MB라, 쌓이면 금세 수십 기가바이트가 됩니다. 동영상까지 더하면 128GB 휴대폰도 순식간에 가득 찹니다. 실제로 저장공간이 꽉 찬 폰을 열어 보면, 화질을 줄여도 티 안 날 오래된 사진과 연속 촬영본이 대부분인데도 "혹시 몰라서" 손을 못 대고 그대로 쌓아 둔 경우가 대다수입니다.
@@ -81,7 +81,7 @@ relatedServices: [photosort]
 
 전반적인 관리 체계는 [사진 정리 잘하는 방법](/blog/photo-organizing-tips)에서, 여행 사진은 [여행 사진 정리 노하우](/blog/travel-photo-organizing)에서 다룹니다.
 
-아르메스도 사진을 자동으로 분류·정리하는 Vision AI **PhotoSort**를 연구하고 있습니다. 진행 상황은 [PhotoSort 소개](/projects/photosort)에서 볼 수 있습니다.
+꼭 남기고 싶은 사진은 영상 한 편으로 엮어 두면 다시 꺼내 보기 좋습니다. 아르메스가 만든 **컷잇**은 휴대폰의 사진과 영상을 이어 붙여 쇼츠·릴스용 영상을 간편하게 만드는 편집 앱입니다. 자세한 내용은 [컷잇 소개](/projects/cutit)에서 확인하실 수 있습니다.
 
 ## 결론
 

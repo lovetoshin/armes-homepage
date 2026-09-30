@@ -6,7 +6,7 @@ excerpt: 비슷비슷한 연속 사진과 중복 파일이 저장공간을 잡�
 thumbnail: /blog/covers/find-duplicate-photos.webp
 imageAlt: 중복 사진 찾아서 정리하는 방법
 tags: [중복 사진, 사진 정리, 저장공간, 갤러리 정리]
-relatedServices: [photosort]
+relatedServices: [cutit]
 ---
 
 같은 장면을 연달아 다섯 장 찍어 두고 정작 하나도 안 지운 사진들. 카톡으로 받아 갤러리에 또 저장된 사진들. 친구가 보내 준 단체 사진이 다시 저장된 것들. 이런 **중복 사진**이 모이면 저장공간의 상당 부분을 조용히 잡아먹습니다. 16GB가 중복으로 차 있던 분도 드물지 않습니다. 실제로 저장공간 부족 알림에 시달리던 폰을 열어 보면, 정리를 미룬 채 쌓인 연속 촬영과 저장된 이미지가 용량의 절반 가까이를 차지하고 있는 경우가 흔합니다.
@@ -90,7 +90,7 @@ relatedServices: [photosort]
 
 이 작업은 사진 전체 정리의 한 부분입니다. 전반적인 흐름은 [사진 정리 잘하는 방법](/blog/photo-organizing-tips)에, 여행 사진은 [여행 사진 정리 노하우](/blog/travel-photo-organizing)에 정리했습니다.
 
-아르메스도 거의 같은 사진을 자동으로 묶어 한 장만 고르게 돕는 Vision AI **PhotoSort**를 연구하고 있습니다. 진행 상황은 [PhotoSort 소개](/projects/photosort)에서 볼 수 있습니다.
+중복을 걸러 내고 남긴 사진은 영상 한 편으로 엮어 두면 다시 꺼내 보기 좋습니다. 아르메스가 만든 **컷잇**은 휴대폰의 사진과 영상을 이어 붙여 쇼츠·릴스용 영상을 간편하게 만드는 편집 앱입니다. 자세한 내용은 [컷잇 소개](/projects/cutit)에서 확인하실 수 있습니다.
 
 ## 결론
 
