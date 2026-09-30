@@ -76,7 +76,7 @@ export const projects: Project[] = [
   {
     key: "rewardtalk",
     name: "RewardTalk",
-    tagline: "내 주변 매장 할인·적립·공동구매를 잇는 로컬 멤버십 플랫폼",
+    tagline: "내 주변 맛집·교통·할인·약국 정보를 지도로 찾는 생활 앱",
     audience: "동네 생활 소비자",
     status: "live",
     tech: ["Location", "Automation"],

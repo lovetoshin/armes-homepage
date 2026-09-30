@@ -26,11 +26,11 @@ export const projectSeo: Record<string, ProjectSeo> = {
     og: "/projects/og/tools.png",
   },
   rewardtalk: {
-    title: "RewardTalk — 내 주변 매장 할인·적립·공동구매",
-    keywords: ["내 주변 할인", "동네 적립", "공동구매 앱", "로컬 멤버십", "매장 적립", "리워드 앱"],
+    title: "RewardTalk — 내 주변 맛집·교통·할인·약국 찾기 · 외국인 여행 Welcome Korea",
+    keywords: ["내 주변 맛집", "주유소 가격", "통신사 멤버십 할인", "동네 최저가", "야간 약국", "외국인 한국 여행 앱", "Welcome Korea", "리워드톡"],
     appCategory: "LifestyleApplication",
-    operatingSystem: "Android",
-    og: "/projects/rewardtalk-2.webp",
+    operatingSystem: "Android, iOS",
+    og: "/projects/rewardtalk-main.webp",
   },
   travelmoa: {
     title: "TravelMoa — 여행 특가·항공권 비교",
@@ -40,11 +40,11 @@ export const projectSeo: Record<string, ProjectSeo> = {
     og: "/projects/travelmoa-2.webp",
   },
   cocoping: {
-    title: "CocoPing — 코스트코 할인·가격 변동 알림",
-    keywords: ["코스트코 할인", "코스트코 가격", "코스트코 세일", "코스트코 가격 변동", "코스트코 쇼핑"],
+    title: "CocoPing — 코스트코 할인·가격 변동·휴무 안내",
+    keywords: ["코스트코 할인", "코스트코 가격", "코스트코 세일", "코스트코 가격 변동", "코스트코 휴무", "코스트코 온라인 할인", "코코핑"],
     appCategory: "ShoppingApplication",
-    operatingSystem: "Web",
-    og: "/projects/cocoping-2.webp",
+    operatingSystem: "Android, iOS",
+    og: "/projects/cocoping-main.webp",
   },
   cutit: {
     title: "컷잇 — 사진·영상 이어붙이기 간편 쇼츠 릴스 만들기",

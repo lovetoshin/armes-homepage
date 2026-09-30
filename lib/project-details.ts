@@ -22,8 +22,10 @@ export interface ProjectDetail {
   statusNote?: string;
   // 외부 앱 버튼에 쓸 라벨(운영중일 때만)
   ctaLabel?: string;
-  // 실제 앱 캡처 — 상세 페이지에서 한 줄 갤러리로 표시(4장이면 4열, 3장이면 3열)
+  // 실제 앱 캡처 — 상세 페이지에서 한 줄 갤러리로 표시(장수만큼 열, 최대 6열)
   gallery?: string[];
+  // 화면 묶음이 여러 개일 때(예: 리워드톡 국내판·해외판) — 묶음마다 제목을 달아 한 줄씩 보여 준다
+  galleries?: { title: string; desc?: string; images: string[] }[];
 }
 
 export const projectDetails: Record<string, ProjectDetail> = {
@@ -58,30 +60,50 @@ export const projectDetails: Record<string, ProjectDetail> = {
     ],
   },
 
-  // ── 1. 리워드톡 (준비중) ───────────────────────────────
+  // ── 1. 리워드톡 (운영중 — 국내판 + 해외판 Welcome Korea, 화면 2026-09-18 스토어 스크린샷 기준) ──
   rewardtalk: {
     key: "rewardtalk",
     intro:
-      "리워드톡은 내가 사는 동네의 매장 할인·적립·공동구매를 한 앱에서 잇는 로컬 생활 멤버십 서비스입니다. 멀리 있는 큰 혜택이 아니라, 지금 내 주변에서 바로 쓸 수 있는 혜택을 모았습니다.",
+      "리워드톡은 내 주변의 맛집·교통·할인 적립·장보기·병원 약국 정보를 지도 한 화면에서 찾는 생활 앱입니다. 외국인 여행자를 위한 해외판 「Welcome Korea」는 영어·일본어·중국어 등 9개 언어로 한국 여행에 필요한 정보를 안내합니다.",
     problem:
-      "동네 단골 매장의 할인·적립 정보는 매장마다 흩어져 있고, 종이 쿠폰이나 스탬프는 자주 잃어버리게 됩니다. 리워드톡은 흩어진 동네 혜택을 위치 기반으로 한곳에 모아, 가까운 매장의 혜택을 놓치지 않게 합니다.",
+      "주유소 가격, 가까운 약국, 통신사 멤버십 할인, 동네 최저가처럼 매일 필요한 정보가 앱과 사이트마다 흩어져 있습니다. 한국을 찾은 외국인에게는 언어 장벽까지 더해집니다. 리워드톡은 이 정보를 위치 기준으로 한곳에 모아, 국내 이용자와 외국인 여행자 모두 가까운 곳의 정보를 바로 찾게 합니다.",
     features: [
-      { title: "내 주변 매장 혜택", desc: "GPS 위치를 기준으로 가까운 가맹점의 할인·적립 혜택을 거리순으로 보여줍니다." },
-      { title: "적립과 멤버십", desc: "종이 스탬프 없이 앱 하나로 단골 매장의 적립을 모으고 멤버십 혜택을 받습니다." },
-      { title: "룰렛·응모 리워드", desc: "룰렛/응모 추첨에 참여하고, 당첨 시 기프티콘 등 경품을 받을 수 있습니다." },
-      { title: "공동구매 채팅", desc: "이웃과 함께 모여 더 싸게 사는 공동구매 채팅방으로 판매자·구매자를 연결합니다." },
-      { title: "당첨·혜택 알림", desc: "당첨, 채팅, 새 혜택 소식을 푸시 알림으로 바로 받아봅니다." },
+      { title: "맛집 찾기", desc: "방송에 소개된 맛집을 지도와 거리순 목록으로 보여 주고, 전화·길찾기로 바로 연결합니다." },
+      { title: "교통 정보", desc: "주변 주유소의 휘발유·경유 가격과 전기차 충전소·주차장·공공자전거 위치를 한 화면에서 봅니다." },
+      { title: "할인·적립", desc: "카페·맛집·편의점에서 쓸 수 있는 SKT·KT·LG U+·CJ ONE·해피포인트 멤버십 할인을 매장별로 정리합니다." },
+      { title: "장보기", desc: "우리 동네에서 많이 찾는 품목의 이번 주 최저가를 모아 장보기 전에 가격을 비교합니다." },
+      { title: "병원·약국", desc: "약국·응급실·야간진료·소아과를 진료 시간과 함께 보여 주고, 지금 문을 연 곳만 골라 봅니다." },
+      { title: "해외판 Welcome Korea", desc: "외국인 여행자를 위한 9개 언어 화면입니다. 맛집·명소 탐색, 길찾기, 서울 지하철 노선도와 도착 정보, 올리브영·다이소·편의점 할인, 통역·환율·긴급 연락 도구를 제공합니다." },
     ],
     forWhom: [
-      "동네 매장을 자주 이용하는 생활 소비자",
-      "종이 쿠폰·스탬프가 번거로웠던 분",
-      "이웃과 공동구매로 알뜰하게 사고 싶은 분",
+      "내 주변 맛집·주유소·약국 정보를 빠르게 찾고 싶은 분",
+      "통신사 멤버십 할인과 동네 최저가를 챙기고 싶은 분",
+      "한국을 여행하는 외국인과 외국인 손님을 맞는 분",
     ],
-    gallery: [
-      "/projects/rewardtalk-g1.webp",
-      "/projects/rewardtalk-g2.webp",
-      "/projects/rewardtalk-g3.webp",
-      "/projects/rewardtalk-g4.webp",
+    galleries: [
+      {
+        title: "국내판",
+        desc: "맛집 · 교통 · 할인적립 · 장보기 · 병원약국",
+        images: [
+          "/projects/rewardtalk-kr-1.webp",
+          "/projects/rewardtalk-kr-2.webp",
+          "/projects/rewardtalk-kr-3.webp",
+          "/projects/rewardtalk-kr-4.webp",
+          "/projects/rewardtalk-kr-5.webp",
+        ],
+      },
+      {
+        title: "해외판 Welcome Korea",
+        desc: "Home · Explore · Transit · Metro · Deals · My Trip (영어 화면)",
+        images: [
+          "/projects/rewardtalk-en-1.webp",
+          "/projects/rewardtalk-en-2.webp",
+          "/projects/rewardtalk-en-3.webp",
+          "/projects/rewardtalk-en-4.webp",
+          "/projects/rewardtalk-en-5.webp",
+          "/projects/rewardtalk-en-6.webp",
+        ],
+      },
     ],
   },
 
@@ -140,23 +162,29 @@ export const projectDetails: Record<string, ProjectDetail> = {
   cocoping: {
     key: "cocoping",
     intro:
-      "코코핑은 코스트코 할인 정보와 가격 변동을 한눈에 보여주는 쇼핑 도우미입니다. 매번 매장을 돌며 확인하지 않아도 좋은 타이밍을 알 수 있습니다.",
+      "코코핑은 코스트코 매장과 코스트코 온라인의 할인 상품, 가격 변동을 한눈에 보여 주는 쇼핑 도우미입니다. 사고 싶은 상품을 장바구니·메모에 담아 두고, 매장 휴무일까지 한 앱에서 확인합니다.",
     problem:
-      "코스트코는 할인 품목과 가격이 자주 바뀌어 좋은 시점을 잡기 어렵습니다. 코코핑은 할인 정보와 가격 변동을 정리해, 언제 사는 게 좋은지 판단을 돕습니다.",
+      "코스트코는 할인 품목과 기간이 자주 바뀌고, 매장과 온라인의 할인도 서로 달라 좋은 시점을 잡기 어렵습니다. 코코핑은 할인 정보와 가격 이력을 정리해, 언제 무엇을 사는 게 좋은지 판단을 돕습니다.",
     features: [
-      { title: "할인 정보 모아보기", desc: "현재 진행 중인 코스트코 할인 품목을 한곳에 모아 보여줍니다." },
-      { title: "가격 변동 추적", desc: "관심 상품의 가격이 어떻게 변해 왔는지 흐름을 보여줍니다." },
-      { title: "구매 타이밍 도우미", desc: "가격 흐름을 바탕으로 지금이 살 만한 때인지 가늠하도록 돕습니다." },
+      { title: "할인 상품 모아보기", desc: "코스트코 매장과 코스트코 온라인의 할인 상품을 가공식품·고기·디저트 등 분류별로 할인 기간과 함께 보여 줍니다." },
+      { title: "가격 변동 이력", desc: "상품마다 정가·할인가·할인율이 기간별로 어떻게 바뀌어 왔는지 보여 주고, 쿠팡 가격과도 비교합니다." },
+      { title: "장바구니·메모", desc: "사고 싶은 상품을 담고 필요한 품목을 메모해, 매장에서 빠뜨리지 않고 장을 봅니다." },
+      { title: "상품 검색", desc: "상품 이름으로 매장·온라인 할인 상품을 한 번에 찾습니다." },
+      { title: "이그제큐티브 전용 할인", desc: "이그제큐티브 회원 전용 할인 상품을 따로 모아 보여 줍니다." },
+      { title: "매장 휴무 안내", desc: "전 점포 휴무와 지점별 의무휴업일을 날짜별로 알려 줍니다." },
     ],
     forWhom: [
       "코스트코를 자주 이용하는 쇼핑객",
-      "할인·가격 타이밍을 챙겨 알뜰하게 사고 싶은 분",
+      "할인 기간과 가격 흐름을 챙겨 알뜰하게 사고 싶은 분",
+      "장보기 목록을 휴대폰으로 관리하고 싶은 분",
     ],
     gallery: [
-      "/projects/cocoping-g1.webp",
-      "/projects/cocoping-g2.webp",
-      "/projects/cocoping-g3.webp",
-      "/projects/cocoping-g4.webp",
+      "/projects/cocoping-s0.webp",
+      "/projects/cocoping-s1.webp",
+      "/projects/cocoping-s2.webp",
+      "/projects/cocoping-s3.webp",
+      "/projects/cocoping-s4.webp",
+      "/projects/cocoping-s5.webp",
     ],
   },
 

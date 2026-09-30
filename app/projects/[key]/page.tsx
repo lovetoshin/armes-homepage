@@ -28,6 +28,14 @@ const ORDER = [
 
 const orderedKeys = ORDER.filter((k) => projects.some((p) => p.key === k));
 
+// 앱 화면 갤러리 열 수 — 장수만큼 한 줄(최대 6열). 5·6장은 휴대폰에서 3열로 접는다.
+function galleryCols(n: number): string {
+  return (
+    { 1: "grid-cols-1", 2: "grid-cols-2", 3: "grid-cols-3", 4: "grid-cols-4", 5: "grid-cols-3 sm:grid-cols-5", 6: "grid-cols-3 sm:grid-cols-6" }[n] ??
+    "grid-cols-3 sm:grid-cols-6"
+  );
+}
+
 export function generateStaticParams() {
   return projects.map((p) => ({ key: p.key }));
 }
@@ -201,15 +209,28 @@ export default async function ProjectDetailPage({
 
       {/* 본문 */}
       <div className="max-w-4xl mx-auto px-5 lg:px-8 py-16 lg:py-20">
-        {/* 실제 화면 — 캡처를 한 줄로 나열(4장=4열, 3장=3열), 없으면 대표 1장 */}
-        {detail?.gallery && detail.gallery.length > 0 ? (
-          <div
-            className={`mb-16 grid gap-3 sm:gap-5 ${
-              { 1: "grid-cols-1", 2: "grid-cols-2", 3: "grid-cols-3" }[
-                detail.gallery.length
-              ] ?? "grid-cols-4"
-            }`}
-          >
+        {/* 실제 화면 — 묶음이 여러 개면(예: 리워드톡 국내판·해외판) 묶음마다 제목 + 한 줄 */}
+        {detail?.galleries && detail.galleries.length > 0 ? (
+          <div className="mb-16 flex flex-col gap-12">
+            {detail.galleries.map((g) => (
+              <section key={g.title}>
+                <div className="mb-5">
+                  <h2 className="text-xl font-extrabold text-[#191F28] keep-all">{g.title}</h2>
+                  {g.desc && <p className="mt-1.5 text-[#8B95A1] text-[14px] keep-all">{g.desc}</p>}
+                </div>
+                <div className={`grid gap-3 sm:gap-4 ${galleryCols(g.images.length)}`}>
+                  {g.images.map((src, gi) => (
+                    <div key={src} className="rounded-2xl overflow-hidden border border-[#E5E8EB] bg-[#F2F4F6]">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img src={src} alt={`${project.name} ${g.title} 화면 ${gi + 1}`} className="w-full h-auto block" loading="lazy" />
+                    </div>
+                  ))}
+                </div>
+              </section>
+            ))}
+          </div>
+        ) : detail?.gallery && detail.gallery.length > 0 ? (
+          <div className={`mb-16 grid gap-3 sm:gap-5 ${galleryCols(detail.gallery.length)}`}>
             {detail.gallery.map((src, gi) => (
               <div
                 key={src}
