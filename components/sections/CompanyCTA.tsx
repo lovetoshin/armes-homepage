@@ -7,15 +7,14 @@ import { type Locale } from "@/lib/i18n";
 import { getUI } from "@/lib/dictionary";
 
 /**
- * 회사 CTA — 파트너·제휴 문의 유도 + 검증된 신뢰 배지.
- * ⚠️ 누적 수치 등은 실제 데이터 확보 전까지 표기하지 않는다(날조 금지).
+ * 회사 CTA — 파트너·제휴 문의 유도.
+ * (버튼 아래 신뢰 배지 3개 「사업자 등록 법인·경복대학교 창업보육·개인정보 보호 준수」는 형님 지시로 삭제 2026-09-30)
  */
 export default function CompanyCTA({ locale = "ko" }: { locale?: Locale }) {
   const ref = useRef<HTMLElement>(null);
   const isInView = useInView(ref, { once: true, margin: "-60px" });
   const { open: openContact } = useContact();
   const t = getUI(locale).home.cta;
-  const trustBadges = t.badges;
 
   return (
     <section ref={ref} className="bg-white pb-24 lg:pb-28">
@@ -38,17 +37,6 @@ export default function CompanyCTA({ locale = "ko" }: { locale?: Locale }) {
           >
             {t.button}
           </button>
-
-          <div className="mt-6 flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
-            {trustBadges.map((b) => (
-              <div key={b} className="flex items-center gap-1.5 text-[#6B7684] text-xs font-medium">
-                <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                {b}
-              </div>
-            ))}
-          </div>
         </motion.div>
       </div>
     </section>

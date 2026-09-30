@@ -63,7 +63,6 @@ type Dict = {
       h2: string;
       desc: string;
       button: string;
-      badges: [string, string, string];
     };
   };
 };
@@ -128,7 +127,6 @@ const dictionaries: Record<Locale, Dict> = {
         h2: "아르메스와 함께 만들어요",
         desc: "새로운 서비스 제휴와 사업 협업을 환영합니다.",
         button: "파트너·제휴 문의하기",
-        badges: ["사업자 등록 법인", "경복대학교 창업보육", "개인정보 보호 준수"],
       },
     },
   },
