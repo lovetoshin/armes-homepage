@@ -31,7 +31,7 @@ const orderedKeys = ORDER.filter((k) => projects.some((p) => p.key === k));
 // 앱 화면 갤러리 열 수 — 장수만큼 한 줄(최대 6열). 5·6장은 휴대폰에서 3열로 접는다.
 function galleryCols(n: number): string {
   return (
-    { 1: "grid-cols-1", 2: "grid-cols-2", 3: "grid-cols-3", 4: "grid-cols-4", 5: "grid-cols-3 sm:grid-cols-5", 6: "grid-cols-3 sm:grid-cols-6" }[n] ??
+    { 1: "grid-cols-1", 2: "grid-cols-2", 3: "grid-cols-3", 4: "grid-cols-4", 5: "grid-cols-3 sm:grid-cols-5", 6: "grid-cols-3 sm:grid-cols-6", 7: "grid-cols-3 sm:grid-cols-4" }[n] ??
     "grid-cols-3 sm:grid-cols-6"
   );
 }

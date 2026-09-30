@@ -53,10 +53,13 @@ export const projectDetails: Record<string, ProjectDetail> = {
     statusNote:
       "월드링고는 현재 개발 중입니다. 원어민 강사 매칭·1:1 화상 수업·간편 결제 기능을 준비하고 있으며, 정식 출시 준비를 마치는 대로 안내드리겠습니다.",
     gallery: [
-      "/projects/worldlingo-g1.webp",
-      "/projects/worldlingo-g2.webp",
-      "/projects/worldlingo-g3.webp",
-      "/projects/worldlingo-g4.webp",
+      "/projects/worldlingo-s1.webp",
+      "/projects/worldlingo-s2.webp",
+      "/projects/worldlingo-s3.webp",
+      "/projects/worldlingo-s4.webp",
+      "/projects/worldlingo-s5.webp",
+      "/projects/worldlingo-s6.webp",
+      "/projects/worldlingo-s7.webp",
     ],
   },
 

@@ -129,7 +129,7 @@ export const projects: Project[] = [
     status: "dev",
     tech: ["AI", "Automation"],
     icon: "🌐",
-    thumbnail: "/projects/worldlingo-2.webp",
+    thumbnail: "/projects/worldlingo-s1.webp",
   },
   {
     key: "hoosamgukji",
