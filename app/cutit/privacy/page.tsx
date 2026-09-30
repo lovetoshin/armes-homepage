@@ -205,9 +205,9 @@ function CutitPrivacyContent() {
               "Snap Inc.",
               <>
                 컷잇 카메라 AR 렌즈 제공(Camera Kit) —{" "}
-                <a href="https://values.snap.com/privacy/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-[#3182F6] break-all">Snap 개인정보처리방침</a>
+                <a href="https://values.snap.com/privacy/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-[#3182F6] whitespace-nowrap">Snap 개인정보처리방침</a>
                 {" · "}
-                <a href="https://snap.com/terms" target="_blank" rel="noopener noreferrer" className="text-[#3182F6] break-all">Snap 서비스 약관</a>
+                <a href="https://snap.com/terms" target="_blank" rel="noopener noreferrer" className="text-[#3182F6] whitespace-nowrap">Snap 서비스 약관</a>
               </>,
             ],
           ]}
@@ -303,7 +303,7 @@ function CutitPrivacyContent() {
         <Bullets
           items={[
             <><strong className="text-[#333D4B]">Photo Sort</strong>: photos and videos are classified into folders entirely on the device. Images, classification results and image feature values are never sent to our servers. Files are moved or trashed only after the user approves Android&apos;s system dialog; trashed items can be restored during Android&apos;s trash retention period (typically 30 days). Downloaded files are left in place, and originals are never deleted.</>,
-            <><strong className="text-[#333D4B]">Cutit Camera (Snap Camera Kit)</strong>: some AR Lenses use information about faces, hands and voices detected by the camera and microphone. ARMES does not collect, store or transmit this information. To download and run Lenses, device and usage information may be sent to Snap Inc. and is handled under Snap&apos;s <a href="https://values.snap.com/privacy/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-[#3182F6] break-all">Privacy Policy</a>. Users see Snap&apos;s Privacy Policy and <a href="https://snap.com/terms" target="_blank" rel="noopener noreferrer" className="text-[#3182F6] break-all">Terms of Service</a> consent prompt before first use of Lenses; declining does not affect editing or Photo Sort.</>,
+            <><strong className="text-[#333D4B]">Cutit Camera (Snap Camera Kit)</strong>: some AR Lenses use information about faces, hands and voices detected by the camera and microphone. ARMES does not collect, store or transmit this information. To download and run Lenses, device and usage information may be sent to Snap Inc. and is handled under Snap&apos;s <a href="https://values.snap.com/privacy/privacy-policy" target="_blank" rel="noopener noreferrer" className="text-[#3182F6] whitespace-nowrap">Privacy Policy</a>. Users see Snap&apos;s Privacy Policy and <a href="https://snap.com/terms" target="_blank" rel="noopener noreferrer" className="text-[#3182F6] whitespace-nowrap">Terms of Service</a> consent prompt before first use of Lenses; declining does not affect editing or Photo Sort.</>,
             <><strong className="text-[#333D4B]">Contact</strong>: <a href="mailto:support.armes@gmail.com" className="text-[#3182F6]">support.armes@gmail.com</a></>,
           ]}
         />
