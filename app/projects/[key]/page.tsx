@@ -218,7 +218,8 @@ export default async function ProjectDetailPage({
                   <h2 className="text-xl font-extrabold text-[#191F28] keep-all">{g.title}</h2>
                   {g.desc && <p className="mt-1.5 text-[#8B95A1] text-[14px] keep-all">{g.desc}</p>}
                 </div>
-                <div className={`grid gap-3 sm:gap-4 ${galleryCols(g.images.length)}`}>
+                {/* 1줄에 캡처 3장씩 (형님 지시 2026-09-30) */}
+                <div className="grid grid-cols-3 gap-3 sm:gap-5">
                   {g.images.map((src, gi) => (
                     <div key={src} className="rounded-2xl overflow-hidden border border-[#E5E8EB] bg-[#F2F4F6]">
                       {/* eslint-disable-next-line @next/next/no-img-element */}

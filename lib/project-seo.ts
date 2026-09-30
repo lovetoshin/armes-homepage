@@ -26,8 +26,8 @@ export const projectSeo: Record<string, ProjectSeo> = {
     og: "/projects/og/tools.png",
   },
   rewardtalk: {
-    title: "RewardTalk — 내 주변 맛집·교통·할인·약국 찾기 · 외국인 여행 Welcome Korea",
-    keywords: ["내 주변 맛집", "주유소 가격", "통신사 멤버십 할인", "동네 최저가", "야간 약국", "외국인 한국 여행 앱", "Welcome Korea", "리워드톡"],
+    title: "RewardTalk — 내 주변 맛집·교통·할인·약국 찾기 · 외국인 한국 여행",
+    keywords: ["내 주변 맛집", "주유소 가격", "통신사 멤버십 할인", "동네 최저가", "야간 약국", "외국인 한국 여행 앱", "리워드톡"],
     appCategory: "LifestyleApplication",
     operatingSystem: "Android, iOS",
     og: "/projects/rewardtalk-main.webp",
