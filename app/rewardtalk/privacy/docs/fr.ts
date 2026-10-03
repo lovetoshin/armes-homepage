@@ -12,7 +12,7 @@ export const fr: PrivacyDoc = {
   subtitle:
     "ARMES Co., Ltd. (주식회사 아르메스, ci-après « la Société ») respecte les lois et réglementations applicables, notamment la « Loi sur la protection des renseignements personnels », la « Loi relative à la protection et à l'utilisation des informations de localisation » et la « Loi sur la promotion de l'utilisation du réseau de communication d'information et la protection de l'information, etc. », et met en œuvre la présente politique afin de protéger les renseignements personnels des utilisateurs.",
   updatedLabel: "Dernière mise à jour",
-  updatedAt: "23 juin 2026",
+  updatedAt: "3 octobre 2026",
   note: "La Société publie la présente politique de confidentialité au sein de l'application ainsi que sur les pages Web exploitées par la Société, afin que les utilisateurs puissent la consulter aisément à tout moment.",
   sections: [
     {
@@ -25,7 +25,7 @@ export const fr: PrivacyDoc = {
           type: "ul",
           items: [
             { b: "Éléments obligatoires", t: " : adresse électronique, pseudonyme (nom de profil), informations d'authentification de connexion (identifiant de connexion sociale, identifiant de connexion Apple, etc.)" },
-            { b: "Éléments facultatifs", t: " : photo de profil" },
+            { b: "Éléments facultatifs", t: " : photo de profil, sexe, tranche d'âge, anniversaire, année de naissance (uniquement si l'utilisateur y consent lors de la connexion avec Kakao)" },
           ],
         },
         { type: "sub", text: "B. Éléments collectés au cours de l'utilisation du service" },
@@ -64,6 +64,7 @@ export const fr: PrivacyDoc = {
             { b: "Traitement des demandes des clients et règlement des litiges" },
             { b: "Amélioration du service et analyse statistique" },
             { b: "Diffusion de publicités", t: " : affichage de publicités au sein de l'application et mesure de leur efficacité" },
+            { b: "Avantages personnalisés et informations marketing", t: " : recommandation d'avantages et de commerces personnalisés selon le sexe, la tranche d'âge, l'anniversaire et l'année de naissance ; information sur les avantages d'anniversaire ; envoi de notifications push d'avantages et d'événements uniquement aux utilisateurs ayant consenti séparément à recevoir des informations marketing" },
           ],
         },
       ],
@@ -113,6 +114,7 @@ export const fr: PrivacyDoc = {
             ["Supabase Inc.", "Stockage des données et exploitation de l'infrastructure serveur", "Jusqu'à la résiliation de l'adhésion ou la fin du contrat de sous-traitance"],
             ["Google LLC (AdMob)", "Diffusion de publicités au sein de l'application et traitement de l'identifiant publicitaire", "Jusqu'à la résiliation de l'adhésion ou la fin du contrat de sous-traitance"],
             ["Google LLC / Apple Inc.", "Envoi de notifications push, authentification de la connexion sociale", "Jusqu'à la résiliation de l'adhésion ou la fin du contrat de sous-traitance"],
+            ["Kakao Corp. / NAVER Corp.", "Authentification de la connexion sociale (Kakao, Naver)", "Jusqu'à la résiliation de l'adhésion ou la fin du contrat de sous-traitance"],
           ],
         },
         { type: "p", text: "Lors de la conclusion d'un contrat de sous-traitance, la Société stipule les dispositions nécessaires, conformément aux lois et réglementations applicables, afin que les renseignements personnels soient gérés en toute sécurité." },

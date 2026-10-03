@@ -11,7 +11,7 @@ export const pt: PrivacyDoc = {
   subtitle:
     "A ARMES Co., Ltd. (주식회사 아르메스) (doravante designada «Empresa») cumpre a legislação aplicável, incluindo a «Lei de Proteção de Dados Pessoais» (개인정보 보호법), a «Lei relativa à Proteção e Utilização de Informação de Localização» (위치정보의 보호 및 이용 등에 관한 법률) e a «Lei relativa à Promoção da Utilização de Redes de Informação e Comunicação e à Proteção da Informação» (정보통신망 이용촉진 및 정보보호 등에 관한 법률), e adota a política que se segue com o objetivo de proteger os dados pessoais dos utilizadores.",
   updatedLabel: "Última atualização",
-  updatedAt: "23 de junho de 2026",
+  updatedAt: "3 de outubro de 2026",
   note: "A Empresa divulga a presente Política de Privacidade na aplicação e nas páginas web por si operadas, de modo a que os utilizadores possam consultá-la facilmente a qualquer momento.",
   sections: [
     {
@@ -24,7 +24,7 @@ export const pt: PrivacyDoc = {
           type: "ul",
           items: [
             { b: "Elementos obrigatórios", t: ": endereço de correio eletrónico, alcunha (nome de perfil), informação de autenticação de início de sessão (identificador de início de sessão social, identificador de início de sessão Apple, entre outros)" },
-            { b: "Elementos facultativos", t: ": fotografia de perfil" },
+            { b: "Elementos facultativos", t: ": fotografia de perfil, sexo, faixa etária, aniversário, ano de nascimento (apenas se o utilizador consentir ao iniciar sessão com a Kakao)" },
           ],
         },
         { type: "sub", text: "b. Elementos recolhidos no decurso da utilização do serviço" },
@@ -63,6 +63,7 @@ export const pt: PrivacyDoc = {
             { b: "Resposta a pedidos de informação dos clientes e tratamento de litígios" },
             { b: "Melhoria do serviço e análise estatística" },
             { b: "Prestação de publicidade", t: ": exibição de publicidade na aplicação e medição da respetiva eficácia" },
+            { b: "Benefícios personalizados e informação de marketing", t: ": recomendação de benefícios e lojas personalizados com base no sexo, faixa etária, aniversário e ano de nascimento; aviso de benefícios de aniversário; envio de notificações push de benefícios e eventos apenas aos utilizadores que tenham consentido separadamente em receber informação de marketing" },
           ],
         },
       ],
@@ -112,6 +113,7 @@ export const pt: PrivacyDoc = {
             ["Supabase Inc.", "Armazenamento de dados e operação da infraestrutura de servidores", "Até ao cancelamento da adesão ou à cessação do contrato de subcontratação"],
             ["Google LLC (AdMob)", "Prestação de publicidade na aplicação e tratamento do identificador de publicidade", "Até ao cancelamento da adesão ou à cessação do contrato de subcontratação"],
             ["Google LLC / Apple Inc.", "Envio de notificações push e autenticação de início de sessão social", "Até ao cancelamento da adesão ou à cessação do contrato de subcontratação"],
+            ["Kakao Corp. / NAVER Corp.", "Autenticação de início de sessão social (Kakao, Naver)", "Até ao cancelamento da adesão ou à cessação do contrato de subcontratação"],
           ],
         },
         { type: "p", text: "Ao celebrar o contrato de subcontratação, a Empresa estabelece as disposições necessárias, nos termos da legislação aplicável, para que os dados pessoais sejam geridos de forma segura." },

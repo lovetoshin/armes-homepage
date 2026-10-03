@@ -12,7 +12,7 @@ export const de: PrivacyDoc = {
   subtitle:
     "Die ARMES Co., Ltd. (주식회사 아르메스, nachfolgend „das Unternehmen“) hält die einschlägigen Rechtsvorschriften ein, darunter das Gesetz zum Schutz personenbezogener Daten (개인정보 보호법), das Gesetz über den Schutz und die Nutzung von Standortdaten u. a. (위치정보의 보호 및 이용 등에 관한 법률) sowie das Gesetz zur Förderung der Nutzung von Informations- und Kommunikationsnetzen und zum Datenschutz u. a. (정보통신망 이용촉진 및 정보보호 등에 관한 법률), und hat zum Schutz der personenbezogenen Daten der Nutzer die folgende Datenschutzrichtlinie aufgestellt.",
   updatedLabel: "Zuletzt aktualisiert",
-  updatedAt: "23. Juni 2026",
+  updatedAt: "3. Oktober 2026",
   note: "Das Unternehmen veröffentlicht diese Datenschutzrichtlinie innerhalb der App sowie auf den vom Unternehmen betriebenen Webseiten, damit die Nutzer sie jederzeit leicht einsehen können.",
   sections: [
     {
@@ -25,7 +25,7 @@ export const de: PrivacyDoc = {
           type: "ul",
           items: [
             { b: "Pflichtangaben", t: ": E-Mail-Adresse, Nickname (Profilname), Anmelde-Authentifizierungsdaten (Kennungen für Social Login, Apple-Login-Kennungen u. a.)" },
-            { b: "Freiwillige Angaben", t: ": Profilbild" },
+            { b: "Freiwillige Angaben", t: ": Profilbild, Geschlecht, Altersgruppe, Geburtstag, Geburtsjahr (nur sofern der Nutzer bei der Anmeldung über Kakao einwilligt)" },
           ],
         },
         { type: "sub", text: "b. Während der Nutzung des Dienstes erhobene Angaben" },
@@ -64,6 +64,7 @@ export const de: PrivacyDoc = {
             { b: "Bearbeitung von Kundenanfragen und Beilegung von Streitigkeiten" },
             { b: "Verbesserung des Dienstes und statistische Auswertung" },
             { b: "Bereitstellung von Werbung", t: ": Einblendung von Werbung innerhalb der App und Messung der Werbewirkung" },
+            { b: "Personalisierte Vorteile und Marketinginformationen", t: ": Empfehlung personalisierter Vorteile und Geschäfte anhand von Geschlecht, Altersgruppe, Geburtstag und Geburtsjahr; Hinweise auf Geburtstagsvorteile; Versand von Push-Benachrichtigungen zu Vorteilen und Aktionen ausschließlich an Nutzer, die dem Empfang von Marketinginformationen gesondert zugestimmt haben" },
           ],
         },
       ],
@@ -113,6 +114,7 @@ export const de: PrivacyDoc = {
             ["Supabase Inc.", "Datenspeicherung und Betrieb der Server-Infrastruktur", "bis zur Kündigung der Mitgliedschaft oder Beendigung des Auftragsvertrags"],
             ["Google LLC (AdMob)", "Bereitstellung von Werbung innerhalb der App und Verarbeitung der Werbekennung", "bis zur Kündigung der Mitgliedschaft oder Beendigung des Auftragsvertrags"],
             ["Google LLC / Apple Inc.", "Versand von Push-Benachrichtigungen, Authentifizierung des Social Logins", "bis zur Kündigung der Mitgliedschaft oder Beendigung des Auftragsvertrags"],
+            ["Kakao Corp. / NAVER Corp.", "Authentifizierung des Social Logins (Kakao, Naver)", "bis zur Kündigung der Mitgliedschaft oder Beendigung des Auftragsvertrags"],
           ],
         },
         { type: "p", text: "Das Unternehmen legt beim Abschluss des Auftragsvertrags die nach den einschlägigen Rechtsvorschriften erforderlichen Punkte fest, damit die personenbezogenen Daten sicher verwaltet werden können." },

@@ -7,7 +7,7 @@ export const en: PrivacyDoc = {
   subtitle:
     "ARMES Co., Ltd. (hereinafter the \"Company\") complies with the Personal Information Protection Act, the Act on the Protection and Use of Location Information, the Act on Promotion of Information and Communications Network Utilization and Information Protection, and other relevant laws, and has established the following policy to protect users' personal information.",
   updatedLabel: "Last updated",
-  updatedAt: "June 23, 2026",
+  updatedAt: "October 3, 2026",
   note: "The Company discloses this Privacy Policy within the app and on the web pages operated by the Company so that users may easily review it at any time.",
   sections: [
     {
@@ -20,7 +20,7 @@ export const en: PrivacyDoc = {
           type: "ul",
           items: [
             { b: "Required items", t: ": email address, nickname (profile name), login authentication information (social login identifier, Apple login identifier, etc.)" },
-            { b: "Optional items", t: ": profile photo" },
+            { b: "Optional items", t: ": profile photo, gender, age range, birthday, birth year (only if the user consents when logging in with Kakao)" },
           ],
         },
         { type: "sub", text: "B. Items collected in the course of using the service" },
@@ -59,6 +59,7 @@ export const en: PrivacyDoc = {
             { b: "Handling customer inquiries and resolving disputes" },
             { b: "Service improvement and statistical analysis" },
             { b: "Provision of advertisements", t: ": displaying in-app advertisements and measuring their effectiveness" },
+            { b: "Personalized benefits and marketing information", t: ": personalized benefit and store recommendations based on gender, age range, birthday and birth year; birthday benefit notices; benefit and event push notifications sent only to users who have separately consented to receive marketing information" },
           ],
         },
       ],
@@ -108,6 +109,7 @@ export const en: PrivacyDoc = {
             ["Supabase Inc.", "Data storage and server infrastructure operation", "Until membership withdrawal or termination of the entrustment agreement"],
             ["Google LLC (AdMob)", "Provision of in-app advertisements and processing of advertising identifiers", "Until membership withdrawal or termination of the entrustment agreement"],
             ["Google LLC / Apple Inc.", "Sending push notifications, social login authentication", "Until membership withdrawal or termination of the entrustment agreement"],
+            ["Kakao Corp. / NAVER Corp.", "Social login (Kakao, Naver) authentication", "Until membership withdrawal or termination of the entrustment agreement"],
           ],
         },
         { type: "p", text: "When entering into entrustment agreements, the Company stipulates the matters necessary under applicable laws to ensure that personal information is managed securely." },
