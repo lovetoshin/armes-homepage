@@ -20,7 +20,7 @@ export const en: PrivacyDoc = {
           type: "ul",
           items: [
             { b: "Required items", t: ": email address, nickname (profile name), login authentication information (social login identifier, Apple login identifier, etc.)" },
-            { b: "Optional items", t: ": profile photo, gender, age range, birthday, birth year (only if the user consents when logging in with Kakao)" },
+            { b: "Optional items", t: ": profile photo, gender, age range, birthday, birth year (only if the user consents when logging in with Kakao or Naver)" },
           ],
         },
         { type: "sub", text: "B. Items collected in the course of using the service" },
@@ -222,7 +222,7 @@ export const en: PrivacyDoc = {
         { type: "p", text: "This Privacy Policy may be supplemented, deleted, or amended in accordance with changes in laws, policies, or security technology, and any changes will be announced through in-app notices or this page." },
         {
           type: "ul",
-          items: ["Date of announcement: June 23, 2026", "Effective date: June 23, 2026"],
+          items: ["Date of announcement: October 3, 2026", "Effective date: October 3, 2026", "First effective date: June 23, 2026"],
         },
       ],
     },

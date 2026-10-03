@@ -25,7 +25,7 @@ export const fr: PrivacyDoc = {
           type: "ul",
           items: [
             { b: "Éléments obligatoires", t: " : adresse électronique, pseudonyme (nom de profil), informations d'authentification de connexion (identifiant de connexion sociale, identifiant de connexion Apple, etc.)" },
-            { b: "Éléments facultatifs", t: " : photo de profil, sexe, tranche d'âge, anniversaire, année de naissance (uniquement si l'utilisateur y consent lors de la connexion avec Kakao)" },
+            { b: "Éléments facultatifs", t: " : photo de profil, sexe, tranche d'âge, anniversaire, année de naissance (uniquement si l'utilisateur y consent lors de la connexion avec Kakao ou Naver)" },
           ],
         },
         { type: "sub", text: "B. Éléments collectés au cours de l'utilisation du service" },
@@ -227,7 +227,7 @@ export const fr: PrivacyDoc = {
         { type: "p", text: "La présente politique de confidentialité peut faire l'objet d'ajouts, de suppressions ou de modifications en raison de changements dans les lois et réglementations, les politiques ou les technologies de sécurité ; en cas de modification, celle-ci est notifiée par le biais des annonces au sein de l'application ou de la présente page." },
         {
           type: "ul",
-          items: ["Date de publication : 23 juin 2026", "Date d'entrée en vigueur : 23 juin 2026"],
+          items: ["Date de publication : 3 octobre 2026", "Date d'entrée en vigueur : 3 octobre 2026", "Première entrée en vigueur : 23 juin 2026"],
         },
       ],
     },

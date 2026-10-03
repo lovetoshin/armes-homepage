@@ -25,7 +25,7 @@ export const es: PrivacyDoc = {
           type: "ul",
           items: [
             { b: "Datos obligatorios", t: ": dirección de correo electrónico, apodo (nombre de perfil), información de autenticación de inicio de sesión (identificador de inicio de sesión social, identificador de Apple Login, entre otros)." },
-            { b: "Datos opcionales", t: ": fotografía de perfil, sexo, rango de edad, cumpleaños y año de nacimiento (solo si el usuario lo consiente al iniciar sesión con Kakao)." },
+            { b: "Datos opcionales", t: ": fotografía de perfil, sexo, rango de edad, cumpleaños y año de nacimiento (solo si el usuario lo consiente al iniciar sesión con Kakao o Naver)." },
           ],
         },
         { type: "sub", text: "b. Datos recopilados durante el uso del servicio" },
@@ -227,7 +227,7 @@ export const es: PrivacyDoc = {
         { type: "p", text: "La presente Política de Privacidad puede ser objeto de adiciones, supresiones o modificaciones en función de los cambios en las leyes y reglamentos, las políticas o las tecnologías de seguridad; en caso de modificación, se comunicará a través de los anuncios dentro de la aplicación o de esta página." },
         {
           type: "ul",
-          items: ["Fecha de publicación: 23 de junio de 2026.", "Fecha de entrada en vigor: 23 de junio de 2026."],
+          items: ["Fecha de publicación: 3 de octubre de 2026.", "Fecha de entrada en vigor: 3 de octubre de 2026.", "Primera entrada en vigor: 23 de junio de 2026."],
         },
       ],
     },

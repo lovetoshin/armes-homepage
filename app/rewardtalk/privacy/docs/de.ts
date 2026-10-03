@@ -25,7 +25,7 @@ export const de: PrivacyDoc = {
           type: "ul",
           items: [
             { b: "Pflichtangaben", t: ": E-Mail-Adresse, Nickname (Profilname), Anmelde-Authentifizierungsdaten (Kennungen für Social Login, Apple-Login-Kennungen u. a.)" },
-            { b: "Freiwillige Angaben", t: ": Profilbild, Geschlecht, Altersgruppe, Geburtstag, Geburtsjahr (nur sofern der Nutzer bei der Anmeldung über Kakao einwilligt)" },
+            { b: "Freiwillige Angaben", t: ": Profilbild, Geschlecht, Altersgruppe, Geburtstag, Geburtsjahr (nur sofern der Nutzer bei der Anmeldung über Kakao oder Naver einwilligt)" },
           ],
         },
         { type: "sub", text: "b. Während der Nutzung des Dienstes erhobene Angaben" },
@@ -227,7 +227,7 @@ export const de: PrivacyDoc = {
         { type: "p", text: "Diese Datenschutzrichtlinie kann aufgrund von Änderungen der Rechtsvorschriften, der Richtlinien oder der Sicherheitstechnik ergänzt, gestrichen oder geändert werden; im Falle einer Änderung wird diese über die Bekanntmachungen innerhalb der App oder über diese Seite mitgeteilt." },
         {
           type: "ul",
-          items: ["Datum der Bekanntmachung: 23. Juni 2026", "Datum des Inkrafttretens: 23. Juni 2026"],
+          items: ["Datum der Bekanntmachung: 3. Oktober 2026", "Datum des Inkrafttretens: 3. Oktober 2026", "Erstmaliges Inkrafttreten: 23. Juni 2026"],
         },
       ],
     },
