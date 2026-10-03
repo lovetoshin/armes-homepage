@@ -23,8 +23,8 @@ export const pt: PrivacyDoc = {
         {
           type: "ul",
           items: [
-            { b: "Elementos obrigatórios", t: ": endereço de correio eletrónico, alcunha (nome de perfil), informação de autenticação de início de sessão (identificador de início de sessão social, identificador de início de sessão Apple, entre outros)" },
-            { b: "Elementos facultativos", t: ": fotografia de perfil, sexo, faixa etária, aniversário, ano de nascimento (apenas se o utilizador consentir ao iniciar sessão com a Kakao ou a Naver)" },
+            { b: "Elementos obrigatórios", t: ": alcunha (nome de perfil), informação de autenticação de início de sessão (identificador de início de sessão social, identificador de início de sessão Apple, entre outros), endereço de correio eletrónico (em caso de registo por correio eletrónico)" },
+            { b: "Elementos facultativos", t: ": endereço de correio eletrónico, fotografia de perfil, sexo, faixa etária, aniversário, ano de nascimento (apenas se o utilizador consentir ao iniciar sessão com a Kakao ou a Naver)" },
           ],
         },
         { type: "sub", text: "b. Elementos recolhidos no decurso da utilização do serviço" },

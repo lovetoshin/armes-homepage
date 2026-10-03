@@ -24,8 +24,8 @@ export const es: PrivacyDoc = {
         {
           type: "ul",
           items: [
-            { b: "Datos obligatorios", t: ": dirección de correo electrónico, apodo (nombre de perfil), información de autenticación de inicio de sesión (identificador de inicio de sesión social, identificador de Apple Login, entre otros)." },
-            { b: "Datos opcionales", t: ": fotografía de perfil, sexo, rango de edad, cumpleaños y año de nacimiento (solo si el usuario lo consiente al iniciar sesión con Kakao o Naver)." },
+            { b: "Datos obligatorios", t: ": apodo (nombre de perfil), información de autenticación de inicio de sesión (identificador de inicio de sesión social, identificador de Apple Login, entre otros) y dirección de correo electrónico (en caso de registro con correo electrónico)." },
+            { b: "Datos opcionales", t: ": dirección de correo electrónico, fotografía de perfil, sexo, rango de edad, cumpleaños y año de nacimiento (solo si el usuario lo consiente al iniciar sesión con Kakao o Naver)." },
           ],
         },
         { type: "sub", text: "b. Datos recopilados durante el uso del servicio" },

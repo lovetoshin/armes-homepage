@@ -19,8 +19,8 @@ export const en: PrivacyDoc = {
         {
           type: "ul",
           items: [
-            { b: "Required items", t: ": email address, nickname (profile name), login authentication information (social login identifier, Apple login identifier, etc.)" },
-            { b: "Optional items", t: ": profile photo, gender, age range, birthday, birth year (only if the user consents when logging in with Kakao or Naver)" },
+            { b: "Required items", t: ": nickname (profile name), login authentication information (social login identifier, Apple login identifier, etc.), email address (when signing up with email)" },
+            { b: "Optional items", t: ": email address, profile photo, gender, age range, birthday, birth year (only if the user consents when logging in with Kakao or Naver)" },
           ],
         },
         { type: "sub", text: "B. Items collected in the course of using the service" },

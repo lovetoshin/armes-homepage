@@ -24,8 +24,8 @@ export const de: PrivacyDoc = {
         {
           type: "ul",
           items: [
-            { b: "Pflichtangaben", t: ": E-Mail-Adresse, Nickname (Profilname), Anmelde-Authentifizierungsdaten (Kennungen für Social Login, Apple-Login-Kennungen u. a.)" },
-            { b: "Freiwillige Angaben", t: ": Profilbild, Geschlecht, Altersgruppe, Geburtstag, Geburtsjahr (nur sofern der Nutzer bei der Anmeldung über Kakao oder Naver einwilligt)" },
+            { b: "Pflichtangaben", t: ": Nickname (Profilname), Anmelde-Authentifizierungsdaten (Kennungen für Social Login, Apple-Login-Kennungen u. a.), E-Mail-Adresse (bei Registrierung per E-Mail)" },
+            { b: "Freiwillige Angaben", t: ": E-Mail-Adresse, Profilbild, Geschlecht, Altersgruppe, Geburtstag, Geburtsjahr (nur sofern der Nutzer bei der Anmeldung über Kakao oder Naver einwilligt)" },
           ],
         },
         { type: "sub", text: "b. Während der Nutzung des Dienstes erhobene Angaben" },

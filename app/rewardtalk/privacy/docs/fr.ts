@@ -24,8 +24,8 @@ export const fr: PrivacyDoc = {
         {
           type: "ul",
           items: [
-            { b: "Éléments obligatoires", t: " : adresse électronique, pseudonyme (nom de profil), informations d'authentification de connexion (identifiant de connexion sociale, identifiant de connexion Apple, etc.)" },
-            { b: "Éléments facultatifs", t: " : photo de profil, sexe, tranche d'âge, anniversaire, année de naissance (uniquement si l'utilisateur y consent lors de la connexion avec Kakao ou Naver)" },
+            { b: "Éléments obligatoires", t: " : pseudonyme (nom de profil), informations d'authentification de connexion (identifiant de connexion sociale, identifiant de connexion Apple, etc.), adresse électronique (en cas d'inscription par e-mail)" },
+            { b: "Éléments facultatifs", t: " : adresse électronique, photo de profil, sexe, tranche d'âge, anniversaire, année de naissance (uniquement si l'utilisateur y consent lors de la connexion avec Kakao ou Naver)" },
           ],
         },
         { type: "sub", text: "B. Éléments collectés au cours de l'utilisation du service" },
