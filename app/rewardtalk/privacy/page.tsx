@@ -164,7 +164,7 @@ export default function RewardtalkPrivacyPage() {
     <LegalLayout
       title="리워드톡(RewardTalk) 개인정보 처리방침 · Privacy Policy"
       subtitle="본 개인정보 처리방침은 아래에 10개 언어로 순서대로 제공됩니다. / This Privacy Policy is provided below in 10 languages."
-      updatedAt="2026년 6월 23일"
+      updatedAt="2026년 10월 3일"
     >
       <div className="legal-multilang">
         {DOCS.map((doc, i) => (
