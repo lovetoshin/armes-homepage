@@ -38,7 +38,7 @@ function Section({ num, title, children }: { num: string; title: string; childre
         </span>
         {title}
       </h3>
-      <div className="text-[#4E5968] text-[15px] leading-[1.9] space-y-3 pl-10">{children}</div>
+      <div className="text-[#4E5968] text-[15px] leading-[1.9] space-y-3 pl-10 [text-wrap:pretty]">{children}</div>
     </section>
   );
 }
@@ -77,7 +77,7 @@ function renderBody(body: Body, i: number) {
           {body.items.map((item, j) => (
             <li key={j} className="flex gap-2">
               <span className="text-[#3182F6] mt-1 flex-shrink-0">·</span>
-              <span>{renderLine(item, j)}</span>
+              <span className="[text-wrap:pretty]">{renderLine(item, j)}</span>
             </li>
           ))}
         </ul>
@@ -99,7 +99,7 @@ function renderBody(body: Body, i: number) {
               {body.rows.map((row, r) => (
                 <tr key={r} className={r % 2 === 0 ? "" : "bg-[#FBFCFE]"}>
                   {row.map((cell, c) => (
-                    <td key={c} className="px-4 py-3 text-[#4E5968] border border-[#E5E8EB] align-top">
+                    <td key={c} className="px-4 py-3 text-[#4E5968] border border-[#E5E8EB] align-top [text-wrap:balance]">
                       {cell}
                     </td>
                   ))}
@@ -132,7 +132,7 @@ function renderBody(body: Body, i: number) {
 // 한 언어의 처리방침 블록 (언어명 소제목 + 부제 + 총칙 + 13개 섹션)
 function DocBlock({ doc, first }: { doc: PrivacyDoc; first: boolean }) {
   return (
-    <section className={first ? "" : "mt-20 pt-14 border-t-2 border-[#E5E8EB]"}>
+    <section className={`[text-wrap:pretty] ${first ? "" : "mt-20 pt-14 border-t-2 border-[#E5E8EB]"}`}>
       {/* 언어 이름 소제목 */}
       <div className="mb-6">
         <span className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#191F28] text-white text-lg font-extrabold tracking-tight">
