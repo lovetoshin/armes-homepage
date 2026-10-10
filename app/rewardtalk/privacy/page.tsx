@@ -38,7 +38,7 @@ function Section({ num, title, children }: { num: string; title: string; childre
         </span>
         {title}
       </h3>
-      <div className="text-[#4E5968] text-[15px] leading-[1.9] space-y-3 pl-10 [text-wrap:pretty]">{children}</div>
+      <div className="text-[#4E5968] text-[15px] leading-[1.9] space-y-3 pl-10 [text-wrap:balance]">{children}</div>
     </section>
   );
 }
@@ -77,7 +77,7 @@ function renderBody(body: Body, i: number) {
           {body.items.map((item, j) => (
             <li key={j} className="flex gap-2">
               <span className="text-[#3182F6] mt-1 flex-shrink-0">·</span>
-              <span className="[text-wrap:pretty]">{renderLine(item, j)}</span>
+              <span className="[text-wrap:balance]">{renderLine(item, j)}</span>
             </li>
           ))}
         </ul>
