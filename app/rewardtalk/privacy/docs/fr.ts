@@ -12,7 +12,7 @@ export const fr: PrivacyDoc = {
   subtitle:
     "ARMES Co., Ltd. (주식회사 아르메스, ci-après « la Société ») respecte les lois et réglementations applicables, notamment la « Loi sur la protection des renseignements personnels », la « Loi relative à la protection et à l'utilisation des informations de localisation » et la « Loi sur la promotion de l'utilisation du réseau de communication d'information et la protection de l'information, etc. », et met en œuvre la présente politique afin de protéger les renseignements personnels des utilisateurs.",
   updatedLabel: "Dernière mise à jour",
-  updatedAt: "3 octobre 2026",
+  updatedAt: "11 octobre 2026",
   note: "La Société publie la présente politique de confidentialité au sein de l'application ainsi que sur les pages Web exploitées par la Société, afin que les utilisateurs puissent la consulter aisément à tout moment.",
   sections: [
     {
@@ -25,7 +25,7 @@ export const fr: PrivacyDoc = {
           type: "ul",
           items: [
             { b: "Éléments obligatoires", t: " : pseudonyme (nom de profil), informations d'authentification de connexion (identifiant de connexion sociale, identifiant de connexion Apple, etc.), adresse électronique (en cas d'inscription par e-mail)" },
-            { b: "Éléments facultatifs", t: " : adresse électronique, photo de profil, sexe, tranche d'âge, anniversaire, année de naissance (uniquement si l'utilisateur y consent lors de la connexion avec Kakao ou Naver)" },
+            { b: "Éléments facultatifs", t: " : adresse électronique, photo de profil, sexe, date de naissance (anniversaire, année de naissance, tranche d'âge) — uniquement si l'utilisateur accepte la collecte [facultative] de renseignements personnels pour des avantages personnalisés et les saisit lors de l'inscription par e-mail, ou y consent lors de la connexion avec Kakao ou Naver" },
           ],
         },
         { type: "sub", text: "B. Éléments collectés au cours de l'utilisation du service" },
@@ -74,6 +74,7 @@ export const fr: PrivacyDoc = {
       title: "Durée de conservation et d'utilisation des renseignements personnels",
       body: [
         { type: "p", text: "En principe, la Société détruit sans délai les renseignements personnels dès que la finalité de leur collecte et de leur utilisation est atteinte ou dès que l'utilisateur demande la résiliation de son adhésion." },
+        { type: "p", text: "Les éléments facultatifs (sexe, date de naissance) sont conservés jusqu'à la résiliation de l'adhésion et supprimés immédiatement lorsque l'utilisateur retire son consentement ou les supprime dans Ma page." },
         { type: "p", text: "Toutefois, lorsque leur conservation est requise en vertu des lois et réglementations applicables, ils sont conservés comme suit." },
         {
           type: "ul",
@@ -227,7 +228,7 @@ export const fr: PrivacyDoc = {
         { type: "p", text: "La présente politique de confidentialité peut faire l'objet d'ajouts, de suppressions ou de modifications en raison de changements dans les lois et réglementations, les politiques ou les technologies de sécurité ; en cas de modification, celle-ci est notifiée par le biais des annonces au sein de l'application ou de la présente page." },
         {
           type: "ul",
-          items: ["Date de publication : 3 octobre 2026", "Date d'entrée en vigueur : 3 octobre 2026", "Première entrée en vigueur : 23 juin 2026"],
+          items: ["Date de publication : 11 octobre 2026", "Date d'entrée en vigueur : 11 octobre 2026", "Première entrée en vigueur : 23 juin 2026"],
         },
       ],
     },

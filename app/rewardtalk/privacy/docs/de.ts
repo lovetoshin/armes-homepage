@@ -12,7 +12,7 @@ export const de: PrivacyDoc = {
   subtitle:
     "Die ARMES Co., Ltd. (주식회사 아르메스, nachfolgend „das Unternehmen“) hält die einschlägigen Rechtsvorschriften ein, darunter das Gesetz zum Schutz personenbezogener Daten (개인정보 보호법), das Gesetz über den Schutz und die Nutzung von Standortdaten u. a. (위치정보의 보호 및 이용 등에 관한 법률) sowie das Gesetz zur Förderung der Nutzung von Informations- und Kommunikationsnetzen und zum Datenschutz u. a. (정보통신망 이용촉진 및 정보보호 등에 관한 법률), und hat zum Schutz der personenbezogenen Daten der Nutzer die folgende Datenschutzrichtlinie aufgestellt.",
   updatedLabel: "Zuletzt aktualisiert",
-  updatedAt: "3. Oktober 2026",
+  updatedAt: "11. Oktober 2026",
   note: "Das Unternehmen veröffentlicht diese Datenschutzrichtlinie innerhalb der App sowie auf den vom Unternehmen betriebenen Webseiten, damit die Nutzer sie jederzeit leicht einsehen können.",
   sections: [
     {
@@ -25,7 +25,7 @@ export const de: PrivacyDoc = {
           type: "ul",
           items: [
             { b: "Pflichtangaben", t: ": Nickname (Profilname), Anmelde-Authentifizierungsdaten (Kennungen für Social Login, Apple-Login-Kennungen u. a.), E-Mail-Adresse (bei Registrierung per E-Mail)" },
-            { b: "Freiwillige Angaben", t: ": E-Mail-Adresse, Profilbild, Geschlecht, Altersgruppe, Geburtstag, Geburtsjahr (nur sofern der Nutzer bei der Anmeldung über Kakao oder Naver einwilligt)" },
+            { b: "Freiwillige Angaben", t: ": E-Mail-Adresse, Profilbild, Geschlecht, Geburtsdatum (Geburtstag, Geburtsjahr, Altersgruppe) — nur sofern der Nutzer bei der Registrierung per E-Mail der [freiwilligen] Erhebung personenbezogener Daten für personalisierte Vorteile zustimmt und diese eingibt oder bei der Anmeldung über Kakao oder Naver einwilligt" },
           ],
         },
         { type: "sub", text: "b. Während der Nutzung des Dienstes erhobene Angaben" },
@@ -74,6 +74,7 @@ export const de: PrivacyDoc = {
       title: "Aufbewahrungs- und Nutzungsdauer personenbezogener Daten",
       body: [
         { type: "p", text: "Das Unternehmen vernichtet die personenbezogenen Daten grundsätzlich unverzüglich, sobald der Zweck der Erhebung und Nutzung erreicht ist oder das Mitglied die Kündigung seiner Mitgliedschaft beantragt." },
+        { type: "p", text: "Freiwillige Angaben (Geschlecht, Geburtsdatum) werden bis zur Kündigung der Mitgliedschaft aufbewahrt und unverzüglich gelöscht, sobald der Nutzer seine Einwilligung widerruft oder sie unter „Meine Seite“ löscht." },
         { type: "p", text: "Sofern eine Aufbewahrung nach den einschlägigen Rechtsvorschriften erforderlich ist, werden die Daten jedoch wie folgt aufbewahrt." },
         {
           type: "ul",
@@ -227,7 +228,7 @@ export const de: PrivacyDoc = {
         { type: "p", text: "Diese Datenschutzrichtlinie kann aufgrund von Änderungen der Rechtsvorschriften, der Richtlinien oder der Sicherheitstechnik ergänzt, gestrichen oder geändert werden; im Falle einer Änderung wird diese über die Bekanntmachungen innerhalb der App oder über diese Seite mitgeteilt." },
         {
           type: "ul",
-          items: ["Datum der Bekanntmachung: 3. Oktober 2026", "Datum des Inkrafttretens: 3. Oktober 2026", "Erstmaliges Inkrafttreten: 23. Juni 2026"],
+          items: ["Datum der Bekanntmachung: 11. Oktober 2026", "Datum des Inkrafttretens: 11. Oktober 2026", "Erstmaliges Inkrafttreten: 23. Juni 2026"],
         },
       ],
     },

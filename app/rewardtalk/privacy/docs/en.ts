@@ -7,7 +7,7 @@ export const en: PrivacyDoc = {
   subtitle:
     "ARMES Co., Ltd. (hereinafter the \"Company\") complies with the Personal Information Protection Act, the Act on the Protection and Use of Location Information, the Act on Promotion of Information and Communications Network Utilization and Information Protection, and other relevant laws, and has established the following policy to protect users' personal information.",
   updatedLabel: "Last updated",
-  updatedAt: "October 3, 2026",
+  updatedAt: "October 11, 2026",
   note: "The Company discloses this Privacy Policy within the app and on the web pages operated by the Company so that users may easily review it at any time.",
   sections: [
     {
@@ -20,7 +20,7 @@ export const en: PrivacyDoc = {
           type: "ul",
           items: [
             { b: "Required items", t: ": nickname (profile name), login authentication information (social login identifier, Apple login identifier, etc.), email address (when signing up with email)" },
-            { b: "Optional items", t: ": email address, profile photo, gender, age range, birthday, birth year (only if the user consents when logging in with Kakao or Naver)" },
+            { b: "Optional items", t: ": email address, profile photo, gender, date of birth (birthday, birth year, age range) — only if the user agrees to the [Optional] collection of personal information for personalized benefits and enters them when signing up with email, or consents when logging in with Kakao or Naver" },
           ],
         },
         { type: "sub", text: "B. Items collected in the course of using the service" },
@@ -69,6 +69,7 @@ export const en: PrivacyDoc = {
       title: "Retention and Use Period of Personal Information",
       body: [
         { type: "p", text: "As a rule, the Company destroys personal information without delay once the purpose of collection and use has been achieved or the member has requested withdrawal." },
+        { type: "p", text: "Optional items (gender, date of birth) are retained until membership withdrawal and are deleted immediately when the user withdraws consent or deletes them in My Page." },
         { type: "p", text: "However, where retention is required under applicable laws, the Company retains the information as follows." },
         {
           type: "ul",
@@ -222,7 +223,7 @@ export const en: PrivacyDoc = {
         { type: "p", text: "This Privacy Policy may be supplemented, deleted, or amended in accordance with changes in laws, policies, or security technology, and any changes will be announced through in-app notices or this page." },
         {
           type: "ul",
-          items: ["Date of announcement: October 3, 2026", "Effective date: October 3, 2026", "First effective date: June 23, 2026"],
+          items: ["Date of announcement: October 11, 2026", "Effective date: October 11, 2026", "First effective date: June 23, 2026"],
         },
       ],
     },

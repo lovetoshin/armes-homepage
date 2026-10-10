@@ -11,7 +11,7 @@ export const pt: PrivacyDoc = {
   subtitle:
     "A ARMES Co., Ltd. (주식회사 아르메스) (doravante designada «Empresa») cumpre a legislação aplicável, incluindo a «Lei de Proteção de Dados Pessoais» (개인정보 보호법), a «Lei relativa à Proteção e Utilização de Informação de Localização» (위치정보의 보호 및 이용 등에 관한 법률) e a «Lei relativa à Promoção da Utilização de Redes de Informação e Comunicação e à Proteção da Informação» (정보통신망 이용촉진 및 정보보호 등에 관한 법률), e adota a política que se segue com o objetivo de proteger os dados pessoais dos utilizadores.",
   updatedLabel: "Última atualização",
-  updatedAt: "3 de outubro de 2026",
+  updatedAt: "11 de outubro de 2026",
   note: "A Empresa divulga a presente Política de Privacidade na aplicação e nas páginas web por si operadas, de modo a que os utilizadores possam consultá-la facilmente a qualquer momento.",
   sections: [
     {
@@ -24,7 +24,7 @@ export const pt: PrivacyDoc = {
           type: "ul",
           items: [
             { b: "Elementos obrigatórios", t: ": alcunha (nome de perfil), informação de autenticação de início de sessão (identificador de início de sessão social, identificador de início de sessão Apple, entre outros), endereço de correio eletrónico (em caso de registo por correio eletrónico)" },
-            { b: "Elementos facultativos", t: ": endereço de correio eletrónico, fotografia de perfil, sexo, faixa etária, aniversário, ano de nascimento (apenas se o utilizador consentir ao iniciar sessão com a Kakao ou a Naver)" },
+            { b: "Elementos facultativos", t: ": endereço de correio eletrónico, fotografia de perfil, sexo, data de nascimento (aniversário, ano de nascimento, faixa etária) — apenas se o utilizador aceitar a recolha [facultativa] de dados pessoais para benefícios personalizados e os introduzir ao registar-se por correio eletrónico, ou consentir ao iniciar sessão com a Kakao ou a Naver" },
           ],
         },
         { type: "sub", text: "b. Elementos recolhidos no decurso da utilização do serviço" },
@@ -73,6 +73,7 @@ export const pt: PrivacyDoc = {
       title: "Período de conservação e de utilização dos dados pessoais",
       body: [
         { type: "p", text: "Em regra, a Empresa destrói os dados sem demora quando a finalidade da recolha e da utilização é alcançada ou quando o membro solicita o cancelamento da adesão." },
+        { type: "p", text: "Os elementos facultativos (sexo, data de nascimento) são conservados até ao cancelamento da adesão e eliminados de imediato quando o utilizador retira o consentimento ou os apaga em A minha página." },
         { type: "p", text: "Contudo, nos casos em que a conservação seja necessária nos termos da legislação aplicável, os dados são conservados conforme se indica em seguida." },
         {
           type: "ul",
@@ -226,7 +227,7 @@ export const pt: PrivacyDoc = {
         { type: "p", text: "A presente Política de Privacidade pode ser objeto de adições, eliminações ou modificações em função de alterações à legislação, às políticas ou às tecnologias de segurança, sendo, em caso de alteração, comunicada através dos avisos na aplicação ou da presente página." },
         {
           type: "ul",
-          items: ["Data de publicação: 3 de outubro de 2026", "Data de entrada em vigor: 3 de outubro de 2026", "Primeira entrada em vigor: 23 de junho de 2026"],
+          items: ["Data de publicação: 11 de outubro de 2026", "Data de entrada em vigor: 11 de outubro de 2026", "Primeira entrada em vigor: 23 de junho de 2026"],
         },
       ],
     },
