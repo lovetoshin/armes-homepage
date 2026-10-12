@@ -25,7 +25,7 @@ const CARDS: Card[] = [
       "얼마 팔렸나를 넘어, 앞으로 60일간 얼마를 사야 하는지 발주량을 자동으로 계산합니다.",
       "품절로 놓치는 매출도, 과잉재고로 묶이는 돈도 막아 드립니다.",
     ],
-    price: "30일 무료체험 · 월 30,000원 · 연 300,000원", href: "https://www.armes.co.kr/sellerai/growthbox", cta: "시작하기", primary: true },
+    price: "30일 무료체험 · 월 9,900원 · 연 99,000원", href: "https://www.armes.co.kr/sellerai/growthbox", cta: "시작하기", primary: true },
   { tag: "운영중", name: "셀러AI", lead: "상품 이미지·상세페이지 자동화", emoji: "🛍️",
     copy: [
       "사진 한 장이면 충분합니다. 모델 착장컷도, 배경을 지운 누끼컷도, 상세페이지까지 자동으로 완성됩니다.",
@@ -37,19 +37,19 @@ const CARDS: Card[] = [
       "잘 키운 블로그 하나가 매달 수익이 됩니다.",
       "검색 상위에 오른 글은 애드포스트 광고 수익이 되고, 쿠팡파트너스·제휴마케팅으로 이어집니다. 내 가게 홍보는 덤입니다.",
     ],
-    price: "월 30,000원 · 연 300,000원", href: PAY("blogbooster"), cta: "구매하기" },
+    price: "월 29,000원 · 연 290,000원", href: PAY("blogbooster"), cta: "구매하기" },
   { tag: "판매중", name: "인별부스터", lead: "인스타 게시물, 자동 제작·예약", emoji: "📷",
     copy: [
       "인스타는 지금 가장 빠른 홍보 창구입니다.",
       "내 상품과 가게를 매일 노출하고, 팔로워가 쌓이면 협찬과 광고 제안이 먼저 찾아옵니다.",
     ],
-    price: "월 30,000원 · 연 300,000원", href: PAY("instabooster"), cta: "구매하기" },
+    price: "월 9,900원 · 연 99,000원", href: PAY("instabooster"), cta: "구매하기" },
   { tag: "판매중", name: "쇼츠릴스부스터", lead: "세로 영상, 대본부터 자막까지", emoji: "🎬",
     copy: [
       "짧은 영상 하나가 밤사이 퍼집니다.",
       "내 상품·가게를 영상으로 알리고, 조회수가 오르면 광고·협찬 수익으로 돌아옵니다.",
     ],
-    price: "월 30,000원 · 연 300,000원", href: PAY("shortsbooster"), cta: "구매하기" },
+    price: "월 9,900원 · 연 99,000원", href: PAY("shortsbooster"), cta: "구매하기" },
 ];
 
 export default function DonsnakePage() {

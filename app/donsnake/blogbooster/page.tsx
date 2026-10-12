@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "블로그부스터 — AI로 썼는데 사람이 쓴 것처럼",
   description:
-    "네이버 블로그 자동 발행 프로그램. 주제만 고르면 글·사진·발행까지 알아서. 기계 티가 안 나게 흐트러뜨려 저품질 위험을 줄입니다. 월 30,000원.",
+    "네이버 블로그 자동 발행 프로그램. 주제만 고르면 글·사진·발행까지 알아서. 기계 티가 안 나게 흐트러뜨려 저품질 위험을 줄입니다. 월 29,000원.",
   alternates: { canonical: "/donsnake/blogbooster" },
 };
 
@@ -47,10 +47,10 @@ export default function BlogboosterIntro() {
           <h1>AI로 썼는데<br /><span className="grad">사람이 쓴 것처럼</span> 나옵니다.</h1>
           <p className="lede">그래서 저품질에 걸릴 위험을 크게 줄입니다. 주제만 고르시면 글도, 사진도, 발행까지 알아서 합니다.</p>
           <div className="cta">
-            <a className="btn primary" href={BUY}>월 30,000원으로 시작하기</a>
+            <a className="btn primary" href={BUY}>월 29,000원으로 시작하기</a>
             <a className="btn ghost" href="#why">저품질 대책 보기 ›</a>
           </div>
-          <div className="fine">부가세 별도 · 연 구독 300,000원 (2개월치 절약)</div>
+          <div className="fine">부가세 별도 · 연 구독 290,000원 (2개월치 절약)</div>
         </div>
       </section>
 
@@ -112,9 +112,9 @@ export default function BlogboosterIntro() {
       <section className="price">
         <div className="wrap">
           <span className="eyebrow">가격</span>
-          <h2>월 30,000원입니다.</h2>
-          <div className="big">30,000<small>원 / 월</small></div>
-          <div className="alt">연 이용권 300,000원 — 두 달치를 아끼십니다</div>
+          <h2>월 29,000원입니다.</h2>
+          <div className="big">29,000<small>원 / 월</small></div>
+          <div className="alt">연 이용권 290,000원 — 두 달치를 아끼십니다</div>
           <a className="btn primary lg" href={BUY}>구매하러 가기</a>
           <div className="fine">부가세 별도 · 세금계산서 발행 가능 · 언제든 해지 가능</div>
         </div>
@@ -135,7 +135,7 @@ export default function BlogboosterIntro() {
         <div className="wrap">
           <h2>블로그, 이제 알아서 굴러가게.</h2>
           <p>처음 한 번만 정해두시면 됩니다.</p>
-          <a className="btn white lg" href={BUY}>월 30,000원으로 시작하기</a>
+          <a className="btn white lg" href={BUY}>월 29,000원으로 시작하기</a>
         </div>
       </section>
 

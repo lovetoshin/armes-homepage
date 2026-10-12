@@ -93,7 +93,7 @@ export default function PricingSection() {
             ))}
           </div>
           <p className="mt-4 text-[13px] text-[#8B95A1]">
-            월 구독 기준 · 부가세 별도 · 연 구독 시 월 구독 대비 10% 할인
+            월 구독 기준 · 부가세 별도 · 연 구독은 10개월 금액으로 12개월 이용(2개월 절약)
           </p>
 
           {/* 서비스 제공 기간 (전자상거래 표시의무 — 셀러AI 결제 심사 요건) */}
