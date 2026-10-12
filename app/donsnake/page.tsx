@@ -55,7 +55,7 @@ const CARDS: Card[] = [
 export default function DonsnakePage() {
   return (
     <main className="ds">
-      <DonsnakeAuth />
+      {/* 우상단 로그인 정보는 지웠다 — 가운데(히어로)에 같은 정보·마이페이지가 있다(형님 지시 2026-10-12) */}
       <section className="hero">
         <h1>돈스네이크</h1>
         <p className="tagline">사람이 하던 판매 일을, 프로그램이 대신합니다.</p>
