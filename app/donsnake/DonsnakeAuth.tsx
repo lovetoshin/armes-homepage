@@ -86,7 +86,7 @@ export default function DonsnakeAuth({ variant = 'corner' }: { variant?: 'corner
         {state?.loggedIn ? (
           <div className="hi-wrap">
             <p className="hi">✓ <b>{state.email}</b> 님으로 로그인되어 있습니다.</p>
-            <a className="mylic" href={myUrl}>내 이용권</a>
+            <a className="mylic" href={myUrl}>마이페이지</a>
             {state.isAdmin && <a className="mylic" href={adminUrl}>어드민</a>}
             <a className="logout" href={logoutUrl}>로그아웃</a>
           </div>
@@ -150,11 +150,15 @@ export default function DonsnakeAuth({ variant = 'corner' }: { variant?: 'corner
       {state?.loggedIn ? (
         <>
           <span className="me" title={state.email ?? ''}>{state.email}</span>
-          <a className="mylic" href={myUrl}>내 이용권</a>
+          <a className="mylic" href={myUrl}>마이페이지</a>
           <a className="logout" href={logoutUrl}>로그아웃</a>
         </>
       ) : (
-        <a className="login" href={loginUrl}>로그인</a>
+        <>
+          {/* 로그인 전에도 마이페이지 — 누르면 로그인 후 마이페이지로(형님 컨펌 목업 2026-10-12) */}
+          <a className="mylic" href={`${SELLERAI}/login?next=${encodeURIComponent(myUrl)}`}>마이페이지</a>
+          <a className="login" href={loginUrl}>로그인</a>
+        </>
       )}
       <style>{`
         .dsauth{position:absolute;top:24px;right:24px;z-index:5;display:flex;align-items:center;gap:8px}
