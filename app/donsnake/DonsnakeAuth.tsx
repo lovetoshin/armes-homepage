@@ -161,7 +161,8 @@ export default function DonsnakeAuth({ variant = 'corner' }: { variant?: 'corner
         </>
       )}
       <style>{`
-        .dsauth{position:absolute;top:24px;right:24px;z-index:5;display:flex;align-items:center;gap:8px}
+        /* ★홈페이지 고정 상단바(높이 65px) 아래에 둔다 — top:24 였을 때 상단바 뒤에 가려 안 보였다(2026-10-12) */
+        .dsauth{position:absolute;top:80px;right:24px;z-index:5;display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:flex-end}
         .dsauth .login{display:inline-flex;align-items:center;padding:9px 20px;border-radius:980px;background:#0066cc;color:#fff;font-size:14px;font-weight:600;text-decoration:none}
         .dsauth .login:hover{background:#0077ed}
         .dsauth .me{font-size:14px;font-weight:600;color:#1d1d1f;background:#f5f5f7;padding:9px 16px;border-radius:980px;max-width:220px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;display:inline-block}
@@ -169,7 +170,7 @@ export default function DonsnakeAuth({ variant = 'corner' }: { variant?: 'corner
         .dsauth .mylic:hover{background:#1d1d1f;color:#fff}
         .dsauth .logout{font-size:13px;font-weight:600;color:#6e6e73;text-decoration:none;padding:8px 14px;border-radius:980px;border:1px solid #d2d2d7;white-space:nowrap;transition:all .2s}
         .dsauth .logout:hover{background:#f5f5f7;color:#1d1d1f}
-        @media (max-width:600px){ .dsauth{top:16px;right:16px} }
+        @media (max-width:600px){ .dsauth{top:76px;right:16px;left:16px} .dsauth .me{max-width:150px} }
       `}</style>
     </div>
   )
