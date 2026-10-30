@@ -19,7 +19,18 @@ export default function LegalLayout({ title, subtitle, updatedAt, children }: Le
               주식회사 아르메스
             </p>
             <h1 className="text-3xl lg:text-4xl font-extrabold text-[#191F28] mb-3 tracking-tight">{title}</h1>
-            <p className="text-[#4E5968] text-[15px] mb-4">{subtitle}</p>
+            {/* 「최종 수정일: … · 시행일: …」 은 « · » 덩어리째 줄바꿈(날짜가 「10월 / 30일」로 쪼개지지 않게) */}
+            <p className="text-[#4E5968] text-[15px] mb-4 [word-break:keep-all] [overflow-wrap:break-word] [text-wrap:balance]">
+              {subtitle.split(" · ").map((part, i, arr) => (
+                <span key={i}>
+                  {i > 0 && " "}
+                  <span className={arr.length > 1 ? "whitespace-nowrap" : undefined}>
+                    {part}
+                    {i < arr.length - 1 && " ·"}
+                  </span>
+                </span>
+              ))}
+            </p>
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#EBF3FF] border border-[#C5D8FB] text-xs text-[#3182F6] font-semibold">
               <span className="w-1.5 h-1.5 rounded-full bg-[#3182F6]" />
               최종 업데이트: {updatedAt}
