@@ -1,7 +1,8 @@
 // 월드링고(WorldLingo) 개인정보 처리방침 — 포트원 결제사(KG이니시스·한국결제네트웍스·카카오페이) 심사·스토어 심사용.
 // 코코핑 개인정보 페이지(app/cocoping/privacy/page.tsx)와 같은 LegalLayout·Section·Table 와꾸.
 // ⚠️ 실제 수집 범위만 적는다. 위치정보·광고식별자 수집, 수업 녹화는 하지 않으므로 절대 쓰지 않는다.
-// 적용 앱: 학생용 「월드링고」(com.armes.worldlingo.student) · 선생님용 「월드링고 선생님」(com.armes.worldlingo.teacher)
+// 적용 앱: 학생용 「월드링고」(com.armes.worldlingo.student) · 선생님용 「월드링고 튜터」(WorldLingo Tutor, com.armes.worldlingo.teacher)
+// 서버 위치(2026-11-01 월드링고 세션이 각 관리 화면에서 확인): Supabase=대한민국(서울) · LiveKit=미국 · Google FCM=미국 · 결제 4곳=대한민국
 // 주소: https://www.armes.co.kr/worldlingo/privacy
 
 import type { Metadata } from "next";
@@ -19,7 +20,7 @@ export default function WorldlingoPrivacyPage() {
   return (
     <LegalLayout
       title="월드링고(WorldLingo) 개인정보 처리방침"
-      subtitle="주식회사 아르메스(이하 '회사')는 「개인정보 보호법」, 「정보통신망 이용촉진 및 정보보호 등에 관한 법률」 등 관련 법령을 준수하며, 이용자의 개인정보를 보호하기 위해 다음과 같은 개인정보처리방침을 수립·공개합니다. 본 방침은 학생용 앱 '월드링고'와 선생님용 앱 '월드링고 선생님'(이하 '서비스')에 적용됩니다."
+      subtitle="주식회사 아르메스(이하 '회사')는 「개인정보 보호법」, 「정보통신망 이용촉진 및 정보보호 등에 관한 법률」 등 관련 법령을 준수하며, 이용자의 개인정보를 보호하기 위해 다음과 같은 개인정보처리방침을 수립·공개합니다. 본 방침은 학생용 앱 '월드링고'와 선생님용 앱 '월드링고 튜터'(이하 '서비스')에 적용됩니다."
       updatedAt="2026년 11월 1일"
     >
       <WorldlingoPrivacyContent />
@@ -41,10 +42,11 @@ function Section({ num, title, children }: { num: string; title: string; childre
   );
 }
 
-function Table({ headers, rows }: { headers: string[]; rows: React.ReactNode[][] }) {
+// minWidth: 칸이 많은 표(국외 이전 6칸)는 폰에서 글자가 세로로 쪼개지지 않게 최소 폭을 주고 옆으로 밀어 보게 한다
+function Table({ headers, rows, minWidth }: { headers: string[]; rows: React.ReactNode[][]; minWidth?: number }) {
   return (
     <div className="overflow-x-auto my-4">
-      <table className="w-full text-sm border-collapse">
+      <table className="w-full text-sm border-collapse" style={minWidth ? { minWidth } : undefined}>
         <thead>
           <tr className="bg-[#F2F4F6]">
             {headers.map((h) => (
@@ -183,31 +185,32 @@ function WorldlingoPrivacyContent() {
       <Section num="6" title="개인정보 처리의 위탁">
         <p>회사는 원활한 서비스 제공을 위해 아래와 같이 개인정보 처리 업무를 위탁하고 있습니다.</p>
         <Table
-          headers={["수탁업체", "위탁 업무"]}
+          headers={["수탁업체", "위탁 업무", "처리 장소"]}
           rows={[
-            ["Supabase, Inc.", "회원 인증, 서비스 데이터베이스 및 파일(프로필 사진·자기소개 영상) 저장"],
-            ["Google LLC", "구글 계정 로그인, 푸시 알림 발송(Firebase Cloud Messaging)"],
-            ["LiveKit, Inc.", "1:1 실시간 화상수업 연결(녹화·저장 없음)"],
-            ["(주)포트원", "결제 중계(결제 요청·결과 전달)"],
-            ["(주)케이지이니시스", "신용카드 결제 처리"],
-            ["한국결제네트웍스(주)", "신용카드 결제 처리"],
-            ["(주)카카오페이", "카카오페이 결제 처리"],
+            ["Supabase, Inc.", "회원 인증, 서비스 데이터베이스 및 파일(프로필 사진·자기소개 영상) 저장", "대한민국(서울)"],
+            ["Google LLC", "구글 계정 로그인, 푸시 알림 발송(Firebase Cloud Messaging)", "미국"],
+            ["LiveKit, Inc.", "1:1 실시간 화상수업 연결(녹화·저장 없음)", "미국"],
+            ["(주)포트원", "결제 중계(결제 요청·결과 전달)", "대한민국"],
+            ["(주)케이지이니시스", "신용카드 결제 처리", "대한민국"],
+            ["한국결제네트웍스(주)", "신용카드 결제 처리", "대한민국"],
+            ["(주)카카오페이", "카카오페이 결제 처리", "대한민국"],
           ]}
         />
+        <p>회원 정보·서비스 데이터·파일은 대한민국(서울)에 있는 서버에 보관되며, 국외로 이전되는 정보는 7번에 적은 항목뿐입니다.</p>
       </Section>
 
       {/* 7 */}
       <Section num="7" title="개인정보의 국외 이전">
-        <p>회사는 서비스 제공을 위해 아래와 같이 개인정보를 국외 수탁업체에 이전(보관)합니다.</p>
+        <p>회사는 서비스 제공을 위해 아래와 같이 개인정보를 국외 수탁업체에 이전합니다.</p>
         <Table
+          minWidth={760}
           headers={["이전받는 자", "이전 국가", "이전 항목", "이전 목적", "이전 시기·방법", "보유 기간"]}
           rows={[
-            ["Supabase, Inc.", "미국 등 수탁업체의 서버 소재 국가", "1번의 수집 항목(채팅 포함, 카드 정보 제외)", "인증·데이터 저장", "서비스 이용 시 네트워크로 전송", "회원 탈퇴 시 또는 4번의 법정 보존 기간까지"],
-            ["Google LLC", "미국", "구글 계정 정보, 푸시 알림용 기기 토큰", "구글 로그인·푸시 알림 발송", "로그인·알림 허용 시 네트워크로 전송", "회원 탈퇴 또는 알림 해제 시까지"],
-            ["LiveKit, Inc.", "미국 등 수탁업체의 서버 소재 국가", "화상수업 영상·음성(실시간 전송만, 저장 안 함)", "화상수업 연결", "수업 중 실시간 전송", "저장하지 않음"],
+            ["LiveKit, Inc.", "미국", "화상수업 중 영상·음성의 실시간 전송(녹화·저장하지 않음)", "1:1 화상수업 연결", "화상수업 진행 시 네트워크로 실시간 전송", "저장하지 않으므로 해당 없음"],
+            ["Google LLC (Firebase Cloud Messaging)", "미국", "푸시 알림용 기기 토큰과 알림 내용", "푸시 알림 발송", "알림 발송 시 네트워크로 전송", "회원 탈퇴 또는 알림 해제 시까지"],
           ]}
         />
-        <p>이용자는 국외 이전을 거부할 수 있으나, 이 경우 회원가입과 화상수업 등 서비스 이용이 불가능합니다. 거부는 회원 탈퇴 또는 아래 개인정보 보호책임자에게 요청하실 수 있습니다.</p>
+        <p>이용자는 국외 이전을 거부할 수 있습니다. 다만 LiveKit 이전을 거부하면 화상수업을, Google 이전을 거부하면 푸시 알림을 이용할 수 없습니다. 푸시 알림은 기기 설정에서 끌 수 있으며, 그 밖의 거부는 아래 개인정보 보호책임자에게 요청하실 수 있습니다.</p>
       </Section>
 
       {/* 8 */}

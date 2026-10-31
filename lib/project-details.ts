@@ -61,7 +61,7 @@ export const projectDetails: Record<string, ProjectDetail> = {
       "영어·중국어도 원어민 화상으로 배우고 싶은 분",
     ],
     statusNote:
-      "월드링고는 현재 개발 중입니다. 원어민 강사 매칭·1:1 화상 수업·간편 결제 기능을 준비하고 있으며, 정식 출시 준비를 마치는 대로 안내드리겠습니다.",
+      "월드링고는 학생용 앱 '월드링고'와 선생님용 앱 '월드링고 튜터'로 제공되며, 현재 앱스토어·플레이스토어 출시를 준비하고 있습니다. 요금·환불 규정과 약관은 아래에서 확인하실 수 있습니다.",
     gallery: [
       "/projects/worldlingo-s1.webp",
       "/projects/worldlingo-s2.webp",

@@ -126,7 +126,7 @@ export const projects: Project[] = [
     name: "월드링고",
     tagline: "한류 타고 배우는 1:1 화상 한국어·영어·중국어 플랫폼",
     audience: "한국어·외국어를 배우려는 전 세계 학습자",
-    status: "dev",
+    status: "pending", // 스토어 출시 전 — 「운영중」은 사실과 다름(2026-11-01 형님 지시)
     tech: ["AI", "Automation"],
     icon: "🌐",
     thumbnail: "/projects/worldlingo-s1.webp",

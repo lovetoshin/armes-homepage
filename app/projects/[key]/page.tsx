@@ -308,6 +308,15 @@ export default async function ProjectDetailPage({
               </ul>
             </section>
 
+            {/* 상태 안내(준비중/연구중) — 요금제보다 위(월드링고 안내문이 「요금·환불 규정은 아래에서」라고 가리킴) */}
+            {detail.statusNote && (
+              <div className={`p-6 rounded-2xl bg-[#F8FAFF] border border-[#EAF0FB] ${detail.billing ? "mb-16" : "mb-4"}`}>
+                <p className="text-[#4E5968] text-[15px] leading-relaxed keep-all">
+                  <span className="font-bold text-[#3182F6]">안내</span> · {detail.statusNote}
+                </p>
+              </div>
+            )}
+
             {/* 요금제·이용기간·취소/환불 — 유료 서비스(월드링고) 결제사 심사용 */}
             {detail.billing && (
               <>
@@ -351,15 +360,6 @@ export default async function ProjectDetailPage({
                   </ul>
                 </section>
               </>
-            )}
-
-            {/* 상태 안내(준비중/연구중) */}
-            {detail.statusNote && (
-              <div className="p-6 rounded-2xl bg-[#F8FAFF] border border-[#EAF0FB] mb-4">
-                <p className="text-[#4E5968] text-[15px] leading-relaxed keep-all">
-                  <span className="font-bold text-[#3182F6]">안내</span> · {detail.statusNote}
-                </p>
-              </div>
             )}
 
             {/* 약관·방침 바로가기(월드링고 등 billing.legalLinks) */}

@@ -1,6 +1,6 @@
 // 월드링고(WorldLingo) 서비스 이용약관 — 포트원 결제사(KG이니시스·한국결제네트웍스·카카오페이) 심사·스토어 심사용.
 // 코코핑 개인정보 페이지와 같은 LegalLayout·Section 와꾸. 요금·취소·환불 숫자는 lib/project-details.ts 의 worldlingo.billing 과 같다.
-// 적용 앱: 학생용 「월드링고」(com.armes.worldlingo.student) · 선생님용 「월드링고 선생님」(com.armes.worldlingo.teacher)
+// 적용 앱: 학생용 「월드링고」(com.armes.worldlingo.student) · 선생님용 「월드링고 튜터」(WorldLingo Tutor, com.armes.worldlingo.teacher)
 // 주소: https://www.armes.co.kr/worldlingo/terms
 
 import type { Metadata } from "next";
@@ -19,7 +19,7 @@ export default function WorldlingoTermsPage() {
   return (
     <LegalLayout
       title="월드링고(WorldLingo) 서비스 이용약관"
-      subtitle="본 약관은 주식회사 아르메스가 제공하는 학생용 앱 '월드링고'와 선생님용 앱 '월드링고 선생님'(이하 '서비스')의 이용에 관한 조건과 절차를 정합니다."
+      subtitle="본 약관은 주식회사 아르메스가 제공하는 학생용 앱 '월드링고'와 선생님용 앱 '월드링고 튜터'(이하 '서비스')의 이용에 관한 조건과 절차를 정합니다."
       updatedAt="2026년 11월 1일"
     >
       <WorldlingoTermsContent />
@@ -105,7 +105,7 @@ function WorldlingoTermsContent() {
             "서비스: 한류 K-컬처 커리큘럼 등을 활용한 원어민 1:1 실시간 화상 한국어 수업(영어·중국어 포함)을 학생과 강사가 이용할 수 있도록 회사가 제공하는 플랫폼",
             "회원: 본 약관에 동의하고 서비스에 가입한 자로, 학생 회원과 강사 회원으로 나뉩니다.",
             "학생 회원: 강사를 골라 수업을 예약하고 수강하는 회원(학생용 앱 '월드링고')",
-            "강사 회원: 회사의 승인을 받아 수업을 제공하는 회원(선생님용 앱 '월드링고 선생님')",
+            "강사 회원: 회사의 승인을 받아 수업을 제공하는 회원(선생님용 앱 '월드링고 튜터')",
             "수업권·정기구독: 정해진 횟수의 수업을 이용할 수 있도록 매월 결제하는 상품",
           ]}
         />
