@@ -5,7 +5,7 @@
 import type { Metadata } from "next";
 import LegalLayout from "@/components/legal/LegalLayout";
 import PolicyView from "../PolicyView";
-import { TERMS_SECTIONS, POLICY_DATE_LABEL } from "../policyData";
+import { TERMS_SECTIONS, TERMS_DATE_LABEL } from "../policyData";
 
 export const dynamic = "force-static";
 
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 export default function MovieEditTermsPage() {
   return (
-    <LegalLayout title="무비에디트 이용약관" subtitle={POLICY_DATE_LABEL} updatedAt="2026년 10월 30일">
+    <LegalLayout title="무비에디트 이용약관" subtitle={TERMS_DATE_LABEL} updatedAt="2026년 11월 1일">
       <PolicyView sections={TERMS_SECTIONS} />
     </LegalLayout>
   );
