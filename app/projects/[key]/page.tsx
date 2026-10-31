@@ -308,12 +308,81 @@ export default async function ProjectDetailPage({
               </ul>
             </section>
 
+            {/* 요금제·이용기간·취소/환불 — 유료 서비스(월드링고) 결제사 심사용 */}
+            {detail.billing && (
+              <>
+                <section className="mb-16">
+                  <h2 className="text-2xl font-extrabold text-[#191F28] mb-7 keep-all">요금제</h2>
+                  <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+                    {detail.billing.plans.map((p) => (
+                      <div key={p.name} className="p-5 rounded-2xl border border-[#E5E8EB] bg-white flex flex-col gap-2">
+                        <h3 className="text-[#191F28] font-bold text-[16px] keep-all">{p.name}</h3>
+                        <p className="text-[#3182F6] font-extrabold text-[20px] whitespace-nowrap">{p.price}</p>
+                        {/* 「월 8회」 「신규 1회」의 횟수가 혼자 줄을 넘지 않게 앞 낱말과 붙인다 */}
+                        <p className="text-[#6B7684] text-[14px] leading-relaxed keep-all [text-wrap:balance] whitespace-pre-line">{p.desc.replace(/ (\d+회)/g, " $1").replace("첫 수업", "첫 수업")}</p>
+                        <p className="mt-auto pt-2 text-[#8B95A1] text-[13px] font-semibold keep-all">{p.pay}</p>
+                      </div>
+                    ))}
+                  </div>
+                  <p className="mt-4 text-[#8B95A1] text-[14px] keep-all [text-wrap:balance]">{detail.billing.priceNote}</p>
+                </section>
+
+                <section className="mb-16">
+                  <h2 className="text-2xl font-extrabold text-[#191F28] mb-6 keep-all">서비스 제공 기간</h2>
+                  <ul className="space-y-3">
+                    {detail.billing.period.map((t) => (
+                      <li key={t} className="flex items-start gap-3">
+                        <span className="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#3182F6] flex-shrink-0" />
+                        <span className="text-[#4E5968] text-[16px] leading-relaxed keep-all [text-wrap:pretty]">{t}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </section>
+
+                <section className="mb-16">
+                  <h2 className="text-2xl font-extrabold text-[#191F28] mb-6 keep-all">취소·환불 규정</h2>
+                  <ul className="space-y-3">
+                    {detail.billing.refund.map((t) => (
+                      <li key={t} className="flex items-start gap-3">
+                        <span className="mt-2.5 w-1.5 h-1.5 rounded-full bg-[#3182F6] flex-shrink-0" />
+                        <span className="text-[#4E5968] text-[16px] leading-relaxed keep-all [text-wrap:pretty]">{t.replace("(무단 불참)", "(무단 불참)")}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </section>
+              </>
+            )}
+
             {/* 상태 안내(준비중/연구중) */}
             {detail.statusNote && (
               <div className="p-6 rounded-2xl bg-[#F8FAFF] border border-[#EAF0FB] mb-4">
                 <p className="text-[#4E5968] text-[15px] leading-relaxed keep-all">
                   <span className="font-bold text-[#3182F6]">안내</span> · {detail.statusNote}
                 </p>
+              </div>
+            )}
+
+            {/* 약관·방침 바로가기(월드링고 등 billing.legalLinks) */}
+            {detail.billing && (
+              <div className="flex flex-col gap-3">
+                {detail.billing.legalLinks.map((l) => (
+                  <Link
+                    key={l.href}
+                    href={l.href}
+                    className="group flex items-center justify-between gap-3 p-5 rounded-2xl border border-[#E5E8EB] bg-white hover:border-[#3182F6] hover:bg-[#F8FAFF] transition-colors"
+                  >
+                    <div className="flex items-center gap-3">
+                      <span className="text-xl">{l.href.endsWith("/privacy") ? "🔒" : "📄"}</span>
+                      <div>
+                        <p className="text-[#191F28] font-bold text-[15px] keep-all">{l.label}</p>
+                        <p className="text-[#8B95A1] text-[13px] keep-all">{l.desc}</p>
+                      </div>
+                    </div>
+                    <svg className="w-4 h-4 text-[#B0B8C1] group-hover:text-[#3182F6] transition-colors flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                    </svg>
+                  </Link>
+                ))}
               </div>
             )}
 

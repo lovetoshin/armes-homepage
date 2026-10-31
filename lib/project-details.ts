@@ -26,6 +26,16 @@ export interface ProjectDetail {
   gallery?: string[];
   // 화면 묶음이 여러 개일 때(예: 리워드톡 국내판·해외판) — 묶음마다 제목을 달아 한 줄씩 보여 준다
   galleries?: { title: string; desc?: string; images: string[] }[];
+  // 유료 서비스의 요금·이용기간·취소/환불 규정(결제사 심사용) — 약관과 같은 숫자를 쓴다
+  billing?: ProjectBilling;
+}
+
+export interface ProjectBilling {
+  plans: { name: string; price: string; desc: string; pay: string }[];
+  priceNote: string;
+  period: string[];
+  refund: string[];
+  legalLinks: { href: string; label: string; desc: string }[];
 }
 
 export const projectDetails: Record<string, ProjectDetail> = {
@@ -42,7 +52,7 @@ export const projectDetails: Record<string, ProjectDetail> = {
       { title: "강사 프로필·후기", desc: "강사의 경력과 수업 스타일, 실제 학습자 후기를 자세히 보고 안심하고 예약합니다." },
       { title: "원하는 시간 예약", desc: "내 일정에 맞는 시간대를 골라 1:1 화상 수업을 예약합니다. 학원 시간에 얽매이지 않습니다." },
       { title: "1:1 실시간 화상 수업", desc: "설치 없이 앱에서 바로 원어민과 얼굴을 보며 실시간으로 대화하며 배웁니다." },
-      { title: "첫 수업 무료 체험", desc: "부담 없이 첫 수업 30분을 무료로 체험하고, 마음에 들면 이어서 정규 수업을 예약합니다. 카드·카카오페이·네이버페이·PayPal로 간편 결제합니다." },
+      { title: "첫 수업 무료 체험", desc: "부담 없이 첫 수업 30분을 무료로 체험하고, 마음에 들면 이어서 정규 수업을 예약합니다. 신용카드·카카오페이로 결제합니다." },
     ],
     forWhom: [
       "한류 콘텐츠로 한국어에 관심이 생긴 전 세계 학습자",
@@ -61,6 +71,34 @@ export const projectDetails: Record<string, ProjectDetail> = {
       "/projects/worldlingo-s6.webp",
       "/projects/worldlingo-s7.webp",
     ],
+    // 2026-11-01 포트원(KG이니시스·한국결제네트웍스·카카오페이) 신청 확정값 — /worldlingo/terms 와 같은 숫자
+    billing: {
+      plans: [
+        { name: "무료 체험", price: "0원", desc: "1:1 화상수업 30분 1회\n(첫 수업, 신규 1회)", pay: "결제 없음" },
+        { name: "주 2회 정기구독", price: "월 159,000원", desc: "30분 1:1 화상수업 월 8회", pay: "매월 자동결제" },
+        { name: "주 3회 정기구독", price: "월 219,000원", desc: "30분 1:1 화상수업 월 12회", pay: "매월 자동결제" },
+        { name: "주 5회 정기구독", price: "월 349,000원", desc: "30분 1:1 화상수업 월 20회", pay: "매월 자동결제" },
+      ],
+      priceNote: "표시 가격은 부가세가 포함된 실제 결제 금액입니다. 결제수단: 신용카드·카카오페이",
+      period: [
+        "정기구독은 결제일로부터 1개월(30일) 동안 이용하며, 매월 같은 날짜에 자동결제·갱신됩니다.",
+        "언제든 해지할 수 있습니다. 해지하면 다음 결제부터 청구되지 않으며, 이미 결제한 기간은 끝까지 이용할 수 있습니다.",
+        "수업 회차는 해당 1개월 이용기간 안에 사용하며, 다음 달로 이월되지 않습니다.",
+      ],
+      refund: [
+        "수업 취소: 수업 시작 24시간 전까지 취소하면 무료이며, 회차가 그대로 복구됩니다.",
+        "수업 시작 24시간 이내 취소 또는 학생 노쇼(무단 불참): 해당 수업 1회가 차감됩니다.",
+        "강사 노쇼: 해당 수업 1회 복구와 함께 1회 무료 수업을 추가로 제공합니다.",
+        "청약철회: 결제 후 7일 이내이고 수업을 한 번도 듣지 않았으면 전액 환불합니다.",
+        "일부 이용 후 해지·환불: 이용한 회차만큼(월 구독가 ÷ 월 회차 × 이용 회차) 뺀 나머지 금액을 환불합니다.",
+        "무료 체험은 결제가 없어 환불 대상이 아닙니다.",
+        "환불 신청: 고객센터(070-4544-7659 · support.armes@gmail.com). 신청 후 영업일 3일 이내에 결제를 취소하며, 카드사 반영은 카드사 일정에 따릅니다.",
+      ],
+      legalLinks: [
+        { href: "/worldlingo/terms", label: "서비스 이용약관", desc: "월드링고 서비스 이용약관을 확인하세요" },
+        { href: "/worldlingo/privacy", label: "개인정보 처리방침", desc: "월드링고 서비스의 개인정보 처리방침을 확인하세요" },
+      ],
+    },
   },
 
   // ── 1. 리워드톡 (운영중 — 국내판 + 해외판(외국인용 9개 언어), 화면 2026-09-18 스토어 스크린샷 기준) ──
