@@ -76,7 +76,7 @@ export const projects: Project[] = [
   {
     key: "rewardtalk",
     name: "RewardTalk",
-    tagline: "내 주변 맛집·교통·할인·약국 정보를 지도로 찾는 생활 앱",
+    tagline: "해외여행 지하철 노선도부터 내 동네 생활 정보까지, 지도 한 화면에서 찾는 앱",
     audience: "동네 생활 소비자",
     status: "live",
     tech: ["Location", "Automation"],
@@ -88,7 +88,7 @@ export const projects: Project[] = [
   {
     key: "cutit",
     name: "컷잇",
-    tagline: "사진과 영상을 이어 붙여 쇼츠·릴스를 간편하게 만드는 편집 앱",
+    tagline: "사진·영상 이어붙이기부터 렌즈 카메라, 갤러리 정리, 쇼츠·릴스 바로 올리기까지 한 앱에서",
     audience: "쇼츠·릴스를 빠르게 만들고 싶은 사람",
     status: "live",
     tech: ["Automation"],
@@ -100,7 +100,7 @@ export const projects: Project[] = [
   {
     key: "travelmoa",
     name: "TravelMoa",
-    tagline: "여행 특가와 항공권을 한곳에서 찾는 스마트 여행 플랫폼",
+    tagline: "국내 대형 여행사 13곳의 패키지·항공권 특가를 한 앱에 모아 보는 여행 특가 모음 앱",
     audience: "여행을 준비하는 사람",
     status: "live",
     tech: ["Location", "AI"],
@@ -112,7 +112,7 @@ export const projects: Project[] = [
   {
     key: "cocoping",
     name: "CocoPing",
-    tagline: "코스트코 할인정보와 가격 변동을 한눈에 보는 쇼핑 도우미",
+    tagline: "코스트코 매장·온라인 할인 상품과 가격 변동, 점포 휴무일을 한 앱에서 확인하는 쇼핑 도우미",
     audience: "코스트코 이용 쇼핑객",
     status: "live",
     tech: ["AI", "Automation"],
@@ -166,12 +166,11 @@ export const projects: Project[] = [
   {
     key: "hwangso-stock",
     name: "황소주식",
-    tagline: "정치·정책 뉴스와 과거 주가 공식을 보면서, 가상 1억으로 바로 사고팔며 연습하는 모의투자 앱",
+    tagline: "정치·정책 뉴스와 과거 주가 통계로 가상 돈 매매를 연습하는 모의투자 앱",
     audience: "주식을 처음 배우는 사람",
-    status: "dev", // 일반 공개 전(코스콤 정보이용계약 전) · 앱 주소는 싣지 않음(황소주식 세션 2026-11-19)
+    status: "dev", // 일반 공개 전 · 주식 데이터 허락 전이라 화면·앱 주소 싣지 않음(형님 지시 2026-11-19)
     tech: ["AI", "Automation"],
     icon: "🐂",
-    thumbnail: "/projects/hwangso-stock-1.webp",
   },
   {
     key: "worldlingo",

@@ -266,7 +266,8 @@ export default async function ProjectDetailPage({
 
         {detail ? (
           <>
-            {/* 어떤 불편을 푸나 */}
+            {/* 어떤 불편을 푸나 — 빈 칸(예: 공개 전 황소주식)은 그리지 않는다 */}
+            {detail.problem && (
             <section className="mb-16">
               <h2 className="text-2xl font-extrabold text-[#191F28] mb-4 keep-all">
                 어떤 불편을 풀어주나요?
@@ -275,8 +276,10 @@ export default async function ProjectDetailPage({
                 {detail.problem}
               </p>
             </section>
+            )}
 
             {/* 핵심 기능 */}
+            {detail.features.length > 0 && (
             <section className="mb-16">
               <h2 className="text-2xl font-extrabold text-[#191F28] mb-7 keep-all">
                 {isRunning ? "주요 기능" : "이런 기능을 준비합니다"}
@@ -297,8 +300,10 @@ export default async function ProjectDetailPage({
                 ))}
               </div>
             </section>
+            )}
 
             {/* 이런 분께 */}
+            {detail.forWhom.length > 0 && (
             <section className="mb-16">
               <h2 className="text-2xl font-extrabold text-[#191F28] mb-6 keep-all">
                 이런 분께 도움이 됩니다
@@ -312,6 +317,7 @@ export default async function ProjectDetailPage({
                 ))}
               </ul>
             </section>
+            )}
 
             {/* 상태 안내(준비중/연구중) — 요금제보다 위(월드링고 안내문이 「요금·환불 규정은 아래에서」라고 가리킴) */}
             {detail.statusNote && (

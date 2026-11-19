@@ -7,7 +7,7 @@ export interface ProjectSeo {
   keywords: string[];       // 검색 유입 키워드
   appCategory: string;      // schema.org SoftwareApplication.applicationCategory
   operatingSystem: string;  // schema.org SoftwareApplication.operatingSystem
-  og: string;               // OG/Twitter 이미지 경로 (절대화는 페이지에서)
+  og?: string;              // OG/Twitter 이미지 경로 (절대화는 페이지에서) — 없으면 카드 썸네일(공개 전 황소주식은 둘 다 없음)
 }
 
 export const projectSeo: Record<string, ProjectSeo> = {
@@ -26,18 +26,18 @@ export const projectSeo: Record<string, ProjectSeo> = {
     og: "/projects/og/tools.png",
   },
   rewardtalk: {
-    title: "RewardTalk — 내 주변 맛집·교통·할인·약국 찾기 · 외국인 한국 여행",
-    keywords: ["내 주변 맛집", "주유소 가격", "통신사 멤버십 할인", "동네 최저가", "야간 약국", "외국인 한국 여행 앱", "리워드톡"],
+    title: "RewardTalk — 해외 지하철 노선도 한글로 · 내 주변 맛집·주유소·약국 · 외국인 한국 여행",
+    keywords: ["도쿄 지하철 노선도", "오사카 지하철 노선도", "해외 지하철 한글", "내 주변 맛집", "주유소 가격", "야간 약국", "외국인 한국 여행 앱", "리워드톡"],
     appCategory: "LifestyleApplication",
     operatingSystem: "Android, iOS",
     og: "/projects/rewardtalk-main.webp",
   },
   travelmoa: {
-    title: "TravelMoa — 여행 특가·항공권 비교",
-    keywords: ["항공권 비교", "여행 특가", "항공권 최저가", "여행 플랫폼", "항공권 검색"],
+    title: "TravelMoa(여행모아) — 여행사 13곳 패키지·항공권 특가 모음",
+    keywords: ["여행 특가", "해외패키지 특가", "땡처리 항공권", "패키지여행 비교", "여행사 특가 모음", "여행모아"],
     appCategory: "TravelApplication",
-    operatingSystem: "Web",
-    og: "/projects/travelmoa-2.webp",
+    operatingSystem: "Android, iOS",
+    og: "/projects/travelmoa-n1.webp",
   },
   cocoping: {
     title: "CocoPing — 코스트코 할인·가격 변동·휴무 안내",
@@ -47,11 +47,11 @@ export const projectSeo: Record<string, ProjectSeo> = {
     og: "/projects/cocoping-main.webp",
   },
   cutit: {
-    title: "컷잇 — 사진·영상 이어붙이기 간편 쇼츠 릴스 만들기",
-    keywords: ["쇼츠 만들기", "릴스 만들기", "사진 영상 이어붙이기", "영상 편집 앱", "쇼츠 편집 앱", "사진으로 영상 만들기", "컷잇"],
+    title: "컷잇 — 쇼츠·릴스 만들기 · 렌즈 카메라 · AI 갤러리 정리",
+    keywords: ["쇼츠 만들기", "릴스 만들기", "사진 영상 이어붙이기", "렌즈 카메라", "갤러리 정리 앱", "쇼츠 편집 앱", "컷잇"],
     appCategory: "MultimediaApplication",
     operatingSystem: "Android, iOS",
-    og: "/projects/cutit-1.webp",
+    og: "/projects/cutit-n1.webp",
   },
   father: {
     title: "아버지 — 아~! 버스, 지하철 한눈에 · 실시간 도착·환승 길안내",
@@ -82,11 +82,10 @@ export const projectSeo: Record<string, ProjectSeo> = {
     og: "/projects/uridipyoungyu-1.webp",
   },
   "hwangso-stock": {
-    title: "황소주식 — 정치 뉴스·주가 공식 모의투자",
+    title: "황소주식 — 모의투자 연습 앱(개발중)",
     keywords: ["모의투자 앱", "주식 연습", "정치 테마주", "주식 공부", "황소주식"],
     appCategory: "FinanceApplication",
     operatingSystem: "Android",
-    og: "/projects/hwangso-stock-1.webp",
   },
   hoosamgukji: {
     title: "후삼국지 — 후삼국 시대 전략 시뮬레이션 게임",
