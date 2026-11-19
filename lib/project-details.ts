@@ -245,7 +245,7 @@ export const projectDetails: Record<string, ProjectDetail> = {
   },
 
   // ── 황소주식 (개발중 — 일반 공개 전 · 형님 지시 2026-11-19: 주식 데이터 사용 허락 전이라 타이틀·간략 소개·약관만) ──
-  //   기능 설명·화면 캡처·앱 주소는 싣지 않는다. 약관·방침은 황소주식 세션이 원본을 만들면 legalLinks 로 건다.
+  //   기능 설명·화면 캡처·앱 주소는 싣지 않는다. 약관·방침 원본 = F:\APP\stock\web\static\legal.html(생성 _tmp/gen_hwangso_legal.mjs).
   "hwangso-stock": {
     key: "hwangso-stock",
     intro:
@@ -255,6 +255,7 @@ export const projectDetails: Record<string, ProjectDetail> = {
     forWhom: [],
     statusNote:
       "황소주식은 현재 개발 중이며 일반에 공개하지 않았습니다. 투자 권유가 아니며, 공개 준비가 끝나는 대로 자세한 내용을 안내드리겠습니다.",
+    legalLinks: legal("hwangso-stock", "황소주식"),
   },
 
   // ── 1. 리워드톡 (운영중 — 국내판 · 해외 도시판(한국인 해외여행) · 외국인판(9개 언어) · 자료 = 리워드톡 세션 2026-11-19, 스토어 긴 설명 기준) ──
