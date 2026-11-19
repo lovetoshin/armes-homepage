@@ -69,6 +69,9 @@ export const PROJECT_TAGLINE: Record<string, Record<Locale, string>> = {
   cutit: {
     ko: "사진과 영상을 이어 붙여 쇼츠·릴스를 간편하게 만드는 편집 앱",
   },
+  father: {
+    ko: "목적지만 정하면, 도착까지 탈 것과 환승 타이밍을 한 화면에서 계속 보여 드립니다",
+  },
   hoosamgukji: {
     ko: "대한민국 후삼국 시대를 배경으로 한 전략 시뮬레이션 게임",
     

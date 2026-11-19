@@ -20,6 +20,7 @@ const ORDER = [
   "cutit",
   "cocoping",
   "travelmoa",
+  "father",
   "worldlingo",
   "hoosamgukji",
   "sellerai",
@@ -362,10 +363,10 @@ export default async function ProjectDetailPage({
               </>
             )}
 
-            {/* 약관·방침 바로가기(월드링고 등 billing.legalLinks) */}
-            {detail.billing && (
+            {/* 약관·방침 바로가기(detail.legalLinks — 이용약관·개인정보 처리방침) */}
+            {detail.legalLinks && (
               <div className="flex flex-col gap-3">
-                {detail.billing.legalLinks.map((l) => (
+                {detail.legalLinks.map((l) => (
                   <Link
                     key={l.href}
                     href={l.href}
@@ -386,81 +387,6 @@ export default async function ProjectDetailPage({
               </div>
             )}
 
-            {/* 리워드톡 — 개인정보 처리방침 바로가기 */}
-            {key === "rewardtalk" && (
-              <Link
-                href="/rewardtalk/privacy"
-                className="group flex items-center justify-between gap-3 p-5 rounded-2xl border border-[#E5E8EB] bg-white hover:border-[#3182F6] hover:bg-[#F8FAFF] transition-colors"
-              >
-                <div className="flex items-center gap-3">
-                  <span className="text-xl">🔒</span>
-                  <div>
-                    <p className="text-[#191F28] font-bold text-[15px] keep-all">개인정보 처리방침</p>
-                    <p className="text-[#8B95A1] text-[13px] keep-all">리워드톡 서비스의 개인정보 처리방침을 확인하세요</p>
-                  </div>
-                </div>
-                <svg className="w-4 h-4 text-[#B0B8C1] group-hover:text-[#3182F6] transition-colors flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
-            )}
-
-            {/* 코코핑 — 개인정보 처리방침 바로가기 */}
-            {key === "cocoping" && (
-              <Link
-                href="/cocoping/privacy"
-                className="group flex items-center justify-between gap-3 p-5 rounded-2xl border border-[#E5E8EB] bg-white hover:border-[#3182F6] hover:bg-[#F8FAFF] transition-colors"
-              >
-                <div className="flex items-center gap-3">
-                  <span className="text-xl">🔒</span>
-                  <div>
-                    <p className="text-[#191F28] font-bold text-[15px] keep-all">개인정보 처리방침</p>
-                    <p className="text-[#8B95A1] text-[13px] keep-all">코코핑 서비스의 개인정보 처리방침을 확인하세요</p>
-                  </div>
-                </div>
-                <svg className="w-4 h-4 text-[#B0B8C1] group-hover:text-[#3182F6] transition-colors flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
-            )}
-
-            {/* 여행모아 — 개인정보 처리방침 바로가기 */}
-            {key === "travelmoa" && (
-              <Link
-                href="/travelmoa/privacy"
-                className="group flex items-center justify-between gap-3 p-5 rounded-2xl border border-[#E5E8EB] bg-white hover:border-[#3182F6] hover:bg-[#F8FAFF] transition-colors"
-              >
-                <div className="flex items-center gap-3">
-                  <span className="text-xl">🔒</span>
-                  <div>
-                    <p className="text-[#191F28] font-bold text-[15px] keep-all">개인정보 처리방침</p>
-                    <p className="text-[#8B95A1] text-[13px] keep-all">여행모아 서비스의 개인정보 처리방침을 확인하세요</p>
-                  </div>
-                </div>
-                <svg className="w-4 h-4 text-[#B0B8C1] group-hover:text-[#3182F6] transition-colors flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
-            )}
-
-            {/* 컷잇 — 개인정보 처리방침 바로가기 */}
-            {key === "cutit" && (
-              <Link
-                href="/cutit/privacy"
-                className="group flex items-center justify-between gap-3 p-5 rounded-2xl border border-[#E5E8EB] bg-white hover:border-[#3182F6] hover:bg-[#F8FAFF] transition-colors"
-              >
-                <div className="flex items-center gap-3">
-                  <span className="text-xl">🔒</span>
-                  <div>
-                    <p className="text-[#191F28] font-bold text-[15px] keep-all">개인정보 처리방침</p>
-                    <p className="text-[#8B95A1] text-[13px] keep-all">컷잇 서비스의 개인정보 처리방침을 확인하세요</p>
-                  </div>
-                </div>
-                <svg className="w-4 h-4 text-[#B0B8C1] group-hover:text-[#3182F6] transition-colors flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
-            )}
           </>
         ) : (
           <p className="text-[#4E5968] text-[17px] leading-relaxed keep-all">

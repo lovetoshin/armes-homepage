@@ -53,6 +53,13 @@ export const projectSeo: Record<string, ProjectSeo> = {
     operatingSystem: "Android, iOS",
     og: "/projects/cutit-1.webp",
   },
+  father: {
+    title: "아버지 — 아~! 버스, 지하철 한눈에 · 실시간 도착·환승 길안내",
+    keywords: ["버스 도착 정보", "지하철 실시간", "환승 타이밍", "길찾기 앱", "출퇴근 앱", "실시간 열차 위치", "아버지 앱"],
+    appCategory: "TravelApplication",
+    operatingSystem: "Android, iOS",
+    og: "/projects/father-1.webp",
+  },
   hoosamgukji: {
     title: "후삼국지 — 후삼국 시대 전략 시뮬레이션 게임",
     keywords: ["후삼국 게임", "한국사 전략게임", "후삼국지 게임", "전략 시뮬레이션", "후삼국 시대"],

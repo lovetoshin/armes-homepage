@@ -28,6 +28,8 @@ export interface ProjectDetail {
   galleries?: { title: string; desc?: string; images: string[] }[];
   // 유료 서비스의 요금·이용기간·취소/환불 규정(결제사 심사용) — 약관과 같은 숫자를 쓴다
   billing?: ProjectBilling;
+  // 상세 페이지 맨 아래 약관·방침 바로가기
+  legalLinks?: { href: string; label: string; desc: string }[];
 }
 
 export interface ProjectBilling {
@@ -35,7 +37,14 @@ export interface ProjectBilling {
   priceNote: string;
   period: string[];
   refund: string[];
-  legalLinks: { href: string; label: string; desc: string }[];
+}
+
+// 앱 하나의 이용약관·개인정보 처리방침 바로가기 두 줄
+function legal(base: string, name: string): ProjectDetail["legalLinks"] {
+  return [
+    { href: `/${base}/terms`, label: "이용약관", desc: `${name} 서비스 이용약관을 확인하세요` },
+    { href: `/${base}/privacy`, label: "개인정보 처리방침", desc: `${name} 서비스의 개인정보 처리방침을 확인하세요` },
+  ];
 }
 
 export const projectDetails: Record<string, ProjectDetail> = {
@@ -94,11 +103,41 @@ export const projectDetails: Record<string, ProjectDetail> = {
         "무료 체험은 결제가 없어 환불 대상이 아닙니다.",
         "환불 신청: 고객센터(070-4544-7659 · support.armes@gmail.com). 신청 후 영업일 3일 이내에 결제를 취소하며, 카드사 반영은 카드사 일정에 따릅니다.",
       ],
-      legalLinks: [
-        { href: "/worldlingo/terms", label: "서비스 이용약관", desc: "월드링고 서비스 이용약관을 확인하세요" },
-        { href: "/worldlingo/privacy", label: "개인정보 처리방침", desc: "월드링고 서비스의 개인정보 처리방침을 확인하세요" },
-      ],
     },
+    legalLinks: [
+      { href: "/worldlingo/terms", label: "서비스 이용약관", desc: "월드링고 서비스 이용약관을 확인하세요" },
+      { href: "/worldlingo/privacy", label: "개인정보 처리방침", desc: "월드링고 서비스의 개인정보 처리방침을 확인하세요" },
+    ],
+  },
+
+  // ── 아버지 (운영중 — 구글 플레이·앱스토어 출시, 자료 = 아버지 세션 2026-11-19) ──
+  father: {
+    key: "father",
+    intro:
+      "「아버지 - 아~! 버스, 지하철 한눈에」는 실시간 버스·지하철 도착 정보와 환승 타이밍을 한 화면에 모아 보여 주는 길안내 앱입니다. 출발부터 도착까지 지금 어디쯤인지, 다음에 무엇을 언제 타야 하는지를 화면 하나로 바로 확인할 수 있습니다.",
+    problem:
+      "길찾기 앱, 버스 앱, 지하철 앱을 오가며 도착 시간을 따로 확인해야 했던 번거로움을 줄입니다. 환승할 때 \"지금 뛰어야 하나, 다음 차를 타도 되나\"를 바로 판단할 수 있습니다.",
+    features: [
+      { title: "한 화면 전체 여정", desc: "걷기·지하철·버스 구간을 순서대로 보여 주고, 지금 구간과 다음 구간을 함께 표시합니다." },
+      { title: "빠듯·추천·여유 열차", desc: "구간마다 탈 수 있는 차 세 대를 걸음 속도에 맞춰 골라 드립니다." },
+      { title: "실시간 열차 지도", desc: "수도권 지하철 열차 위치를 노선 위에 4초마다 갱신해 보여 줍니다." },
+      { title: "버스 실시간 도착", desc: "정류장별로 곧 오는 버스와 남은 정거장 수를 보여 줍니다." },
+      { title: "택시 예상 요금", desc: "같은 출발·도착지의 택시 요금과 시간을 보여 주고, 카카오T 앱을 바로 엽니다." },
+      { title: "홈 화면 위젯", desc: "저장한 경로의 다음 열차·버스를 앱을 열지 않고 확인합니다(안드로이드·아이폰)." },
+    ],
+    forWhom: [
+      "매일 같은 길로 출퇴근·통학하시는 분",
+      "환승이 잦아 열차 시간을 자주 확인하시는 분",
+      "여러 교통 앱을 번갈아 켜기 번거로우신 분",
+    ],
+    gallery: [
+      "/projects/father-1.webp",
+      "/projects/father-2.webp",
+      "/projects/father-3.webp",
+      "/projects/father-4.webp",
+      "/projects/father-5.webp",
+    ],
+    legalLinks: legal("father", "아버지"),
   },
 
   // ── 1. 리워드톡 (운영중 — 국내판 + 해외판(외국인용 9개 언어), 화면 2026-09-18 스토어 스크린샷 기준) ──
@@ -146,6 +185,7 @@ export const projectDetails: Record<string, ProjectDetail> = {
         ],
       },
     ],
+    legalLinks: legal("rewardtalk", "리워드톡"),
   },
 
   // ── 컷잇 (운영중 — 구글 플레이·앱스토어 공개 2026-09-30) ─────────
@@ -173,6 +213,7 @@ export const projectDetails: Record<string, ProjectDetail> = {
       "/projects/cutit-4.webp",
       "/projects/cutit-6.webp",
     ],
+    legalLinks: legal("cutit", "컷잇"),
   },
 
   // ── 2. 트래블모아 (준비중) ─────────────────────────────
@@ -197,6 +238,7 @@ export const projectDetails: Record<string, ProjectDetail> = {
       "/projects/travelmoa-g3.webp",
       "/projects/travelmoa-g4.webp",
     ],
+    legalLinks: legal("travelmoa", "여행모아"),
   },
 
   // ── 3. 코코핑 (준비중) ─────────────────────────────────
@@ -227,6 +269,7 @@ export const projectDetails: Record<string, ProjectDetail> = {
       "/projects/cocoping-s4.webp",
       "/projects/cocoping-s5.webp",
     ],
+    legalLinks: legal("cocoping", "코코핑"),
   },
 
   // ── 4. 셀러AI (운영중) ─────────────────────────────────

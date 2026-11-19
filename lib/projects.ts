@@ -122,6 +122,18 @@ export const projects: Project[] = [
     thumbnail: "/projects/cocoping-main.webp",
   },
   {
+    key: "father",
+    name: "아버지",
+    tagline: "목적지만 정하면, 도착까지 탈 것과 환승 타이밍을 한 화면에서 계속 보여 드립니다",
+    audience: "매일 대중교통으로 출퇴근·통학하는 사람",
+    status: "live",
+    tech: ["Location", "Automation"],
+    androidUrl: "https://play.google.com/store/apps/details?id=com.abeoji.app",
+    iosUrl: "https://apps.apple.com/kr/app/id6821252757",
+    icon: "🚇",
+    thumbnail: "/projects/father-1.webp",
+  },
+  {
     key: "worldlingo",
     name: "월드링고",
     tagline: "한류 타고 배우는 1:1 화상 한국어·영어·중국어 플랫폼",
