@@ -21,15 +21,22 @@ export default function ProjectsSection({ locale = "ko" }: { locale?: Locale }) 
   // 모바일은 한 줄 2개(형님 확정 2026-07-22) — 통째 축소(scale) 방식은 글씨가 너무 작아져 폐기.
   const byKey = (k: string) => projects.find((p) => p.key === k)!;
   // ★한 줄에 카드 2개 × 3줄 (형님 확정 2026-09-30) — 휴대폰 폭에서는 한 줄에 1개.
-  //   1줄 리워드톡|컷잇 · 2줄 코코핑|여행모아 · 3줄 아버지|월드링고 · 4줄 후삼국지 (아버지 추가 2026-11-19)
-  const order = ["rewardtalk", "cutit", "cocoping", "travelmoa", "father", "worldlingo", "hoosamgukji"];
+  //   운영중(리워드톡·컷잇·코코핑·여행모아·아버지) → 배포대기중(월드링고·무비에디트) → 개발중(하이스카이·우리집 영유·황소주식·후삼국지)
+  //   (2026-11-19 아버지·무비에디트·하이스카이·우리집 영유·황소주식 추가 = 11개)
+  const order = [
+    "rewardtalk", "cutit", "cocoping", "travelmoa", "father",
+    "worldlingo", "movieedit",
+    "highsky", "uridipyoungyu", "hwangso-stock", "hoosamgukji",
+  ];
   let animIdx = 0;
   const Card = (k: string) => {
     const i = animIdx++;
+    // 개수가 홀수면 마지막 카드가 혼자 남지 않게 두 칸을 차지한다(외톨이 금지)
+    const wide = order.length % 2 === 1 && i === order.length - 1;
     return (
       <motion.div
         key={k}
-        className="h-full"
+        className={`h-full${wide ? " md:col-span-2" : ""}`}
         initial={{ opacity: 0, y: 18 }}
         animate={isInView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.5, delay: 0.06 * i }}

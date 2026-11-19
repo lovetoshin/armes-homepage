@@ -134,9 +134,49 @@ export const projects: Project[] = [
     thumbnail: "/projects/father-1.webp",
   },
   {
+    key: "movieedit",
+    name: "무비에디트",
+    tagline: "폰 하나로 쇼츠·릴스·유튜브 영상을 쉽게 편집하는 영상 편집 앱",
+    audience: "쇼츠·릴스·유튜브 영상을 폰으로 만드는 사람",
+    status: "pending", // 스토어 미출시 · 안드로이드 apk 시험 운영(무비에디트 세션 2026-11-19)
+    tech: ["AI", "Automation"],
+    icon: "🎬",
+    thumbnail: "/projects/movieedit-1.webp",
+  },
+  {
+    key: "highsky",
+    name: "하이스카이",
+    tagline: "중·고등학생을 위한 AI 입시 비서 10명 — 전국 대학 입시 정보와 고교학점제 과목 준비를 한 앱에서",
+    audience: "중·고등학생과 학부모",
+    status: "dev", // 스토어 미출시 · 시험판만(하이스카이 세션 2026-11-19)
+    tech: ["AI", "Automation"],
+    icon: "🎓",
+    thumbnail: "/projects/highsky-1.webp",
+  },
+  {
+    key: "uridipyoungyu",
+    name: "우리집 영유",
+    tagline: "만 5~7세 아이가 폰 하나로 집에서 영어유치원 하루를 그대로 다니는 앱",
+    audience: "만 5~7세 아이와 부모님",
+    status: "dev", // 스토어 미출시 · 시험판만(영어유치원 세션 2026-11-19)
+    tech: ["AI", "Automation"],
+    icon: "🎒",
+    thumbnail: "/projects/uridipyoungyu-1.webp",
+  },
+  {
+    key: "hwangso-stock",
+    name: "황소주식",
+    tagline: "정치·정책 뉴스와 과거 주가 공식을 보면서, 가상 1억으로 바로 사고팔며 연습하는 모의투자 앱",
+    audience: "주식을 처음 배우는 사람",
+    status: "dev", // 일반 공개 전(코스콤 정보이용계약 전) · 앱 주소는 싣지 않음(황소주식 세션 2026-11-19)
+    tech: ["AI", "Automation"],
+    icon: "🐂",
+    thumbnail: "/projects/hwangso-stock-1.webp",
+  },
+  {
     key: "worldlingo",
     name: "월드링고",
-    tagline: "한류 타고 배우는 1:1 화상 한국어·영어·중국어 플랫폼",
+    tagline: "세계의 언어를 얼굴 보며 배우다 — 원어민 강사와 1:1 화상 수업",
     audience: "한국어·외국어를 배우려는 전 세계 학습자",
     status: "pending", // 스토어 출시 전 — 「운영중」은 사실과 다름(2026-11-01 형님 지시)
     tech: ["AI", "Automation"],

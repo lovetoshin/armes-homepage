@@ -72,6 +72,21 @@ export const PROJECT_TAGLINE: Record<string, Record<Locale, string>> = {
   father: {
     ko: "목적지만 정하면, 도착까지 탈 것과 환승 타이밍을 한 화면에서 계속 보여 드립니다",
   },
+  movieedit: {
+    ko: "폰 하나로 쇼츠·릴스·유튜브 영상을 쉽게 편집하는 영상 편집 앱",
+  },
+  worldlingo: {
+    ko: "세계의 언어를 얼굴 보며 배우다 — 원어민 강사와 1:1 화상 수업",
+  },
+  highsky: {
+    ko: "중·고등학생을 위한 AI 입시 비서 10명 — 전국 대학 입시 정보와 고교학점제 과목 준비를 한 앱에서",
+  },
+  uridipyoungyu: {
+    ko: "만 5~7세 아이가 폰 하나로 집에서 영어유치원 하루를 그대로 다니는 앱",
+  },
+  "hwangso-stock": {
+    ko: "정치·정책 뉴스와 과거 주가 공식을 보면서, 가상 1억으로 바로 사고팔며 연습하는 모의투자 앱",
+  },
   hoosamgukji: {
     ko: "대한민국 후삼국 시대를 배경으로 한 전략 시뮬레이션 게임",
     
