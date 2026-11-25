@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 export default function HighskyTermsPage() {
   return (
-    <LegalLayout title="하이스카이 이용약관" subtitle={LEGAL_DATE_LABEL} updatedAt="2026년 11월 19일">
+    <LegalLayout title="하이스카이 이용약관" subtitle={LEGAL_DATE_LABEL} updatedAt="2026년 11월 26일">
       <PolicyView intro={TERMS_INTRO} sections={TERMS_SECTIONS} />
       <div className="text-[#4E5968] text-[15px] leading-[1.9] space-y-1">
         {TERMS_FOOTER.map((t) => (

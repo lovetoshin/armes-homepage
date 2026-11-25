@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 export default function HighskyPrivacyPage() {
   return (
-    <LegalLayout title="하이스카이 개인정보 처리방침" subtitle={LEGAL_DATE_LABEL} updatedAt="2026년 11월 19일">
+    <LegalLayout title="하이스카이 개인정보 처리방침" subtitle={LEGAL_DATE_LABEL} updatedAt="2026년 11월 26일">
       <PolicyView intro={PRIVACY_INTRO} sections={PRIVACY_SECTIONS} />
       <div className="text-[#4E5968] text-[15px] leading-[1.9] space-y-1">
         {PRIVACY_FOOTER.map((t) => (
