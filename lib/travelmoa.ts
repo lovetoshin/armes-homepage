@@ -10,6 +10,8 @@
 
 const BASE = process.env.TRAVELMOA_SUPABASE_URL
 const KEY = process.env.TRAVELMOA_SUPABASE_ANON_KEY
+// 2026-11-28 여행모아 DB = 리워드톡 프로젝트 안 「travelmoa」 방 → TRAVELMOA_SUPABASE_SCHEMA=travelmoa. 비면 옛 방식(public)
+const SCHEMA = process.env.TRAVELMOA_SUPABASE_SCHEMA || 'public'
 
 // 여행모아 travel_deals 한 건(딜 페이지에 필요한 필드만)
 export interface TravelmoaAgency {
@@ -57,7 +59,7 @@ export async function fetchTravelmoaDeal(id: string): Promise<TravelmoaDeal | nu
 
   try {
     const res = await fetch(url, {
-      headers: { apikey: KEY, Authorization: `Bearer ${KEY}` },
+      headers: { apikey: KEY, Authorization: `Bearer ${KEY}`, 'Accept-Profile': SCHEMA },
       next: { revalidate: 300 }, // 5분마다 최신 가격 반영(실시간에 가깝되 서버 부담 최소)
     })
     if (!res.ok) {
